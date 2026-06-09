@@ -6,8 +6,8 @@ export const site = {
   description:
     "Professional home visit physiotherapy across Newcastle, Lake Macquarie and the Central Coast. Specialising in NDIS, Support at Home and Home Care Package physiotherapy for older adults, families and private clients.",
   url: "https://fletcherphysiotherapy.com.au",
-  phone: "0466 488 869",
-  phoneHref: "tel:+61466488869",
+  phone: "0404 791 756",
+  phoneHref: "tel:+61404791756",
   email: "info@fletcherphysiotherapy.com.au",
   emailHref: "mailto:info@fletcherphysiotherapy.com.au",
   bookingUrl: "https://fletcher-physiotherapy.au2.cliniko.com/bookings",
