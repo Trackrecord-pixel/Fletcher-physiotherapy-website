@@ -122,7 +122,7 @@ export default function Header() {
           <a href={site.phoneHref} className="btn-secondary">
             <Icon name="phone" className="h-4 w-4" /> Call
           </a>
-          <Link href={site.bookingUrl} className="btn-primary">
+          <Link href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
             Book Online
           </Link>
         </div>
@@ -173,7 +173,7 @@ export default function Header() {
               <a href={site.phoneHref} className="btn-secondary w-full">
                 <Icon name="phone" className="h-4 w-4" /> Call
               </a>
-              <Link href={site.bookingUrl} className="btn-primary w-full">
+              <Link href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary w-full">
                 Book Online
               </Link>
             </div>

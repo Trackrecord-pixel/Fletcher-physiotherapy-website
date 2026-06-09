@@ -6,6 +6,7 @@ import FeatureList from "./FeatureList";
 import CTASection from "./CTASection";
 import Reveal from "./Reveal";
 import { ServiceSchema, BreadcrumbSchema } from "./StructuredData";
+import { site } from "@/lib/site";
 
 export type ServiceDetailProps = {
   slug: string;
@@ -69,7 +70,7 @@ export default function ServiceDetail({
               <div className="mt-5">
                 <FeatureList columns={1} items={benefits} />
               </div>
-              <Link href="/contact" className="btn-primary mt-7 w-full">
+              <Link href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-7 w-full">
                 Book Online <Icon name="arrow" className="h-4 w-4" />
               </Link>
             </div>

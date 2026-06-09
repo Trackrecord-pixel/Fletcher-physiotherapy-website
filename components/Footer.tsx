@@ -70,7 +70,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <Link href="/contact" className="btn-accent mt-6">
+            <Link href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-accent mt-6">
               Book Online <Icon name="arrow" className="h-4 w-4" />
             </Link>
           </div>

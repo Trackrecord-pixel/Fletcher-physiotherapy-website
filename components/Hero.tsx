@@ -29,7 +29,7 @@ export default function Hero() {
             Coast.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Link href={site.bookingUrl} className="btn-primary">
+            <Link href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
               Book Online <Icon name="arrow" className="h-4 w-4" />
             </Link>
             <Link href="/contact" className="btn-secondary">
