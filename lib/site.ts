@@ -10,7 +10,7 @@ export const site = {
   phoneHref: "tel:+6104791756",
   email: "info@fletcherphysiotherapy.com.au",
   emailHref: "mailto:info@fletcherphysiotherapy.com.au",
-  bookingUrl: "/contact",
+  bookingUrl: "https://fletcher-physiotherapy.au2.cliniko.com/bookings",
   areasServed: ["Newcastle", "Lake Macquarie", "Central Coast"],
   region: "NSW",
   geo: { lat: -32.9283, lng: 151.7817 },
