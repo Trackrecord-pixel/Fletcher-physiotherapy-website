@@ -13,78 +13,22 @@ import { FaqSchema } from "@/components/StructuredData";
 import { services, whyChoose, faqs, team, locations, site } from "@/lib/site";
 import type { IconName } from "@/components/Icon";
 
-const transformPoints = [
-  {
-    icon: "home",
-    title: "More independent",
-    text: "Stay confident and self-reliant in your own home and community.",
-  },
-  {
-    icon: "pulse",
-    title: "Healthier",
-    text: "Improve your mobility, energy and wellbeing through gentle, guided movement.",
-  },
-  {
-    icon: "strength",
-    title: "Stronger",
-    text: "Build the strength and balance that keep you steady and reduce falls.",
-  },
-];
 
 export default function HomePage() {
   return (
     <>
       <Hero />
 
-      {/* Transform your lifestyle */}
-      <section className="section-py bg-white">
-        <div className="container-px grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          <div className="relative order-2 overflow-hidden rounded-3xl shadow-card lg:order-1">
-            <div className="relative aspect-[4/3] w-full">
-              <Image
-                src="/images/lifestyle.jpg"
-                alt="An older adult moving confidently and staying active at home"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-          </div>
-          <div className="order-1 lg:order-2">
-            <span className="eyebrow">Feel the difference</span>
-            <h2 className="mt-4 text-3xl sm:text-4xl">
-              Move better, live better, stay independent
-            </h2>
-            <p className="mt-5 text-xl leading-relaxed text-navy-700">
-              The right exercise, guided by a physiotherapist in your own home,
-              can genuinely transform daily life — helping you stay strong,
-              steady and doing the things you love, for longer.
-            </p>
-            <ul className="mt-8 space-y-6">
-              {transformPoints.map((t) => (
-                <li key={t.title} className="flex items-start gap-4">
-                  <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-beige-100 text-navy-800">
-                    <Icon name={t.icon as IconName} className="h-6 w-6" />
-                  </span>
-                  <div>
-                    <h3 className="text-xl text-navy-900">{t.title}</h3>
-                    <p className="mt-1 text-lg leading-relaxed text-navy-600">
-                      {t.text}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-            <Link
-              href={site.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary mt-9"
-            >
-              Book Online <Icon name="arrow" className="h-5 w-5" />
-            </Link>
-          </div>
-        </div>
+      {/* Full-width banner */}
+      <section className="bg-white">
+        <Image
+          src="/images/services-banner.jpg"
+          alt="Personalised home visit physiotherapy helping older Australians stay strong and independent across Newcastle, Lake Macquarie and the Central Coast"
+          width={1500}
+          height={1000}
+          sizes="100vw"
+          className="h-auto w-full"
+        />
       </section>
 
       {/* Why Choose */}
