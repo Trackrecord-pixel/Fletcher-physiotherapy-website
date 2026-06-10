@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import Icon from "@/components/Icon";
@@ -12,10 +13,79 @@ import { FaqSchema } from "@/components/StructuredData";
 import { services, whyChoose, faqs, team, locations, site } from "@/lib/site";
 import type { IconName } from "@/components/Icon";
 
+const transformPoints = [
+  {
+    icon: "home",
+    title: "More independent",
+    text: "Stay confident and self-reliant in your own home and community.",
+  },
+  {
+    icon: "pulse",
+    title: "Healthier",
+    text: "Improve your mobility, energy and wellbeing through gentle, guided movement.",
+  },
+  {
+    icon: "strength",
+    title: "Stronger",
+    text: "Build the strength and balance that keep you steady and reduce falls.",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
       <Hero />
+
+      {/* Transform your lifestyle */}
+      <section className="section-py bg-white">
+        <div className="container-px grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div className="relative order-2 overflow-hidden rounded-3xl shadow-card lg:order-1">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src="/images/lifestyle.jpg"
+                alt="An older adult moving confidently and staying active at home"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <div className="order-1 lg:order-2">
+            <span className="eyebrow">Feel the difference</span>
+            <h2 className="mt-4 text-3xl sm:text-4xl">
+              Move better, live better, stay independent
+            </h2>
+            <p className="mt-5 text-xl leading-relaxed text-navy-700">
+              The right exercise, guided by a physiotherapist in your own home,
+              can genuinely transform daily life — helping you stay strong,
+              steady and doing the things you love, for longer.
+            </p>
+            <ul className="mt-8 space-y-6">
+              {transformPoints.map((t) => (
+                <li key={t.title} className="flex items-start gap-4">
+                  <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-beige-100 text-navy-800">
+                    <Icon name={t.icon as IconName} className="h-6 w-6" />
+                  </span>
+                  <div>
+                    <h3 className="text-xl text-navy-900">{t.title}</h3>
+                    <p className="mt-1 text-lg leading-relaxed text-navy-600">
+                      {t.text}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <Link
+              href={site.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-9"
+            >
+              Book Online <Icon name="arrow" className="h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose */}
       <section className="section-py bg-white">
@@ -26,15 +96,15 @@ export default function HomePage() {
             title="Expert care that comes to your front door"
             intro="We focus on what matters most — keeping you independent, mobile and confident in your own home."
           />
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {whyChoose.map((item, i) => (
-              <Reveal key={item.title} delay={(i % 4) * 80}>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {whyChoose.slice(0, 3).map((item, i) => (
+              <Reveal key={item.title} delay={(i % 3) * 80}>
                 <div className="card card-hover h-full">
                   <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-white">
                     <Icon name={item.icon as IconName} className="h-6 w-6" />
                   </span>
-                  <h3 className="mt-5 text-lg text-navy-900">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-navy-600">
+                  <h3 className="mt-5 text-xl text-navy-900">{item.title}</h3>
+                  <p className="mt-2 text-base leading-relaxed text-navy-600">
                     {item.text}
                   </p>
                 </div>
