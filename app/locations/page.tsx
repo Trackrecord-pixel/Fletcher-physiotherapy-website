@@ -58,24 +58,15 @@ export default function LocationsPage() {
                   </div>
                 </div>
                 <div className="lg:col-span-7">
-                  {/* Map placeholder — replace with an embedded Google Map iframe (see README) */}
-                  <div
-                    className="flex h-full min-h-[18rem] items-center justify-center rounded-3xl border border-dashed border-navy-200 bg-sand text-center"
-                    role="img"
-                    aria-label={`Map of the ${loc.name} service area`}
-                  >
-                    <div className="px-6">
-                      <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white text-navy-700 shadow-card">
-                        <Icon name="pin" className="h-7 w-7" />
-                      </span>
-                      <p className="mt-4 font-serif text-xl text-navy-900">
-                        {loc.name} service area
-                      </p>
-                      <p className="mt-1 text-sm text-navy-500">
-                        Interactive map placeholder
-                      </p>
-                    </div>
-                  </div>
+                  <iframe
+                    src={`https://www.google.com/maps?q=${encodeURIComponent(
+                      `${loc.name}, NSW, Australia`
+                    )}&z=10&output=embed`}
+                    title={`Map of the ${loc.name} service area`}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="h-full min-h-[20rem] w-full rounded-3xl border border-navy-100"
+                  />
                 </div>
               </div>
             </Reveal>
