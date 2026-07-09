@@ -2,7 +2,11 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { LocalBusinessSchema } from "@/components/StructuredData";
+import {
+  LocalBusinessSchema,
+  WebSiteSchema,
+  OrganizationSchema,
+} from "@/components/StructuredData";
 import { site } from "@/lib/site";
 import Script from "next/script";
 import ConversionTracking from "@/components/ConversionTracking";
@@ -72,6 +76,8 @@ export default function RootLayout({
   return (
     <html lang="en-AU">
       <body>
+        <OrganizationSchema />
+        <WebSiteSchema />
         <LocalBusinessSchema />
         <Header />
         <main id="main">{children}</main>

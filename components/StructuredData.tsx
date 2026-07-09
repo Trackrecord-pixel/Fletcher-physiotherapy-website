@@ -151,3 +151,52 @@ export function PersonSchema() {
     />
   );
 }
+
+export function WebSiteSchema() {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${site.url}/#website`,
+    name: "Fletcher Physiotherapy",
+    alternateName: "Fletcher Physio",
+    url: site.url,
+    publisher: { "@id": `${site.url}/#organization` },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export function OrganizationSchema() {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "MedicalBusiness"],
+    "@id": `${site.url}/#organization`,
+    name: "Fletcher Physiotherapy",
+    alternateName: "Fletcher Physio",
+    url: site.url,
+    logo: {
+      "@type": "ImageObject",
+      url: `${site.url}/images/logo.png`,
+    },
+    image: `${site.url}/images/og-default.png`,
+    email: site.email,
+    telephone: site.phone,
+    medicalSpecialty: "Physiotherapy",
+    areaServed: [
+      { "@type": "City", name: "Newcastle", address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
+      { "@type": "City", name: "Lake Macquarie", address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
+      { "@type": "City", name: "Central Coast", address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
+    ],
+    sameAs: [site.social.facebook, site.social.instagram],
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}

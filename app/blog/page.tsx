@@ -51,10 +51,18 @@ export default function BlogIndex() {
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                <div className="flex items-center gap-2 text-xs text-navy-500">
-                  <Icon name="calendar" className="h-4 w-4" /> {fmt(p.date)}
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-navy-500">
+                  <span className="inline-flex items-center gap-1.5 font-medium text-navy-700">
+                    <Icon name="user" className="h-4 w-4" /> Daniel Lee
+                  </span>
                   <span aria-hidden="true">·</span>
-                  <Icon name="clock" className="h-4 w-4" /> {p.readMins} min read
+                  <span className="inline-flex items-center gap-1.5">
+                    <Icon name="calendar" className="h-4 w-4" /> {fmt(p.date)}
+                  </span>
+                  <span aria-hidden="true">·</span>
+                  <span className="inline-flex items-center gap-1.5">
+                    <Icon name="clock" className="h-4 w-4" /> {p.readMins} min read
+                  </span>
                 </div>
                 <h2 className="mt-3 text-xl leading-snug text-navy-900">{p.title}</h2>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-navy-600">{p.excerpt}</p>

@@ -5,7 +5,7 @@ export const site = {
   tagline: "We Come To You",
   description:
     "Professional home visit physiotherapy across Newcastle, Lake Macquarie and the Central Coast. Specialising in NDIS, Support at Home and Home Care Package physiotherapy for older adults, families and private clients.",
-  url: "https://fletcherphysiotherapy.com.au",
+  url: "https://www.fletcherphysiotherapy.com.au",
   phone: "0404 791 756",
   phoneHref: "tel:+61404791756",
   email: "info@fletcherphysiotherapy.com.au",
@@ -461,5 +461,105 @@ export const suburbs: Suburb[] = [
     local:
       "Wyong and its surrounding communities have a strong need for accessible, in-home care. Our physiotherapists visit homes across Wyong, Tuggerah and Kanwal — close to Wyong Hospital — providing balance training, mobility programs and Home Care Package physiotherapy without the need to travel.",
     nearby: ["Tuggerah", "Kanwal", "Watanobbi", "Tumbi Umbi", "The Entrance"],
+  },
+  {
+    slug: "physiotherapy-wallsend",
+    name: "Wallsend",
+    region: "Newcastle",
+    intro:
+      "Fletcher Physiotherapy provides home visit physiotherapy throughout Wallsend, delivering mobile aged care, NDIS and Support at Home physiotherapy to residents across this established western Newcastle suburb.",
+    local:
+      "Wallsend is a busy hub with a large older population and strong community ties. Our physiotherapists visit homes around Wallsend town centre, Nelson Street and the surrounding estates, supporting people who find travelling to a clinic difficult — from falls prevention to post-hospital recovery.",
+    nearby: ["Elermore Vale", "Maryland", "Fletcher", "Jesmond", "Shortland"],
+  },
+  {
+    slug: "physiotherapy-jesmond",
+    name: "Jesmond",
+    region: "Newcastle",
+    intro:
+      "We deliver home visit physiotherapy across Jesmond, bringing expert mobile care to older adults, NDIS participants and Support at Home clients in this central Newcastle suburb.",
+    local:
+      "Close to the University of Newcastle and John Hunter Hospital, Jesmond is a convenient base for home-based rehabilitation, including for clients returning home after a hospital stay. We visit homes throughout Jesmond and its neighbouring suburbs to deliver strength, balance and mobility programs.",
+    nearby: ["Birmingham Gardens", "Elermore Vale", "Wallsend", "Lambton", "North Lambton"],
+  },
+  {
+    slug: "physiotherapy-adamstown",
+    name: "Adamstown",
+    region: "Newcastle",
+    intro:
+      "Fletcher Physiotherapy offers home visit physiotherapy in Adamstown, helping residents improve mobility, balance and confidence in the comfort of their own homes.",
+    local:
+      "Adamstown's mix of heritage homes and established streets is home to many older residents who value care that comes to them. Our mobile physiotherapists support falls prevention, aged care rehabilitation and Home Care Package clients across Adamstown, Adamstown Heights and beyond.",
+    nearby: ["Adamstown Heights", "Kotara", "Broadmeadow", "Hamilton", "New Lambton"],
+  },
+  {
+    slug: "physiotherapy-kotara",
+    name: "Kotara",
+    region: "Newcastle",
+    intro:
+      "We provide home visit physiotherapy across Kotara, supporting older adults, NDIS participants and people recovering from injury or surgery in their own homes.",
+    local:
+      "Kotara's quiet residential streets are ideal for home-based rehabilitation, where our physiotherapists can tailor programs to your real environment. We support clients across Kotara and Kotara South with balance training, strength programs and post-hospital recovery.",
+    nearby: ["Kotara South", "Adamstown", "Garden Suburb", "New Lambton", "Charlestown"],
+  },
+  {
+    slug: "physiotherapy-mount-hutton",
+    name: "Mount Hutton",
+    region: "Lake Macquarie",
+    intro:
+      "Fletcher Physiotherapy provides home visit physiotherapy in Mount Hutton, delivering aged care, NDIS and Support at Home physiotherapy across this central Lake Macquarie suburb.",
+    local:
+      "With a strong community of retirees and families, Mount Hutton is well suited to home-based care. Our mobile physiotherapists visit homes near Mount Hutton shopping centre and the surrounding streets, focusing on falls prevention, strength and independence.",
+    nearby: ["Gateshead", "Windale", "Charlestown", "Bennetts Green", "Belmont North"],
+  },
+  {
+    slug: "physiotherapy-swansea",
+    name: "Swansea",
+    region: "Lake Macquarie",
+    intro:
+      "We deliver home visit physiotherapy across Swansea and the southern Lake Macquarie coast, helping older adults stay strong, steady and independent at home.",
+    local:
+      "Swansea's coastal community includes many older residents living near the channel and lake. Our physiotherapists regularly visit homes throughout Swansea, Caves Beach and Blacksmiths, supporting balance, mobility and post-hospital rehabilitation without the need to travel.",
+    nearby: ["Caves Beach", "Blacksmiths", "Belmont", "Pelican", "Nords Wharf"],
+  },
+  {
+    slug: "physiotherapy-toronto",
+    name: "Toronto",
+    region: "Lake Macquarie",
+    intro:
+      "Fletcher Physiotherapy offers home visit physiotherapy in Toronto, bringing mobile aged care and rehabilitation physiotherapy to residents across western Lake Macquarie.",
+    local:
+      "Toronto's lakeside setting and established community make home visits especially valuable for older residents. We visit homes throughout Toronto, Booragul and Kilaben Bay, delivering personalised strength, balance and falls-prevention programs close to Toronto Polyclinic.",
+    nearby: ["Booragul", "Kilaben Bay", "Blackalls Park", "Fassifern", "Boolaroo"],
+  },
+  {
+    slug: "physiotherapy-glendale",
+    name: "Glendale",
+    region: "Lake Macquarie",
+    intro:
+      "We provide home visit physiotherapy across Glendale, supporting older adults, NDIS participants and Home Care Package clients in the comfort of their own homes.",
+    local:
+      "Centrally located in Lake Macquarie, Glendale is easy for our mobile physiotherapists to reach, and home to many families caring for ageing parents. We deliver mobility, strength and rehabilitation programs across Glendale, Cardiff and Argenton.",
+    nearby: ["Cardiff", "Argenton", "Edgeworth", "Boolaroo", "Speers Point"],
+  },
+  {
+    slug: "physiotherapy-tuggerah",
+    name: "Tuggerah",
+    region: "Central Coast",
+    intro:
+      "Fletcher Physiotherapy provides home visit physiotherapy in Tuggerah, delivering aged care, NDIS and Support at Home physiotherapy across the central Central Coast.",
+    local:
+      "Tuggerah and its surrounding suburbs have a growing need for accessible in-home care. Our physiotherapists visit homes throughout Tuggerah, close to Tuggerah Lakes and Westfield Tuggerah, supporting falls prevention, strength and mobility for older adults.",
+    nearby: ["Wyong", "Kanwal", "Berkeley Vale", "Ourimbah", "Long Jetty"],
+  },
+  {
+    slug: "physiotherapy-erina",
+    name: "Erina",
+    region: "Central Coast",
+    intro:
+      "We deliver home visit physiotherapy across Erina and the surrounding Central Coast, helping older adults and NDIS participants stay mobile, strong and independent at home.",
+    local:
+      "Erina is a busy Central Coast centre with a large older population. Our mobile physiotherapists visit homes throughout Erina, Terrigal and Wamberal, providing balance training, aged care rehabilitation and Home Care Package physiotherapy in the comfort of home.",
+    nearby: ["Terrigal", "Wamberal", "Green Point", "East Gosford", "Springfield"],
   },
 ];

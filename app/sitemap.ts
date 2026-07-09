@@ -8,6 +8,7 @@ const staticRoutes = [
   "/about",
   "/services",
   "/our-team",
+  "/daniel-lee-physiotherapist-newcastle",
   "/locations",
   "/refer-a-patient",
   "/contact",

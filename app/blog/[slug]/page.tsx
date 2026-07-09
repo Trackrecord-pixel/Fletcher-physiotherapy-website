@@ -59,7 +59,12 @@ export default async function ArticlePage({
     description: post.description,
     datePublished: post.date,
     dateModified: post.date,
-    author: { "@type": "Person", name: "Daniel Lee" },
+    author: {
+      "@type": "Person",
+      name: "Daniel Lee",
+      jobTitle: "APA Titled Pain Physiotherapist",
+      url: `${site.url}/our-team`,
+    },
     publisher: {
       "@type": "Organization",
       name: site.name,
@@ -82,10 +87,22 @@ export default async function ArticlePage({
       />
       <section className="section-py bg-white">
         <div className="container-px max-w-3xl">
-          <div className="flex items-center gap-2 text-sm text-navy-500">
-            <Icon name="calendar" className="h-4 w-4" /> {fmt(post.date)}
-            <span aria-hidden="true">·</span>
-            <Icon name="clock" className="h-4 w-4" /> {post.readMins} min read
+          <div className="flex flex-wrap items-center gap-4 border-b border-navy-100 pb-6">
+            <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-full border border-navy-100">
+              <Image src="/team/daniel-lee.jpg" alt="Daniel Lee" fill sizes="48px" className="object-cover" />
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-navy-900">By Daniel Lee</p>
+              <p className="text-xs text-navy-500">APA Titled Pain Physiotherapist</p>
+            </div>
+            <div className="flex items-center gap-4 text-sm text-navy-500 sm:ml-auto">
+              <span className="inline-flex items-center gap-1.5">
+                <Icon name="calendar" className="h-4 w-4" /> {fmt(post.date)}
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <Icon name="clock" className="h-4 w-4" /> {post.readMins} min read
+              </span>
+            </div>
           </div>
           <div className="relative mt-6 aspect-[16/9] w-full overflow-hidden rounded-2xl">
             <Image

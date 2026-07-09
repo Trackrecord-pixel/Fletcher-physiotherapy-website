@@ -4,6 +4,8 @@ import Icon from "./Icon";
 import FAQAccordion from "./FAQAccordion";
 import CTASection from "./CTASection";
 import Reveal from "./Reveal";
+import ContactForm from "./ContactForm";
+import { site, suburbs } from "@/lib/site";
 import { FaqSchema, ServiceSchema, BreadcrumbSchema } from "./StructuredData";
 import type { Faq } from "@/lib/site";
 
@@ -113,6 +115,49 @@ export default function LandingPage({ c }: { c: LandingContent }) {
               </div>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section className="section-py bg-sand">
+        <div className="container-px">
+          <h2 className="text-center text-2xl text-navy-900 sm:text-3xl">
+            Suburbs we service
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl text-center text-navy-600">
+            Home visit physiotherapy across Newcastle, Lake Macquarie and the
+            Central Coast.
+          </p>
+          <div className="mx-auto mt-8 flex max-w-4xl flex-wrap justify-center gap-2">
+            {suburbs.map((sub) => (
+              <Link
+                key={sub.slug}
+                href={`/${sub.slug}`}
+                className="rounded-full border border-navy-200 bg-white px-4 py-2 text-sm font-medium text-navy-700 transition-colors hover:border-navy-800 hover:text-navy-900"
+              >
+                {sub.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-py bg-white">
+        <div className="container-px grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <h2 className="text-2xl text-navy-900 sm:text-3xl">
+              Enquire about {c.eyebrow}
+            </h2>
+            <p className="mt-4 text-navy-600">
+              Send us a message and our friendly team will be in touch. Prefer to
+              talk now? Call us any time.
+            </p>
+            <a href={site.phoneHref} className="btn-primary mt-6">
+              <Icon name="phone" className="h-5 w-5" /> {site.phone}
+            </a>
+          </div>
+          <div className="lg:col-span-7">
+            <ContactForm />
+          </div>
         </div>
       </section>
 

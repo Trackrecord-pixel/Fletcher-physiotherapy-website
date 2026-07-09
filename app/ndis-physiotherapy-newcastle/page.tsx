@@ -5,7 +5,7 @@ import { landingPages } from "@/lib/landing";
 const c = landingPages["ndis-physiotherapy-newcastle"];
 
 export const metadata: Metadata = {
-  title: "NDIS Physiotherapy Newcastle | Home Visit NDIS Physio",
+  title: "NDIS Physiotherapy | Newcastle NSW",
   description:
     "NDIS physiotherapy in Newcastle at home. Functional goals, mobility, independence and clear reports for support coordinators. Self, plan and agency managed.",
   alternates: { canonical: "/ndis-physiotherapy-newcastle" },
