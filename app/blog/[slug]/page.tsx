@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
@@ -85,6 +86,16 @@ export default async function ArticlePage({
             <Icon name="calendar" className="h-4 w-4" /> {fmt(post.date)}
             <span aria-hidden="true">·</span>
             <Icon name="clock" className="h-4 w-4" /> {post.readMins} min read
+          </div>
+          <div className="relative mt-6 aspect-[16/9] w-full overflow-hidden rounded-2xl">
+            <Image
+              src={`/images/blog/${post.slug}.jpg`}
+              alt={post.title}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+            />
           </div>
           <article className="mt-8">
             {post.sections.map((sec) => (

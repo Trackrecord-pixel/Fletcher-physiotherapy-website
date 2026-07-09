@@ -9,16 +9,11 @@ const staticRoutes = [
   "/services",
   "/our-team",
   "/locations",
-  "/referrals",
   "/refer-a-patient",
   "/contact",
   "/faqs",
   "/blog",
-  "/home-visit-physiotherapy",
-  "/ndis-physiotherapy",
-  "/support-at-home-physiotherapy",
   "/chronic-pain-management",
-  "/falls-prevention",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

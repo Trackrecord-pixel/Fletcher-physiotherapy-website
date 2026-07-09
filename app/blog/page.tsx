@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Icon from "@/components/Icon";
@@ -39,7 +40,17 @@ export default function BlogIndex() {
         <div className="container-px grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {sorted.map((p, i) => (
             <Reveal key={p.slug} delay={(i % 3) * 70}>
-              <Link href={`/blog/${p.slug}`} className="card card-hover flex h-full flex-col">
+              <Link href={`/blog/${p.slug}`} className="card card-hover flex h-full flex-col p-0 overflow-hidden">
+                <div className="relative aspect-[16/9] w-full">
+                  <Image
+                    src={`/images/blog/${p.slug}.jpg`}
+                    alt={p.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-6">
                 <div className="flex items-center gap-2 text-xs text-navy-500">
                   <Icon name="calendar" className="h-4 w-4" /> {fmt(p.date)}
                   <span aria-hidden="true">·</span>
@@ -50,6 +61,7 @@ export default function BlogIndex() {
                 <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-800">
                   Read article <Icon name="arrow" className="h-4 w-4" />
                 </span>
+                </div>
               </Link>
             </Reveal>
           ))}
