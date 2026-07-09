@@ -661,4 +661,124 @@ export const posts: BlogPost[] = [
       { h2: "Expert, home-based support", body: ["At Fletcher Physiotherapy, chronic pain care is led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Pain Management from the University of Sydney. Delivered at home, this expert care helps older adults across Newcastle move with confidence and return to the activities that matter most."] },
     ],
   },
+  {
+    slug: "physiotherapy-for-osteoporosis",
+    title: "Physiotherapy for Osteoporosis in Older Adults",
+    description:
+      "How physiotherapy helps older adults with osteoporosis build bone-supporting strength, improve balance and reduce fracture risk \\u2014 safely, at home.",
+    date: "2026-01-24",
+    readMins: 6,
+    excerpt:
+      "Osteoporosis raises fracture risk, but the right exercise strengthens bones and prevents falls. Here's how physiotherapy helps.",
+    sections: [
+      { h2: "Osteoporosis and exercise", body: ["Osteoporosis weakens the bones and increases the risk of fractures, particularly from a fall. While it can feel frightening, the right exercise is one of the best ways to support bone health and, crucially, to prevent the falls that cause fractures.", "Exercise for osteoporosis must be appropriate and safe, which is where a physiotherapist's guidance is invaluable."] },
+      { h2: "How physiotherapy helps", body: ["A physiotherapist designs a safe program based on your individual bone health and abilities."], list: ["Bone-supporting strength exercises","Balance training to prevent falls","Posture and back-care advice","Guidance on safe versus risky movements","Confidence and mobility work","Home safety review"] },
+      { h2: "Safe, supervised support", body: ["Because certain movements can be risky with osteoporosis, professional guidance matters. Home visit physiotherapy provides safe, supervised exercise in your own home, tailored to protect your bones while keeping you strong and steady."] },
+    ],
+  },
+  {
+    slug: "staying-active-in-winter-for-seniors",
+    title: "Staying Active in Winter: A Guide for Seniors",
+    description:
+      "Practical tips to help older adults stay active, warm and safe during winter, and maintain strength and balance year-round.",
+    date: "2026-01-16",
+    readMins: 5,
+    excerpt:
+      "Cold, dark days make it easy to slow down. Here's how seniors can stay active and safe through winter.",
+    sections: [
+      { h2: "Why winter is a challenge", body: ["Shorter, colder days can make older adults far less active, and even a few weeks of reduced movement can lead to noticeable losses in strength and balance. Staying active through winter helps maintain the capability that independence depends on."] },
+      { h2: "Tips to stay active and safe", body: ["Small, consistent efforts make a big difference."], list: ["Do indoor exercises on cold or wet days","Keep to a simple daily movement routine","Stay warm to keep muscles and joints comfortable","Take short walks when the weather allows","Break up long periods of sitting","Stay socially connected and motivated"] },
+      { h2: "Keeping momentum with support", body: ["A physiotherapist can provide a safe home exercise program that keeps you moving regardless of the weather. Home visit physiotherapy is especially helpful in winter, bringing supervised exercise to you so you never have to head out in the cold to stay strong."] },
+    ],
+  },
+  {
+    slug: "how-to-prevent-muscle-loss-with-age",
+    title: "How to Prevent Muscle Loss with Age",
+    description:
+      "Understanding sarcopenia \\u2014 age-related muscle loss \\u2014 and how strength exercise and physiotherapy help older adults stay strong and independent.",
+    date: "2026-01-08",
+    readMins: 6,
+    excerpt:
+      "Muscle loss with age isn't inevitable. Here's how to keep your strength and independence.",
+    sections: [
+      { h2: "What is age-related muscle loss?", body: ["From around middle age, we naturally begin to lose muscle mass and strength \\u2014 a process called sarcopenia. Left unchecked, it makes everyday tasks harder and increases the risk of falls and frailty. The good news is that it is largely preventable and even reversible with the right exercise."] },
+      { h2: "How to maintain your strength", body: ["Muscle responds to being used, at any age. The key is regular, progressive strength exercise."], list: ["Strength exercises at least twice a week","Progressive resistance as you get stronger","Enough protein in your diet","Staying generally active day to day","Targeting the legs and core for independence","Consistency over intensity"] },
+      { h2: "The role of physiotherapy", body: ["A physiotherapist can assess your strength and design a safe, effective program tailored to you \\u2014 then progress it over time. For older adults, home visit physiotherapy makes strength training accessible and safe, helping you preserve the muscle that keeps you independent."] },
+    ],
+  },
+  {
+    slug: "physiotherapy-for-lower-back-pain-in-seniors",
+    title: "Physiotherapy for Lower Back Pain in Seniors",
+    description:
+      "How physiotherapy helps older adults manage lower back pain and stay mobile and active \\u2014 with care delivered at home.",
+    date: "2025-12-30",
+    readMins: 5,
+    excerpt:
+      "Lower back pain is common in later life. Here's how physiotherapy helps you move comfortably again.",
+    sections: [
+      { h2: "Back pain and older adults", body: ["Lower back pain is one of the most common complaints among older adults, and it can significantly limit movement and quality of life. While it is common, it should not simply be accepted \\u2014 physiotherapy can help you manage pain and move more comfortably."] },
+      { h2: "How physiotherapy helps", body: ["A physiotherapist assesses the causes of your back pain and builds a program to reduce it and restore function."], list: ["Gentle exercises to ease pain and stiffness","Core and back strengthening","Posture and movement advice","Hands-on treatment where appropriate","Strategies for daily activities","A gradual return to normal movement"] },
+      { h2: "Care in your own home", body: ["Travelling with back pain can be uncomfortable. Home visit physiotherapy brings treatment to you and tailors your program to your everyday environment and activities, helping you move and live more comfortably."] },
+    ],
+  },
+  {
+    slug: "what-to-expect-from-your-first-ndis-physio-session",
+    title: "What to Expect from Your First NDIS Physio Session",
+    description:
+      "A guide to your first NDIS physiotherapy session at home \\u2014 the assessment, goal-setting, program and reporting, so you know what to expect.",
+    date: "2025-12-22",
+    readMins: 5,
+    excerpt:
+      "New to NDIS physiotherapy? Here's exactly what happens at your first session.",
+    sections: [
+      { h2: "Before your first session", body: ["Getting started with NDIS physiotherapy is simple. After you make contact, we confirm a convenient time and discuss your goals, health history and plan details. There's nothing you need to prepare beyond a comfortable space to move."] },
+      { h2: "During the assessment", body: ["Your first session focuses on understanding you and your goals."], list: ["A discussion of your goals and daily challenges","An assessment of movement, strength and balance","A look at your home environment","Setting clear, functional goals","Beginning your personalised program","Time for your questions"] },
+      { h2: "What happens next", body: ["After the assessment, your physiotherapist builds a tailored program and, where needed, provides reports to support your plan. Sessions continue at home, progressing as you improve, with clear communication to you, your family and your support coordinator throughout."] },
+    ],
+  },
+  {
+    slug: "caring-for-an-ageing-parent-at-home",
+    title: "Caring for an Ageing Parent at Home: How Physiotherapy Helps",
+    description:
+      "Practical guidance for adult children caring for an ageing parent, and how home visit physiotherapy supports safety, mobility and independence.",
+    date: "2025-12-14",
+    readMins: 6,
+    excerpt:
+      "Worried about a parent living at home? Here's how physiotherapy supports them \\u2014 and gives families peace of mind.",
+    sections: [
+      { h2: "The challenge for families", body: ["Watching a parent become less steady or confident is difficult, and many adult children feel unsure how to help. You want your parent to stay safe and independent, but you may not live nearby or know where to start. Physiotherapy can be a powerful part of the answer."] },
+      { h2: "How physiotherapy supports your parent", body: ["Home visit physiotherapy addresses the physical changes that most threaten independence, and involves families along the way."], list: ["Improving strength, balance and mobility","Reducing falls risk and reviewing home hazards","Rebuilding confidence to stay active","Supporting recovery after illness or hospital","Clear communication with family members","Guidance you can use to help between visits"] },
+      { h2: "Peace of mind for you", body: ["Knowing a qualified physiotherapist is regularly supporting your parent at home brings real reassurance. We keep families informed and involved, and help your parent stay strong, safe and independent in the home they love. Support may be available through a Home Care Package, Support at Home or the NDIS."] },
+    ],
+  },
+  {
+    slug: "physiotherapy-for-shoulder-pain-in-older-adults",
+    title: "Physiotherapy for Shoulder Pain in Older Adults",
+    description:
+      "How physiotherapy helps older adults relieve shoulder pain and restore movement for everyday tasks \\u2014 with treatment delivered at home.",
+    date: "2025-12-06",
+    readMins: 5,
+    excerpt:
+      "Shoulder pain can make daily tasks hard. Here's how physiotherapy restores comfortable movement.",
+    sections: [
+      { h2: "Shoulder pain and daily life", body: ["The shoulder is one of the most mobile joints in the body, and shoulder pain can make everyday tasks \\u2014 dressing, reaching, cooking \\u2014 surprisingly difficult. In older adults, shoulder pain often develops gradually and can steadily limit independence if not addressed."] },
+      { h2: "How physiotherapy helps", body: ["A physiotherapist identifies the cause of your shoulder pain and builds a program to restore comfortable movement."], list: ["Exercises to restore shoulder movement","Strengthening the muscles around the joint","Hands-on treatment to ease pain","Posture and movement advice","Strategies for daily tasks","A gradual return to normal activity"] },
+      { h2: "Convenient home-based care", body: ["Home visit physiotherapy makes treatment easy to access and tailors your program to the real tasks you want to return to \\u2014 helping you use your shoulder comfortably and confidently again."] },
+    ],
+  },
+  {
+    slug: "getting-up-safely-after-a-fall",
+    title: "How to Get Up Safely After a Fall",
+    description:
+      "A step-by-step guide to getting up safely after a fall, and how physiotherapy teaches older adults the skills and strength to do it.",
+    date: "2025-11-28",
+    readMins: 5,
+    excerpt:
+      "Knowing how to get up after a fall is a vital skill. Here's how physiotherapy teaches it.",
+    sections: [
+      { h2: "Why this skill matters", body: ["Being unable to get up after a fall is a serious risk for older adults \\u2014 a long time on the floor can lead to further health problems. Learning how to get up safely, and building the strength to do it, is an important part of falls management. This should be practised with a physiotherapist before you need it."] },
+      { h2: "General steps to get up", body: ["If you fall and are not injured, the general approach is to move slowly and use furniture for support. A physiotherapist teaches and practises this with you safely."], list: ["Stay calm and check for injury","Roll onto your side, then onto hands and knees","Crawl to a sturdy chair or piece of furniture","Place your hands on the seat and bring one foot forward","Push up to standing and turn to sit","Rest before doing anything else"] },
+      { h2: "Building the strength and confidence", body: ["Getting up from the floor takes strength, coordination and practice. A physiotherapist helps you build these safely and rehearse the technique, so you and your family feel more confident. Home visit physiotherapy is ideal for practising this skill in your own home, where a fall is most likely to happen."] },
+    ],
+  },
 ];
