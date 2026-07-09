@@ -3,7 +3,7 @@ import PageHero from "./PageHero";
 import Icon from "./Icon";
 import CTASection from "./CTASection";
 import FAQAccordion from "./FAQAccordion";
-import { ServiceSchema, BreadcrumbSchema, FaqSchema } from "./StructuredData";
+import { BreadcrumbSchema, FaqSchema } from "./StructuredData";
 import { site, type Suburb } from "@/lib/site";
 
 const serviceLinks = [
@@ -39,7 +39,7 @@ export default function SuburbPage({ s }: { s: Suburb }) {
     <>
       <PageHero
         eyebrow={`Physiotherapy ${s.name}`}
-        title={`Home Visit Physiotherapy ${s.name} NSW`}
+        title={`Physiotherapy ${s.name} NSW`}
         intro={s.intro}
         breadcrumb={[
           { name: "Home", href: "/" },
@@ -164,6 +164,27 @@ export default function SuburbPage({ s }: { s: Suburb }) {
 
             <div className="mt-10">
               <h2 className="text-2xl text-navy-900 sm:text-3xl">
+                Why choose Fletcher Physiotherapy in {s.name}?
+              </h2>
+              <div className="prose-navy mt-4 space-y-4">
+                <p>
+                  Fletcher Physiotherapy is a dedicated home visit service led by an
+                  APA Titled Pain Physiotherapist. For {s.name} residents, that means
+                  expert, evidence-based physiotherapy delivered where you live — no
+                  travel, no parking and no waiting rooms — with a genuine focus on
+                  helping you stay strong, mobile and independent at home.
+                </p>
+                <p>
+                  We work with older adults, NDIS participants, Home Care Package and
+                  Support at Home clients and their families across {s.name}, and we
+                  communicate clearly with GPs, support coordinators and care providers
+                  every step of the way.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10">
+              <h2 className="text-2xl text-navy-900 sm:text-3xl">
                 Physiotherapy services we provide in {s.name}
               </h2>
               <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -222,7 +243,28 @@ export default function SuburbPage({ s }: { s: Suburb }) {
       </section>
 
       <CTASection title={`Book home visit physiotherapy in ${s.name}`} />
-      <ServiceSchema name={`Home Visit Physiotherapy ${s.name}`} description={s.intro} slug={s.slug} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "@id": `${site.url}/${s.slug}#localbusiness`,
+            name: `Fletcher Physiotherapy — ${s.name}`,
+            url: `${site.url}/${s.slug}`,
+            telephone: site.phone,
+            email: site.email,
+            medicalSpecialty: "Physiotherapy",
+            image: `${site.url}/images/og-default.png`,
+            parentOrganization: { "@id": `${site.url}/#organization` },
+            areaServed: [
+              { "@type": "City", name: s.name, address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
+              ...s.nearby.map((n) => ({ "@type": "Place", name: n })),
+            ],
+            serviceArea: { "@type": "AdministrativeArea", name: `${s.region}, NSW` },
+          }),
+        }}
+      />
       <FaqSchema items={faqs} />
       <BreadcrumbSchema
         items={[

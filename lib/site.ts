@@ -383,6 +383,16 @@ export type Suburb = {
 
 export const suburbs: Suburb[] = [
   {
+    slug: "physiotherapy-newcastle",
+    name: "Newcastle",
+    region: "Newcastle",
+    intro:
+      "Fletcher Physiotherapy provides home visit physiotherapy across Newcastle NSW, bringing expert mobile aged care, NDIS and Support at Home physiotherapy to residents throughout the city and its suburbs.",
+    local:
+      "Newcastle is home to a large and growing older population, from the inner-city suburbs through to the coast and the western growth areas. Our mobile physiotherapists visit homes right across Newcastle \u2014 near John Hunter Hospital, the beaches and the city centre \u2014 supporting people who find travelling to a clinic difficult, from falls prevention to post-hospital recovery.",
+    nearby: ["New Lambton", "Adamstown", "Hamilton", "Merewether", "Wallsend", "Kotara"],
+  },
+  {
     slug: "physiotherapy-charlestown",
     name: "Charlestown",
     region: "Lake Macquarie",

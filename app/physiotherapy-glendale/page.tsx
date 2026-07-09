@@ -5,7 +5,7 @@ import { suburbs } from "@/lib/site";
 const s = suburbs.find((x) => x.slug === "physiotherapy-glendale")!;
 
 export const metadata: Metadata = {
-  title: "Home Visit Physiotherapy Glendale NSW",
+  title: "Physiotherapy Glendale NSW",
   description:
     "Home visit physiotherapy in Glendale, Lake Macquarie NSW. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, aged care and post-hospital rehabilitation at home.",
   alternates: { canonical: "/physiotherapy-glendale" },
