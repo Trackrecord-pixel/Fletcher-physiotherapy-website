@@ -10,7 +10,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import Reveal from "@/components/Reveal";
 import FeatureList from "@/components/FeatureList";
 import { FaqSchema } from "@/components/StructuredData";
-import { services, whyChoose, faqs, team, locations, site } from "@/lib/site";
+import { services, whyChoose, homeFaqs, team, locations, site } from "@/lib/site";
 import type { IconName } from "@/components/Icon";
 
 
@@ -18,6 +18,19 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+
+      {/* Full-width banner */}
+      <section className="bg-white">
+        <Image
+          src="/images/hero-banner.jpg"
+          alt="Helping older Australians stay strong and independent with home visit physiotherapy in Newcastle"
+          width={1500}
+          height={1000}
+          priority
+          sizes="100vw"
+          className="h-auto w-full"
+        />
+      </section>
 
       {/* Full-width banner */}
       <section className="bg-white">
@@ -231,13 +244,13 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="lg:col-span-7">
-            <FAQAccordion items={faqs.slice(0, 6)} />
+            <FAQAccordion items={homeFaqs} />
           </div>
         </div>
       </section>
 
       <CTASection />
-      <FaqSchema items={faqs.slice(0, 6)} />
+      <FaqSchema items={homeFaqs} />
     </>
   );
 }

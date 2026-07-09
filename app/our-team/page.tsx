@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import Icon from "@/components/Icon";
 import CTASection from "@/components/CTASection";
 import Reveal from "@/components/Reveal";
-import { BreadcrumbSchema } from "@/components/StructuredData";
+import { BreadcrumbSchema, PersonSchema } from "@/components/StructuredData";
 import { team } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -102,6 +102,7 @@ export default function TeamPage() {
           { name: "Our Team", href: "/our-team" },
         ]}
       />
+      <PersonSchema />
     </>
   );
 }

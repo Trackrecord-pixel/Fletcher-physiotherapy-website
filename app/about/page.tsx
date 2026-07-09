@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import Icon from "@/components/Icon";
 import CTASection from "@/components/CTASection";
 import Reveal from "@/components/Reveal";
-import { BreadcrumbSchema } from "@/components/StructuredData";
+import { BreadcrumbSchema, PersonSchema } from "@/components/StructuredData";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -136,6 +137,51 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Director authority — E-E-A-T */}
+      <section className="section-py bg-white">
+        <div className="container-px grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-5">
+            <div className="relative overflow-hidden rounded-3xl border border-navy-100 bg-sand shadow-card">
+              <div className="relative aspect-[4/5] w-full">
+                <Image
+                  src="/team/daniel-lee.jpg"
+                  alt="Daniel Lee, APA Titled Pain Physiotherapist and Director of Fletcher Physiotherapy"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="lg:col-span-7">
+            <span className="eyebrow">Experience &amp; expertise</span>
+            <h2 className="mt-4 text-3xl sm:text-4xl">
+              Led by an APA Titled Pain Physiotherapist
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-navy-700">
+              Our Director and Principal Physiotherapist, <strong>Daniel Lee</strong>, is
+              an <strong>APA Titled Pain Physiotherapist</strong> — a credential awarded by
+              the Australian Physiotherapy Association to physiotherapists with advanced
+              training and specialist expertise in pain management. He holds a
+              <strong> Master of Pain Management from the University of Sydney</strong>.
+            </p>
+            <p className="mt-4 text-lg leading-relaxed text-navy-700">
+              Daniel works extensively with chronic pain, complex conditions and older
+              adults, using evidence-based, functional rehabilitation to help clients move
+              with confidence and stay independent at home.
+            </p>
+            <ul className="mt-6 flex flex-wrap gap-2">
+              {["Chronic Pain","Complex Conditions","Older Adults","Functional Rehabilitation"].map((t)=>(
+                <li key={t} className="rounded-full bg-beige-100 px-3.5 py-1.5 text-sm font-medium text-navy-700">{t}</li>
+              ))}
+            </ul>
+            <Link href="/our-team" className="btn-secondary mt-7">
+              Meet the full team <Icon name="arrow" className="h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <CTASection />
       <BreadcrumbSchema
         items={[
@@ -143,6 +189,7 @@ export default function AboutPage() {
           { name: "About", href: "/about" },
         ]}
       />
+      <PersonSchema />
     </>
   );
 }

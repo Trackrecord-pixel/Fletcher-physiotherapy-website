@@ -3,9 +3,10 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Icon from "@/components/Icon";
 import CTASection from "@/components/CTASection";
+import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import { BreadcrumbSchema } from "@/components/StructuredData";
-import { locations, site } from "@/lib/site";
+import { locations, suburbs, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Service Areas | Newcastle, Lake Macquarie & Central Coast",
@@ -83,6 +84,30 @@ export default function LocationsPage() {
             </a>{" "}
             and we&rsquo;ll let you know.
           </p>
+        </div>
+      </section>
+
+      {/* Suburb pages — internal linking */}
+      <section className="section-py bg-white">
+        <div className="container-px">
+          <SectionHeading
+            center
+            eyebrow="Suburbs we visit"
+            title="Home visit physiotherapy near you"
+            intro="Explore home visit physiotherapy in these Newcastle, Lake Macquarie and Central Coast suburbs."
+          />
+          <div className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {suburbs.map((sub) => (
+              <Link
+                key={sub.slug}
+                href={`/${sub.slug}`}
+                className="card card-hover flex items-center gap-3 py-4"
+              >
+                <Icon name="pin" className="h-5 w-5 text-navy-700" />
+                <span className="font-semibold text-navy-900">{sub.name}</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

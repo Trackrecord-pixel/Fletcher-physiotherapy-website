@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import Icon from "./Icon";
-import { primaryNav, servicesNav, site } from "@/lib/site";
+import { primaryNav, servicesNav, suburbs, site } from "@/lib/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -63,10 +63,12 @@ export default function Footer() {
             <h2 className="text-sm font-semibold uppercase tracking-widest text-white">
               Service Areas
             </h2>
-            <ul className="mt-5 space-y-3 text-sm">
-              {site.areasServed.map((a) => (
-                <li key={a} className="inline-flex items-center gap-2.5 text-navy-200">
-                  <Icon name="pin" className="h-4 w-4 text-beige-300" /> {a}, {site.region}
+            <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+              {suburbs.map((sub) => (
+                <li key={sub.slug}>
+                  <Link href={`/${sub.slug}`} className="inline-flex items-center gap-2 text-navy-200 hover:text-white">
+                    <Icon name="pin" className="h-4 w-4 text-beige-300" /> {sub.name}
+                  </Link>
                 </li>
               ))}
             </ul>

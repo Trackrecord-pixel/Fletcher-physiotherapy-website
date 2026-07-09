@@ -29,17 +29,18 @@ export const primaryNav: NavLink[] = [
   { label: "Services", href: "/services" },
   { label: "Our Team", href: "/our-team" },
   { label: "Locations", href: "/locations" },
-  { label: "Referrals", href: "/referrals" },
-  { label: "FAQs", href: "/faqs" },
+  { label: "Blog", href: "/blog" },
+  { label: "Refer a Patient", href: "/refer-a-patient" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const servicesNav: NavLink[] = [
-  { label: "Home Visit Physiotherapy", href: "/home-visit-physiotherapy" },
-  { label: "NDIS Physiotherapy", href: "/ndis-physiotherapy" },
-  { label: "Support at Home Physiotherapy", href: "/support-at-home-physiotherapy" },
-  { label: "Chronic Pain Management", href: "/chronic-pain-management" },
-  { label: "Falls Prevention", href: "/falls-prevention" },
+  { label: "Home Visit Physiotherapy", href: "/home-visit-physiotherapy-newcastle" },
+  { label: "Mobile Physiotherapist", href: "/mobile-physiotherapist-newcastle" },
+  { label: "Aged Care Physiotherapy", href: "/aged-care-physiotherapy-newcastle" },
+  { label: "NDIS Physiotherapy", href: "/ndis-physiotherapy-newcastle" },
+  { label: "Support at Home Physiotherapy", href: "/support-at-home-physiotherapy-newcastle" },
+  { label: "Falls Prevention", href: "/falls-prevention-physiotherapy-newcastle" },
   { label: "All Services", href: "/services" },
 ];
 
@@ -147,18 +148,18 @@ export const team: TeamMember[] = [
     name: "Daniel Lee",
     role: "Director & Principal Physiotherapist",
     photo: "/team/daniel-lee.jpg",
-    credentials: "Master of Pain Management, University of Sydney",
+    credentials: "APA Titled Pain Physiotherapist · Master of Pain Management (University of Sydney)",
     bio: [
-      "Daniel has a Master's degree in Pain Management from the University of Sydney and a strong focus on pain management and functional rehabilitation.",
-      "His approach centres on understanding each patient's experience and goals, combining hands-on treatment with simple, practical strategies to help patients move with confidence and return to meaningful daily activities.",
-      "He focuses on long-term outcomes, reducing fear around movement, and building independence through tailored rehabilitation.",
+      "Daniel Lee is the Director and Principal Physiotherapist at Fletcher Physiotherapy and an APA Titled Pain Physiotherapist — a credential awarded by the Australian Physiotherapy Association (APA) to physiotherapists who have completed advanced training and demonstrated specialist expertise in pain management.",
+      "He holds a Master of Pain Management from the University of Sydney and works extensively with chronic pain, complex conditions and older adults, combining hands-on treatment with practical, evidence-based strategies that help people move with confidence.",
+      "Daniel's focus is functional rehabilitation and long-term outcomes — reducing fear around movement, rebuilding strength and mobility, and helping clients return to the everyday activities that matter to them, safely in their own homes.",
     ],
     interests: [
       "Chronic Pain",
+      "Complex Conditions",
+      "Older Adults & Aged Care",
       "Functional Rehabilitation",
       "Home Visit Physiotherapy",
-      "NDIS",
-      "Support at Home",
       "Falls Prevention",
     ],
   },
@@ -341,5 +342,124 @@ export const testimonials = [
       "After my hip surgery I dreaded travelling to a clinic. Having physio at home meant I actually did my program and recovered faster.",
     author: "Margaret T.",
     detail: "Post-surgical rehabilitation client, Central Coast",
+  },
+];
+
+export const homeFaqs: Faq[] = [
+  {
+    q: "Does a Home Care Package cover physiotherapy?",
+    a: "Yes. Physiotherapy is an allied health service that can be funded through a Home Care Package (Levels 1–4) when it supports your goals — such as improving mobility, building strength or reducing falls risk. We work directly with your Home Care provider and care plan, and can provide the documentation they need.",
+  },
+  {
+    q: "Can NDIS funding be used for physiotherapy?",
+    a: "Yes. Physiotherapy is commonly funded under Capacity Building – Improved Daily Living for eligible NDIS participants. We support self-managed, plan-managed and agency-managed participants with functional assessments, home exercise programs, mobility and falls-prevention work, and clear reports for plan reviews.",
+  },
+  {
+    q: "Do you provide physiotherapy at home?",
+    a: "Yes — home visits are our core service. Our mobile physiotherapists come to you across Newcastle, Lake Macquarie and the Central Coast, so there is no travel, parking or waiting room. You receive expert care in the comfort and safety of your own home.",
+  },
+  {
+    q: "What suburbs do you visit?",
+    a: "We provide home visit physiotherapy across Newcastle, Lake Macquarie, the Central Coast and the wider Hunter Region — including Charlestown, Belmont, Warners Bay, Cardiff, Fletcher, New Lambton, Gosford and Wyong. If your suburb isn't listed, contact us and we'll confirm availability.",
+  },
+  {
+    q: "How can physiotherapy prevent falls?",
+    a: "Falls prevention physiotherapy combines a balance and mobility assessment, a tailored strength and balance exercise program, gait and confidence training, and a review of hazards in your home. This evidence-based approach is proven to reduce falls risk and help older adults stay safely independent.",
+  },
+  {
+    q: "Do I need a GP referral?",
+    a: "Not for private physiotherapy — you can contact us directly. A GP referral may be required for certain funding streams, such as a Chronic Disease Management (CDM/EPC) plan. We're happy to explain what applies to your situation.",
+  },
+];
+
+export type Suburb = {
+  slug: string;
+  name: string;
+  region: string;
+  intro: string;
+  local: string;
+  nearby: string[];
+};
+
+export const suburbs: Suburb[] = [
+  {
+    slug: "physiotherapy-charlestown",
+    name: "Charlestown",
+    region: "Lake Macquarie",
+    intro:
+      "Fletcher Physiotherapy provides home visit physiotherapy throughout Charlestown, bringing expert mobile care to older adults, NDIS participants and Support at Home clients across this busy Lake Macquarie centre.",
+    local:
+      "As one of Lake Macquarie's largest suburbs, Charlestown is home to many families caring for ageing parents. We visit private homes and residential settings around Charlestown Square, Dudley Road and the surrounding streets, so you never have to battle traffic or parking to receive quality physiotherapy.",
+    nearby: ["Kotara", "Gateshead", "Dudley", "Whitebridge", "Adamstown"],
+  },
+  {
+    slug: "physiotherapy-belmont",
+    name: "Belmont",
+    region: "Lake Macquarie",
+    intro:
+      "We deliver home visit physiotherapy across Belmont and the eastern Lake Macquarie peninsula, helping residents stay strong, steady and independent in their own homes.",
+    local:
+      "Belmont has a large community of retirees and older adults living close to the lake. Our mobile physiotherapists regularly visit homes near Belmont Hospital, Marks Point and Swansea, supporting falls prevention, post-hospital recovery and Home Care Package clients throughout the area.",
+    nearby: ["Marks Point", "Swansea", "Valentine", "Croudace Bay", "Jewells"],
+  },
+  {
+    slug: "physiotherapy-warners-bay",
+    name: "Warners Bay",
+    region: "Lake Macquarie",
+    intro:
+      "Fletcher Physiotherapy offers home visit physiotherapy in Warners Bay, a popular lakeside suburb where many older residents want to stay active and independent for as long as possible.",
+    local:
+      "From the foreshore to the streets around Warners Bay township, we bring balance training, strength programs and mobility rehabilitation directly to your door. We work closely with local GPs, Home Care providers and support coordinators across the Warners Bay and Boolaroo area.",
+    nearby: ["Boolaroo", "Speers Point", "Eleebana", "Mount Hutton", "Cardiff Heights"],
+  },
+  {
+    slug: "physiotherapy-cardiff",
+    name: "Cardiff",
+    region: "Lake Macquarie",
+    intro:
+      "We provide mobile physiotherapy across Cardiff and the surrounding western Lake Macquarie suburbs, supporting older adults, NDIS participants and people recovering from injury or surgery at home.",
+    local:
+      "Cardiff's mix of established homes and busy community makes home visits especially valuable for residents who find travelling to a clinic difficult. Our physiotherapists visit homes across Cardiff, Cardiff South and Glendale, delivering personalised rehabilitation and falls-prevention programs.",
+    nearby: ["Glendale", "Cardiff South", "Edgeworth", "Macquarie Hills", "New Lambton"],
+  },
+  {
+    slug: "physiotherapy-fletcher",
+    name: "Fletcher",
+    region: "Newcastle",
+    intro:
+      "Fletcher Physiotherapy provides home visit physiotherapy in Fletcher, a growing north-western Newcastle suburb with many families and older residents who value care delivered at home.",
+    local:
+      "Fletcher's newer estates and quiet streets are ideal for home-based rehabilitation, where our physiotherapists can assess your real living environment. We support Home Care Package and Support at Home clients, and people returning home after a hospital stay, across Fletcher, Minmi and Maryland.",
+    nearby: ["Maryland", "Minmi", "Wallsend", "Cameron Park", "Blue Gum Hills"],
+  },
+  {
+    slug: "physiotherapy-new-lambton",
+    name: "New Lambton",
+    region: "Newcastle",
+    intro:
+      "We offer home visit physiotherapy throughout New Lambton and surrounding inner-Newcastle suburbs, helping older adults improve mobility, balance and confidence at home.",
+    local:
+      "Close to John Hunter Hospital, New Lambton is a key area for post-hospital and rehabilitation clients returning home. Our mobile physiotherapists visit homes across New Lambton, New Lambton Heights and Lambton, coordinating with hospital teams, GPs and Home Care providers for a smooth recovery.",
+    nearby: ["Lambton", "New Lambton Heights", "Kotara", "Broadmeadow", "Adamstown"],
+  },
+  {
+    slug: "physiotherapy-gosford",
+    name: "Gosford",
+    region: "Central Coast",
+    intro:
+      "Fletcher Physiotherapy provides home visit physiotherapy across Gosford, bringing aged care, NDIS and Support at Home physiotherapy to residents throughout the central Central Coast.",
+    local:
+      "Gosford's large older population and proximity to Gosford Hospital make home-based physiotherapy an ideal option for people who prefer to recover and exercise at home. We visit suburbs across the Gosford area, supporting falls prevention, strength and post-hospital rehabilitation.",
+    nearby: ["East Gosford", "West Gosford", "Point Clare", "Narara", "Erina"],
+  },
+  {
+    slug: "physiotherapy-wyong",
+    name: "Wyong",
+    region: "Central Coast",
+    intro:
+      "We deliver home visit physiotherapy in Wyong and the northern Central Coast, helping older adults and NDIS participants stay mobile, strong and safely independent at home.",
+    local:
+      "Wyong and its surrounding communities have a strong need for accessible, in-home care. Our physiotherapists visit homes across Wyong, Tuggerah and Kanwal — close to Wyong Hospital — providing balance training, mobility programs and Home Care Package physiotherapy without the need to travel.",
+    nearby: ["Tuggerah", "Kanwal", "Watanobbi", "Tumbi Umbi", "The Entrance"],
   },
 ];

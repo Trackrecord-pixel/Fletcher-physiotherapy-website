@@ -1,28 +1,43 @@
 import type { MetadataRoute } from "next";
-import { site } from "@/lib/site";
+import { site, suburbs } from "@/lib/site";
+import { landingPages } from "@/lib/landing";
+import { posts } from "@/lib/blog";
 
-const routes = [
+const staticRoutes = [
   "",
   "/about",
   "/services",
+  "/our-team",
+  "/locations",
+  "/referrals",
+  "/refer-a-patient",
+  "/contact",
+  "/faqs",
+  "/blog",
   "/home-visit-physiotherapy",
   "/ndis-physiotherapy",
   "/support-at-home-physiotherapy",
   "/chronic-pain-management",
   "/falls-prevention",
-  "/our-team",
-  "/locations",
-  "/referrals",
-  "/contact",
-  "/faqs",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  return routes.map((path) => ({
+  const urls: string[] = [
+    ...staticRoutes,
+    ...Object.keys(landingPages).map((s) => `/${s}`),
+    ...suburbs.map((s) => `/${s.slug}`),
+    ...posts.map((p) => `/blog/${p.slug}`),
+  ];
+  return urls.map((path) => ({
     url: `${site.url}${path}`,
     lastModified: now,
     changeFrequency: path === "" ? "weekly" : "monthly",
-    priority: path === "" ? 1 : path.includes("physiotherapy") ? 0.9 : 0.7,
+    priority:
+      path === ""
+        ? 1
+        : path.includes("newcastle") || path.startsWith("/physiotherapy-")
+        ? 0.9
+        : 0.7,
   }));
 }

@@ -112,3 +112,42 @@ export function BreadcrumbSchema({
     />
   );
 }
+
+export function PersonSchema() {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Daniel Lee",
+    jobTitle: "APA Titled Pain Physiotherapist",
+    worksFor: { "@id": `${site.url}/#business` },
+    url: `${site.url}/our-team`,
+    image: `${site.url}/team/daniel-lee.jpg`,
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "University of Sydney",
+    },
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "APA Titled Pain Physiotherapist",
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "Master of Pain Management",
+      },
+    ],
+    knowsAbout: [
+      "Chronic pain",
+      "Complex conditions",
+      "Falls prevention",
+      "Aged care physiotherapy",
+      "Functional rehabilitation",
+    ],
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
