@@ -249,4 +249,281 @@ export const posts: BlogPost[] = [
       },
     ],
   },
+{
+    slug: "support-at-home-physiotherapy-explained",
+    title: "Support at Home Physiotherapy Explained",
+    description:
+      "What the Support at Home program means for physiotherapy in Australia \u2014 what's covered, who's eligible and how in-home physio helps older adults stay independent.",
+    date: "2026-05-28",
+    readMins: 6,
+    excerpt:
+      "The new Support at Home program is changing aged care. Here's what it means for physiotherapy and staying independent at home.",
+    sections: [
+      {
+        h2: "What is Support at Home?",
+        body: [
+          "Support at Home is the Australian Government program designed to help older people live independently in their own homes for longer, with services tailored to their needs. It brings together the kind of support previously delivered through Home Care Packages and other programs into a more flexible model.",
+          "Physiotherapy sits within the allied health and reablement side of this support, because staying mobile, strong and safe on your feet is fundamental to remaining at home.",
+        ],
+      },
+      {
+        h2: "How physiotherapy fits in",
+        body: [
+          "Under Support at Home, physiotherapy focuses on reablement \u2014 helping you regain and maintain function rather than simply managing decline. That means targeted programs to improve strength, balance, mobility and confidence, delivered in your own home.",
+          "A mobile physiotherapist coordinates with your provider and care plan, delivers care aligned to your goals, and provides any documentation required, making the process simple for you and your family.",
+        ],
+        list: [
+          "Strength and mobility programs",
+          "Balance training and falls prevention",
+          "Reablement after illness or hospital",
+          "Home exercise programs",
+          "Advice on equipment and home safety",
+          "Support to stay independent at home",
+        ],
+      },
+      {
+        h2: "Why in-home matters",
+        body: [
+          "Delivering physiotherapy at home means your program is built around your real environment \u2014 your stairs, your chair, your bathroom \u2014 so the gains translate directly into everyday independence. It also removes the barriers of travel and waiting rooms that can make attending a clinic so hard.",
+          "If you or a loved one is accessing Support at Home, physiotherapy is one of the most valuable services you can include.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "best-balance-exercises-for-seniors",
+    title: "Best Balance Exercises for Seniors",
+    description:
+      "Physiotherapist-recommended balance exercises for older adults to improve stability, reduce falls risk and build confidence \u2014 safe to practise at home.",
+    date: "2026-05-24",
+    readMins: 6,
+    excerpt:
+      "Balance can be trained at any age. Here are the balance exercises physiotherapists most often recommend for seniors.",
+    sections: [
+      {
+        h2: "Why balance training works",
+        body: [
+          "Balance naturally declines with age, but the good news is that it responds well to training at any stage of life. Practising balance exercises challenges the systems your body uses to stay steady \u2014 and, done consistently, meaningfully reduces your risk of falling.",
+          "Always check with a physiotherapist before starting, keep a sturdy support such as a bench nearby, and stop if you feel unsafe.",
+        ],
+      },
+      {
+        h2: "Balance exercises to try",
+        body: [
+          "Start gently and build up. Quality and safety matter far more than difficulty.",
+        ],
+        list: [
+          "Standing on one leg while holding a bench, building up your hold time",
+          "Heel-to-toe (tandem) standing, feet in a straight line",
+          "Weight shifts, transferring your weight side to side and front to back",
+          "Sit-to-stand from a sturdy chair to build the leg strength that supports balance",
+          "Marching on the spot while holding support",
+          "Heel and toe raises to strengthen the ankles",
+        ],
+      },
+      {
+        h2: "Getting the most from your program",
+        body: [
+          "Balance improves with regular practice \u2014 a little each day is more effective than an occasional long session. A physiotherapist can assess your individual balance, tailor these exercises to your ability and progress them safely over time.",
+          "For older adults, home visit physiotherapy makes this especially easy, with your program designed and supervised in the very space where you move each day.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-physiotherapy-prevents-falls-in-older-adults",
+    title: "How Physiotherapy Prevents Falls in Older Adults",
+    description:
+      "How physiotherapy reduces falls risk in older adults \u2014 through balance and strength training, gait retraining, confidence work and a home hazard review.",
+    date: "2026-05-16",
+    readMins: 6,
+    excerpt:
+      "Falls are largely preventable. Here's exactly how physiotherapy lowers the risk for older adults.",
+    sections: [
+      {
+        h2: "Understanding falls risk",
+        body: [
+          "Falls are the leading cause of injury-related loss of independence for older Australians, but the majority are preventable. Falls usually result from a combination of factors \u2014 reduced strength, poor balance, changes in walking pattern, and hazards in the home.",
+          "Physiotherapy is uniquely placed to address all of these at once, which is why it is one of the most effective falls-prevention strategies available.",
+        ],
+      },
+      {
+        h2: "How physiotherapy reduces the risk",
+        body: [
+          "A physiotherapist first assesses your individual risk factors, then builds a program that targets them directly.",
+        ],
+        list: [
+          "Progressive strength training for stronger, steadier legs",
+          "Balance and stability exercises",
+          "Gait and walking retraining",
+          "A review of hazards in your home",
+          "Rebuilding confidence and reducing fear of falling",
+          "Advice on footwear and walking aids where helpful",
+        ],
+      },
+      {
+        h2: "The confidence factor",
+        body: [
+          "The fear of falling can be as limiting as a fall itself, causing people to move less \u2014 which weakens muscles and actually increases falls risk. Physiotherapy breaks this cycle through graded, supported practice that rebuilds confidence.",
+          "Delivered at home, falls-prevention physiotherapy is especially powerful because hazards can be identified and addressed on the spot, and training happens where you actually move.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "home-visit-physio-vs-clinic-physio",
+    title: "Home Visit Physio vs Clinic Physio: Which Is Right for You?",
+    description:
+      "Comparing home visit physiotherapy and clinic physiotherapy \u2014 the benefits of each, and when in-home care is the better choice for older adults.",
+    date: "2026-05-08",
+    readMins: 5,
+    excerpt:
+      "Should you see a physio at a clinic or have one come to you? Here's how to decide.",
+    sections: [
+      {
+        h2: "The key difference",
+        body: [
+          "Clinic physiotherapy asks you to travel to a practice, while home visit physiotherapy brings a qualified physiotherapist to you. Both deliver the same professional standard of care \u2014 the difference is in convenience, comfort and, importantly, context.",
+        ],
+      },
+      {
+        h2: "Why home visits often win for older adults",
+        body: [
+          "For older adults and anyone who finds travel difficult, home visits remove the biggest barriers to consistent care: transport, parking, stairs and waiting rooms. But the advantages go beyond convenience.",
+          "Being treated at home lets your physiotherapist assess and train you in your real environment \u2014 the actual stairs, chair and bathroom you use every day \u2014 so your program is directly relevant to your life and the gains translate into genuine independence.",
+        ],
+        list: [
+          "No travel, parking or waiting rooms",
+          "Care in a familiar, comfortable setting",
+          "Assessment in your real environment",
+          "Ideal for limited mobility or fatigue",
+          "Easier for families and carers to be involved",
+          "Great for aged care, NDIS and post-hospital clients",
+        ],
+      },
+      {
+        h2: "When a clinic might suit",
+        body: [
+          "Clinic physiotherapy can suit people who are highly mobile and want access to specialised gym equipment. But for older adults focused on staying independent at home, home visit physiotherapy is usually the more practical and effective choice.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "exercises-for-elderly-living-alone",
+    title: "Safe Exercises for Elderly People Living Alone",
+    description:
+      "Simple, safe exercises for older adults living alone to maintain strength, balance and independence at home \u2014 with tips on staying safe.",
+    date: "2026-04-30",
+    readMins: 6,
+    excerpt:
+      "Living alone shouldn't mean losing strength. Here are safe exercises older adults can do at home.",
+    sections: [
+      {
+        h2: "Staying strong and safe at home",
+        body: [
+          "For older adults living alone, staying physically capable is key to remaining independent and safe. Regular gentle exercise maintains the strength and balance that everyday tasks depend on \u2014 but safety comes first.",
+          "Always keep a sturdy support nearby, exercise where you can reach a phone, and check with a physiotherapist before starting, especially if you have any health conditions.",
+        ],
+      },
+      {
+        h2: "Simple exercises to maintain independence",
+        body: [
+          "These exercises target the muscles and movements that matter most for daily life.",
+        ],
+        list: [
+          "Sit-to-stand from a sturdy chair to build leg strength",
+          "Heel raises while holding the kitchen bench",
+          "Standing marching to maintain hip strength and balance",
+          "Wall or bench push-ups for upper-body strength",
+          "Gentle standing balance holds",
+          "Regular short walks, indoors or out",
+        ],
+      },
+      {
+        h2: "How a physiotherapist helps",
+        body: [
+          "A physiotherapist can design a safe, personalised program suited to your ability and goals, and check that you are exercising correctly. For older adults living alone, home visit physiotherapy offers reassurance and supervision in your own home, and helps you keep doing the things that keep you independent.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-improve-walking-confidence-after-a-fall",
+    title: "How to Improve Walking Confidence After a Fall",
+    description:
+      "Practical, physiotherapist-backed steps to rebuild walking confidence and reduce fear of falling after a fall \u2014 for older adults.",
+    date: "2026-04-22",
+    readMins: 5,
+    excerpt:
+      "A fall can shake your confidence as much as your body. Here's how physiotherapy helps you walk with confidence again.",
+    sections: [
+      {
+        h2: "Why confidence matters after a fall",
+        body: [
+          "After a fall, it is completely natural to feel anxious about walking and moving. But this fear, while understandable, can lead to moving less \u2014 which weakens muscles, reduces balance and, ironically, increases the risk of another fall.",
+          "Rebuilding confidence is therefore just as important as rebuilding strength, and physiotherapy addresses both together.",
+        ],
+      },
+      {
+        h2: "Steps to rebuild walking confidence",
+        body: [
+          "Confidence returns through gradual, supported practice \u2014 not by avoiding movement.",
+        ],
+        list: [
+          "Start with supported exercises and progress gradually",
+          "Rebuild leg and hip strength for a steadier gait",
+          "Practise balance and walking in a safe, familiar space",
+          "Address hazards in the home that undermine confidence",
+          "Use a walking aid if it helps you move more freely",
+          "Celebrate small wins to rebuild trust in your body",
+        ],
+      },
+      {
+        h2: "How physiotherapy helps",
+        body: [
+          "A physiotherapist guides you safely through this process, tailoring the pace to you and providing the reassurance that makes progress possible. Delivered at home, this work happens exactly where you need to feel confident \u2014 walking through your own hallway, kitchen and front steps.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "when-should-older-adults-see-a-physiotherapist",
+    title: "When Should Older Adults See a Physiotherapist?",
+    description:
+      "The signs it's time for an older adult to see a physiotherapist \u2014 from reduced mobility and balance to pain, falls and recovery after hospital.",
+    date: "2026-04-14",
+    readMins: 5,
+    excerpt:
+      "Not sure if it's time to see a physio? Here are the signs older adults and families should look out for.",
+    sections: [
+      {
+        h2: "Don't wait for a crisis",
+        body: [
+          "Many people only think of physiotherapy after a serious fall or injury \u2014 but seeing a physiotherapist earlier, when the first signs of decline appear, is far more effective. Physiotherapy is as much about preventing problems as treating them.",
+        ],
+      },
+      {
+        h2: "Signs it's time to see a physiotherapist",
+        body: [
+          "For older adults and the families supporting them, these are common signs that physiotherapy could help.",
+        ],
+        list: [
+          "Difficulty getting out of a chair or climbing stairs",
+          "Feeling unsteady, or a fear of falling",
+          "One or more recent falls or near-falls",
+          "Walking less, or losing confidence on your feet",
+          "Ongoing pain that limits daily activities",
+          "Recovering after surgery, illness or a hospital stay",
+          "Wanting to stay independent at home for longer",
+        ],
+      },
+      {
+        h2: "Getting started",
+        body: [
+          "You don't need to wait for a referral to see a physiotherapist privately, and support may be available through NDIS, a Home Care Package or Support at Home. If any of these signs sound familiar, a home visit assessment is a simple, low-pressure first step toward staying strong and independent.",
+        ],
+      },
+    ],
+  },
 ];
