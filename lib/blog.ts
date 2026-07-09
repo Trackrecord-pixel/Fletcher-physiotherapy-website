@@ -526,4 +526,139 @@ export const posts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "physiotherapy-for-arthritis-in-seniors",
+    title: "Physiotherapy for Arthritis in Seniors",
+    description:
+      "How physiotherapy helps older adults manage arthritis pain and stiffness, protect their joints and stay active and independent at home.",
+    date: "2026-04-06",
+    readMins: 6,
+    excerpt:
+      "Arthritis doesn't have to mean giving up the activities you love. Here's how physiotherapy helps seniors stay mobile.",
+    sections: [
+      { h2: "Arthritis and staying active", body: ["Arthritis is one of the most common conditions affecting older adults, bringing joint pain, stiffness and reduced movement. It can be tempting to rest and avoid activity, but the right kind of movement is one of the best things you can do for arthritic joints.", "Physiotherapy helps you find that balance — keeping joints moving and muscles strong while protecting them from unnecessary strain."] },
+      { h2: "How physiotherapy helps", body: ["A physiotherapist assesses your joints, movement and goals, then builds a program to reduce pain and maintain function."], list: ["Gentle exercises to maintain joint movement","Strengthening the muscles that support your joints","Advice on pacing and protecting your joints","Hands-on treatment to ease pain and stiffness","Guidance on aids and home modifications","Strategies to stay active and independent"] },
+      { h2: "Care that comes to you", body: ["For older adults with arthritis, travelling to a clinic can be painful and tiring. Home visit physiotherapy removes that barrier and lets your program be tailored to your daily environment — so you can keep doing the things that matter, with less pain."] },
+    ],
+  },
+  {
+    slug: "how-to-choose-a-mobile-physiotherapist",
+    title: "How to Choose a Mobile Physiotherapist",
+    description:
+      "What to look for when choosing a mobile or home visit physiotherapist — qualifications, experience, funding options and the right questions to ask.",
+    date: "2026-03-29",
+    readMins: 5,
+    excerpt:
+      "Not all mobile physios are the same. Here's how to choose the right one for you or your loved one.",
+    sections: [
+      { h2: "Why the right choice matters", body: ["Choosing a mobile physiotherapist is an important decision, especially for older adults and people with complex needs. The right physiotherapist will not only be qualified, but experienced in the kind of care you need and reliable in their communication."] },
+      { h2: "What to look for", body: ["Keep these factors in mind when comparing mobile physiotherapy providers."], list: ["Qualifications and AHPRA registration","Experience with aged care, NDIS or your condition","Clear communication with families and providers","The funding types they work with","Whether they service your suburb","A focus on your goals and long-term outcomes"] },
+      { h2: "Questions worth asking", body: ["Don't hesitate to ask about a physiotherapist's experience with your situation, how they communicate progress, and how they work with your funding. A good provider will answer clearly and put you at ease. At Fletcher Physiotherapy, our care is led by an APA Titled Pain Physiotherapist with extensive experience in aged care and home-based rehabilitation."] },
+    ],
+  },
+  {
+    slug: "exercises-after-a-hip-replacement",
+    title: "Exercises to Do After a Hip Replacement",
+    description:
+      "A guide to safe rehabilitation exercises after a hip replacement, and how home visit physiotherapy supports a strong, confident recovery.",
+    date: "2026-03-21",
+    readMins: 6,
+    excerpt:
+      "Recovering from a hip replacement? Here's how physiotherapy and the right exercises help you get back on your feet.",
+    sections: [
+      { h2: "Recovery after a hip replacement", body: ["A hip replacement can dramatically improve quality of life, but a strong recovery depends on good rehabilitation. Physiotherapy helps you rebuild strength and movement safely, while protecting your new joint and following your surgeon's precautions.", "Always follow the specific guidance of your surgeon and physiotherapist — the exercises below are general examples only."] },
+      { h2: "Common early rehabilitation exercises", body: ["In the weeks after surgery, gentle, progressive exercise is key."], list: ["Ankle pumps to aid circulation","Gentle knee bends and straightening","Buttock and thigh muscle squeezes","Standing hip movements with support","Sit-to-stand practice from a firm chair","Guided walking practice"] },
+      { h2: "Why home-based rehab helps", body: ["Getting to a clinic after major surgery can be difficult. Home visit physiotherapy lets you begin and progress your rehabilitation safely at home, with your program tailored to your recovery and your environment — helping you regain confidence and independence sooner."] },
+    ],
+  },
+  {
+    slug: "physiotherapy-after-knee-replacement",
+    title: "Physiotherapy After a Knee Replacement",
+    description:
+      "How physiotherapy supports recovery after a knee replacement — restoring movement, strength and confidence, with rehabilitation delivered at home.",
+    date: "2026-03-13",
+    readMins: 5,
+    excerpt:
+      "Knee replacement recovery is all about rehabilitation. Here's how physiotherapy helps you regain full movement.",
+    sections: [
+      { h2: "The importance of rehabilitation", body: ["The success of a knee replacement depends heavily on the rehabilitation that follows. Consistent physiotherapy helps restore the movement and strength needed to walk, climb stairs and return to daily life — and reduces the risk of a stiff, poorly functioning joint."] },
+      { h2: "What rehabilitation involves", body: ["Your physiotherapist guides you through a graded program tailored to your recovery."], list: ["Exercises to restore knee bending and straightening","Progressive strengthening of the leg muscles","Swelling and pain management strategies","Walking and stair practice","Balance and confidence work","A gradual return to daily activities"] },
+      { h2: "Recovering at home", body: ["Home visit physiotherapy is ideal after a knee replacement, when travel is uncomfortable and consistency matters. Your physiotherapist brings the rehabilitation to you, keeping you on track and progressing safely toward full function."] },
+    ],
+  },
+  {
+    slug: "physiotherapy-for-parkinsons-at-home",
+    title: "Physiotherapy for Parkinson's Disease at Home",
+    description:
+      "How home-based physiotherapy helps people with Parkinson's disease maintain movement, balance and independence, and reduce falls risk.",
+    date: "2026-03-05",
+    readMins: 6,
+    excerpt:
+      "Physiotherapy plays a key role in living well with Parkinson's. Here's how home-based care helps.",
+    sections: [
+      { h2: "Parkinson's and movement", body: ["Parkinson's disease affects movement, balance and confidence, and these challenges tend to change over time. Physiotherapy is an important part of managing the condition, helping people stay as mobile, safe and independent as possible."] },
+      { h2: "How physiotherapy helps", body: ["A physiotherapist tailors a program to your individual symptoms and goals, and adapts it as your needs change."], list: ["Exercises to maintain movement and flexibility","Balance training to reduce falls risk","Strategies for walking and turning safely","Strength and posture work","Techniques to manage freezing and initiation","Support for confidence and daily activities"] },
+      { h2: "The benefit of home-based care", body: ["Practising in your own home means strategies can be applied directly to your everyday movements and spaces. Home visit physiotherapy also removes the stress of travel, and lets families and carers be involved. Many people with Parkinson's access this support through the NDIS or a Home Care Package."] },
+    ],
+  },
+  {
+    slug: "physiotherapy-after-stroke-at-home",
+    title: "Physiotherapy After a Stroke: Recovering at Home",
+    description:
+      "How home-based physiotherapy supports stroke recovery — rebuilding movement, strength and independence in the comfort of your own home.",
+    date: "2026-02-25",
+    readMins: 6,
+    excerpt:
+      "Recovery after a stroke continues long after hospital. Here's how home physiotherapy supports it.",
+    sections: [
+      { h2: "Recovery continues at home", body: ["Stroke recovery is a journey that continues well beyond the hospital. Ongoing physiotherapy is essential to rebuilding movement, strength and independence, and much of that progress happens once you are back home."] },
+      { h2: "How physiotherapy helps after a stroke", body: ["A physiotherapist works with you on the specific movements and skills affected by your stroke, tailoring the program to your recovery."], list: ["Retraining movement and coordination","Strengthening affected muscles","Balance and walking practice","Reducing falls risk","Regaining independence in daily tasks","Support and education for families and carers"] },
+      { h2: "Why home-based rehab works", body: ["Recovering at home means your rehabilitation is grounded in your real environment and everyday goals. Home visit physiotherapy removes the barrier of travel, supports consistent practice, and involves the people around you. Stroke rehabilitation is often funded through the NDIS or a Home Care Package."] },
+    ],
+  },
+  {
+    slug: "chair-exercises-for-older-adults",
+    title: "Chair Exercises for Older Adults with Limited Mobility",
+    description:
+      "Safe, seated chair exercises for older adults with limited mobility to maintain strength, circulation and independence at home.",
+    date: "2026-02-17",
+    readMins: 5,
+    excerpt:
+      "Limited mobility doesn't mean you can't exercise. These seated exercises help older adults stay strong.",
+    sections: [
+      { h2: "Exercise from a chair", body: ["For older adults with limited mobility, seated exercises are a safe and effective way to maintain strength, movement and circulation. Chair-based exercise reduces the risk of falling during the exercise itself, while still delivering real benefits.", "Use a sturdy chair without wheels, sit tall, and check with a physiotherapist before starting."] },
+      { h2: "Seated exercises to try", body: ["These gentle movements target the whole body."], list: ["Marching your legs while seated","Knee extensions, straightening one leg at a time","Seated heel and toe raises","Arm raises and shoulder circles","Seated trunk twists","Ankle circles to aid circulation"] },
+      { h2: "Building a safe program", body: ["A physiotherapist can design a seated program suited to your ability and gradually progress it as you get stronger. For those with limited mobility, home visit physiotherapy provides safe, supervised support in your own home — and can help you work toward standing and walking goals over time."] },
+    ],
+  },
+  {
+    slug: "how-often-should-seniors-exercise",
+    title: "How Often Should Seniors Exercise?",
+    description:
+      "How much and how often older adults should exercise to maintain strength, balance and independence — practical, physiotherapist-informed guidance.",
+    date: "2026-02-09",
+    readMins: 5,
+    excerpt:
+      "How much exercise do older adults really need? Here's a simple, realistic guide.",
+    sections: [
+      { h2: "Finding the right amount", body: ["One of the most common questions older adults ask is how much exercise they should be doing. The reassuring answer is that regular, moderate activity — not intense workouts — is what keeps you strong, steady and independent.", "Consistency matters more than intensity: a little most days is far better than an occasional big effort."] },
+      { h2: "A simple weekly approach", body: ["General guidance for older adults includes a mix of activity types across the week."], list: ["Some movement or walking on most days","Strength exercises two or more days a week","Balance exercises several times a week","Gentle flexibility work","Breaking up long periods of sitting","Adjusting to your ability and health"] },
+      { h2: "Getting it right for you", body: ["The ideal amount and type of exercise depends on your individual health, goals and abilities. A physiotherapist can create a safe, realistic program and progress it over time. Home visit physiotherapy makes it easy to build exercise into your daily routine, in your own home."] },
+    ],
+  },
+  {
+    slug: "managing-chronic-pain-in-older-adults",
+    title: "Managing Chronic Pain in Older Adults",
+    description:
+      "How physiotherapy helps older adults manage chronic pain and stay active — an evidence-based approach led by an APA Titled Pain Physiotherapist.",
+    date: "2026-02-01",
+    readMins: 6,
+    excerpt:
+      "Chronic pain is common in later life, but it can be managed. Here's how physiotherapy helps.",
+    sections: [
+      { h2: "Understanding chronic pain", body: ["Chronic, or persistent, pain is common in older adults and affects far more than the body — it can reduce activity, confidence and quality of life. Modern pain management recognises that pain is complex, and that gentle movement and the right strategies are central to managing it well."] },
+      { h2: "How physiotherapy helps", body: ["Physiotherapy takes an active, evidence-based approach to chronic pain, focused on restoring movement and function rather than simply resting."], list: ["Understanding your individual pain experience","Graded movement to reduce fear and rebuild capacity","Hands-on treatment where helpful","Practical day-to-day pain strategies","Strength and conditioning","A graded return to meaningful activities"] },
+      { h2: "Expert, home-based support", body: ["At Fletcher Physiotherapy, chronic pain care is led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Pain Management from the University of Sydney. Delivered at home, this expert care helps older adults across Newcastle move with confidence and return to the activities that matter most."] },
+    ],
+  },
 ];
