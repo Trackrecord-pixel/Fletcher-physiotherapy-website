@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
+import Icon from "@/components/Icon";
 import FeatureList from "@/components/FeatureList";
 import { BreadcrumbSchema } from "@/components/StructuredData";
-import { services } from "@/lib/site";
+import { services, conditionsNav } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Physiotherapy Services | Home Visits Newcastle & Central Coast",
@@ -82,6 +84,28 @@ export default function ServicesPage() {
               </div>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* Conditions we treat */}
+      <section className="section-py bg-white">
+        <div className="container-px">
+          <SectionHeading
+            center
+            eyebrow="Conditions we treat"
+            title="Specialist rehabilitation for common conditions"
+            intro="Expert home visit physiotherapy for the conditions that most affect older adults \u2014 delivered across Newcastle, Lake Macquarie and the Central Coast."
+          />
+          <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {conditionsNav.map((cnd) => (
+              <Link key={cnd.href} href={cnd.href} className="card card-hover flex items-center gap-4">
+                <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-beige-100 text-navy-800">
+                  <Icon name="pulse" className="h-5 w-5" />
+                </span>
+                <span className="font-semibold text-navy-900">{cnd.label}</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

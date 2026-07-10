@@ -453,4 +453,191 @@ export const landingPages: Record<string, LandingContent> = {
     ],
     ctaTitle: "Reduce falls risk and build lasting confidence",
   },
+
+  "stroke-rehabilitation-newcastle": {
+    slug: "stroke-rehabilitation-newcastle",
+    eyebrow: "Stroke Rehabilitation Newcastle",
+    h1: "Stroke Rehabilitation in Newcastle",
+    serviceName: "Stroke Rehabilitation Newcastle",
+    intro:
+      "Home-based stroke rehabilitation physiotherapy in Newcastle, helping people rebuild movement, strength and independence in the comfort of their own home.",
+    lead: [
+      "Fletcher Physiotherapy provides home visit stroke rehabilitation across Newcastle, Lake Macquarie and the Central Coast. Recovery from a stroke continues long after hospital, and much of the progress happens once you are back home.",
+      "Stroke can affect movement, strength, balance, coordination and confidence, and every person's recovery is different. We design an individualised program around your goals and work patiently alongside you and your family.",
+      "Led by an APA Titled Pain Physiotherapist experienced in neurological and complex rehabilitation, we help you regain as much function and independence as possible.",
+    ],
+    sections: [
+      { h2: "Rehabilitation after a stroke", body: ["Stroke rehabilitation helps you relearn movement and skills affected by the stroke, and build the strength and confidence to return to daily life. Consistent, targeted physiotherapy is central to making the most of the brain's ability to adapt.", "Because we come to you, your rehabilitation is grounded in your real environment and everyday goals, and consistent practice is far easier to maintain."] },
+      { h2: "What our stroke rehabilitation includes", body: ["Your program is tailored to your recovery and progresses as you improve."], list: ["Retraining movement and coordination","Strengthening affected muscles","Balance and walking practice","Falls prevention","Regaining independence in daily tasks","Education and support for families and carers"] },
+      { h2: "Funding your rehabilitation", body: ["Stroke rehabilitation is often funded through the NDIS or a Home Care Package, as well as privately. We work with participants and providers and supply the documentation and reports needed to support your plan.", "We also communicate closely with your GP, hospital team and support coordinators for a coordinated recovery."] },
+      { h2: "Why home-based stroke rehab works", body: ["Getting to a clinic after a stroke can be difficult, and consistency is one of the biggest factors in recovery. Home visit physiotherapy removes the barrier of travel, supports regular practice, and involves the people around you."] },
+    ],
+    faqs: [
+      { q: "Can stroke rehabilitation be done at home?", a: "Yes. Much of stroke recovery happens at home, and home-based physiotherapy is highly effective — practical, consistent and grounded in your real environment and goals." },
+      { q: "Is stroke rehabilitation covered by NDIS?", a: "It often is. Stroke rehabilitation physiotherapy is commonly funded under the NDIS, and can also be funded through a Home Care Package or privately." },
+      { q: "How soon should stroke rehab start after hospital?", a: "Generally, the sooner the better once you're home and medically stable. Contact us and we'll arrange a prompt home assessment." },
+    ],
+    related: [
+      { label: "Parkinson's Physiotherapy Newcastle", href: "/parkinsons-physiotherapy-newcastle" },
+      { label: "Aged Care Physiotherapy Newcastle", href: "/aged-care-physiotherapy-newcastle" },
+      { label: "NDIS Physiotherapy Newcastle", href: "/ndis-physiotherapy-newcastle" },
+      { label: "Home Visit Physiotherapy Newcastle", href: "/home-visit-physiotherapy-newcastle" },
+    ],
+    ctaTitle: "Start stroke rehabilitation at home in Newcastle",
+  },
+  "parkinsons-physiotherapy-newcastle": {
+    slug: "parkinsons-physiotherapy-newcastle",
+    eyebrow: "Parkinson's Physiotherapy Newcastle",
+    h1: "Parkinson's Physiotherapy in Newcastle",
+    serviceName: "Parkinson's Physiotherapy Newcastle",
+    intro:
+      "Home visit physiotherapy for Parkinson's disease in Newcastle, helping people maintain movement, balance and independence and reduce their falls risk.",
+    lead: [
+      "Fletcher Physiotherapy provides home-based physiotherapy for people living with Parkinson's disease across Newcastle, Lake Macquarie and the Central Coast. Physiotherapy is an important part of managing Parkinson's.",
+      "Parkinson's affects movement, balance and confidence, and these challenges change over time. We design a program tailored to your symptoms and goals, and adapt it as your needs evolve.",
+      "Our care is led by an APA Titled Pain Physiotherapist experienced in neurological and complex conditions.",
+    ],
+    sections: [
+      { h2: "Physiotherapy and Parkinson's", body: ["Movement is medicine for Parkinson's. Regular, targeted exercise helps maintain flexibility, strength and balance, and can improve walking, posture and everyday function. Physiotherapy also addresses challenges such as freezing, small steps and turning safely.", "Practising in your own home means these strategies apply directly to your daily movements and spaces."] },
+      { h2: "What our Parkinson's physiotherapy includes", body: ["Your program is individualised and reviewed regularly as your needs change."], list: ["Exercises to maintain movement and flexibility","Balance training to reduce falls risk","Strategies for walking, turning and freezing","Strength and posture work","Support for confidence and daily activities","Guidance for families and carers"] },
+      { h2: "Funding and support", body: ["Parkinson's physiotherapy is commonly funded through the NDIS or a Home Care Package, as well as privately. We work with participants, families and providers, and communicate reliably with your broader care team.", "We also help you access the right supports and equipment as your needs change."] },
+      { h2: "Why home-based care helps", body: ["Home visit physiotherapy removes the stress of travel and lets families and carers be involved in supporting your program, while keeping your care consistent and relevant to your real environment."] },
+    ],
+    faqs: [
+      { q: "Does physiotherapy help Parkinson's disease?", a: "Yes. Physiotherapy is a key part of managing Parkinson's, helping maintain movement, balance, walking and confidence, and reducing falls risk." },
+      { q: "Can I get Parkinson's physiotherapy at home?", a: "Yes — all our Parkinson's physiotherapy is delivered at home across Newcastle, Lake Macquarie and the Central Coast." },
+      { q: "Is Parkinson's physiotherapy funded by NDIS?", a: "It commonly is, and it can also be funded through a Home Care Package or privately." },
+    ],
+    related: [
+      { label: "Stroke Rehabilitation Newcastle", href: "/stroke-rehabilitation-newcastle" },
+      { label: "Falls Prevention Physiotherapy Newcastle", href: "/falls-prevention-physiotherapy-newcastle" },
+      { label: "Aged Care Physiotherapy Newcastle", href: "/aged-care-physiotherapy-newcastle" },
+      { label: "NDIS Physiotherapy Newcastle", href: "/ndis-physiotherapy-newcastle" },
+    ],
+    ctaTitle: "Book Parkinson's physiotherapy at home in Newcastle",
+  },
+  "arthritis-physiotherapy-newcastle": {
+    slug: "arthritis-physiotherapy-newcastle",
+    eyebrow: "Arthritis Physiotherapy Newcastle",
+    h1: "Arthritis Physiotherapy in Newcastle",
+    serviceName: "Arthritis Physiotherapy Newcastle",
+    intro:
+      "Home visit physiotherapy for arthritis in Newcastle, helping older adults ease joint pain and stiffness, protect their joints and stay active and independent.",
+    lead: [
+      "Fletcher Physiotherapy provides home-based arthritis physiotherapy across Newcastle, Lake Macquarie and the Central Coast. Arthritis is one of the most common conditions affecting older adults.",
+      "It can be tempting to rest when joints are painful, but appropriate movement is one of the best things you can do for arthritic joints. We help you find that balance safely.",
+      "Our care is led by an APA Titled Pain Physiotherapist, combining pain-management expertise with practical, evidence-based strategies.",
+    ],
+    sections: [
+      { h2: "Managing arthritis with physiotherapy", body: ["Physiotherapy for arthritis focuses on keeping joints moving, strengthening the muscles that support them, and managing pain — so you can keep doing the activities you enjoy. A tailored program can reduce stiffness, improve function and slow the loss of mobility.", "We assess your joints, movement and goals, then build a program suited to you."] },
+      { h2: "What our arthritis physiotherapy includes", body: ["Your program is gentle, progressive and tailored to your joints and goals."], list: ["Gentle exercises to maintain joint movement","Strengthening the muscles that support your joints","Advice on pacing and protecting your joints","Hands-on treatment to ease pain and stiffness","Guidance on aids and home modifications","Strategies to stay active and independent"] },
+      { h2: "Funding your care", body: ["Arthritis physiotherapy can be funded through a Home Care Package, Support at Home, the NDIS or privately, and sometimes a Chronic Disease Management plan. We'll help you understand what applies.", "We coordinate with your GP and provider where needed."] },
+      { h2: "Care that comes to you", body: ["For older adults with arthritis, travelling to a clinic can be painful and tiring. Home visit physiotherapy removes that barrier and tailors your program to your daily environment."] },
+    ],
+    faqs: [
+      { q: "Can physiotherapy help arthritis?", a: "Yes. Physiotherapy helps manage arthritis by maintaining joint movement, strengthening supporting muscles, easing pain and keeping you active and independent." },
+      { q: "Is exercise safe with arthritis?", a: "The right exercise is not only safe but beneficial for arthritic joints. A physiotherapist ensures your program is appropriate for you." },
+      { q: "Do you treat arthritis at home?", a: "Yes — all our arthritis physiotherapy is delivered at home across Newcastle, Lake Macquarie and the Central Coast." },
+    ],
+    related: [
+      { label: "Aged Care Physiotherapy Newcastle", href: "/aged-care-physiotherapy-newcastle" },
+      { label: "Senior Exercise Programs Newcastle", href: "/senior-exercise-programs-newcastle" },
+      { label: "Home Visit Physiotherapy Newcastle", href: "/home-visit-physiotherapy-newcastle" },
+      { label: "Falls Prevention Physiotherapy Newcastle", href: "/falls-prevention-physiotherapy-newcastle" },
+    ],
+    ctaTitle: "Ease arthritis pain with physiotherapy at home",
+  },
+  "hip-replacement-rehabilitation-newcastle": {
+    slug: "hip-replacement-rehabilitation-newcastle",
+    eyebrow: "Hip Replacement Rehabilitation Newcastle",
+    h1: "Hip Replacement Rehabilitation in Newcastle",
+    serviceName: "Hip Replacement Rehabilitation Newcastle",
+    intro:
+      "Home visit physiotherapy for hip replacement rehabilitation in Newcastle, helping you recover strength, movement and confidence safely at home.",
+    lead: [
+      "Fletcher Physiotherapy provides home-based hip replacement rehabilitation across Newcastle, Lake Macquarie and the Central Coast. A hip replacement can dramatically improve quality of life, but a strong recovery depends on good rehabilitation.",
+      "Getting to a clinic after major surgery can be difficult. Our physiotherapists bring your rehabilitation to you, so you can recover safely and consistently at home.",
+      "We always work within your surgeon's precautions, and our care is led by an APA Titled Pain Physiotherapist experienced in post-surgical rehabilitation.",
+    ],
+    sections: [
+      { h2: "Recovery after a hip replacement", body: ["Rehabilitation after a hip replacement helps you rebuild strength and movement, protect your new joint, and safely return to walking, stairs and daily activities. A well-structured program reduces complications and helps you regain independence sooner.", "We tailor your program to your recovery stage, your surgeon's guidance and your goals."] },
+      { h2: "What rehabilitation involves", body: ["Your program progresses gradually as you heal."], list: ["Exercises to restore hip strength and movement","Safe transfers and walking practice","Sit-to-stand and stair practice","Swelling and pain management strategies","Balance and confidence work","A gradual return to daily activities"] },
+      { h2: "Funding your rehabilitation", body: ["Hip replacement rehabilitation can be funded privately, through a Home Care Package, Support at Home or the NDIS. We'll help you understand your options and coordinate with your care team.", "We also communicate with your surgeon and GP as needed."] },
+      { h2: "Why home-based rehab helps", body: ["Home visit physiotherapy lets you begin and progress rehabilitation safely at home, when travel is uncomfortable and consistency matters most."] },
+    ],
+    faqs: [
+      { q: "How long is rehab after a hip replacement?", a: "It varies by individual, but rehabilitation typically continues for several weeks to months. Your physiotherapist tailors and progresses your program." },
+      { q: "Can I do hip replacement rehab at home?", a: "Yes — home-based rehabilitation is ideal after a hip replacement, when travel is uncomfortable and consistent practice is important." },
+      { q: "When should rehab start after surgery?", a: "Early, guided movement is important. Once you're home, contact us and we'll arrange a prompt assessment within your surgeon's guidelines." },
+    ],
+    related: [
+      { label: "Knee Replacement Rehabilitation Newcastle", href: "/knee-replacement-rehabilitation-newcastle" },
+      { label: "Home Visit Physiotherapy Newcastle", href: "/home-visit-physiotherapy-newcastle" },
+      { label: "Aged Care Physiotherapy Newcastle", href: "/aged-care-physiotherapy-newcastle" },
+      { label: "Falls Prevention Physiotherapy Newcastle", href: "/falls-prevention-physiotherapy-newcastle" },
+    ],
+    ctaTitle: "Recover from hip replacement surgery at home",
+  },
+  "knee-replacement-rehabilitation-newcastle": {
+    slug: "knee-replacement-rehabilitation-newcastle",
+    eyebrow: "Knee Replacement Rehabilitation Newcastle",
+    h1: "Knee Replacement Rehabilitation in Newcastle",
+    serviceName: "Knee Replacement Rehabilitation Newcastle",
+    intro:
+      "Home visit physiotherapy for knee replacement rehabilitation in Newcastle, restoring movement, strength and confidence in the comfort of your home.",
+    lead: [
+      "Fletcher Physiotherapy provides home-based knee replacement rehabilitation across Newcastle, Lake Macquarie and the Central Coast. The success of a knee replacement depends heavily on the rehabilitation that follows.",
+      "Consistent physiotherapy helps restore the movement and strength needed to walk, climb stairs and return to daily life — and reduces the risk of a stiff, poorly functioning joint.",
+      "Our physiotherapists bring rehabilitation to your door, led by an APA Titled Pain Physiotherapist experienced in post-surgical recovery.",
+    ],
+    sections: [
+      { h2: "Why rehabilitation matters", body: ["After a knee replacement, restoring full movement early is important to avoid long-term stiffness. A structured program rebuilds the strength and range of movement you need, while managing pain and swelling.", "We tailor your program to your recovery and your goals, and progress it as you improve."] },
+      { h2: "What rehabilitation involves", body: ["Your program is graded and guided at every stage."], list: ["Exercises to restore knee bending and straightening","Progressive strengthening of the leg muscles","Swelling and pain management strategies","Walking and stair practice","Balance and confidence work","A gradual return to daily activities"] },
+      { h2: "Funding your rehabilitation", body: ["Knee replacement rehabilitation can be funded privately, through a Home Care Package, Support at Home or the NDIS. We'll help you understand what applies and coordinate with your care team.", "We communicate with your surgeon and GP where needed."] },
+      { h2: "The benefit of home-based rehab", body: ["Home visit physiotherapy is ideal after a knee replacement, when travel is uncomfortable and consistency matters. Your physiotherapist brings the rehabilitation to you and helps you progress safely toward full function."] },
+    ],
+    faqs: [
+      { q: "How long does knee replacement rehab take?", a: "Recovery varies, but rehabilitation typically continues for several weeks to a few months. Your physiotherapist tailors and progresses your program." },
+      { q: "Can knee replacement rehab be done at home?", a: "Yes — home-based rehabilitation is ideal after a knee replacement, supporting consistent practice when travel is uncomfortable." },
+      { q: "Is knee replacement rehab funded?", a: "It can be funded privately, through a Home Care Package, Support at Home or the NDIS. We'll help you understand your options." },
+    ],
+    related: [
+      { label: "Hip Replacement Rehabilitation Newcastle", href: "/hip-replacement-rehabilitation-newcastle" },
+      { label: "Home Visit Physiotherapy Newcastle", href: "/home-visit-physiotherapy-newcastle" },
+      { label: "Senior Exercise Programs Newcastle", href: "/senior-exercise-programs-newcastle" },
+      { label: "Aged Care Physiotherapy Newcastle", href: "/aged-care-physiotherapy-newcastle" },
+    ],
+    ctaTitle: "Recover from knee replacement surgery at home",
+  },
+  "senior-exercise-programs-newcastle": {
+    slug: "senior-exercise-programs-newcastle",
+    eyebrow: "Senior Exercise Programs Newcastle",
+    h1: "Senior Exercise Programs in Newcastle",
+    serviceName: "Senior Exercise Programs Newcastle",
+    intro:
+      "Personalised senior exercise programs in Newcastle, delivered at home, to build strength, balance and confidence and help older adults stay independent.",
+    lead: [
+      "Fletcher Physiotherapy designs and delivers personalised senior exercise programs across Newcastle, Lake Macquarie and the Central Coast — in the comfort of your own home. Safe, effective exercise is one of the most powerful ways for older adults to stay strong and independent.",
+      "Unlike a generic class, our programs are built by a physiotherapist around your individual ability, health and goals, and supervised and progressed safely over time.",
+      "Our care is led by an APA Titled Pain Physiotherapist with extensive experience supporting older adults.",
+    ],
+    sections: [
+      { h2: "Why a tailored program matters", body: ["Exercise is only effective when it is right for you — challenging enough to make a difference, but safe for your body and health. A physiotherapist-designed program targets the strength, balance and mobility that independence depends on, and adapts as you improve.", "Delivered at home, your program fits naturally into your routine and uses your real environment."] },
+      { h2: "What our senior exercise programs include", body: ["Every program is individual, but typically focuses on the areas that matter most for independent living."], list: ["Progressive strength training","Balance and falls-prevention exercises","Mobility and flexibility work","Walking and endurance","Functional, everyday movements","Regular review and safe progression"] },
+      { h2: "Who they help", body: ["Our senior exercise programs suit older adults wanting to stay active, people recovering from illness or surgery, and those managing conditions such as arthritis or Parkinson's. They can be funded through a Home Care Package, Support at Home, the NDIS or privately.", "We also involve families and carers so they can support your program between visits."] },
+      { h2: "Exercise with confidence, at home", body: ["For many older adults, exercising safely and confidently is the biggest barrier. Home visit physiotherapy provides expert, supervised support in your own home, so you can build strength and stay independent without the worry."] },
+    ],
+    faqs: [
+      { q: "What are senior exercise programs?", a: "They're personalised exercise programs designed by a physiotherapist for older adults, focused on strength, balance and mobility to maintain independence — delivered and supervised at home." },
+      { q: "Are the programs safe for older adults?", a: "Yes. Programs are tailored to your ability and health, supervised by a physiotherapist, and progressed safely over time." },
+      { q: "Can senior exercise programs be funded?", a: "Yes — they can be funded through a Home Care Package, Support at Home, the NDIS or privately." },
+    ],
+    related: [
+      { label: "Aged Care Physiotherapy Newcastle", href: "/aged-care-physiotherapy-newcastle" },
+      { label: "Falls Prevention Physiotherapy Newcastle", href: "/falls-prevention-physiotherapy-newcastle" },
+      { label: "Arthritis Physiotherapy Newcastle", href: "/arthritis-physiotherapy-newcastle" },
+      { label: "Home Visit Physiotherapy Newcastle", href: "/home-visit-physiotherapy-newcastle" },
+    ],
+    ctaTitle: "Start a personalised senior exercise program at home",
+  },
 };

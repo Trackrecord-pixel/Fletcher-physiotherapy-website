@@ -44,6 +44,15 @@ export const servicesNav: NavLink[] = [
   { label: "All Services", href: "/services" },
 ];
 
+export const conditionsNav: NavLink[] = [
+  { label: "Stroke Rehabilitation", href: "/stroke-rehabilitation-newcastle" },
+  { label: "Parkinson's Physiotherapy", href: "/parkinsons-physiotherapy-newcastle" },
+  { label: "Arthritis Physiotherapy", href: "/arthritis-physiotherapy-newcastle" },
+  { label: "Hip Replacement Rehab", href: "/hip-replacement-rehabilitation-newcastle" },
+  { label: "Knee Replacement Rehab", href: "/knee-replacement-rehabilitation-newcastle" },
+  { label: "Senior Exercise Programs", href: "/senior-exercise-programs-newcastle" },
+];
+
 export type Service = {
   slug: string;
   title: string;
@@ -60,7 +69,7 @@ export const services: Service[] = [
     short:
       "Professional physiotherapy delivered in the comfort and safety of your own home — no travel, no waiting rooms.",
     icon: "home",
-    href: "/home-visit-physiotherapy",
+    href: "/home-visit-physiotherapy-newcastle",
     featured: true,
   },
   {
@@ -69,7 +78,7 @@ export const services: Service[] = [
     short:
       "Functional, goal-focused physiotherapy for NDIS participants — self-managed, plan-managed and agency-managed.",
     icon: "shield",
-    href: "/ndis-physiotherapy",
+    href: "/ndis-physiotherapy-newcastle",
     featured: true,
   },
   {
@@ -78,7 +87,7 @@ export const services: Service[] = [
     short:
       "Physiotherapy for Home Care Package and Support at Home clients to stay strong, mobile and safely independent.",
     icon: "heart",
-    href: "/support-at-home-physiotherapy",
+    href: "/support-at-home-physiotherapy-newcastle",
     featured: true,
   },
   {
@@ -95,7 +104,7 @@ export const services: Service[] = [
     short:
       "Balance assessment, home safety review and tailored exercise to reduce falls risk and build confidence.",
     icon: "balance",
-    href: "/falls-prevention",
+    href: "/falls-prevention-physiotherapy-newcastle",
   },
   {
     slug: "post-hospital-rehabilitation",
@@ -571,5 +580,55 @@ export const suburbs: Suburb[] = [
     local:
       "Erina is a busy Central Coast centre with a large older population. Our mobile physiotherapists visit homes throughout Erina, Terrigal and Wamberal, providing balance training, aged care rehabilitation and Home Care Package physiotherapy in the comfort of home.",
     nearby: ["Terrigal", "Wamberal", "Green Point", "East Gosford", "Springfield"],
+  },
+  {
+    slug: "physiotherapy-lambton",
+    name: "Lambton",
+    region: "Newcastle",
+    intro:
+      "Fletcher Physiotherapy provides home visit physiotherapy in Lambton, delivering mobile aged care, NDIS and Support at Home physiotherapy to residents across this established inner-Newcastle suburb.",
+    local:
+      "Close to John Hunter Hospital, Lambton is an ideal area for home-based rehabilitation, including for people returning home after a hospital stay. Our physiotherapists visit homes throughout Lambton, North Lambton and New Lambton, supporting falls prevention, strength and mobility for older adults.",
+    nearby: ["North Lambton", "New Lambton", "Jesmond", "Waratah", "Kotara"],
+  },
+  {
+    slug: "physiotherapy-mayfield",
+    name: "Mayfield",
+    region: "Newcastle",
+    intro:
+      "We deliver home visit physiotherapy across Mayfield, bringing expert mobile physiotherapy to older adults, NDIS participants and Support at Home clients in this historic inner-Newcastle suburb.",
+    local:
+      "Mayfield's established streets and strong community are home to many older residents who value care that comes to them. Our mobile physiotherapists visit homes across Mayfield, Mayfield East and Mayfield West, delivering falls prevention, aged care rehabilitation and post-hospital recovery.",
+    nearby: ["Waratah", "Warabrook", "Islington", "Tighes Hill", "Georgetown"],
+  },
+  {
+    slug: "physiotherapy-valentine",
+    name: "Valentine",
+    region: "Lake Macquarie",
+    intro:
+      "Fletcher Physiotherapy offers home visit physiotherapy in Valentine, helping residents of this eastern Lake Macquarie suburb stay strong, steady and independent at home.",
+    local:
+      "Valentine's peaceful lakeside setting is home to many retirees and older adults. Our physiotherapists regularly visit homes around Valentine, Croudace Bay and Eleebana, supporting balance, mobility and Home Care Package clients close to the lake.",
+    nearby: ["Eleebana", "Croudace Bay", "Belmont", "Warners Bay", "Belmont North"],
+  },
+  {
+    slug: "physiotherapy-cameron-park",
+    name: "Cameron Park",
+    region: "Lake Macquarie",
+    intro:
+      "We provide home visit physiotherapy across Cameron Park, delivering mobile aged care, NDIS and Support at Home physiotherapy to families and older adults in this growing western suburb.",
+    local:
+      "Cameron Park's newer estates and quiet streets are well suited to home-based rehabilitation, where our physiotherapists can tailor programs to your real environment. We support clients across Cameron Park, Edgeworth and West Wallsend with strength, balance and falls-prevention programs.",
+    nearby: ["Edgeworth", "West Wallsend", "Killingworth", "Barnsley", "Fletcher"],
+  },
+  {
+    slug: "physiotherapy-maitland",
+    name: "Maitland",
+    region: "Hunter Region",
+    intro:
+      "Fletcher Physiotherapy provides home visit physiotherapy across Maitland NSW, bringing mobile aged care, NDIS and Support at Home physiotherapy to residents throughout the Maitland and lower Hunter area.",
+    local:
+      "Maitland has a large and growing older population across its historic town centre and surrounding suburbs. Our physiotherapists visit homes throughout Maitland, East Maitland and Rutherford — close to Maitland Hospital — supporting falls prevention, aged care and post-hospital rehabilitation without the need to travel.",
+    nearby: ["East Maitland", "Rutherford", "Thornton", "Lorn", "Metford"],
   },
 ];

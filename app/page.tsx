@@ -110,7 +110,7 @@ export default function HomePage() {
                 participants, delivering functional assessments, mobility training,
                 exercise programs, falls prevention and pain management.
               </p>
-              <Link href="/ndis-physiotherapy" className="btn-accent mt-6">
+              <Link href="/ndis-physiotherapy-newcastle" className="btn-accent mt-6">
                 Explore NDIS <Icon name="arrow" className="h-4 w-4" />
               </Link>
             </div>
@@ -128,7 +128,7 @@ export default function HomePage() {
                 maintaining independence, mobility, strength, balance and falls
                 prevention — so you can remain safely in your own home.
               </p>
-              <Link href="/support-at-home-physiotherapy" className="btn-primary mt-6">
+              <Link href="/support-at-home-physiotherapy-newcastle" className="btn-primary mt-6">
                 Explore Support at Home <Icon name="arrow" className="h-4 w-4" />
               </Link>
             </div>
@@ -221,7 +221,7 @@ export default function HomePage() {
                 "NDIS, Home Care Package & private clients",
               ]}
             />
-            <Link href="/referrals" className="btn-accent mt-6">
+            <Link href="/refer-a-patient" className="btn-accent mt-6">
               Make a Referral <Icon name="arrow" className="h-4 w-4" />
             </Link>
           </div>

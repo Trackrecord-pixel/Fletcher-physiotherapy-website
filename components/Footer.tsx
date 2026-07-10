@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import Icon from "./Icon";
-import { primaryNav, servicesNav, suburbs, site } from "@/lib/site";
+import { primaryNav, servicesNav, conditionsNav, site } from "@/lib/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -57,21 +57,37 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+            <h2 className="mt-8 text-sm font-semibold uppercase tracking-widest text-white">
+              Conditions
+            </h2>
+            <ul className="mt-5 space-y-3 text-sm">
+              {conditionsNav.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="text-navy-200 hover:text-white">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div className="lg:col-span-3">
             <h2 className="text-sm font-semibold uppercase tracking-widest text-white">
               Service Areas
             </h2>
-            <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
-              {suburbs.map((sub) => (
-                <li key={sub.slug}>
-                  <Link href={`/${sub.slug}`} className="inline-flex items-center gap-2 text-navy-200 hover:text-white">
-                    <Icon name="pin" className="h-4 w-4 text-beige-300" /> {sub.name}
-                  </Link>
+            <ul className="mt-5 space-y-3 text-sm">
+              {site.areasServed.map((a) => (
+                <li key={a} className="inline-flex items-center gap-2.5 text-navy-200">
+                  <Icon name="pin" className="h-4 w-4 text-beige-300" /> {a}, {site.region}
                 </li>
               ))}
             </ul>
+            <Link
+              href="/locations"
+              className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-beige-200 hover:text-white"
+            >
+              View all locations <Icon name="arrow" className="h-4 w-4" />
+            </Link>
             <Link href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-accent mt-6">
               Book Online <Icon name="arrow" className="h-4 w-4" />
             </Link>
