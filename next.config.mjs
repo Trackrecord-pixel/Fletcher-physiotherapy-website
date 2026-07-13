@@ -11,6 +11,10 @@ const nextConfig = {
       { source: "/support-at-home-physiotherapy", destination: "/support-at-home-physiotherapy-newcastle", permanent: true },
       { source: "/falls-prevention", destination: "/falls-prevention-physiotherapy-newcastle", permanent: true },
       { source: "/referrals", destination: "/refer-a-patient", permanent: true },
+      { source: "/about-us", destination: "/about", permanent: true },
+      { source: "/ndis-&-support-at-home", destination: "/ndis-physiotherapy-newcastle", permanent: true },
+      { source: "/faq", destination: "/faqs", permanent: true },
+      { source: "/bulk-bill-1", destination: "/contact", permanent: true },
     ];
   },
 };
