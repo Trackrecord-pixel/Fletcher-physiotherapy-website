@@ -155,6 +155,26 @@ export default async function ArticlePage({
           </div>
 
           <div className="mt-12">
+            <h2 className="text-xl text-navy-900">Explore our services</h2>
+            <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+              {[
+                { label: "Home Visit Physiotherapy Newcastle", href: "/home-visit-physiotherapy-newcastle" },
+                { label: "Aged Care Physiotherapy Newcastle", href: "/aged-care-physiotherapy-newcastle" },
+                { label: "Falls Prevention Physiotherapy Newcastle", href: "/falls-prevention-physiotherapy-newcastle" },
+                { label: "NDIS Physiotherapy Newcastle", href: "/ndis-physiotherapy-newcastle" },
+                { label: "Support at Home Physiotherapy Newcastle", href: "/support-at-home-physiotherapy-newcastle" },
+                { label: "Senior Exercise Programs Newcastle", href: "/senior-exercise-programs-newcastle" },
+              ].map((r) => (
+                <li key={r.href}>
+                  <Link href={r.href} className="inline-flex items-center gap-1.5 text-navy-700 hover:text-navy-900">
+                    <Icon name="arrow" className="h-4 w-4 text-navy-400" /> {r.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="mt-10">
             <h2 className="text-xl text-navy-900">More articles</h2>
             <ul className="mt-4 space-y-3">
               {others.map((o) => (

@@ -83,6 +83,23 @@ export default function ContactPage() {
         </div>
       </section>
 
+      <section className="bg-sand">
+        <div className="container-px pb-16">
+          <div className="overflow-hidden rounded-3xl border border-navy-100 shadow-card">
+            <iframe
+              title="Fletcher Physiotherapy service area — Newcastle, Lake Macquarie and the Central Coast"
+              src="https://www.google.com/maps?q=Newcastle%20NSW%20Australia&z=10&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-[22rem] w-full border-0"
+            />
+          </div>
+          <p className="mt-4 text-center text-sm text-navy-500">
+            We come to you across Newcastle, Lake Macquarie and the Central Coast.
+          </p>
+        </div>
+      </section>
+
       <BreadcrumbSchema
         items={[
           { name: "Home", href: "/" },

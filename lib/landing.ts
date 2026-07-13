@@ -89,7 +89,7 @@ export const landingPages: Record<string, LandingContent> = {
     intro:
       "Looking for a mobile physiotherapist in Newcastle? Fletcher Physiotherapy comes to you — delivering expert, evidence-based physiotherapy in your own home across Newcastle, Lake Macquarie and the Central Coast.",
     lead: [
-      "A mobile physiotherapist is a fully qualified physiotherapist who travels to your home rather than treating you at a clinic. For older adults, busy families and anyone who finds travel difficult, a mobile physio makes expert care genuinely accessible.",
+      "A mobile physiotherapist is a fully qualified physiotherapist who travels to wherever you are — your home, a retirement village, an aged-care facility or supported accommodation — rather than treating you at a clinic. Where home visit physiotherapy is specifically care in your own home, our mobile service reaches you wherever you live or stay across the Newcastle region.",
       "Fletcher Physiotherapy is a dedicated mobile physiotherapy service. We are not a clinic that occasionally does home visits — coming to you is what we do. That focus means our whole approach, from assessment to equipment, is built around delivering the best possible outcomes in your home.",
       "Our service is led by an APA Titled Pain Physiotherapist and covers all of Newcastle and the surrounding Hunter region, with a special focus on aged care, NDIS, Home Care Package and Support at Home clients.",
     ],
