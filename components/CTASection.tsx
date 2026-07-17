@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Icon from "./Icon";
 import { site } from "@/lib/site";
 
@@ -26,9 +25,9 @@ export default function CTASection({
             <h2 className="mt-5 text-3xl text-white sm:text-4xl">{title}</h2>
             <p className="mt-4 text-lg text-navy-100">{text}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Link href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-accent w-full sm:w-auto">
+              <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-accent w-full sm:w-auto">
                 Book Online <Icon name="arrow" className="h-4 w-4" />
-              </Link>
+              </a>
               <a href={site.phoneHref} className="btn-secondary w-full border-white/30 bg-transparent text-white hover:bg-white/10 sm:w-auto">
                 <Icon name="phone" className="h-4 w-4" /> {site.phone}
               </a>

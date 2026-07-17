@@ -35,14 +35,14 @@ export default function Hero() {
             ))}
           </ul>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-            <Link
+            <a
               href={site.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
             >
               Book a Home Visit <Icon name="arrow" className="h-5 w-5" />
-            </Link>
+            </a>
             <Link href="/refer-a-patient" className="btn-secondary">
               <Icon name="users" className="h-5 w-5" /> Make a Referral
             </Link>
@@ -89,14 +89,14 @@ export default function Hero() {
                 </span>
               </p>
             </div>
-            <Link
+            <a
               href={site.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary mt-6 w-full"
             >
               Book a Home Visit <Icon name="arrow" className="h-5 w-5" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

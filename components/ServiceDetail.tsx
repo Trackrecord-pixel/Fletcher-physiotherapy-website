@@ -70,9 +70,9 @@ export default function ServiceDetail({
               <div className="mt-5">
                 <FeatureList columns={1} items={benefits} />
               </div>
-              <Link href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-7 w-full">
+              <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-7 w-full">
                 Book Online <Icon name="arrow" className="h-4 w-4" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
