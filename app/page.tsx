@@ -19,31 +19,6 @@ export default function HomePage() {
     <>
       <Hero />
 
-      {/* Full-width banner */}
-      <section className="bg-white">
-        <Image
-          src="/images/hero-banner.jpg"
-          alt="Helping older Australians stay strong and independent with home visit physiotherapy in Newcastle"
-          width={1500}
-          height={1000}
-          priority
-          sizes="100vw"
-          className="h-auto w-full"
-        />
-      </section>
-
-      {/* Full-width banner */}
-      <section className="bg-white">
-        <Image
-          src="/images/services-banner.jpg"
-          alt="Personalised home visit physiotherapy helping older Australians stay strong and independent across Newcastle, Lake Macquarie and the Central Coast"
-          width={1500}
-          height={1000}
-          sizes="100vw"
-          className="h-auto w-full"
-        />
-      </section>
-
       {/* Visit Our Newcastle Physiotherapy Clinics */}
       <section className="section-py bg-sand" id="clinics">
         <div className="container-px">
@@ -99,6 +74,31 @@ export default function HomePage() {
             </Reveal>
           </div>
         </div>
+      </section>
+
+      {/* Full-width banner */}
+      <section className="bg-white">
+        <Image
+          src="/images/hero-banner.jpg"
+          alt="Helping older Australians stay strong and independent with home visit physiotherapy in Newcastle"
+          width={1500}
+          height={1000}
+          priority
+          sizes="100vw"
+          className="h-auto w-full"
+        />
+      </section>
+
+      {/* Full-width banner */}
+      <section className="bg-white">
+        <Image
+          src="/images/services-banner.jpg"
+          alt="Personalised home visit physiotherapy helping older Australians stay strong and independent across Newcastle, Lake Macquarie and the Central Coast"
+          width={1500}
+          height={1000}
+          sizes="100vw"
+          className="h-auto w-full"
+        />
       </section>
 
       {/* Why Choose */}
