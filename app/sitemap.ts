@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { site, suburbs } from "@/lib/site";
+import { site, suburbs, clinics } from "@/lib/site";
 import { landingPages } from "@/lib/landing";
 import { posts } from "@/lib/blog";
 
@@ -10,6 +10,7 @@ const staticRoutes = [
   "/our-team",
   "/daniel-lee-physiotherapist-newcastle",
   "/locations",
+  "/book",
   "/refer-a-patient",
   "/contact",
   "/faqs",
@@ -22,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const urls: string[] = [
     ...staticRoutes,
     ...Object.keys(landingPages).map((s) => `/${s}`),
+    ...clinics.map((c) => `/${c.slug}`),
     ...suburbs.map((s) => `/${s.slug}`),
     ...posts.map((p) => `/blog/${p.slug}`),
   ];

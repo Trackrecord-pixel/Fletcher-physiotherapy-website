@@ -53,6 +53,76 @@ export const conditionsNav: NavLink[] = [
   { label: "Senior Exercise Programs", href: "/senior-exercise-programs-newcastle" },
 ];
 
+export const locationsNav: NavLink[] = [
+  { label: "Jesmond Clinic", href: "/physiotherapy-jesmond" },
+  { label: "Elermore Vale Clinic", href: "/physiotherapy-elermore-vale" },
+  { label: "Home Visit Physiotherapy", href: "/home-visit-physiotherapy-newcastle" },
+];
+
+export type Clinic = {
+  slug: string;
+  name: string;
+  hostCentre: string;
+  address: string;
+  suburb: string;
+  postcode: string;
+  region: string;
+  consultingDay: string;
+  dayShort: string;
+  geo: { lat: number; lng: number };
+  intro: string;
+  about: string[];
+  parking: string;
+  accessibility: string;
+};
+
+export const clinics: Clinic[] = [
+  {
+    slug: "physiotherapy-jesmond",
+    name: "Jesmond",
+    hostCentre: "HealthSure Medical Centre Jesmond",
+    address: "Shop G01–G07, Jesmond Central, 28 Blue Gum Road, Jesmond NSW 2299",
+    suburb: "Jesmond",
+    postcode: "2299",
+    region: "Newcastle",
+    consultingDay: "Monday",
+    dayShort: "Mondays",
+    geo: { lat: -32.8944, lng: 151.6931 },
+    intro:
+      "Fletcher Physiotherapy now consults at HealthSure Medical Centre Jesmond every Monday, offering experienced physiotherapy for pain, injuries, rehabilitation, balance and falls prevention — alongside our established home visit service across Newcastle.",
+    about: [
+      "Our Jesmond clinic is located inside HealthSure Medical Centre at Jesmond Central, a convenient and easily accessible location in central Newcastle close to the University of Newcastle and John Hunter Hospital. Consultations are available each Monday.",
+      "Care is led by an APA Titled Pain Physiotherapist with extensive experience in chronic pain, musculoskeletal injuries, sports injuries, balance and falls prevention, and post-operative rehabilitation. We take the time to understand your goals and build a practical, evidence-based plan tailored to you.",
+    ],
+    parking:
+      "On-site and street parking is available at Jesmond Central, with easy access from Blue Gum Road and Newcastle Road.",
+    accessibility:
+      "The clinic offers step-free, wheelchair-accessible entry with accessible parking nearby, making appointments comfortable for older adults and people with limited mobility.",
+  },
+  {
+    slug: "physiotherapy-elermore-vale",
+    name: "Elermore Vale",
+    hostCentre: "Elermore Vale Medical Centre",
+    address: "Shop 10–13, 137 Croudace Road, Elermore Vale NSW 2287",
+    suburb: "Elermore Vale",
+    postcode: "2287",
+    region: "Newcastle",
+    consultingDay: "Thursday",
+    dayShort: "Thursdays",
+    geo: { lat: -32.9132, lng: 151.664 },
+    intro:
+      "Fletcher Physiotherapy consults at Elermore Vale Medical Centre every Thursday, providing experienced physiotherapy for pain, injuries, rehabilitation, balance and falls prevention — as well as home visits throughout Newcastle and Lake Macquarie.",
+    about: [
+      "Our Elermore Vale clinic operates from Elermore Vale Medical Centre on Croudace Road, a welcoming local practice serving the western Newcastle community. Consultations are available each Thursday.",
+      "Care is led by an APA Titled Pain Physiotherapist experienced in chronic pain, musculoskeletal and sports injuries, balance and falls prevention, and post-operative rehabilitation. Every plan is practical, evidence-based and tailored to your individual goals.",
+    ],
+    parking:
+      "Free on-site parking is available at Elermore Vale Medical Centre, directly off Croudace Road.",
+    accessibility:
+      "The centre provides ground-floor, wheelchair-accessible access with accessible parking close to the entrance, so appointments are easy and comfortable for everyone.",
+  },
+];
+
 export type Service = {
   slug: string;
   title: string;
@@ -490,16 +560,6 @@ export const suburbs: Suburb[] = [
     local:
       "Wallsend is a busy hub with a large older population and strong community ties. Our physiotherapists visit homes around Wallsend town centre, Nelson Street and the surrounding estates, supporting people who find travelling to a clinic difficult — from falls prevention to post-hospital recovery.",
     nearby: ["Elermore Vale", "Maryland", "Fletcher", "Jesmond", "Shortland"],
-  },
-  {
-    slug: "physiotherapy-jesmond",
-    name: "Jesmond",
-    region: "Newcastle",
-    intro:
-      "We deliver home visit physiotherapy across Jesmond, bringing expert mobile care to older adults, NDIS participants and Support at Home clients in this central Newcastle suburb.",
-    local:
-      "Close to the University of Newcastle and John Hunter Hospital, Jesmond is a convenient base for home-based rehabilitation, including for clients returning home after a hospital stay. We visit homes throughout Jesmond and its neighbouring suburbs to deliver strength, balance and mobility programs.",
-    nearby: ["Birmingham Gardens", "Elermore Vale", "Wallsend", "Lambton", "North Lambton"],
   },
   {
     slug: "physiotherapy-adamstown",

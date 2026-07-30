@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import SuburbPage from "@/components/SuburbPage";
-import { suburbs } from "@/lib/site";
+import ClinicPage from "@/components/ClinicPage";
+import { clinics } from "@/lib/site";
 
-const s = suburbs.find((x) => x.slug === "physiotherapy-jesmond")!;
+const c = clinics.find((x) => x.slug === "physiotherapy-jesmond")!;
 
 export const metadata: Metadata = {
-  title: "Physiotherapy Jesmond NSW",
+  title: "Physiotherapy Jesmond | Fletcher Physiotherapy",
   description:
-    "Home visit physiotherapy in Jesmond, Newcastle NSW. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, aged care and post-hospital rehabilitation at home.",
+    "Book an appointment with Fletcher Physiotherapy at HealthSure Medical Centre Jesmond. Experienced physiotherapy for pain, injuries, rehabilitation, balance, falls prevention and Medicare EPC patients.",
+  keywords: ["Physiotherapy Jesmond", "Physiotherapist Jesmond", "Jesmond Physio", "Chronic Pain Physiotherapist Jesmond", "Medicare Physio Jesmond"],
   alternates: { canonical: "/physiotherapy-jesmond" },
 };
 
 export default function Page() {
-  return <SuburbPage s={s} />;
+  return <ClinicPage c={c} />;
 }

@@ -10,7 +10,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import Reveal from "@/components/Reveal";
 import FeatureList from "@/components/FeatureList";
 import { FaqSchema } from "@/components/StructuredData";
-import { services, whyChoose, homeFaqs, team, locations, site } from "@/lib/site";
+import { services, whyChoose, homeFaqs, team, locations, clinics, site } from "@/lib/site";
 import type { IconName } from "@/components/Icon";
 
 
@@ -42,6 +42,63 @@ export default function HomePage() {
           sizes="100vw"
           className="h-auto w-full"
         />
+      </section>
+
+      {/* Visit Our Newcastle Physiotherapy Clinics */}
+      <section className="section-py bg-sand" id="clinics">
+        <div className="container-px">
+          <SectionHeading
+            eyebrow="Clinics & Home Visits"
+            title="Visit Our Newcastle Physiotherapy Clinics"
+            intro="Fletcher Physiotherapy now offers appointments at two convenient Newcastle clinic locations, in addition to our established mobile physiotherapy service. Patients can choose between home visits or attending one of our clinics depending on what best suits their needs."
+          />
+          <Link href="/book" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-800 hover:text-navy-900">
+            Compare all booking options <Icon name="arrow" className="h-4 w-4" />
+          </Link>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {clinics.map((c, i) => (
+              <Reveal key={c.slug} delay={i * 80}>
+                <div className="card card-hover flex h-full flex-col">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-white">
+                    <Icon name="pin" className="h-6 w-6" />
+                  </span>
+                  <span className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
+                    <Icon name="clock" className="h-3.5 w-3.5" /> {c.dayShort}
+                  </span>
+                  <h3 className="mt-3 text-xl text-navy-900">{c.hostCentre}</h3>
+                  <p className="mt-2 flex-grow text-sm leading-relaxed text-navy-600">
+                    Physiotherapy for pain, injuries, rehabilitation, balance and falls prevention at {c.address.split(", ").slice(-2).join(", ")}.
+                  </p>
+                  <div className="mt-5 flex flex-col gap-2.5">
+                    <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary w-full">
+                      Book Appointment <Icon name="arrow" className="h-4 w-4" />
+                    </a>
+                    <Link href={`/${c.slug}`} className="btn-secondary w-full">Learn More</Link>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+            <Reveal delay={160}>
+              <div className="card card-hover flex h-full flex-col md:col-span-3 md:flex-row md:items-center md:gap-8">
+                <div className="md:flex-1">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-white">
+                    <Icon name="home" className="h-6 w-6" />
+                  </span>
+                  <h3 className="mt-5 text-xl text-navy-900">Home Visit Physiotherapy</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-navy-600">
+                    Prefer to stay home? Our mobile physiotherapists come to you across Newcastle, Lake Macquarie and the Central Coast — ideal for older adults, NDIS, Support at Home and post-hospital clients.
+                  </p>
+                </div>
+                <div className="mt-5 flex flex-col gap-2.5 md:mt-0 md:w-64">
+                  <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary w-full">
+                    Book Appointment <Icon name="arrow" className="h-4 w-4" />
+                  </a>
+                  <Link href="/home-visit-physiotherapy-newcastle" className="btn-secondary w-full">Learn More</Link>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
       </section>
 
       {/* Why Choose */}

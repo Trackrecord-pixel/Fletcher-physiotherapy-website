@@ -6,12 +6,12 @@ import CTASection from "@/components/CTASection";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import { BreadcrumbSchema } from "@/components/StructuredData";
-import { locations, suburbs, site } from "@/lib/site";
+import { locations, suburbs, clinics, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Service Areas | Newcastle, Lake Macquarie & Central Coast",
+  title: "Locations | Newcastle Physiotherapy Clinics & Home Visits",
   description:
-    "Fletcher Physiotherapy provides home visit physiotherapy across Newcastle, Lake Macquarie and the Central Coast. See the suburbs we service and book a mobile physio visit today.",
+    "Fletcher Physiotherapy consults at HealthSure Medical Centre Jesmond (Mondays) and Elermore Vale Medical Centre (Thursdays), plus home visits across Newcastle, Lake Macquarie and the Central Coast.",
   alternates: { canonical: "/locations" },
 };
 
@@ -19,14 +19,38 @@ export default function LocationsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Service Locations"
-        title="Home visit physiotherapy across Newcastle, Lake Macquarie & the Central Coast"
-        intro="Wherever you are in our service regions, we bring professional physiotherapy to your door. Not sure if we reach your suburb? Just ask."
+        eyebrow="Our Locations"
+        title="Newcastle physiotherapy clinics & home visits"
+        intro="Choose the option that suits you best — visit one of our two Newcastle clinics, or have a physiotherapist come to your home across Newcastle, Lake Macquarie and the Central Coast."
         breadcrumb={[
           { name: "Home", href: "/" },
           { name: "Locations", href: "/locations" },
         ]}
       />
+
+      <section className="section-py bg-white">
+        <div className="container-px">
+          <SectionHeading eyebrow="Clinic Appointments" title="Our Newcastle clinics" />
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {clinics.map((c, i) => (
+              <Reveal key={c.slug} delay={i * 80}>
+                <div className="card card-hover flex h-full flex-col">
+                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
+                    <Icon name="clock" className="h-3.5 w-3.5" /> Consulting {c.dayShort}
+                  </span>
+                  <h3 className="mt-4 text-2xl text-navy-900">{c.hostCentre}</h3>
+                  <p className="mt-2 flex items-start gap-2 text-sm text-navy-600"><Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {c.address}</p>
+                  <p className="mt-4 flex-grow text-sm leading-relaxed text-navy-600">Physiotherapy, chronic pain management, musculoskeletal and sports injuries, falls prevention, balance assessment and post-operative rehabilitation. Medicare EPC, DVA and private patients welcome.</p>
+                  <div className="mt-5 flex flex-col gap-2.5 sm:flex-row">
+                    <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary w-full sm:w-auto">Book Appointment <Icon name="arrow" className="h-4 w-4" /></a>
+                    <Link href={`/${c.slug}`} className="btn-secondary w-full sm:w-auto">Clinic details</Link>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="section-py bg-white">
         <div className="container-px space-y-10">

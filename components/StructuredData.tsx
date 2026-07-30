@@ -1,4 +1,27 @@
-import { site, faqs } from "@/lib/site";
+import { site, faqs, clinics } from "@/lib/site";
+
+const clinicLocations = clinics.map((c) => ({
+  "@type": ["MedicalClinic", "Physiotherapy"],
+  name: `Fletcher Physiotherapy — ${c.suburb}`,
+  url: `${site.url}/${c.slug}`,
+  telephone: site.phone,
+  medicalSpecialty: "Physiotherapy",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: c.address.split(", ").slice(0, -1).join(", "),
+    addressLocality: c.suburb,
+    addressRegion: "NSW",
+    postalCode: c.postcode,
+    addressCountry: "AU",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: c.geo.lat, longitude: c.geo.lng },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: c.consultingDay,
+    opens: "08:00",
+    closes: "17:00",
+  },
+}));
 
 export function LocalBusinessSchema() {
   const data = {
@@ -35,6 +58,7 @@ export function LocalBusinessSchema() {
       opens: "08:00",
       closes: "18:00",
     },
+    location: clinicLocations,
     sameAs: [site.social.facebook, site.social.instagram],
   };
 
@@ -191,6 +215,7 @@ export function OrganizationSchema() {
       { "@type": "City", name: "Lake Macquarie", address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
       { "@type": "City", name: "Central Coast", address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
     ],
+    location: clinicLocations,
     sameAs: [site.social.facebook, site.social.instagram],
   };
   return (

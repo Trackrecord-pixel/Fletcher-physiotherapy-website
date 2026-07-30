@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import Icon from "./Icon";
-import { primaryNav, servicesNav, conditionsNav, site } from "@/lib/site";
+import { primaryNav, servicesNav, conditionsNav, clinics, site } from "@/lib/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -73,9 +73,25 @@ export default function Footer() {
 
           <div className="lg:col-span-3">
             <h2 className="text-sm font-semibold uppercase tracking-widest text-white">
-              Service Areas
+              Our Clinics
             </h2>
             <ul className="mt-5 space-y-3 text-sm">
+              {clinics.map((c) => (
+                <li key={c.slug}>
+                  <Link href={`/${c.slug}`} className="inline-flex items-start gap-2.5 text-navy-200 hover:text-white">
+                    <Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-beige-300" />
+                    <span>{c.hostCentre}<span className="block text-xs text-navy-400">Consulting {c.dayShort}</span></span>
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link href="/home-visit-physiotherapy-newcastle" className="inline-flex items-center gap-2.5 text-navy-200 hover:text-white">
+                  <Icon name="home" className="h-4 w-4 text-beige-300" /> Home Visit Physiotherapy
+                </Link>
+              </li>
+            </ul>
+            <p className="mt-6 text-xs font-semibold uppercase tracking-widest text-navy-400">Also serving</p>
+            <ul className="mt-3 space-y-2 text-sm">
               {site.areasServed.map((a) => (
                 <li key={a} className="inline-flex items-center gap-2.5 text-navy-200">
                   <Icon name="pin" className="h-4 w-4 text-beige-300" /> {a}, {site.region}

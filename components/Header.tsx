@@ -5,13 +5,18 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Icon from "./Icon";
-import { primaryNav, servicesNav, site } from "@/lib/site";
+import { primaryNav, servicesNav, locationsNav, site } from "@/lib/site";
+
+const dropdowns: Record<string, { label: string; href: string }[]> = {
+  Services: servicesNav,
+  Locations: locationsNav,
+};
 
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -22,7 +27,7 @@ export default function Header() {
 
   useEffect(() => {
     setOpen(false);
-    setServicesOpen(false);
+    setOpenMenu(null);
   }, [pathname]);
 
   const isActive = (href: string) =>
@@ -31,9 +36,7 @@ export default function Header() {
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/95 shadow-card backdrop-blur"
-          : "bg-white/80 backdrop-blur-sm"
+        scrolled ? "bg-white/95 shadow-card backdrop-blur" : "bg-white/80 backdrop-blur-sm"
       }`}
     >
       <a
@@ -47,7 +50,7 @@ export default function Header() {
       <div className="hidden border-b border-navy-100 bg-navy-800 text-white lg:block">
         <div className="container-px flex h-10 items-center justify-between text-xs">
           <p className="font-medium tracking-wide">
-            Home Visit Physiotherapy · Newcastle · Lake Macquarie · Central Coast
+            Newcastle Clinics · Jesmond &amp; Elermore Vale · Home Visits Newcastle · Lake Macquarie · Central Coast
           </p>
           <div className="flex items-center gap-5">
             <a href={site.phoneHref} className="inline-flex items-center gap-1.5 hover:text-beige-200">
@@ -64,31 +67,30 @@ export default function Header() {
         <Logo />
 
         <div className="hidden items-center gap-1 lg:flex">
-          {primaryNav.map((link) =>
-            link.label === "Services" ? (
+          {primaryNav.map((link) => {
+            const dd = dropdowns[link.label];
+            return dd ? (
               <div
                 key={link.href}
                 className="relative"
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
+                onMouseEnter={() => setOpenMenu(link.label)}
+                onMouseLeave={() => setOpenMenu(null)}
               >
                 <Link
                   href={link.href}
                   aria-haspopup="true"
-                  aria-expanded={servicesOpen}
+                  aria-expanded={openMenu === link.label}
                   className={`inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                    isActive(link.href)
-                      ? "text-navy-900"
-                      : "text-navy-600 hover:text-navy-900"
+                    isActive(link.href) ? "text-navy-900" : "text-navy-600 hover:text-navy-900"
                   }`}
                 >
                   {link.label}
                   <Icon name="chevron" className="h-3.5 w-3.5" />
                 </Link>
-                {servicesOpen && (
+                {openMenu === link.label && (
                   <div className="absolute left-0 top-full w-72 pt-2">
                     <div className="rounded-2xl border border-navy-100 bg-white p-2 shadow-card-hover">
-                      {servicesNav.map((s) => (
+                      {dd.map((s) => (
                         <Link
                           key={s.href}
                           href={s.href}
@@ -107,15 +109,13 @@ export default function Header() {
                 href={link.href}
                 aria-current={isActive(link.href) ? "page" : undefined}
                 className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                  isActive(link.href)
-                    ? "text-navy-900"
-                    : "text-navy-600 hover:text-navy-900"
+                  isActive(link.href) ? "text-navy-900" : "text-navy-600 hover:text-navy-900"
                 }`}
               >
                 {link.label}
               </Link>
-            )
-          )}
+            );
+          })}
         </div>
 
         <div className="hidden items-center gap-3 lg:flex">
@@ -147,18 +147,26 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={`block rounded-xl px-4 py-3 text-base font-medium ${
-                  isActive(link.href)
-                    ? "bg-beige-100 text-navy-900"
-                    : "text-navy-700 hover:bg-navy-50"
+                  isActive(link.href) ? "bg-beige-100 text-navy-900" : "text-navy-700 hover:bg-navy-50"
                 }`}
               >
                 {link.label}
               </Link>
             ))}
             <div className="mt-2 rounded-xl bg-sand p-2">
-              <p className="px-2 py-1 text-xs font-semibold uppercase tracking-widest text-navy-500">
-                Services
-              </p>
+              <p className="px-2 py-1 text-xs font-semibold uppercase tracking-widest text-navy-500">Our Clinics</p>
+              {locationsNav.map((s) => (
+                <Link
+                  key={s.href}
+                  href={s.href}
+                  className="block rounded-lg px-4 py-2.5 text-sm font-medium text-navy-700 hover:bg-white"
+                >
+                  {s.label}
+                </Link>
+              ))}
+            </div>
+            <div className="mt-2 rounded-xl bg-sand p-2">
+              <p className="px-2 py-1 text-xs font-semibold uppercase tracking-widest text-navy-500">Services</p>
               {servicesNav.slice(0, 5).map((s) => (
                 <Link
                   key={s.href}
