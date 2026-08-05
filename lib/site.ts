@@ -409,7 +409,7 @@ export const testimonials = [
   {
     quote:
       "Excellent service. Very convenient home visit and a lovely physiotherapist. I am very pleased with the treatment.",
-    author: "Georgie Hunter",
+    author: "Georgie H.",
     detail: "Verified Google review",
   },
   {
