@@ -9,7 +9,9 @@ import Testimonials from "@/components/Testimonials";
 import FAQAccordion from "@/components/FAQAccordion";
 import Reveal from "@/components/Reveal";
 import FeatureList from "@/components/FeatureList";
-import { FaqSchema } from "@/components/StructuredData";
+import CredentialsBand from "@/components/CredentialsBand";
+import AuthorReview from "@/components/AuthorReview";
+import { FaqSchema, PersonSchema } from "@/components/StructuredData";
 import { services, whyChoose, homeFaqs, team, locations, clinics, site } from "@/lib/site";
 import type { IconName } from "@/components/Icon";
 
@@ -127,6 +129,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Authority / Credentials */}
+      <CredentialsBand />
 
       {/* Services Overview */}
       <section className="section-py bg-sand">
@@ -302,12 +307,14 @@ export default function HomePage() {
           </div>
           <div className="lg:col-span-7">
             <FAQAccordion items={homeFaqs} />
+            <AuthorReview pageUrl="/" />
           </div>
         </div>
       </section>
 
       <CTASection />
       <FaqSchema items={homeFaqs} />
+      <PersonSchema />
     </>
   );
 }

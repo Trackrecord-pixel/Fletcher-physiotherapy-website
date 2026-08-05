@@ -5,8 +5,16 @@ import Icon from "@/components/Icon";
 import CTASection from "@/components/CTASection";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
-import { BreadcrumbSchema } from "@/components/StructuredData";
+import FAQAccordion from "@/components/FAQAccordion";
+import { BreadcrumbSchema, FaqSchema } from "@/components/StructuredData";
 import { locations, suburbs, clinics, site } from "@/lib/site";
+
+const locationFaqs = [
+  { q: "Which areas does Fletcher Physiotherapy cover?", a: "We provide home visit physiotherapy right across Newcastle, Lake Macquarie and the Central Coast, and see clients at our Jesmond (Mondays) and Elermore Vale (Thursdays) clinics. If you're not sure we reach your suburb, just call us." },
+  { q: "Do you charge extra to travel to my home?", a: "Costs depend on your funding — NDIS, Home Care Package, Support at Home or private. Call us on " + site.phone + " and we'll explain the options for your area clearly before your first visit." },
+  { q: "Do I need a referral to book?", a: "Not for private physiotherapy — you can contact us directly. A GP referral may be needed for certain funding streams such as a Chronic Disease Management (CDM/EPC) plan, DVA or some NDIS arrangements." },
+  { q: "Can you visit someone in an aged care or retirement village?", a: "Yes. We regularly visit residents in private homes, retirement villages and residential settings across the region, coordinating with families, providers and support coordinators." },
+];
 
 export const metadata: Metadata = {
   title: "Locations | Newcastle Physiotherapy Clinics & Home Visits",
@@ -77,9 +85,14 @@ export default function LocationsPage() {
                         </li>
                       ))}
                     </ul>
-                    <Link href="/contact" className="btn-primary mt-6">
-                      Book in {loc.name} <Icon name="arrow" className="h-4 w-4" />
-                    </Link>
+                    <div className="mt-6 flex flex-wrap gap-3">
+                      <Link href={`/physiotherapy-${loc.name.toLowerCase().replace(/ /g, "-")}`} className="btn-primary">
+                        {loc.name} physiotherapy <Icon name="arrow" className="h-4 w-4" />
+                      </Link>
+                      <a href={site.phoneHref} className="btn-secondary">
+                        <Icon name="phone" className="h-4 w-4" /> Call
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div className="lg:col-span-7">
@@ -135,7 +148,19 @@ export default function LocationsPage() {
         </div>
       </section>
 
+      <section className="section-py bg-sand">
+        <div className="container-px grid gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <SectionHeading eyebrow="Local FAQs" title="Home visits across the region" intro="Common questions about our service areas, funding and referrals." />
+          </div>
+          <div className="lg:col-span-7">
+            <FAQAccordion items={locationFaqs} />
+          </div>
+        </div>
+      </section>
+
       <CTASection />
+      <FaqSchema items={locationFaqs} />
       <BreadcrumbSchema
         items={[
           { name: "Home", href: "/" },

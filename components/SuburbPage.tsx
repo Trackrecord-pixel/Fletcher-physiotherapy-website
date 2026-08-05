@@ -3,6 +3,7 @@ import PageHero from "./PageHero";
 import Icon from "./Icon";
 import CTASection from "./CTASection";
 import FAQAccordion from "./FAQAccordion";
+import AuthorReview from "./AuthorReview";
 import { BreadcrumbSchema, FaqSchema } from "./StructuredData";
 import { site, type Suburb } from "@/lib/site";
 
@@ -53,6 +54,7 @@ export default function SuburbPage({ s }: { s: Suburb }) {
           <div className="lg:col-span-8">
             <div className="prose-navy space-y-4">
               <p>{s.local}</p>
+              {s.localArea && <p>{s.localArea}</p>}
               <p>
                 Fletcher Physiotherapy is a dedicated mobile service — we come to
                 you. That means no travel, no parking and no waiting rooms for {s.name}{" "}
@@ -215,6 +217,57 @@ export default function SuburbPage({ s }: { s: Suburb }) {
                 ))}
               </ul>
             </div>
+
+            {(s.gpClinics || s.hospitals || s.agedCare || s.retirement || s.landmarks || s.gettingAround) && (
+              <div className="mt-10">
+                <h2 className="text-2xl text-navy-900 sm:text-3xl">
+                  Physiotherapy around {s.name}: local healthcare &amp; getting around
+                </h2>
+                <p className="prose-navy mt-4">
+                  Our {s.name} home visit physiotherapists work alongside the local healthcare
+                  community — coordinating with GPs, hospital discharge teams, aged care homes and
+                  Home Care providers so your rehabilitation is joined up and stress-free.
+                </p>
+                <div className="mt-6 grid gap-5 sm:grid-cols-2">
+                  {s.gpClinics && (
+                    <div className="card">
+                      <h3 className="flex items-center gap-2 text-lg text-navy-900"><Icon name="doc" className="h-5 w-5 text-navy-700" /> Nearby GP clinics</h3>
+                      <ul className="mt-3 space-y-2 text-sm text-navy-700">{s.gpClinics.map((x) => <li key={x} className="flex gap-2"><Icon name="check" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {x}</li>)}</ul>
+                    </div>
+                  )}
+                  {s.hospitals && (
+                    <div className="card">
+                      <h3 className="flex items-center gap-2 text-lg text-navy-900"><Icon name="pulse" className="h-5 w-5 text-navy-700" /> Nearby hospitals</h3>
+                      <ul className="mt-3 space-y-2 text-sm text-navy-700">{s.hospitals.map((x) => <li key={x} className="flex gap-2"><Icon name="check" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {x}</li>)}</ul>
+                    </div>
+                  )}
+                  {s.agedCare && (
+                    <div className="card">
+                      <h3 className="flex items-center gap-2 text-lg text-navy-900"><Icon name="user" className="h-5 w-5 text-navy-700" /> Aged care facilities nearby</h3>
+                      <ul className="mt-3 space-y-2 text-sm text-navy-700">{s.agedCare.map((x) => <li key={x} className="flex gap-2"><Icon name="check" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {x}</li>)}</ul>
+                    </div>
+                  )}
+                  {s.retirement && (
+                    <div className="card">
+                      <h3 className="flex items-center gap-2 text-lg text-navy-900"><Icon name="home" className="h-5 w-5 text-navy-700" /> Retirement villages nearby</h3>
+                      <ul className="mt-3 space-y-2 text-sm text-navy-700">{s.retirement.map((x) => <li key={x} className="flex gap-2"><Icon name="check" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {x}</li>)}</ul>
+                    </div>
+                  )}
+                  {s.landmarks && (
+                    <div className="card">
+                      <h3 className="flex items-center gap-2 text-lg text-navy-900"><Icon name="pin" className="h-5 w-5 text-navy-700" /> Local landmarks</h3>
+                      <ul className="mt-3 space-y-2 text-sm text-navy-700">{s.landmarks.map((x) => <li key={x} className="flex gap-2"><Icon name="check" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {x}</li>)}</ul>
+                    </div>
+                  )}
+                </div>
+                {s.gettingAround && <p className="prose-navy mt-6">{s.gettingAround}</p>}
+                <div className="mt-6 overflow-hidden rounded-2xl border border-navy-100 shadow-card">
+                  <iframe title={`Map of ${s.name}, ${s.region} NSW`} src={`https://www.google.com/maps?q=${encodeURIComponent(`${s.name} ${s.region} NSW ${s.postcode ?? ""}`)}&z=13&output=embed`} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="h-72 w-full border-0" />
+                </div>
+              </div>
+            )}
+
+            <AuthorReview pageUrl={`/${s.slug}`} />
 
             <div className="mt-12">
               <h2 className="text-2xl text-navy-900 sm:text-3xl">Frequently asked questions</h2>
