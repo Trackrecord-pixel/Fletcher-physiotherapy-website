@@ -59,7 +59,7 @@ export function LocalBusinessSchema() {
       closes: "18:00",
     },
     location: clinicLocations,
-    sameAs: [site.social.facebook, site.social.instagram],
+    sameAs: [site.reviewsUrl],
   };
 
   return (
@@ -216,7 +216,7 @@ export function OrganizationSchema() {
       { "@type": "City", name: "Central Coast", address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
     ],
     location: clinicLocations,
-    sameAs: [site.social.facebook, site.social.instagram],
+    sameAs: [site.reviewsUrl],
   };
   return (
     <script

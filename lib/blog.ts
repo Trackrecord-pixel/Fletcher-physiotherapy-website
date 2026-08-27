@@ -11,6 +11,335 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "prehabilitation-preparing-for-surgery",
+    title: "Prehabilitation: How to Prepare Your Body Before Surgery",
+    description:
+      "What prehabilitation is and why preparing your body before hip, knee or other surgery can lead to a faster, smoother recovery — and how physiotherapy helps.",
+    date: "2026-08-05",
+    readMins: 6,
+    excerpt:
+      "The fitter you go into surgery, the better you tend to come out. Here's how 'prehab' can set you up for a smoother recovery.",
+    sections: [
+      {
+        h2: "What is prehabilitation?",
+        body: [
+          "Prehabilitation — or 'prehab' — is the physiotherapy you do before an operation to get your body as strong and ready as possible. It is the mirror image of rehabilitation, and for planned surgery such as a hip or knee replacement, it can make a real difference to your recovery.",
+          "The principle is simple: the fitter, stronger and more prepared you are going into surgery, the better placed you are to recover well afterwards.",
+        ],
+      },
+      {
+        h2: "Why it helps",
+        body: [
+          "Surgery and the rest that follows can quickly reduce strength and fitness. Building a buffer beforehand means you have more to draw on during recovery, and often regain your independence sooner.",
+          "Prehab also gives you a head start on the exercises you will need afterwards, so they are already familiar when it counts.",
+        ],
+      },
+      {
+        h2: "What prehab involves",
+        body: [
+          "A prehab program is tailored to you and your planned surgery. It typically includes strengthening the muscles around the affected joint, general conditioning, and practising the movements and techniques you will use during recovery — such as using a walking aid or getting in and out of bed safely.",
+          "It is also a chance to prepare your home and plan ahead, so everything is set up for a smooth return.",
+        ],
+      },
+      {
+        h2: "Preparing your home and mind",
+        body: [
+          "Simple changes — a firm chair, a clear path to the bathroom, items within easy reach — make the early recovery days much easier. Knowing what to expect also reduces anxiety, which itself supports a better recovery.",
+          "A physiotherapist can help you plan all of this in advance, so nothing is left to the last minute.",
+        ],
+      },
+      {
+        h2: "How home physiotherapy helps",
+        body: [
+          "Home visit prehab is convenient and practical — your physiotherapist can prepare you and your home at the same time, in the environment you will actually recover in. It is especially valuable if travelling is already difficult before surgery.",
+          "Fletcher Physiotherapy provides prehabilitation and post-operative rehabilitation across Newcastle and Lake Macquarie. To prepare for upcoming surgery, call 0404 791 756.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "physiotherapy-for-dizziness-and-vertigo",
+    title: "Physiotherapy for Dizziness and Vertigo",
+    description:
+      "How physiotherapy helps with dizziness and vertigo, including common causes like BPPV, and why treatment can bring fast relief for many people.",
+    date: "2026-08-04",
+    readMins: 6,
+    excerpt:
+      "Dizziness and vertigo are unsettling and increase falls risk — but many causes respond quickly to the right physiotherapy. Here's how.",
+    sections: [
+      {
+        h2: "Dizziness is common — and often treatable",
+        body: [
+          "Dizziness and vertigo — the sensation that you or the room is spinning — are common, especially with age, and they can be frightening. They also increase the risk of falls, so they are worth taking seriously.",
+          "The encouraging news is that many causes of dizziness respond very well to physiotherapy, sometimes with rapid improvement.",
+        ],
+      },
+      {
+        h2: "A common cause: BPPV",
+        body: [
+          "One of the most common causes of vertigo is a condition called BPPV, where tiny crystals in the inner ear move out of place and confuse your balance system, triggering brief bouts of spinning — often when rolling over in bed or looking up.",
+          "BPPV can usually be assessed and treated with specific, gentle head-position techniques that reposition the crystals — many people notice a marked improvement quickly.",
+        ],
+      },
+      {
+        h2: "Other causes and vestibular rehabilitation",
+        body: [
+          "Not all dizziness is BPPV. Some people have ongoing balance or inner-ear issues that benefit from vestibular rehabilitation — a program of specific exercises that retrains the balance system over time.",
+          "A physiotherapist assesses which type of dizziness you have and tailors treatment accordingly, rather than applying a one-size-fits-all approach.",
+        ],
+      },
+      {
+        h2: "Why it matters for falls",
+        body: [
+          "Dizziness makes falls more likely, and the fear it creates can lead people to move less and lose strength. Treating the dizziness, and rebuilding steady confident movement, tackles both the cause and its knock-on effects.",
+          "If dizziness is new, severe, or comes with other symptoms such as weakness or trouble speaking, seek medical attention promptly to rule out other causes.",
+        ],
+      },
+      {
+        h2: "Care in your own home",
+        body: [
+          "For people whose dizziness makes travel difficult, home visit physiotherapy is ideal — assessment and treatment come to you, safely, in your own space.",
+          "Fletcher Physiotherapy assesses and treats dizziness and balance problems across Newcastle and Lake Macquarie. To arrange a visit, call 0404 791 756.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "physiotherapy-for-neck-pain-and-posture",
+    title: "Physiotherapy for Neck Pain and Posture",
+    description:
+      "What causes neck pain, how posture plays a role, and the simple physiotherapy strategies that relieve pain and keep your neck healthy.",
+    date: "2026-08-03",
+    readMins: 5,
+    excerpt:
+      "Neck pain is common and often linked to posture and daily habits. Here's how physiotherapy helps you find lasting relief.",
+    sections: [
+      {
+        h2: "Why the neck is so often sore",
+        body: [
+          "Neck pain is one of the most common complaints people bring to physiotherapy. It can come on gradually or suddenly, and is often linked to posture, muscle tension, and long periods in one position — such as reading, screen time or sleeping awkwardly.",
+          "Most neck pain is not serious and settles well with the right approach, though understanding what is driving it helps you address it for good.",
+        ],
+      },
+      {
+        h2: "The role of posture",
+        body: [
+          "Posture matters, but not in the way many people think. There is no single 'perfect' posture — the real problem is usually staying in any one position for too long. The best posture is often simply your next one.",
+          "Building in regular movement breaks, and setting up your chair, screen and bed to support a relaxed position, takes strain off the neck through the day.",
+        ],
+      },
+      {
+        h2: "How physiotherapy helps",
+        body: [
+          "Physiotherapy for neck pain typically combines hands-on treatment to ease symptoms, gentle exercises to restore movement and strength, and practical advice on posture and daily habits. Keeping the neck moving, rather than protecting it rigidly, is usually key.",
+          "A physiotherapist also checks for the less common causes of neck pain, so you can be reassured about what is and isn't going on.",
+        ],
+      },
+      {
+        h2: "Simple things that help",
+        body: [
+          "Gentle range-of-movement exercises, regular position changes, a supportive pillow, and managing stress — which often shows up as neck tension — can all make a real difference between appointments.",
+          "If neck pain is severe, follows an injury, or comes with pins and needles, weakness or dizziness, have it assessed promptly.",
+        ],
+      },
+      {
+        h2: "Care that comes to you",
+        body: [
+          "Home visit physiotherapy lets your physiotherapist see your actual chair, desk and sleeping set-up, and tailor advice to your real environment — something a clinic visit can't offer.",
+          "Fletcher Physiotherapy treats neck pain and posture-related problems across Newcastle and Lake Macquarie. To book an assessment, call 0404 791 756.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "staying-motivated-with-home-exercises",
+    title: "How to Stay Motivated with Your Home Exercise Program",
+    description:
+      "Practical, realistic strategies to stay motivated and consistent with your home exercise program — and actually get the results you're after.",
+    date: "2026-08-02",
+    readMins: 5,
+    excerpt:
+      "The best exercise program only works if you do it. Here are realistic ways to stay motivated and make your exercises a lasting habit.",
+    sections: [
+      {
+        h2: "Consistency beats intensity",
+        body: [
+          "The most effective exercise program is not the hardest one — it is the one you actually keep doing. A little, done regularly, achieves far more than occasional bursts of effort followed by long gaps.",
+          "So the real skill is not willpower on any single day, but building exercise into your life in a way that sticks.",
+        ],
+      },
+      {
+        h2: "Make it easy to start",
+        body: [
+          "Attach your exercises to something you already do — after breakfast, before your morning tea, during the ads on television. Linking a new habit to an existing routine is one of the most reliable ways to make it stick.",
+          "Keep any equipment out and visible, and start with a version so easy you can't say no. Momentum builds from there.",
+        ],
+      },
+      {
+        h2: "Track it and celebrate progress",
+        body: [
+          "Ticking off a simple calendar or chart is surprisingly motivating — it makes your effort visible and builds a streak you won't want to break. Notice and celebrate the everyday wins, like rising from a chair more easily or walking further.",
+          "Progress in strength and balance is often gradual, so having a record helps you see how far you have come.",
+        ],
+      },
+      {
+        h2: "Plan for the off days",
+        body: [
+          "Everyone misses days — the key is not to let one missed day become a missed week. Have a shorter 'minimum' version of your program for busy or low-energy days, so you keep the habit alive even when life gets in the way.",
+          "Be kind to yourself; consistency over months matters far more than any single day.",
+        ],
+      },
+      {
+        h2: "How a physiotherapist keeps you on track",
+        body: [
+          "A physiotherapist builds a program suited to your goals and ability, progresses it as you improve, and provides the accountability and encouragement that make a real difference. Regular check-ins keep exercises effective and interesting.",
+          "Fletcher Physiotherapy supports people to stay strong and independent at home across Newcastle and Lake Macquarie. To get started, call 0404 791 756.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "staying-active-with-arthritis",
+    title: "Staying Active with Arthritis",
+    description:
+      "How to stay active and manage arthritis pain through movement — why exercise helps, what kind is best, and how physiotherapy keeps you moving.",
+    date: "2026-08-02",
+    readMins: 6,
+    excerpt:
+      "It feels natural to rest a sore, stiff joint — but with arthritis, the right movement is often the best medicine. Here's how to stay active safely.",
+    sections: [
+      {
+        h2: "Movement, not rest, is the key",
+        body: [
+          "When a joint is sore and stiff, resting it feels like the sensible thing to do. But with arthritis, prolonged rest usually makes things worse — joints get stiffer, muscles weaken, and everyday tasks become harder.",
+          "The evidence is clear that appropriate, regular movement reduces arthritis pain, improves function and helps you stay independent. The trick is finding the right type and amount for you.",
+        ],
+      },
+      {
+        h2: "Why exercise helps arthritic joints",
+        body: [
+          "Movement nourishes the joint, keeps the surrounding muscles strong enough to support and cushion it, and maintains the range of movement you need for daily life. Strong muscles around a joint act like shock absorbers, easing the load the joint has to carry.",
+          "Exercise also helps with weight management, mood and sleep — all of which influence how much pain you feel day to day.",
+        ],
+      },
+      {
+        h2: "What kind of exercise is best",
+        body: [
+          "A good arthritis program usually blends gentle strengthening, movement to maintain flexibility, and low-impact activity such as walking, cycling or water-based exercise. The best program is one tailored to your joints, your ability and the activities you want to keep doing.",
+          "Start gently and build up gradually. Some mild discomfort during and after exercise is normal; sharp or lasting pain is a sign to adjust — which is where guidance helps.",
+        ],
+      },
+      {
+        h2: "Managing flare-ups",
+        body: [
+          "Arthritis symptoms come and go. During a flare, it is fine to reduce the intensity of your activity, but try not to stop moving altogether — gentle movement often helps settle things faster than complete rest.",
+          "Having a plan for flare-ups, worked out in advance with your physiotherapist, takes the worry out of the bad days.",
+        ],
+      },
+      {
+        h2: "How physiotherapy helps",
+        body: [
+          "A physiotherapist assesses your joints and builds a program that strengthens and mobilises safely, without overloading painful joints. They also provide hands-on treatment, advice on pacing and activity, and reassurance about what is safe.",
+          "Fletcher Physiotherapy helps people manage arthritis and stay active in their own homes across Newcastle and Lake Macquarie. To arrange a visit, call 0404 791 756.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "physiotherapy-for-parkinsons-staying-mobile",
+    title: "Physiotherapy for Parkinson's: Staying Mobile and Steady",
+    description:
+      "How physiotherapy helps people with Parkinson's disease stay mobile, balanced and confident — including exercise, walking and falls prevention.",
+    date: "2026-07-30",
+    readMins: 6,
+    excerpt:
+      "Physiotherapy plays a central role in living well with Parkinson's — helping maintain movement, balance and confidence. Here's how.",
+    sections: [
+      {
+        h2: "Why movement matters in Parkinson's",
+        body: [
+          "Parkinson's disease affects movement, balance and coordination, and its impact can change over time. Alongside medical management, physiotherapy plays a central role in helping people stay mobile, steady and independent for as long as possible.",
+          "Research consistently shows that regular, targeted exercise helps maintain function and quality of life in Parkinson's — it is one of the most valuable things a person can do.",
+        ],
+      },
+      {
+        h2: "Keeping movement big and confident",
+        body: [
+          "Parkinson's tends to make movements smaller and slower over time. Physiotherapy uses specific strategies and exercises to keep movements large, deliberate and confident — from walking with fuller steps to turning safely.",
+          "Practising these regularly helps them carry over into everyday tasks like getting dressed, standing up and moving around the home.",
+        ],
+      },
+      {
+        h2: "Walking and freezing",
+        body: [
+          "Many people with Parkinson's experience changes in their walking, and some have episodes of 'freezing', where the feet feel stuck. Physiotherapists teach practical cueing strategies — using rhythm, visual targets or counting — that can help get moving again safely.",
+          "Working on walking in the real environment where it happens, such as doorways and hallways at home, makes these strategies especially useful.",
+        ],
+      },
+      {
+        h2: "Balance and falls prevention",
+        body: [
+          "Balance changes and an increased risk of falls are common in Parkinson's. A physiotherapist assesses your balance, builds a tailored program to improve it, and reviews hazards in your home to reduce risk.",
+          "Just as importantly, this work rebuilds confidence, so fear of falling does not lead to doing less and losing more.",
+        ],
+      },
+      {
+        h2: "Care in your own home",
+        body: [
+          "Home visit physiotherapy is particularly helpful in Parkinson's, because therapy happens in the exact setting where movement challenges occur, and there is no tiring travel involved. Programs can be adjusted as needs change over time.",
+          "Fletcher Physiotherapy supports people living with Parkinson's across Newcastle and Lake Macquarie. To arrange a home visit, call 0404 791 756.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "understanding-chronic-pain",
+    title: "Understanding Chronic Pain: Why It Persists and What Helps",
+    description:
+      "A clear, reassuring guide to chronic pain — why pain can persist after healing, and how an active, evidence-based approach helps you move and live better.",
+    date: "2026-07-24",
+    readMins: 7,
+    excerpt:
+      "Chronic pain is real, common and treatable — but it works differently from short-term pain. Understanding it is the first step to managing it well.",
+    sections: [
+      {
+        h2: "Pain that outlasts healing",
+        body: [
+          "Most pain is short-lived: you are injured, it hurts, you heal, and the pain fades. Chronic pain is different — it persists beyond the normal healing time, sometimes for months or years, and does not always reflect ongoing damage.",
+          "This does not mean the pain is imagined. Chronic pain is very real. But understanding that persistent pain and tissue damage are not the same thing is often the first step towards managing it well.",
+        ],
+      },
+      {
+        h2: "Why pain can persist",
+        body: [
+          "Over time, the nervous system can become more sensitive, so it produces pain more easily — a bit like an alarm system set to be over-protective. Stress, poor sleep, worry and long periods of inactivity can all turn that sensitivity up.",
+          "The encouraging side of this is that a sensitised system can also be gradually calmed, which is exactly what a good pain-management approach aims to do.",
+        ],
+      },
+      {
+        h2: "Why movement helps",
+        body: [
+          "It is natural to avoid movement that hurts, but with chronic pain, too much avoidance usually makes things worse — the body becomes weaker and more sensitive. Gentle, graded activity helps retrain the system, rebuild capacity and restore confidence.",
+          "The aim is not to push through severe pain, but to build up steadily at a manageable level — a process known as pacing.",
+        ],
+      },
+      {
+        h2: "A whole-person approach",
+        body: [
+          "Because chronic pain is influenced by sleep, stress, mood and activity, the most effective care addresses more than the sore area alone. Education, graded exercise, pacing and simple lifestyle strategies together tend to work far better than any single treatment.",
+          "Understanding your own pain — what is happening and why — is itself a powerful part of treatment, reducing fear and putting you back in control.",
+        ],
+      },
+      {
+        h2: "How a pain physiotherapist can help",
+        body: [
+          "A physiotherapist with pain-management training helps you understand your pain, build a graded plan to move and do more, and address the factors keeping the system sensitive. The goal is a life less limited by pain, not just a short-term fix.",
+          "Fletcher Physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Pain Management, providing this care in your own home across Newcastle and Lake Macquarie. To arrange a visit, call 0404 791 756.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "knee-replacement-recovery-what-to-expect",
     title: "Knee Replacement Recovery: What to Expect",
     description:
