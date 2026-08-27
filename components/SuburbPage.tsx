@@ -284,9 +284,9 @@ export default function SuburbPage({ s }: { s: Suburb }) {
                 Home visit physiotherapy for older adults, NDIS and Support at Home clients
                 in {s.name}.
               </p>
-              <Link href="/contact" className="btn-accent mt-5 w-full">
+              <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-accent mt-5 w-full">
                 Book Online <Icon name="arrow" className="h-4 w-4" />
-              </Link>
+              </a>
               <a href={site.phoneHref} className="mt-3 flex items-center justify-center gap-2 text-sm font-semibold text-beige-200 hover:text-white">
                 <Icon name="phone" className="h-4 w-4" /> {site.phone}
               </a>

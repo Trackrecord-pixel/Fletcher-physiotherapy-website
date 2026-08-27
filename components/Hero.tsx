@@ -26,7 +26,7 @@ export default function Hero() {
               </span>
               <h2 className="mt-4 text-lg font-semibold text-navy-900">Visit a Clinic</h2>
               <p className="mt-1 flex-grow text-sm text-navy-600">
-                Jesmond (Mondays) &amp; Elermore Vale (Thursdays).
+                Jesmond (Mondays) &amp; Elermore Vale (Mondays).
               </p>
               <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-4 w-full">
                 Book a Clinic Visit <Icon name="arrow" className="h-4 w-4" />
@@ -81,7 +81,7 @@ export default function Hero() {
                   <Icon name="pin" className="h-5 w-5" />
                 </span>
                 <span>
-                  <span className="block text-xs text-navy-500">Clinic · Thursdays</span>
+                  <span className="block text-xs text-navy-500">Clinic · Mondays</span>
                   <span className="block font-semibold text-navy-900">Elermore Vale Medical Centre</span>
                 </span>
               </Link>

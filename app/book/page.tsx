@@ -9,8 +9,25 @@ import { clinics, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Book an Appointment | Fletcher Physiotherapy Newcastle",
   description:
-    "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Thursdays), or as a home visit across Newcastle, Lake Macquarie and the Central Coast.",
+    "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie and the Central Coast.",
   alternates: { canonical: "/book" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "Book an Appointment | Fletcher Physiotherapy Newcastle",
+    description:
+      "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie and the Central Coast.",
+    url: "/book",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Book an Appointment | Fletcher Physiotherapy Newcastle",
+    description:
+      "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie and the Central Coast.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 export default function BookPage() {

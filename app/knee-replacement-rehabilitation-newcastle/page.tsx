@@ -9,6 +9,23 @@ export const metadata: Metadata = {
   description:
     "Home visit knee replacement rehabilitation in Newcastle. Restore movement, strength and confidence in the comfort of your own home.",
   alternates: { canonical: "/knee-replacement-rehabilitation-newcastle" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "Knee Replacement Rehabilitation Newcastle",
+    description:
+      "Home visit knee replacement rehabilitation in Newcastle. Restore movement, strength and confidence in the comfort of your own home.",
+    url: "/knee-replacement-rehabilitation-newcastle",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Knee Replacement Rehabilitation Newcastle",
+    description:
+      "Home visit knee replacement rehabilitation in Newcastle. Restore movement, strength and confidence in the comfort of your own home.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 export default function Page() {

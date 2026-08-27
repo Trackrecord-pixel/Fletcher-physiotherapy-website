@@ -12,6 +12,23 @@ export const metadata: Metadata = {
   description:
     "Meet the Fletcher Physiotherapy team — experienced, caring physiotherapists specialising in home visits, pain management, NDIS, Support at Home and geriatric rehabilitation across Newcastle, Lake Macquarie and the Central Coast.",
   alternates: { canonical: "/our-team" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "Our Team | Newcastle Physiotherapists",
+    description:
+      "Meet the Fletcher Physiotherapy team — experienced, caring physiotherapists specialising in home visits, pain management, NDIS, Support at Home and geriatric rehabilitation across Newcastle, Lake Macquarie and the Central Coast.",
+    url: "/our-team",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Team | Newcastle Physiotherapists",
+    description:
+      "Meet the Fletcher Physiotherapy team — experienced, caring physiotherapists specialising in home visits, pain management, NDIS, Support at Home and geriatric rehabilitation across Newcastle, Lake Macquarie and the Central Coast.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 export default function TeamPage() {

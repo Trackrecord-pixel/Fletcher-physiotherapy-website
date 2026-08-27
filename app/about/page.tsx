@@ -14,6 +14,23 @@ export const metadata: Metadata = {
   description:
     "Fletcher Physiotherapy helps people remain independent, mobile and confident in their own homes across Newcastle, Lake Macquarie and the Central Coast through individualised, patient-centred care.",
   alternates: { canonical: "/about" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "About Us | Home Visit Physiotherapy",
+    description:
+      "Fletcher Physiotherapy helps people remain independent, mobile and confident in their own homes across Newcastle, Lake Macquarie and the Central Coast through individualised, patient-centred care.",
+    url: "/about",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Home Visit Physiotherapy",
+    description:
+      "Fletcher Physiotherapy helps people remain independent, mobile and confident in their own homes across Newcastle, Lake Macquarie and the Central Coast through individualised, patient-centred care.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 const values = [

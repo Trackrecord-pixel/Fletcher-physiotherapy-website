@@ -11,6 +11,23 @@ export const metadata: Metadata = {
   description:
     "Refer a patient or participant to Fletcher Physiotherapy. We welcome referrals from GPs, support coordinators, case managers, home care providers and families across Newcastle, Lake Macquarie and the Central Coast.",
   alternates: { canonical: "/referrals" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "Referrals | Refer to Home Visit Physiotherapy",
+    description:
+      "Refer a patient or participant to Fletcher Physiotherapy. We welcome referrals from GPs, support coordinators, case managers, home care providers and families across Newcastle, Lake Macquarie and the Central Coast.",
+    url: "/referrals",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Referrals | Refer to Home Visit Physiotherapy",
+    description:
+      "Refer a patient or participant to Fletcher Physiotherapy. We welcome referrals from GPs, support coordinators, case managers, home care providers and families across Newcastle, Lake Macquarie and the Central Coast.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 const referrers = [

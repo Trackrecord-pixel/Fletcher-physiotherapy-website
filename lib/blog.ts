@@ -11,6 +11,161 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "knee-replacement-recovery-what-to-expect",
+    title: "Knee Replacement Recovery: What to Expect",
+    description:
+      "A clear guide to recovering from a knee replacement — the stages of healing, regaining movement and strength, and how home physiotherapy helps you recover well.",
+    date: "2026-08-03",
+    readMins: 7,
+    excerpt:
+      "A knee replacement can give you back a pain-free, active life — but the result depends on your rehab. Here's what to expect, and how to recover well.",
+    sections: [
+      {
+        h2: "The operation is only half the job",
+        body: [
+          "A knee replacement can relieve years of pain and restore your ability to walk, garden and get out and about. But the quality of that outcome depends heavily on the rehabilitation you do afterwards — especially regaining movement and strength in the first few months.",
+          "Recovery follows broad stages, though everyone heals at their own pace. Use this as a guide, and always follow your surgeon and physiotherapist's specific advice.",
+        ],
+      },
+      {
+        h2: "The first two weeks",
+        body: [
+          "Early on, the priorities are managing pain and swelling, moving safely with your walking aid, and beginning gentle exercises to restore the knee's bend and straighten it fully. Regaining that range of movement early is one of the most important parts of the whole recovery.",
+          "Swelling is expected and can persist for weeks. Elevation, gentle movement and following your team's advice all help keep it under control.",
+        ],
+      },
+      {
+        h2: "Weeks 2 to 6",
+        body: [
+          "As pain eases, you progress your exercises, build strength in the thigh and hip muscles that support the knee, and gradually walk further. Many people reduce their reliance on a walking aid during this stage, guided by their physiotherapist.",
+          "Consistency matters here more than intensity — little and often, done well, beats occasional hard sessions.",
+        ],
+      },
+      {
+        h2: "Weeks 6 to 12 and beyond",
+        body: [
+          "Over the following weeks, the focus shifts to full strength, balance and returning to the activities you value. Many people continue to see improvement in comfort and function for up to a year after surgery.",
+          "The single biggest mistake is stopping your program once the knee feels better. Continuing to strengthen through this phase is what secures a strong, lasting result.",
+        ],
+      },
+      {
+        h2: "Regaining your knee bend",
+        body: [
+          "Restoring how far your knee can bend and straighten is a key goal, because it affects everything from walking to climbing stairs to getting in and out of a car. Gentle, regular movement — guided so you push at the right rate without overdoing it — is the way to achieve it.",
+          "If your movement seems to be stalling, tell your physiotherapist early; it is far easier to address sooner than later.",
+        ],
+      },
+      {
+        h2: "How home physiotherapy helps",
+        body: [
+          "Getting to a clinic after knee surgery is tiring and sometimes painful, which is why home visit physiotherapy is so valuable. Your physiotherapist can guide your exercises, check your progress and help you regain confidence with stairs and daily tasks — all in your own home.",
+          "Fletcher Physiotherapy supports knee replacement recovery across Newcastle and Lake Macquarie. To arrange in-home rehabilitation, call 0404 791 756.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "sciatica-how-physiotherapy-can-help",
+    title: "Sciatica: How Physiotherapy Can Help",
+    description:
+      "What sciatica is, what causes it, and how physiotherapy helps relieve the pain and get you moving again — plus when to seek further help.",
+    date: "2026-07-31",
+    readMins: 6,
+    excerpt:
+      "Sciatica can be painful and worrying, but most cases settle well with the right approach. Here's how physiotherapy helps.",
+    sections: [
+      {
+        h2: "What sciatica actually is",
+        body: [
+          "Sciatica describes pain that travels along the path of the sciatic nerve — from the lower back, through the buttock and down the leg. It is a symptom rather than a diagnosis, usually caused by irritation or compression of the nerve where it leaves the spine.",
+          "The pain can be sharp, burning or shooting, and is sometimes accompanied by pins and needles or numbness in the leg. Understandably it can be alarming, but the reassuring news is that most cases improve well over time with the right approach.",
+        ],
+      },
+      {
+        h2: "Common causes",
+        body: [
+          "Sciatica is often related to changes in the lower back, such as a disc bulge or age-related narrowing that irritates the nerve. Prolonged sitting, sudden loading or a period of low activity can all contribute to a flare-up.",
+          "Because the causes vary, a proper assessment matters — it guides which movements and treatments will help you specifically, rather than a one-size-fits-all approach.",
+        ],
+      },
+      {
+        h2: "How physiotherapy helps",
+        body: [
+          "Physiotherapy for sciatica typically combines hands-on treatment to ease symptoms, specific movements and exercises to reduce nerve irritation, and a graded return to activity. Staying gently active — rather than resting completely — is usually one of the most helpful things you can do.",
+          "Just as important is education: understanding what is happening, what is safe, and how to manage a flare-up reduces fear and helps you recover with confidence.",
+        ],
+      },
+      {
+        h2: "Movement is medicine",
+        body: [
+          "It is natural to want to rest when your leg hurts, but too much rest often prolongs sciatica. A physiotherapist helps you find the movements that settle your symptoms and gradually rebuild your tolerance for sitting, walking and daily tasks.",
+          "Progress is not always linear — some days are better than others — but a clear plan keeps you moving in the right direction.",
+        ],
+      },
+      {
+        h2: "When to seek further help",
+        body: [
+          "Most sciatica settles, but certain symptoms warrant prompt medical review — including severe or rapidly worsening weakness in the leg, or any changes to bladder or bowel control. If you experience these, seek medical attention without delay.",
+          "For ongoing or recurrent sciatica, a physiotherapy assessment is a sound first step to understand your particular case and get moving again.",
+        ],
+      },
+      {
+        h2: "Care in your own home",
+        body: [
+          "For people whose sciatica makes travelling and sitting in a waiting room difficult, home visit physiotherapy is a practical option — assessment and treatment come to you, in the setting where your symptoms actually occur.",
+          "Fletcher Physiotherapy treats sciatica and lower back pain across Newcastle and Lake Macquarie. To book an assessment, call 0404 791 756.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-get-up-safely-after-a-fall",
+    title: "How to Get Up Safely After a Fall",
+    description:
+      "A step-by-step guide for older adults on how to get up safely after a fall — and what to do if you can't — plus how physiotherapy rebuilds the strength to do it.",
+    date: "2026-07-26",
+    readMins: 5,
+    excerpt:
+      "Knowing how to get up after a fall — calmly and safely — is a skill worth practising before you ever need it. Here's how.",
+    sections: [
+      {
+        h2: "Why this skill matters",
+        body: [
+          "Many older adults who fall are not badly hurt by the fall itself, but end up on the floor for a long time simply because they are not sure how to get back up. Knowing a safe method — and having the strength to do it — reduces both the risk and the fear.",
+          "It is worth learning and gently practising this before you ever need it, ideally with guidance from a physiotherapist.",
+        ],
+      },
+      {
+        h2: "First, pause and check",
+        body: [
+          "If you fall, try not to rush. Take a moment to catch your breath and check whether you are hurt. If you feel you may be injured, it is safer to call for help and stay warm and comfortable than to force yourself up.",
+          "If you feel able to get up, do it slowly and in stages rather than all at once.",
+        ],
+      },
+      {
+        h2: "A safe way to get up",
+        body: [
+          "Roll onto your side, then push up onto your hands and knees. Crawl to a sturdy, stable piece of furniture such as a solid chair.",
+          "Place your hands on the seat, bring your stronger leg forward with the foot flat on the floor, and push up through your arms and legs to turn and sit down on the chair. Rest there for a few minutes before standing.",
+        ],
+      },
+      {
+        h2: "If you can't get up",
+        body: [
+          "If you cannot get up, call for help — a personal alarm, phone or by attracting attention. Try to move to a carpeted or warm area, keep moving your joints to stay warm, and change position when you can to stay comfortable while you wait.",
+          "A personal alarm pendant is a simple, worthwhile safeguard for anyone at higher risk of falling, especially those living alone.",
+        ],
+      },
+      {
+        h2: "Building the strength and confidence to do it",
+        body: [
+          "Being able to get off the floor takes strength, mobility and practice — all of which physiotherapy can build. A physiotherapist can teach and rehearse the technique with you safely, strengthen the muscles involved, and reduce the fear that so often follows a fall.",
+          "Fletcher Physiotherapy provides falls prevention and recovery physiotherapy in your own home across Newcastle and Lake Macquarie. To arrange a visit, call 0404 791 756.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "how-to-prevent-falls-at-home-room-by-room",
     title: "How to Prevent Falls at Home: A Room-by-Room Guide",
     description:

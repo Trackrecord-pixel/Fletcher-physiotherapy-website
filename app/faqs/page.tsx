@@ -12,6 +12,23 @@ export const metadata: Metadata = {
   description:
     "Frequently asked questions about Fletcher Physiotherapy — home visits, NDIS, Home Care Packages, Support at Home, GP referrals and our service areas across Newcastle, Lake Macquarie and the Central Coast.",
   alternates: { canonical: "/faqs" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "FAQs | Home Visit, NDIS & Home Care Package Physiotherapy",
+    description:
+      "Frequently asked questions about Fletcher Physiotherapy — home visits, NDIS, Home Care Packages, Support at Home, GP referrals and our service areas across Newcastle, Lake Macquarie and the Central Coast.",
+    url: "/faqs",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQs | Home Visit, NDIS & Home Care Package Physiotherapy",
+    description:
+      "Frequently asked questions about Fletcher Physiotherapy — home visits, NDIS, Home Care Packages, Support at Home, GP referrals and our service areas across Newcastle, Lake Macquarie and the Central Coast.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 export default function FaqsPage() {

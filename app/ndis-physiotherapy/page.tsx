@@ -6,6 +6,23 @@ export const metadata: Metadata = {
   description:
     "NDIS physiotherapy in Newcastle, Lake Macquarie and the Central Coast. Home visits for self-managed, plan-managed and agency-managed participants. Functional assessments, mobility, exercise, falls prevention and pain management.",
   alternates: { canonical: "/ndis-physiotherapy" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "NDIS Physiotherapy Newcastle | Home Visit NDIS Physio",
+    description:
+      "NDIS physiotherapy in Newcastle, Lake Macquarie and the Central Coast. Home visits for self-managed, plan-managed and agency-managed participants. Functional assessments, mobility, exercise, falls prevention and pain management.",
+    url: "/ndis-physiotherapy",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NDIS Physiotherapy Newcastle | Home Visit NDIS Physio",
+    description:
+      "NDIS physiotherapy in Newcastle, Lake Macquarie and the Central Coast. Home visits for self-managed, plan-managed and agency-managed participants. Functional assessments, mobility, exercise, falls prevention and pain management.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 export default function Page() {

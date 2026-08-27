@@ -10,6 +10,23 @@ export const metadata: Metadata = {
   description:
     "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie and the Central Coast. Call 0466 488 869 or send an enquiry online.",
   alternates: { canonical: "/contact" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "Contact | Book Home Visit Physiotherapy",
+    description:
+      "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie and the Central Coast. Call 0466 488 869 or send an enquiry online.",
+    url: "/contact",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact | Book Home Visit Physiotherapy",
+    description:
+      "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie and the Central Coast. Call 0466 488 869 or send an enquiry online.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 const details = [

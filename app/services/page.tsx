@@ -15,6 +15,23 @@ export const metadata: Metadata = {
   description:
     "Explore Fletcher Physiotherapy services: home visit physiotherapy, NDIS, Support at Home, chronic pain management, falls prevention, post-hospital rehabilitation, balance training and strength & mobility programs.",
   alternates: { canonical: "/services" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "Physiotherapy Services | Home Visits Newcastle & Central Coast",
+    description:
+      "Explore Fletcher Physiotherapy services: home visit physiotherapy, NDIS, Support at Home, chronic pain management, falls prevention, post-hospital rehabilitation, balance training and strength & mobility programs.",
+    url: "/services",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Physiotherapy Services | Home Visits Newcastle & Central Coast",
+    description:
+      "Explore Fletcher Physiotherapy services: home visit physiotherapy, NDIS, Support at Home, chronic pain management, falls prevention, post-hospital rehabilitation, balance training and strength & mobility programs.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 const detailed = [

@@ -6,6 +6,23 @@ export const metadata: Metadata = {
   description:
     "Falls prevention and balance training physiotherapy at home in Newcastle, Lake Macquarie and the Central Coast. Balance assessment, home safety review and tailored exercise to reduce falls risk and build confidence.",
   alternates: { canonical: "/falls-prevention" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "Falls Prevention Physiotherapy | Newcastle Home Visits",
+    description:
+      "Falls prevention and balance training physiotherapy at home in Newcastle, Lake Macquarie and the Central Coast. Balance assessment, home safety review and tailored exercise to reduce falls risk and build confidence.",
+    url: "/falls-prevention",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Falls Prevention Physiotherapy | Newcastle Home Visits",
+    description:
+      "Falls prevention and balance training physiotherapy at home in Newcastle, Lake Macquarie and the Central Coast. Balance assessment, home safety review and tailored exercise to reduce falls risk and build confidence.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 export default function Page() {

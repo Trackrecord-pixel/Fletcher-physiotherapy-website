@@ -9,6 +9,23 @@ export const metadata: Metadata = {
   description:
     "Aged care physiotherapy in Newcastle delivered at home. Balance training, strength, falls prevention and walking confidence to help seniors stay independent.",
   alternates: { canonical: "/aged-care-physiotherapy-newcastle" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "Aged Care Physiotherapy | Newcastle NSW",
+    description:
+      "Aged care physiotherapy in Newcastle delivered at home. Balance training, strength, falls prevention and walking confidence to help seniors stay independent.",
+    url: "/aged-care-physiotherapy-newcastle",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aged Care Physiotherapy | Newcastle NSW",
+    description:
+      "Aged care physiotherapy in Newcastle delivered at home. Balance training, strength, falls prevention and walking confidence to help seniors stay independent.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 export default function Page() {

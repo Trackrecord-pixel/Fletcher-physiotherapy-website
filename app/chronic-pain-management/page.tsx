@@ -6,6 +6,23 @@ export const metadata: Metadata = {
   description:
     "Chronic pain management physiotherapy at home in Newcastle, Lake Macquarie and the Central Coast. Master's-qualified, evidence-based care that reduces fear of movement and helps you return to meaningful activity.",
   alternates: { canonical: "/chronic-pain-management" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "Chronic Pain Management Physiotherapy | Newcastle Home Visits",
+    description:
+      "Chronic pain management physiotherapy at home in Newcastle, Lake Macquarie and the Central Coast. Master's-qualified, evidence-based care that reduces fear of movement and helps you return to meaningful activity.",
+    url: "/chronic-pain-management",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chronic Pain Management Physiotherapy | Newcastle Home Visits",
+    description:
+      "Chronic pain management physiotherapy at home in Newcastle, Lake Macquarie and the Central Coast. Master's-qualified, evidence-based care that reduces fear of movement and helps you return to meaningful activity.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 export default function Page() {

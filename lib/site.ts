@@ -108,13 +108,13 @@ export const clinics: Clinic[] = [
     suburb: "Elermore Vale",
     postcode: "2287",
     region: "Newcastle",
-    consultingDay: "Thursday",
-    dayShort: "Thursdays",
+    consultingDay: "Monday",
+    dayShort: "Mondays",
     geo: { lat: -32.9132, lng: 151.664 },
     intro:
-      "Fletcher Physiotherapy consults at Elermore Vale Medical Centre every Thursday, providing experienced physiotherapy for pain, injuries, rehabilitation, balance and falls prevention — as well as home visits throughout Newcastle and Lake Macquarie.",
+      "Fletcher Physiotherapy consults at Elermore Vale Medical Centre every Monday, providing experienced physiotherapy for pain, injuries, rehabilitation, balance and falls prevention — as well as home visits throughout Newcastle and Lake Macquarie.",
     about: [
-      "Our Elermore Vale clinic operates from Elermore Vale Medical Centre on Croudace Road, a welcoming local practice serving the western Newcastle community. Consultations are available each Thursday.",
+      "Our Elermore Vale clinic operates from Elermore Vale Medical Centre on Croudace Road, a welcoming local practice serving the western Newcastle community. Consultations are available each Monday.",
       "Care is led by an APA Titled Pain Physiotherapist experienced in chronic pain, musculoskeletal and sports injuries, balance and falls prevention, and post-operative rehabilitation. Every plan is practical, evidence-based and tailored to your individual goals.",
     ],
     parking:

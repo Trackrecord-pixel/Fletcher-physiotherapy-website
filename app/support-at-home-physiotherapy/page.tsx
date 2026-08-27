@@ -6,6 +6,23 @@ export const metadata: Metadata = {
   description:
     "Support at Home and Home Care Package physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
   alternates: { canonical: "/support-at-home-physiotherapy" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "Support at Home Physiotherapy Newcastle | Home Care Package Physio",
+    description:
+      "Support at Home and Home Care Package physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
+    url: "/support-at-home-physiotherapy",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Support at Home Physiotherapy Newcastle | Home Care Package Physio",
+    description:
+      "Support at Home and Home Care Package physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 export default function Page() {

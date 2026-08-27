@@ -6,6 +6,23 @@ export const metadata: Metadata = {
   description:
     "Home visit physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you — professional mobile physiotherapy in the comfort and safety of your own home.",
   alternates: { canonical: "/home-visit-physiotherapy" },
+  openGraph: {
+    type: "website",
+    siteName: "Fletcher Physiotherapy",
+    locale: "en_AU",
+    title: "Home Visit Physiotherapy Newcastle | Mobile Physio",
+    description:
+      "Home visit physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you — professional mobile physiotherapy in the comfort and safety of your own home.",
+    url: "/home-visit-physiotherapy",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Home Visit Physiotherapy Newcastle | Mobile Physio",
+    description:
+      "Home visit physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you — professional mobile physiotherapy in the comfort and safety of your own home.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 export default function Page() {
