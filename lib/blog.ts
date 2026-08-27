@@ -11,6 +11,175 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "how-to-prevent-falls-at-home-room-by-room",
+    title: "How to Prevent Falls at Home: A Room-by-Room Guide",
+    description:
+      "A physiotherapist's practical, room-by-room guide to preventing falls at home for older adults — simple changes that reduce risk and rebuild confidence.",
+    date: "2026-08-04",
+    readMins: 7,
+    excerpt:
+      "Most falls at home are preventable. Here's a practical, room-by-room guide to making your home safer — and staying steady on your feet.",
+    sections: [
+      {
+        h2: "Why home falls matter so much",
+        body: [
+          "Falls are the leading cause of injury-related hospital admissions for older Australians, and the majority happen at home during ordinary daily activities. A single fall can undermine confidence, reduce activity and start a cycle that quietly erodes independence.",
+          "The good news is that most home falls are preventable. A combination of small environmental changes and targeted strength and balance work dramatically reduces risk — and rebuilds the confidence to keep moving.",
+        ],
+      },
+      {
+        h2: "Entrance, hallways and stairs",
+        body: [
+          "Clear walkways of clutter, cords and loose mats, and make sure every hallway and stairwell is well lit — a bright, easily reached light switch at both ends of the stairs makes a real difference at night.",
+          "Sturdy handrails on both sides of any stairs give you something reliable to hold. If steps are hard to see, a strip of contrasting colour on the edge helps your eyes judge the depth.",
+        ],
+      },
+      {
+        h2: "The bathroom",
+        body: [
+          "The bathroom is one of the highest-risk rooms because of wet, slippery surfaces. Non-slip mats inside and outside the shower, and grab rails near the toilet and in the shower, provide secure support at the moments you need it most.",
+          "A shower chair and a hand-held shower head let you wash safely while seated, and raising a low toilet with a raised seat makes standing up far easier on the knees and hips.",
+        ],
+      },
+      {
+        h2: "The kitchen and living areas",
+        body: [
+          "Keep everyday items — cups, plates, the kettle — within easy reach so you are not stretching or climbing. Wipe up spills straight away, and avoid walking in socks on smooth floors.",
+          "In living areas, arrange furniture so there is a clear, wide path to walk through, and choose a chair with armrests and a firm seat that is easy to rise from. Remove or secure rugs that can slide or curl at the edges.",
+        ],
+      },
+      {
+        h2: "The bedroom",
+        body: [
+          "A lamp within arm's reach of the bed means you never have to cross a dark room. Keep a clear path to the bathroom, and consider a nightlight along the route.",
+          "Sit on the edge of the bed for a moment before standing, especially at night — this gives your body time to adjust and reduces the dizziness that can come from standing up quickly.",
+        ],
+      },
+      {
+        h2: "The part a checklist can't fix: strength and balance",
+        body: [
+          "Home safety changes remove hazards, but they can't rebuild the strength and balance that keep you steady in the first place. That is where physiotherapy makes the biggest difference — through a balance assessment, a tailored strength and balance program, and gait and confidence training.",
+          "At Fletcher Physiotherapy we assess falls risk in your own home, where the hazards actually are, and build a practical plan around your goals. If you or a loved one has had a fall, or simply feels less steady than before, a home visit is a simple, effective first step. Call us on 0404 791 756 to arrange one.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "hip-replacement-recovery-week-by-week",
+    title: "Hip Replacement Recovery: A Week-by-Week Guide",
+    description:
+      "What to expect after a hip replacement, week by week — from the first days home to returning to normal activity — and how home physiotherapy supports each stage.",
+    date: "2026-08-01",
+    readMins: 8,
+    excerpt:
+      "Recovering from a hip replacement is a journey with clear stages. Here's what to expect week by week, and how to rebuild strength safely at home.",
+    sections: [
+      {
+        h2: "Recovery is a process, not an event",
+        body: [
+          "A hip replacement can transform your quality of life, but the operation is only the beginning. The strength, movement and confidence you regain afterwards depend heavily on your rehabilitation — and most of that happens at home.",
+          "Everyone recovers at a slightly different pace, so use the timeline below as a general guide rather than a fixed schedule. Always follow the specific advice of your surgeon and treating team.",
+        ],
+      },
+      {
+        h2: "The first days home",
+        body: [
+          "In the first days after discharge, the focus is on moving safely, managing swelling and pain, and getting in and out of bed and chairs without straining the new hip. Gentle, frequent movement is encouraged — short, regular walks with your aid are better than long ones.",
+          "This is also when setting up your home matters most: a firm chair with armrests, a raised toilet seat, and clear walkways all make everyday movement safer while your hip is healing.",
+        ],
+      },
+      {
+        h2: "Weeks 1 to 2",
+        body: [
+          "Over the first fortnight, the goal is to restore basic movement and reduce reliance on your walking aid as your surgeon allows. Gentle exercises to activate the hip and thigh muscles help reduce stiffness and rebuild control.",
+          "Swelling is normal at this stage. Elevating the leg and following your team's advice on ice and activity helps manage it, while regular gentle movement keeps circulation healthy.",
+        ],
+      },
+      {
+        h2: "Weeks 3 to 6",
+        body: [
+          "As pain settles, you can usually begin more purposeful strengthening and progress your walking distance. Many people move from a frame to a stick around this time, though always at the pace your surgeon and physiotherapist advise.",
+          "This is the stage where guided physiotherapy pays off most — progressing your exercises at the right rate keeps you moving forward without overloading the healing joint.",
+        ],
+      },
+      {
+        h2: "Weeks 6 to 12",
+        body: [
+          "By six to twelve weeks, most people are walking more freely and returning to everyday activities. The emphasis shifts to rebuilding full strength, balance and endurance so you can return to the things you enjoy with confidence.",
+          "Continuing your exercise program through this phase — rather than stopping once you feel better — is what locks in a strong, lasting result.",
+        ],
+      },
+      {
+        h2: "Precautions worth remembering",
+        body: [
+          "Depending on your surgical approach, your surgeon may ask you to avoid certain movements in the early weeks, such as bending the hip too far or crossing your legs. Follow this advice carefully, and check before returning to driving, or to more demanding activity.",
+          "If anything feels wrong — increasing pain, redness, heat or swelling — contact your surgical team promptly.",
+        ],
+      },
+      {
+        h2: "How home physiotherapy supports your recovery",
+        body: [
+          "Home visit physiotherapy is especially valuable after a hip replacement, when travelling to a clinic is difficult and tiring. Your physiotherapist can assess how you move in your own home, progress your program safely, and help you regain independence with everyday tasks.",
+          "At Fletcher Physiotherapy we support people through hip replacement recovery across Newcastle and Lake Macquarie. To arrange in-home rehabilitation, call 0404 791 756.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "choosing-the-right-walking-aid",
+    title: "Choosing the Right Walking Aid: Cane, Walker or Rollator",
+    description:
+      "A physiotherapist's guide to choosing and using a walking aid — canes, walking frames and rollators — including how to set the right height and stay safe.",
+    date: "2026-07-28",
+    readMins: 6,
+    excerpt:
+      "The right walking aid can restore confidence and independence — the wrong one can increase your falls risk. Here's how to choose well.",
+    sections: [
+      {
+        h2: "The right aid helps; the wrong one hurts",
+        body: [
+          "A well-chosen, well-fitted walking aid can restore confidence, reduce falls risk and keep you active and independent. But an aid that is the wrong type or the wrong height can actually make walking less safe.",
+          "That is why the choice is worth getting right — ideally with guidance from a physiotherapist who can match the aid to your strength, balance and daily needs.",
+        ],
+      },
+      {
+        h2: "When a walking aid might help",
+        body: [
+          "You might benefit from a walking aid if you feel unsteady, tire quickly, have had a fall or a near-fall, or are recovering from surgery or illness. An aid is not a sign of decline — it is a tool that keeps you moving safely and doing more, not less.",
+          "The best aid depends on how much support you need and where you use it, so it is worth considering your whole day rather than a single situation.",
+        ],
+      },
+      {
+        h2: "Walking sticks and canes",
+        body: [
+          "A single-point stick suits people who need a little extra stability and balance but have reasonable strength. A four-point (quad) cane offers more support and can stand on its own.",
+          "Used correctly, a stick is held in the hand opposite your weaker or sorer leg, and moves forward with that leg. Getting this pattern right makes a surprising difference to how much it helps.",
+        ],
+      },
+      {
+        h2: "Walking frames",
+        body: [
+          "A standard walking frame (no wheels) gives the most stability, because it is lifted and placed with each step. It suits people who need significant support and are walking shorter distances, often indoors.",
+          "Because it must be lifted, a frame requires reasonable arm strength and a slower, deliberate pace — which is exactly what some people need while they rebuild confidence.",
+        ],
+      },
+      {
+        h2: "Rollators (wheeled walkers)",
+        body: [
+          "A rollator has wheels, hand brakes and usually a seat, making it easier to move continuously and to rest when needed. It suits people with reasonable balance who want to walk further, including outdoors.",
+          "The trade-off is that a rollator offers less bracing support than a frame, so it is not right for everyone — the seat and brakes are only safe if you can manage them reliably.",
+        ],
+      },
+      {
+        h2: "Height, technique and getting it right",
+        body: [
+          "Whatever the aid, height matters: as a general guide, the handle should sit at wrist height when you stand tall with your arms relaxed, giving a slight, comfortable bend at the elbow. An aid set too high or too low changes your posture and reduces its benefit.",
+          "A physiotherapist can assess which aid suits you, set it to the correct height, and teach you to use it safely on stairs, kerbs and different surfaces. At Fletcher Physiotherapy we do this in your own home across Newcastle and Lake Macquarie — call 0404 791 756 to arrange an assessment.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "how-physiotherapy-helps-older-adults-stay-independent-at-home",
     title: "How Physiotherapy Helps Older Adults Stay Independent at Home",
     description:
