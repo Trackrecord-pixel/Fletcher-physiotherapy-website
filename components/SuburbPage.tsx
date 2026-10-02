@@ -65,6 +65,28 @@ export default function SuburbPage({ s }: { s: Suburb }) {
               </p>
             </div>
 
+            {s.region === "Sydney" && (
+              <div className="mt-8 rounded-2xl border border-clay-200 bg-clay-50 p-6 sm:p-7">
+                <h2 className="flex items-center gap-2 text-xl text-navy-900">
+                  <Icon name="users" className="h-5 w-5 text-clay-600" /> Referrers in the Olympic Park area
+                </h2>
+                <p className="prose-navy mt-3">
+                  We&rsquo;re building our Sydney referral network ahead of launching in November 2026. GPs,
+                  nursing-home and aged-care teams, Support at Home providers and NDIS support coordinators
+                  within about 30 minutes of Sydney Olympic Park &mdash; we&rsquo;d welcome the chance to work
+                  with you and support your clients at home.
+                </p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <Link href="/refer-a-patient" className="btn-primary">
+                    Refer a patient <Icon name="arrow" className="h-4 w-4" />
+                  </Link>
+                  <a href={site.phoneHref} className="btn-secondary">
+                    <Icon name="phone" className="h-4 w-4" /> {site.phone}
+                  </a>
+                </div>
+              </div>
+            )}
+
             <div className="mt-10">
               <h2 className="text-2xl text-navy-900 sm:text-3xl">
                 Conditions we treat in {s.name}

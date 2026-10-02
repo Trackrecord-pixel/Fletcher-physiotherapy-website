@@ -214,6 +214,7 @@ export function OrganizationSchema() {
       { "@type": "City", name: "Newcastle", address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
       { "@type": "City", name: "Lake Macquarie", address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
       { "@type": "City", name: "Central Coast", address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
+      { "@type": "City", name: "Sydney", address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
     ],
     location: clinicLocations,
     sameAs: [site.reviewsUrl],

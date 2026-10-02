@@ -236,7 +236,7 @@ export default function HomePage() {
             center
             eyebrow="Service Locations"
             title="Home visit physiotherapy across the region"
-            intro="We bring physiotherapy to you in Newcastle, Lake Macquarie and the Central Coast."
+            intro="We bring physiotherapy to you across Newcastle, Lake Macquarie and the Central Coast — and now Sydney, from November 2026."
           />
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {locations.map((loc, i) => (

@@ -46,7 +46,7 @@ export default function LocationsPage() {
       <PageHero
         eyebrow="Our Locations"
         title="Newcastle physiotherapy clinics & home visits"
-        intro="Choose the option that suits you best — visit one of our two Newcastle clinics, or have a physiotherapist come to your home across Newcastle, Lake Macquarie and the Central Coast."
+        intro="Choose the option that suits you best — visit one of our two Newcastle clinics, or have a physiotherapist come to your home across Newcastle, Lake Macquarie and the Central Coast — and, from November 2026, Sydney."
         breadcrumb={[
           { name: "Home", href: "/" },
           { name: "Locations", href: "/locations" },
@@ -148,7 +148,7 @@ export default function LocationsPage() {
             center
             eyebrow="Suburbs we visit"
             title="Home visit physiotherapy near you"
-            intro="Explore home visit physiotherapy in these Newcastle, Lake Macquarie and Central Coast suburbs."
+            intro="Explore home visit physiotherapy across our Newcastle, Lake Macquarie and Central Coast suburbs — and our new Sydney service areas, from November 2026."
           />
           <div className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {suburbs.map((sub) => (

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import BlogImage from "@/components/BlogImage";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
@@ -105,14 +106,7 @@ export default async function ArticlePage({
             </div>
           </div>
           <div className="relative mt-6 aspect-[16/9] w-full overflow-hidden rounded-2xl">
-            <Image
-              src={`/images/blog/${post.slug}.jpg`}
-              alt={post.title}
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 768px"
-              className="object-cover"
-            />
+            <BlogImage slug={post.slug} alt={post.title} priority sizes="(max-width: 768px) 100vw, 768px" />
           </div>
           <article className="mt-8">
             {post.sections.map((sec) => (

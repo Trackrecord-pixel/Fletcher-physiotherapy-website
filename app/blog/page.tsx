@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import BlogImage from "@/components/BlogImage";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Icon from "@/components/Icon";
@@ -59,13 +59,7 @@ export default function BlogIndex() {
             <Reveal key={p.slug} delay={(i % 3) * 70}>
               <Link href={`/blog/${p.slug}`} className="card card-hover flex h-full flex-col p-0 overflow-hidden">
                 <div className="relative aspect-[16/9] w-full">
-                  <Image
-                    src={`/images/blog/${p.slug}.jpg`}
-                    alt={p.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
-                  />
+                  <BlogImage slug={p.slug} alt={p.title} sizes="(max-width: 768px) 100vw, 33vw" />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                 <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-navy-500">
