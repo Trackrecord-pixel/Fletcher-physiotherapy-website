@@ -30,6 +30,7 @@ export const primaryNav: NavLink[] = [
   { label: "Services", href: "/services" },
   { label: "Our Team", href: "/our-team" },
   { label: "Locations", href: "/locations" },
+  { label: "Sydney", href: "/physiotherapy-sydney" },
   { label: "Blog", href: "/blog" },
   { label: "Refer a Patient", href: "/refer-a-patient" },
   { label: "Contact", href: "/contact" },

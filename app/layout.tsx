@@ -77,6 +77,13 @@ export default function RootLayout({
         <OrganizationSchema />
         <WebSiteSchema />
         <LocalBusinessSchema />
+        <a
+          href="/physiotherapy-sydney"
+          className="block bg-clay-500 px-4 py-2.5 text-center text-sm font-medium text-white hover:bg-clay-600"
+        >
+          New — Fletcher Physiotherapy is expanding to Sydney from November 2026.{" "}
+          <span className="font-semibold underline underline-offset-2">See our Sydney service →</span>
+        </a>
         <Header />
         <main id="main">{children}</main>
         <Footer />

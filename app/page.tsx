@@ -21,6 +21,30 @@ export default function HomePage() {
     <>
       <Hero />
 
+      {/* Sydney expansion banner */}
+      <section className="bg-navy-900">
+        <div className="container-px flex flex-col items-start justify-between gap-6 py-10 lg:flex-row lg:items-center">
+          <div className="max-w-2xl">
+            <span className="eyebrow">New · Sydney</span>
+            <h2 className="mt-4 text-2xl text-white sm:text-3xl">
+              Fletcher Physiotherapy is expanding to Sydney
+            </h2>
+            <p className="mt-3 text-navy-100">
+              From November 2026, we&rsquo;re bringing nursing-home and in-home physiotherapy to Support at
+              Home and NDIS clients across the Sydney Olympic Park area and the inner west.
+            </p>
+          </div>
+          <div className="flex flex-shrink-0 flex-col gap-3 sm:flex-row">
+            <Link href="/physiotherapy-sydney" className="btn-accent">
+              Explore our Sydney service <Icon name="arrow" className="h-4 w-4" />
+            </Link>
+            <Link href="/refer-a-patient" className="btn-secondary border-navy-700 bg-transparent text-white hover:bg-navy-800">
+              Refer a patient
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Visit Our Newcastle Physiotherapy Clinics */}
       <section className="section-py bg-sand" id="clinics">
         <div className="container-px">
