@@ -8,14 +8,15 @@ export default function Hero() {
       <div className="container-px grid items-center gap-10 py-14 lg:grid-cols-12 lg:gap-12 lg:py-20">
         <div className="lg:col-span-7">
           <span className="eyebrow">
-            <Icon name="pulse" className="h-5 w-5" /> Newcastle Physiotherapy · Clinics &amp; Home Visits
+            <Icon name="pulse" className="h-5 w-5" /> Home Visit Physiotherapy · Sydney · Newcastle · Central Coast
           </span>
           <h1 className="mt-6 text-4xl font-semibold leading-[1.1] text-navy-900 sm:text-5xl">
-            Newcastle&rsquo;s Trusted Physiotherapy Team
+            Your Trusted Physiotherapy Team across Sydney, Newcastle &amp; the Central Coast
           </h1>
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-navy-700">
-            Two ways to see us — book an appointment at one of our Newcastle clinics,
-            or have a physiotherapist come to your home. Whatever suits you best.
+            Expert home-visit physiotherapy — launching in Sydney from November 2026, and already
+            serving Newcastle, Lake Macquarie and the Central Coast, plus two Newcastle clinics.
+            Whatever suits you best.
           </p>
 
           {/* Two ways to see us */}
@@ -38,7 +39,7 @@ export default function Hero() {
               </span>
               <h2 className="mt-4 text-lg font-semibold text-navy-900">Home Visit</h2>
               <p className="mt-1 flex-grow text-sm text-navy-600">
-                We come to you across Newcastle, Lake Macquarie &amp; Central Coast.
+                Sydney (from November 2026), Newcastle, Lake Macquarie &amp; the Central Coast.
               </p>
               <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-4 w-full">
                 Book a Home Visit <Icon name="arrow" className="h-4 w-4" />

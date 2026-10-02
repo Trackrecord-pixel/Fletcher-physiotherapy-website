@@ -50,7 +50,7 @@ export default function Header() {
       <div className="hidden border-b border-navy-100 bg-navy-800 text-white lg:block">
         <div className="container-px flex h-10 items-center justify-between text-xs">
           <p className="font-medium tracking-wide">
-            Home Visits · Newcastle · Lake Macquarie · Central Coast · Now expanding to Sydney (Nov 2026)
+            Home Visits · Sydney (from Nov 2026) · Newcastle · Lake Macquarie · Central Coast
           </p>
           <div className="flex items-center gap-5">
             <a href={site.phoneHref} className="inline-flex items-center gap-1.5 hover:text-beige-200">
