@@ -9,25 +9,25 @@ import { BreadcrumbSchema } from "@/components/StructuredData";
 import { posts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog | Home Visit & Aged Care Physiotherapy Insights",
+  title: "Physio Blog | Home Visit & Aged Care Tips",
   description:
-    "Practical physiotherapy advice for older adults, families and carers — home visits, NDIS, Support at Home, falls prevention and recovery, from Fletcher Physiotherapy.",
+    "Practical physio advice for older adults, families and carers — falls prevention, recovery, NDIS, Support at Home and staying independent.",
   alternates: { canonical: "/blog" },
   openGraph: {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Blog | Home Visit & Aged Care Physiotherapy Insights",
+    title: "Physio Blog | Home Visit & Aged Care Tips",
     description:
-      "Practical physiotherapy advice for older adults, families and carers — home visits, NDIS, Support at Home, falls prevention and recovery, from Fletcher Physiotherapy.",
+      "Practical physio advice for older adults, families and carers — falls prevention, recovery, NDIS, Support at Home and staying independent.",
     url: "/blog",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog | Home Visit & Aged Care Physiotherapy Insights",
+    title: "Physio Blog | Home Visit & Aged Care Tips",
     description:
-      "Practical physiotherapy advice for older adults, families and carers — home visits, NDIS, Support at Home, falls prevention and recovery, from Fletcher Physiotherapy.",
+      "Practical physio advice for older adults, families and carers — falls prevention, recovery, NDIS, Support at Home and staying independent.",
     images: ["/images/og-default.png"],
   },
 };

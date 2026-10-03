@@ -24,8 +24,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
+  const seoTitle = post.seoTitle ?? post.title;
   return {
-    title: post.title,
+    // Keep Google titles to ~60 characters: drop the brand suffix on long titles.
+    title: seoTitle.length > 40 ? { absolute: seoTitle } : seoTitle,
     description: post.description,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
@@ -33,7 +35,7 @@ export async function generateMetadata({
       siteName: "Fletcher Physiotherapy",
       locale: "en_AU",
       url: `/blog/${post.slug}`,
-      title: post.title,
+      title: seoTitle,
       description: post.description,
       publishedTime: post.date,
       modifiedTime: post.updated ?? post.date,
@@ -41,7 +43,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title: seoTitle,
       description: post.description,
       images: [`/images/blog/${post.slug}.jpg`],
     },

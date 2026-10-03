@@ -7,7 +7,7 @@ const c = landingPages["home-visit-physiotherapy-newcastle"];
 export const metadata: Metadata = {
   title: "Home Visit Physiotherapy | Newcastle NSW",
   description:
-    "Home visit physiotherapy in Newcastle for older adults, NDIS and Support at Home clients. Mobile physio at home for falls prevention, mobility and strength. Book today.",
+    "Home visit physio in Newcastle for older adults, NDIS and Support at Home clients — falls prevention, mobility and strength at home. Book today.",
   alternates: { canonical: "/home-visit-physiotherapy-newcastle" },
   openGraph: {
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Home Visit Physiotherapy | Newcastle NSW",
     description:
-      "Home visit physiotherapy in Newcastle for older adults, NDIS and Support at Home clients. Mobile physio at home for falls prevention, mobility and strength. Book today.",
+      "Home visit physio in Newcastle for older adults, NDIS and Support at Home clients — falls prevention, mobility and strength at home. Book today.",
     url: "/home-visit-physiotherapy-newcastle",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Home Visit Physiotherapy | Newcastle NSW",
     description:
-      "Home visit physiotherapy in Newcastle for older adults, NDIS and Support at Home clients. Mobile physio at home for falls prevention, mobility and strength. Book today.",
+      "Home visit physio in Newcastle for older adults, NDIS and Support at Home clients — falls prevention, mobility and strength at home. Book today.",
     images: ["/images/og-default.png"],
   },
 };

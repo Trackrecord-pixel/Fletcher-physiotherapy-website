@@ -11,25 +11,25 @@ import { BreadcrumbSchema } from "@/components/StructuredData";
 import { services, conditionsNav } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Physiotherapy Services | Home Visits Newcastle & Central Coast",
+  title: "Physio Services: Home Visits & Clinics",
   description:
-    "Explore Fletcher Physiotherapy services: home visit physiotherapy, NDIS, Support at Home, chronic pain management, falls prevention, post-hospital rehabilitation, balance training and strength & mobility programs.",
+    "Home visit physio, NDIS, Support at Home, chronic pain, falls prevention, post-hospital rehab and strength programs — at home or in our Newcastle clinics.",
   alternates: { canonical: "/services" },
   openGraph: {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Physiotherapy Services | Home Visits Newcastle & Central Coast",
+    title: "Physio Services: Home Visits & Clinics",
     description:
-      "Explore Fletcher Physiotherapy services: home visit physiotherapy, NDIS, Support at Home, chronic pain management, falls prevention, post-hospital rehabilitation, balance training and strength & mobility programs.",
+      "Home visit physio, NDIS, Support at Home, chronic pain, falls prevention, post-hospital rehab and strength programs — at home or in our Newcastle clinics.",
     url: "/services",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Physiotherapy Services | Home Visits Newcastle & Central Coast",
+    title: "Physio Services: Home Visits & Clinics",
     description:
-      "Explore Fletcher Physiotherapy services: home visit physiotherapy, NDIS, Support at Home, chronic pain management, falls prevention, post-hospital rehabilitation, balance training and strength & mobility programs.",
+      "Home visit physio, NDIS, Support at Home, chronic pain, falls prevention, post-hospital rehab and strength programs — at home or in our Newcastle clinics.",
     images: ["/images/og-default.png"],
   },
 };

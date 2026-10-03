@@ -3,7 +3,7 @@ import SydneySuburbPage from "@/components/SydneySuburbPage";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
 const s = sydneySuburbs.find((x) => x.slug === "physiotherapy-sydney-olympic-park")!;
-const title = "Mobile Physiotherapy Sydney Olympic Park | Home Visit Physio";
+const title = "Mobile & Home Physio Sydney Olympic Park";
 
 export const metadata: Metadata = {
   title,

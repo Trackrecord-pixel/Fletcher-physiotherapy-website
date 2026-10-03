@@ -3,7 +3,7 @@ import SydneySuburbPage from "@/components/SydneySuburbPage";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
 const s = sydneySuburbs.find((x) => x.slug === "physiotherapy-strathfield")!;
-const title = "Mobile Physiotherapy Strathfield | Home Visit Physio";
+const title = "Mobile & Home Physio Strathfield";
 
 export const metadata: Metadata = {
   title,

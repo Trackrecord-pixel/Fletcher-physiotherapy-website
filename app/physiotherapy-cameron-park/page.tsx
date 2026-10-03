@@ -7,7 +7,7 @@ const s = suburbs.find((x) => x.slug === "physiotherapy-cameron-park")!;
 export const metadata: Metadata = {
   title: "Physiotherapy Cameron Park NSW",
   description:
-    "Physiotherapy in Cameron Park, Lake Macquarie NSW. Home visit physio for older adults, NDIS, aged care, Support at Home and falls prevention \u2014 experienced care delivered at home.",
+    "Physiotherapy in Cameron Park, Lake Macquarie NSW. Home visit physio for older adults, NDIS, Support at Home and falls prevention.",
   alternates: { canonical: "/physiotherapy-cameron-park" },
   openGraph: {
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Physiotherapy Cameron Park NSW",
     description:
-      "Physiotherapy in Cameron Park, Lake Macquarie NSW. Home visit physio for older adults, NDIS, aged care, Support at Home and falls prevention \u2014 experienced care delivered at home.",
+      "Physiotherapy in Cameron Park, Lake Macquarie NSW. Home visit physio for older adults, NDIS, Support at Home and falls prevention.",
     url: "/physiotherapy-cameron-park",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Physiotherapy Cameron Park NSW",
     description:
-      "Physiotherapy in Cameron Park, Lake Macquarie NSW. Home visit physio for older adults, NDIS, aged care, Support at Home and falls prevention \u2014 experienced care delivered at home.",
+      "Physiotherapy in Cameron Park, Lake Macquarie NSW. Home visit physio for older adults, NDIS, Support at Home and falls prevention.",
     images: ["/images/og-default.png"],
   },
 };

@@ -9,25 +9,25 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title:
-    "Daniel Lee | APA Titled Pain Physiotherapist Newcastle | Fletcher Physiotherapy",
+    "Daniel Lee | APA Titled Pain Physio",
   description:
-    "Daniel Lee is an APA Titled Pain Physiotherapist in Newcastle with a Master of Medicine (Pain Management) from the University of Sydney, with a special interest in chronic pain, older adult and home-based rehabilitation.",
+    "Daniel Lee: APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management), USyd. Home visits for pain and older adults. Speaks Korean.",
   alternates: { canonical: "/daniel-lee-physiotherapist-newcastle" },
   openGraph: {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Daniel Lee | APA Titled Pain Physiotherapist Newcastle | Fletcher Physiotherapy",
+    title: "Daniel Lee | APA Titled Pain Physio",
     description:
-      "Daniel Lee is an APA Titled Pain Physiotherapist in Newcastle with a Master of Medicine (Pain Management) from the University of Sydney, with a special interest in chronic pain, older adult and home-based rehabilitation.",
+      "Daniel Lee: APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management), USyd. Home visits for pain and older adults. Speaks Korean.",
     url: "/daniel-lee-physiotherapist-newcastle",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Lee | APA Titled Pain Physiotherapist Newcastle | Fletcher Physiotherapy",
+    title: "Daniel Lee | APA Titled Pain Physio",
     description:
-      "Daniel Lee is an APA Titled Pain Physiotherapist in Newcastle with a Master of Medicine (Pain Management) from the University of Sydney, with a special interest in chronic pain, older adult and home-based rehabilitation.",
+      "Daniel Lee: APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management), USyd. Home visits for pain and older adults. Speaks Korean.",
     images: ["/images/og-default.png"],
   },
 };

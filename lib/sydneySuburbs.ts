@@ -36,7 +36,7 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2127",
     council: "City of Parramatta",
     metaDescription:
-      "Mobile physiotherapy in Sydney Olympic Park from 9 November 2026. Home visits for older adults, NDIS and Support at Home clients — falls prevention, rehab after hospital and pain care.",
+      "Mobile physio in Sydney Olympic Park from 9 November 2026. Home visits for older adults, NDIS and Support at Home — falls prevention and rehab.",
     intro:
       "Home visit physiotherapy in Sydney Olympic Park from 9 November 2026 — for older adults, NDIS participants, Support at Home clients and people recovering after hospital.",
     local: [
@@ -66,7 +66,7 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2137",
     council: "City of Canada Bay",
     metaDescription:
-      "Home visit physiotherapy in Concord from 9 November 2026. Rehab after hospital discharge, falls prevention, NDIS and Support at Home physio in your own home.",
+      "Home visit physio in Concord from 9 November 2026. Rehab after hospital discharge, falls prevention, NDIS and Support at Home physio at home.",
     intro:
       "Home visit physiotherapy in Concord from 9 November 2026 — supporting older adults, people coming home from hospital, NDIS participants and Support at Home clients.",
     local: [
@@ -96,7 +96,7 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2135",
     council: "Strathfield Municipal Council",
     metaDescription:
-      "Mobile physiotherapy in Strathfield from 9 November 2026. Home visits for falls prevention, strength and balance, pain and rehab — NDIS, Support at Home and private.",
+      "Mobile physio in Strathfield from 9 November 2026. Home visits for falls prevention, strength, balance, pain and rehab — NDIS, Support at Home, private.",
     intro:
       "Home visit physiotherapy in Strathfield from 9 November 2026 — strength, balance, falls prevention and rehabilitation in your own home.",
     local: [
@@ -126,7 +126,7 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2140",
     council: "Strathfield Municipal Council",
     metaDescription:
-      "Home visit physiotherapy in Homebush from 9 November 2026. Mobile physio for older adults, NDIS and Support at Home clients — mobility, falls prevention and rehab at home.",
+      "Home visit physio in Homebush from 9 November 2026. Mobile physio for older adults, NDIS and Support at Home — mobility, falls prevention and rehab.",
     intro:
       "Home visit physiotherapy in Homebush from 9 November 2026 — practical, goal-focused physiotherapy without needing to travel.",
     local: [
@@ -156,7 +156,7 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2138",
     council: "City of Canada Bay",
     metaDescription:
-      "Mobile physiotherapy in Rhodes from 9 November 2026. Apartment-friendly home visits for older adults, rehab after hospital, NDIS and Support at Home physiotherapy.",
+      "Mobile physio in Rhodes from 9 November 2026. Apartment-friendly home visits for older adults, rehab after hospital, NDIS and Support at Home.",
     intro:
       "Home visit physiotherapy in Rhodes from 9 November 2026 — physiotherapy that fits apartment living, delivered in your own home.",
     local: [
@@ -186,7 +186,7 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2141",
     council: "Cumberland City Council",
     metaDescription:
-      "Home visit physiotherapy in Lidcombe from 9 November 2026. Mobile physio for older adults, NDIS and Support at Home clients — strength, balance and rehab at home.",
+      "Home visit physio in Lidcombe from 9 November 2026. Mobile physio for older adults, NDIS and Support at Home — strength, balance and rehab at home.",
     intro:
       "Home visit physiotherapy in Lidcombe from 9 November 2026 — for older adults, NDIS participants, Support at Home clients and families.",
     local: [

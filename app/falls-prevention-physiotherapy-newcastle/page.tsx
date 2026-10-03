@@ -5,7 +5,7 @@ import { landingPages } from "@/lib/landing";
 const c = landingPages["falls-prevention-physiotherapy-newcastle"];
 
 export const metadata: Metadata = {
-  title: "Falls Prevention Physiotherapy | Newcastle NSW",
+  title: "Falls Prevention Physio | Newcastle NSW",
   description:
     "Falls prevention physiotherapy in Newcastle at home. Balance assessment, strength and balance training and a home hazard review to reduce falls risk.",
   alternates: { canonical: "/falls-prevention-physiotherapy-newcastle" },
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Falls Prevention Physiotherapy | Newcastle NSW",
+    title: "Falls Prevention Physio | Newcastle NSW",
     description:
       "Falls prevention physiotherapy in Newcastle at home. Balance assessment, strength and balance training and a home hazard review to reduce falls risk.",
     url: "/falls-prevention-physiotherapy-newcastle",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Falls Prevention Physiotherapy | Newcastle NSW",
+    title: "Falls Prevention Physio | Newcastle NSW",
     description:
       "Falls prevention physiotherapy in Newcastle at home. Balance assessment, strength and balance training and a home hazard review to reduce falls risk.",
     images: ["/images/og-default.png"],

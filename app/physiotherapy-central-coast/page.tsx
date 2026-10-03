@@ -7,7 +7,7 @@ const s = suburbs.find((x) => x.slug === "physiotherapy-central-coast")!;
 export const metadata: Metadata = {
   title: "Physiotherapy Central Coast NSW",
   description:
-    "Home visit physiotherapy across the Central Coast NSW — Gosford, Erina, Wyong and Tuggerah. Mobile aged care, NDIS and Support at Home physio, falls prevention and post-hospital rehabilitation at home.",
+    "Home visit physio across the Central Coast — Gosford, Erina, Wyong, Tuggerah. NDIS, Support at Home, falls prevention and rehab after hospital.",
   alternates: { canonical: "/physiotherapy-central-coast" },
   openGraph: {
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Physiotherapy Central Coast NSW",
     description:
-      "Home visit physiotherapy across the Central Coast NSW — Gosford, Erina, Wyong and Tuggerah. Mobile aged care, NDIS and Support at Home physio, falls prevention and post-hospital rehabilitation at home.",
+      "Home visit physio across the Central Coast — Gosford, Erina, Wyong, Tuggerah. NDIS, Support at Home, falls prevention and rehab after hospital.",
     url: "/physiotherapy-central-coast",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Physiotherapy Central Coast NSW",
     description:
-      "Home visit physiotherapy across the Central Coast NSW — Gosford, Erina, Wyong and Tuggerah. Mobile aged care, NDIS and Support at Home physio, falls prevention and post-hospital rehabilitation at home.",
+      "Home visit physio across the Central Coast — Gosford, Erina, Wyong, Tuggerah. NDIS, Support at Home, falls prevention and rehab after hospital.",
     images: ["/images/og-default.png"],
   },
 };

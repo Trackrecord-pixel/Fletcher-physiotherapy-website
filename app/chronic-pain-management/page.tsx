@@ -2,25 +2,25 @@ import type { Metadata } from "next";
 import ServiceDetail from "@/components/ServiceDetail";
 
 export const metadata: Metadata = {
-  title: "Chronic Pain Management Physiotherapy | Newcastle Home Visits",
+  title: "Chronic Pain Physio | Newcastle Home Visits",
   description:
-    "Chronic pain management physiotherapy at home in Newcastle, Lake Macquarie and the Central Coast. Master's-qualified, evidence-based care that reduces fear of movement and helps you return to meaningful activity.",
+    "Chronic pain physio at home across Newcastle, Lake Macquarie and the Central Coast, led by an APA Titled Pain Physiotherapist. Evidence-based care.",
   alternates: { canonical: "/chronic-pain-management" },
   openGraph: {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Chronic Pain Management Physiotherapy | Newcastle Home Visits",
+    title: "Chronic Pain Physio | Newcastle Home Visits",
     description:
-      "Chronic pain management physiotherapy at home in Newcastle, Lake Macquarie and the Central Coast. Master's-qualified, evidence-based care that reduces fear of movement and helps you return to meaningful activity.",
+      "Chronic pain physio at home across Newcastle, Lake Macquarie and the Central Coast, led by an APA Titled Pain Physiotherapist. Evidence-based care.",
     url: "/chronic-pain-management",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chronic Pain Management Physiotherapy | Newcastle Home Visits",
+    title: "Chronic Pain Physio | Newcastle Home Visits",
     description:
-      "Chronic pain management physiotherapy at home in Newcastle, Lake Macquarie and the Central Coast. Master's-qualified, evidence-based care that reduces fear of movement and helps you return to meaningful activity.",
+      "Chronic pain physio at home across Newcastle, Lake Macquarie and the Central Coast, led by an APA Titled Pain Physiotherapist. Evidence-based care.",
     images: ["/images/og-default.png"],
   },
 };

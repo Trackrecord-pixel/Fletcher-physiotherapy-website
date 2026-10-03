@@ -4,7 +4,7 @@ export const site = {
   legalName: "Fletcher Physiotherapy",
   tagline: "We Come To You",
   description:
-    "Mobile and home visit physiotherapy across Newcastle, Lake Macquarie, the Central Coast and Sydney (from 9 November 2026). NDIS, Support at Home and private clients — older adults, families and carers welcome.",
+    "Mobile & home visit physio across Newcastle, Lake Macquarie, Central Coast and Sydney (from 9 Nov 2026). NDIS, Support at Home & private clients welcome.",
   url: "https://www.fletcherphysiotherapy.com.au",
   phone: "0404 791 756",
   phoneHref: "tel:+61404791756",

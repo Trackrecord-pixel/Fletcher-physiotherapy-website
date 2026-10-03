@@ -7,7 +7,7 @@ const s = suburbs.find((x) => x.slug === "physiotherapy-tuggerah")!;
 export const metadata: Metadata = {
   title: "Physiotherapy Tuggerah NSW",
   description:
-    "Home visit physiotherapy in Tuggerah, Central Coast NSW. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, aged care and post-hospital rehabilitation at home.",
+    "Home visit physiotherapy in Tuggerah, Central Coast NSW. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention and rehab at home.",
   alternates: { canonical: "/physiotherapy-tuggerah" },
   openGraph: {
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Physiotherapy Tuggerah NSW",
     description:
-      "Home visit physiotherapy in Tuggerah, Central Coast NSW. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, aged care and post-hospital rehabilitation at home.",
+      "Home visit physiotherapy in Tuggerah, Central Coast NSW. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention and rehab at home.",
     url: "/physiotherapy-tuggerah",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Physiotherapy Tuggerah NSW",
     description:
-      "Home visit physiotherapy in Tuggerah, Central Coast NSW. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, aged care and post-hospital rehabilitation at home.",
+      "Home visit physiotherapy in Tuggerah, Central Coast NSW. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention and rehab at home.",
     images: ["/images/og-default.png"],
   },
 };

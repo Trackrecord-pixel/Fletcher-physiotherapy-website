@@ -7,7 +7,7 @@ const c = clinics.find((x) => x.slug === "physiotherapy-jesmond")!;
 export const metadata: Metadata = {
   title: "Physiotherapy Jesmond",
   description:
-    "Book an appointment with Fletcher Physiotherapy at HealthSure Medical Centre Jesmond. Experienced physiotherapy for pain, injuries, rehabilitation, balance, falls prevention and Medicare GP Chronic Condition Management Plan (GPCCMP) patients.",
+    "Physio at HealthSure Medical Centre Jesmond on Mondays — pain, injuries, rehab, balance and falls prevention. GPCCMP, DVA and private patients welcome.",
   keywords: ["Physiotherapy Jesmond", "Physiotherapist Jesmond", "Jesmond Physio", "Chronic Pain Physiotherapist Jesmond", "Medicare Physio Jesmond"],
   alternates: { canonical: "/physiotherapy-jesmond" },
   openGraph: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Physiotherapy Jesmond | Fletcher Physiotherapy",
     description:
-      "Book an appointment with Fletcher Physiotherapy at HealthSure Medical Centre Jesmond. Experienced physiotherapy for pain, injuries, rehabilitation, balance, falls prevention and Medicare GP Chronic Condition Management Plan (GPCCMP) patients.",
+      "Physio at HealthSure Medical Centre Jesmond on Mondays — pain, injuries, rehab, balance and falls prevention. GPCCMP, DVA and private patients welcome.",
     url: "/physiotherapy-jesmond",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Physiotherapy Jesmond | Fletcher Physiotherapy",
     description:
-      "Book an appointment with Fletcher Physiotherapy at HealthSure Medical Centre Jesmond. Experienced physiotherapy for pain, injuries, rehabilitation, balance, falls prevention and Medicare GP Chronic Condition Management Plan (GPCCMP) patients.",
+      "Physio at HealthSure Medical Centre Jesmond on Mondays — pain, injuries, rehab, balance and falls prevention. GPCCMP, DVA and private patients welcome.",
     images: ["/images/og-default.png"],
   },
 };

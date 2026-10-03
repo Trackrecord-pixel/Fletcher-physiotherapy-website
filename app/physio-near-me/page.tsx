@@ -10,12 +10,12 @@ import { BreadcrumbSchema, FaqSchema } from "@/components/StructuredData";
 import { clinics, locations, suburbs, site } from "@/lib/site";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
-const title = "Physio Near Me | Home Visits & Clinics in Newcastle and Sydney";
+const title = "Physio Near Me: Newcastle & Sydney Home Visits";
 const description =
-  "Looking for a physio near you? See clinic, home visit or Sydney options in seconds — Jesmond & Elermore Vale clinics, home visits across Newcastle, Lake Macquarie, Central Coast and Sydney.";
+  "Find a physio near you: Jesmond & Elermore Vale clinics, plus home visits across Newcastle, Lake Macquarie, Central Coast and Sydney. Check your suburb.";
 
 export const metadata: Metadata = {
-  title: { absolute: `${title} | Fletcher Physiotherapy` },
+  title,
   description,
   alternates: { canonical: "/physio-near-me" },
   openGraph: {

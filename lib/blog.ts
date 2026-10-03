@@ -6,6 +6,8 @@ export type BlogPost = {
   date: string;
   readMins: number;
   excerpt: string;
+  /** Shorter title for Google results (defaults to title). */
+  seoTitle?: string;
   sections: BlogSection[];
   /** Date the article was last clinically reviewed/updated (YYYY-MM-DD). */
   updated?: string;
@@ -112,6 +114,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "physiotherapy-for-neck-pain-and-posture",
+    seoTitle: "What Helps Neck Pain? A Physio's Guide to Relief",
     title: "What Helps Neck Pain? A Physiotherapist's Guide to Relief and Posture",
     description:
       "What helps with neck pain? Simple, evidence-informed steps that ease most neck pain, when to get it checked, and how physiotherapy and posture habits help.",
@@ -373,9 +376,10 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "knee-replacement-recovery-what-to-expect",
+    seoTitle: "What to Expect After a Knee Replacement: Recovery Timeline",
     title: "What to Expect After a Knee Replacement: Recovery Timeline & Rehab",
     description:
-      "What to expect after knee replacement surgery — your hospital stay, the first weeks, walking aids, swelling, warning signs and how physiotherapy helps you recover.",
+      "What to expect after knee replacement surgery: your hospital stay, the first weeks, walking aids, swelling, warning signs and how physio helps.",
     date: "2026-08-03",
     readMins: 7,
     excerpt:
@@ -725,6 +729,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "how-physiotherapy-helps-older-adults-stay-independent-at-home",
+    seoTitle: "How Physio Helps Older Adults Stay Independent at Home",
     title: "How Physiotherapy Helps Older Adults Stay Independent at Home",
     description:
       "Discover how home-based physiotherapy helps older adults maintain strength, balance and mobility so they can stay safely independent at home.",
@@ -765,6 +770,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "home-care-package-physiotherapy-explained",
+    seoTitle: "Home Care Package Physio Explained (Now Support at Home)",
     title: "Home Care Package Physiotherapy Explained (Now Support at Home)",
     description:
       "Home Care Packages were replaced by Support at Home on 1 November 2025. How physiotherapy is funded now, what it can include and how to arrange it at home.",
@@ -926,6 +932,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "physiotherapy-after-hospital-discharge",
+    seoTitle: "Rehab After Hospital Discharge: Options & Home Physio",
     title: "Rehab After Hospital Discharge: Your Options and How Home Physio Helps",
     description:
       "Coming home from hospital? The main rehabilitation options after discharge — inpatient, outpatient and home-based — and how home physiotherapy supports recovery.",
@@ -1226,9 +1233,10 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "when-should-older-adults-see-a-physiotherapist",
+    seoTitle: "When to See a Physiotherapist: Signs It's Time",
     title: "When to See a Physiotherapist: Signs It's Time (Especially for Older Adults)",
     description:
-      "When should you see a physio? The common signs it's time to see a physiotherapist — from pain that isn't settling to balance problems, falls and recovery after hospital.",
+      "When should you see a physio? Common signs it's time — pain that isn't settling, balance problems, falls and recovery after hospital.",
     date: "2026-04-14",
     readMins: 5,
     excerpt:
@@ -1531,9 +1539,10 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "getting-up-safely-after-a-fall",
+    seoTitle: "How to Get Up From a Fall: Step-by-Step Guide for Seniors",
     title: "How to Get Up From a Fall: A Safe Step-by-Step Guide for Seniors",
     description:
-      "How to get up from a fall safely — a step-by-step guide for seniors, what to do if you can't get up, and how physiotherapy builds the strength and confidence to do it.",
+      "How to get up from a fall safely: a step-by-step guide for seniors, what to do if you can't get up, and how physio builds strength and confidence.",
     date: "2025-11-28",
     readMins: 5,
     excerpt:

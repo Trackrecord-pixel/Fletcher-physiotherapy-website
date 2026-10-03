@@ -7,7 +7,7 @@ const s = suburbs.find((x) => x.slug === "physiotherapy-glendale")!;
 export const metadata: Metadata = {
   title: "Physiotherapy Glendale NSW",
   description:
-    "Home visit physiotherapy in Glendale, Lake Macquarie NSW. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, aged care and post-hospital rehabilitation at home.",
+    "Home visit physiotherapy in Glendale, Lake Macquarie NSW. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention and rehab at home.",
   alternates: { canonical: "/physiotherapy-glendale" },
   openGraph: {
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Physiotherapy Glendale NSW",
     description:
-      "Home visit physiotherapy in Glendale, Lake Macquarie NSW. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, aged care and post-hospital rehabilitation at home.",
+      "Home visit physiotherapy in Glendale, Lake Macquarie NSW. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention and rehab at home.",
     url: "/physiotherapy-glendale",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Physiotherapy Glendale NSW",
     description:
-      "Home visit physiotherapy in Glendale, Lake Macquarie NSW. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, aged care and post-hospital rehabilitation at home.",
+      "Home visit physiotherapy in Glendale, Lake Macquarie NSW. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention and rehab at home.",
     images: ["/images/og-default.png"],
   },
 };

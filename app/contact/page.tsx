@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact | Book Home Visit Physiotherapy",
   description:
-    "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas. Call 0404 791 756 or send an enquiry online.",
+    "Book home visit physio in Newcastle, Lake Macquarie, the Central Coast or Sydney. Call 0404 791 756 or send an enquiry online.",
   alternates: { canonical: "/contact" },
   openGraph: {
     type: "website",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Contact | Book Home Visit Physiotherapy",
     description:
-      "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas. Call 0404 791 756 or send an enquiry online.",
+      "Book home visit physio in Newcastle, Lake Macquarie, the Central Coast or Sydney. Call 0404 791 756 or send an enquiry online.",
     url: "/contact",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact | Book Home Visit Physiotherapy",
     description:
-      "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas. Call 0404 791 756 or send an enquiry online.",
+      "Book home visit physio in Newcastle, Lake Macquarie, the Central Coast or Sydney. Call 0404 791 756 or send an enquiry online.",
     images: ["/images/og-default.png"],
   },
 };

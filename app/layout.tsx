@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Mobile & Home Visit Physio Sydney & Newcastle | Fletcher Physiotherapy",
+    default: "Mobile & Home Physio Sydney & Newcastle | Fletcher Physiotherapy",
     template: "%s | Fletcher Physiotherapy",
   },
   description: site.description,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: site.url,
     siteName: site.name,
-    title: "Mobile & Home Visit Physio Sydney & Newcastle | Fletcher Physiotherapy",
+    title: "Mobile & Home Physio Sydney & Newcastle | Fletcher Physiotherapy",
     description: site.description,
     images: [
       {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mobile & Home Visit Physio Sydney & Newcastle | Fletcher Physiotherapy",
+    title: "Mobile & Home Physio Sydney & Newcastle | Fletcher Physiotherapy",
     description: site.description,
     images: ["/images/og-default.png"],
   },

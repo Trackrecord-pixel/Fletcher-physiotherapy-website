@@ -8,9 +8,9 @@ import { BreadcrumbSchema } from "@/components/StructuredData";
 import { clinics, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Book an Appointment | Newcastle Clinics & Home Visits",
+  title: "Book a Physio | Clinics & Home Visits",
   description:
-    "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
+    "Book physio at our Jesmond or Elermore Vale clinics (Mondays), or a home visit across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
   alternates: { canonical: "/book" },
   openGraph: {
     type: "website",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Book an Appointment | Fletcher Physiotherapy Newcastle",
     description:
-      "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
+      "Book physio at our Jesmond or Elermore Vale clinics (Mondays), or a home visit across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
     url: "/book",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Book an Appointment | Fletcher Physiotherapy Newcastle",
     description:
-      "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
+      "Book physio at our Jesmond or Elermore Vale clinics (Mondays), or a home visit across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
     images: ["/images/og-default.png"],
   },
 };

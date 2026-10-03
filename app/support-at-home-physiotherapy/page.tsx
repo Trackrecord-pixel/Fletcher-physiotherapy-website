@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceDetail from "@/components/ServiceDetail";
 
 export const metadata: Metadata = {
-  title: "Support at Home Physiotherapy Newcastle (formerly Home Care Packages)",
+  title: "Support at Home Physio | Home Care Packages",
   description:
     "Support at Home physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
   alternates: { canonical: "/support-at-home-physiotherapy" },
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Support at Home Physiotherapy Newcastle (formerly Home Care Packages)",
+    title: "Support at Home Physio | Home Care Packages",
     description:
       "Support at Home physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
     url: "/support-at-home-physiotherapy",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Support at Home Physiotherapy Newcastle (formerly Home Care Packages)",
+    title: "Support at Home Physio | Home Care Packages",
     description:
       "Support at Home physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
     images: ["/images/og-default.png"],

@@ -18,25 +18,25 @@ const locationFaqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Locations | Newcastle Physiotherapy Clinics & Home Visits",
+  title: "Locations | Newcastle & Sydney Home Visits",
   description:
-    "Fletcher Physiotherapy consults at HealthSure Medical Centre Jesmond (Mondays) and Elermore Vale Medical Centre (Mondays), plus home visits across Newcastle, Lake Macquarie and the Central Coast.",
+    "Clinics in Jesmond and Elermore Vale (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
   alternates: { canonical: "/locations" },
   openGraph: {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Locations | Newcastle Physiotherapy Clinics & Home Visits",
+    title: "Locations | Newcastle & Sydney Home Visits",
     description:
-      "Fletcher Physiotherapy consults at HealthSure Medical Centre Jesmond (Mondays) and Elermore Vale Medical Centre (Mondays), plus home visits across Newcastle, Lake Macquarie and the Central Coast.",
+      "Clinics in Jesmond and Elermore Vale (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
     url: "/locations",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Locations | Newcastle Physiotherapy Clinics & Home Visits",
+    title: "Locations | Newcastle & Sydney Home Visits",
     description:
-      "Fletcher Physiotherapy consults at HealthSure Medical Centre Jesmond (Mondays) and Elermore Vale Medical Centre (Mondays), plus home visits across Newcastle, Lake Macquarie and the Central Coast.",
+      "Clinics in Jesmond and Elermore Vale (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
     images: ["/images/og-default.png"],
   },
 };

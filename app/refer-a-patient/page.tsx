@@ -8,25 +8,25 @@ import { BreadcrumbSchema } from "@/components/StructuredData";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Refer a Patient | Home Visit Physiotherapy Newcastle",
+  title: "Refer a Patient | Home Visit Physio",
   description:
-    "Refer your client to Fletcher Physiotherapy. Easy referrals for case managers, support coordinators and aged care providers across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
+    "Easy referrals for GPs, support coordinators, case managers and aged care providers. Registered NDIS provider — Newcastle, Central Coast and Sydney.",
   alternates: { canonical: "/refer-a-patient" },
   openGraph: {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Refer a Patient | Home Visit Physiotherapy Newcastle",
+    title: "Refer a Patient | Home Visit Physio",
     description:
-      "Refer your client to Fletcher Physiotherapy. Easy referrals for case managers, support coordinators and aged care providers across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
+      "Easy referrals for GPs, support coordinators, case managers and aged care providers. Registered NDIS provider — Newcastle, Central Coast and Sydney.",
     url: "/refer-a-patient",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Refer a Patient | Home Visit Physiotherapy Newcastle",
+    title: "Refer a Patient | Home Visit Physio",
     description:
-      "Refer your client to Fletcher Physiotherapy. Easy referrals for case managers, support coordinators and aged care providers across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
+      "Easy referrals for GPs, support coordinators, case managers and aged care providers. Registered NDIS provider — Newcastle, Central Coast and Sydney.",
     images: ["/images/og-default.png"],
   },
 };

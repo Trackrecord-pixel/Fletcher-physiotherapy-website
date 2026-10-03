@@ -7,7 +7,7 @@ const s = suburbs.find((x) => x.slug === "physiotherapy-gosford")!;
 export const metadata: Metadata = {
   title: "Physiotherapy Gosford NSW",
   description:
-    "Home visit physiotherapy in Gosford, Central Coast. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, mobility and strength at home.",
+    "Home visit physiotherapy in Gosford, Central Coast. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention, mobility, strength.",
   alternates: { canonical: "/physiotherapy-gosford" },
   openGraph: {
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Physiotherapy Gosford NSW",
     description:
-      "Home visit physiotherapy in Gosford, Central Coast. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, mobility and strength at home.",
+      "Home visit physiotherapy in Gosford, Central Coast. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention, mobility, strength.",
     url: "/physiotherapy-gosford",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Physiotherapy Gosford NSW",
     description:
-      "Home visit physiotherapy in Gosford, Central Coast. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, mobility and strength at home.",
+      "Home visit physiotherapy in Gosford, Central Coast. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention, mobility, strength.",
     images: ["/images/og-default.png"],
   },
 };

@@ -13,7 +13,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Mobile Physiotherapy Sydney | Home Visits | Fletcher Physiotherapy" },
   description:
-    "Mobile physiotherapy and home visits around Sydney Olympic Park, the Inner West and surrounding Sydney suburbs. Supporting older adults, NDIS participants, Support at Home clients and post-hospital rehabilitation.",
+    "Mobile physio and home visits around Sydney Olympic Park and the Inner West from 9 Nov 2026 — older adults, NDIS, Support at Home and rehab.",
   alternates: { canonical: "/physiotherapy-sydney" },
   openGraph: {
     type: "website", siteName: "Fletcher Physiotherapy", locale: "en_AU",

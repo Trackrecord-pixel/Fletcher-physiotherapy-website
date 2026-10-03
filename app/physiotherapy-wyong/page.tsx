@@ -7,7 +7,7 @@ const s = suburbs.find((x) => x.slug === "physiotherapy-wyong")!;
 export const metadata: Metadata = {
   title: "Physiotherapy Wyong NSW",
   description:
-    "Home visit physiotherapy in Wyong, Central Coast. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, mobility and strength at home.",
+    "Home visit physiotherapy in Wyong, Central Coast. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention, mobility, strength.",
   alternates: { canonical: "/physiotherapy-wyong" },
   openGraph: {
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Physiotherapy Wyong NSW",
     description:
-      "Home visit physiotherapy in Wyong, Central Coast. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, mobility and strength at home.",
+      "Home visit physiotherapy in Wyong, Central Coast. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention, mobility, strength.",
     url: "/physiotherapy-wyong",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Physiotherapy Wyong NSW",
     description:
-      "Home visit physiotherapy in Wyong, Central Coast. Mobile physio for older adults, NDIS and Support at Home clients \u2014 falls prevention, mobility and strength at home.",
+      "Home visit physiotherapy in Wyong, Central Coast. Mobile physio for older adults, NDIS & Support at Home \u2014 falls prevention, mobility, strength.",
     images: ["/images/og-default.png"],
   },
 };

@@ -3,7 +3,7 @@ import SydneySuburbPage from "@/components/SydneySuburbPage";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
 const s = sydneySuburbs.find((x) => x.slug === "physiotherapy-rhodes")!;
-const title = "Mobile Physiotherapy Rhodes | Home Visit Physio";
+const title = "Mobile & Home Physio Rhodes";
 
 export const metadata: Metadata = {
   title,
