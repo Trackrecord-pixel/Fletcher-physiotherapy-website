@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 import Icon from "./Icon";
 import { site } from "@/lib/site";
-import { submitEnquiry, readForm, type SubmitResult } from "@/lib/submitEnquiry";
+import { submitEnquiry, readForm, validateFields, isBot, type SubmitResult } from "@/lib/submitEnquiry";
 
 const needs = [
   "Home visit physiotherapy",
@@ -26,7 +26,7 @@ export default function CallbackForm() {
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
-    if (!form.reportValidity()) return;
+    if (!validateFields(form)) return;
     setStatus("sending");
     const fields = readForm(form, {
       cb_name: "Name",
@@ -35,7 +35,7 @@ export default function CallbackForm() {
       cb_need: "Help with",
       cb_for: "Booking for",
     });
-    setStatus(await submitEnquiry(`Call-back request – ${fields.Name || "website visitor"}`, fields));
+    setStatus(await submitEnquiry(`Call-back request – ${fields.Name || "website visitor"}`, fields, isBot(form)));
   };
 
   if (status === "sent" || status === "mailto") {
@@ -57,7 +57,8 @@ export default function CallbackForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="rounded-3xl border border-navy-100 bg-white p-6 shadow-card sm:p-7">
+    <form onInput={(e) => (e.target as HTMLInputElement).setCustomValidity?.("")} onSubmit={onSubmit} noValidate className="rounded-3xl border border-navy-100 bg-white p-6 shadow-card sm:p-7">
+      <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
       <p className="text-sm font-semibold uppercase tracking-widest text-clay-600">Request a call back</p>
       <h2 className="mt-1 text-2xl text-navy-900">Talk to a physio about your situation</h2>
       <p className="mt-1 text-sm text-navy-600">No obligation. We&rsquo;ll call to understand your needs and funding.</p>

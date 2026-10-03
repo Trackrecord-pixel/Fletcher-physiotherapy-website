@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 import Icon from "./Icon";
 import { site } from "@/lib/site";
-import { submitEnquiry, readForm, type SubmitResult } from "@/lib/submitEnquiry";
+import { submitEnquiry, readForm, validateFields, isBot, type SubmitResult } from "@/lib/submitEnquiry";
 
 const referrerTypes = [
   "GP",
@@ -31,7 +31,7 @@ export default function ReferralForm() {
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
-    if (!form.reportValidity()) return;
+    if (!validateFields(form)) return;
     setStatus("sending");
     const fields = readForm(form, {
       "ref-name": "Referrer name",
@@ -45,7 +45,7 @@ export default function ReferralForm() {
       funding: "Funding",
       reason: "Reason / goals",
     });
-    setStatus(await submitEnquiry(`New referral – ${fields["Participant name"] || "participant"}`, fields));
+    setStatus(await submitEnquiry(`New referral – ${fields["Participant name"] || "participant"}`, fields, isBot(form)));
   };
 
   if (status === "sent" || status === "mailto") {
@@ -69,7 +69,8 @@ export default function ReferralForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="card space-y-6" noValidate>
+    <form onInput={(e) => (e.target as HTMLInputElement).setCustomValidity?.("")} onSubmit={onSubmit} className="card space-y-6" noValidate>
+      <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
       {status === "error" && (
         <p role="alert" className="rounded-xl bg-clay-50 p-3 text-sm text-navy-800">
           Sorry, the referral couldn&rsquo;t be sent. Please call{" "}

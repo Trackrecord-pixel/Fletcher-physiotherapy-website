@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 import Icon from "./Icon";
 import { site } from "@/lib/site";
-import { submitEnquiry, readForm, type SubmitResult } from "@/lib/submitEnquiry";
+import { submitEnquiry, readForm, validateFields, isBot, type SubmitResult } from "@/lib/submitEnquiry";
 
 const services = [
   "Home Visit Physiotherapy",
@@ -23,7 +23,7 @@ export default function ContactForm() {
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
-    if (!form.reportValidity()) return;
+    if (!validateFields(form)) return;
     setStatus("sending");
     const fields = readForm(form, {
       name: "Name",
@@ -33,7 +33,7 @@ export default function ContactForm() {
       service: "Service",
       message: "Message",
     });
-    setStatus(await submitEnquiry(`Website enquiry – ${fields.Name || "new client"}`, fields));
+    setStatus(await submitEnquiry(`Website enquiry – ${fields.Name || "new client"}`, fields, isBot(form)));
   };
 
   if (status === "sent" || status === "mailto") {
@@ -57,7 +57,8 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="card space-y-5" noValidate>
+    <form onInput={(e) => (e.target as HTMLInputElement).setCustomValidity?.("")} onSubmit={onSubmit} className="card space-y-5" noValidate>
+      <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
       {status === "error" && (
         <p role="alert" className="rounded-xl bg-clay-50 p-3 text-sm text-navy-800">
           Sorry, your enquiry couldn&rsquo;t be sent. Please call{" "}
