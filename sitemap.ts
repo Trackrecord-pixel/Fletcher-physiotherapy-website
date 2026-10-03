@@ -1,0 +1,43 @@
+import type { MetadataRoute } from "next";
+import { site, suburbs, clinics } from "@/lib/site";
+import { landingPages } from "@/lib/landing";
+import { posts } from "@/lib/blog";
+import { sydneySuburbs } from "@/lib/sydneySuburbs";
+
+const staticRoutes = [
+  "",
+  "/about",
+  "/services",
+  "/our-team",
+  "/daniel-lee-physiotherapist-newcastle",
+  "/locations",
+  "/book",
+  "/refer-a-patient",
+  "/contact",
+  "/faqs",
+  "/blog",
+  "/chronic-pain-management",
+];
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
+  const urls: string[] = [
+    ...staticRoutes,
+    ...Object.keys(landingPages).map((s) => `/${s}`),
+    ...clinics.map((c) => `/${c.slug}`),
+    ...suburbs.map((s) => `/${s.slug}`),
+    ...sydneySuburbs.map((s) => `/${s.slug}`),
+    ...posts.map((p) => `/blog/${p.slug}`),
+  ];
+  return urls.map((path) => ({
+    url: `${site.url}${path}`,
+    lastModified: now,
+    changeFrequency: path === "" ? "weekly" : "monthly",
+    priority:
+      path === ""
+        ? 1
+        : path.includes("newcastle") || path.startsWith("/physiotherapy-")
+        ? 0.9
+        : 0.7,
+  }));
+}
