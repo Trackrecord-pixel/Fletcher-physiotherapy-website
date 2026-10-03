@@ -31,6 +31,10 @@ export async function submitEnquiry(
           subject,
           from_name: "Fletcher Physiotherapy website",
           botcheck: honeypot ? "spam" : "",
+          // Lets you press "Reply" in your inbox to answer the enquirer directly.
+          ...((fields.Email || fields["Referrer email"])
+            ? { replyto: fields.Email || fields["Referrer email"] }
+            : {}),
           ...fields,
         }),
       });

@@ -31,6 +31,7 @@ export default function CallbackForm() {
     const fields = readForm(form, {
       cb_name: "Name",
       cb_phone: "Phone",
+      cb_email: "Email",
       cb_suburb: "Suburb",
       cb_need: "Help with",
       cb_for: "Booking for",
@@ -79,9 +80,15 @@ export default function CallbackForm() {
           <input id="cb_phone" name="cb_phone" type="tel" required autoComplete="tel" placeholder="Phone *" className={input} />
         </div>
         <div>
+          <label htmlFor="cb_email" className="sr-only">Email</label>
+          <input id="cb_email" name="cb_email" type="email" required autoComplete="email" placeholder="Email *" className={input} />
+        </div>
+        <div>
           <label htmlFor="cb_suburb" className="sr-only">Suburb</label>
           <input id="cb_suburb" name="cb_suburb" required autoComplete="address-level2" placeholder="Suburb *" className={input} />
         </div>
+      </div>
+      <div className="mt-3 grid gap-3 sm:grid-cols-2">
         <div>
           <label htmlFor="cb_for" className="sr-only">Who is it for?</label>
           <select id="cb_for" name="cb_for" className={input} defaultValue="Myself">
@@ -90,14 +97,14 @@ export default function CallbackForm() {
             <option>A client or patient (referrer)</option>
           </select>
         </div>
-      </div>
-      <div className="mt-3">
+        <div>
         <label htmlFor="cb_need" className="sr-only">What do you need help with?</label>
         <select id="cb_need" name="cb_need" className={input} defaultValue={needs[0]}>
           {needs.map((n) => (
             <option key={n}>{n}</option>
           ))}
         </select>
+      </div>
       </div>
       <button type="submit" className="btn-accent mt-4 w-full" disabled={status === "sending"}>
         {status === "sending" ? "Sending…" : "Request my call back"} <Icon name="arrow" className="h-4 w-4" />
