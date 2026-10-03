@@ -21,26 +21,88 @@ export default function HomePage() {
     <>
       <Hero />
 
-      {/* Sydney expansion banner */}
-      <section className="bg-navy-900">
-        <div className="container-px flex flex-col items-start justify-between gap-6 py-10 lg:flex-row lg:items-center">
-          <div className="max-w-2xl">
-            <span className="eyebrow">New · Sydney</span>
-            <h2 className="mt-4 text-2xl text-white sm:text-3xl">
-              Fletcher Physiotherapy is expanding to Sydney
-            </h2>
-            <p className="mt-3 text-navy-100">
-              From November 2026, we&rsquo;re bringing nursing-home and in-home physiotherapy to Support at
-              Home and NDIS clients across the Sydney Olympic Park area and the inner west.
-            </p>
-          </div>
-          <div className="flex flex-shrink-0 flex-col gap-3 sm:flex-row">
-            <Link href="/physiotherapy-sydney" className="btn-accent">
-              Explore our Sydney service <Icon name="arrow" className="h-4 w-4" />
-            </Link>
-            <Link href="/refer-a-patient" className="btn-secondary border-navy-700 bg-transparent text-white hover:bg-navy-800">
-              Refer a patient
-            </Link>
+      {/* Sydney expansion offer */}
+      <section className="section-py bg-sand" id="sydney-offer">
+        <div className="container-px">
+          <div className="overflow-hidden rounded-3xl border border-clay-200 bg-white shadow-card">
+            <Image
+              src="/images/sydney-promo.jpg"
+              alt="Sydney Expansion — Mobile Physiotherapy. FREE Phone Consultation. Mobile physiotherapy home visits across Sydney, immediate availability from 9 November 2026."
+              width={1536}
+              height={1024}
+              className="h-auto w-full"
+              priority
+              sizes="(max-width: 1280px) 100vw, 1200px"
+            />
+            <div className="p-8 sm:p-10 lg:p-12">
+              <h2 className="text-3xl text-navy-900 sm:text-4xl">
+                Sydney Mobile Physiotherapy – Now Expanding
+              </h2>
+              <p className="mt-3 text-lg font-semibold text-clay-600">
+                FREE Phone Consultation + Immediate Availability
+              </p>
+
+              <div className="mt-6 grid gap-x-12 gap-y-6 lg:grid-cols-2">
+                <div className="prose-navy space-y-3">
+                  <p>
+                    Fletcher Physiotherapy is expanding our mobile physiotherapy services across Sydney
+                    from 9 November 2026.
+                  </p>
+                  <p>
+                    To celebrate our Sydney expansion, we&rsquo;re offering a <strong>FREE phone
+                    consultation</strong> for new clients, with immediate appointment availability from
+                    9 November until 31 December 2026.
+                  </p>
+                  <p>
+                    Our experienced physiotherapists provide convenient, personalised physiotherapy
+                    directly in the comfort of your home — mobile physiotherapy home visits across Sydney.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-widest text-navy-500">
+                    How we can help
+                  </p>
+                  <div className="mt-3 grid gap-x-6 gap-y-2.5 sm:grid-cols-2">
+                    {[
+                      "Post-operative rehabilitation",
+                      "Musculoskeletal pain and injuries",
+                      "Mobility and balance difficulties",
+                      "Falls prevention",
+                      "Strength and conditioning",
+                      "Walking and mobility aid assessment",
+                      "Rehabilitation following hospital discharge",
+                      "Physiotherapy for older adults",
+                      "Ongoing mobility and independence support",
+                    ].map((item) => (
+                      <div key={item} className="flex items-start gap-2.5">
+                        <Icon name="check" className="mt-1 h-4 w-4 flex-shrink-0 text-clay-600" />
+                        <span className="text-sm text-navy-700">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 rounded-2xl border border-clay-200 bg-clay-50 p-6">
+                <p className="font-serif text-xl text-navy-900">FREE Phone Consultation</p>
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-navy-700">
+                  Not sure whether mobile physiotherapy is right for you or a family member? Speak with our
+                  physiotherapy team for a free, no-obligation phone consultation to discuss your needs and
+                  how we may be able to help.
+                </p>
+                <p className="mt-2 text-xs text-navy-500">
+                  Offer available to new Sydney clients until 31 December 2026.
+                </p>
+                <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                  <a href={site.phoneHref} className="btn-primary">
+                    <Icon name="phone" className="h-5 w-5" /> Book a FREE Phone Consultation
+                  </a>
+                  <Link href="/physiotherapy-sydney" className="btn-secondary">
+                    Book a Sydney Home Visit
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
