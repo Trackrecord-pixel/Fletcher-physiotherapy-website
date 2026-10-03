@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { MobileCallBar } from "@/components/HomeConversion";
 import {
   LocalBusinessSchema,
   WebSiteSchema,
@@ -20,7 +21,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Home Visit Physiotherapy Newcastle | Fletcher Physiotherapy",
+    default: "Mobile & Home Visit Physio Sydney & Newcastle | Fletcher Physiotherapy",
     template: "%s | Fletcher Physiotherapy",
   },
   description: site.description,
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: site.url,
     siteName: site.name,
-    title: "Home Visit Physiotherapy Newcastle | Fletcher Physiotherapy",
+    title: "Mobile & Home Visit Physio Sydney & Newcastle | Fletcher Physiotherapy",
     description: site.description,
     images: [
       {
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Home Visit Physiotherapy Newcastle | Fletcher Physiotherapy",
+    title: "Mobile & Home Visit Physio Sydney & Newcastle | Fletcher Physiotherapy",
     description: site.description,
     images: ["/images/og-default.png"],
   },
@@ -73,7 +74,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>
+      <body className="pb-20 md:pb-0">
         <OrganizationSchema />
         <WebSiteSchema />
         <LocalBusinessSchema />
@@ -87,6 +88,7 @@ export default function RootLayout({
         <Header />
         <main id="main">{children}</main>
         <Footer />
+        <MobileCallBar />
         <ConversionTracking />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-EPKMS5KX40"

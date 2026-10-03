@@ -33,7 +33,7 @@ export default function Page() {
       title="Stay steady, confident and safe on your feet"
       intro="Falls prevention physiotherapy delivered in your home across Newcastle, Lake Macquarie and the Central Coast. Balance assessment, home safety review and tailored exercise to reduce falls risk and restore confidence."
       lead={[
-        "A single fall can dramatically change someone's independence and confidence. The good news is that falls are largely preventable — and the most effective programs combine strength, balance training and a review of the home environment, exactly what home visit physiotherapy is built to deliver.",
+        "A single fall can change someone's independence and confidence. The good news is that the risk of falling can often be reduced — and effective programs combine strength, balance training and a review of the home environment, exactly what home visit physiotherapy is built to deliver.",
         "We start with a thorough balance and mobility assessment, then walk through your home to identify and address hazards and tricky spaces — stairs, rugs, bathrooms and lighting. From there we build a personalised exercise program that strengthens your legs, sharpens your balance and rebuilds the confidence to move freely.",
         "Because we train you in your own home, the improvements translate directly into safer everyday movement where it counts.",
       ]}
@@ -55,7 +55,7 @@ export default function Page() {
         { icon: "user", title: "Older Adults", text: "Reduce falls risk and stay confidently independent at home." },
         { icon: "balance", title: "Balance Concerns", text: "Address unsteadiness, dizziness and near-falls before they become falls." },
         { icon: "recovery", title: "After a Fall", text: "Rebuild strength and confidence following a recent fall." },
-        { icon: "heart", title: "Home Care Clients", text: "Falls prevention as part of your Home Care Package or Support at Home plan." },
+        { icon: "heart", title: "Home Care Clients", text: "Falls prevention as part of your Support at Home plan." },
         { icon: "shield", title: "NDIS Participants", text: "Balance and safety goals supported within your NDIS plan." },
         { icon: "home", title: "Home Safety", text: "Practical changes to make your living spaces safer." },
       ]}

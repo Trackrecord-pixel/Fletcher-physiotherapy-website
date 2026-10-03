@@ -87,14 +87,13 @@ export default function AboutPage() {
               </p>
               <p>
                 So we changed the model. We come to you. Our physiotherapists
-                deliver expert, hands-on care in your living room, bedroom or
+                deliver experienced, hands-on care in your living room, bedroom or
                 backyard — wherever you feel most comfortable and wherever your
                 everyday challenges actually happen. Practising in your real
                 environment means your program is genuinely relevant to your life.
               </p>
               <p>
-                We work closely with NDIS participants, Home Care Package and
-                Support at Home clients, families, support coordinators, case
+                We work closely with NDIS participants, Support at Home clients, families, support coordinators, case
                 managers and GPs. Whether you are recovering from surgery, managing
                 chronic pain, reducing falls risk or rebuilding strength, our goal
                 is the same — to help you stay independent, mobile and confident for
@@ -179,8 +178,8 @@ export default function AboutPage() {
               Our Director and Principal Physiotherapist, <strong>Daniel Lee</strong>, is
               an <strong>APA Titled Pain Physiotherapist</strong> — a credential awarded by
               the Australian Physiotherapy Association to physiotherapists with advanced
-              training and specialist expertise in pain management. He holds a
-              <strong> Master of Pain Management from the University of Sydney</strong>.
+              training and advanced expertise in pain management. He holds a
+              <strong> Master of Medicine (Pain Management) from the University of Sydney</strong>.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-navy-700">
               Daniel works extensively with chronic pain, complex conditions and older

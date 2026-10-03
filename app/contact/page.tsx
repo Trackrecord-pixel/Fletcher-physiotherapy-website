@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact | Book Home Visit Physiotherapy",
   description:
-    "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie and the Central Coast. Call 0466 488 869 or send an enquiry online.",
+    "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas. Call 0404 791 756 or send an enquiry online.",
   alternates: { canonical: "/contact" },
   openGraph: {
     type: "website",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Contact | Book Home Visit Physiotherapy",
     description:
-      "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie and the Central Coast. Call 0466 488 869 or send an enquiry online.",
+      "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas. Call 0404 791 756 or send an enquiry online.",
     url: "/contact",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact | Book Home Visit Physiotherapy",
     description:
-      "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie and the Central Coast. Call 0466 488 869 or send an enquiry online.",
+      "Contact Fletcher Physiotherapy to book home visit physiotherapy in Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas. Call 0404 791 756 or send an enquiry online.",
     images: ["/images/og-default.png"],
   },
 };
@@ -42,7 +42,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact Us"
         title="Book your home visit physiotherapy"
-        intro="Ready to get started, or have a question about NDIS, Home Care Packages or what to expect? We'd love to hear from you."
+        intro="Ready to get started, or have a question about NDIS, Support at Home or what to expect? We'd love to hear from you."
         breadcrumb={[
           { name: "Home", href: "/" },
           { name: "Contact", href: "/contact" },
@@ -104,7 +104,7 @@ export default function ContactPage() {
         <div className="container-px pb-16">
           <div className="overflow-hidden rounded-3xl border border-navy-100 shadow-card">
             <iframe
-              title="Fletcher Physiotherapy service area — Newcastle, Lake Macquarie and the Central Coast"
+              title="Fletcher Physiotherapy service area — Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas"
               src="https://www.google.com/maps?q=Newcastle%20NSW%20Australia&z=10&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -112,7 +112,7 @@ export default function ContactPage() {
             />
           </div>
           <p className="mt-4 text-center text-sm text-navy-500">
-            We come to you across Newcastle, Lake Macquarie and the Central Coast.
+            We come to you across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.
           </p>
         </div>
       </section>

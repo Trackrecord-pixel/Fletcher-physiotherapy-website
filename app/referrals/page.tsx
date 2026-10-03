@@ -31,10 +31,10 @@ export const metadata: Metadata = {
 };
 
 const referrers = [
-  { icon: "doc", title: "GPs", text: "Refer patients for home-based physiotherapy, including Chronic Disease Management (EPC) plans. We provide clear assessment and progress reports." },
+  { icon: "doc", title: "GPs", text: "Refer patients for home-based physiotherapy, including GP Chronic Condition Management (GPCCMP) plans. We provide clear assessment and progress reports." },
   { icon: "users", title: "Support Coordinators", text: "Connect NDIS participants with reliable, goal-focused physiotherapy and thorough documentation for plan reviews." },
   { icon: "user", title: "Case Managers", text: "Arrange physiotherapy for clients with confidence — we communicate clearly and deliver dependable care." },
-  { icon: "heart", title: "Home Care Providers", text: "Refer Home Care Package and Support at Home clients for mobility, strength and falls prevention support." },
+  { icon: "heart", title: "Home Care Providers", text: "Refer Support at Home clients for mobility, strength and falls prevention support." },
   { icon: "home", title: "Family Members", text: "Help a loved one stay safe and independent at home. We'll guide you through the whole process." },
 ];
 

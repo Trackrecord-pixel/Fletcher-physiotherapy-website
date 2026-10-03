@@ -7,7 +7,7 @@ const c = landingPages["mobile-physiotherapist-newcastle"];
 export const metadata: Metadata = {
   title: "Mobile Physiotherapist | Newcastle NSW",
   description:
-    "Need a mobile physiotherapist in Newcastle? Fletcher Physiotherapy comes to you with expert in-home care across Newcastle, Lake Macquarie and the Central Coast.",
+    "Need a mobile physiotherapist in Newcastle? Fletcher Physiotherapy comes to you with experienced in-home care across Newcastle, Lake Macquarie and the Central Coast.",
   alternates: { canonical: "/mobile-physiotherapist-newcastle" },
   openGraph: {
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Mobile Physiotherapist | Newcastle NSW",
     description:
-      "Need a mobile physiotherapist in Newcastle? Fletcher Physiotherapy comes to you with expert in-home care across Newcastle, Lake Macquarie and the Central Coast.",
+      "Need a mobile physiotherapist in Newcastle? Fletcher Physiotherapy comes to you with experienced in-home care across Newcastle, Lake Macquarie and the Central Coast.",
     url: "/mobile-physiotherapist-newcastle",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mobile Physiotherapist | Newcastle NSW",
     description:
-      "Need a mobile physiotherapist in Newcastle? Fletcher Physiotherapy comes to you with expert in-home care across Newcastle, Lake Macquarie and the Central Coast.",
+      "Need a mobile physiotherapist in Newcastle? Fletcher Physiotherapy comes to you with experienced in-home care across Newcastle, Lake Macquarie and the Central Coast.",
     images: ["/images/og-default.png"],
   },
 };

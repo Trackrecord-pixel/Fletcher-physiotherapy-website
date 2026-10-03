@@ -5,25 +5,25 @@ import { landingPages } from "@/lib/landing";
 const c = landingPages["ndis-physiotherapy-newcastle"];
 
 export const metadata: Metadata = {
-  title: "NDIS Physiotherapy | Newcastle NSW",
+  title: "NDIS Home Physiotherapy Newcastle | Registered NDIS Provider",
   description:
-    "NDIS physiotherapy in Newcastle at home. Functional goals, mobility, independence and clear reports for support coordinators. Self, plan and agency managed.",
+    "Registered NDIS provider for mobile physiotherapy at home in Newcastle, Lake Macquarie & Central Coast. Functional assessments, plan-review reports, agency, plan & self-managed.",
   alternates: { canonical: "/ndis-physiotherapy-newcastle" },
   openGraph: {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "NDIS Physiotherapy | Newcastle NSW",
+    title: "NDIS Home Physiotherapy Newcastle | Registered NDIS Provider",
     description:
-      "NDIS physiotherapy in Newcastle at home. Functional goals, mobility, independence and clear reports for support coordinators. Self, plan and agency managed.",
+      "Registered NDIS provider for mobile physiotherapy at home in Newcastle, Lake Macquarie & Central Coast. Functional assessments, plan-review reports, agency, plan & self-managed.",
     url: "/ndis-physiotherapy-newcastle",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NDIS Physiotherapy | Newcastle NSW",
+    title: "NDIS Home Physiotherapy Newcastle | Registered NDIS Provider",
     description:
-      "NDIS physiotherapy in Newcastle at home. Functional goals, mobility, independence and clear reports for support coordinators. Self, plan and agency managed.",
+      "Registered NDIS provider for mobile physiotherapy at home in Newcastle, Lake Macquarie & Central Coast. Functional assessments, plan-review reports, agency, plan & self-managed.",
     images: ["/images/og-default.png"],
   },
 };

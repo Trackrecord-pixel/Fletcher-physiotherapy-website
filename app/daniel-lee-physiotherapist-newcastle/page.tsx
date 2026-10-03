@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title:
     "Daniel Lee | APA Titled Pain Physiotherapist Newcastle | Fletcher Physiotherapy",
   description:
-    "Daniel Lee is an APA Titled Pain Physiotherapist in Newcastle with a Master of Pain Management from the University of Sydney, specialising in chronic pain, older adult and home-based rehabilitation.",
+    "Daniel Lee is an APA Titled Pain Physiotherapist in Newcastle with a Master of Medicine (Pain Management) from the University of Sydney, with a special interest in chronic pain, older adult and home-based rehabilitation.",
   alternates: { canonical: "/daniel-lee-physiotherapist-newcastle" },
   openGraph: {
     type: "website",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Daniel Lee | APA Titled Pain Physiotherapist Newcastle | Fletcher Physiotherapy",
     description:
-      "Daniel Lee is an APA Titled Pain Physiotherapist in Newcastle with a Master of Pain Management from the University of Sydney, specialising in chronic pain, older adult and home-based rehabilitation.",
+      "Daniel Lee is an APA Titled Pain Physiotherapist in Newcastle with a Master of Medicine (Pain Management) from the University of Sydney, with a special interest in chronic pain, older adult and home-based rehabilitation.",
     url: "/daniel-lee-physiotherapist-newcastle",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Daniel Lee | APA Titled Pain Physiotherapist Newcastle | Fletcher Physiotherapy",
     description:
-      "Daniel Lee is an APA Titled Pain Physiotherapist in Newcastle with a Master of Pain Management from the University of Sydney, specialising in chronic pain, older adult and home-based rehabilitation.",
+      "Daniel Lee is an APA Titled Pain Physiotherapist in Newcastle with a Master of Medicine (Pain Management) from the University of Sydney, with a special interest in chronic pain, older adult and home-based rehabilitation.",
     images: ["/images/og-default.png"],
   },
 };
 
 const qualifications = [
   "APA Titled Pain Physiotherapist",
-  "Master of Pain Management — University of Sydney",
+  "Master of Medicine (Pain Management) — University of Sydney",
   "Registered Physiotherapist (AHPRA)",
 ];
 
@@ -44,7 +44,7 @@ const experience = [
   { icon: "recovery", title: "Neurological Rehabilitation", text: "Rehabilitation for stroke and other neurological conditions." },
   { icon: "shield", title: "NDIS Participants", text: "Functional, goal-focused physiotherapy for NDIS participants." },
   { icon: "joint", title: "Complex Presentations", text: "Confident assessment and treatment of complex, multi-factorial cases." },
-  { icon: "home", title: "Home Rehabilitation", text: "Delivering expert rehabilitation in the comfort of the client's home." },
+  { icon: "home", title: "Home Rehabilitation", text: "Delivering experienced rehabilitation in the comfort of the client's home." },
 ];
 
 export default function DanielLeePage() {
@@ -53,7 +53,7 @@ export default function DanielLeePage() {
       <PageHero
         eyebrow="Our Director"
         title="Daniel Lee — APA Titled Pain Physiotherapist in Newcastle"
-        intro="Director and Principal Physiotherapist at Fletcher Physiotherapy, specialising in chronic pain, older adult rehabilitation and home-based care across Newcastle, Lake Macquarie and the Central Coast."
+        intro="Director and Principal Physiotherapist at Fletcher Physiotherapy, with a special interest in chronic pain, older adult rehabilitation and home-based care across Newcastle, Lake Macquarie and the Central Coast."
         breadcrumb={[
           { name: "Home", href: "/" },
           { name: "Our Team", href: "/our-team" },
@@ -97,8 +97,8 @@ export default function DanielLeePage() {
               Physiotherapy, and an <strong>APA Titled Pain Physiotherapist</strong>
               {" "}— a credential awarded by the Australian Physiotherapy Association
               (APA) to physiotherapists who have completed advanced training and
-              demonstrated specialist expertise in pain management. He holds a
-              {" "}<strong>Master of Pain Management from the University of Sydney</strong>.
+              demonstrated advanced expertise in pain management. He holds a
+              {" "}<strong>Master of Medicine (Pain Management) from the University of Sydney</strong>.
             </p>
             <p>
               Daniel&rsquo;s clinical focus is helping people move with confidence and
@@ -109,7 +109,7 @@ export default function DanielLeePage() {
             </p>
             <p>
               He founded Fletcher Physiotherapy on a simple belief: people recover
-              better in their own homes. By bringing specialist physiotherapy directly
+              better in their own homes. By bringing experienced physiotherapy directly
               to clients across Newcastle, Lake Macquarie and the Central Coast, Daniel
               and the team remove the barriers of travel and waiting rooms, and deliver
               rehabilitation in the real environment where independence is won or lost.

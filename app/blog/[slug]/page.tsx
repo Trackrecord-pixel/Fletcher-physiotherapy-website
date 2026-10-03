@@ -6,7 +6,9 @@ import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import Icon from "@/components/Icon";
 import CTASection from "@/components/CTASection";
-import { BreadcrumbSchema } from "@/components/StructuredData";
+import { BreadcrumbSchema, FaqSchema } from "@/components/StructuredData";
+import FAQAccordion from "@/components/FAQAccordion";
+import AuthorReview from "@/components/AuthorReview";
 import { posts } from "@/lib/blog";
 import { site } from "@/lib/site";
 
@@ -28,8 +30,20 @@ export async function generateMetadata({
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       type: "article",
+      siteName: "Fletcher Physiotherapy",
+      locale: "en_AU",
+      url: `/blog/${post.slug}`,
       title: post.title,
       description: post.description,
+      publishedTime: post.date,
+      modifiedTime: post.updated ?? post.date,
+      images: [{ url: `/images/blog/${post.slug}.jpg`, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [`/images/blog/${post.slug}.jpg`],
     },
   };
 }
@@ -59,7 +73,7 @@ export default async function ArticlePage({
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     author: {
       "@type": "Person",
       name: "Daniel Lee",
@@ -98,7 +112,7 @@ export default async function ArticlePage({
             </div>
             <div className="flex items-center gap-4 text-sm text-navy-500 sm:ml-auto">
               <span className="inline-flex items-center gap-1.5">
-                <Icon name="calendar" className="h-4 w-4" /> {fmt(post.date)}
+                <Icon name="calendar" className="h-4 w-4" /> {post.updated ? `Updated ${fmt(post.updated)}` : fmt(post.date)}
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <Icon name="clock" className="h-4 w-4" /> {post.readMins} min read
@@ -133,12 +147,47 @@ export default async function ArticlePage({
             ))}
           </article>
 
+          {post.faqs && post.faqs.length > 0 && (
+            <div className="mt-10">
+              <h2 className="text-2xl text-navy-900 sm:text-3xl">Common questions</h2>
+              <div className="mt-5">
+                <FAQAccordion items={post.faqs} />
+              </div>
+            </div>
+          )}
+
+          {post.sources && post.sources.length > 0 && (
+            <div className="mt-10 border-t border-navy-100 pt-6">
+              <h2 className="text-sm font-semibold uppercase tracking-widest text-navy-500">References &amp; further reading</h2>
+              <ul className="mt-3 space-y-2 text-sm">
+                {post.sources.map((src) => (
+                  <li key={src.url}>
+                    <a href={src.url} target="_blank" rel="noopener noreferrer" className="text-navy-700 underline decoration-beige-300 underline-offset-2 hover:text-navy-900">
+                      {src.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <p className="mt-8 text-xs leading-relaxed text-navy-500">
+            This article is general information only and isn&rsquo;t a substitute for individual advice
+            from your doctor or physiotherapist. In an emergency, call 000.
+          </p>
+
+          <AuthorReview
+            pageUrl={`/blog/${post.slug}`}
+            reviewed={fmt(post.updated ?? post.date).replace(/^\d+ /, "")}
+          />
+
           <div className="mt-10 rounded-2xl bg-sand p-7 text-center">
             <p className="font-serif text-xl text-navy-900">
-              Need home visit physiotherapy in Newcastle?
+              Need home visit physiotherapy?
             </p>
             <p className="mt-2 text-navy-600">
-              We come to you across Newcastle, Lake Macquarie and the Central Coast.
+              We come to you across Newcastle, Lake Macquarie and the Central Coast — and selected
+              Sydney areas from 9 November 2026. Clinic appointments in Jesmond and Elermore Vale.
             </p>
             <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row">
               <Link href="/contact" className="btn-primary">Book a Home Visit</Link>
@@ -185,6 +234,7 @@ export default async function ArticlePage({
 
       <CTASection />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      {post.faqs && post.faqs.length > 0 && <FaqSchema items={post.faqs} />}
       <BreadcrumbSchema
         items={[
           { name: "Home", href: "/" },

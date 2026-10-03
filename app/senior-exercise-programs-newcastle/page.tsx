@@ -7,7 +7,7 @@ const c = landingPages["senior-exercise-programs-newcastle"];
 export const metadata: Metadata = {
   title: "Senior Exercise Programs Newcastle",
   description:
-    "Personalised senior exercise programs in Newcastle, delivered at home. Build strength, balance and confidence to stay independent. NDIS and Home Care Package.",
+    "Personalised senior exercise programs in Newcastle, delivered at home. Build strength, balance and confidence to stay independent. NDIS and Support at Home.",
   alternates: { canonical: "/senior-exercise-programs-newcastle" },
   openGraph: {
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Senior Exercise Programs Newcastle",
     description:
-      "Personalised senior exercise programs in Newcastle, delivered at home. Build strength, balance and confidence to stay independent. NDIS and Home Care Package.",
+      "Personalised senior exercise programs in Newcastle, delivered at home. Build strength, balance and confidence to stay independent. NDIS and Support at Home.",
     url: "/senior-exercise-programs-newcastle",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Senior Exercise Programs Newcastle",
     description:
-      "Personalised senior exercise programs in Newcastle, delivered at home. Build strength, balance and confidence to stay independent. NDIS and Home Care Package.",
+      "Personalised senior exercise programs in Newcastle, delivered at home. Build strength, balance and confidence to stay independent. NDIS and Support at Home.",
     images: ["/images/og-default.png"],
   },
 };

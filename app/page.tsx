@@ -5,14 +5,16 @@ import Icon from "@/components/Icon";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
-import Testimonials from "@/components/Testimonials";
+import { ReviewStrip, WhyCall, HowItWorks, Scenarios, MeetDaniel, TrustedBy } from "@/components/HomeConversion";
+import { reviewQuotes } from "@/lib/reviews";
 import FAQAccordion from "@/components/FAQAccordion";
 import Reveal from "@/components/Reveal";
 import FeatureList from "@/components/FeatureList";
 import CredentialsBand from "@/components/CredentialsBand";
+import OfferWindow from "@/components/OfferWindow";
 import AuthorReview from "@/components/AuthorReview";
 import { FaqSchema, PersonSchema } from "@/components/StructuredData";
-import { services, whyChoose, homeFaqs, team, locations, clinics, site } from "@/lib/site";
+import { services, homeFaqs, locations, clinics, site } from "@/lib/site";
 import type { IconName } from "@/components/Icon";
 
 
@@ -20,14 +22,14 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-
-      {/* Sydney expansion offer */}
+      <ReviewStrip />
+      {/* Sydney expansion teaser */}
       <section className="section-py bg-sand" id="sydney-offer">
         <div className="container-px">
           <div className="overflow-hidden rounded-3xl border border-clay-200 bg-white shadow-card">
             <Image
               src="/images/sydney-promo.jpg"
-              alt="Sydney Expansion — Mobile Physiotherapy. FREE Phone Consultation. Mobile physiotherapy home visits across Sydney, immediate availability from 9 November 2026."
+              alt="Sydney Expansion — Mobile Physiotherapy. FREE Phone Consultation. Mobile physiotherapy home visits across Sydney, available from 9 November 2026."
               width={1536}
               height={1024}
               className="h-auto w-full"
@@ -35,77 +37,35 @@ export default function HomePage() {
               sizes="(max-width: 1280px) 100vw, 1200px"
             />
             <div className="p-8 sm:p-10 lg:p-12">
-              <h2 className="text-3xl text-navy-900 sm:text-4xl">
-                Sydney Mobile Physiotherapy – Now Expanding
-              </h2>
-              <p className="mt-3 text-lg font-semibold text-clay-600">
-                FREE Phone Consultation + Immediate Availability
+              <h2 className="text-3xl text-navy-900 sm:text-4xl">Sydney Mobile Physiotherapy – Now Expanding</h2>
+              <p className="mt-3 max-w-2xl text-lg text-navy-700">
+                Fletcher Physiotherapy is expanding our mobile physiotherapy home visit service to Sydney
+                from 9 November 2026 — around Sydney Olympic Park, the Inner West and surrounding suburbs.
               </p>
-
-              <div className="mt-6 grid gap-x-12 gap-y-6 lg:grid-cols-2">
-                <div className="prose-navy space-y-3">
-                  <p>
-                    Fletcher Physiotherapy is expanding our mobile physiotherapy services across Sydney
-                    from 9 November 2026.
-                  </p>
-                  <p>
-                    To celebrate our Sydney expansion, we&rsquo;re offering a <strong>FREE phone
-                    consultation</strong> for new clients, with immediate appointment availability from
-                    9 November until 31 December 2026.
-                  </p>
-                  <p>
-                    Our experienced physiotherapists provide convenient, personalised physiotherapy
-                    directly in the comfort of your home — mobile physiotherapy home visits across Sydney.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold uppercase tracking-widest text-navy-500">
-                    How we can help
-                  </p>
-                  <div className="mt-3 grid gap-x-6 gap-y-2.5 sm:grid-cols-2">
-                    {[
-                      "Post-operative rehabilitation",
-                      "Musculoskeletal pain and injuries",
-                      "Mobility and balance difficulties",
-                      "Falls prevention",
-                      "Strength and conditioning",
-                      "Walking and mobility aid assessment",
-                      "Rehabilitation following hospital discharge",
-                      "Physiotherapy for older adults",
-                      "Ongoing mobility and independence support",
-                    ].map((item) => (
-                      <div key={item} className="flex items-start gap-2.5">
-                        <Icon name="check" className="mt-1 h-4 w-4 flex-shrink-0 text-clay-600" />
-                        <span className="text-sm text-navy-700">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <span className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-4 py-2 text-sm font-semibold text-white">
+                  <Icon name="calendar" className="h-4 w-4 text-beige-200" /> Available from 9 November 2026
+                </span>
+                <OfferWindow>
+                  <span className="inline-flex items-center gap-2 rounded-full bg-clay-500 px-4 py-2 text-sm font-semibold text-white">
+                    <Icon name="phone" className="h-4 w-4" /> FREE phone consultation for new Sydney clients until 31 December 2026
+                  </span>
+                </OfferWindow>
               </div>
-
-              <div className="mt-8 rounded-2xl border border-clay-200 bg-clay-50 p-6">
-                <p className="font-serif text-xl text-navy-900">FREE Phone Consultation</p>
-                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-navy-700">
-                  Not sure whether mobile physiotherapy is right for you or a family member? Speak with our
-                  physiotherapy team for a free, no-obligation phone consultation to discuss your needs and
-                  how we may be able to help.
-                </p>
-                <p className="mt-2 text-xs text-navy-500">
-                  Offer available to new Sydney clients until 31 December 2026.
-                </p>
-                <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                  <a href={site.phoneHref} className="btn-primary">
-                    <Icon name="phone" className="h-5 w-5" /> Book a FREE Phone Consultation
-                  </a>
-                  <Link href="/physiotherapy-sydney" className="btn-secondary">
-                    Book a Sydney Home Visit
-                  </Link>
-                </div>
+              <div className="mt-6">
+                <Link href="/physiotherapy-sydney" className="btn-primary">
+                  Explore Sydney Mobile Physiotherapy <Icon name="arrow" className="h-5 w-5" />
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <WhyCall />
+      <HowItWorks />
+      <Scenarios />
+      <MeetDaniel />
 
       {/* Visit Our Newcastle Physiotherapy Clinics */}
       <section className="section-py bg-sand" id="clinics">
@@ -171,50 +131,11 @@ export default function HomePage() {
           alt="Helping older Australians stay strong and independent with home visit physiotherapy in Newcastle"
           width={1500}
           height={1000}
-          priority
           sizes="100vw"
           className="h-auto w-full"
         />
       </section>
 
-      {/* Full-width banner */}
-      <section className="bg-white">
-        <Image
-          src="/images/services-banner.jpg"
-          alt="Personalised home visit physiotherapy helping older Australians stay strong and independent across Newcastle, Lake Macquarie and the Central Coast"
-          width={1500}
-          height={1000}
-          sizes="100vw"
-          className="h-auto w-full"
-        />
-      </section>
-
-      {/* Why Choose */}
-      <section className="section-py bg-white">
-        <div className="container-px">
-          <SectionHeading
-            center
-            eyebrow="Why Choose Fletcher Physiotherapy"
-            title="Expert care that comes to your front door"
-            intro="We focus on what matters most — keeping you independent, mobile and confident in your own home."
-          />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {whyChoose.slice(0, 3).map((item, i) => (
-              <Reveal key={item.title} delay={(i % 3) * 80}>
-                <div className="card card-hover h-full">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-white">
-                    <Icon name={item.icon as IconName} className="h-6 w-6" />
-                  </span>
-                  <h3 className="mt-5 text-xl text-navy-900">{item.title}</h3>
-                  <p className="mt-2 text-base leading-relaxed text-navy-600">
-                    {item.text}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Authority / Credentials */}
       <CredentialsBand />
@@ -272,7 +193,7 @@ export default function HomePage() {
                 Helping older adults stay safely at home
               </h3>
               <p className="mt-3 text-navy-600">
-                For Home Care Package and Support at Home clients, we focus on
+                For Support at Home clients, we focus on
                 maintaining independence, mobility, strength, balance and falls
                 prevention — so you can remain safely in your own home.
               </p>
@@ -281,37 +202,6 @@ export default function HomePage() {
               </Link>
             </div>
           </Reveal>
-        </div>
-      </section>
-
-      {/* Team preview */}
-      <section className="section-py bg-sand">
-        <div className="container-px">
-          <SectionHeading
-            center
-            eyebrow="Our Team"
-            title="Meet your physiotherapists"
-            intro="Experienced, caring clinicians dedicated to your long-term outcomes."
-          />
-          <div className="mx-auto mt-12 grid max-w-3xl gap-6 sm:grid-cols-2">
-            {team.map((m, i) => (
-              <Reveal key={m.slug} delay={i * 100}>
-                <div className="card card-hover h-full text-center">
-                  <span className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-navy-800 font-serif text-2xl font-semibold text-white">
-                    {m.name.split(" ").map((n) => n[0]).join("")}
-                  </span>
-                  <h3 className="mt-4 text-xl text-navy-900">{m.name}</h3>
-                  <p className="text-sm font-medium text-navy-500">{m.role}</p>
-                  <p className="mt-3 text-sm text-navy-600">{m.credentials}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-          <div className="mt-10 text-center">
-            <Link href="/our-team" className="btn-secondary">
-              Meet the full team <Icon name="arrow" className="h-4 w-4" />
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -366,7 +256,7 @@ export default function HomePage() {
               items={[
                 "Fast, simple online referrals",
                 "Detailed functional assessments & reports",
-                "NDIS, Home Care Package & private clients",
+                "NDIS, Support at Home & private clients",
               ]}
             />
             <Link href="/refer-a-patient" className="btn-accent mt-6">
@@ -376,7 +266,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Testimonials />
+      <ReviewStrip quotes={reviewQuotes.slice(3, 6)} title="More from the people we visit" tone="sand" />
+      <TrustedBy />
 
       {/* FAQ */}
       <section className="section-py bg-white">
@@ -385,7 +276,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="FAQs"
               title="Your questions, answered"
-              intro="Everything you need to know about home visits, NDIS, Home Care Packages and our service areas."
+              intro="Everything you need to know about home visits, NDIS, Support at Home and our service areas."
             />
             <Link href="/faqs" className="btn-secondary mt-6">
               View all FAQs <Icon name="arrow" className="h-4 w-4" />

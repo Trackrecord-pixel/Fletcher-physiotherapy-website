@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Icon from "@/components/Icon";
@@ -9,7 +10,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Refer a Patient | Home Visit Physiotherapy Newcastle",
   description:
-    "Refer your client to Fletcher Physiotherapy. Easy referrals for case managers, support coordinators and aged care providers across Newcastle, Lake Macquarie and the Central Coast.",
+    "Refer your client to Fletcher Physiotherapy. Easy referrals for case managers, support coordinators and aged care providers across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
   alternates: { canonical: "/refer-a-patient" },
   openGraph: {
     type: "website",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Refer a Patient | Home Visit Physiotherapy Newcastle",
     description:
-      "Refer your client to Fletcher Physiotherapy. Easy referrals for case managers, support coordinators and aged care providers across Newcastle, Lake Macquarie and the Central Coast.",
+      "Refer your client to Fletcher Physiotherapy. Easy referrals for case managers, support coordinators and aged care providers across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
     url: "/refer-a-patient",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Refer a Patient | Home Visit Physiotherapy Newcastle",
     description:
-      "Refer your client to Fletcher Physiotherapy. Easy referrals for case managers, support coordinators and aged care providers across Newcastle, Lake Macquarie and the Central Coast.",
+      "Refer your client to Fletcher Physiotherapy. Easy referrals for case managers, support coordinators and aged care providers across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
     images: ["/images/og-default.png"],
   },
 };
@@ -33,8 +34,8 @@ export const metadata: Metadata = {
 const audience = [
   { icon: "user", title: "Case Managers", text: "Arrange reliable, goal-focused physiotherapy for your clients with clear communication and dependable care." },
   { icon: "users", title: "Support Coordinators", text: "Connect NDIS participants with home-based physiotherapy and thorough documentation for plan reviews." },
-  { icon: "heart", title: "Aged Care Providers", text: "Refer Home Care Package and Support at Home clients for mobility, strength and falls-prevention support." },
-  { icon: "doc", title: "GPs", text: "Refer patients for home-based physiotherapy, including Chronic Disease Management (CDM/EPC) plans." },
+  { icon: "heart", title: "Aged Care Providers", text: "Refer Support at Home clients for mobility, strength and falls-prevention support." },
+  { icon: "doc", title: "GPs", text: "Refer patients for home-based physiotherapy, including GP Chronic Condition Management plans." },
   { icon: "home", title: "Family Members", text: "Help a loved one stay safe and independent at home — we'll guide you through every step." },
 ];
 
@@ -98,6 +99,46 @@ export default function ReferAPatientPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="section-py bg-white">
+        <div className="container-px grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <span className="eyebrow"><Icon name="pin" className="h-4 w-4" /> New: Sydney referrals</span>
+            <h2 className="mt-4 text-3xl text-navy-900">Referring a client in Sydney?</h2>
+            <p className="mt-4 text-navy-600">
+              From 9 November 2026 we provide mobile physiotherapy around Sydney Olympic Park, the Inner West
+              and surrounding suburbs. We welcome referrals now for services starting from that date.
+            </p>
+            <Link href="/physiotherapy-sydney" className="btn-secondary mt-6">
+              Sydney service details <Icon name="arrow" className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="lg:col-span-7">
+            <p className="text-sm font-semibold uppercase tracking-widest text-navy-500">We accept referrals from</p>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              {[
+                "GPs and medical practices",
+                "Support at Home providers and care managers",
+                "Aged care and retirement living teams",
+                "NDIS support coordinators and plan managers",
+                "Rehabilitation providers",
+                "Hospital discharge teams",
+                "Families and carers",
+              ].map((r) => (
+                <li key={r} className="flex items-start gap-3">
+                  <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-beige-100 text-navy-800">
+                    <Icon name="check" className="h-4 w-4" />
+                  </span>
+                  <span className="text-navy-700">{r}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 text-sm text-navy-500">
+              Use the form below and include the client&rsquo;s suburb, or call {site.phone} to discuss availability in their area.
+            </p>
+          </div>
         </div>
       </section>
 

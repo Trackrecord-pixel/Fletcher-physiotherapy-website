@@ -2,25 +2,25 @@ import type { Metadata } from "next";
 import ServiceDetail from "@/components/ServiceDetail";
 
 export const metadata: Metadata = {
-  title: "Support at Home Physiotherapy Newcastle | Home Care Package Physio",
+  title: "Support at Home Physiotherapy Newcastle (formerly Home Care Packages)",
   description:
-    "Support at Home and Home Care Package physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
+    "Support at Home physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
   alternates: { canonical: "/support-at-home-physiotherapy" },
   openGraph: {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Support at Home Physiotherapy Newcastle | Home Care Package Physio",
+    title: "Support at Home Physiotherapy Newcastle (formerly Home Care Packages)",
     description:
-      "Support at Home and Home Care Package physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
+      "Support at Home physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
     url: "/support-at-home-physiotherapy",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Support at Home Physiotherapy Newcastle | Home Care Package Physio",
+    title: "Support at Home Physiotherapy Newcastle (formerly Home Care Packages)",
     description:
-      "Support at Home and Home Care Package physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
+      "Support at Home physiotherapy in Newcastle, Lake Macquarie and the Central Coast. We come to you so older adults can stay strong, mobile and safely independent at home.",
     images: ["/images/og-default.png"],
   },
 };
@@ -31,10 +31,10 @@ export default function Page() {
       slug="support-at-home-physiotherapy"
       eyebrow="Support at Home Physiotherapy"
       title="Helping older adults stay safely and confidently at home"
-      intro="We come to you so you can receive physiotherapy in the comfort and safety of your own home. Supporting Home Care Package and Support at Home clients to maintain independence, mobility and strength."
+      intro="We come to you so you can receive physiotherapy in the comfort and safety of your own home. Supporting Support at Home clients to maintain independence, mobility and strength."
       lead={[
         "Staying in your own home is one of the most important things for quality of life as we age. Our Support at Home physiotherapy is built entirely around that goal — helping you remain mobile, strong, steady on your feet and safely independent in the home you love.",
-        "We work alongside your Home Care Package or Support at Home funding and care plan, coordinating with your provider and family. Your program might include strength and balance work, falls prevention, mobility training, pain management and practical advice on moving safely around your home.",
+        "We work alongside your Support at Home funding and care plan, coordinating with your provider and family. Your program might include strength and balance work, falls prevention, mobility training, pain management and practical advice on moving safely around your home.",
         "We come to you so you can receive physiotherapy in the comfort and safety of your own home — no stressful travel, and care that fits naturally into your daily routine.",
       ]}
       benefitsHeading="Focused on independence"
@@ -53,14 +53,14 @@ export default function Page() {
       ]}
       who={[
         { icon: "user", title: "Older Adults", text: "Support to stay active, capable and confident in everyday life." },
-        { icon: "heart", title: "Home Care Packages", text: "Physiotherapy coordinated with your package and provider." },
+        { icon: "heart", title: "Former Support at Home clients", text: "Moved to Support at Home? We coordinate with your provider." },
         { icon: "home", title: "Support at Home", text: "Home-based therapy aligned to your Support at Home plan." },
         { icon: "balance", title: "Falls Prevention", text: "Lower falls risk with balance work and home safety review." },
         { icon: "strength", title: "Strength & Mobility", text: "Build the strength needed for stairs, chairs and daily tasks." },
         { icon: "users", title: "Families & Carers", text: "Guidance and reassurance for the people supporting you." },
       ]}
       ctaTitle="Help your loved one stay safely at home"
-      ctaText="Book a home visit or speak with our team about Home Care Package and Support at Home physiotherapy."
+      ctaText="Book a home visit or speak with our team about Support at Home physiotherapy."
     />
   );
 }

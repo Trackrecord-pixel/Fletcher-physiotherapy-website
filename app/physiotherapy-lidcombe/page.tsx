@@ -1,33 +1,31 @@
 import type { Metadata } from "next";
-import SuburbPage from "@/components/SuburbPage";
-import { suburbs } from "@/lib/site";
+import SydneySuburbPage from "@/components/SydneySuburbPage";
+import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
-const s = suburbs.find((x) => x.slug === "physiotherapy-lidcombe")!;
+const s = sydneySuburbs.find((x) => x.slug === "physiotherapy-lidcombe")!;
+const title = "Mobile Physiotherapy Lidcombe | Home Visit Physio";
 
 export const metadata: Metadata = {
-  title: "Physiotherapy Lidcombe Sydney NSW",
-  description:
-    "Home visit and nursing-home physiotherapy in Lidcombe, Sydney from November 2026. Mobile physio for Support at Home and NDIS clients — falls prevention, aged care and rehabilitation at home.",
+  title,
+  description: s.metaDescription,
   alternates: { canonical: "/physiotherapy-lidcombe" },
   openGraph: {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Physiotherapy Lidcombe Sydney NSW",
-    description:
-      "Home visit and nursing-home physiotherapy in Lidcombe, Sydney from November 2026. Mobile physio for Support at Home and NDIS clients — falls prevention, aged care and rehabilitation at home.",
+    title,
+    description: s.metaDescription,
     url: "/physiotherapy-lidcombe",
-    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+    images: [{ url: "/images/sydney-promo.jpg", width: 1536, height: 1024, alt: "Fletcher Physiotherapy mobile physiotherapy in Sydney" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Physiotherapy Lidcombe Sydney NSW",
-    description:
-      "Home visit and nursing-home physiotherapy in Lidcombe, Sydney from November 2026. Mobile physio for Support at Home and NDIS clients — falls prevention, aged care and rehabilitation at home.",
-    images: ["/images/og-default.png"],
+    title,
+    description: s.metaDescription,
+    images: ["/images/sydney-promo.jpg"],
   },
 };
 
 export default function Page() {
-  return <SuburbPage s={s} />;
+  return <SydneySuburbPage s={s} />;
 }

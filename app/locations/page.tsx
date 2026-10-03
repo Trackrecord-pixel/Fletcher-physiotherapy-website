@@ -8,11 +8,12 @@ import Reveal from "@/components/Reveal";
 import FAQAccordion from "@/components/FAQAccordion";
 import { BreadcrumbSchema, FaqSchema } from "@/components/StructuredData";
 import { locations, suburbs, clinics, site } from "@/lib/site";
+import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
 const locationFaqs = [
-  { q: "Which areas does Fletcher Physiotherapy cover?", a: "We provide home visit physiotherapy right across Newcastle, Lake Macquarie and the Central Coast, and see clients at our Jesmond (Mondays) and Elermore Vale (Mondays) clinics. If you're not sure we reach your suburb, just call us." },
-  { q: "Do you charge extra to travel to my home?", a: "Costs depend on your funding — NDIS, Home Care Package, Support at Home or private. Call us on " + site.phone + " and we'll explain the options for your area clearly before your first visit." },
-  { q: "Do I need a referral to book?", a: "Not for private physiotherapy — you can contact us directly. A GP referral may be needed for certain funding streams such as a Chronic Disease Management (CDM/EPC) plan, DVA or some NDIS arrangements." },
+  { q: "Which areas does Fletcher Physiotherapy cover?", a: "We provide home visit physiotherapy across Newcastle, Lake Macquarie and the Central Coast, and see clients at our Jesmond and Elermore Vale clinics (both Mondays). From 9 November 2026 we also provide mobile physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs. If you're not sure we reach your suburb, just call us." },
+  { q: "Do you charge extra to travel to my home?", a: "Costs depend on your funding — NDIS, Support at Home or private. Call us on " + site.phone + " and we'll explain the options for your area clearly before your first visit." },
+  { q: "Do I need a referral to book?", a: "Not for private physiotherapy — you can contact us directly. A GP referral may be needed for certain funding streams such as a GP Chronic Condition Management plan, DVA or some NDIS arrangements." },
   { q: "Can you visit someone in an aged care or retirement village?", a: "Yes. We regularly visit residents in private homes, retirement villages and residential settings across the region, coordinating with families, providers and support coordinators." },
 ];
 
@@ -65,7 +66,7 @@ export default function LocationsPage() {
                   </span>
                   <h3 className="mt-4 text-2xl text-navy-900">{c.hostCentre}</h3>
                   <p className="mt-2 flex items-start gap-2 text-sm text-navy-600"><Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {c.address}</p>
-                  <p className="mt-4 flex-grow text-sm leading-relaxed text-navy-600">Physiotherapy, chronic pain management, musculoskeletal and sports injuries, falls prevention, balance assessment and post-operative rehabilitation. Medicare EPC, DVA and private patients welcome.</p>
+                  <p className="mt-4 flex-grow text-sm leading-relaxed text-navy-600">Physiotherapy, chronic pain management, musculoskeletal and sports injuries, falls prevention, balance assessment and post-operative rehabilitation. Medicare GP Chronic Condition Management Plan (GPCCMP), DVA and private patients welcome.</p>
                   <div className="mt-5 flex flex-col gap-2.5 sm:flex-row">
                     <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary w-full sm:w-auto">Book Appointment <Icon name="arrow" className="h-4 w-4" /></a>
                     <Link href={`/${c.slug}`} className="btn-secondary w-full sm:w-auto">Clinic details</Link>
@@ -136,7 +137,11 @@ export default function LocationsPage() {
             <a href={site.phoneHref} className="font-semibold text-navy-900 underline">
               {site.phone}
             </a>{" "}
-            and we&rsquo;ll let you know.
+            and we&rsquo;ll let you know &mdash; or use our{" "}
+            <Link href="/physio-near-me" className="font-semibold text-navy-900 underline">
+              suburb checker
+            </Link>
+            .
           </p>
         </div>
       </section>
@@ -151,7 +156,7 @@ export default function LocationsPage() {
             intro="Explore home visit physiotherapy across our Newcastle, Lake Macquarie and Central Coast suburbs — and our new Sydney service areas, from November 2026."
           />
           <div className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {suburbs.map((sub) => (
+            {[...suburbs, ...sydneySuburbs].map((sub) => (
               <Link
                 key={sub.slug}
                 href={`/${sub.slug}`}

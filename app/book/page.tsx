@@ -3,13 +3,14 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Icon from "@/components/Icon";
 import CTASection from "@/components/CTASection";
+import OfferWindow from "@/components/OfferWindow";
 import { BreadcrumbSchema } from "@/components/StructuredData";
 import { clinics, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Book an Appointment | Fletcher Physiotherapy Newcastle",
+  title: "Book an Appointment | Newcastle Clinics & Home Visits",
   description:
-    "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie and the Central Coast.",
+    "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
   alternates: { canonical: "/book" },
   openGraph: {
     type: "website",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Book an Appointment | Fletcher Physiotherapy Newcastle",
     description:
-      "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie and the Central Coast.",
+      "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
     url: "/book",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Book an Appointment | Fletcher Physiotherapy Newcastle",
     description:
-      "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie and the Central Coast.",
+      "Book physiotherapy with Fletcher Physiotherapy — at our Jesmond clinic (Mondays), Elermore Vale clinic (Mondays), or as a home visit across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.",
     images: ["/images/og-default.png"],
   },
 };
@@ -36,11 +37,11 @@ export default function BookPage() {
       <PageHero
         eyebrow="Book an Appointment"
         title="Choose how you'd like to see us"
-        intro="Attend one of our two Newcastle clinics, or have a physiotherapist visit you at home. Select an option below to book online, or call us on your preferred number."
+        intro="Attend one of our two Newcastle clinics, or have a physiotherapist visit you at home. Select an option below to book online, or call us on 0404 791 756."
         breadcrumb={[{ name: "Home", href: "/" }, { name: "Book", href: "/book" }]}
       />
       <section className="section-py bg-white">
-        <div className="container-px grid gap-6 md:grid-cols-3">
+        <div className="container-px grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {clinics.map((c) => (
             <div key={c.slug} className="card flex h-full flex-col">
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-white"><Icon name="pin" className="h-6 w-6" /></span>
@@ -58,6 +59,22 @@ export default function BookPage() {
             <p className="mt-2 flex-grow text-sm text-navy-600">Mobile physiotherapy across Newcastle, Lake Macquarie and the Central Coast — no travel, parking or waiting rooms.</p>
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-5 w-full">Book Appointment <Icon name="arrow" className="h-4 w-4" /></a>
             <Link href="/home-visit-physiotherapy-newcastle" className="mt-3 text-center text-sm font-semibold text-navy-700 hover:text-navy-900">Learn more</Link>
+          </div>
+          <div className="card flex h-full flex-col border-clay-200">
+            <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-clay-500 text-white"><Icon name="home" className="h-6 w-6" /></span>
+            <span className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-clay-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700"><Icon name="clock" className="h-3.5 w-3.5" /> From 9 November 2026</span>
+            <h2 className="mt-3 text-xl text-navy-900">Sydney Home Visits</h2>
+            <p className="mt-2 flex-grow text-sm text-navy-600">
+              Mobile physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs. To book or check
+              whether we cover your suburb, please call or send an enquiry.
+            </p>
+            <OfferWindow>
+              <p className="mt-3 rounded-lg bg-clay-50 px-3 py-2 text-xs text-navy-700">
+                FREE phone consultation for new Sydney clients until 31 December 2026. Phone consultations only; subject to availability.
+              </p>
+            </OfferWindow>
+            <a href={site.phoneHref} className="btn-primary mt-5 w-full"><Icon name="phone" className="h-4 w-4" /> Call {site.phone}</a>
+            <Link href="/physiotherapy-sydney" className="mt-3 text-center text-sm font-semibold text-navy-700 hover:text-navy-900">Sydney details</Link>
           </div>
         </div>
         <div className="container-px mt-10">

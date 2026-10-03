@@ -11,7 +11,7 @@ import { posts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Blog | Home Visit & Aged Care Physiotherapy Insights",
   description:
-    "Practical physiotherapy advice for older adults, families and carers — home visits, NDIS, Home Care Packages, falls prevention and recovery, from Fletcher Physiotherapy.",
+    "Practical physiotherapy advice for older adults, families and carers — home visits, NDIS, Support at Home, falls prevention and recovery, from Fletcher Physiotherapy.",
   alternates: { canonical: "/blog" },
   openGraph: {
     type: "website",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Blog | Home Visit & Aged Care Physiotherapy Insights",
     description:
-      "Practical physiotherapy advice for older adults, families and carers — home visits, NDIS, Home Care Packages, falls prevention and recovery, from Fletcher Physiotherapy.",
+      "Practical physiotherapy advice for older adults, families and carers — home visits, NDIS, Support at Home, falls prevention and recovery, from Fletcher Physiotherapy.",
     url: "/blog",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blog | Home Visit & Aged Care Physiotherapy Insights",
     description:
-      "Practical physiotherapy advice for older adults, families and carers — home visits, NDIS, Home Care Packages, falls prevention and recovery, from Fletcher Physiotherapy.",
+      "Practical physiotherapy advice for older adults, families and carers — home visits, NDIS, Support at Home, falls prevention and recovery, from Fletcher Physiotherapy.",
     images: ["/images/og-default.png"],
   },
 };
@@ -47,7 +47,7 @@ export default function BlogIndex() {
       <PageHero
         eyebrow="Blog"
         title="Physiotherapy insights for older adults & families"
-        intro="Practical, evidence-based advice on home visit physiotherapy, aged care, NDIS, Home Care Packages, falls prevention and recovery."
+        intro="Practical, evidence-based advice on home visit physiotherapy, aged care, NDIS, Support at Home, falls prevention and recovery."
         breadcrumb={[
           { name: "Home", href: "/" },
           { name: "Blog", href: "/blog" },

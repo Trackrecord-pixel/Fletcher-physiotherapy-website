@@ -7,7 +7,7 @@ const c = landingPages["stroke-rehabilitation-newcastle"];
 export const metadata: Metadata = {
   title: "Stroke Rehabilitation Newcastle",
   description:
-    "Home-based stroke rehabilitation physiotherapy in Newcastle. Rebuild movement, strength and independence at home. NDIS and Home Care Package welcome.",
+    "Home-based stroke rehabilitation physiotherapy in Newcastle. Rebuild movement, strength and independence at home. NDIS and Support at Home welcome.",
   alternates: { canonical: "/stroke-rehabilitation-newcastle" },
   openGraph: {
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Stroke Rehabilitation Newcastle",
     description:
-      "Home-based stroke rehabilitation physiotherapy in Newcastle. Rebuild movement, strength and independence at home. NDIS and Home Care Package welcome.",
+      "Home-based stroke rehabilitation physiotherapy in Newcastle. Rebuild movement, strength and independence at home. NDIS and Support at Home welcome.",
     url: "/stroke-rehabilitation-newcastle",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Stroke Rehabilitation Newcastle",
     description:
-      "Home-based stroke rehabilitation physiotherapy in Newcastle. Rebuild movement, strength and independence at home. NDIS and Home Care Package welcome.",
+      "Home-based stroke rehabilitation physiotherapy in Newcastle. Rebuild movement, strength and independence at home. NDIS and Support at Home welcome.",
     images: ["/images/og-default.png"],
   },
 };

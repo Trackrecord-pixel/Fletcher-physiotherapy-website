@@ -38,7 +38,7 @@ const detailed = [
   {
     id: "post-hospital-rehabilitation",
     title: "Post Hospital Rehabilitation",
-    text: "Returning home after surgery, illness or a hospital stay is a vulnerable time. We provide structured, supported rehabilitation in your home to help you recover safely, regain strength and reduce the risk of readmission.",
+    text: "Returning home after surgery, illness or a hospital stay is a vulnerable time. We provide structured, supported rehabilitation in your home to help you recover safely, regain strength and get back to daily life.",
     points: ["Post-surgical recovery", "Reconditioning after illness", "Safe return to daily activities", "Coordination with your care team"],
   },
   {
@@ -110,8 +110,8 @@ export default function ServicesPage() {
           <SectionHeading
             center
             eyebrow="Conditions we treat"
-            title="Specialist rehabilitation for common conditions"
-            intro="Expert home visit physiotherapy for the conditions that most affect older adults \u2014 delivered across Newcastle, Lake Macquarie and the Central Coast."
+            title="Rehabilitation for common conditions"
+            intro="Experienced home visit physiotherapy for the conditions that most affect older adults \u2014 delivered across Newcastle, Lake Macquarie and the Central Coast."
           />
           <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {conditionsNav.map((cnd) => (

@@ -5,9 +5,9 @@ import { clinics } from "@/lib/site";
 const c = clinics.find((x) => x.slug === "physiotherapy-elermore-vale")!;
 
 export const metadata: Metadata = {
-  title: "Physiotherapy Elermore Vale | Fletcher Physiotherapy",
+  title: "Physiotherapy Elermore Vale",
   description:
-    "Visit Fletcher Physiotherapy at Elermore Vale Medical Centre for expert physiotherapy, chronic pain management, injury rehabilitation, falls prevention and Medicare EPC physiotherapy.",
+    "Visit Fletcher Physiotherapy at Elermore Vale Medical Centre for experienced physiotherapy, chronic pain management, injury rehabilitation, falls prevention and Medicare GP Chronic Condition Management Plan (GPCCMP) physiotherapy.",
   keywords: ["Physiotherapy Elermore Vale", "Physiotherapist Elermore Vale", "Elermore Vale Physio", "Chronic Pain Physiotherapist Elermore Vale", "Medicare Physio Elermore Vale"],
   alternates: { canonical: "/physiotherapy-elermore-vale" },
   openGraph: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Physiotherapy Elermore Vale | Fletcher Physiotherapy",
     description:
-      "Visit Fletcher Physiotherapy at Elermore Vale Medical Centre for expert physiotherapy, chronic pain management, injury rehabilitation, falls prevention and Medicare EPC physiotherapy.",
+      "Visit Fletcher Physiotherapy at Elermore Vale Medical Centre for experienced physiotherapy, chronic pain management, injury rehabilitation, falls prevention and Medicare GP Chronic Condition Management Plan (GPCCMP) physiotherapy.",
     url: "/physiotherapy-elermore-vale",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Physiotherapy Elermore Vale | Fletcher Physiotherapy",
     description:
-      "Visit Fletcher Physiotherapy at Elermore Vale Medical Centre for expert physiotherapy, chronic pain management, injury rehabilitation, falls prevention and Medicare EPC physiotherapy.",
+      "Visit Fletcher Physiotherapy at Elermore Vale Medical Centre for experienced physiotherapy, chronic pain management, injury rehabilitation, falls prevention and Medicare GP Chronic Condition Management Plan (GPCCMP) physiotherapy.",
     images: ["/images/og-default.png"],
   },
 };
