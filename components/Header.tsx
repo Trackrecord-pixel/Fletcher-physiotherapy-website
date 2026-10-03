@@ -5,11 +5,12 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Icon from "./Icon";
-import { primaryNav, servicesNav, locationsNav, site } from "@/lib/site";
+import { primaryNav, headerNav, servicesNav, locationsNav, teamNav, site } from "@/lib/site";
 
 const dropdowns: Record<string, { label: string; href: string }[]> = {
   Services: servicesNav,
   Locations: locationsNav,
+  "Our Team": teamNav,
 };
 
 export default function Header() {
@@ -67,7 +68,7 @@ export default function Header() {
         <Logo />
 
         <div className="hidden items-center gap-1 lg:flex">
-          {primaryNav.map((link) => {
+          {headerNav.map((link) => {
             const dd = dropdowns[link.label];
             return dd ? (
               <div

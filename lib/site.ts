@@ -36,6 +36,24 @@ export const primaryNav: NavLink[] = [
   { label: "Contact", href: "/contact" },
 ];
 
+// Trimmed menu shown in the desktop header (keeps the top bar clean).
+// The full primaryNav is still used for the mobile menu and footer.
+export const headerNav: NavLink[] = [
+  { label: "Services", href: "/services" },
+  { label: "Locations", href: "/locations" },
+  { label: "Our Team", href: "/our-team" },
+  { label: "Refer a Patient", href: "/refer-a-patient" },
+  { label: "Contact", href: "/contact" },
+];
+
+// Items shown in the "Our Team" desktop dropdown.
+export const teamNav: NavLink[] = [
+  { label: "Our Team", href: "/our-team" },
+  { label: "Meet Daniel Lee", href: "/daniel-lee-physiotherapist-newcastle" },
+  { label: "About Us", href: "/about" },
+  { label: "FAQs", href: "/faqs" },
+];
+
 export const servicesNav: NavLink[] = [
   { label: "Home Visit Physiotherapy", href: "/home-visit-physiotherapy-newcastle" },
   { label: "Mobile Physiotherapist", href: "/mobile-physiotherapist-newcastle" },
@@ -59,6 +77,8 @@ export const locationsNav: NavLink[] = [
   { label: "Jesmond Clinic", href: "/physiotherapy-jesmond" },
   { label: "Elermore Vale Clinic", href: "/physiotherapy-elermore-vale" },
   { label: "Home Visit Physiotherapy", href: "/home-visit-physiotherapy-newcastle" },
+  { label: "Sydney Physiotherapy", href: "/physiotherapy-sydney" },
+  { label: "All Locations", href: "/locations" },
 ];
 
 export type Clinic = {
