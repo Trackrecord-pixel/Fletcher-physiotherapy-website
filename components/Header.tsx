@@ -51,7 +51,7 @@ export default function Header() {
       <div className="hidden border-b border-navy-100 bg-navy-800 text-white lg:block">
         <div className="container-px flex h-10 items-center justify-between text-xs">
           <p className="font-medium tracking-wide text-navy-100">
-            Home visit physiotherapy &amp; Newcastle clinics
+            Home visits in Sydney &amp; Newcastle · Newcastle clinics
           </p>
           <div className="flex items-center gap-5">
             <a href={site.phoneHref} className="inline-flex items-center gap-1.5 hover:text-beige-200">

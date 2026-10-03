@@ -3,7 +3,7 @@ import { site } from "@/lib/site";
 
 export default function CTASection({
   title = "Ready to receive physiotherapy in the comfort of your home?",
-  text = "Book online or contact our friendly team today. We service Newcastle, Lake Macquarie and the Central Coast.",
+  text = "Book online or contact our friendly team today. We visit homes across Newcastle, Lake Macquarie, the Central Coast and — from 9 November 2026 — Sydney.",
 }: {
   title?: string;
   text?: string;

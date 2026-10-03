@@ -482,7 +482,7 @@ export const homeFaqs: Faq[] = [
   },
   {
     q: "How can physiotherapy prevent falls?",
-    a: "Falls prevention physiotherapy combines a balance and mobility assessment, a tailored strength and balance exercise program, gait and confidence training, and a review of hazards in your home. This evidence-based approach is can help reduce falls risk and help older adults stay safely independent.",
+    a: "Falls prevention physiotherapy combines a balance and mobility assessment, a tailored strength and balance exercise program, gait and confidence training, and a review of hazards in your home. This evidence-based approach can help reduce falls risk and help older adults stay safely independent.",
   },
   {
     q: "Do I need a GP referral?",
