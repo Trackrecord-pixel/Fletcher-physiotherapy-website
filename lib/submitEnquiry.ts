@@ -9,12 +9,15 @@
 export type SubmitResult = "sent" | "mailto" | "error";
 
 const INBOX = "info@fletcherphysiotherapy.com.au";
+const WEB3FORMS_KEY = "1568b714-f175-4851-834e-8b146ce192e2";
 
 export async function submitEnquiry(
   subject: string,
   fields: Record<string, string>
 ): Promise<SubmitResult> {
-  const key = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+  // Web3Forms access keys are public by design (they only allow sending to the
+  // practice inbox). The env var overrides this if it's ever set in Vercel.
+  const key = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || WEB3FORMS_KEY;
 
   if (key) {
     try {
