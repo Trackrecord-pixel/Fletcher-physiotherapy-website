@@ -23,10 +23,62 @@ const clinicLocations = clinics.map((c) => ({
   },
 }));
 
+// Topics the practice is genuinely known for — shared by business + organisation entities.
+const practiceKnowsAbout = [
+  "Physiotherapy",
+  "Home visit physiotherapy",
+  "Mobile physiotherapy",
+  "NDIS physiotherapy",
+  "NDIS functional capacity assessment",
+  "Support at Home physiotherapy",
+  "Home Care Packages (now Support at Home)",
+  "Aged care physiotherapy",
+  "Falls prevention",
+  "Balance and strength training for older adults",
+  "Rehabilitation after hospital discharge",
+  "Post-surgical rehabilitation",
+  "Persistent pain management",
+  "APA Titled Pain Physiotherapy",
+  "GP Chronic Condition Management Plan (GPCCMP)",
+];
+
+const ndisCredential = site.ndisRegistered
+  ? [
+      {
+        "@type": "EducationalOccupationalCredential",
+        name: "Registered NDIS Provider",
+        credentialCategory: "NDIS provider registration",
+        ...(site.ndisRegistrationNumber ? { identifier: site.ndisRegistrationNumber } : {}),
+        recognizedBy: {
+          "@type": "GovernmentOrganization",
+          name: "NDIS Quality and Safeguards Commission",
+          url: "https://www.ndiscommission.gov.au",
+        },
+      },
+    ]
+  : [];
+
+const serviceCatalog = {
+  "@type": "OfferCatalog",
+  name: "Physiotherapy services",
+  itemListElement: [
+    ["Home visit physiotherapy", "/home-visit-physiotherapy-newcastle"],
+    ["NDIS physiotherapy", "/ndis-physiotherapy-newcastle"],
+    ["Support at Home physiotherapy (formerly Home Care Packages)", "/support-at-home-physiotherapy-newcastle"],
+    ["Aged care and retirement village physiotherapy", "/aged-care-physiotherapy-newcastle"],
+    ["Falls prevention physiotherapy", "/falls-prevention-physiotherapy-newcastle"],
+    ["Persistent pain management", "/chronic-pain-management"],
+    ["Mobile physiotherapy in Sydney (from 9 November 2026)", "/physiotherapy-sydney"],
+  ].map(([name, path]) => ({
+    "@type": "Offer",
+    itemOffered: { "@type": "Service", name, url: `${site.url}${path}` },
+  })),
+};
+
 export function LocalBusinessSchema() {
   const data = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
+    "@type": ["MedicalBusiness", "Physiotherapy"],
     "@id": `${site.url}/#business`,
     name: site.name,
     description: site.description,
@@ -59,6 +111,10 @@ export function LocalBusinessSchema() {
       closes: "18:00",
     },
     location: clinicLocations,
+    knowsAbout: practiceKnowsAbout,
+    hasOfferCatalog: serviceCatalog,
+    ...(ndisCredential.length ? { hasCredential: ndisCredential } : {}),
+    employee: { "@type": "Person", name: "Daniel Lee", jobTitle: "APA Titled Pain Physiotherapist", url: `${site.url}/daniel-lee-physiotherapist-newcastle` },
     sameAs: [site.reviewsUrl],
   };
 
@@ -99,12 +155,13 @@ export function ServiceSchema({
 }) {
   const data = {
     "@context": "https://schema.org",
-    "@type": "MedicalProcedure",
+    "@type": "Service",
     name,
+    serviceType: name,
     description,
     url: `${site.url}/${slug}`,
     provider: { "@id": `${site.url}/#business` },
-    areaServed: site.areasServed,
+    areaServed: site.areasServed.map((n) => ({ "@type": "City", name: n })),
   };
   return (
     <script
@@ -143,6 +200,7 @@ export function PersonSchema() {
     "@type": "Person",
     name: "Daniel Lee",
     jobTitle: "APA Titled Pain Physiotherapist",
+    knowsLanguage: ["English", "Korean"],
     worksFor: { "@id": `${site.url}/#business` },
     url: `${site.url}/our-team`,
     image: `${site.url}/team/daniel-lee.jpg`,
@@ -153,11 +211,13 @@ export function PersonSchema() {
     hasCredential: [
       {
         "@type": "EducationalOccupationalCredential",
-        credentialCategory: "APA Titled Pain Physiotherapist",
+        name: "APA Titled Pain Physiotherapist",
+        credentialCategory: "Professional title",
+        recognizedBy: { "@type": "Organization", name: "Australian Physiotherapy Association", url: "https://australian.physio" },
       },
       {
         "@type": "EducationalOccupationalCredential",
-        credentialCategory: "Master of Pain Management",
+        credentialCategory: "Master of Medicine (Pain Management)",
       },
     ],
     knowsAbout: [
@@ -217,6 +277,8 @@ export function OrganizationSchema() {
       { "@type": "City", name: "Sydney", address: { "@type": "PostalAddress", addressRegion: "NSW", addressCountry: "AU" } },
     ],
     location: clinicLocations,
+    knowsAbout: practiceKnowsAbout,
+    ...(ndisCredential.length ? { hasCredential: ndisCredential } : {}),
     sameAs: [site.reviewsUrl],
   };
   return (

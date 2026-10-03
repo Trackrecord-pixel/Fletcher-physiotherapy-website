@@ -21,7 +21,7 @@ export default function AuthorReview({
         <Link href="/daniel-lee-physiotherapist-newcastle" className="font-semibold text-navy-900 underline decoration-beige-300 underline-offset-2 hover:text-navy-700">
           Daniel Lee
         </Link>
-        , APA Titled Pain Physiotherapist &amp; Master of Pain Management (University of Sydney), AHPRA-registered.{" "}
+        , APA Titled Pain Physiotherapist &amp; Master of Medicine (Pain Management), University of Sydney, AHPRA-registered.{" "}
         <span className="whitespace-nowrap text-navy-500">Last reviewed {reviewed}.</span>
       </p>
       <script

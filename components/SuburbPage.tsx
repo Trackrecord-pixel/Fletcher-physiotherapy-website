@@ -20,19 +20,19 @@ export default function SuburbPage({ s }: { s: Suburb }) {
   const faqs = [
     {
       q: `Do you provide home visit physiotherapy in ${s.name}?`,
-      a: `Yes. Our mobile physiotherapists visit homes throughout ${s.name} and the surrounding ${s.region} area, so you receive expert physiotherapy without leaving home — no travel, parking or waiting rooms.`,
+      a: `Yes. Our mobile physiotherapists visit homes throughout ${s.name} and the surrounding ${s.region} area, so you receive experienced physiotherapy without leaving home — no travel, parking or waiting rooms.`,
     },
     {
       q: `What does home physiotherapy in ${s.name} cost?`,
-      a: `It depends on your funding — NDIS, Home Care Package, Support at Home or private. Contact us on ${site.phone} and we'll explain the options for ${s.name} residents clearly.`,
+      a: `It depends on your funding — NDIS, Support at Home or private. Contact us on ${site.phone} and we'll explain the options for ${s.name} residents clearly.`,
     },
     {
       q: `How can physiotherapy help older adults in ${s.name} prevent falls?`,
-      a: `Through a balance assessment, strength and balance training and a review of hazards in your ${s.name} home — an evidence-based approach that reduces falls risk and rebuilds confidence.`,
+      a: `Through a balance assessment, strength and balance training and a review of hazards in your ${s.name} home — an evidence-based approach that can help reduce falls risk and rebuilds confidence.`,
     },
     {
       q: `Do I need a GP referral for physiotherapy in ${s.name}?`,
-      a: `Not for private physiotherapy — you can contact us directly. A GP referral may be needed for certain funding streams such as a Chronic Disease Management (CDM/EPC) plan.`,
+      a: `Not for private physiotherapy — you can contact us directly. A GP referral may be needed for certain funding streams such as a GP Chronic Condition Management plan.`,
     },
   ];
 
@@ -138,11 +138,11 @@ export default function SuburbPage({ s }: { s: Suburb }) {
 
             <div className="mt-10">
               <h2 className="text-2xl text-navy-900 sm:text-3xl">
-                Support at Home &amp; Home Care Package physiotherapy in {s.name}
+                Support at Home physiotherapy in {s.name}
               </h2>
               <div className="prose-navy mt-4 space-y-4">
                 <p>
-                  For {s.name} residents with a Home Care Package or Support at Home funding,
+                  For {s.name} residents with a Support at Home funding,
                   physiotherapy is one of the most valuable services available — directly
                   supporting the mobility, strength and safety that independent living
                   depends on. We coordinate with your provider and care plan and supply any
@@ -161,8 +161,8 @@ export default function SuburbPage({ s }: { s: Suburb }) {
               </h2>
               <div className="prose-navy mt-4 space-y-4">
                 <p>
-                  Falls are a leading cause of lost independence for older adults — and most
-                  are preventable. Our {s.name} falls-prevention physiotherapy combines a
+                  Falls are the number one cause of accidental injury in older Australians —
+                  but there is a lot that can be done to lower the risk. Our {s.name} falls-prevention physiotherapy combines a
                   balance and mobility assessment, a tailored strength and balance program,
                   and a review of hazards around your home.
                 </p>
@@ -181,8 +181,8 @@ export default function SuburbPage({ s }: { s: Suburb }) {
               <p className="prose-navy mt-4">
                 Returning home to {s.name} after a hospital stay is a vulnerable time. Our
                 home-based rehabilitation helps you recover safely after surgery, illness or
-                a fall — rebuilding strength, restoring function and reducing the risk of
-                readmission, all in the comfort of your own home.
+                a fall — rebuilding strength, restoring function and helping you get back to
+                daily life, all in the comfort of your own home.
               </p>
             </div>
 
@@ -194,13 +194,12 @@ export default function SuburbPage({ s }: { s: Suburb }) {
                 <p>
                   Fletcher Physiotherapy is a dedicated home visit service led by an
                   APA Titled Pain Physiotherapist. For {s.name} residents, that means
-                  expert, evidence-based physiotherapy delivered where you live — no
+                  experienced, evidence-based physiotherapy delivered where you live — no
                   travel, no parking and no waiting rooms — with a genuine focus on
                   helping you stay strong, mobile and independent at home.
                 </p>
                 <p>
-                  We work with older adults, NDIS participants, Home Care Package and
-                  Support at Home clients and their families across {s.name}, and we
+                  We work with older adults, NDIS participants, Support at Home clients and their families across {s.name}, and we
                   communicate clearly with GPs, support coordinators and care providers
                   every step of the way.
                 </p>

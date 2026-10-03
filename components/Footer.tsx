@@ -14,7 +14,7 @@ export default function Footer() {
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-navy-200">
               Professional home visit physiotherapy in the comfort of your home.
               Supporting independence for NDIS, Support at Home and private
-              clients across Newcastle, Lake Macquarie and the Central Coast.
+              clients across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.
             </p>
             <div className="mt-6 flex flex-col gap-3 text-sm">
               <a href={site.phoneHref} className="inline-flex items-center gap-2.5 hover:text-white">
@@ -26,6 +26,12 @@ export default function Footer() {
               <p className="inline-flex items-center gap-2.5">
                 <Icon name="clock" className="h-4 w-4 text-beige-300" /> {site.hours}
               </p>
+              {site.ndisRegistered && (
+                <p className="inline-flex items-center gap-2.5">
+                  <Icon name="shield" className="h-4 w-4 text-beige-300" /> Registered NDIS provider
+                  {site.ndisRegistrationNumber ? ` · Reg. ${site.ndisRegistrationNumber}` : ""}
+                </p>
+              )}
             </div>
           </div>
 
@@ -103,6 +109,12 @@ export default function Footer() {
               className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-beige-200 hover:text-white"
             >
               View all locations <Icon name="arrow" className="h-4 w-4" />
+            </Link>
+            <Link
+              href="/physio-near-me"
+              className="mt-2 flex items-center gap-1.5 text-sm font-semibold text-beige-200 hover:text-white"
+            >
+              Find a physio near you <Icon name="arrow" className="h-4 w-4" />
             </Link>
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-accent mt-6">
               Book Online <Icon name="arrow" className="h-4 w-4" />

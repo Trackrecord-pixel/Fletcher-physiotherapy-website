@@ -2,8 +2,8 @@ import Icon from "./Icon";
 import type { IconName } from "./Icon";
 
 const credentials: { icon: IconName; title: string; text: string }[] = [
-  { icon: "pulse", title: "APA Titled Pain Physiotherapist", text: "A nationally recognised advanced credential held by a small percentage of Australian physiotherapists." },
-  { icon: "doc", title: "Master of Pain Management", text: "Postgraduate qualified through the University of Sydney in the assessment and treatment of complex pain." },
+  { icon: "pulse", title: "APA Titled Pain Physiotherapist", text: "A nationally recognised advanced clinical credential awarded by the Australian Physiotherapy Association (APA)." },
+  { icon: "doc", title: "Master of Medicine (Pain Management)", text: "Postgraduate qualified through the University of Sydney in the assessment and treatment of complex pain." },
   { icon: "shield", title: "AHPRA-registered", text: "Registered with the Australian Health Practitioner Regulation Agency and a member of the APA." },
   { icon: "star", title: "Evidence-based care", text: "Assessment and treatment grounded in current clinical research, tailored to your goals." },
 ];

@@ -4,7 +4,7 @@ export const site = {
   legalName: "Fletcher Physiotherapy",
   tagline: "We Come To You",
   description:
-    "Professional home visit physiotherapy across Newcastle, Lake Macquarie and the Central Coast. Specialising in NDIS, Support at Home and Home Care Package physiotherapy for older adults, families and private clients.",
+    "Mobile and home visit physiotherapy across Newcastle, Lake Macquarie, the Central Coast and Sydney (from 9 November 2026). NDIS, Support at Home and private clients — older adults, families and carers welcome.",
   url: "https://www.fletcherphysiotherapy.com.au",
   phone: "0404 791 756",
   phoneHref: "tel:+61404791756",
@@ -16,6 +16,10 @@ export const site = {
   region: "NSW",
   geo: { lat: -32.9283, lng: 151.7817 },
   hours: "Mon–Fri 8:00am – 6:00pm",
+  /** Registered with the NDIS Quality and Safeguards Commission. */
+  ndisRegistered: true,
+  /** Add the NDIS registration number here to show it on the site (leave "" to hide). */
+  ndisRegistrationNumber: "NDIS0023718",
   social: {
     facebook: "https://www.facebook.com/",
     instagram: "https://www.instagram.com/",
@@ -177,7 +181,7 @@ export const services: Service[] = [
     slug: "support-at-home-physiotherapy",
     title: "Support at Home Physiotherapy",
     short:
-      "Physiotherapy for Home Care Package and Support at Home clients to stay strong, mobile and safely independent.",
+      "Physiotherapy for Support at Home clients to stay strong, mobile and safely independent.",
     icon: "heart",
     href: "/support-at-home-physiotherapy-newcastle",
     featured: true,
@@ -249,10 +253,11 @@ export const team: TeamMember[] = [
     name: "Daniel Lee",
     role: "Director & Principal Physiotherapist",
     photo: "/team/daniel-lee.jpg",
-    credentials: "APA Titled Pain Physiotherapist · Master of Pain Management (University of Sydney)",
+    credentials: "APA Titled Pain Physiotherapist · Master of Medicine (Pain Management), University of Sydney",
     bio: [
-      "Daniel Lee is the Director and Principal Physiotherapist at Fletcher Physiotherapy and an APA Titled Pain Physiotherapist — a credential awarded by the Australian Physiotherapy Association (APA) to physiotherapists who have completed advanced training and demonstrated specialist expertise in pain management.",
-      "He holds a Master of Pain Management from the University of Sydney and works extensively with chronic pain, complex conditions and older adults, combining hands-on treatment with practical, evidence-based strategies that help people move with confidence.",
+      "Daniel Lee is the Director and Principal Physiotherapist at Fletcher Physiotherapy and an APA Titled Pain Physiotherapist — a credential awarded by the Australian Physiotherapy Association (APA) to physiotherapists who have completed advanced training and demonstrated advanced expertise in pain management.",
+      "He holds a Master of Medicine (Pain Management) from the University of Sydney and works extensively with chronic pain, complex conditions and older adults, combining hands-on treatment with practical, evidence-based strategies that help people move with confidence.",
+      "Daniel speaks English and Korean and aims to be friendly, approachable and easy to communicate with. He enjoys home visits because they let him see how people move and function in their everyday environment, and provide practical, personalised physiotherapy without the stress of travelling to a clinic. Outside of physiotherapy he enjoys tennis, soccer and time with his family.",
       "Daniel's focus is functional rehabilitation and long-term outcomes — reducing fear around movement, rebuilding strength and mobility, and helping clients return to the everyday activities that matter to them, safely in their own homes.",
     ],
     interests: [
@@ -273,7 +278,7 @@ export const team: TeamMember[] = [
     bio: [
       "Christine is a University of Newcastle graduate physiotherapist who is passionate about helping people move better, feel stronger, and return to the activities they enjoy. She uses an evidence-based approach and tailors treatment plans to each person's goals and lifestyle.",
       "Christine has experience working in hospital and private practice rehabilitation settings, supporting patients recovering from stroke, post-operative orthopaedic surgery, and musculoskeletal injuries. She also has a strong interest in geriatric rehabilitation, helping older adults improve mobility, balance, and confidence while reducing falls risk.",
-      "Her treatment approach focuses on exercise-based rehabilitation, supported by manual therapy when appropriate. Christine is trained in the Mulligan Concept and dry needling. She works with private patients, Chronic Disease Management (EPC) referrals, and Workers Compensation patients.",
+      "Her treatment approach focuses on exercise-based rehabilitation, supported by manual therapy when appropriate. Christine is trained in the Mulligan Concept and dry needling. She works with private patients, GP Chronic Condition Management (GPCCMP) referrals, and Workers Compensation patients.",
       "Outside the clinic, Christine enjoys staying active through badminton, bouldering, running, and gym training. Fluent in English, Cantonese, and Mandarin, she strives to create a welcoming and supportive environment for all patients.",
     ],
     interests: [
@@ -300,8 +305,8 @@ export const faqs: Faq[] = [
     a: "Yes. We work with NDIS participants who are self-managed, plan-managed and agency-managed. We provide functional assessments, mobility and exercise programs, falls prevention and pain management aligned to your plan goals.",
   },
   {
-    q: "Do you see Home Care Package clients?",
-    a: "Yes. We regularly support clients with Home Care Packages, working alongside your provider and care plan to help you stay strong, mobile and independent at home.",
+    q: "Do you see Support at Home (formerly Home Care Package) clients?",
+    a: "Yes. We support Support at Home clients — the program that replaced Home Care Packages on 1 November 2025 — working alongside your provider and care plan to help you stay strong, mobile and independent at home.",
   },
   {
     q: "Do you provide Support at Home services?",
@@ -309,7 +314,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "Do I need a GP referral?",
-    a: "Not for private physiotherapy — you can contact us directly. A GP referral may be required for some funding streams, such as Chronic Disease Management (EPC) plans. We are happy to guide you through what applies to your situation.",
+    a: "Not for private physiotherapy — you can contact us directly. A GP referral may be required for some funding streams, such as GP Chronic Condition Management (GPCCMP) plans. We are happy to guide you through what applies to your situation.",
   },
   {
     q: "Do you service Newcastle?",
@@ -329,7 +334,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "How do I book an appointment?",
-    a: "You can book online through our contact page, or call us on 0466 488 869. We will confirm your appointment and answer any questions about funding and what to expect.",
+    a: "You can book online through our contact page, or call us on 0404 791 756. We will confirm your appointment and answer any questions about funding and what to expect.",
   },
 ];
 
@@ -373,7 +378,7 @@ export const locations: LocationArea[] = [
   {
     name: "Central Coast",
     blurb:
-      "Home-based physiotherapy across the Central Coast for Support at Home, Home Care Package and private clients.",
+      "Home-based physiotherapy across the Central Coast for Support at Home and private clients.",
     suburbs: [
       "Gosford",
       "Wyong",
@@ -388,16 +393,18 @@ export const locations: LocationArea[] = [
   {
     name: "Sydney",
     blurb:
-      "New from November 2026 — nursing-home and in-home physiotherapy around Sydney Olympic Park for residential aged care, Support at Home, NDIS and Rehab at Home clients.",
+      "From 9 November 2026 — mobile and home visit physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs, for older adults, NDIS, Support at Home and post-hospital rehabilitation.",
     suburbs: [
       "Sydney Olympic Park",
       "Homebush",
+      "Homebush West",
       "Lidcombe",
       "Auburn",
       "Strathfield",
       "Concord",
-      "Ryde",
-      "Parramatta",
+      "Rhodes",
+      "Wentworth Point",
+      "Newington",
     ],
   },
 ];
@@ -405,7 +412,7 @@ export const locations: LocationArea[] = [
 export const whyChoose = [
   {
     title: "We Come To You",
-    text: "No travel, no parking, no waiting rooms. We deliver expert physiotherapy in the comfort and safety of your home.",
+    text: "No travel, no parking, no waiting rooms. We deliver experienced physiotherapy in the comfort and safety of your home.",
     icon: "home",
   },
   {
@@ -415,7 +422,7 @@ export const whyChoose = [
   },
   {
     title: "Support at Home Experience",
-    text: "Experienced working with Home Care Package and Support at Home clients and their providers.",
+    text: "Experienced working with Support at Home clients and their providers.",
     icon: "heart",
   },
   {
@@ -458,8 +465,8 @@ export const testimonials = [
 
 export const homeFaqs: Faq[] = [
   {
-    q: "Does a Home Care Package cover physiotherapy?",
-    a: "Yes. Physiotherapy is an allied health service that can be funded through a Home Care Package (Levels 1–4) when it supports your goals — such as improving mobility, building strength or reducing falls risk. We work directly with your Home Care provider and care plan, and can provide the documentation they need.",
+    q: "Does Support at Home (formerly Home Care Packages) cover physiotherapy?",
+    a: "Yes. Physiotherapy is an allied health service that can be funded through Support at Home — the program that replaced Home Care Packages on 1 November 2025 — when it supports your assessed needs and goals, such as improving mobility, building strength or reducing falls risk. Your Support at Home provider arranges services within your budget; we work alongside them and can provide the documentation they need.",
   },
   {
     q: "Can NDIS funding be used for physiotherapy?",
@@ -467,7 +474,7 @@ export const homeFaqs: Faq[] = [
   },
   {
     q: "Do you provide physiotherapy at home?",
-    a: "Yes — home visits are our core service. Our mobile physiotherapists come to you across Newcastle, Lake Macquarie and the Central Coast, so there is no travel, parking or waiting room. You receive expert care in the comfort and safety of your own home.",
+    a: "Yes — home visits are our core service. Our mobile physiotherapists come to you across Newcastle, Lake Macquarie and the Central Coast, so there is no travel, parking or waiting room. You receive experienced care in the comfort and safety of your own home.",
   },
   {
     q: "What suburbs do you visit?",
@@ -475,11 +482,11 @@ export const homeFaqs: Faq[] = [
   },
   {
     q: "How can physiotherapy prevent falls?",
-    a: "Falls prevention physiotherapy combines a balance and mobility assessment, a tailored strength and balance exercise program, gait and confidence training, and a review of hazards in your home. This evidence-based approach is proven to reduce falls risk and help older adults stay safely independent.",
+    a: "Falls prevention physiotherapy combines a balance and mobility assessment, a tailored strength and balance exercise program, gait and confidence training, and a review of hazards in your home. This evidence-based approach is can help reduce falls risk and help older adults stay safely independent.",
   },
   {
     q: "Do I need a GP referral?",
-    a: "Not for private physiotherapy — you can contact us directly. A GP referral may be required for certain funding streams, such as a Chronic Disease Management (CDM/EPC) plan. We're happy to explain what applies to your situation.",
+    a: "Not for private physiotherapy — you can contact us directly. A GP referral may be required for certain funding streams, such as a GP Chronic Condition Management plan. We're happy to explain what applies to your situation.",
   },
 ];
 
@@ -507,7 +514,7 @@ export const suburbs: Suburb[] = [
     name: "Newcastle",
     region: "Newcastle",
     intro:
-      "Fletcher Physiotherapy provides home visit physiotherapy across Newcastle NSW, bringing expert mobile aged care, NDIS and Support at Home physiotherapy to residents throughout the city and its suburbs.",
+      "Fletcher Physiotherapy provides home visit physiotherapy across Newcastle NSW, bringing experienced mobile aged care, NDIS and Support at Home physiotherapy to residents throughout the city and its suburbs.",
     local:
       "Newcastle is home to a large and growing older population, from the inner-city suburbs through to the coast and the western growth areas. Our mobile physiotherapists visit homes right across Newcastle \u2014 near John Hunter Hospital, the beaches and the city centre \u2014 supporting people who find travelling to a clinic difficult, from falls prevention to post-hospital recovery.",
     nearby: ["New Lambton", "Adamstown", "Hamilton", "Merewether", "Wallsend", "Kotara"],
@@ -524,7 +531,7 @@ export const suburbs: Suburb[] = [
     name: "Charlestown",
     region: "Lake Macquarie",
     intro:
-      "Fletcher Physiotherapy provides home visit physiotherapy throughout Charlestown, bringing expert mobile care to older adults, NDIS participants and Support at Home clients across this busy Lake Macquarie centre.",
+      "Fletcher Physiotherapy provides home visit physiotherapy throughout Charlestown, bringing experienced mobile care to older adults, NDIS participants and Support at Home clients across this busy Lake Macquarie centre.",
     local:
       "As one of Lake Macquarie's largest suburbs, Charlestown is home to many families caring for ageing parents. We visit private homes and residential settings around Charlestown Square, Dudley Road and the surrounding streets, so you never have to battle traffic or parking to receive quality physiotherapy.",
     nearby: ["Kotara", "Gateshead", "Dudley", "Whitebridge", "Adamstown"],
@@ -543,7 +550,7 @@ export const suburbs: Suburb[] = [
     intro:
       "We deliver home visit physiotherapy across Belmont and the eastern Lake Macquarie peninsula, helping residents stay strong, steady and independent in their own homes.",
     local:
-      "Belmont has a large community of retirees and older adults living close to the lake. Our mobile physiotherapists regularly visit homes near Belmont Hospital, Marks Point and Swansea, supporting falls prevention, post-hospital recovery and Home Care Package clients throughout the area.",
+      "Belmont has a large community of retirees and older adults living close to the lake. Our mobile physiotherapists regularly visit homes near Belmont Hospital, Marks Point and Swansea, supporting falls prevention, post-hospital recovery and Support at Home clients throughout the area.",
     nearby: ["Marks Point", "Swansea", "Valentine", "Croudace Bay", "Jewells"],
     postcode: "2280",
     localArea:
@@ -596,7 +603,7 @@ export const suburbs: Suburb[] = [
     intro:
       "Fletcher Physiotherapy provides home visit physiotherapy in Fletcher, a growing north-western Newcastle suburb with many families and older residents who value care delivered at home.",
     local:
-      "Fletcher's newer estates and quiet streets are ideal for home-based rehabilitation, where our physiotherapists can assess your real living environment. We support Home Care Package and Support at Home clients, and people returning home after a hospital stay, across Fletcher, Minmi and Maryland.",
+      "Fletcher's newer estates and quiet streets are ideal for home-based rehabilitation, where our physiotherapists can assess your real living environment. We support Support at Home clients, and people returning home after a hospital stay, across Fletcher, Minmi and Maryland.",
     nearby: ["Maryland", "Minmi", "Wallsend", "Cameron Park", "Blue Gum Hills"],
     postcode: "2287",
     localArea:
@@ -649,7 +656,7 @@ export const suburbs: Suburb[] = [
     intro:
       "We deliver home visit physiotherapy in Wyong and the northern Central Coast, helping older adults and NDIS participants stay mobile, strong and safely independent at home.",
     local:
-      "Wyong and its surrounding communities have a strong need for accessible, in-home care. Our physiotherapists visit homes across Wyong, Tuggerah and Kanwal — close to Wyong Hospital — providing balance training, mobility programs and Home Care Package physiotherapy without the need to travel.",
+      "Wyong and its surrounding communities have a strong need for accessible, in-home care. Our physiotherapists visit homes across Wyong, Tuggerah and Kanwal — close to Wyong Hospital — providing balance training, mobility programs and Support at Home physiotherapy without the need to travel.",
     nearby: ["Tuggerah", "Kanwal", "Watanobbi", "Tumbi Umbi", "The Entrance"],
     postcode: "2259",
     localArea:
@@ -684,7 +691,7 @@ export const suburbs: Suburb[] = [
     intro:
       "Fletcher Physiotherapy offers home visit physiotherapy in Adamstown, helping residents improve mobility, balance and confidence in the comfort of their own homes.",
     local:
-      "Adamstown's mix of heritage homes and established streets is home to many older residents who value care that comes to them. Our mobile physiotherapists support falls prevention, aged care rehabilitation and Home Care Package clients across Adamstown, Adamstown Heights and beyond.",
+      "Adamstown's mix of heritage homes and established streets is home to many older residents who value care that comes to them. Our mobile physiotherapists support falls prevention, aged care rehabilitation and Support at Home clients across Adamstown, Adamstown Heights and beyond.",
     nearby: ["Adamstown Heights", "Kotara", "Broadmeadow", "Hamilton", "New Lambton"],
     postcode: "2289",
     localArea:
@@ -767,7 +774,7 @@ export const suburbs: Suburb[] = [
     name: "Glendale",
     region: "Lake Macquarie",
     intro:
-      "We provide home visit physiotherapy across Glendale, supporting older adults, NDIS participants and Home Care Package clients in the comfort of their own homes.",
+      "We provide home visit physiotherapy across Glendale, supporting older adults, NDIS participants and Support at Home clients in the comfort of their own homes.",
     local:
       "Centrally located in Lake Macquarie, Glendale is easy for our mobile physiotherapists to reach, and home to many families caring for ageing parents. We deliver mobility, strength and rehabilitation programs across Glendale, Cardiff and Argenton.",
     nearby: ["Cardiff", "Argenton", "Edgeworth", "Boolaroo", "Speers Point"],
@@ -803,7 +810,7 @@ export const suburbs: Suburb[] = [
     intro:
       "We deliver home visit physiotherapy across Erina and the surrounding Central Coast, helping older adults and NDIS participants stay mobile, strong and independent at home.",
     local:
-      "Erina is a busy Central Coast centre with a large older population. Our mobile physiotherapists visit homes throughout Erina, Terrigal and Wamberal, providing balance training, aged care rehabilitation and Home Care Package physiotherapy in the comfort of home.",
+      "Erina is a busy Central Coast centre with a large older population. Our mobile physiotherapists visit homes throughout Erina, Terrigal and Wamberal, providing balance training, aged care rehabilitation and Support at Home physiotherapy in the comfort of home.",
     nearby: ["Terrigal", "Wamberal", "Green Point", "East Gosford", "Springfield"],
     postcode: "2250",
     localArea:
@@ -836,7 +843,7 @@ export const suburbs: Suburb[] = [
     name: "Mayfield",
     region: "Newcastle",
     intro:
-      "We deliver home visit physiotherapy across Mayfield, bringing expert mobile physiotherapy to older adults, NDIS participants and Support at Home clients in this historic inner-Newcastle suburb.",
+      "We deliver home visit physiotherapy across Mayfield, bringing experienced mobile physiotherapy to older adults, NDIS participants and Support at Home clients in this historic inner-Newcastle suburb.",
     local:
       "Mayfield's established streets and strong community are home to many older residents who value care that comes to them. Our mobile physiotherapists visit homes across Mayfield, Mayfield East and Mayfield West, delivering falls prevention, aged care rehabilitation and post-hospital recovery.",
     nearby: ["Waratah", "Warabrook", "Islington", "Tighes Hill", "Georgetown"],
@@ -856,7 +863,7 @@ export const suburbs: Suburb[] = [
     intro:
       "Fletcher Physiotherapy offers home visit physiotherapy in Valentine, helping residents of this eastern Lake Macquarie suburb stay strong, steady and independent at home.",
     local:
-      "Valentine's peaceful lakeside setting is home to many retirees and older adults. Our physiotherapists regularly visit homes around Valentine, Croudace Bay and Eleebana, supporting balance, mobility and Home Care Package clients close to the lake.",
+      "Valentine's peaceful lakeside setting is home to many retirees and older adults. Our physiotherapists regularly visit homes around Valentine, Croudace Bay and Eleebana, supporting balance, mobility and Support at Home clients close to the lake.",
     nearby: ["Eleebana", "Croudace Bay", "Belmont", "Warners Bay", "Belmont North"],
     postcode: "2280",
     localArea:
@@ -907,7 +914,7 @@ export const suburbs: Suburb[] = [
     intro:
       "Fletcher Physiotherapy provides home visit physiotherapy in Edgeworth, delivering mobile aged care, NDIS and Support at Home physiotherapy to residents across this established western Lake Macquarie suburb.",
     local:
-      "Edgeworth is a busy residential suburb around Northlakes and the shores of Cockle Creek, with a large community of families and older residents. Our mobile physiotherapists visit homes throughout Edgeworth, West Wallsend and Cameron Park, supporting falls prevention, post-hospital recovery and Home Care Package clients.",
+      "Edgeworth is a busy residential suburb around Northlakes and the shores of Cockle Creek, with a large community of families and older residents. Our mobile physiotherapists visit homes throughout Edgeworth, West Wallsend and Cameron Park, supporting falls prevention, post-hospital recovery and Support at Home clients.",
     nearby: ["West Wallsend", "Cameron Park", "Glendale", "Barnsley", "Holmesville"],
     postcode: "2285",
     localArea:
@@ -922,7 +929,7 @@ export const suburbs: Suburb[] = [
     name: "Lake Macquarie",
     region: "Lake Macquarie",
     intro:
-      "Fletcher Physiotherapy provides home visit physiotherapy right across Lake Macquarie, bringing expert mobile aged care, NDIS and Support at Home physiotherapy to residents around Australia's largest coastal saltwater lake.",
+      "Fletcher Physiotherapy provides home visit physiotherapy right across Lake Macquarie, bringing experienced mobile aged care, NDIS and Support at Home physiotherapy to residents around Australia's largest coastal saltwater lake.",
     local:
       "Lake Macquarie is one of the largest local government areas in NSW and has a significantly older age profile than Newcastle, with many retirees settled here for the lakeside lifestyle. Our physiotherapists visit homes right around the lake — from Warners Bay and Belmont to Charlestown, Cardiff, Toronto and Swansea — supporting people who find travelling to a clinic difficult.",
     nearby: ["Warners Bay", "Belmont", "Charlestown", "Cardiff", "Toronto", "Swansea"],
@@ -959,700 +966,12 @@ export const suburbs: Suburb[] = [
     intro:
       "Fletcher Physiotherapy is expanding to Sydney from November 2026 — bringing nursing-home and in-home physiotherapy to residential aged care, Support at Home, NDIS and Rehab at Home clients across the Sydney Olympic Park area and surrounding suburbs.",
     local:
-      "Based in the Sydney Olympic Park region, our Sydney service focuses on home visits and residential aged care, delivering mobile physiotherapy to older adults and NDIS participants in the inner west and surrounding suburbs — so you receive expert care without the need to travel.",
+      "Based in the Sydney Olympic Park region, our Sydney service focuses on home visits and residential aged care, delivering mobile physiotherapy to older adults and NDIS participants in the inner west and surrounding suburbs — so you receive experienced care without the need to travel.",
     localArea:
-      "From November 2026, Fletcher Physiotherapy brings its home-visit model to Sydney. Based around Sydney Olympic Park, we focus on nursing-home physiotherapy and in-home care for residential aged care, Support at Home, NDIS and Rehab at Home clients across the inner west — including Homebush, Lidcombe, Auburn, Strathfield, Concord and nearby suburbs. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management and extensive experience in aged care, falls prevention and rehabilitation.",
+      "From November 2026, Fletcher Physiotherapy brings its home-visit model to Sydney. Based around Sydney Olympic Park, we focus on nursing-home physiotherapy and in-home care for residential aged care, Support at Home, NDIS and Rehab at Home clients across the inner west — including Homebush, Lidcombe, Auburn, Strathfield, Concord and nearby suburbs. Care is led by an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management) and extensive experience in aged care, falls prevention and rehabilitation.",
     nearby: ["Sydney Olympic Park", "Homebush", "Lidcombe", "Auburn", "Strathfield", "Concord"],
     hospitals: ["Concord Hospital", "Auburn Hospital", "Westmead Hospital"],
     landmarks: ["Sydney Olympic Park", "Bicentennial Park", "Parramatta River"],
     gettingAround: "Our Sydney service is based around Sydney Olympic Park and reaches suburbs within roughly 30 minutes. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-sydney-olympic-park",
-    name: "Sydney Olympic Park",
-    region: "Sydney",
-    postcode: "2127",
-    intro:
-      "Home-visit and nursing-home physiotherapy in Sydney Olympic Park from November 2026 — mobile care for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Sydney Olympic Park is the hub of our new Sydney service. We visit homes and residential aged care across the precinct and its growing residential communities at Newington and Wentworth Point, supporting older adults and NDIS participants with strength, balance, mobility and falls prevention.",
-    localArea:
-      "Sydney Olympic Park sits at the geographic heart of Sydney, surrounded by fast-growing residential communities at Newington, Wentworth Point and Sydney Olympic Park itself. From November 2026 it is the base for Fletcher Physiotherapy's Sydney service, focused on nursing-home and in-home physiotherapy for residential aged care, Support at Home, NDIS and Rehab at Home clients.",
-    nearby: ["Newington", "Wentworth Point", "Homebush", "Lidcombe", "Rhodes"],
-    hospitals: ["Auburn Hospital", "Concord Hospital"],
-    landmarks: ["Sydney Olympic Park & stadiums", "Bicentennial Park", "Wentworth Point marina"],
-    gettingAround: "Sydney Olympic Park is central to the inner west and well connected by road and rail. We come to you at home or in residential care, so there is no travel or parking involved.",
-  },
-  {
-    slug: "physiotherapy-homebush",
-    name: "Homebush",
-    region: "Sydney",
-    postcode: "2140",
-    intro:
-      "Home-visit and nursing-home physiotherapy in Homebush from November 2026 — mobile care for older adults, residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered at home.",
-    local:
-      "Right beside Sydney Olympic Park, Homebush is one of the first suburbs served by our new Sydney team. We visit homes and aged-care settings across Homebush and Homebush West, supporting mobility, balance, falls prevention and rehabilitation.",
-    localArea:
-      "Homebush is an established inner-west suburb with a mix of long-term residents and growing residential communities, right on the doorstep of Sydney Olympic Park. From November 2026 our Sydney physiotherapists visit homes and nursing homes across Homebush for residential aged care, Support at Home, NDIS and Rehab at Home clients.",
-    nearby: ["Homebush West", "Strathfield", "North Strathfield", "Concord", "Sydney Olympic Park"],
-    hospitals: ["Concord Hospital", "Auburn Hospital"],
-    landmarks: ["DFO Homebush", "Sydney Markets", "Mason Park"],
-    gettingAround: "Homebush adjoins Sydney Olympic Park and is easy to reach from our Sydney base. We visit you at home or in residential care, so there is no travel or parking to manage.",
-  },
-  {
-    slug: "physiotherapy-lidcombe",
-    name: "Lidcombe",
-    region: "Sydney",
-    postcode: "2141",
-    intro:
-      "Home-visit and nursing-home physiotherapy in Lidcombe from November 2026 — mobile physiotherapy for older adults, residential aged care, Support at Home, NDIS and Rehab at Home clients.",
-    local:
-      "Lidcombe sits next to Sydney Olympic Park and has a large, diverse community including many older residents and residential aged-care facilities. Our Sydney team visits homes and care settings across Lidcombe for strength, balance, mobility and falls prevention.",
-    localArea:
-      "Lidcombe is a busy, multicultural inner-west suburb beside Sydney Olympic Park, home to a significant older population and several aged-care facilities. From November 2026 Fletcher Physiotherapy provides nursing-home and in-home physiotherapy here for residential aged care, Support at Home, NDIS and Rehab at Home clients.",
-    nearby: ["Auburn", "Berala", "Regents Park", "Homebush", "Sydney Olympic Park"],
-    hospitals: ["Auburn Hospital", "Concord Hospital"],
-    landmarks: ["Lidcombe town centre", "Rookwood", "Wyatt Park"],
-    gettingAround: "Lidcombe is minutes from our Sydney Olympic Park base. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-auburn",
-    name: "Auburn",
-    region: "Sydney",
-    postcode: "2144",
-    intro:
-      "Home-visit and nursing-home physiotherapy in Auburn from November 2026 — mobile care for older adults, residential aged care, Support at Home, NDIS and Rehab at Home clients, at home.",
-    local:
-      "Auburn is a large, diverse inner-west suburb with a strong community and its own hospital. Our Sydney physiotherapists visit homes and aged-care settings across Auburn, supporting mobility, balance, falls prevention and recovery.",
-    localArea:
-      "Auburn is a major inner-west centre with a large, multicultural community and a significant older population, served by Auburn Hospital. From November 2026 Fletcher Physiotherapy offers nursing-home and in-home physiotherapy across Auburn for residential aged care, Support at Home, NDIS and Rehab at Home clients.",
-    nearby: ["Lidcombe", "Berala", "Regents Park", "Silverwater", "Newington"],
-    hospitals: ["Auburn Hospital", "Westmead Hospital", "Concord Hospital"],
-    landmarks: ["Auburn Botanic Gardens", "Auburn town centre", "Duck River"],
-    gettingAround: "Auburn is a short drive from Sydney Olympic Park and home to Auburn Hospital. We visit you at home or in residential care, so there is no travel or parking to manage.",
-  },
-  {
-    slug: "physiotherapy-strathfield",
-    name: "Strathfield",
-    region: "Sydney",
-    postcode: "2135",
-    intro:
-      "Home-visit and nursing-home physiotherapy in Strathfield from November 2026 — mobile physiotherapy for older adults, residential aged care, Support at Home, NDIS and Rehab at Home clients.",
-    local:
-      "Strathfield is an established, leafy inner-west suburb with many older residents and aged-care facilities. Our Sydney team visits homes and residential care across Strathfield and North Strathfield for strength, balance, mobility and falls prevention.",
-    localArea:
-      "Strathfield is a settled, well-connected inner-west suburb with grand homes, a busy town centre and a substantial older population. From November 2026 Fletcher Physiotherapy provides nursing-home and in-home physiotherapy here for residential aged care, Support at Home, NDIS and Rehab at Home clients.",
-    nearby: ["North Strathfield", "Homebush", "Burwood", "Concord", "Flemington"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["Strathfield Plaza", "Strathfield Park", "Homebush Bay Drive"],
-    gettingAround: "Strathfield is a short drive from Sydney Olympic Park and a major rail hub. Because we come to you at home or in residential care, there is no travel or parking involved.",
-  },
-  {
-    slug: "physiotherapy-concord",
-    name: "Concord",
-    region: "Sydney",
-    postcode: "2137",
-    intro:
-      "Home-visit and nursing-home physiotherapy in Concord from November 2026 — mobile care for older adults, residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered at home.",
-    local:
-      "Concord is an established riverside suburb home to the major Concord Hospital and a large older population. Our Sydney physiotherapists visit homes and aged-care settings across Concord, supporting post-hospital recovery, balance and mobility.",
-    localArea:
-      "Concord is a quiet, established inner-west suburb on the Parramatta River, anchored by Concord Hospital — a major centre for rehabilitation and aged care. From November 2026 Fletcher Physiotherapy provides nursing-home and in-home physiotherapy across Concord for residential aged care, Support at Home, NDIS and Rehab at Home clients.",
-    nearby: ["Concord West", "Rhodes", "Cabarita", "Mortlake", "Strathfield"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["Concord Hospital", "Majors Bay Road", "Cabarita Park"],
-    gettingAround: "Concord sits beside its own major hospital and the Parramatta River, a short drive from Sydney Olympic Park. We visit you at home or in residential care, so there is no travel or parking to manage.",
-  },
-  {
-    slug: "physiotherapy-ryde",
-    name: "Ryde",
-    region: "Sydney",
-    postcode: "2112",
-    intro:
-      "Home-visit and nursing-home physiotherapy in Ryde from November 2026 — mobile physiotherapy for older adults, residential aged care, Support at Home, NDIS and Rehab at Home clients.",
-    local:
-      "Ryde is a large northern-river suburb with its own hospital and a significant older population. Our Sydney team visits homes and residential aged care across Ryde and surrounds for strength, balance, mobility and falls prevention.",
-    localArea:
-      "Ryde is an established suburb on the northern side of the Parramatta River, served by Ryde Hospital and home to many older residents and aged-care facilities. From November 2026 Fletcher Physiotherapy provides nursing-home and in-home physiotherapy across Ryde for residential aged care, Support at Home, NDIS and Rehab at Home clients.",
-    nearby: ["West Ryde", "Meadowbank", "Rhodes", "Gladesville", "Macquarie Park"],
-    hospitals: ["Ryde Hospital", "Concord Hospital"],
-    landmarks: ["Top Ryde City", "Ryde town centre", "Parramatta River"],
-    gettingAround: "Ryde is just across the river from Sydney Olympic Park and served by Ryde Hospital. Because we come to you at home or in residential care, there is no travel or parking involved.",
-  },
-  {
-    slug: "physiotherapy-parramatta",
-    name: "Parramatta",
-    region: "Sydney",
-    postcode: "2150",
-    intro:
-      "Home-visit and nursing-home physiotherapy in Parramatta from November 2026 — mobile care for older adults, residential aged care, Support at Home, NDIS and Rehab at Home clients, at home.",
-    local:
-      "Parramatta is the thriving heart of Greater Sydney's west, with a large and growing population and major hospitals nearby. Our Sydney physiotherapists visit homes and residential aged care across Parramatta, supporting mobility, balance, falls prevention and recovery.",
-    localArea:
-      "Parramatta is Sydney's second CBD and a major health and residential centre, close to Westmead Hospital. From November 2026 Fletcher Physiotherapy provides nursing-home and in-home physiotherapy across Parramatta for residential aged care, Support at Home, NDIS and Rehab at Home clients.",
-    nearby: ["Harris Park", "Rosehill", "Granville", "North Parramatta", "Westmead"],
-    hospitals: ["Westmead Hospital", "Auburn Hospital"],
-    landmarks: ["Parramatta CBD", "Parramatta River foreshore", "Parramatta Park"],
-    gettingAround: "Parramatta is a short drive from Sydney Olympic Park and close to Westmead Hospital. We visit you at home or in residential care, so there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-granville",
-    name: "Granville",
-    region: "Sydney",
-    postcode: "2142",
-    intro:
-      "Home-visit and aged-care physiotherapy in Granville, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Granville is a busy, multicultural centre on the edge of Parramatta. Our Sydney team visits homes and residential aged care across Granville, and surrounding suburbs including Parramatta, Harris Park, Rosehill, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Granville is a busy, multicultural centre on the edge of Parramatta, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Granville. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Parramatta", "Harris Park", "Rosehill", "Auburn", "Clyde"],
-    hospitals: ["Westmead Hospital", "Auburn Hospital"],
-    landmarks: ["Granville station", "Parramatta Road", "Duck River"],
-    gettingAround: "Granville sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-ermington",
-    name: "Ermington",
-    region: "Sydney",
-    postcode: "2115",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to Ermington — for Support at Home, NDIS and Rehab at Home clients across the Parramatta area.",
-    local:
-      "Ermington is a quiet riverside suburb on the Parramatta River. Our Sydney team visits homes and residential aged care across Ermington, and surrounding suburbs including Rydalmere, Melrose Park, Dundas, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Ermington is a quiet riverside suburb on the Parramatta River, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Ermington. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Rydalmere", "Melrose Park", "Dundas", "Meadowbank", "Silverwater"],
-    hospitals: ["Ryde Hospital", "Westmead Hospital"],
-    landmarks: ["Parramatta River foreshore", "Halvorsen Park", "Ermington shops"],
-    gettingAround: "Ermington sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-carlingford",
-    name: "Carlingford",
-    region: "Sydney",
-    postcode: "2118",
-    intro:
-      "Mobile physiotherapy in Carlingford, Sydney from November 2026 — aged-care, Support at Home, NDIS and post-hospital rehabilitation, delivered in your own home or residential care.",
-    local:
-      "Carlingford is an established, leafy suburb in Sydney's north-west. Our Sydney team visits homes and residential aged care across Carlingford, and surrounding suburbs including Epping, Dundas, Eastwood, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Carlingford is an established, leafy suburb in Sydney's north-west, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Carlingford. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Epping", "Dundas", "Eastwood", "Beecroft", "Telopea"],
-    hospitals: ["Ryde Hospital", "Macquarie University Hospital"],
-    landmarks: ["Carlingford Court", "Carlingford village", "Rienits Reserve"],
-    gettingAround: "Carlingford sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-epping",
-    name: "Epping",
-    region: "Sydney",
-    postcode: "2121",
-    intro:
-      "Home-visit and aged-care physiotherapy in Epping, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Epping is a popular, well-connected suburb on the northern rail line. Our Sydney team visits homes and residential aged care across Epping, and surrounding suburbs including Carlingford, Eastwood, Marsfield, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Epping is a popular, well-connected suburb on the northern rail line, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Epping. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Carlingford", "Eastwood", "Marsfield", "Denistone", "North Ryde"],
-    hospitals: ["Ryde Hospital", "Macquarie University Hospital"],
-    landmarks: ["Epping station", "Epping town centre", "Boronia Park"],
-    gettingAround: "Epping sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-eastwood",
-    name: "Eastwood",
-    region: "Sydney",
-    postcode: "2122",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to Eastwood — for Support at Home, NDIS and Rehab at Home clients across Ryde and the north.",
-    local:
-      "Eastwood is a vibrant, family-oriented suburb with a bustling shopping strip. Our Sydney team visits homes and residential aged care across Eastwood, and surrounding suburbs including Denistone, West Ryde, Epping, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Eastwood is a vibrant, family-oriented suburb with a bustling shopping strip, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Eastwood. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Denistone", "West Ryde", "Epping", "Marsfield", "Ryde"],
-    hospitals: ["Ryde Hospital", "Macquarie University Hospital"],
-    landmarks: ["Eastwood shopping precinct", "Eastwood Park", "Eastwood Oval"],
-    gettingAround: "Eastwood sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-gladesville",
-    name: "Gladesville",
-    region: "Sydney",
-    postcode: "2111",
-    intro:
-      "Mobile physiotherapy in Gladesville, Sydney from November 2026 — aged-care, Support at Home, NDIS and post-hospital rehabilitation, delivered in your own home or residential care.",
-    local:
-      "Gladesville is an established suburb on the lower north shore by the Parramatta River. Our Sydney team visits homes and residential aged care across Gladesville, and surrounding suburbs including Hunters Hill, Ryde, Putney, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Gladesville is an established suburb on the lower north shore by the Parramatta River, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Gladesville. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Hunters Hill", "Ryde", "Putney", "Tennyson Point", "Drummoyne"],
-    hospitals: ["Ryde Hospital", "Macquarie University Hospital"],
-    landmarks: ["Gladesville shops", "Banjo Paterson Park", "Gladesville Bridge"],
-    gettingAround: "Gladesville sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-hunters-hill",
-    name: "Hunters Hill",
-    region: "Sydney",
-    postcode: "2110",
-    intro:
-      "Home-visit and aged-care physiotherapy in Hunters Hill, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Hunters Hill is a historic, leafy peninsula suburb on the river. Our Sydney team visits homes and residential aged care across Hunters Hill, and surrounding suburbs including Gladesville, Woolwich, Ryde, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Hunters Hill is a historic, leafy peninsula suburb on the river, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Hunters Hill. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Gladesville", "Woolwich", "Ryde", "Putney", "Henley"],
-    hospitals: ["Ryde Hospital", "Macquarie University Hospital"],
-    landmarks: ["historic Hunters Hill village", "Boronia Park", "Lane Cove River"],
-    gettingAround: "Hunters Hill sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-rhodes",
-    name: "Rhodes",
-    region: "Sydney",
-    postcode: "2138",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to Rhodes — for Support at Home, NDIS and Rehab at Home clients across the inner west.",
-    local:
-      "Rhodes is a fast-growing waterfront suburb on the Parramatta River. Our Sydney team visits homes and residential aged care across Rhodes, and surrounding suburbs including Concord West, Wentworth Point, Meadowbank, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Rhodes is a fast-growing waterfront suburb on the Parramatta River, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Rhodes. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Concord West", "Wentworth Point", "Meadowbank", "Liberty Grove", "Mortlake"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["Rhodes Waterside", "Rhodes station", "Kokoda Track Memorial Walkway"],
-    gettingAround: "Rhodes sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-wentworth-point",
-    name: "Wentworth Point",
-    region: "Sydney",
-    postcode: "2127",
-    intro:
-      "Mobile physiotherapy in Wentworth Point, Sydney from November 2026 — aged-care, Support at Home, NDIS and post-hospital rehabilitation, delivered in your own home or residential care.",
-    local:
-      "Wentworth Point is a modern waterfront community beside Sydney Olympic Park. Our Sydney team visits homes and residential aged care across Wentworth Point, and surrounding suburbs including Sydney Olympic Park, Rhodes, Newington, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Wentworth Point is a modern waterfront community beside Sydney Olympic Park, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Wentworth Point. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Sydney Olympic Park", "Rhodes", "Newington", "Homebush Bay", "Concord West"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["Wentworth Point marina", "Jim Ring Reserve", "Sydney Olympic Park"],
-    gettingAround: "Wentworth Point sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-drummoyne",
-    name: "Drummoyne",
-    region: "Sydney",
-    postcode: "2047",
-    intro:
-      "Home-visit and aged-care physiotherapy in Drummoyne, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Drummoyne is an established waterside suburb along the inner-west Bay Run. Our Sydney team visits homes and residential aged care across Drummoyne, and surrounding suburbs including Five Dock, Russell Lea, Rodd Point, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Drummoyne is an established waterside suburb along the inner-west Bay Run, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Drummoyne. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Five Dock", "Russell Lea", "Rodd Point", "Cabarita", "Chiswick"],
-    hospitals: ["Concord Hospital", "Royal Prince Alfred Hospital"],
-    landmarks: ["Birkenhead Point", "the Bay Run", "Drummoyne foreshore"],
-    gettingAround: "Drummoyne sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-five-dock",
-    name: "Five Dock",
-    region: "Sydney",
-    postcode: "2046",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to Five Dock — for Support at Home, NDIS and Rehab at Home clients across the inner west.",
-    local:
-      "Five Dock is a welcoming inner-west suburb known for its Great North Road village. Our Sydney team visits homes and residential aged care across Five Dock, and surrounding suburbs including Drummoyne, Russell Lea, Abbotsford, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Five Dock is a welcoming inner-west suburb known for its Great North Road village, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Five Dock. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Drummoyne", "Russell Lea", "Abbotsford", "Canada Bay", "Croydon"],
-    hospitals: ["Concord Hospital", "Royal Prince Alfred Hospital"],
-    landmarks: ["Great North Road village", "Five Dock Park", "Canada Bay foreshore"],
-    gettingAround: "Five Dock sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-burwood",
-    name: "Burwood",
-    region: "Sydney",
-    postcode: "2134",
-    intro:
-      "Mobile physiotherapy in Burwood, Sydney from November 2026 — aged-care, Support at Home, NDIS and post-hospital rehabilitation, delivered in your own home or residential care.",
-    local:
-      "Burwood is a busy inner-west hub centred on Westfield Burwood. Our Sydney team visits homes and residential aged care across Burwood, and surrounding suburbs including Croydon, Strathfield, Concord, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Burwood is a busy inner-west hub centred on Westfield Burwood, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Burwood. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Croydon", "Strathfield", "Concord", "Enfield", "Ashfield"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["Westfield Burwood", "Burwood Park", "Burwood town centre"],
-    gettingAround: "Burwood sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-ashfield",
-    name: "Ashfield",
-    region: "Sydney",
-    postcode: "2131",
-    intro:
-      "Home-visit and aged-care physiotherapy in Ashfield, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Ashfield is a lively, multicultural inner-west suburb. Our Sydney team visits homes and residential aged care across Ashfield, and surrounding suburbs including Croydon, Summer Hill, Haberfield, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Ashfield is a lively, multicultural inner-west suburb, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Ashfield. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Croydon", "Summer Hill", "Haberfield", "Burwood", "Canterbury"],
-    hospitals: ["Concord Hospital", "Royal Prince Alfred Hospital"],
-    landmarks: ["Ashfield Park", "Ashfield town centre", "Yeo Park"],
-    gettingAround: "Ashfield sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-newington",
-    name: "Newington",
-    region: "Sydney",
-    postcode: "2127",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to Newington — for Support at Home, NDIS and Rehab at Home clients across the Olympic Park area.",
-    local:
-      "Newington is a modern residential community beside Sydney Olympic Park. Our Sydney team visits homes and residential aged care across Newington, and surrounding suburbs including Sydney Olympic Park, Silverwater, Wentworth Point, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Newington is a modern residential community beside Sydney Olympic Park, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Newington. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Sydney Olympic Park", "Silverwater", "Wentworth Point", "Homebush", "Lidcombe"],
-    hospitals: ["Westmead Hospital", "Auburn Hospital"],
-    landmarks: ["Blaxland Riverside Park", "Newington Nature Reserve", "Sydney Olympic Park"],
-    gettingAround: "Newington sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-silverwater",
-    name: "Silverwater",
-    region: "Sydney",
-    postcode: "2128",
-    intro:
-      "Mobile physiotherapy in Silverwater, Sydney from November 2026 — aged-care, Support at Home, NDIS and post-hospital rehabilitation, delivered in your own home or residential care.",
-    local:
-      "Silverwater is a riverside suburb next to Sydney Olympic Park. Our Sydney team visits homes and residential aged care across Silverwater, and surrounding suburbs including Newington, Sydney Olympic Park, Auburn, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Silverwater is a riverside suburb next to Sydney Olympic Park, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Silverwater. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Newington", "Sydney Olympic Park", "Auburn", "Ermington", "Rhodes"],
-    hospitals: ["Westmead Hospital", "Auburn Hospital"],
-    landmarks: ["Silverwater Park", "Newington Nature Reserve", "Parramatta River"],
-    gettingAround: "Silverwater sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-meadowbank",
-    name: "Meadowbank",
-    region: "Sydney",
-    postcode: "2114",
-    intro:
-      "Home-visit and aged-care physiotherapy in Meadowbank, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Meadowbank is a growing riverside suburb on the Parramatta River. Our Sydney team visits homes and residential aged care across Meadowbank, and surrounding suburbs including West Ryde, Melrose Park, Ermington, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Meadowbank is a growing riverside suburb on the Parramatta River, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Meadowbank. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["West Ryde", "Melrose Park", "Ermington", "Rhodes", "Denistone"],
-    hospitals: ["Ryde Hospital", "Macquarie University Hospital"],
-    landmarks: ["Meadowbank wharf", "Meadowbank Park", "Parramatta River"],
-    gettingAround: "Meadowbank sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-homebush-west",
-    name: "Homebush West",
-    region: "Sydney",
-    postcode: "2140",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to Homebush West — for Support at Home, NDIS and Rehab at Home clients across the Olympic Park area.",
-    local:
-      "Homebush West is a diverse suburb beside Flemington and Sydney Olympic Park. Our Sydney team visits homes and residential aged care across Homebush West, and surrounding suburbs including Homebush, Flemington, Strathfield, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Homebush West is a diverse suburb beside Flemington and Sydney Olympic Park, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Homebush West. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Homebush", "Flemington", "Strathfield", "Lidcombe", "North Strathfield"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["Flemington Markets", "Homebush West shops", "DFO Homebush"],
-    gettingAround: "Homebush West sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-north-strathfield",
-    name: "North Strathfield",
-    region: "Sydney",
-    postcode: "2137",
-    intro:
-      "Mobile physiotherapy in North Strathfield, Sydney from November 2026 — aged-care, Support at Home, NDIS and post-hospital rehabilitation, delivered in your own home or residential care.",
-    local:
-      "North Strathfield is an established suburb around the Bakehouse Quarter. Our Sydney team visits homes and residential aged care across North Strathfield, and surrounding suburbs including Strathfield, Concord, Homebush, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "North Strathfield is an established suburb around the Bakehouse Quarter, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across North Strathfield. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Strathfield", "Concord", "Homebush", "Concord West", "Rhodes"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["the Bakehouse Quarter", "North Strathfield station", "Powells Creek"],
-    gettingAround: "North Strathfield sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-strathfield-south",
-    name: "Strathfield South",
-    region: "Sydney",
-    postcode: "2136",
-    intro:
-      "Home-visit and aged-care physiotherapy in Strathfield South, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Strathfield South is a quiet residential pocket south of Strathfield. Our Sydney team visits homes and residential aged care across Strathfield South, and surrounding suburbs including Strathfield, Enfield, Belfield, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Strathfield South is a quiet residential pocket south of Strathfield, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Strathfield South. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Strathfield", "Enfield", "Belfield", "Burwood", "Greenacre"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["Cooke Park", "Strathfield South shops", "Roberts Park"],
-    gettingAround: "Strathfield South sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-concord-west",
-    name: "Concord West",
-    region: "Sydney",
-    postcode: "2138",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to Concord West — for Support at Home, NDIS and Rehab at Home clients across the inner west.",
-    local:
-      "Concord West is a leafy riverside suburb beside Rhodes and Concord. Our Sydney team visits homes and residential aged care across Concord West, and surrounding suburbs including Concord, Rhodes, North Strathfield, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Concord West is a leafy riverside suburb beside Rhodes and Concord, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Concord West. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Concord", "Rhodes", "North Strathfield", "Liberty Grove", "Mortlake"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["Concord West station", "Bicentennial Park", "Powells Creek"],
-    gettingAround: "Concord West sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-cabarita",
-    name: "Cabarita",
-    region: "Sydney",
-    postcode: "2137",
-    intro:
-      "Mobile physiotherapy in Cabarita, Sydney from November 2026 — aged-care, Support at Home, NDIS and post-hospital rehabilitation, delivered in your own home or residential care.",
-    local:
-      "Cabarita is a peaceful waterfront suburb on the Parramatta River. Our Sydney team visits homes and residential aged care across Cabarita, and surrounding suburbs including Concord, Mortlake, Breakfast Point, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Cabarita is a peaceful waterfront suburb on the Parramatta River, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Cabarita. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Concord", "Mortlake", "Breakfast Point", "Canada Bay", "Drummoyne"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["Cabarita Park", "Cabarita wharf", "Parramatta River"],
-    gettingAround: "Cabarita sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-mortlake",
-    name: "Mortlake",
-    region: "Sydney",
-    postcode: "2137",
-    intro:
-      "Home-visit and aged-care physiotherapy in Mortlake, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Mortlake is a quiet peninsula suburb on the river. Our Sydney team visits homes and residential aged care across Mortlake, and surrounding suburbs including Cabarita, Breakfast Point, Concord, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Mortlake is a quiet peninsula suburb on the river, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Mortlake. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Cabarita", "Breakfast Point", "Concord", "Rhodes", "Canada Bay"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["Majors Bay", "Mortlake wharf", "Parramatta River"],
-    gettingAround: "Mortlake sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-breakfast-point",
-    name: "Breakfast Point",
-    region: "Sydney",
-    postcode: "2137",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to Breakfast Point — for Support at Home, NDIS and Rehab at Home clients across the inner west.",
-    local:
-      "Breakfast Point is a modern waterfront village on the Parramatta River. Our Sydney team visits homes and residential aged care across Breakfast Point, and surrounding suburbs including Cabarita, Mortlake, Concord, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Breakfast Point is a modern waterfront village on the Parramatta River, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Breakfast Point. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Cabarita", "Mortlake", "Concord", "Canada Bay", "Drummoyne"],
-    hospitals: ["Concord Hospital", "Canterbury Hospital"],
-    landmarks: ["Breakfast Point village", "the Promenade", "Parramatta River"],
-    gettingAround: "Breakfast Point sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-croydon",
-    name: "Croydon",
-    region: "Sydney",
-    postcode: "2132",
-    intro:
-      "Mobile physiotherapy in Croydon, Sydney from November 2026 — aged-care, Support at Home, NDIS and post-hospital rehabilitation, delivered in your own home or residential care.",
-    local:
-      "Croydon is an established, heritage inner-west suburb. Our Sydney team visits homes and residential aged care across Croydon, and surrounding suburbs including Ashfield, Burwood, Enfield, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Croydon is an established, heritage inner-west suburb, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Croydon. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Ashfield", "Burwood", "Enfield", "Croydon Park", "Summer Hill"],
-    hospitals: ["Concord Hospital", "Royal Prince Alfred Hospital"],
-    landmarks: ["Croydon station", "Croydon shops", "Malvern Hill heritage area"],
-    gettingAround: "Croydon sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-berala",
-    name: "Berala",
-    region: "Sydney",
-    postcode: "2141",
-    intro:
-      "Home-visit and aged-care physiotherapy in Berala, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Berala is a settled, community-minded suburb beside Lidcombe. Our Sydney team visits homes and residential aged care across Berala, and surrounding suburbs including Lidcombe, Regents Park, Auburn, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Berala is a settled, community-minded suburb beside Lidcombe, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Berala. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Lidcombe", "Regents Park", "Auburn", "Birrong", "Sefton"],
-    hospitals: ["Westmead Hospital", "Auburn Hospital"],
-    landmarks: ["Berala station", "Berala shops", "Wyatt Park"],
-    gettingAround: "Berala sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-regents-park",
-    name: "Regents Park",
-    region: "Sydney",
-    postcode: "2143",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to Regents Park — for Support at Home, NDIS and Rehab at Home clients across the Parramatta area.",
-    local:
-      "Regents Park is a quiet, diverse suburb in Sydney's inner west. Our Sydney team visits homes and residential aged care across Regents Park, and surrounding suburbs including Berala, Lidcombe, Auburn, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Regents Park is a quiet, diverse suburb in Sydney's inner west, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Regents Park. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Berala", "Lidcombe", "Auburn", "Birrong", "Chullora"],
-    hospitals: ["Westmead Hospital", "Auburn Hospital"],
-    landmarks: ["Regents Park station", "Mona Park", "Regents Park shops"],
-    gettingAround: "Regents Park sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-rosehill",
-    name: "Rosehill",
-    region: "Sydney",
-    postcode: "2142",
-    intro:
-      "Mobile physiotherapy in Rosehill, Sydney from November 2026 — aged-care, Support at Home, NDIS and post-hospital rehabilitation, delivered in your own home or residential care.",
-    local:
-      "Rosehill is a riverside suburb beside Parramatta and its racecourse. Our Sydney team visits homes and residential aged care across Rosehill, and surrounding suburbs including Parramatta, Harris Park, Granville, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Rosehill is a riverside suburb beside Parramatta and its racecourse, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Rosehill. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Parramatta", "Harris Park", "Granville", "Camellia", "Rydalmere"],
-    hospitals: ["Westmead Hospital", "Auburn Hospital"],
-    landmarks: ["Rosehill Gardens Racecourse", "Parramatta River", "Rosehill station"],
-    gettingAround: "Rosehill sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-harris-park",
-    name: "Harris Park",
-    region: "Sydney",
-    postcode: "2150",
-    intro:
-      "Home-visit and aged-care physiotherapy in Harris Park, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Harris Park is a vibrant suburb beside Parramatta, known as Little India. Our Sydney team visits homes and residential aged care across Harris Park, and surrounding suburbs including Parramatta, Rosehill, Granville, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Harris Park is a vibrant suburb beside Parramatta, known as Little India, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Harris Park. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Parramatta", "Rosehill", "Granville", "Harris Park", "Rydalmere"],
-    hospitals: ["Westmead Hospital", "Auburn Hospital"],
-    landmarks: ["Harris Park 'Little India'", "Parramatta Park", "Experiment Farm"],
-    gettingAround: "Harris Park sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-rydalmere",
-    name: "Rydalmere",
-    region: "Sydney",
-    postcode: "2116",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to Rydalmere — for Support at Home, NDIS and Rehab at Home clients across the Parramatta area.",
-    local:
-      "Rydalmere is a riverside suburb home to Western Sydney University. Our Sydney team visits homes and residential aged care across Rydalmere, and surrounding suburbs including Ermington, Dundas, Melrose Park, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Rydalmere is a riverside suburb home to Western Sydney University, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Rydalmere. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Ermington", "Dundas", "Melrose Park", "Camellia", "Telopea"],
-    hospitals: ["Ryde Hospital", "Westmead Hospital"],
-    landmarks: ["Western Sydney University", "Parramatta River", "Rydalmere wharf"],
-    gettingAround: "Rydalmere sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-melrose-park",
-    name: "Melrose Park",
-    region: "Sydney",
-    postcode: "2114",
-    intro:
-      "Mobile physiotherapy in Melrose Park, Sydney from November 2026 — aged-care, Support at Home, NDIS and post-hospital rehabilitation, delivered in your own home or residential care.",
-    local:
-      "Melrose Park is a fast-growing riverside suburb on the Parramatta River. Our Sydney team visits homes and residential aged care across Melrose Park, and surrounding suburbs including Ermington, Rydalmere, Meadowbank, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Melrose Park is a fast-growing riverside suburb on the Parramatta River, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Melrose Park. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Ermington", "Rydalmere", "Meadowbank", "Dundas", "West Ryde"],
-    hospitals: ["Ryde Hospital", "Westmead Hospital"],
-    landmarks: ["Melrose Park foreshore", "Parramatta River", "Wilson Park"],
-    gettingAround: "Melrose Park sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-dundas",
-    name: "Dundas",
-    region: "Sydney",
-    postcode: "2117",
-    intro:
-      "Home-visit and aged-care physiotherapy in Dundas, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Dundas is an established, leafy suburb between Parramatta and Ryde. Our Sydney team visits homes and residential aged care across Dundas, and surrounding suburbs including Rydalmere, Ermington, Carlingford, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Dundas is an established, leafy suburb between Parramatta and Ryde, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Dundas. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Rydalmere", "Ermington", "Carlingford", "Telopea", "Oatlands"],
-    hospitals: ["Ryde Hospital", "Macquarie University Hospital"],
-    landmarks: ["Dundas Valley", "Dundas station", "Yates Avenue shops"],
-    gettingAround: "Dundas sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-west-ryde",
-    name: "West Ryde",
-    region: "Sydney",
-    postcode: "2114",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to West Ryde — for Support at Home, NDIS and Rehab at Home clients across Ryde and the north.",
-    local:
-      "West Ryde is a busy transport and shopping hub in the Ryde area. Our Sydney team visits homes and residential aged care across West Ryde, and surrounding suburbs including Ryde, Meadowbank, Denistone, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "West Ryde is a busy transport and shopping hub in the Ryde area, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across West Ryde. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Ryde", "Meadowbank", "Denistone", "Eastwood", "Melrose Park"],
-    hospitals: ["Ryde Hospital", "Macquarie University Hospital"],
-    landmarks: ["West Ryde shops", "Anzac Park", "West Ryde station"],
-    gettingAround: "West Ryde sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-putney",
-    name: "Putney",
-    region: "Sydney",
-    postcode: "2112",
-    intro:
-      "Mobile physiotherapy in Putney, Sydney from November 2026 — aged-care, Support at Home, NDIS and post-hospital rehabilitation, delivered in your own home or residential care.",
-    local:
-      "Putney is a quiet riverside suburb on the Ryde peninsula. Our Sydney team visits homes and residential aged care across Putney, and surrounding suburbs including Ryde, Gladesville, Tennyson Point, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Putney is a quiet riverside suburb on the Ryde peninsula, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Putney. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Ryde", "Gladesville", "Tennyson Point", "Meadowbank", "Hunters Hill"],
-    hospitals: ["Ryde Hospital", "Macquarie University Hospital"],
-    landmarks: ["Putney Park", "Kissing Point Park", "Parramatta River"],
-    gettingAround: "Putney sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-denistone",
-    name: "Denistone",
-    region: "Sydney",
-    postcode: "2114",
-    intro:
-      "Home-visit and aged-care physiotherapy in Denistone, Sydney from November 2026 — mobile physio for residential aged care, Support at Home, NDIS and Rehab at Home clients, delivered where you live.",
-    local:
-      "Denistone is a leafy residential suburb beside Eastwood and West Ryde. Our Sydney team visits homes and residential aged care across Denistone, and surrounding suburbs including Eastwood, West Ryde, Ryde, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "Denistone is a leafy residential suburb beside Eastwood and West Ryde, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across Denistone. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Eastwood", "West Ryde", "Ryde", "Marsfield", "Meadowbank"],
-    hospitals: ["Ryde Hospital", "Macquarie University Hospital"],
-    landmarks: ["Denistone Park", "Eastwood Park", "Denistone station"],
-    gettingAround: "Denistone sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
-  },
-  {
-    slug: "physiotherapy-north-ryde",
-    name: "North Ryde",
-    region: "Sydney",
-    postcode: "2113",
-    intro:
-      "From November 2026, Fletcher Physiotherapy brings nursing-home and in-home physiotherapy to North Ryde — for Support at Home, NDIS and Rehab at Home clients across Ryde and the north.",
-    local:
-      "North Ryde is a suburb beside the Macquarie Park business and health precinct. Our Sydney team visits homes and residential aged care across North Ryde, and surrounding suburbs including Macquarie Park, Ryde, Marsfield, supporting strength, balance, mobility, falls prevention and recovery after hospital.",
-    localArea:
-      "North Ryde is a suburb beside the Macquarie Park business and health precinct, within easy reach of our Sydney base at Sydney Olympic Park. From November 2026, Fletcher Physiotherapy provides aged-care home sessions, in-home physiotherapy for Support at Home and NDIS clients, and Rehab at Home programs across North Ryde. Care is led by an APA Titled Pain Physiotherapist with a Master of Pain Management.",
-    nearby: ["Macquarie Park", "Ryde", "Marsfield", "East Ryde", "Denistone"],
-    hospitals: ["Ryde Hospital", "Macquarie University Hospital"],
-    landmarks: ["Macquarie Park precinct", "North Ryde station", "Macquarie Centre"],
-    gettingAround: "North Ryde sits within our Sydney service area around Sydney Olympic Park. Because we come to you at home or in residential care, there is no travel or parking to arrange.",
   },
 ];

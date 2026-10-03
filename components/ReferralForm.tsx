@@ -3,12 +3,14 @@
 import { useState, type FormEvent } from "react";
 import Icon from "./Icon";
 import { site } from "@/lib/site";
+import { submitEnquiry, readForm, type SubmitResult } from "@/lib/submitEnquiry";
 
 const referrerTypes = [
   "GP",
   "Support Coordinator",
   "Case Manager",
-  "Home Care Provider",
+  "Support at Home / Aged Care Provider",
+  "Hospital / Discharge Team",
   "Family Member",
   "Other",
 ];
@@ -17,22 +19,36 @@ const funding = [
   "NDIS – Self-managed",
   "NDIS – Plan-managed",
   "NDIS – Agency-managed",
-  "Home Care Package",
-  "Support at Home",
+  "Support at Home (formerly Home Care Package)",
   "Private",
-  "Chronic Disease Management (EPC)",
+  "GP Chronic Condition Management (GPCCMP)",
   "Not sure",
 ];
 
 export default function ReferralForm() {
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<SubmitResult | "idle" | "sending">("idle");
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSent(true);
+    const form = e.currentTarget;
+    if (!form.reportValidity()) return;
+    setStatus("sending");
+    const fields = readForm(form, {
+      "ref-name": "Referrer name",
+      referrerType: "Referrer type",
+      "ref-org": "Organisation",
+      "ref-email": "Referrer email",
+      "ref-phone": "Referrer phone",
+      "p-name": "Participant name",
+      "p-phone": "Participant phone",
+      "p-suburb": "Participant suburb",
+      funding: "Funding",
+      reason: "Reason / goals",
+    });
+    setStatus(await submitEnquiry(`New referral – ${fields["Participant name"] || "participant"}`, fields));
   };
 
-  if (sent) {
+  if (status === "sent" || status === "mailto") {
     return (
       <div className="card text-center">
         <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-beige-100 text-navy-800">
@@ -40,8 +56,9 @@ export default function ReferralForm() {
         </span>
         <h3 className="mt-5 text-2xl">Referral received</h3>
         <p className="mt-3 text-navy-600">
-          Thank you for your referral. We will contact the participant and confirm
-          next steps. For anything urgent, call{" "}
+          {status === "sent"
+            ? "Thank you for your referral. We will contact the participant and confirm next steps. For anything urgent, call "
+            : "Your email app should have opened with the referral filled in — please press Send. If it didn't open, call "}
           <a href={site.phoneHref} className="font-semibold text-navy-800 underline">
             {site.phone}
           </a>
@@ -53,6 +70,13 @@ export default function ReferralForm() {
 
   return (
     <form onSubmit={onSubmit} className="card space-y-6" noValidate>
+      {status === "error" && (
+        <p role="alert" className="rounded-xl bg-clay-50 p-3 text-sm text-navy-800">
+          Sorry, the referral couldn&rsquo;t be sent. Please call{" "}
+          <a href={site.phoneHref} className="font-semibold underline">{site.phone}</a> or email{" "}
+          <a href={site.emailHref} className="font-semibold underline">{site.email}</a>.
+        </p>
+      )}
       <fieldset className="space-y-5">
         <legend className="text-sm font-semibold uppercase tracking-widest text-navy-500">
           Referrer details
@@ -128,8 +152,8 @@ export default function ReferralForm() {
         </label>
       </fieldset>
 
-      <button type="submit" className="btn-primary w-full">
-        Submit Referral <Icon name="arrow" className="h-4 w-4" />
+      <button type="submit" className="btn-primary w-full" disabled={status === "sending"}>
+        {status === "sending" ? "Sending…" : "Submit Referral"} <Icon name="arrow" className="h-4 w-4" />
       </button>
     </form>
   );

@@ -7,6 +7,12 @@ export type BlogPost = {
   readMins: number;
   excerpt: string;
   sections: BlogSection[];
+  /** Date the article was last clinically reviewed/updated (YYYY-MM-DD). */
+  updated?: string;
+  /** Short Q&As shown at the end of the article and emitted as FAQPage schema. */
+  faqs?: { q: string; a: string }[];
+  /** Reputable references the article draws on. */
+  sources?: { label: string; url: string }[];
 };
 
 export const posts: BlogPost[] = [
@@ -106,14 +112,40 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "physiotherapy-for-neck-pain-and-posture",
-    title: "Physiotherapy for Neck Pain and Posture",
+    title: "What Helps Neck Pain? A Physiotherapist's Guide to Relief and Posture",
     description:
-      "What causes neck pain, how posture plays a role, and the simple physiotherapy strategies that relieve pain and keep your neck healthy.",
+      "What helps with neck pain? Simple, evidence-informed steps that ease most neck pain, when to get it checked, and how physiotherapy and posture habits help.",
     date: "2026-08-03",
     readMins: 5,
     excerpt:
       "Neck pain is common and often linked to posture and daily habits. Here's how physiotherapy helps you find lasting relief.",
+    updated: "2026-10-03",
+    faqs: [
+      { q: "How long does neck pain usually last?", a: "Most neck pain improves within a few weeks. If it is severe, getting worse, not easing after a few weeks, or affecting your sleep and daily life, see your GP or a physiotherapist." },
+      { q: "Should I wear a neck brace or collar?", a: "Generally no. Neck supports aren't considered useful for most neck pain and should only be used briefly if a health professional has advised it." },
+      { q: "When is neck pain an emergency?", a: "Call 000 if neck pain follows a traumatic accident or comes with chest pain, shortness of breath or sweating. Seek urgent care if it comes with fever, changes in vision or hearing, pins and needles, numbness or weakness in the arms or legs, dizziness, confusion, or bladder or bowel problems." },
+      { q: "Can physiotherapy help neck pain?", a: "Treatment from a physiotherapist may help you recover more quickly. A physio can assess what's driving your pain, give you targeted exercises and practical advice, and check for less common causes that need medical review." },
+    ],
+    sources: [
+      { label: "Healthdirect — Neck pain", url: "https://www.healthdirect.gov.au/neck-pain" },
+    ],
     sections: [
+      {
+        h2: "Quick answer: what helps with neck pain?",
+        body: [
+          "Most neck pain is not serious and settles within a few weeks. Things that commonly help:",
+        ],
+        list: [
+          "Keep your neck moving gently and naturally — avoid things that clearly make it worse",
+          "Change position often and take regular breaks from screens, reading and driving",
+          "Heat packs or ice packs for short-term relief of stiffness and pain",
+          "A pillow that keeps your head and neck in a natural position (not too high)",
+          "Setting your screen at eye level and adjusting your chair or car seat",
+          "Simple exercises from a physiotherapist or GP",
+          "Managing stress, which often shows up as neck and shoulder tension",
+          "Asking your pharmacist or GP about suitable pain relief",
+        ],
+      },
       {
         h2: "Why the neck is so often sore",
         body: [
@@ -334,21 +366,45 @@ export const posts: BlogPost[] = [
         h2: "How a pain physiotherapist can help",
         body: [
           "A physiotherapist with pain-management training helps you understand your pain, build a graded plan to move and do more, and address the factors keeping the system sensitive. The goal is a life less limited by pain, not just a short-term fix.",
-          "Fletcher Physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Pain Management, providing this care in your own home across Newcastle and Lake Macquarie. To arrange a visit, call 0404 791 756.",
+          "Fletcher Physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management), providing this care in your own home across Newcastle and Lake Macquarie. To arrange a visit, call 0404 791 756.",
         ],
       },
     ],
   },
   {
     slug: "knee-replacement-recovery-what-to-expect",
-    title: "Knee Replacement Recovery: What to Expect",
+    title: "What to Expect After a Knee Replacement: Recovery Timeline & Rehab",
     description:
-      "A clear guide to recovering from a knee replacement — the stages of healing, regaining movement and strength, and how home physiotherapy helps you recover well.",
+      "What to expect after knee replacement surgery — your hospital stay, the first weeks, walking aids, swelling, warning signs and how physiotherapy helps you recover.",
     date: "2026-08-03",
     readMins: 7,
     excerpt:
-      "A knee replacement can give you back a pain-free, active life — but the result depends on your rehab. Here's what to expect, and how to recover well.",
+      "A knee replacement can help you get back to a more comfortable, active life — but the result depends on your rehab. Here's what to expect, and how to recover well.",
+    updated: "2026-10-03",
+    faqs: [
+      { q: "How long does it take to recover from a knee replacement?", a: "Most people's strength and flexibility recover gradually over about 12 months, with the biggest changes in the first few months. Doing your exercises consistently helps your recovery." },
+      { q: "How long will I need a walking aid after knee replacement?", a: "Most people need a cane, crutches or a walking frame for the first few weeks. Your physiotherapist will guide when it's safe to reduce or stop using it." },
+      { q: "Is it normal for my knee to be swollen weeks after surgery?", a: "Some swelling is expected and can last for weeks. Elevation, gentle movement and your team's advice help. If swelling is sudden, worsening, or your calf is red and painful, seek urgent medical review." },
+      { q: "Can I do knee replacement rehab at home?", a: "Yes. Home visit physiotherapy is a practical option when travel is uncomfortable. See also our article on physiotherapy after a knee replacement for what a rehab program involves." },
+    ],
+    sources: [
+      { label: "Healthdirect — Knee replacement", url: "https://www.healthdirect.gov.au/knee-replacement" },
+    ],
     sections: [
+      {
+        h2: "Quick answer: what to expect after a knee replacement",
+        body: [
+          "Everyone recovers at their own pace, and your surgeon's instructions come first. As a general guide:",
+        ],
+        list: [
+          "Most people leave hospital 1–4 days after surgery",
+          "You'll probably use a walking frame, crutches or a stick for the first few weeks",
+          "You'll be given an exercise and physiotherapy program — doing it consistently matters",
+          "Swelling and stiffness are normal and can last for weeks",
+          "Strength and flexibility usually keep improving gradually over about 12 months",
+          "Go to the emergency department if your calf becomes red, swollen or painful, or you become short of breath or have chest pain — these can be signs of a blood clot",
+        ],
+      },
       {
         h2: "The operation is only half the job",
         body: [
@@ -448,67 +504,47 @@ export const posts: BlogPost[] = [
     ],
   },
   {
-    slug: "how-to-get-up-safely-after-a-fall",
-    title: "How to Get Up Safely After a Fall",
-    description:
-      "A step-by-step guide for older adults on how to get up safely after a fall — and what to do if you can't — plus how physiotherapy rebuilds the strength to do it.",
-    date: "2026-07-26",
-    readMins: 5,
-    excerpt:
-      "Knowing how to get up after a fall — calmly and safely — is a skill worth practising before you ever need it. Here's how.",
-    sections: [
-      {
-        h2: "Why this skill matters",
-        body: [
-          "Many older adults who fall are not badly hurt by the fall itself, but end up on the floor for a long time simply because they are not sure how to get back up. Knowing a safe method — and having the strength to do it — reduces both the risk and the fear.",
-          "It is worth learning and gently practising this before you ever need it, ideally with guidance from a physiotherapist.",
-        ],
-      },
-      {
-        h2: "First, pause and check",
-        body: [
-          "If you fall, try not to rush. Take a moment to catch your breath and check whether you are hurt. If you feel you may be injured, it is safer to call for help and stay warm and comfortable than to force yourself up.",
-          "If you feel able to get up, do it slowly and in stages rather than all at once.",
-        ],
-      },
-      {
-        h2: "A safe way to get up",
-        body: [
-          "Roll onto your side, then push up onto your hands and knees. Crawl to a sturdy, stable piece of furniture such as a solid chair.",
-          "Place your hands on the seat, bring your stronger leg forward with the foot flat on the floor, and push up through your arms and legs to turn and sit down on the chair. Rest there for a few minutes before standing.",
-        ],
-      },
-      {
-        h2: "If you can't get up",
-        body: [
-          "If you cannot get up, call for help — a personal alarm, phone or by attracting attention. Try to move to a carpeted or warm area, keep moving your joints to stay warm, and change position when you can to stay comfortable while you wait.",
-          "A personal alarm pendant is a simple, worthwhile safeguard for anyone at higher risk of falling, especially those living alone.",
-        ],
-      },
-      {
-        h2: "Building the strength and confidence to do it",
-        body: [
-          "Being able to get off the floor takes strength, mobility and practice — all of which physiotherapy can build. A physiotherapist can teach and rehearse the technique with you safely, strengthen the muscles involved, and reduce the fear that so often follows a fall.",
-          "Fletcher Physiotherapy provides falls prevention and recovery physiotherapy in your own home across Newcastle and Lake Macquarie. To arrange a visit, call 0404 791 756.",
-        ],
-      },
-    ],
-  },
-  {
     slug: "how-to-prevent-falls-at-home-room-by-room",
-    title: "How to Prevent Falls at Home: A Room-by-Room Guide",
+    title: "How to Prevent Falls at Home: A Physio's Room-by-Room Guide",
     description:
-      "A physiotherapist's practical, room-by-room guide to preventing falls at home for older adults — simple changes that reduce risk and rebuild confidence.",
+      "How to prevent falls at home: a physiotherapist's room-by-room checklist for older adults, plus the strength and balance work that lowers falls risk.",
     date: "2026-08-04",
     readMins: 7,
     excerpt:
       "Most falls at home are preventable. Here's a practical, room-by-room guide to making your home safer — and staying steady on your feet.",
+    updated: "2026-10-03",
+    faqs: [
+      { q: "What is the most common cause of falls at home?", a: "There is rarely a single cause. Falls usually come from a mix of factors — weaker muscles or balance, medicines, eyesight, dizziness on standing — combined with hazards such as poor lighting, slippery floors, rugs and clutter. That's why the best prevention addresses both your home and your body." },
+      { q: "Which room is the most dangerous for falls?", a: "The bathroom is often the highest-risk room because of wet, slippery surfaces and the need to step in and out of the shower or bath. Stairs and the night-time route from bed to toilet are also common trouble spots." },
+      { q: "Can exercise really reduce falls?", a: "Yes. There is evidence that exercises which improve balance and the ability to move can help prevent harm from falls. A physiotherapist can tailor a strength and balance program to your level so it is both safe and challenging enough to help." },
+      { q: "Should I see a doctor after a fall if I'm not hurt?", a: "Yes. Speak with your GP after any fall, even if you feel fine — a fall can be a sign of a new medical problem, a medicine side effect, balance problems or muscle weakness." },
+    ],
+    sources: [
+      { label: "Healthdirect — Older people and falls", url: "https://www.healthdirect.gov.au/falls" },
+    ],
     sections: [
+      {
+        h2: "Quick answer: how to prevent falls at home",
+        body: [
+          "Most falls in older people happen during everyday activities, and around half happen in and around the home. The most effective approach combines a safer home with keeping your body strong and steady. In short:",
+        ],
+        list: [
+          "Remove trip hazards — loose rugs, clutter and cords — and keep walkways clear",
+          "Improve lighting, especially hallways, stairs and the route to the toilet at night",
+          "Use non-slip mats and grab rails in the bathroom and handrails on stairs",
+          "Wear well-fitting, supportive shoes rather than loose slippers or socks",
+          "Stand up slowly to avoid light-headedness",
+          "Keep active and do regular strength and balance exercises",
+          "Ask your GP or pharmacist to review medicines that cause drowsiness or dizziness",
+          "Have your eyesight checked regularly",
+          "See your GP after any fall, even if you weren't hurt",
+        ],
+      },
       {
         h2: "Why home falls matter so much",
         body: [
-          "Falls are the leading cause of injury-related hospital admissions for older Australians, and the majority happen at home during ordinary daily activities. A single fall can undermine confidence, reduce activity and start a cycle that quietly erodes independence.",
-          "The good news is that most home falls are preventable. A combination of small environmental changes and targeted strength and balance work dramatically reduces risk — and rebuilds the confidence to keep moving.",
+          "Falls are the number one cause of accidental injury in older Australians, and around half of all falls happen in and around the home. A single fall can undermine confidence, reduce activity and start a cycle that quietly erodes independence.",
+          "The good news is that there is a lot you can do. A combination of small changes around the home and targeted strength and balance work can lower your risk — and help rebuild the confidence to keep moving.",
         ],
       },
       {
@@ -611,14 +647,38 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "choosing-the-right-walking-aid",
-    title: "Choosing the Right Walking Aid: Cane, Walker or Rollator",
+    title: "Cane or Walker? How to Choose the Right Walking Aid",
     description:
-      "A physiotherapist's guide to choosing and using a walking aid — canes, walking frames and rollators — including how to set the right height and stay safe.",
+      "Do you need a cane, walking frame or rollator? A physio's guide to choosing the right walking aid, who assesses you for one, correct height and safe use.",
     date: "2026-07-28",
     readMins: 6,
     excerpt:
       "The right walking aid can restore confidence and independence — the wrong one can increase your falls risk. Here's how to choose well.",
+    updated: "2026-10-03",
+    faqs: [
+      { q: "Who assesses whether someone needs a walker or rollator?", a: "Walking aids can be assessed for and prescribed by physiotherapists, occupational therapists, registered nurses, GPs and specialists. A physiotherapist typically checks your strength, balance, walking pattern and home environment, then recommends the type and sets the correct height." },
+      { q: "How do I know what height my walking aid should be?", a: "As a rule of thumb, with your arms relaxed by your sides the handle should sit around the crease of your wrist, giving a slight bend at the elbow when you hold it. Because the right height and type depend on you, it's best checked in person." },
+      { q: "Is a rollator or a walking frame safer?", a: "Neither is safer for everyone. A frame gives more stability because you lift and place it, while a rollator is easier for continuous walking but offers less bracing support and relies on using the brakes well. The safest aid is the one matched to your balance and needs." },
+      { q: "Can I get help paying for a walking aid?", a: "Possibly. Depending on your situation, walking aids may be funded through Support at Home's Assistive Technology and Home Modifications scheme, the NDIS, or DVA's Rehabilitation Appliances Program. You can also buy or hire aids. Ask your health professional or provider about what applies to you." },
+    ],
+    sources: [
+      { label: "Healthdirect — Mobility aids", url: "https://www.healthdirect.gov.au/mobility-aids" },
+      { label: "My Aged Care — Support at Home program", url: "https://www.myagedcare.gov.au/support-home-program" },
+    ],
     sections: [
+      {
+        h2: "Quick answer: do I need a cane or a walker?",
+        body: [
+          "As a general guide — but get assessed before you buy:",
+        ],
+        list: [
+          "Walking stick or cane: you need a little extra balance or support and have reasonable strength",
+          "Quad (four-point) cane: you need more support than a single stick on one side",
+          "Walking frame (no wheels): you need significant support, often for shorter distances indoors",
+          "Rollator (wheeled walker with brakes and seat): you have reasonable balance, want to walk further, and can manage the brakes reliably",
+          "Not sure, or you've had a fall? Ask a physiotherapist, occupational therapist or your GP to assess you first",
+        ],
+      },
       {
         h2: "The right aid helps; the wrong one hurts",
         body: [
@@ -690,7 +750,7 @@ export const posts: BlogPost[] = [
       {
         h2: "Improving balance and preventing falls",
         body: [
-          "Falls are the leading cause of injury-related loss of independence in older Australians. Physiotherapy addresses this directly through balance training, strengthening and a review of hazards in the home — an approach proven to significantly reduce falls risk.",
+          "Falls are the number one cause of accidental injury in older Australians. Physiotherapy addresses this directly through balance training, strengthening and a review of hazards in the home — an approach can help reduce falls risk.",
           "Just as importantly, physiotherapy rebuilds the confidence to keep moving, breaking the cycle where fear of falling leads to inactivity, which then weakens the body further.",
         ],
       },
@@ -705,32 +765,32 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "home-care-package-physiotherapy-explained",
-    title: "Home Care Package Physiotherapy Explained",
+    title: "Home Care Package Physiotherapy Explained (Now Support at Home)",
     description:
-      "A clear guide to using your Home Care Package for physiotherapy — what's covered, how it works and how to arrange in-home care.",
+      "Home Care Packages were replaced by Support at Home on 1 November 2025. How physiotherapy is funded now, what it can include and how to arrange it at home.",
     date: "2026-05-12",
     readMins: 5,
     excerpt:
-      "Wondering whether your Home Care Package can pay for physiotherapy? Here's a plain-language explanation.",
+      "Home Care Packages have become Support at Home. Here's a plain-language explanation of how physiotherapy fits in now.",
     sections: [
       {
-        h2: "Can a Home Care Package fund physiotherapy?",
+        h2: "Home Care Packages are now Support at Home",
         body: [
-          "Yes. Physiotherapy is an allied health service that can be funded through a Home Care Package (Levels 1 to 4) when it supports the goals in your care plan — such as improving mobility, building strength, managing pain or reducing falls risk.",
-          "Because physiotherapy so directly supports the ability to keep living independently at home, it is one of the most valuable services a package can fund.",
+          "On 1 November 2025 the Australian Government's Support at Home program replaced the Home Care Packages (HCP) Program and the Short-Term Restorative Care Programme. If you already had a Home Care Package, you moved across to Support at Home without needing a new assessment, and your provider will have contacted you about a new agreement.",
+          "Under Support at Home, clinical care such as physiotherapy is one of the services available when it meets your assessed needs and goals — for example improving mobility, building strength, managing pain or reducing falls risk. Support at Home also includes a Restorative Care Pathway focused on maintaining and improving independence through allied health.",
         ],
       },
       {
         h2: "How it works",
         body: [
-          "Your Home Care Package is managed by an approved provider who works with you to decide how your funds are used. If you would like physiotherapy included, you can discuss it with your provider or care manager, who can arrange it as part of your plan.",
+          "Your Support at Home services are arranged by a registered provider who works with you to decide how your budget is used. If you would like physiotherapy included, you can discuss it with your provider or care manager, who can arrange it as part of your plan.",
           "A mobile physiotherapy service like Fletcher Physiotherapy coordinates directly with your provider, delivers care aligned to your goals, and supplies any documentation required — making the process simple for you and your family.",
         ],
       },
       {
         h2: "What physiotherapy can include",
         body: [
-          "Under a Home Care Package, physiotherapy typically focuses on the things that keep you safe and independent at home.",
+          "Under Support at Home, physiotherapy typically focuses on the things that keep you safe and independent at home.",
         ],
         list: [
           "Strength and mobility programs",
@@ -744,7 +804,7 @@ export const posts: BlogPost[] = [
       {
         h2: "Getting started",
         body: [
-          "If you have a Home Care Package and would like physiotherapy at home, contact us and we will help you understand your options and coordinate with your provider. If you are still waiting for a package, private physiotherapy is also available in the meantime.",
+          "If you receive Support at Home (or previously had a Home Care Package) and would like physiotherapy at home, contact us and we will help you understand your options and coordinate with your provider. If you are still waiting for an assessment or services to start, private physiotherapy is also available in the meantime. For official program details, see My Aged Care.",
         ],
       },
     ],
@@ -796,12 +856,12 @@ export const posts: BlogPost[] = [
     date: "2026-04-26",
     readMins: 6,
     excerpt:
-      "Simple balance and strength exercises can dramatically reduce falls risk. Here are five physiotherapists often recommend.",
+      "Simple balance and strength exercises can help reduce falls risk. Here are five physiotherapists often recommend.",
     sections: [
       {
         h2: "Why exercise prevents falls",
         body: [
-          "Research is clear: progressive strength and balance exercise is the single most effective way to reduce falls in older adults. The exercises below are commonly recommended by physiotherapists, but always check with a professional before starting, and have support nearby for safety.",
+          "Research is clear: progressive strength and balance exercise is one of the most effective ways to reduce falls in older adults. The exercises below are commonly recommended by physiotherapists, but always check with a professional before starting, and have support nearby for safety.",
         ],
       },
       {
@@ -839,7 +899,7 @@ export const posts: BlogPost[] = [
       {
         h2: "Before the visit",
         body: [
-          "Arranging a home visit is simple. After you get in touch, we confirm a time that suits you and ask about your goals, health history and any funding such as NDIS or a Home Care Package. There is nothing you need to prepare beyond a comfortable space to move.",
+          "Arranging a home visit is simple. After you get in touch, we confirm a time that suits you and ask about your goals, health history and any funding such as NDIS or Support at Home. There is nothing you need to prepare beyond a comfortable space to move.",
         ],
       },
       {
@@ -866,14 +926,38 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "physiotherapy-after-hospital-discharge",
-    title: "Physiotherapy After Hospital Discharge",
+    title: "Rehab After Hospital Discharge: Your Options and How Home Physio Helps",
     description:
-      "How home-based physiotherapy supports a safe recovery after a hospital stay, rebuilding strength and reducing the risk of readmission.",
+      "Coming home from hospital? The main rehabilitation options after discharge — inpatient, outpatient and home-based — and how home physiotherapy supports recovery.",
     date: "2026-04-10",
     readMins: 5,
     excerpt:
-      "Coming home from hospital is a vulnerable time. Here's how physiotherapy helps you recover safely.",
+      "Coming home from hospital is a vulnerable time. Here are your rehab options after discharge, and how physiotherapy at home helps you recover safely.",
+    updated: "2026-10-03",
+    faqs: [
+      { q: "How do I choose the best rehab after leaving hospital?", a: "Start by asking your hospital team or discharge planner what they recommend for your situation. Consider how intensive your therapy needs to be, whether you can travel safely, and what support you have at home. There's no single best option — the right one is the one that fits your needs." },
+      { q: "Can I have physiotherapy at home after leaving hospital?", a: "Yes. Home-based physiotherapy is one option after discharge. It can be privately funded, or funded through programs such as the NDIS or Support at Home where eligible." },
+      { q: "How soon should rehab start after discharge?", a: "Follow your hospital team's advice. In general, keeping up the exercises and activity you started in hospital and getting rehabilitation organised early helps you avoid losing strength once you're home." },
+      { q: "Who can refer me for physiotherapy after hospital?", a: "You don't need a referral to see a physiotherapist privately. Hospital discharge teams, GPs, Support at Home providers, NDIS support coordinators and families can also refer to us directly." },
+    ],
+    sources: [
+      { label: "Healthdirect — Physiotherapy", url: "https://www.healthdirect.gov.au/physiotherapy" },
+      { label: "My Aged Care — Support at Home program", url: "https://www.myagedcare.gov.au/support-home-program" },
+    ],
     sections: [
+      {
+        h2: "Quick answer: what are the rehab options after hospital discharge?",
+        body: [
+          "The right option depends on your needs, your health and what your hospital team recommends. The main pathways are:",
+        ],
+        list: [
+          "Inpatient rehabilitation — a stay in a rehabilitation ward or unit, usually arranged by the hospital team when you need intensive daily therapy",
+          "Outpatient or day rehabilitation — attending a hospital or community program for therapy sessions",
+          "Community and home-based rehabilitation — therapy delivered at home, including home visit physiotherapy",
+          "Support at Home's Restorative Care Pathway — for eligible older people, focused on maintaining and improving independence through allied health",
+          "Private physiotherapy — at a clinic or at home, with no referral needed",
+        ],
+      },
       {
         h2: "A vulnerable time",
         body: [
@@ -889,9 +973,9 @@ export const posts: BlogPost[] = [
         ],
       },
       {
-        h2: "Reducing the risk of readmission",
+        h2: "Lowering the risk of setbacks",
         body: [
-          "Well-planned rehabilitation after discharge reduces the likelihood of complications, falls and hospital readmission. Physiotherapists also coordinate with your broader care team and provide practical advice on safety and equipment at home.",
+          "Well-planned rehabilitation after discharge can help lower the risk of complications, falls and setbacks. Physiotherapists also coordinate with your broader care team and provide practical advice on safety and equipment at home.",
         ],
       },
       {
@@ -915,7 +999,7 @@ export const posts: BlogPost[] = [
       {
         h2: "What is Support at Home?",
         body: [
-          "Support at Home is the Australian Government program designed to help older people live independently in their own homes for longer, with services tailored to their needs. It brings together the kind of support previously delivered through Home Care Packages and other programs into a more flexible model.",
+          "Support at Home is the Australian Government program designed to help older people live independently in their own homes for longer, with services tailored to their needs. It brings together the kind of support previously delivered through Home Care Packages and Short-Term Restorative Care, which it replaced on 1 November 2025.",
           "Physiotherapy sits within the allied health and reablement side of this support, because staying mobile, strong and safe on your feet is fundamental to remaining at home.",
         ],
       },
@@ -996,7 +1080,7 @@ export const posts: BlogPost[] = [
       {
         h2: "Understanding falls risk",
         body: [
-          "Falls are the leading cause of injury-related loss of independence for older Australians, but the majority are preventable. Falls usually result from a combination of factors \u2014 reduced strength, poor balance, changes in walking pattern, and hazards in the home.",
+          "Falls are the number one cause of accidental injury in older Australians, but there is a lot that can be done to lower the risk. Falls usually result from a combination of factors \u2014 reduced strength, poor balance, changes in walking pattern, and hazards in the home.",
           "Physiotherapy is uniquely placed to address all of these at once, which is why it is one of the most effective falls-prevention strategies available.",
         ],
       },
@@ -1142,14 +1226,40 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "when-should-older-adults-see-a-physiotherapist",
-    title: "When Should Older Adults See a Physiotherapist?",
+    title: "When to See a Physiotherapist: Signs It's Time (Especially for Older Adults)",
     description:
-      "The signs it's time for an older adult to see a physiotherapist \u2014 from reduced mobility and balance to pain, falls and recovery after hospital.",
+      "When should you see a physio? The common signs it's time to see a physiotherapist — from pain that isn't settling to balance problems, falls and recovery after hospital.",
     date: "2026-04-14",
     readMins: 5,
     excerpt:
-      "Not sure if it's time to see a physio? Here are the signs older adults and families should look out for.",
+      "Not sure whether it's time to see a physio? Here are the signs to look out for — for anyone, and especially for older adults and their families.",
+    updated: "2026-10-03",
+    faqs: [
+      { q: "Do I need a referral to see a physiotherapist?", a: "No. You don't need a GP referral to see a physiotherapist privately. A GP referral is needed for Medicare-subsidised sessions under a GP Chronic Condition Management Plan (GPCCMP), and some funding programs have their own requirements." },
+      { q: "When should I see a doctor instead of a physio?", a: "See a doctor or seek urgent care if pain follows a significant accident, is severe and getting worse, or comes with symptoms such as fever, chest pain, sudden weakness or numbness, loss of bladder or bowel control, or confusion. If in doubt, call your GP or healthdirect on 1800 022 222. In an emergency call 000." },
+      { q: "When is the right time to go to physiotherapy after surgery?", a: "Follow your surgeon's and hospital team's advice. Rehabilitation often starts in hospital and continues once you're home — starting your program early and keeping it consistent usually matters more than intensity." },
+      { q: "Can a physiotherapist come to my home?", a: "Yes. Mobile physiotherapists visit people at home, in retirement villages and in aged care. Home visits can suit people who find travel difficult, are recovering after hospital, or want advice tailored to their own home." },
+    ],
+    sources: [
+      { label: "Healthdirect — Physiotherapy", url: "https://www.healthdirect.gov.au/physiotherapy" },
+      { label: "Healthdirect — Older people and falls", url: "https://www.healthdirect.gov.au/falls" },
+    ],
     sections: [
+      {
+        h2: "Quick answer: when should you see a physio?",
+        body: [
+          "You can see a physiotherapist without a GP referral. It's a good time to book when:",
+        ],
+        list: [
+          "Pain or stiffness isn't settling after a couple of weeks, or keeps coming back",
+          "An injury, strain or sprain is limiting what you can do",
+          "You're recovering from surgery, illness or a hospital stay",
+          "You feel unsteady, have had a fall or near-fall, or are worried about falling",
+          "Walking, stairs or getting out of a chair is becoming harder",
+          "You have an ongoing condition such as arthritis, Parkinson's disease or after a stroke",
+          "You want a safe exercise plan to stay strong and independent",
+        ],
+      },
       {
         h2: "Don't wait for a crisis",
         body: [
@@ -1174,7 +1284,7 @@ export const posts: BlogPost[] = [
       {
         h2: "Getting started",
         body: [
-          "You don't need to wait for a referral to see a physiotherapist privately, and support may be available through NDIS, a Home Care Package or Support at Home. If any of these signs sound familiar, a home visit assessment is a simple, low-pressure first step toward staying strong and independent.",
+          "You don't need to wait for a referral to see a physiotherapist privately, and support may be available through the NDIS, Support at Home, DVA or Medicare-subsidised sessions under a GP Chronic Condition Management Plan (GPCCMP). If any of these signs sound familiar, a home visit assessment is a simple, low-pressure first step toward staying strong and independent.",
         ],
       },
     ],
@@ -1219,7 +1329,7 @@ export const posts: BlogPost[] = [
     excerpt:
       "Recovering from a hip replacement? Here's how physiotherapy and the right exercises help you get back on your feet.",
     sections: [
-      { h2: "Recovery after a hip replacement", body: ["A hip replacement can dramatically improve quality of life, but a strong recovery depends on good rehabilitation. Physiotherapy helps you rebuild strength and movement safely, while protecting your new joint and following your surgeon's precautions.", "Always follow the specific guidance of your surgeon and physiotherapist — the exercises below are general examples only."] },
+      { h2: "Recovery after a hip replacement", body: ["A hip replacement can improve quality of life, but a strong recovery depends on good rehabilitation. Physiotherapy helps you rebuild strength and movement safely, while protecting your new joint and following your surgeon's precautions.", "Always follow the specific guidance of your surgeon and physiotherapist — the exercises below are general examples only."] },
       { h2: "Common early rehabilitation exercises", body: ["In the weeks after surgery, gentle, progressive exercise is key."], list: ["Ankle pumps to aid circulation","Gentle knee bends and straightening","Buttock and thigh muscle squeezes","Standing hip movements with support","Sit-to-stand practice from a firm chair","Guided walking practice"] },
       { h2: "Why home-based rehab helps", body: ["Getting to a clinic after major surgery can be difficult. Home visit physiotherapy lets you begin and progress your rehabilitation safely at home, with your program tailored to your recovery and your environment — helping you regain confidence and independence sooner."] },
     ],
@@ -1251,7 +1361,7 @@ export const posts: BlogPost[] = [
     sections: [
       { h2: "Parkinson's and movement", body: ["Parkinson's disease affects movement, balance and confidence, and these challenges tend to change over time. Physiotherapy is an important part of managing the condition, helping people stay as mobile, safe and independent as possible."] },
       { h2: "How physiotherapy helps", body: ["A physiotherapist tailors a program to your individual symptoms and goals, and adapts it as your needs change."], list: ["Exercises to maintain movement and flexibility","Balance training to reduce falls risk","Strategies for walking and turning safely","Strength and posture work","Techniques to manage freezing and initiation","Support for confidence and daily activities"] },
-      { h2: "The benefit of home-based care", body: ["Practising in your own home means strategies can be applied directly to your everyday movements and spaces. Home visit physiotherapy also removes the stress of travel, and lets families and carers be involved. Many people with Parkinson's access this support through the NDIS or a Home Care Package."] },
+      { h2: "The benefit of home-based care", body: ["Practising in your own home means strategies can be applied directly to your everyday movements and spaces. Home visit physiotherapy also removes the stress of travel, and lets families and carers be involved. Many people with Parkinson's access this support through the NDIS or Support at Home."] },
     ],
   },
   {
@@ -1266,7 +1376,7 @@ export const posts: BlogPost[] = [
     sections: [
       { h2: "Recovery continues at home", body: ["Stroke recovery is a journey that continues well beyond the hospital. Ongoing physiotherapy is essential to rebuilding movement, strength and independence, and much of that progress happens once you are back home."] },
       { h2: "How physiotherapy helps after a stroke", body: ["A physiotherapist works with you on the specific movements and skills affected by your stroke, tailoring the program to your recovery."], list: ["Retraining movement and coordination","Strengthening affected muscles","Balance and walking practice","Reducing falls risk","Regaining independence in daily tasks","Support and education for families and carers"] },
-      { h2: "Why home-based rehab works", body: ["Recovering at home means your rehabilitation is grounded in your real environment and everyday goals. Home visit physiotherapy removes the barrier of travel, supports consistent practice, and involves the people around you. Stroke rehabilitation is often funded through the NDIS or a Home Care Package."] },
+      { h2: "Why home-based rehab works", body: ["Recovering at home means your rehabilitation is grounded in your real environment and everyday goals. Home visit physiotherapy removes the barrier of travel, supports consistent practice, and involves the people around you. Stroke rehabilitation is often funded through the NDIS or Support at Home."] },
     ],
   },
   {
@@ -1311,14 +1421,14 @@ export const posts: BlogPost[] = [
     sections: [
       { h2: "Understanding chronic pain", body: ["Chronic, or persistent, pain is common in older adults and affects far more than the body — it can reduce activity, confidence and quality of life. Modern pain management recognises that pain is complex, and that gentle movement and the right strategies are central to managing it well."] },
       { h2: "How physiotherapy helps", body: ["Physiotherapy takes an active, evidence-based approach to chronic pain, focused on restoring movement and function rather than simply resting."], list: ["Understanding your individual pain experience","Graded movement to reduce fear and rebuild capacity","Hands-on treatment where helpful","Practical day-to-day pain strategies","Strength and conditioning","A graded return to meaningful activities"] },
-      { h2: "Expert, home-based support", body: ["At Fletcher Physiotherapy, chronic pain care is led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Pain Management from the University of Sydney. Delivered at home, this expert care helps older adults across Newcastle move with confidence and return to the activities that matter most."] },
+      { h2: "Experienced, home-based support", body: ["At Fletcher Physiotherapy, chronic pain care is led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management) from the University of Sydney. Delivered at home, this experienced care helps older adults across Newcastle move with confidence and return to the activities that matter most."] },
     ],
   },
   {
     slug: "physiotherapy-for-osteoporosis",
     title: "Physiotherapy for Osteoporosis in Older Adults",
     description:
-      "How physiotherapy helps older adults with osteoporosis build bone-supporting strength, improve balance and reduce fracture risk \\u2014 safely, at home.",
+      "How physiotherapy helps older adults with osteoporosis build bone-supporting strength, improve balance and reduce fracture risk — safely, at home.",
     date: "2026-01-24",
     readMins: 6,
     excerpt:
@@ -1348,28 +1458,28 @@ export const posts: BlogPost[] = [
     slug: "how-to-prevent-muscle-loss-with-age",
     title: "How to Prevent Muscle Loss with Age",
     description:
-      "Understanding sarcopenia \\u2014 age-related muscle loss \\u2014 and how strength exercise and physiotherapy help older adults stay strong and independent.",
+      "Understanding sarcopenia — age-related muscle loss — and how strength exercise and physiotherapy help older adults stay strong and independent.",
     date: "2026-01-08",
     readMins: 6,
     excerpt:
       "Muscle loss with age isn't inevitable. Here's how to keep your strength and independence.",
     sections: [
-      { h2: "What is age-related muscle loss?", body: ["From around middle age, we naturally begin to lose muscle mass and strength \\u2014 a process called sarcopenia. Left unchecked, it makes everyday tasks harder and increases the risk of falls and frailty. The good news is that it is largely preventable and even reversible with the right exercise."] },
+      { h2: "What is age-related muscle loss?", body: ["From around middle age, we naturally begin to lose muscle mass and strength — a process called sarcopenia. Left unchecked, it makes everyday tasks harder and increases the risk of falls and frailty. The good news is that it is largely preventable and even reversible with the right exercise."] },
       { h2: "How to maintain your strength", body: ["Muscle responds to being used, at any age. The key is regular, progressive strength exercise."], list: ["Strength exercises at least twice a week","Progressive resistance as you get stronger","Enough protein in your diet","Staying generally active day to day","Targeting the legs and core for independence","Consistency over intensity"] },
-      { h2: "The role of physiotherapy", body: ["A physiotherapist can assess your strength and design a safe, effective program tailored to you \\u2014 then progress it over time. For older adults, home visit physiotherapy makes strength training accessible and safe, helping you preserve the muscle that keeps you independent."] },
+      { h2: "The role of physiotherapy", body: ["A physiotherapist can assess your strength and design a safe, effective program tailored to you — then progress it over time. For older adults, home visit physiotherapy makes strength training accessible and safe, helping you preserve the muscle that keeps you independent."] },
     ],
   },
   {
     slug: "physiotherapy-for-lower-back-pain-in-seniors",
     title: "Physiotherapy for Lower Back Pain in Seniors",
     description:
-      "How physiotherapy helps older adults manage lower back pain and stay mobile and active \\u2014 with care delivered at home.",
+      "How physiotherapy helps older adults manage lower back pain and stay mobile and active — with care delivered at home.",
     date: "2025-12-30",
     readMins: 5,
     excerpt:
       "Lower back pain is common in later life. Here's how physiotherapy helps you move comfortably again.",
     sections: [
-      { h2: "Back pain and older adults", body: ["Lower back pain is one of the most common complaints among older adults, and it can significantly limit movement and quality of life. While it is common, it should not simply be accepted \\u2014 physiotherapy can help you manage pain and move more comfortably."] },
+      { h2: "Back pain and older adults", body: ["Lower back pain is one of the most common complaints among older adults, and it can significantly limit movement and quality of life. While it is common, it should not simply be accepted — physiotherapy can help you manage pain and move more comfortably."] },
       { h2: "How physiotherapy helps", body: ["A physiotherapist assesses the causes of your back pain and builds a program to reduce it and restore function."], list: ["Gentle exercises to ease pain and stiffness","Core and back strengthening","Posture and movement advice","Hands-on treatment where appropriate","Strategies for daily activities","A gradual return to normal movement"] },
       { h2: "Care in your own home", body: ["Travelling with back pain can be uncomfortable. Home visit physiotherapy brings treatment to you and tailors your program to your everyday environment and activities, helping you move and live more comfortably."] },
     ],
@@ -1378,7 +1488,7 @@ export const posts: BlogPost[] = [
     slug: "what-to-expect-from-your-first-ndis-physio-session",
     title: "What to Expect from Your First NDIS Physio Session",
     description:
-      "A guide to your first NDIS physiotherapy session at home \\u2014 the assessment, goal-setting, program and reporting, so you know what to expect.",
+      "A guide to your first NDIS physiotherapy session at home — the assessment, goal-setting, program and reporting, so you know what to expect.",
     date: "2025-12-22",
     readMins: 5,
     excerpt:
@@ -1397,41 +1507,90 @@ export const posts: BlogPost[] = [
     date: "2025-12-14",
     readMins: 6,
     excerpt:
-      "Worried about a parent living at home? Here's how physiotherapy supports them \\u2014 and gives families peace of mind.",
+      "Worried about a parent living at home? Here's how physiotherapy supports them — and gives families peace of mind.",
     sections: [
       { h2: "The challenge for families", body: ["Watching a parent become less steady or confident is difficult, and many adult children feel unsure how to help. You want your parent to stay safe and independent, but you may not live nearby or know where to start. Physiotherapy can be a powerful part of the answer."] },
       { h2: "How physiotherapy supports your parent", body: ["Home visit physiotherapy addresses the physical changes that most threaten independence, and involves families along the way."], list: ["Improving strength, balance and mobility","Reducing falls risk and reviewing home hazards","Rebuilding confidence to stay active","Supporting recovery after illness or hospital","Clear communication with family members","Guidance you can use to help between visits"] },
-      { h2: "Peace of mind for you", body: ["Knowing a qualified physiotherapist is regularly supporting your parent at home brings real reassurance. We keep families informed and involved, and help your parent stay strong, safe and independent in the home they love. Support may be available through a Home Care Package, Support at Home or the NDIS."] },
+      { h2: "Peace of mind for you", body: ["Knowing a qualified physiotherapist is regularly supporting your parent at home brings real reassurance. We keep families informed and involved, and help your parent stay strong, safe and independent in the home they love. Support may be available through Support at Home or the NDIS."] },
     ],
   },
   {
     slug: "physiotherapy-for-shoulder-pain-in-older-adults",
     title: "Physiotherapy for Shoulder Pain in Older Adults",
     description:
-      "How physiotherapy helps older adults relieve shoulder pain and restore movement for everyday tasks \\u2014 with treatment delivered at home.",
+      "How physiotherapy helps older adults relieve shoulder pain and restore movement for everyday tasks — with treatment delivered at home.",
     date: "2025-12-06",
     readMins: 5,
     excerpt:
       "Shoulder pain can make daily tasks hard. Here's how physiotherapy restores comfortable movement.",
     sections: [
-      { h2: "Shoulder pain and daily life", body: ["The shoulder is one of the most mobile joints in the body, and shoulder pain can make everyday tasks \\u2014 dressing, reaching, cooking \\u2014 surprisingly difficult. In older adults, shoulder pain often develops gradually and can steadily limit independence if not addressed."] },
+      { h2: "Shoulder pain and daily life", body: ["The shoulder is one of the most mobile joints in the body, and shoulder pain can make everyday tasks — dressing, reaching, cooking — surprisingly difficult. In older adults, shoulder pain often develops gradually and can steadily limit independence if not addressed."] },
       { h2: "How physiotherapy helps", body: ["A physiotherapist identifies the cause of your shoulder pain and builds a program to restore comfortable movement."], list: ["Exercises to restore shoulder movement","Strengthening the muscles around the joint","Hands-on treatment to ease pain","Posture and movement advice","Strategies for daily tasks","A gradual return to normal activity"] },
-      { h2: "Convenient home-based care", body: ["Home visit physiotherapy makes treatment easy to access and tailors your program to the real tasks you want to return to \\u2014 helping you use your shoulder comfortably and confidently again."] },
+      { h2: "Convenient home-based care", body: ["Home visit physiotherapy makes treatment easy to access and tailors your program to the real tasks you want to return to — helping you use your shoulder comfortably and confidently again."] },
     ],
   },
   {
     slug: "getting-up-safely-after-a-fall",
-    title: "How to Get Up Safely After a Fall",
+    title: "How to Get Up From a Fall: A Safe Step-by-Step Guide for Seniors",
     description:
-      "A step-by-step guide to getting up safely after a fall, and how physiotherapy teaches older adults the skills and strength to do it.",
+      "How to get up from a fall safely — a step-by-step guide for seniors, what to do if you can't get up, and how physiotherapy builds the strength and confidence to do it.",
     date: "2025-11-28",
     readMins: 5,
     excerpt:
-      "Knowing how to get up after a fall is a vital skill. Here's how physiotherapy teaches it.",
+      "Knowing how to get up after a fall — calmly and safely — is a skill worth practising before you ever need it. Here's how.",
+    updated: "2026-10-03",
+    faqs: [
+      { q: "What should an older person do first after a fall?", a: "Stay calm, take a moment to catch your breath and check whether you're hurt. If you think you may be injured, don't force yourself up — call for help and stay as warm and comfortable as possible." },
+      { q: "What if I can't get up after a fall?", a: "Call for help using a personal alarm, phone or by attracting attention. Try to keep warm, move your joints gently and change position when you can while you wait. If you are injured or unwell, call 000." },
+      { q: "Should I see a doctor after a fall even if I'm not hurt?", a: "Yes. Speak with your GP after any fall, even if you feel fine. Falls can be a sign of a new medical problem, a medicine side effect, balance problems or muscle weakness." },
+      { q: "Can a physiotherapist teach me how to get up from the floor?", a: "Yes. A physiotherapist can teach and rehearse the technique with you safely, build the strength and mobility it requires, and help reduce the fear of falling that often follows a fall." },
+    ],
+    sources: [
+      { label: "Healthdirect — Older people and falls", url: "https://www.healthdirect.gov.au/falls" },
+    ],
     sections: [
-      { h2: "Why this skill matters", body: ["Being unable to get up after a fall is a serious risk for older adults \\u2014 a long time on the floor can lead to further health problems. Learning how to get up safely, and building the strength to do it, is an important part of falls management. This should be practised with a physiotherapist before you need it."] },
-      { h2: "General steps to get up", body: ["If you fall and are not injured, the general approach is to move slowly and use furniture for support. A physiotherapist teaches and practises this with you safely."], list: ["Stay calm and check for injury","Roll onto your side, then onto hands and knees","Crawl to a sturdy chair or piece of furniture","Place your hands on the seat and bring one foot forward","Push up to standing and turn to sit","Rest before doing anything else"] },
-      { h2: "Building the strength and confidence", body: ["Getting up from the floor takes strength, coordination and practice. A physiotherapist helps you build these safely and rehearse the technique, so you and your family feel more confident. Home visit physiotherapy is ideal for practising this skill in your own home, where a fall is most likely to happen."] },
+      {
+        h2: "Why this skill matters",
+        body: [
+          "Many older adults who fall are not badly hurt by the fall itself, but end up on the floor for a long time simply because they are not sure how to get back up. Knowing a safe method — and having the strength to do it — reduces both the risk and the fear.",
+          "It is worth learning and gently practising this before you ever need it, ideally with guidance from a physiotherapist.",
+        ],
+      },
+      {
+        h2: "First, pause and check",
+        body: [
+          "If you fall, try not to rush. Take a moment to catch your breath and check whether you are hurt. If you feel you may be injured, it is safer to call for help and stay warm and comfortable than to force yourself up.",
+          "If you feel able to get up, do it slowly and in stages rather than all at once.",
+        ],
+      },
+      {
+        h2: "A safe way to get up, step by step",
+        list: [
+          "Stay calm, take a moment and check for injury",
+          "Roll onto your side, then onto your hands and knees",
+          "Crawl to a sturdy chair or piece of furniture",
+          "Place your hands on the seat and bring your stronger leg forward, foot flat",
+          "Push up through your arms and legs, then turn and sit on the chair",
+          "Rest for a few minutes before standing or doing anything else",
+        ],
+        body: [
+          "Only try this if you feel uninjured and able. It is best practised first with a physiotherapist, so you know you can do it safely before you ever need to.",
+        ],
+      },
+      {
+        h2: "If you can't get up",
+        body: [
+          "If you cannot get up, call for help — a personal alarm, phone or by attracting attention. Try to move to a carpeted or warm area, keep moving your joints to stay warm, and change position when you can to stay comfortable while you wait.",
+          "A personal alarm pendant is a simple, worthwhile safeguard for anyone at higher risk of falling, especially those living alone.",
+        ],
+      },
+      {
+        h2: "Building the strength and confidence to do it",
+        body: [
+          "Being able to get off the floor takes strength, mobility and practice — all of which physiotherapy can build. A physiotherapist can teach and rehearse the technique with you safely, strengthen the muscles involved, and reduce the fear that so often follows a fall.",
+          "Fletcher Physiotherapy provides falls prevention and recovery physiotherapy in your own home across Newcastle, Lake Macquarie and the Central Coast. To arrange a visit, call 0404 791 756.",
+        ],
+      },
     ],
   },
 ];
