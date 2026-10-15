@@ -15,6 +15,7 @@ const nextConfig = {
       { source: "/ndis-&-support-at-home", destination: "/ndis-physiotherapy-newcastle", permanent: true },
       { source: "/faq", destination: "/faqs", permanent: true },
       { source: "/bulk-bill-1", destination: "/contact", permanent: true },
+      { source: "/physiotherapy-elermore-vale", destination: "/physiotherapy-jesmond", permanent: true },
       { source: "/physiotherapy-auburn", destination: "/physiotherapy-sydney", permanent: true },
       { source: "/physiotherapy-ryde", destination: "/physiotherapy-sydney", permanent: true },
       { source: "/physiotherapy-parramatta", destination: "/physiotherapy-sydney", permanent: true },

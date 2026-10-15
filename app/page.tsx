@@ -71,14 +71,14 @@ export default function HomePage() {
       <section className="section-py bg-sand" id="clinics">
         <div className="container-px">
           <SectionHeading
-            eyebrow="Clinics & Home Visits"
-            title="Visit Our Newcastle Physiotherapy Clinics"
-            intro="Fletcher Physiotherapy now offers appointments at two convenient Newcastle clinic locations, in addition to our established mobile physiotherapy service. Patients can choose between home visits or attending one of our clinics depending on what best suits their needs."
+            eyebrow="Clinic & Home Visits"
+            title="Visit Our Jesmond Physiotherapy Clinic"
+            intro="Fletcher Physiotherapy now offers appointments at our Jesmond clinic on Mondays, in addition to our established mobile physiotherapy service. Patients can choose between home visits or attending one of our clinics depending on what best suits their needs."
           />
           <Link href="/book" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-800 hover:text-navy-900">
             Compare all booking options <Icon name="arrow" className="h-4 w-4" />
           </Link>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
             {clinics.map((c, i) => (
               <Reveal key={c.slug} delay={i * 80}>
                 <div className="card card-hover flex h-full flex-col">

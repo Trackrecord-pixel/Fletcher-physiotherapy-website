@@ -79,7 +79,7 @@ export default function Footer() {
 
           <div className="lg:col-span-3">
             <h2 className="text-sm font-semibold uppercase tracking-widest text-white">
-              Our Clinics
+              Our Clinic
             </h2>
             <ul className="mt-5 space-y-3 text-sm">
               {clinics.map((c) => (

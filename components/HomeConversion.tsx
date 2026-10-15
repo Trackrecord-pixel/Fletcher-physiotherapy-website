@@ -102,7 +102,7 @@ export function WhyCall() {
 const steps = [
   { title: "Call or send the form", text: `Call ${site.phone} or request a call back at the top of this page. It takes about two minutes. Calling for a parent or client? That's fine too.` },
   { title: "Have a quick chat", text: "We ask about what's going on, your goals, your suburb and how your care is funded, and answer your questions. No obligation." },
-  { title: "Choose a time that suits", text: "We book a home visit — in Sydney or the Newcastle region — or a Monday clinic appointment in Jesmond or Elermore Vale, and confirm the details with you." },
+  { title: "Choose a time that suits", text: "We book a home visit — in Sydney or the Newcastle region — or a Monday clinic appointment in Jesmond, and confirm the details with you." },
   { title: "We come to you", text: "Your first visit includes a thorough assessment in your own home. We explain what we find, start treatment and leave you with a simple plan." },
   { title: "We keep everyone in the loop", text: "We review your progress each visit and, with your consent, update family, your GP, support coordinator or provider." },
 ];

@@ -7,7 +7,7 @@ import { submitEnquiry, readForm, validateFields, isBot, type SubmitResult } fro
 
 const needs = [
   "Home visit physiotherapy",
-  "Clinic appointment (Jesmond / Elermore Vale)",
+  "Clinic appointment (Jesmond, Mondays)",
   "After a fall or worried about falls",
   "Coming home from hospital or surgery",
   "NDIS physiotherapy",

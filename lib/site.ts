@@ -79,7 +79,6 @@ export const conditionsNav: NavLink[] = [
 
 export const locationsNav: NavLink[] = [
   { label: "Jesmond Clinic", href: "/physiotherapy-jesmond" },
-  { label: "Elermore Vale Clinic", href: "/physiotherapy-elermore-vale" },
   { label: "Home Visit Physiotherapy", href: "/home-visit-physiotherapy-newcastle" },
   { label: "Sydney Physiotherapy", href: "/physiotherapy-sydney" },
   { label: "All Locations", href: "/locations" },
@@ -124,28 +123,6 @@ export const clinics: Clinic[] = [
       "On-site and street parking is available at Jesmond Central, with easy access from Blue Gum Road and Newcastle Road.",
     accessibility:
       "The clinic offers step-free, wheelchair-accessible entry with accessible parking nearby, making appointments comfortable for older adults and people with limited mobility.",
-  },
-  {
-    slug: "physiotherapy-elermore-vale",
-    name: "Elermore Vale",
-    hostCentre: "Elermore Vale Medical Centre",
-    address: "Shop 10–13, 137 Croudace Road, Elermore Vale NSW 2287",
-    suburb: "Elermore Vale",
-    postcode: "2287",
-    region: "Newcastle",
-    consultingDay: "Monday",
-    dayShort: "Mondays",
-    geo: { lat: -32.9132, lng: 151.664 },
-    intro:
-      "Fletcher Physiotherapy consults at Elermore Vale Medical Centre every Monday, providing experienced physiotherapy for pain, injuries, rehabilitation, balance and falls prevention — as well as home visits throughout Newcastle and Lake Macquarie.",
-    about: [
-      "Our Elermore Vale clinic operates from Elermore Vale Medical Centre on Croudace Road, a welcoming local practice serving the western Newcastle community. Consultations are available each Monday.",
-      "Care is led by an APA Titled Pain Physiotherapist experienced in chronic pain, musculoskeletal and sports injuries, balance and falls prevention, and post-operative rehabilitation. Every plan is practical, evidence-based and tailored to your individual goals.",
-    ],
-    parking:
-      "Free on-site parking is available at Elermore Vale Medical Centre, directly off Croudace Road.",
-    accessibility:
-      "The centre provides ground-floor, wheelchair-accessible access with accessible parking close to the entrance, so appointments are easy and comfortable for everyone.",
   },
 ];
 

@@ -11,7 +11,7 @@ import { locations, suburbs, clinics, site } from "@/lib/site";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
 const locationFaqs = [
-  { q: "Which areas does Fletcher Physiotherapy cover?", a: "We provide home visit physiotherapy across Newcastle, Lake Macquarie and the Central Coast, and see clients at our Jesmond and Elermore Vale clinics (both Mondays). From 9 November 2026 we also provide mobile physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs. If you're not sure we reach your suburb, just call us." },
+  { q: "Which areas does Fletcher Physiotherapy cover?", a: "We provide home visit physiotherapy across Newcastle, Lake Macquarie and the Central Coast, and see clients at our Jesmond clinic on Mondays. From 9 November 2026 we also provide mobile physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs. If you're not sure we reach your suburb, just call us." },
   { q: "Do you charge extra to travel to my home?", a: "Costs depend on your funding — NDIS, Support at Home or private. Call us on " + site.phone + " and we'll explain the options for your area clearly before your first visit." },
   { q: "Do I need a referral to book?", a: "Not for private physiotherapy — you can contact us directly. A GP referral may be needed for certain funding streams such as a GP Chronic Condition Management plan, DVA or some NDIS arrangements." },
   { q: "Can you visit someone in an aged care or retirement village?", a: "Yes. We regularly visit residents in private homes, retirement villages and residential settings across the region, coordinating with families, providers and support coordinators." },
@@ -20,7 +20,7 @@ const locationFaqs = [
 export const metadata: Metadata = {
   title: "Locations | Newcastle & Sydney Home Visits",
   description:
-    "Clinics in Jesmond and Elermore Vale (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
+    "Clinic in Jesmond (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
   alternates: { canonical: "/locations" },
   openGraph: {
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Locations | Newcastle & Sydney Home Visits",
     description:
-      "Clinics in Jesmond and Elermore Vale (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
+      "Clinic in Jesmond (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
     url: "/locations",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Locations | Newcastle & Sydney Home Visits",
     description:
-      "Clinics in Jesmond and Elermore Vale (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
+      "Clinic in Jesmond (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
     images: ["/images/og-default.png"],
   },
 };
@@ -46,8 +46,8 @@ export default function LocationsPage() {
     <>
       <PageHero
         eyebrow="Our Locations"
-        title="Newcastle physiotherapy clinics & home visits"
-        intro="Choose the option that suits you best — visit one of our two Newcastle clinics, or have a physiotherapist come to your home across Newcastle, Lake Macquarie and the Central Coast — and, from November 2026, Sydney."
+        title="Newcastle physiotherapy clinic & home visits"
+        intro="Choose the option that suits you best — visit our Jesmond clinic, or have a physiotherapist come to your home across Newcastle, Lake Macquarie and the Central Coast — and, from November 2026, Sydney."
         breadcrumb={[
           { name: "Home", href: "/" },
           { name: "Locations", href: "/locations" },
@@ -56,7 +56,7 @@ export default function LocationsPage() {
 
       <section className="section-py bg-white">
         <div className="container-px">
-          <SectionHeading eyebrow="Clinic Appointments" title="Our Newcastle clinics" />
+          <SectionHeading eyebrow="Clinic Appointments" title="Our Newcastle clinic" />
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {clinics.map((c, i) => (
               <Reveal key={c.slug} delay={i * 80}>

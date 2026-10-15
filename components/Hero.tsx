@@ -24,7 +24,7 @@ export default function Hero() {
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-navy-700">
             Experienced physiotherapy in your own home, for older adults, families, NDIS participants and
             Support at Home clients — now visiting homes around Sydney Olympic Park and the Inner West from
-            9 November 2026, alongside Newcastle, Lake Macquarie, the Central Coast and our two Newcastle clinics.
+            9 November 2026, alongside Newcastle, Lake Macquarie, the Central Coast and our Jesmond clinic.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

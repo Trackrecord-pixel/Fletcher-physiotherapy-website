@@ -51,7 +51,7 @@ export default function Header() {
       <div className="hidden border-b border-navy-100 bg-navy-800 text-white lg:block">
         <div className="container-px flex h-10 items-center justify-between text-xs">
           <p className="font-medium tracking-wide text-navy-100">
-            Home visits in Sydney &amp; Newcastle · Newcastle clinics
+            Home visits in Sydney &amp; Newcastle · Jesmond clinic
           </p>
           <div className="flex items-center gap-5">
             <a href={site.phoneHref} className="inline-flex items-center gap-1.5 hover:text-beige-200">
@@ -155,7 +155,7 @@ export default function Header() {
               </Link>
             ))}
             <div className="mt-2 rounded-xl bg-sand p-2">
-              <p className="px-2 py-1 text-xs font-semibold uppercase tracking-widest text-navy-500">Our Clinics</p>
+              <p className="px-2 py-1 text-xs font-semibold uppercase tracking-widest text-navy-500">Locations</p>
               {locationsNav.map((s) => (
                 <Link
                   key={s.href}

@@ -12,6 +12,7 @@ const staticRoutes = [
   "/daniel-lee-physiotherapist-newcastle",
   "/locations",
   "/physio-near-me",
+  "/ndis-physiotherapy-sydney",
   "/book",
   "/refer-a-patient",
   "/contact",

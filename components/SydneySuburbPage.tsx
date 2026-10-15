@@ -10,7 +10,7 @@ import { sydneySuburbs, type SydneySuburb } from "@/lib/sydneySuburbs";
 
 const services = [
   { label: "Home visit physiotherapy", href: "/home-visit-physiotherapy-newcastle", icon: "home" },
-  { label: "NDIS physiotherapy", href: "/ndis-physiotherapy-newcastle", icon: "shield" },
+  { label: "NDIS physiotherapy in Sydney", href: "/ndis-physiotherapy-sydney", icon: "shield" },
   { label: "Support at Home physiotherapy", href: "/support-at-home-physiotherapy-newcastle", icon: "heart" },
   { label: "Falls prevention", href: "/falls-prevention-physiotherapy-newcastle", icon: "balance" },
   { label: "Aged care & retirement living", href: "/aged-care-physiotherapy-newcastle", icon: "user" },
@@ -25,6 +25,10 @@ export default function SydneySuburbPage({ s }: { s: SydneySuburb }) {
       a: `Our Sydney home visits start on 9 November 2026. You're welcome to call now to ask questions, register your interest or arrange a first appointment.`,
     },
     ...s.faqs,
+    {
+      q: `Can NDIS participants in ${s.name} get physio at home?`,
+      a: `Yes. We're a registered NDIS provider and, from 9 November 2026, visit agency-managed, plan-managed and self-managed participants at home in ${s.name}. Physio is usually funded from Capacity Building – Improved Daily Living. See our NDIS physiotherapy Sydney page for details.`,
+    },
     {
       q: "Do I need a referral?",
       a: "No — you can book privately without a referral. A GP referral is needed for Medicare-subsidised sessions under a GP Chronic Condition Management Plan (GPCCMP), and NDIS and Support at Home have their own arrangements.",
@@ -116,9 +120,9 @@ export default function SydneySuburbPage({ s }: { s: SydneySuburb }) {
               <h2 className="text-2xl text-navy-900 sm:text-3xl">Funding options</h2>
               <p className="prose-navy mt-4">
                 We see NDIS participants (agency, plan and self-managed), Support at Home clients (formerly Home Care
-                Packages), people with a GP Chronic Condition Management Plan (GPCCMP), DVA and private clients.
+                Packages), people with a GP Chronic Condition Management Plan (GPCCMP) and private clients.
                 Read more about{" "}
-                <Link href="/ndis-physiotherapy-newcastle" className="font-semibold underline">NDIS physiotherapy</Link> and{" "}
+                <Link href="/ndis-physiotherapy-sydney" className="font-semibold underline">NDIS physiotherapy in Sydney</Link> and{" "}
                 <Link href="/support-at-home-physiotherapy-newcastle" className="font-semibold underline">Support at Home physiotherapy</Link>.
               </p>
             </div>

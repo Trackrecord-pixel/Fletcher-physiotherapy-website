@@ -52,7 +52,7 @@ export const sydneySuburbs: SydneySuburb[] = [
     faqs: [
       {
         q: "Do you have a clinic in Sydney Olympic Park?",
-        a: "No. In Sydney we are a mobile service — we come to your home, retirement village or aged care residence. Our clinics are in Newcastle (Jesmond and Elermore Vale).",
+        a: "No. In Sydney we are a mobile service — we come to your home, retirement village or aged care residence. Our clinic is in Jesmond, Newcastle.",
       },
       {
         q: "Can you visit me in an apartment building?",
@@ -206,7 +206,7 @@ export const sydneySuburbs: SydneySuburb[] = [
       },
       {
         q: "How is physiotherapy paid for?",
-        a: "Options include NDIS, Support at Home (formerly Home Care Packages), Medicare-subsidised sessions under a GP Chronic Condition Management Plan (GPCCMP), DVA, or private payment. We'll explain what applies to you.",
+        a: "Options include NDIS, Support at Home (formerly Home Care Packages), Medicare-subsidised sessions under a GP Chronic Condition Management Plan (GPCCMP), or private payment. We'll explain what applies to you.",
       },
     ],
   },

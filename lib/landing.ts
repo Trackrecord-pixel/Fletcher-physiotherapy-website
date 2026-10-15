@@ -348,7 +348,7 @@ export const landingPages: Record<string, LandingContent> = {
       },
       {
         q: "Do you see NDIS participants in Sydney?",
-        a: "From 9 November 2026 we provide mobile physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs. Call us to check availability for a participant's suburb.",
+        a: "From 9 November 2026 we provide mobile physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs. See our NDIS physiotherapy Sydney page, or call us to check availability for a participant's suburb.",
       },
     ],
     related: [
@@ -357,6 +357,7 @@ export const landingPages: Record<string, LandingContent> = {
       { label: "Home Visit Physiotherapy Newcastle", href: "/home-visit-physiotherapy-newcastle" },
       { label: "Falls Prevention Physiotherapy Newcastle", href: "/falls-prevention-physiotherapy-newcastle" },
       { label: "NDIS Physiotherapy: A Complete Guide", href: "/blog/ndis-physiotherapy-complete-guide" },
+      { label: "NDIS Physiotherapy Sydney", href: "/ndis-physiotherapy-sydney" },
       { label: "Mobile Physiotherapy Sydney", href: "/physiotherapy-sydney" },
     ],
     ctaTitle: "Refer an NDIS participant or book a home assessment",

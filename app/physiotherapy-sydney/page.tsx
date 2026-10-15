@@ -131,7 +131,7 @@ export default function SydneyPage() {
                 Not sure whether mobile physiotherapy is right for you or a family member?{" "}
                 <Link href="/contact" className="font-semibold text-navy-800 underline decoration-clay-300 underline-offset-2">Get in touch</Link>{" "}
                 and we can talk it through. You can also{" "}
-                <Link href="/services" className="font-semibold text-navy-800 underline decoration-clay-300 underline-offset-2">explore all our physiotherapy services</Link>.
+                <Link href="/services" className="font-semibold text-navy-800 underline decoration-clay-300 underline-offset-2">explore all our physiotherapy services</Link>. NDIS participants and coordinators: see <Link href="/ndis-physiotherapy-sydney" className="font-semibold text-navy-800 underline decoration-clay-300 underline-offset-2">NDIS physiotherapy in Sydney</Link>.
               </p>
             </div>
 

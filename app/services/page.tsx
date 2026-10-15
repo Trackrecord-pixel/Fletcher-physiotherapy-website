@@ -11,7 +11,7 @@ import { BreadcrumbSchema } from "@/components/StructuredData";
 import { services, conditionsNav } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Physio Services: Home Visits & Clinics",
+  title: "Physio Services: Home Visits & Clinic",
   description:
     "Home visit physio, NDIS, Support at Home, chronic pain, falls prevention, post-hospital rehab and strength programs — at home or in our Newcastle clinics.",
   alternates: { canonical: "/services" },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Physio Services: Home Visits & Clinics",
+    title: "Physio Services: Home Visits & Clinic",
     description:
       "Home visit physio, NDIS, Support at Home, chronic pain, falls prevention, post-hospital rehab and strength programs — at home or in our Newcastle clinics.",
     url: "/services",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Physio Services: Home Visits & Clinics",
+    title: "Physio Services: Home Visits & Clinic",
     description:
       "Home visit physio, NDIS, Support at Home, chronic pain, falls prevention, post-hospital rehab and strength programs — at home or in our Newcastle clinics.",
     images: ["/images/og-default.png"],

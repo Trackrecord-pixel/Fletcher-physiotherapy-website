@@ -189,7 +189,7 @@ export default async function ArticlePage({
             </p>
             <p className="mt-2 text-navy-600">
               We come to you across Newcastle, Lake Macquarie and the Central Coast — and selected
-              Sydney areas from 9 November 2026. Clinic appointments in Jesmond and Elermore Vale.
+              Sydney areas from 9 November 2026. Clinic appointments in Jesmond on Mondays.
             </p>
             <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row">
               <Link href="/contact" className="btn-primary">Book a Home Visit</Link>
