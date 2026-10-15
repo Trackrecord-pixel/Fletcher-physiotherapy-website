@@ -19,6 +19,77 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "ndis-changes-october-2026-physiotherapy",
+    title: "NDIS Changes from 1 October 2026: What They Mean for Your Physio",
+    seoTitle: "NDIS Changes October 2026: What They Mean for Physio",
+    description: "NDIS improved daily living budgets drop 10% from 1 October 2026 as plans are reassessed or renewed. What it means for physio and how to make sessions count.",
+    date: "2026-10-15",
+    readMins: 6,
+    excerpt: "The NDIS is changing how much is funded for improved daily living — the budget most physio comes from. Here's what's changing, when, and how to get the most from your physio.",
+    updated: "2026-10-15",
+    faqs: [
+      { q: "Will my NDIS physio funding be cut straight away?", a: "Not necessarily. The 10% reduction to improved daily living budgets applies when a plan is reassessed or a new plan is approved from 1 October 2026, and when plans are renewed from 1 February 2027. Check your plan dates with your support coordinator or the NDIA." },
+      { q: "Is physiotherapy affected by the October 2026 NDIS changes?", a: "Physiotherapy is usually funded from the improved daily living (Capacity Building) budget, which is being reduced by 10% as plans are reassessed or renewed. How much this affects you depends on your plan and how much of the budget you currently use." },
+      { q: "Can I ask for a review of the 10% reduction?", a: "The government has said the reset itself can't be reviewed. You can still ask for a change to your plan if there's a significant change in your functional capacity or circumstances, and some participants with 24-hour support needs can apply for a variation." },
+      { q: "Can Fletcher Physiotherapy help me plan my physio budget?", a: "Yes. We're a registered NDIS provider (NDIS0023718). We'll set clear goals with you, agree session frequency and costs in a written service agreement, and provide reports you can use at your next plan reassessment." },
+    ],
+    sources: [
+      { label: "NDIS – Changes to support budgets from 1 October", url: "https://ndis.gov.au/news/11695-changes-support-budgets-1-october" },
+      { label: "Department of Health – Funding changes for NDIS supports", url: "https://www.health.gov.au/our-work/ndis-legislation-changes/amendments/funding-changes-for-ndis-supports" },
+    ],
+    sections: [
+      {
+        h2: "Quick answer: what's changing?",
+        body: [
+          "From 1 October 2026, the NDIS is resetting funding for some supports in participants' plans:",
+        ],
+        list: [
+          "Improved daily living budgets (where most physio comes from) are reduced by 10%",
+          "Social, economic and community participation budgets are reduced by 50%",
+          "The change applies when a plan is reassessed or a new plan is approved from 1 October 2026",
+          "Plans being renewed are affected from 1 February 2027",
+          "Some supports are protected, including disability-related health supports and personal mobility equipment",
+          "The reduction applies to your budget, not necessarily to what you actually spend",
+        ],
+      },
+      {
+        h2: "What this means for physiotherapy",
+        body: [
+          "Physiotherapy is usually funded from the improved daily living budget, alongside other therapies such as occupational therapy and speech pathology. A smaller budget may mean fewer funded therapy hours across the year, so planning how you use them matters more than ever.",
+          "If you don't currently use all of your improved daily living budget, the change may make little practical difference. If you do, it's worth talking with your therapists and support coordinator now, before your next reassessment.",
+        ],
+      },
+      {
+        h2: "How to make every physio session count",
+        body: [
+          "A few practical steps help your physio budget go further:",
+        ],
+        list: [
+          "Set clear, functional goals — like walking to the shops or getting in and out of bed safely",
+          "Agree session frequency and costs up front in a written service agreement",
+          "Ask for a home exercise program you, your family or support workers can practise between visits",
+          "Combine assessment, equipment advice and training into fewer, well-planned visits",
+          "Keep an eye on spending in the my NDIS app or participant portal",
+          "Ask for a progress report before your plan reassessment, so planners can see what therapy is achieving",
+        ],
+      },
+      {
+        h2: "Why reports matter more now",
+        body: [
+          "When budgets are tighter, clear evidence helps. A good physiotherapy report explains what you can and can't do, why, what therapy is aiming for, and what support is recommended. That gives planners what they need to decide what's reasonable and necessary for you.",
+          "If your functional capacity or circumstances change significantly, you can still ask the NDIA for a change to your plan, and a recent report can support that request.",
+        ],
+      },
+      {
+        h2: "How Fletcher Physiotherapy can help",
+        body: [
+          "We're a registered NDIS provider (NDIS0023718), so we can work with agency-managed, plan-managed and self-managed participants. We provide physiotherapy at home across Newcastle, Lake Macquarie and the Central Coast, and around Sydney Olympic Park and the Inner West from 9 November 2026.",
+          "We'll help you plan sessions around your goals and budget, set out costs clearly before we start, and provide reports for your reassessment. Our founder Daniel Lee is an APA Titled Pain Physiotherapist and speaks English and Korean. To talk it through, call 0404 791 756 or visit our NDIS physiotherapy pages for Newcastle and Sydney.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "prehabilitation-preparing-for-surgery",
     title: "Prehabilitation: How to Prepare Your Body Before Surgery",
     description:
