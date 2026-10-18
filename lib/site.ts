@@ -268,6 +268,27 @@ export const team: TeamMember[] = [
     ],
     languages: "English, Cantonese, Mandarin",
   },
+  {
+    slug: "carolina-cardenas",
+    name: "Carolina Cardenas",
+    role: "Home Visit Physiotherapist — Newcastle & Central Coast",
+    photo: "/team/carolina-cardenas.jpg",
+    credentials: "Bachelor of Physiotherapy, Universidad Mayor (Chile) · AHPRA-registered physiotherapist",
+    bio: [
+      "Carolina is an AHPRA-registered physiotherapist with more than seven years of experience, and provides home visit physiotherapy across Newcastle and the Central Coast.",
+      "Since moving to Australia she has worked in mobile physiotherapy for older adults living at home, in residential aged care running falls prevention programs and strength and balance classes, in a private hospital supporting people after surgery and through discharge planning, and in community physiotherapy for NDIS participants on the Central Coast.",
+      "She is experienced in writing clear assessments, progress notes and NDIS reports, and in working closely with families, carers, support coordinators and other health professionals. Before coming to Australia, Carolina worked for several years in musculoskeletal and post-operative rehabilitation in Chile.",
+      "Carolina builds practical, goal-focused programs around each person's home and routine — from getting in and out of bed and chairs safely to walking with confidence in the community — and makes sure families and carers know how to help between visits.",
+    ],
+    interests: [
+      "Home Visit Physiotherapy",
+      "Older Adults & Aged Care",
+      "Falls Prevention",
+      "NDIS Physiotherapy",
+      "Post-Operative Rehabilitation",
+      "Strength & Balance",
+    ],
+  },
 ];
 
 export type Faq = { q: string; a: string };
