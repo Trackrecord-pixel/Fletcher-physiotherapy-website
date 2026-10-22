@@ -5,6 +5,7 @@ import FAQAccordion from "./FAQAccordion";
 import CTASection from "./CTASection";
 import Reveal from "./Reveal";
 import ContactForm from "./ContactForm";
+import WhyHomeVisits from "./WhyHomeVisits";
 import { site, suburbs } from "@/lib/site";
 import { FaqSchema, ServiceSchema, BreadcrumbSchema } from "./StructuredData";
 import type { Faq } from "@/lib/site";
@@ -21,6 +22,7 @@ export type LandingContent = {
   faqs: Faq[];
   related: { label: string; href: string }[];
   ctaTitle?: string;
+  whyHome?: boolean;
 };
 
 export default function LandingPage({ c }: { c: LandingContent }) {
@@ -118,7 +120,9 @@ export default function LandingPage({ c }: { c: LandingContent }) {
         </div>
       </section>
 
-      <section className="section-py bg-sand">
+      {c.whyHome && <WhyHomeVisits region="newcastle" />}
+
+      <section className={`section-py ${c.whyHome ? "bg-white" : "bg-sand"}`}>
         <div className="container-px">
           <h2 className="text-center text-2xl text-navy-900 sm:text-3xl">
             Suburbs we service

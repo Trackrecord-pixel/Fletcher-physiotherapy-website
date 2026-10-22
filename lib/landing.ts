@@ -3,6 +3,7 @@ import type { LandingContent } from "@/components/LandingPage";
 export const landingPages: Record<string, LandingContent> = {
   "home-visit-physiotherapy-newcastle": {
     slug: "home-visit-physiotherapy-newcastle",
+    whyHome: true,
     eyebrow: "Home Visit Physiotherapy Newcastle",
     h1: "Home Visit Physiotherapy in Newcastle",
     serviceName: "Home Visit Physiotherapy Newcastle",
@@ -83,6 +84,7 @@ export const landingPages: Record<string, LandingContent> = {
 
   "mobile-physiotherapist-newcastle": {
     slug: "mobile-physiotherapist-newcastle",
+    whyHome: true,
     eyebrow: "Mobile Physiotherapist Newcastle",
     h1: "Mobile Physiotherapist in Newcastle",
     serviceName: "Mobile Physiotherapist Newcastle",

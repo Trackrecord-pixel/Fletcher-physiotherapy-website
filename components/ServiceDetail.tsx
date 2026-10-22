@@ -21,6 +21,7 @@ export type ServiceDetailProps = {
   ctaTitle?: string;
   ctaText?: string;
   extraCta?: { label: string; href: string };
+  beforeCta?: React.ReactNode;
 };
 
 export default function ServiceDetail({
@@ -36,6 +37,7 @@ export default function ServiceDetail({
   ctaTitle,
   ctaText,
   extraCta,
+  beforeCta,
 }: ServiceDetailProps) {
   return (
     <>
@@ -131,6 +133,7 @@ export default function ServiceDetail({
         </div>
       </section>
 
+      {beforeCta}
       <CTASection title={ctaTitle} text={ctaText} />
       <ServiceSchema name={title} description={intro} slug={slug} />
       <BreadcrumbSchema

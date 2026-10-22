@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ServiceDetail from "@/components/ServiceDetail";
+import WhyHomeVisits from "@/components/WhyHomeVisits";
 
 export const metadata: Metadata = {
   title: "Home Visit Physiotherapy Newcastle | Mobile Physio",
@@ -59,6 +60,7 @@ export default function Page() {
         { icon: "balance", title: "Falls Risk", text: "Reduce falls risk with balance training and a home safety review." },
       ]}
       ctaTitle="Ready for physiotherapy in the comfort of your home?"
+      beforeCta={<WhyHomeVisits region="newcastle" />}
     />
   );
 }

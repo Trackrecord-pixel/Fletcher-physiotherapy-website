@@ -6,6 +6,7 @@ import type { IconName } from "@/components/Icon";
 import FAQAccordion from "@/components/FAQAccordion";
 import AuthorReview from "@/components/AuthorReview";
 import OfferWindow from "@/components/OfferWindow";
+import WhyHomeVisits from "@/components/WhyHomeVisits";
 import { BreadcrumbSchema, FaqSchema } from "@/components/StructuredData";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 import { site } from "@/lib/site";
@@ -191,6 +192,8 @@ export default function SydneyPage() {
           </aside>
         </div>
       </section>
+
+      <WhyHomeVisits region="sydney" />
 
       {/* Sydney-specific bottom CTA */}
       <section className="bg-navy-900">
