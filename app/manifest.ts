@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Home visit physiotherapy across Newcastle, Lake Macquarie and the Central Coast.",
     start_url: "/",
     display: "standalone",
-    background_color: "#ffffff",
-    theme_color: "#2e5a4c",
+    background_color: "#0f1714",
+    theme_color: "#0f1714",
     icons: [
       { src: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
     ],

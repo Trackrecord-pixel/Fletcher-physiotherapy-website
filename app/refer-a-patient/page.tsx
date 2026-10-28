@@ -54,12 +54,42 @@ export default function ReferAPatientPage() {
       <PageHero
         eyebrow="Refer a Patient"
         title="Refer Your Client to Fletcher Physiotherapy"
-        intro="We make referrals simple for case managers, support coordinators, aged care providers and GPs — with fast communication and dependable, goal-focused care delivered in your client's home."
+        intro="We make referrals simple for case managers, support coordinators, aged care providers and GPs — with fast communication and dependable, goal-focused care — in clinic or at home."
         breadcrumb={[
           { name: "Home", href: "/" },
           { name: "Refer a Patient", href: "/refer-a-patient" },
         ]}
       />
+
+      <section className="section-py bg-cream" id="referral-form">
+        <div className="container-px grid gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <span className="eyebrow"><Icon name="doc" className="h-4 w-4" /> Referral Form</span>
+            <h2 className="mt-4 text-3xl text-navy-900">Send us a referral</h2>
+            <p className="mt-4 text-navy-600">
+              Complete the form and our team will contact the participant to arrange an
+              initial assessment — in clinic or at home. Prefer to talk first?
+            </p>
+            <div className="mt-6 space-y-3">
+              <a href={site.phoneHref} className="flex items-center gap-3 text-navy-800 hover:text-navy-900">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-navy-800 shadow-card">
+                  <Icon name="phone" className="h-5 w-5" />
+                </span>
+                <span className="font-semibold">{site.phone}</span>
+              </a>
+              <a href={site.emailHref} className="flex items-center gap-3 text-navy-800 hover:text-navy-900">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-navy-800 shadow-card">
+                  <Icon name="mail" className="h-5 w-5" />
+                </span>
+                <span className="font-semibold">{site.email}</span>
+              </a>
+            </div>
+          </div>
+          <div className="lg:col-span-7">
+            <ReferralForm />
+          </div>
+        </div>
+      </section>
 
       <section className="section-py bg-white">
         <div className="container-px">
@@ -105,11 +135,11 @@ export default function ReferAPatientPage() {
       <section className="section-py bg-white">
         <div className="container-px grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <span className="eyebrow"><Icon name="pin" className="h-4 w-4" /> New: Sydney referrals</span>
+            <span className="eyebrow"><Icon name="pin" className="h-4 w-4" /> Sydney referrals</span>
             <h2 className="mt-4 text-3xl text-navy-900">Referring a client in Sydney?</h2>
             <p className="mt-4 text-navy-600">
-              We provide mobile physiotherapy around Sydney Olympic Park, the Inner West
-              and surrounding suburbs. We welcome referrals now for services starting from that date.
+              We provide home visits around Sydney Olympic Park, the Inner West, Parramatta and
+              Bankstown–Yagoona, plus clinic appointments at Yagoona and Parramatta.
             </p>
             <Link href="/physiotherapy-sydney" className="btn-secondary mt-6">
               Sydney service details <Icon name="arrow" className="h-4 w-4" />
@@ -136,38 +166,8 @@ export default function ReferAPatientPage() {
               ))}
             </ul>
             <p className="mt-5 text-sm text-navy-500">
-              Use the form below and include the client&rsquo;s suburb, or call {site.phone} to discuss availability in their area.
+              Use the referral form above and include the client&rsquo;s suburb, or call {site.phone} to discuss availability in their area.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-py bg-sand">
-        <div className="container-px grid gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-5">
-            <span className="eyebrow"><Icon name="doc" className="h-4 w-4" /> Referral Form</span>
-            <h2 className="mt-4 text-3xl text-navy-900">Send us a referral</h2>
-            <p className="mt-4 text-navy-600">
-              Complete the form and our team will contact the participant to arrange an
-              initial home visit assessment. Prefer to talk first?
-            </p>
-            <div className="mt-6 space-y-3">
-              <a href={site.phoneHref} className="flex items-center gap-3 text-navy-800 hover:text-navy-900">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-navy-800 shadow-card">
-                  <Icon name="phone" className="h-5 w-5" />
-                </span>
-                <span className="font-semibold">{site.phone}</span>
-              </a>
-              <a href={site.emailHref} className="flex items-center gap-3 text-navy-800 hover:text-navy-900">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-navy-800 shadow-card">
-                  <Icon name="mail" className="h-5 w-5" />
-                </span>
-                <span className="font-semibold">{site.email}</span>
-              </a>
-            </div>
-          </div>
-          <div className="lg:col-span-7">
-            <ReferralForm />
           </div>
         </div>
       </section>

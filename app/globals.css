@@ -2,34 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==========================================================================
+   Fletcher Physiotherapy — dark theme (Oct 2026)
+   Deep green-black base, Inter typography, eucalyptus + mint accents,
+   outline pill buttons. Inspired by premium clinic sites; our own palette.
+   ========================================================================== */
 :root {
-  --navy: #13212b;
-  --beige: #f7f4ef;
-  /* Font stacks. To use Google Fonts (Inter + Fraunces) in production, wire up
-     next/font in app/layout.tsx and these variables will be overridden. */
+  --base: #0f1714;      /* page background */
+  --raised: #16211d;    /* cards / alternate sections */
+  --deep: #0a0f0d;      /* darkest bands, footer */
+  --green: #2b4f43;     /* eucalyptus panels */
+  --green-2: #23423a;
+  --mint: #87f9d3;      /* accent */
+  --mint-soft: #b8fde6;
+  --text: #edf4f2;      /* headings */
+  --text-2: #c9d6d1;    /* body */
+  --text-3: #93a69e;    /* muted */
+  --line: rgba(237, 244, 242, 0.13);
+  --line-strong: rgba(237, 244, 242, 0.45);
+
   --font-inter: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif;
-  --font-fraunces: "Fraunces", ui-serif, Georgia, Cambria, "Times New Roman",
-    serif;
+  --font-display: "Syncopate", "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
-    font-size: 112.5%; /* 18px base — larger, easier to read for older eyes */
+    font-size: 112.5%; /* 18px base — easier to read for older eyes */
+    color-scheme: dark;
   }
 
   body {
-    @apply bg-cream font-sans text-navy-800 antialiased;
-    font-feature-settings: "kern", "liga";
+    @apply font-sans antialiased;
+    background-color: var(--base);
+    color: var(--text-2);
+    font-feature-settings: "kern", "liga", "cv11";
     line-height: 1.7;
   }
 
   h1, h2, h3, h4 {
-    @apply font-serif tracking-tight text-navy-900;
-    font-weight: 500;
-    font-optical-sizing: auto;
+    @apply font-sans;
+    color: var(--text);
+    font-weight: 600;
+    letter-spacing: -0.025em;
     text-wrap: balance;
   }
 
@@ -38,11 +55,19 @@
   }
 
   ::selection {
-    @apply bg-navy-800 text-white;
+    background: var(--mint);
+    color: var(--base);
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-euc-500 ring-offset-2 ring-offset-white rounded-sm;
+    outline: 2px solid var(--mint);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  select option {
+    color: #0f1714;
+    background: #fff;
   }
 }
 
@@ -56,48 +81,125 @@
   }
 
   .btn {
-    @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-semibold transition-all duration-200 focus-visible:ring-2 focus-visible:ring-offset-2;
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full px-7 py-3 text-base font-medium transition-all duration-200;
   }
 
-  /* Primary — eucalyptus (clinic / main action) */
+  /* Primary — mint fill */
   .btn-primary {
-    @apply btn bg-euc-600 text-white hover:bg-euc-700 hover:-translate-y-0.5 hover:shadow-card-hover;
+    @apply btn;
+    background: var(--mint);
+    color: var(--base);
+    border: 1px solid var(--mint);
+  }
+  .btn-primary:hover {
+    background: var(--mint-soft);
+    border-color: var(--mint-soft);
+    transform: translateY(-1px);
   }
 
-  /* Secondary — outline */
-  .btn-secondary {
-    @apply btn border border-navy-300 bg-white text-navy-900 hover:border-navy-900 hover:bg-beige-50;
-  }
-
-  /* Accent — ink (home visits / strong contrast) */
+  /* Outline pill (Foundry-style) */
+  .btn-outline,
+  .btn-secondary,
   .btn-accent {
-    @apply btn bg-navy-900 text-white hover:bg-navy-800 hover:-translate-y-0.5 hover:shadow-card-hover;
+    @apply btn;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--line-strong);
+  }
+  .btn-outline:hover,
+  .btn-secondary:hover,
+  .btn-accent:hover {
+    background: rgba(237, 244, 242, 0.08);
+    border-color: var(--text);
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-euc-600;
+    @apply inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.22em];
+    color: var(--mint);
   }
 
   .card {
-    @apply rounded-3xl border border-beige-200 bg-white p-7 shadow-card transition-all duration-300;
+    @apply rounded-3xl p-7 transition-all duration-300;
+    background: var(--raised);
+    border: 1px solid var(--line);
   }
 
-  .card-hover {
-    @apply hover:-translate-y-1 hover:border-euc-200 hover:shadow-card-hover;
+  .card-hover:hover {
+    transform: translateY(-4px);
+    border-color: rgba(135, 249, 211, 0.4);
   }
 
   .tag {
-    @apply inline-flex w-fit items-center gap-1.5 rounded-full bg-euc-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-euc-700;
+    @apply inline-flex w-fit items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium uppercase tracking-wide;
+    background: rgba(135, 249, 211, 0.1);
+    color: var(--mint);
   }
 
   .prose-navy p {
-    @apply mb-5 text-lg leading-relaxed text-navy-700;
+    @apply mb-5 text-lg leading-relaxed;
+    color: var(--text-2);
   }
 
   .prose-navy a {
-    @apply font-semibold text-euc-700 underline decoration-euc-200 underline-offset-4 hover:decoration-euc-600;
+    @apply font-medium underline underline-offset-4;
+    color: var(--mint);
+    text-decoration-color: rgba(135, 249, 211, 0.4);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
   }
 }
+
+/* ==========================================================================
+   Dark-theme mapping for existing utility classes.
+   Lets every page switch to the dark look without rewriting each component.
+   (Placed after Tailwind utilities so these win.)
+   ========================================================================== */
+
+/* Surfaces */
+.bg-white, .bg-cream, .bg-beige-50 { background-color: var(--base); }
+.bg-sand, .bg-beige-100, .bg-euc-50, .bg-euc-100, .bg-clay-50, .bg-beige-200 { background-color: var(--raised); }
+.bg-white\/95, .bg-cream\/95, .bg-cream\/80 { background-color: rgba(15, 23, 20, 0.88); }
+.bg-navy-950, .bg-navy-900 { background-color: var(--deep); }
+.bg-navy-800 { background-color: #13201b; }
+.bg-navy-700 { background-color: #1c2c26; }
+.bg-euc-600 { background-color: var(--green); }
+.bg-euc-700 { background-color: var(--green-2); }
+
+/* Cards placed on base sections read as raised */
+section .card, .rounded-3xl.border.bg-white, .rounded-2xl.border.bg-white { background-color: var(--raised); }
+
+/* Text */
+.text-navy-900, .text-navy-800 { color: var(--text); }
+.text-navy-700 { color: #d6e1dd; }
+.text-navy-600 { color: var(--text-2); }
+.text-navy-500, .text-navy-400 { color: var(--text-3); }
+.text-navy-300, .placeholder\:text-navy-300::placeholder { color: #6e8178; }
+.text-euc-600, .text-euc-700, .text-euc-800 { color: var(--mint); }
+.text-clay-600 { color: #e3a582; }
+
+/* Hover text */
+.hover\:text-navy-900:hover, .hover\:text-navy-700:hover { color: #ffffff; }
+.hover\:text-euc-700:hover, .hover\:text-euc-800:hover, .group:hover .group-hover\:text-euc-600 { color: var(--mint-soft); }
+
+/* Hover surfaces */
+.hover\:bg-beige-50:hover, .hover\:bg-euc-50:hover, .hover\:bg-white:hover { background-color: rgba(237, 244, 242, 0.06); }
+
+/* Borders & dividers */
+.border-navy-100, .border-navy-200, .border-navy-300, .border-beige-200, .border-beige-300, .border-clay-200,
+.divide-navy-100 > :not([hidden]) ~ :not([hidden]) { border-color: var(--line); }
+.hover\:border-navy-800:hover, .hover\:border-navy-900:hover { border-color: var(--line-strong); }
+.hover\:border-euc-200:hover, .hover\:border-euc-600:hover { border-color: rgba(135, 249, 211, 0.5); }
+.focus\:border-navy-500:focus { border-color: var(--mint); }
+.focus\:ring-navy-200:focus { --tw-ring-color: rgba(135, 249, 211, 0.25); }
+
+/* Underline decorations */
+.decoration-euc-200, .decoration-euc-300, .decoration-clay-300 { text-decoration-color: rgba(135, 249, 211, 0.45); }
+
+/* Shadows are subtler on dark */
+.shadow-card { box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03), 0 18px 40px -24px rgba(0, 0, 0, 0.6); }
+.shadow-card-hover, .hover\:shadow-card-hover:hover { box-shadow: 0 24px 50px -24px rgba(0, 0, 0, 0.75); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
