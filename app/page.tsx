@@ -4,6 +4,7 @@ import Icon from "@/components/Icon";
 import FAQAccordion from "@/components/FAQAccordion";
 import Reveal from "@/components/Reveal";
 import CallbackForm from "@/components/CallbackForm";
+import HeroVideo from "@/components/HeroVideo";
 import AuthorReview from "@/components/AuthorReview";
 import { ReviewStrip } from "@/components/HomeConversion";
 import { FaqSchema, PersonSchema } from "@/components/StructuredData";
@@ -96,18 +97,7 @@ export default function HomePage() {
         className="relative isolate flex min-h-[82vh] items-center justify-center overflow-hidden bg-cover bg-center text-center lg:min-h-[90vh]"
         style={{ backgroundImage: "url(/videos/fletcher-hero-poster.jpg)", backgroundColor: "#0a0f0d" }}
       >
-        <video
-          className="absolute inset-0 -z-20 h-full w-full object-cover motion-reduce:hidden"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster="/videos/fletcher-hero-poster.jpg"
-          aria-hidden="true"
-        >
-          <source src="/videos/fletcher-hero.mp4" type="video/mp4" />
-        </video>
+        <HeroVideo src="/videos/fletcher-hero.mp4" poster="/videos/fletcher-hero-poster.jpg" />
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[rgba(10,15,13,0.62)]" />
         <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-[#0f1714] to-transparent" />
 
