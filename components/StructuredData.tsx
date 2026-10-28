@@ -204,10 +204,10 @@ export function PersonSchema() {
     worksFor: { "@id": `${site.url}/#business` },
     url: `${site.url}/our-team`,
     image: `${site.url}/team/daniel-lee.jpg`,
-    alumniOf: {
-      "@type": "CollegeOrUniversity",
-      name: "University of Sydney",
-    },
+    alumniOf: [
+      { "@type": "CollegeOrUniversity", name: "University of Sydney" },
+      { "@type": "CollegeOrUniversity", name: "University of Newcastle" },
+    ],
     hasCredential: [
       {
         "@type": "EducationalOccupationalCredential",
@@ -217,7 +217,15 @@ export function PersonSchema() {
       },
       {
         "@type": "EducationalOccupationalCredential",
-        credentialCategory: "Master of Medicine (Pain Management)",
+        name: "Master of Medicine (Pain Management)",
+        credentialCategory: "degree",
+        recognizedBy: { "@type": "CollegeOrUniversity", name: "University of Sydney" },
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        name: "Bachelor of Physiotherapy (Honours)",
+        credentialCategory: "degree",
+        recognizedBy: { "@type": "CollegeOrUniversity", name: "University of Newcastle" },
       },
     ],
     knowsAbout: [

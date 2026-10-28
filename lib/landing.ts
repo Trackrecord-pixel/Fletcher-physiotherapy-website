@@ -1,6 +1,380 @@
 import type { LandingContent } from "@/components/LandingPage";
 
 export const landingPages: Record<string, LandingContent> = {
+  "clinic-physiotherapy": {
+    slug: "clinic-physiotherapy",
+    pathway: "clinic",
+    region: "all",
+    eyebrow: "Clinic Physiotherapy",
+    h1: "Clinic physiotherapy in Sydney and Newcastle",
+    serviceName: "Clinic Physiotherapy",
+    intro:
+      "Physiotherapy consultations inside GP practices in Jesmond, Yagoona and Parramatta — individual assessment, hands-on treatment and exercise-based rehabilitation.",
+    lead: [
+      "Fletcher Physiotherapy consults inside three GP practices: HealthSure Medical Centre Jesmond in Newcastle (Mondays), Yagoona Family HealthCare (Tuesdays) and Parramatta Medical and Dental Centre (Wednesdays).",
+      "Seeing a physiotherapist inside your GP's practice keeps care simple. Referrals are easy, your GP can be kept up to date with your consent, and Medicare GP Chronic Condition Management Plan (GPCCMP) referrals fit naturally into the process.",
+      "Clinic care is led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management).",
+    ],
+    sections: [
+      {
+        h2: "What we see in clinic",
+        body: ["Clinic appointments suit people who can travel comfortably and want focused, one-to-one treatment."],
+        list: [
+          "Persistent (chronic) pain",
+          "Back, neck and shoulder pain",
+          "Arthritis and joint pain",
+          "Sports and work injuries",
+          "Rehabilitation after surgery",
+          "Balance problems and falls risk",
+          "Neck-related headaches",
+          "Strength and conditioning after illness",
+        ],
+      },
+      {
+        h2: "Your first appointment",
+        body: [
+          "We start by listening — your history, what's changed, and what you want to get back to. We then assess how you move, test strength and joint function, and explain what we find in plain language.",
+          "Treatment usually combines hands-on techniques where appropriate with exercise you can continue at home, so the progress you make in clinic carries into everyday life. You leave with a clear plan and know what to expect next.",
+        ],
+      },
+      {
+        h2: "Funding and payment",
+        body: ["We see private patients (no referral needed) and patients funded through:"],
+        list: [
+          "Medicare — GP Chronic Condition Management Plan (GPCCMP)",
+          "DVA — Gold Card, or White Card for accepted conditions",
+          "WorkCover (workers compensation) — with an approved claim",
+          "NDIS — agency-, plan- and self-managed",
+          "Support at Home",
+          "Private health insurance — receipts provided for claims",
+        ],
+      },
+      {
+        h2: "How to book",
+        body: [
+          "Jesmond: book online or call us on 0404 791 756. Yagoona and Parramatta: appointments are booked through each medical centre's reception — the numbers are on each clinic page.",
+          "Can't get to a clinic? We also provide home visit physiotherapy across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Where are your physiotherapy clinics?", a: "Jesmond (HealthSure Medical Centre, Mondays), Yagoona (Yagoona Family HealthCare, 457 Hume Highway, Tuesdays) and Parramatta (Parramatta Medical and Dental Centre, Shop 1, 144 Marsden Street, Wednesdays)." },
+      { q: "Do I need a referral?", a: "Not for private physiotherapy. A GP referral is needed for Medicare-subsidised sessions under a GP Chronic Condition Management Plan (GPCCMP) and for DVA. WorkCover treatment needs an accepted claim." },
+      { q: "Can I claim on my private health insurance?", a: "Yes — we provide receipts so you can claim with your fund. How much you get back depends on your level of cover." },
+      { q: "Is clinic or home visit physiotherapy better for me?", a: "If you can travel comfortably, clinic appointments work well. If getting out is difficult, you're recovering from hospital, or your goals are about managing at home, a home visit is often the better choice. Call us and we'll help you decide." },
+    ],
+    related: [
+      { label: "Physiotherapy Jesmond", href: "/physiotherapy-jesmond" },
+      { label: "Physiotherapy Yagoona", href: "/physiotherapy-yagoona" },
+      { label: "Physiotherapy Parramatta", href: "/physiotherapy-parramatta" },
+      { label: "Persistent Pain Physiotherapy", href: "/chronic-pain-management" },
+      { label: "Home Visit Physiotherapy", href: "/home-visits" },
+    ],
+    ctaTitle: "Book a clinic appointment",
+  },
+  "home-visits": {
+    slug: "home-visits",
+    pathway: "home",
+    region: "all",
+    whyHome: true,
+    eyebrow: "Home Visit Physiotherapy",
+    h1: "Home visit physiotherapy — we come to you",
+    serviceName: "Home Visit Physiotherapy",
+    intro:
+      "Physiotherapy in your home, retirement village or aged care residence across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
+    lead: [
+      "For many people the hardest part of physiotherapy is getting there. Home visits remove the travel, parking and waiting rooms — and let us work on the exact places where everyday life happens: your stairs, your bathroom, your favourite chair.",
+      "We visit older adults, NDIS participants, Support at Home clients, people recovering after hospital or surgery, and residents of aged care and retirement living.",
+      "Home visits also make life easier for GPs and care coordinators: send a referral and we arrange the visit, liaise with the family and send clear reports — less administration for you.",
+    ],
+    sections: [
+      {
+        h2: "Where we visit",
+        body: [
+          "Sydney: around Sydney Olympic Park and the Inner West, the Parramatta area, and Bankstown–Yagoona.",
+          "Newcastle and Lake Macquarie, the lower Hunter, and the Central Coast.",
+        ],
+      },
+      {
+        h2: "Who home visits help",
+        body: ["Home visits suit anyone who finds it hard, tiring or unsafe to get to a clinic."],
+        list: [
+          "Older adults wanting to stay independent",
+          "Falls prevention and balance",
+          "NDIS participants",
+          "Support at Home and aged care clients",
+          "Recovery after hospital or surgery",
+          "Persistent pain and musculoskeletal conditions",
+          "Residential aged care and retirement living",
+          "Neurological conditions such as stroke and Parkinson's",
+        ],
+      },
+      {
+        h2: "Funding",
+        body: [
+          "We see private clients and clients funded through NDIS (agency-, plan- and self-managed), Support at Home, Medicare GPCCMP, DVA and WorkCover. We'll explain what applies to you before the first visit.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Which areas do you visit?", a: "Sydney (Sydney Olympic Park, the Inner West, the Parramatta area and Bankstown–Yagoona), Newcastle, Lake Macquarie, the lower Hunter and the Central Coast. Call us to check your suburb." },
+      { q: "How long is a home visit?", a: "The first visit is about 60 minutes and includes assessment, goals and a home program. Follow-up visits are usually shorter." },
+      { q: "How quickly can you visit?", a: "We aim to call you back within 24 hours and the first visit is usually within a week." },
+      { q: "Can family members be there?", a: "Yes. Family and carers are welcome — it often helps them support the program between visits." },
+    ],
+    related: [
+      { label: "Home Visits — Sydney", href: "/home-visit-physiotherapy-sydney" },
+      { label: "Home Visits — Newcastle", href: "/home-visit-physiotherapy-newcastle" },
+      { label: "Home Visits — Central Coast", href: "/physiotherapy-central-coast" },
+      { label: "Aged Care Physiotherapy", href: "/aged-care-physiotherapy-newcastle" },
+      { label: "Falls Prevention", href: "/falls-prevention-physiotherapy-newcastle" },
+    ],
+    ctaTitle: "Book a home visit",
+  },
+  "home-visit-physiotherapy-sydney": {
+    slug: "home-visit-physiotherapy-sydney",
+    pathway: "home",
+    region: "sydney",
+    whyHome: true,
+    breadcrumbParent: { name: "Home Visits", href: "/home-visits" },
+    eyebrow: "Home Visit Physiotherapy Sydney",
+    h1: "Home visit physiotherapy in Sydney",
+    serviceName: "Home Visit Physiotherapy Sydney",
+    intro:
+      "Mobile physiotherapy at home around Sydney Olympic Park, the Inner West, Parramatta and Bankstown–Yagoona — for older adults, NDIS, Support at Home and rehabilitation.",
+    lead: [
+      "Our Sydney home visit service covers Sydney Olympic Park and the Inner West — including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood — as well as the Parramatta area and Bankstown–Yagoona.",
+      "Much of Sydney living is in apartments, so we regularly work on the things clinics can't see: lifts and corridors, compact bathrooms, building entries and the walk to the car park or the street.",
+      "Home visits are led by Daniel Lee, an APA Titled Pain Physiotherapist. We also see clinic patients at Yagoona and Parramatta.",
+    ],
+    sections: [
+      {
+        h2: "Who we visit in Sydney",
+        body: ["We focus on people for whom getting to a clinic is difficult, or whose goals are about managing safely at home."],
+        list: [
+          "Older adults and their families",
+          "NDIS participants",
+          "Support at Home clients",
+          "Residential aged care and retirement living",
+          "Recovery after hospital or surgery",
+          "Falls prevention and balance",
+        ],
+      },
+      {
+        h2: "Funding",
+        body: [
+          "NDIS (agency-, plan- and self-managed), Support at Home, Medicare GPCCMP, DVA, WorkCover and private clients are all welcome.",
+        ],
+      },
+      {
+        h2: "For GPs and coordinators in Sydney",
+        body: [
+          "Send a referral and we take it from there: we contact the client or family, arrange the visit and send clear reports to you with consent. Nearby hospitals include Concord Repatriation General, Auburn, Westmead and Bankstown-Lidcombe.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Which Sydney suburbs do you visit?", a: "Sydney Olympic Park and the Inner West (including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood), the Parramatta area and Bankstown–Yagoona. Call to check your suburb." },
+      { q: "Can you visit apartments?", a: "Yes — most of our Sydney visits are in apartments. Let us know about parking, building access and lifts when you book." },
+      { q: "Do you also have Sydney clinics?", a: "Yes. We consult at Yagoona Family HealthCare (Tuesdays) and Parramatta Medical and Dental Centre (Wednesdays), booked through each clinic's reception." },
+      { q: "Do you see NDIS participants at home in Sydney?", a: "Yes. We're a registered NDIS provider (NDIS0023718) and see agency-, plan- and self-managed participants." },
+    ],
+    related: [
+      { label: "Sydney physiotherapy overview", href: "/physiotherapy-sydney" },
+      { label: "NDIS Physiotherapy Sydney", href: "/ndis-physiotherapy-sydney" },
+      { label: "Physiotherapy Parramatta (clinic)", href: "/physiotherapy-parramatta" },
+      { label: "Physiotherapy Yagoona (clinic)", href: "/physiotherapy-yagoona" },
+      { label: "Home visits overview", href: "/home-visits" },
+    ],
+    ctaTitle: "Book a home visit in Sydney",
+  },
+  "musculoskeletal-physiotherapy": {
+    slug: "musculoskeletal-physiotherapy",
+    pathway: "both",
+    region: "all",
+    eyebrow: "Musculoskeletal Physiotherapy",
+    h1: "Musculoskeletal physiotherapy",
+    serviceName: "Musculoskeletal Physiotherapy",
+    intro:
+      "Assessment and treatment of back, neck, shoulder, hip, knee and other joint and muscle problems — in clinic or at home.",
+    lead: [
+      "Musculoskeletal problems are conditions affecting muscles, joints, tendons and the spine. They range from a recent sprain to back pain that keeps coming back.",
+      "Good musculoskeletal physiotherapy starts with a clear explanation of what's going on, followed by a plan that combines hands-on treatment where it helps with exercise you can do yourself — so you're not dependent on appointments.",
+    ],
+    sections: [
+      {
+        h2: "Common problems we treat",
+        body: ["Including, but not limited to:"],
+        list: [
+          "Low back pain and sciatica",
+          "Neck pain and neck-related headaches",
+          "Shoulder pain and stiffness",
+          "Hip and knee pain, including osteoarthritis",
+          "Tendon problems",
+          "Sprains, strains and work injuries",
+        ],
+      },
+      {
+        h2: "Our approach",
+        body: [
+          "We assess how you move and what aggravates or eases your symptoms, rule out anything that needs a doctor's review, and agree on goals that matter to you.",
+          "Treatment may include joint and soft-tissue techniques, graded exercise, advice on activity and workload, and education about pain — progressed as you improve.",
+        ],
+      },
+      {
+        h2: "Clinic or home?",
+        body: [
+          "Most musculoskeletal problems are well suited to clinic appointments in Jesmond, Yagoona or Parramatta. If travel is difficult, we can treat you at home.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Do I need a scan before physiotherapy?", a: "Usually not. Most musculoskeletal problems can be assessed clinically. If we think imaging or a medical review is needed, we'll explain why and liaise with your GP." },
+      { q: "How many sessions will I need?", a: "It depends on the problem and your goals. We'll give you an estimate after the first assessment and review it as you progress." },
+      { q: "Can I use Medicare, DVA or WorkCover?", a: "Yes — with a GPCCMP referral, DVA referral or an accepted WorkCover claim. Private patients don't need a referral." },
+    ],
+    related: [
+      { label: "Persistent Pain Physiotherapy", href: "/chronic-pain-management" },
+      { label: "Post-Surgical Rehabilitation", href: "/post-surgical-rehabilitation" },
+      { label: "WorkCover Physiotherapy", href: "/workers-compensation-physiotherapy" },
+      { label: "Clinic Physiotherapy", href: "/clinic-physiotherapy" },
+    ],
+    ctaTitle: "Book a musculoskeletal assessment",
+  },
+  "post-surgical-rehabilitation": {
+    slug: "post-surgical-rehabilitation",
+    pathway: "both",
+    region: "all",
+    eyebrow: "Post-Surgical Rehabilitation",
+    h1: "Post-surgical rehabilitation",
+    serviceName: "Post-Surgical Rehabilitation",
+    intro:
+      "Structured physiotherapy after joint replacement, spinal, shoulder and other orthopaedic surgery — at home in the early weeks, then in clinic as you progress.",
+    lead: [
+      "The weeks after surgery are when strength and confidence are often lowest. A structured rehabilitation plan, following your surgeon's protocol, helps you rebuild movement, strength and independence safely.",
+      "Many people start with home visits — when getting in and out of the car is still hard — and move to clinic appointments as they improve. We can provide both.",
+    ],
+    sections: [
+      {
+        h2: "Surgery we commonly rehabilitate",
+        body: ["We work to your surgeon's guidelines and liaise with your treating team when needed."],
+        list: [
+          "Hip and knee replacement",
+          "Shoulder surgery and rotator cuff repair",
+          "Spinal surgery",
+          "Fracture fixation",
+          "Ligament and tendon repairs",
+          "Rehabilitation after a hospital stay",
+        ],
+      },
+      {
+        h2: "What rehabilitation involves",
+        body: [
+          "Early on: safe transfers, walking with or without an aid, swelling and pain management, and gentle range of movement. Later: progressive strengthening, balance, and return to the activities, work or sport you want.",
+          "Starting physiotherapy before surgery (prehabilitation) can also help you prepare.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "When should I start physiotherapy after surgery?", a: "Follow your surgeon's advice — for many procedures it's within days of going home. Call us before your surgery and we can plan your first visit." },
+      { q: "Can you come to my home after surgery?", a: "Yes. Home visits are often easiest in the first weeks; we can then continue in clinic." },
+      { q: "Is post-surgical physio covered?", a: "Private health insurance, DVA, WorkCover (for accepted work injuries) and some rehabilitation programs may contribute. We'll explain your options." },
+    ],
+    related: [
+      { label: "Hip Replacement Rehabilitation", href: "/hip-replacement-rehabilitation-newcastle" },
+      { label: "Knee Replacement Rehabilitation", href: "/knee-replacement-rehabilitation-newcastle" },
+      { label: "Musculoskeletal Physiotherapy", href: "/musculoskeletal-physiotherapy" },
+      { label: "Home Visits", href: "/home-visits" },
+    ],
+    ctaTitle: "Plan your rehabilitation",
+  },
+  "workers-compensation-physiotherapy": {
+    slug: "workers-compensation-physiotherapy",
+    pathway: "both",
+    region: "all",
+    eyebrow: "WorkCover Physiotherapy",
+    h1: "WorkCover (workers compensation) physiotherapy",
+    serviceName: "Workers Compensation Physiotherapy",
+    intro:
+      "Physiotherapy for work-related injuries under NSW workers compensation — at our Jesmond, Yagoona and Parramatta clinics or at home.",
+    lead: [
+      "If you've been injured at work and have a workers compensation claim, physiotherapy can help you recover and return to work safely.",
+      "We work with your nominated treating doctor, the insurer and your employer's return-to-work team, keeping everyone informed with clear, timely reports.",
+    ],
+    sections: [
+      {
+        h2: "What to bring",
+        body: ["To help us set up your treatment, please bring or send:"],
+        list: [
+          "Your claim number and insurer details",
+          "Your employer's details",
+          "Your current certificate of capacity",
+          "Any referral or reports from your doctor",
+        ],
+      },
+      {
+        h2: "How treatment works",
+        body: [
+          "We assess your injury and your work demands, then build a plan focused on function and a safe return to work. Treatment is provided in line with the insurer's requirements — we'll check what's approved before your first session so there are no surprises.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Do I need an approved claim?", a: "Yes. Treatment is paid by the insurer once your claim is accepted and treatment is approved. If your claim is still pending, call us and we'll explain your options." },
+      { q: "Can I be seen at home for a work injury?", a: "Yes, where clinically appropriate and approved by the insurer." },
+      { q: "Will you talk to my doctor and employer?", a: "With your consent, we communicate with your treating doctor, the insurer and your employer's return-to-work coordinator." },
+    ],
+    related: [
+      { label: "Musculoskeletal Physiotherapy", href: "/musculoskeletal-physiotherapy" },
+      { label: "Clinic Physiotherapy", href: "/clinic-physiotherapy" },
+      { label: "Post-Surgical Rehabilitation", href: "/post-surgical-rehabilitation" },
+    ],
+    ctaTitle: "Book WorkCover physiotherapy",
+  },
+  "dva-physiotherapy": {
+    slug: "dva-physiotherapy",
+    pathway: "both",
+    region: "all",
+    eyebrow: "DVA Physiotherapy",
+    h1: "DVA physiotherapy for veterans",
+    serviceName: "DVA Physiotherapy",
+    intro:
+      "Physiotherapy for DVA Gold and White Card holders — at our Jesmond, Yagoona and Parramatta clinics, or at home across Sydney, Newcastle and the Central Coast.",
+    lead: [
+      "Veterans and eligible family members with a Department of Veterans' Affairs (DVA) card can receive physiotherapy funded by DVA when it's clinically required.",
+      "Gold Card holders are covered for clinically necessary treatment. White Card holders are covered for accepted conditions. You'll need a referral from your GP or treating doctor.",
+    ],
+    sections: [
+      {
+        h2: "Clinic or home",
+        body: [
+          "We see DVA patients at our clinics in Jesmond (Mondays), Yagoona (Tuesdays) and Parramatta (Wednesdays), and at home across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
+        ],
+      },
+      {
+        h2: "What we help with",
+        body: ["Common reasons veterans see us include:"],
+        list: [
+          "Persistent pain",
+          "Back, neck and joint pain",
+          "Balance and falls prevention",
+          "Recovery after surgery or hospital",
+          "Strength and mobility to stay independent",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What do I need for DVA physiotherapy?", a: "Your DVA card and a referral from your GP or treating doctor. Bring both to your first appointment." },
+      { q: "Do I pay anything?", a: "DVA-funded treatment for eligible card holders is paid by DVA. We'll confirm the details before your first appointment." },
+      { q: "Can you visit me at home?", a: "Yes, where clinically appropriate — across Sydney, Newcastle, Lake Macquarie and the Central Coast." },
+    ],
+    related: [
+      { label: "Clinic Physiotherapy", href: "/clinic-physiotherapy" },
+      { label: "Home Visits", href: "/home-visits" },
+      { label: "Falls Prevention", href: "/falls-prevention-physiotherapy-newcastle" },
+    ],
+    ctaTitle: "Book DVA physiotherapy",
+  },
   "home-visit-physiotherapy-newcastle": {
     slug: "home-visit-physiotherapy-newcastle",
     whyHome: true,

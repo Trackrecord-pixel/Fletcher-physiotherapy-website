@@ -2,25 +2,25 @@ import type { Metadata } from "next";
 import ServiceDetail from "@/components/ServiceDetail";
 
 export const metadata: Metadata = {
-  title: "Chronic Pain Physio | Newcastle Home Visits",
+  title: "Persistent Pain Physiotherapy | Clinic & Home Visits",
   description:
-    "Chronic pain physio at home across Newcastle, Lake Macquarie and the Central Coast, led by an APA Titled Pain Physiotherapist. Evidence-based care.",
+    "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona and Parramatta, or at home.",
   alternates: { canonical: "/chronic-pain-management" },
   openGraph: {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Chronic Pain Physio | Newcastle Home Visits",
+    title: "Persistent Pain Physiotherapy | Clinic & Home Visits",
     description:
-      "Chronic pain physio at home across Newcastle, Lake Macquarie and the Central Coast, led by an APA Titled Pain Physiotherapist. Evidence-based care.",
+      "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona and Parramatta, or at home.",
     url: "/chronic-pain-management",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chronic Pain Physio | Newcastle Home Visits",
+    title: "Persistent Pain Physiotherapy | Clinic & Home Visits",
     description:
-      "Chronic pain physio at home across Newcastle, Lake Macquarie and the Central Coast, led by an APA Titled Pain Physiotherapist. Evidence-based care.",
+      "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona and Parramatta, or at home.",
     images: ["/images/og-default.png"],
   },
 };
@@ -29,9 +29,9 @@ export default function Page() {
   return (
     <ServiceDetail
       slug="chronic-pain-management"
-      eyebrow="Chronic Pain Management"
+      eyebrow="Persistent Pain Physiotherapy"
       title="Move with confidence and reclaim what matters"
-      intro="Compassionate, evidence-based chronic pain physiotherapy delivered at home. Led by a Master's-qualified pain management clinician, we help reduce fear of movement and return you to meaningful daily activity."
+      intro="Compassionate, evidence-based persistent pain physiotherapy — in clinic at Jesmond, Yagoona and Parramatta, or at home. Led by a Master's-qualified pain management clinician, we help reduce fear of movement and return you to meaningful daily activity."
       lead={[
         "Persistent pain is complex, and it affects far more than the body — it can shrink your world, erode confidence and make movement feel frightening. Our approach combines the latest understanding of pain science with hands-on treatment and simple, practical strategies you can use every day.",
         "Our director, Daniel Lee, holds a Master's degree in Pain Management from the University of Sydney. Care centres on understanding your individual experience and goals, gently rebuilding your capacity for movement and reducing the fear that often keeps pain cycles going.",
@@ -44,7 +44,7 @@ export default function Page() {
         "Hands-on & exercise-based care",
         "Practical day-to-day strategies",
         "Graded return to activity",
-        "Long-term, lasting outcomes",
+        "A plan you can keep using",
       ]}
       process={[
         { step: "1", title: "Understand", text: "We listen to your story and assess how pain affects your movement and life." },

@@ -35,6 +35,7 @@ export const metadata: Metadata = {
 const qualifications = [
   "APA Titled Pain Physiotherapist",
   "Master of Medicine (Pain Management) — University of Sydney",
+  "Bachelor of Physiotherapy (Honours) — University of Newcastle",
   "Registered Physiotherapist (AHPRA)",
 ];
 
@@ -98,7 +99,8 @@ export default function DanielLeePage() {
               {" "}— a credential awarded by the Australian Physiotherapy Association
               (APA) to physiotherapists who have completed advanced training and
               demonstrated advanced expertise in pain management. He holds a
-              {" "}<strong>Master of Medicine (Pain Management) from the University of Sydney</strong>.
+              {" "}<strong>Master of Medicine (Pain Management) from the University of Sydney</strong> and a
+              {" "}<strong>Bachelor of Physiotherapy (Honours) from the University of Newcastle</strong>.
             </p>
             <p>
               Daniel&rsquo;s clinical focus is helping people move with confidence and

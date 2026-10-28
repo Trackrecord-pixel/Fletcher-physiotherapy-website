@@ -5,12 +5,23 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Icon from "./Icon";
-import { primaryNav, headerNav, servicesNav, locationsNav, teamNav, site } from "@/lib/site";
+import {
+  primaryNav,
+  headerNav,
+  servicesNav,
+  locationsNav,
+  clinicNav,
+  homeVisitNav,
+  aboutNav,
+  site,
+} from "@/lib/site";
 
 const dropdowns: Record<string, { label: string; href: string }[]> = {
+  "Clinic Physiotherapy": clinicNav,
+  "Home Visits": homeVisitNav,
   Services: servicesNav,
   Locations: locationsNav,
-  "Our Team": teamNav,
+  About: aboutNav,
 };
 
 export default function Header() {
@@ -31,45 +42,28 @@ export default function Header() {
     setOpenMenu(null);
   }, [pathname]);
 
-  const isActive = (href: string) =>
-    href === "/" ? pathname === "/" : pathname.startsWith(href);
+  const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/95 shadow-card backdrop-blur" : "bg-white/80 backdrop-blur-sm"
+      className={`sticky top-0 z-50 border-b transition-all duration-300 ${
+        scrolled ? "border-beige-200 bg-cream/95 backdrop-blur" : "border-transparent bg-cream/80 backdrop-blur-sm"
       }`}
     >
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded-md focus:bg-navy-800 focus:px-4 focus:py-2 focus:text-white"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded-md focus:bg-navy-900 focus:px-4 focus:py-2 focus:text-white"
       >
         Skip to content
       </a>
 
-      {/* Top utility bar */}
-      <div className="hidden border-b border-navy-100 bg-navy-800 text-white lg:block">
-        <div className="container-px flex h-10 items-center justify-between text-xs">
-          <p className="font-medium tracking-wide text-navy-100">
-            Home visits in Sydney &amp; Newcastle · Jesmond clinic
-          </p>
-          <div className="flex items-center gap-5">
-            <a href={site.phoneHref} className="inline-flex items-center gap-1.5 hover:text-beige-200">
-              <Icon name="phone" className="h-3.5 w-3.5" /> {site.phone}
-            </a>
-            <a href={site.emailHref} className="inline-flex items-center gap-1.5 hover:text-beige-200">
-              <Icon name="mail" className="h-3.5 w-3.5" /> {site.email}
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <nav className="container-px flex h-20 items-center justify-between py-3" aria-label="Primary">
+      <nav className="container-px flex h-20 items-center justify-between gap-6" aria-label="Primary">
         <Logo />
 
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center xl:flex">
           {headerNav.map((link) => {
             const dd = dropdowns[link.label];
+            const active = isActive(link.href);
             return dd ? (
               <div
                 key={link.href}
@@ -77,27 +71,29 @@ export default function Header() {
                 onMouseEnter={() => setOpenMenu(link.label)}
                 onMouseLeave={() => setOpenMenu(null)}
               >
-                <Link
-                  href={link.href}
+                <button
+                  type="button"
                   aria-haspopup="true"
                   aria-expanded={openMenu === link.label}
-                  className={`inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                    isActive(link.href) ? "text-navy-900" : "text-navy-600 hover:text-navy-900"
+                  onClick={() => setOpenMenu((m) => (m === link.label ? null : link.label))}
+                  className={`inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-[0.8rem] font-medium transition-colors ${
+                    active ? "text-euc-700" : "text-navy-700 hover:text-navy-900"
                   }`}
                 >
                   {link.label}
-                  <Icon name="chevron" className="h-3.5 w-3.5" />
-                </Link>
+                  <Icon name="chevron" className={`h-3.5 w-3.5 transition-transform ${openMenu === link.label ? "rotate-180" : ""}`} />
+                </button>
                 {openMenu === link.label && (
-                  <div className="absolute left-0 top-full w-72 pt-2">
-                    <div className="rounded-2xl border border-navy-100 bg-white p-2 shadow-card-hover">
+                  <div className="absolute left-0 top-full w-80 pt-3">
+                    <div className="rounded-3xl border border-beige-200 bg-white p-2 shadow-card-hover">
                       {dd.map((s) => (
                         <Link
                           key={s.href}
                           href={s.href}
-                          className="block rounded-xl px-4 py-2.5 text-sm font-medium text-navy-700 transition-colors hover:bg-beige-100 hover:text-navy-900"
+                          className="flex items-center justify-between rounded-2xl px-4 py-2.5 text-sm font-medium text-navy-700 transition-colors hover:bg-euc-50 hover:text-euc-700"
                         >
                           {s.label}
+                          <Icon name="arrow" className="h-3.5 w-3.5 opacity-40" />
                         </Link>
                       ))}
                     </div>
@@ -108,9 +104,9 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                aria-current={isActive(link.href) ? "page" : undefined}
-                className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                  isActive(link.href) ? "text-navy-900" : "text-navy-600 hover:text-navy-900"
+                aria-current={active ? "page" : undefined}
+                className={`rounded-full px-3.5 py-2 text-[0.8rem] font-medium transition-colors ${
+                  active ? "text-euc-700" : "text-navy-700 hover:text-navy-900"
                 }`}
               >
                 {link.label}
@@ -119,73 +115,79 @@ export default function Header() {
           })}
         </div>
 
-        <div className="hidden items-center gap-3 lg:flex">
-          <a href={site.phoneHref} className="btn-secondary">
-            <Icon name="phone" className="h-4 w-4" /> Call
+        <div className="hidden items-center gap-4 xl:flex">
+          <a href={site.phoneHref} className="inline-flex items-center gap-2 text-sm font-semibold text-navy-900 hover:text-euc-700">
+            <Icon name="phone" className="h-4 w-4 text-euc-600" /> {site.phone}
           </a>
-          <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
-            Book Online
-          </a>
+          <Link href="/book" className="btn-primary px-6 py-3 text-sm">
+            Book
+          </Link>
         </div>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-navy-100 text-navy-800 lg:hidden"
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-        >
-          <Icon name={open ? "close" : "menu"} className="h-6 w-6" />
-        </button>
+        <div className="flex items-center gap-2 xl:hidden">
+          <a
+            href={site.phoneHref}
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-euc-600 text-white"
+            aria-label={`Call ${site.phone}`}
+          >
+            <Icon name="phone" className="h-5 w-5" />
+          </a>
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-navy-200 text-navy-900"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+          >
+            <Icon name={open ? "close" : "menu"} className="h-6 w-6" />
+          </button>
+        </div>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile / tablet menu */}
       {open && (
-        <div className="border-t border-navy-100 bg-white lg:hidden">
-          <div className="container-px space-y-1 py-4">
-            {primaryNav.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`block rounded-xl px-4 py-3 text-base font-medium ${
-                  isActive(link.href) ? "bg-beige-100 text-navy-900" : "text-navy-700 hover:bg-navy-50"
-                }`}
-              >
-                {link.label}
+        <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-beige-200 bg-cream xl:hidden">
+          <div className="container-px space-y-4 py-5">
+            <div className="grid grid-cols-2 gap-3">
+              <Link href="/clinic-physiotherapy" className="btn-primary w-full px-4 text-sm">
+                Find a Clinic
               </Link>
+              <Link href="/home-visits" className="btn-accent w-full px-4 text-sm">
+                Book a Home Visit
+              </Link>
+            </div>
+            {[
+              { title: "Clinics", items: clinicNav },
+              { title: "Home visits", items: homeVisitNav },
+              { title: "Services", items: servicesNav },
+            ].map((g) => (
+              <div key={g.title} className="rounded-3xl bg-white p-2">
+                <p className="px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-euc-600">{g.title}</p>
+                {g.items.map((s) => (
+                  <Link key={s.href} href={s.href} className="block rounded-2xl px-3 py-2.5 text-[0.95rem] font-medium text-navy-800 hover:bg-euc-50">
+                    {s.label}
+                  </Link>
+                ))}
+              </div>
             ))}
-            <div className="mt-2 rounded-xl bg-sand p-2">
-              <p className="px-2 py-1 text-xs font-semibold uppercase tracking-widest text-navy-500">Locations</p>
-              {locationsNav.map((s) => (
-                <Link
-                  key={s.href}
-                  href={s.href}
-                  className="block rounded-lg px-4 py-2.5 text-sm font-medium text-navy-700 hover:bg-white"
-                >
-                  {s.label}
-                </Link>
-              ))}
+            <div className="rounded-3xl bg-white p-2">
+              {primaryNav
+                .filter((l) => !["Clinic Physiotherapy", "Home Visits", "Services"].includes(l.label))
+                .map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`block rounded-2xl px-3 py-2.5 text-[0.95rem] font-medium ${
+                      isActive(link.href) ? "bg-euc-50 text-euc-700" : "text-navy-800 hover:bg-euc-50"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
             </div>
-            <div className="mt-2 rounded-xl bg-sand p-2">
-              <p className="px-2 py-1 text-xs font-semibold uppercase tracking-widest text-navy-500">Services</p>
-              {servicesNav.slice(0, 5).map((s) => (
-                <Link
-                  key={s.href}
-                  href={s.href}
-                  className="block rounded-lg px-4 py-2.5 text-sm font-medium text-navy-700 hover:bg-white"
-                >
-                  {s.label}
-                </Link>
-              ))}
-            </div>
-            <div className="grid grid-cols-2 gap-3 pt-3">
-              <a href={site.phoneHref} className="btn-secondary w-full">
-                <Icon name="phone" className="h-4 w-4" /> Call
-              </a>
-              <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary w-full">
-                Book Online
-              </a>
-            </div>
+            <a href={site.phoneHref} className="btn-secondary w-full">
+              <Icon name="phone" className="h-4 w-4" /> {site.phone}
+            </a>
           </div>
         </div>
       )}

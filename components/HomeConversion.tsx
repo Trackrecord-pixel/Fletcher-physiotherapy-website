@@ -224,6 +224,7 @@ export function MeetDaniel() {
             {[
               "APA Titled Pain Physiotherapist",
               "Master of Medicine (Pain Management), USyd",
+              "Bachelor of Physiotherapy (Hons), UoN",
               "Speaks English & Korean",
               "Registered NDIS provider",
             ].map((c) => (

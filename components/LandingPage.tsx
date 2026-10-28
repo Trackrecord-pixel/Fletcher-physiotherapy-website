@@ -7,6 +7,8 @@ import Reveal from "./Reveal";
 import ContactForm from "./ContactForm";
 import WhyHomeVisits from "./WhyHomeVisits";
 import { site, suburbs } from "@/lib/site";
+import { sydneySuburbs } from "@/lib/sydneySuburbs";
+import { sydneyClinics } from "@/lib/sydneyClinics";
 import { FaqSchema, ServiceSchema, BreadcrumbSchema } from "./StructuredData";
 import type { Faq } from "@/lib/site";
 
@@ -23,9 +25,24 @@ export type LandingContent = {
   related: { label: string; href: string }[];
   ctaTitle?: string;
   whyHome?: boolean;
+  /** Which service area this page is about — controls sidebar text and suburb links. Default "newcastle". */
+  region?: "newcastle" | "sydney" | "all";
+  /** "clinic" pages show clinic booking; "home" shows home-visit booking; "both" shows both pathways. Default "home". */
+  pathway?: "clinic" | "home" | "both";
+  breadcrumbParent?: { name: string; href: string };
 };
 
 export default function LandingPage({ c }: { c: LandingContent }) {
+  const region = c.region ?? "newcastle";
+  const pathway = c.pathway ?? "home";
+  const areaLinks =
+    pathway === "clinic"
+      ? []
+      : region === "sydney"
+      ? sydneySuburbs.map((s) => ({ slug: s.slug, name: s.name }))
+      : region === "all"
+      ? [...suburbs, ...sydneySuburbs].map((s) => ({ slug: s.slug, name: s.name }))
+      : suburbs.map((s) => ({ slug: s.slug, name: s.name }));
   return (
     <>
       <PageHero
@@ -34,6 +51,7 @@ export default function LandingPage({ c }: { c: LandingContent }) {
         intro={c.intro}
         breadcrumb={[
           { name: "Home", href: "/" },
+          ...(c.breadcrumbParent ? [c.breadcrumbParent] : []),
           { name: c.eyebrow, href: `/${c.slug}` },
         ]}
       />
@@ -83,15 +101,34 @@ export default function LandingPage({ c }: { c: LandingContent }) {
           {/* Sidebar */}
           <aside className="lg:col-span-4">
             <div className="sticky top-28 space-y-6">
-              <div className="card bg-navy-900 text-white">
-                <h2 className="text-xl text-white">Book a home visit</h2>
+              <div className="rounded-3xl bg-navy-900 p-7 text-white">
+                <h2 className="text-xl text-white">
+                  {pathway === "clinic" ? "Book a clinic appointment" : pathway === "both" ? "Clinic or home visit" : "Book a home visit"}
+                </h2>
                 <p className="mt-2 text-sm text-navy-100">
-                  We come to you across Newcastle, Lake Macquarie and the Central
-                  Coast.
+                  {pathway === "clinic"
+                    ? "Clinics in Jesmond, Yagoona and Parramatta."
+                    : region === "sydney"
+                    ? "We come to you across Sydney Olympic Park, the Inner West, Parramatta and Bankstown–Yagoona."
+                    : region === "all"
+                    ? "Clinics in Jesmond, Yagoona and Parramatta, and home visits across Sydney, Newcastle and the Central Coast."
+                    : "We come to you across Newcastle, Lake Macquarie and the Central Coast."}
                 </p>
-                <Link href="/contact" className="btn-accent mt-5 w-full">
-                  Book Online <Icon name="arrow" className="h-4 w-4" />
-                </Link>
+                <div className="mt-5 grid gap-2.5">
+                  {pathway !== "home" && (
+                    <Link href="/clinic-physiotherapy" className="btn-primary w-full">
+                      Find a Clinic <Icon name="arrow" className="h-4 w-4" />
+                    </Link>
+                  )}
+                  {pathway !== "clinic" && (
+                    <Link href={region === "sydney" ? "/home-visit-physiotherapy-sydney" : "/home-visits"} className="btn w-full bg-white text-navy-900 hover:bg-beige-50">
+                      Book a Home Visit <Icon name="arrow" className="h-4 w-4" />
+                    </Link>
+                  )}
+                  <a href={site.phoneHref} className="mt-1 text-center text-sm font-semibold text-beige-200 hover:text-white">
+                    Call {site.phone}
+                  </a>
+                </div>
                 <Link
                   href="/refer-a-patient"
                   className="mt-3 block text-center text-sm font-semibold text-beige-200 hover:text-white"
@@ -120,30 +157,55 @@ export default function LandingPage({ c }: { c: LandingContent }) {
         </div>
       </section>
 
-      {c.whyHome && <WhyHomeVisits region="newcastle" />}
+      {c.whyHome && <WhyHomeVisits region={region === "sydney" ? "sydney" : "newcastle"} />}
 
-      <section className={`section-py ${c.whyHome ? "bg-white" : "bg-sand"}`}>
-        <div className="container-px">
-          <h2 className="text-center text-2xl text-navy-900 sm:text-3xl">
-            Suburbs we service
-          </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-center text-navy-600">
-            Home visit physiotherapy across Newcastle, Lake Macquarie and the
-            Central Coast.
-          </p>
-          <div className="mx-auto mt-8 flex max-w-4xl flex-wrap justify-center gap-2">
-            {suburbs.map((sub) => (
-              <Link
-                key={sub.slug}
-                href={`/${sub.slug}`}
-                className="rounded-full border border-navy-200 bg-white px-4 py-2 text-sm font-medium text-navy-700 transition-colors hover:border-navy-800 hover:text-navy-900"
-              >
-                {sub.name}
+      {pathway === "clinic" ? (
+        <section className={`section-py ${c.whyHome ? "bg-white" : "bg-cream"}`}>
+          <div className="container-px">
+            <h2 className="text-2xl text-navy-900 sm:text-3xl">Our clinics</h2>
+            <div className="mt-8 grid gap-5 md:grid-cols-3">
+              <Link href="/physiotherapy-jesmond" className="card card-hover">
+                <p className="tag">Newcastle · Mondays</p>
+                <h3 className="mt-3 text-xl text-navy-900">Jesmond</h3>
+                <p className="mt-1 text-sm text-navy-600">HealthSure Medical Centre Jesmond</p>
               </Link>
-            ))}
+              {sydneyClinics.map((sc) => (
+                <Link key={sc.slug} href={`/${sc.slug}`} className="card card-hover">
+                  <p className="tag">Sydney{sc.days ? ` · ${sc.days.split(",")[0]}` : ""}</p>
+                  <h3 className="mt-3 text-xl text-navy-900">{sc.suburb}</h3>
+                  <p className="mt-1 text-sm text-navy-600">{sc.hostCentre}</p>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        <section className={`section-py ${c.whyHome ? "bg-white" : "bg-cream"}`}>
+          <div className="container-px">
+            <h2 className="text-center text-2xl text-navy-900 sm:text-3xl">
+              {region === "sydney" ? "Sydney suburbs we visit" : region === "all" ? "Areas we visit" : "Suburbs we service"}
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-center text-navy-600">
+              {region === "sydney"
+                ? "Home visit physiotherapy around Sydney Olympic Park, the Inner West, Parramatta and Bankstown–Yagoona."
+                : region === "all"
+                ? "Home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast."
+                : "Home visit physiotherapy across Newcastle, Lake Macquarie and the Central Coast."}
+            </p>
+            <div className="mx-auto mt-8 flex max-w-4xl flex-wrap justify-center gap-2">
+              {areaLinks.map((sub) => (
+                <Link
+                  key={sub.slug}
+                  href={`/${sub.slug}`}
+                  className="rounded-full border border-beige-300 bg-white px-4 py-2 text-sm font-medium text-navy-700 transition-colors hover:border-euc-600 hover:text-euc-700"
+                >
+                  {sub.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="section-py bg-white">
         <div className="container-px grid gap-10 lg:grid-cols-12">

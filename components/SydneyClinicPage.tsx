@@ -155,6 +155,7 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
                 <li><strong className="text-navy-900">DVA:</strong> Gold Card holders, and White Card holders for accepted conditions, with a GP referral.</li>
                 <li><strong className="text-navy-900">NDIS:</strong> registered NDIS provider ({site.ndisRegistrationNumber}) — agency-, plan- and self-managed participants.</li>
                 <li><strong className="text-navy-900">Support at Home:</strong> physiotherapy through your provider.</li>
+                <li><strong className="text-navy-900">WorkCover:</strong> work injuries with an accepted workers compensation claim.</li>
                 <li><strong className="text-navy-900">Private:</strong> no referral needed. Receipts provided for private health fund claims.</li>
               </ul>
             </div>

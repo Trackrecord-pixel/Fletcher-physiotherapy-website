@@ -4,7 +4,7 @@ export const site = {
   legalName: "Fletcher Physiotherapy",
   tagline: "We Come To You",
   description:
-    "Mobile & home visit physio across Newcastle, Lake Macquarie, Central Coast and Sydney. NDIS, Support at Home & private clients welcome.",
+    "Physiotherapy in clinic or at home across Sydney, Newcastle and the Central Coast. Led by an APA Titled Pain Physiotherapist. Medicare, DVA, WorkCover & NDIS.",
   url: "https://www.fletcherphysiotherapy.com.au",
   phone: "0404 791 756",
   phoneHref: "tel:+61404791756",
@@ -30,41 +30,65 @@ export type NavLink = { label: string; href: string };
 
 export const primaryNav: NavLink[] = [
   { label: "Home", href: "/" },
+  { label: "Clinic Physiotherapy", href: "/clinic-physiotherapy" },
+  { label: "Home Visits", href: "/home-visits" },
+  { label: "Services", href: "/services" },
+  { label: "Locations", href: "/locations" },
   { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
   { label: "Our Team", href: "/our-team" },
-  { label: "Locations", href: "/locations" },
-  { label: "Sydney", href: "/physiotherapy-sydney" },
   { label: "Blog", href: "/blog" },
-  { label: "Refer a Patient", href: "/refer-a-patient" },
+  { label: "For Referrers", href: "/refer-a-patient" },
   { label: "Contact", href: "/contact" },
 ];
 
-// Trimmed menu shown in the desktop header (keeps the top bar clean).
-// The full primaryNav is still used for the mobile menu and footer.
+// Desktop header menu (labels matching the Header's dropdown map open a menu).
 export const headerNav: NavLink[] = [
+  { label: "Clinic Physiotherapy", href: "/clinic-physiotherapy" },
+  { label: "Home Visits", href: "/home-visits" },
   { label: "Services", href: "/services" },
   { label: "Locations", href: "/locations" },
-  { label: "Our Team", href: "/our-team" },
-  { label: "Refer a Patient", href: "/refer-a-patient" },
+  { label: "About", href: "/about" },
+  { label: "For Referrers", href: "/refer-a-patient" },
   { label: "Contact", href: "/contact" },
 ];
 
-// Items shown in the "Our Team" desktop dropdown.
-export const teamNav: NavLink[] = [
-  { label: "Our Team", href: "/our-team" },
-  { label: "Meet Daniel Lee", href: "/daniel-lee-physiotherapist-newcastle" },
-  { label: "About Us", href: "/about" },
-  { label: "FAQs", href: "/faqs" },
+export const clinicNav: NavLink[] = [
+  { label: "All clinics", href: "/clinic-physiotherapy" },
+  { label: "Jesmond (Newcastle) · Mondays", href: "/physiotherapy-jesmond" },
+  { label: "Yagoona · Tuesdays", href: "/physiotherapy-yagoona" },
+  { label: "Parramatta · Wednesdays", href: "/physiotherapy-parramatta" },
 ];
+
+export const homeVisitNav: NavLink[] = [
+  { label: "Home visits overview", href: "/home-visits" },
+  { label: "Home visits — Sydney", href: "/home-visit-physiotherapy-sydney" },
+  { label: "Home visits — Newcastle & Lake Macquarie", href: "/home-visit-physiotherapy-newcastle" },
+  { label: "Home visits — Central Coast", href: "/physiotherapy-central-coast" },
+  { label: "Aged care physiotherapy", href: "/aged-care-physiotherapy-newcastle" },
+  { label: "NDIS physiotherapy — Sydney", href: "/ndis-physiotherapy-sydney" },
+];
+
+export const aboutNav: NavLink[] = [
+  { label: "About Fletcher", href: "/about" },
+  { label: "Our team", href: "/our-team" },
+  { label: "Meet Daniel Lee", href: "/daniel-lee-physiotherapist-newcastle" },
+  { label: "FAQs", href: "/faqs" },
+  { label: "Blog", href: "/blog" },
+];
+
+// Kept for older imports.
+export const teamNav: NavLink[] = aboutNav;
 
 export const servicesNav: NavLink[] = [
-  { label: "Home Visit Physiotherapy", href: "/home-visit-physiotherapy-newcastle" },
-  { label: "Mobile Physiotherapist", href: "/mobile-physiotherapist-newcastle" },
-  { label: "Aged Care Physiotherapy", href: "/aged-care-physiotherapy-newcastle" },
+  { label: "Persistent Pain", href: "/chronic-pain-management" },
+  { label: "Musculoskeletal Physiotherapy", href: "/musculoskeletal-physiotherapy" },
+  { label: "Post-Surgical Rehabilitation", href: "/post-surgical-rehabilitation" },
+  { label: "Falls Prevention & Balance", href: "/falls-prevention-physiotherapy-newcastle" },
   { label: "NDIS Physiotherapy", href: "/ndis-physiotherapy-newcastle" },
   { label: "Support at Home Physiotherapy", href: "/support-at-home-physiotherapy-newcastle" },
-  { label: "Falls Prevention", href: "/falls-prevention-physiotherapy-newcastle" },
+  { label: "Aged Care Physiotherapy", href: "/aged-care-physiotherapy-newcastle" },
+  { label: "WorkCover Physiotherapy", href: "/workers-compensation-physiotherapy" },
+  { label: "DVA Physiotherapy", href: "/dva-physiotherapy" },
   { label: "All Services", href: "/services" },
 ];
 
@@ -232,10 +256,10 @@ export const team: TeamMember[] = [
     name: "Daniel Lee",
     role: "Director & Principal Physiotherapist",
     photo: "/team/daniel-lee.jpg",
-    credentials: "APA Titled Pain Physiotherapist · Master of Medicine (Pain Management), University of Sydney",
+    credentials: "APA Titled Pain Physiotherapist · Master of Medicine (Pain Management), University of Sydney · Bachelor of Physiotherapy (Honours), University of Newcastle",
     bio: [
       "Daniel Lee is the Director and Principal Physiotherapist at Fletcher Physiotherapy and an APA Titled Pain Physiotherapist — a credential awarded by the Australian Physiotherapy Association (APA) to physiotherapists who have completed advanced training and demonstrated advanced expertise in pain management.",
-      "He holds a Master of Medicine (Pain Management) from the University of Sydney and works extensively with chronic pain, complex conditions and older adults, combining hands-on treatment with practical, evidence-based strategies that help people move with confidence.",
+      "He holds a Master of Medicine (Pain Management) from the University of Sydney and a Bachelor of Physiotherapy (Honours) from the University of Newcastle, and works extensively with chronic pain, complex conditions and older adults, combining hands-on treatment with practical, evidence-based strategies that help people move with confidence.",
       "Daniel speaks English and Korean and aims to be friendly, approachable and easy to communicate with. He enjoys home visits because they let him see how people move and function in their everyday environment, and provide practical, personalised physiotherapy without the stress of travelling to a clinic. Outside of physiotherapy he enjoys tennis, soccer and time with his family.",
       "Daniel's focus is functional rehabilitation and long-term outcomes — reducing fear around movement, rebuilding strength and mobility, and helping clients return to the everyday activities that matter to them, safely in their own homes.",
     ],

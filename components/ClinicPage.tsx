@@ -91,6 +91,11 @@ export default function ClinicPage({ c }: { c: Clinic }) {
             </div>
 
             <div className="mt-10">
+              <h2 className="text-2xl text-navy-900 sm:text-3xl">WorkCover (workers compensation)</h2>
+              <p className="prose-navy mt-4">We treat work-related injuries at our {c.suburb} clinic for patients with an accepted NSW workers compensation claim. Bring your claim number, insurer details and current certificate of capacity, and we&rsquo;ll check what&rsquo;s approved before your first session.</p>
+            </div>
+
+            <div className="mt-10">
               <h2 className="text-2xl text-navy-900 sm:text-3xl">Private physiotherapy</h2>
               <p className="prose-navy mt-4">Private patients are welcome and no referral is required. You can book a private physiotherapy appointment directly, and we're happy to provide receipts for private health fund claims where applicable.</p>
             </div>

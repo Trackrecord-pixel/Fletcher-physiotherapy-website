@@ -13,7 +13,7 @@ import Script from "next/script";
 import ConversionTracking from "@/components/ConversionTracking";
 
 export const viewport: Viewport = {
-  themeColor: "#13243d",
+  themeColor: "#2e5a4c",
   width: "device-width",
   initialScale: 1,
 };
@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Mobile & Home Physio Sydney & Newcastle | Fletcher Physiotherapy",
+    default: "Clinic & Home Visit Physio Sydney & Newcastle | Fletcher Physiotherapy",
     template: "%s | Fletcher Physiotherapy",
   },
   description: site.description,
@@ -34,20 +34,20 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: site.url,
     siteName: site.name,
-    title: "Mobile & Home Physio Sydney & Newcastle | Fletcher Physiotherapy",
+    title: "Clinic & Home Visit Physio Sydney & Newcastle | Fletcher Physiotherapy",
     description: site.description,
     images: [
       {
         url: "/images/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Fletcher Physiotherapy home visit physiotherapy",
+        alt: "Fletcher Physiotherapy — clinic and home visit physiotherapy",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mobile & Home Physio Sydney & Newcastle | Fletcher Physiotherapy",
+    title: "Clinic & Home Visit Physio Sydney & Newcastle | Fletcher Physiotherapy",
     description: site.description,
     images: ["/images/og-default.png"],
   },
@@ -80,7 +80,7 @@ export default function RootLayout({
         <LocalBusinessSchema />
         <a
           href="/locations"
-          className="block bg-clay-500 px-4 py-2 text-center text-sm text-white hover:bg-clay-600"
+          className="block bg-euc-700 px-4 py-2 text-center text-sm text-white hover:bg-euc-800"
         >
           Clinics in Jesmond, Yagoona &amp; Parramatta · Home visits across Newcastle, the Central Coast &amp; Sydney.{" "}
           <span className="font-semibold underline underline-offset-2">Find your location →</span>

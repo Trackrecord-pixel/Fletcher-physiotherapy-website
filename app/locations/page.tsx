@@ -47,7 +47,7 @@ export default function LocationsPage() {
     <>
       <PageHero
         eyebrow="Our Locations"
-        title="Newcastle physiotherapy clinic & home visits"
+        title="Our clinics & home visit areas"
         intro="Choose the option that suits you best — visit our clinics in Jesmond, Yagoona or Parramatta, or have a physiotherapist come to your home across Newcastle, Lake Macquarie, the Central Coast and Sydney."
         breadcrumb={[
           { name: "Home", href: "/" },
