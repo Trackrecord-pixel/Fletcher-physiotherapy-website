@@ -47,7 +47,7 @@ export default function Header() {
   return (
     <header
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
-        scrolled ? "border-beige-200 bg-cream/95 backdrop-blur" : "border-transparent bg-cream/80 backdrop-blur-sm"
+        scrolled ? "border-[rgba(237,244,242,0.12)] bg-[rgba(15,23,20,0.92)] backdrop-blur" : "border-transparent bg-[rgba(15,23,20,0.6)] backdrop-blur-sm"
       }`}
     >
       <a
@@ -119,7 +119,7 @@ export default function Header() {
           <a href={site.phoneHref} className="hidden items-center gap-2 whitespace-nowrap text-sm font-semibold text-navy-900 hover:text-euc-700 2xl:inline-flex">
             <Icon name="phone" className="h-4 w-4 text-euc-600" /> {site.phone}
           </a>
-          <Link href="/book" className="btn-primary px-6 py-3 text-sm">
+          <Link href="/book" className="btn-outline px-6 py-2.5 text-sm">
             Book
           </Link>
         </div>
@@ -127,7 +127,7 @@ export default function Header() {
         <div className="flex items-center gap-2 xl:hidden">
           <a
             href={site.phoneHref}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-euc-600 text-white"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#87f9d3] text-[#0f1714]"
             aria-label={`Call ${site.phone}`}
           >
             <Icon name="phone" className="h-5 w-5" />
@@ -152,7 +152,7 @@ export default function Header() {
               <Link href="/clinic-physiotherapy" className="btn-primary w-full px-4 text-sm">
                 Find a Clinic
               </Link>
-              <Link href="/home-visits" className="btn-accent w-full px-4 text-sm">
+              <Link href="/home-visits" className="btn-outline w-full px-4 text-sm">
                 Book a Home Visit
               </Link>
             </div>

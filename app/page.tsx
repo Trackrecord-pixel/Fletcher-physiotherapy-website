@@ -4,6 +4,7 @@ import Icon from "@/components/Icon";
 import FAQAccordion from "@/components/FAQAccordion";
 import Reveal from "@/components/Reveal";
 import CallbackForm from "@/components/CallbackForm";
+import HeroVideo from "@/components/HeroVideo";
 import AuthorReview from "@/components/AuthorReview";
 import { ReviewStrip } from "@/components/HomeConversion";
 import { FaqSchema, PersonSchema } from "@/components/StructuredData";
@@ -91,66 +92,47 @@ const credentials = [
 export default function HomePage() {
   return (
     <>
-      {/* 1 · HERO */}
-      <section className="relative overflow-hidden bg-cream">
-        <div className="container-px grid items-center gap-12 pb-16 pt-10 lg:grid-cols-12 lg:gap-14 lg:pb-24 lg:pt-16">
-          <div className="lg:col-span-6">
-            <p className="eyebrow">
-              <span aria-hidden="true" className="h-px w-8 bg-clay-500" /> Sydney · Newcastle · Central Coast
-            </p>
-            <h1 className="mt-6 text-[2.9rem] leading-[1.02] text-navy-900 sm:text-6xl lg:text-[4.4rem]">
-              Expert physiotherapy.
-              <span className="block italic text-euc-600">In clinic or at home.</span>
-            </h1>
-            <p className="mt-7 max-w-xl text-lg leading-relaxed text-navy-600 sm:text-xl">
-              Personalised physiotherapy across Sydney and Newcastle — from clinic consultations inside GP
-              practices to home visits where you live. Led by an APA Titled Pain Physiotherapist.
-            </p>
-            <div className="mt-9 grid gap-3 sm:flex">
-              <Link href="/clinic-physiotherapy" className="btn-primary">
-                <Icon name="pin" className="h-5 w-5" /> Find a Clinic
-              </Link>
-              <Link href="/home-visits" className="btn-accent">
-                <Icon name="home" className="h-5 w-5" /> Book a Home Visit
-              </Link>
-            </div>
-            <p className="mt-5 text-sm text-navy-500">
-              Or call{" "}
-              <a href={site.phoneHref} className="font-semibold text-navy-900 underline decoration-euc-300 underline-offset-4">
-                {site.phone}
-              </a>{" "}
-              — Mon–Fri, 8am–6pm
-            </p>
-            <ul className="mt-10 flex flex-wrap gap-x-7 gap-y-3 border-t border-beige-200 pt-6 text-sm text-navy-700">
-              {["APA Titled", "Registered NDIS", "Medicare · DVA", "WorkCover"].map((t) => (
-                <li key={t} className="flex items-center gap-2 whitespace-nowrap">
-                  <Icon name="check" className="h-4 w-4 text-euc-600" /> {t}
-                </li>
-              ))}
-            </ul>
-          </div>
+      {/* 1 · HERO — full-bleed background video, centred (dark theme) */}
+      <section
+        className="relative isolate flex min-h-[82vh] items-center justify-center overflow-hidden bg-cover bg-center text-center lg:min-h-[90vh]"
+        style={{ backgroundImage: "url(/videos/fletcher-hero-poster.jpg)", backgroundColor: "#0a0f0d" }}
+      >
+        <HeroVideo src="/videos/fletcher-hero.mp4" poster="/videos/fletcher-hero-poster.jpg" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[rgba(10,15,13,0.62)]" />
+        <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-[#0f1714] to-transparent" />
 
-          <div className="relative lg:col-span-6">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-euc-100 sm:aspect-[5/5] lg:aspect-[4/5]">
-              <Image
-                src="/team/daniel-lee.jpg"
-                alt="Daniel Lee, APA Titled Pain Physiotherapist and Director of Fletcher Physiotherapy"
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover object-top"
-              />
-            </div>
-            <div className="absolute -bottom-6 left-4 right-4 flex items-center gap-4 rounded-3xl border border-beige-200 bg-white/95 p-4 shadow-card-hover backdrop-blur sm:left-auto sm:right-6 sm:w-[22rem]">
-              <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-euc-600 text-white">
-                <Icon name="star" className="h-5 w-5" />
-              </span>
-              <div className="leading-snug">
-                <p className="font-serif text-lg text-navy-900">Daniel Lee</p>
-                <p className="text-xs text-navy-500">APA Titled Pain Physiotherapist · Director</p>
-              </div>
-            </div>
+        <div className="container-px w-full py-24">
+          <p className="text-sm font-normal uppercase tracking-[0.18em] text-[#edf4f2] sm:text-base">
+            Sydney · Newcastle · Central Coast
+          </p>
+          <p aria-hidden="true" className="mt-4 font-display text-[2.6rem] font-bold uppercase leading-[0.95] tracking-[0.06em] text-[#e6fff6] sm:text-7xl lg:text-[6.2rem]">
+            Fletcher
+          </p>
+          <p aria-hidden="true" className="mt-2 text-lg font-medium uppercase tracking-[0.42em] text-[#e6fff6] sm:text-2xl lg:text-[2.1rem]">
+            Physiotherapy
+          </p>
+          <h1 className="mx-auto mt-8 max-w-2xl text-xl font-medium leading-snug tracking-normal text-[#edf4f2] sm:text-2xl">
+            Expert physiotherapy — <span className="text-[#87f9d3]">in clinic or at home.</span>
+          </h1>
+          <p className="mx-auto mt-3 max-w-xl text-base text-[#c9d6d1] sm:text-lg">
+            Led by an APA Titled Pain Physiotherapist. Clinics in Jesmond, Yagoona and Parramatta; home visits across
+            Sydney, Newcastle and the Central Coast.
+          </p>
+          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link href="/clinic-physiotherapy" className="btn-outline w-full min-w-[200px] sm:w-auto">
+              Find a Clinic
+            </Link>
+            <Link href="/home-visits" className="btn-outline w-full min-w-[200px] sm:w-auto">
+              Book a Home Visit
+            </Link>
           </div>
+          <p className="mt-6 text-sm text-[#c9d6d1]">
+            Or call{" "}
+            <a href={site.phoneHref} className="font-medium text-[#87f9d3] underline underline-offset-4">
+              {site.phone}
+            </a>{" "}
+            · Mon–Fri, 8am–6pm
+          </p>
         </div>
       </section>
 
@@ -158,7 +140,7 @@ export default function HomePage() {
       <section className="bg-white py-16 lg:py-24" aria-labelledby="pathways">
         <div className="container-px">
           <h2 id="pathways" className="max-w-2xl text-3xl text-navy-900 sm:text-4xl">
-            Two ways to see us. <span className="italic text-euc-600">The same standard of care.</span>
+            Two ways to see us. <span className="text-euc-600">The same standard of care.</span>
           </h2>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
             <Reveal>

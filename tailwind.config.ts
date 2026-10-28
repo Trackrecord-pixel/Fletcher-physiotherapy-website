@@ -59,7 +59,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        serif: ["var(--font-fraunces)", "Georgia", "serif"],
+        serif: ["var(--font-inter)", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "sans-serif"],
       },
       boxShadow: {
         card: "0 1px 2px rgba(19, 33, 43, 0.04), 0 8px 28px -12px rgba(19, 33, 43, 0.14)",
