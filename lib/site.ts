@@ -79,6 +79,8 @@ export const conditionsNav: NavLink[] = [
 
 export const locationsNav: NavLink[] = [
   { label: "Jesmond Clinic", href: "/physiotherapy-jesmond" },
+  { label: "Yagoona Clinic", href: "/physiotherapy-yagoona" },
+  { label: "Parramatta Clinic", href: "/physiotherapy-parramatta" },
   { label: "Home Visit Physiotherapy", href: "/home-visit-physiotherapy-newcastle" },
   { label: "Sydney Physiotherapy", href: "/physiotherapy-sydney" },
   { label: "All Locations", href: "/locations" },

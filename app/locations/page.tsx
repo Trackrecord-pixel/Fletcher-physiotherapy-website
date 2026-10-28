@@ -8,6 +8,7 @@ import Reveal from "@/components/Reveal";
 import FAQAccordion from "@/components/FAQAccordion";
 import { BreadcrumbSchema, FaqSchema } from "@/components/StructuredData";
 import { locations, suburbs, clinics, site } from "@/lib/site";
+import { sydneyClinics } from "@/lib/sydneyClinics";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
 const locationFaqs = [
@@ -47,7 +48,7 @@ export default function LocationsPage() {
       <PageHero
         eyebrow="Our Locations"
         title="Newcastle physiotherapy clinic & home visits"
-        intro="Choose the option that suits you best — visit our Jesmond clinic, or have a physiotherapist come to your home across Newcastle, Lake Macquarie and the Central Coast — and, from November 2026, Sydney."
+        intro="Choose the option that suits you best — visit our clinics in Jesmond, Yagoona or Parramatta, or have a physiotherapist come to your home across Newcastle, Lake Macquarie, the Central Coast and Sydney."
         breadcrumb={[
           { name: "Home", href: "/" },
           { name: "Locations", href: "/locations" },
@@ -56,7 +57,7 @@ export default function LocationsPage() {
 
       <section className="section-py bg-white">
         <div className="container-px">
-          <SectionHeading eyebrow="Clinic Appointments" title="Our Newcastle clinic" />
+          <SectionHeading eyebrow="Clinic Appointments" title="Our clinics" />
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {clinics.map((c, i) => (
               <Reveal key={c.slug} delay={i * 80}>
@@ -69,6 +70,23 @@ export default function LocationsPage() {
                   <p className="mt-4 flex-grow text-sm leading-relaxed text-navy-600">Physiotherapy, chronic pain management, musculoskeletal and sports injuries, falls prevention, balance assessment and post-operative rehabilitation. Medicare GP Chronic Condition Management Plan (GPCCMP), DVA and private patients welcome.</p>
                   <div className="mt-5 flex flex-col gap-2.5 sm:flex-row">
                     <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary w-full sm:w-auto">Book Appointment <Icon name="arrow" className="h-4 w-4" /></a>
+                    <Link href={`/${c.slug}`} className="btn-secondary w-full sm:w-auto">Clinic details</Link>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+            {sydneyClinics.map((c, i) => (
+              <Reveal key={c.slug} delay={(clinics.length + i) * 80}>
+                <div className="card card-hover flex h-full flex-col">
+                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
+                    <Icon name="pin" className="h-3.5 w-3.5" /> Sydney clinic
+                  </span>
+                  <h3 className="mt-4 text-2xl text-navy-900">{c.brandName}</h3>
+                  <p className="mt-1 text-sm text-navy-600">Inside {c.hostCentre}</p>
+                  <p className="mt-2 flex items-start gap-2 text-sm text-navy-600"><Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {c.streetAddress}, {c.suburb} NSW {c.postcode}</p>
+                  <p className="mt-4 flex-grow text-sm leading-relaxed text-navy-600">Physiotherapy for pain, injuries, rehabilitation, balance and falls prevention. Medicare GPCCMP, DVA, NDIS, Support at Home and private patients welcome. Book through clinic reception.</p>
+                  <div className="mt-5 flex flex-col gap-2.5 sm:flex-row">
+                    <a href={`tel:+61${c.phone.replace(/\D/g, "").replace(/^0/, "")}`} className="btn-primary w-full sm:w-auto"><Icon name="phone" className="h-4 w-4" /> Call {c.phone}</a>
                     <Link href={`/${c.slug}`} className="btn-secondary w-full sm:w-auto">Clinic details</Link>
                   </div>
                 </div>

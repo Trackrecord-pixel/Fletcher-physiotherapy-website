@@ -7,6 +7,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import AuthorReview from "@/components/AuthorReview";
 import OfferWindow from "@/components/OfferWindow";
 import WhyHomeVisits from "@/components/WhyHomeVisits";
+import { sydneyClinics } from "@/lib/sydneyClinics";
 import { BreadcrumbSchema, FaqSchema } from "@/components/StructuredData";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 import { site } from "@/lib/site";
@@ -190,6 +191,28 @@ export default function SydneyPage() {
               </div>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section className="section-py bg-white" aria-labelledby="sydney-clinics">
+        <div className="container-px">
+          <p className="text-sm font-semibold uppercase tracking-widest text-clay-600">Clinic appointments</p>
+          <h2 id="sydney-clinics" className="mt-2 text-3xl text-navy-900">Our Sydney clinics</h2>
+          <p className="mt-3 max-w-2xl text-navy-600">Prefer to come in? We also consult inside local GP practices. Book by calling the clinic&rsquo;s reception.</p>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {sydneyClinics.map((c) => (
+              <div key={c.slug} className="card flex h-full flex-col">
+                <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700"><Icon name="phone" className="h-3.5 w-3.5" /> Book via reception</span>
+                <h3 className="mt-4 text-2xl text-navy-900">{c.brandName}</h3>
+                <p className="mt-1 text-sm text-navy-600">Inside {c.hostCentre}</p>
+                <p className="mt-2 flex items-start gap-2 text-sm text-navy-600"><Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {c.streetAddress}, {c.suburb} NSW {c.postcode}</p>
+                <div className="mt-5 flex flex-col gap-2.5 sm:flex-row">
+                  <a href={`tel:+61${c.phone.replace(/\D/g, "").replace(/^0/, "")}`} className="btn-primary w-full sm:w-auto"><Icon name="phone" className="h-4 w-4" /> {c.phone}</a>
+                  <Link href={`/${c.slug}`} className="btn-secondary w-full sm:w-auto">Clinic details</Link>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

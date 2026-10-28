@@ -2,6 +2,7 @@ import Link from "next/link";
 import Logo from "./Logo";
 import Icon from "./Icon";
 import { primaryNav, servicesNav, conditionsNav, clinics, site } from "@/lib/site";
+import { sydneyClinics } from "@/lib/sydneyClinics";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -79,7 +80,7 @@ export default function Footer() {
 
           <div className="lg:col-span-3">
             <h2 className="text-sm font-semibold uppercase tracking-widest text-white">
-              Our Clinic
+              Our Clinics
             </h2>
             <ul className="mt-5 space-y-3 text-sm">
               {clinics.map((c) => (
@@ -87,6 +88,14 @@ export default function Footer() {
                   <Link href={`/${c.slug}`} className="inline-flex items-start gap-2.5 text-navy-200 hover:text-white">
                     <Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-beige-300" />
                     <span>{c.hostCentre}<span className="block text-xs text-navy-400">Consulting {c.dayShort}</span></span>
+                  </Link>
+                </li>
+              ))}
+              {sydneyClinics.map((c) => (
+                <li key={c.slug}>
+                  <Link href={`/${c.slug}`} className="inline-flex items-start gap-2.5 text-navy-200 hover:text-white">
+                    <Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-beige-300" />
+                    <span>{c.brandName}<span className="block text-xs text-navy-400">Sydney clinic</span></span>
                   </Link>
                 </li>
               ))}
