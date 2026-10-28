@@ -13,9 +13,9 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Logo light />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-navy-200">
-              Professional home visit physiotherapy in the comfort of your home.
-              Supporting independence for NDIS, Support at Home and private
-              clients across Newcastle, Lake Macquarie, the Central Coast and selected Sydney areas.
+              Physiotherapy in clinic or at home. Clinics in Jesmond, Yagoona and Parramatta;
+              home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast. Led by an
+              APA Titled Pain Physiotherapist.
             </p>
             <div className="mt-6 flex flex-col gap-3 text-sm">
               <a href={site.phoneHref} className="inline-flex items-center gap-2.5 hover:text-white">

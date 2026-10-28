@@ -117,7 +117,7 @@ export default function SydneySuburbPage({ s }: { s: SydneySuburb }) {
               <h2 className="text-2xl text-navy-900 sm:text-3xl">Funding options</h2>
               <p className="prose-navy mt-4">
                 We see NDIS participants (agency, plan and self-managed), Support at Home clients (formerly Home Care
-                Packages), people with a GP Chronic Condition Management Plan (GPCCMP) and private clients.
+                Packages), people with a GP Chronic Condition Management Plan (GPCCMP), DVA card holders, WorkCover claims and private clients.
                 Read more about{" "}
                 <Link href="/ndis-physiotherapy-sydney" className="font-semibold underline">NDIS physiotherapy in Sydney</Link> and{" "}
                 <Link href="/support-at-home-physiotherapy-newcastle" className="font-semibold underline">Support at Home physiotherapy</Link>.

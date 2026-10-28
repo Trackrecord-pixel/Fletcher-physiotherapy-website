@@ -1,29 +1,16 @@
 import Link from "next/link";
 
+// Fletcher Physiotherapy wordmark (Option C, approved Oct 2026):
+// serif "Fletcher", clay rule, spaced "PHYSIOTHERAPY".
 export default function Logo({ light = false }: { light?: boolean }) {
   return (
-    <Link href="/" className="group inline-flex items-center gap-3">
-      <span
-        aria-hidden="true"
-        className={`flex h-10 w-10 items-center justify-center rounded-xl ${
-          light ? "bg-white text-navy-900" : "bg-navy-800 text-white"
-        } font-serif text-lg font-semibold shadow-card transition-transform group-hover:scale-105`}
-      >
-        F
+    <Link href="/" aria-label="Fletcher Physiotherapy — home" className="group inline-flex flex-col leading-none">
+      <span className={`font-serif text-[1.7rem] font-medium tracking-tight ${light ? "text-white" : "text-navy-900"}`}>
+        Fletcher
       </span>
-      <span className="leading-tight">
-        <span
-          className={`block font-serif text-lg font-semibold ${
-            light ? "text-white" : "text-navy-900"
-          }`}
-        >
-          Fletcher
-        </span>
-        <span
-          className={`block text-[0.7rem] font-semibold uppercase tracking-[0.22em] ${
-            light ? "text-beige-200" : "text-navy-500"
-          }`}
-        >
+      <span className="mt-1.5 flex items-center gap-2">
+        <span aria-hidden="true" className="h-[2px] w-6 bg-clay-500 transition-all duration-300 group-hover:w-8" />
+        <span className={`text-[0.62rem] font-semibold uppercase tracking-[0.3em] ${light ? "text-euc-200" : "text-euc-600"}`}>
           Physiotherapy
         </span>
       </span>

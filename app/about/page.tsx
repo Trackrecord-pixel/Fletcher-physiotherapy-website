@@ -179,7 +179,8 @@ export default function AboutPage() {
               an <strong>APA Titled Pain Physiotherapist</strong> — a credential awarded by
               the Australian Physiotherapy Association to physiotherapists with advanced
               training and advanced expertise in pain management. He holds a
-              <strong> Master of Medicine (Pain Management) from the University of Sydney</strong>.
+              <strong> Master of Medicine (Pain Management) from the University of Sydney</strong> and a
+              <strong> Bachelor of Physiotherapy (Honours) from the University of Newcastle</strong>.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-navy-700">
               Daniel works extensively with chronic pain, complex conditions and older

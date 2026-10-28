@@ -1,37 +1,33 @@
+import Link from "next/link";
 import Icon from "./Icon";
 import { site } from "@/lib/site";
 
 export default function CTASection({
-  title = "Ready to receive physiotherapy in the comfort of your home?",
-  text = "Book online or contact our friendly team today. We visit homes across Newcastle, Lake Macquarie, the Central Coast and Sydney, with clinics in Jesmond, Yagoona and Parramatta.",
+  title = "Physiotherapy in clinic or at home",
+  text = "Clinics in Jesmond, Yagoona and Parramatta. Home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
 }: {
   title?: string;
   text?: string;
 }) {
   return (
-    <section className="bg-white">
-      <div className="container-px pb-20">
-        <div className="relative overflow-hidden rounded-3xl bg-navy-900 px-7 py-14 text-center shadow-card-hover sm:px-12 lg:py-20">
-          <div
-            className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-navy-700/40 blur-3xl"
-            aria-hidden="true"
-          />
-          <div
-            className="pointer-events-none absolute -bottom-20 -left-10 h-64 w-64 rounded-full bg-beige-300/10 blur-3xl"
-            aria-hidden="true"
-          />
-          <div className="relative mx-auto max-w-2xl">
-            <span className="eyebrow bg-navy-700 text-beige-100">We Come To You</span>
-            <h2 className="mt-5 text-3xl text-white sm:text-4xl">{title}</h2>
-            <p className="mt-4 text-lg text-navy-100">{text}</p>
-            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-accent w-full sm:w-auto">
-                Book Online <Icon name="arrow" className="h-4 w-4" />
-              </a>
-              <a href={site.phoneHref} className="btn-secondary w-full border-white/30 bg-transparent text-white hover:bg-white/10 sm:w-auto">
-                <Icon name="phone" className="h-4 w-4" /> {site.phone}
-              </a>
-            </div>
+    <section className="bg-cream">
+      <div className="container-px py-16 lg:py-20">
+        <div className="grid gap-10 rounded-[2rem] bg-navy-900 px-7 py-12 text-white sm:px-12 lg:grid-cols-12 lg:items-center lg:py-16">
+          <div className="lg:col-span-7">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-beige-300">Get started</p>
+            <h2 className="mt-4 text-3xl text-white sm:text-4xl">{title}</h2>
+            <p className="mt-4 max-w-xl text-lg text-navy-100">{text}</p>
+          </div>
+          <div className="grid gap-3 lg:col-span-5">
+            <Link href="/clinic-physiotherapy" className="btn-primary w-full">
+              <Icon name="pin" className="h-5 w-5" /> Find a Clinic
+            </Link>
+            <Link href="/home-visits" className="btn w-full bg-white text-navy-900 hover:bg-beige-50">
+              <Icon name="home" className="h-5 w-5" /> Book a Home Visit
+            </Link>
+            <a href={site.phoneHref} className="mt-1 text-center text-sm font-semibold text-beige-200 hover:text-white">
+              or call {site.phone}
+            </a>
           </div>
         </div>
       </div>
