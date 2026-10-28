@@ -11,6 +11,7 @@ import {
 import { site } from "@/lib/site";
 import Script from "next/script";
 import ConversionTracking from "@/components/ConversionTracking";
+import SmoothScroll from "@/components/SmoothScroll";
 
 export const viewport: Viewport = {
   themeColor: "#0f1714",
@@ -85,6 +86,7 @@ export default function RootLayout({
           Clinics in Jesmond, Yagoona &amp; Parramatta · Home visits across Newcastle, the Central Coast &amp; Sydney.{" "}
           <span className="font-semibold underline underline-offset-2">Find your location →</span>
         </a>
+        <SmoothScroll />
         <Header />
         <main id="main">{children}</main>
         <Footer />
