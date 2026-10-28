@@ -95,7 +95,7 @@ export default function Footer() {
                 <li key={c.slug}>
                   <Link href={`/${c.slug}`} className="inline-flex items-start gap-2.5 text-navy-200 hover:text-white">
                     <Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-beige-300" />
-                    <span>{c.brandName}<span className="block text-xs text-navy-400">Sydney clinic</span></span>
+                    <span>{c.brandName}<span className="block text-xs text-navy-400">{c.days ?? "Sydney clinic"}</span></span>
                   </Link>
                 </li>
               ))}

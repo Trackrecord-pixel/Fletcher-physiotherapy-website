@@ -59,7 +59,7 @@ export default function LocationPicker({
       group: "Clinic",
       icon: "pin",
       title: `${c.suburb} clinic`,
-      where: `${c.hostCentre}, ${c.streetAddress}`,
+      where: `${c.hostCentre}, ${c.streetAddress}${c.days ? ` · ${c.days}` : ""}`,
       href: `/${c.slug}`,
       phone: c.phone,
       phoneLabel: "Call reception",

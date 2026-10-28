@@ -79,7 +79,7 @@ export default function LocationsPage() {
               <Reveal key={c.slug} delay={(clinics.length + i) * 80}>
                 <div className="card card-hover flex h-full flex-col">
                   <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
-                    <Icon name="pin" className="h-3.5 w-3.5" /> Sydney clinic
+                    <Icon name="clock" className="h-3.5 w-3.5" /> {c.days ?? "Sydney clinic"}
                   </span>
                   <h3 className="mt-4 text-2xl text-navy-900">{c.brandName}</h3>
                   <p className="mt-1 text-sm text-navy-600">Inside {c.hostCentre}</p>

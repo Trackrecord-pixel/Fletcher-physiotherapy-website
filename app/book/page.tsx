@@ -79,7 +79,7 @@ export default function BookPage() {
           {sydneyClinics.map((c) => (
             <div key={c.slug} className="card flex h-full flex-col">
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-white"><Icon name="pin" className="h-6 w-6" /></span>
-              <span className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700"><Icon name="phone" className="h-3.5 w-3.5" /> Book via reception</span>
+              <span className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700"><Icon name="clock" className="h-3.5 w-3.5" /> {c.days ?? "Book via reception"}</span>
               <h2 className="mt-3 text-xl text-navy-900">{c.brandName}</h2>
               <p className="mt-2 flex-grow text-sm text-navy-600">Inside {c.hostCentre}, {c.streetAddress}, {c.suburb} NSW {c.postcode}</p>
               <a href={`tel:+61${c.phone.replace(/\D/g, "").replace(/^0/, "")}`} className="btn-primary mt-5 w-full"><Icon name="phone" className="h-4 w-4" /> Call {c.phone}</a>

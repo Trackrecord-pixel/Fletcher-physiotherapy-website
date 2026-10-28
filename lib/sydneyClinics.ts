@@ -12,7 +12,8 @@ export type SydneyClinic = {
   postcode: string;
   phone: string;              // medical centre reception — they book physio appointments
   startDate: string;          // first day consulting (internal record only — not shown on the site)
-  days?: string;              // e.g. "Mondays" — leave undefined until confirmed
+  days?: string;              // e.g. "Tuesdays, 9:00am – 4:30pm" — leave undefined until confirmed
+  hours?: { dayOfWeek: string; opens: string; closes: string }[]; // for Google (schema), 24h times
   metaDescription: string;
   intro: string;
   about: string[];
@@ -38,6 +39,8 @@ export const sydneyClinics: SydneyClinic[] = [
     streetAddress: "457 Hume Highway",
     postcode: "2199",
     phone: "02 8766 2477",
+    days: "Tuesdays, 9:00am – 4:30pm",
+    hours: [{ dayOfWeek: "Tuesday", opens: "09:00", closes: "16:30" }],
     startDate: "17 November 2026",
     metaDescription:
       "Physio in Yagoona at Yagoona Family HealthCare, 457 Hume Hwy. Pain, injuries, rehab and falls prevention. Medicare GPCCMP, DVA, NDIS and private. Call to book.",
@@ -57,9 +60,15 @@ export const sydneyClinics: SydneyClinic[] = [
     suburb: "Parramatta",
     brandName: "Fletcher Physiotherapy Parramatta",
     hostCentre: "Parramatta Medical and Dental Centre",
+    poster: {
+      src: "/images/clinics/fletcher-physiotherapy-parramatta.jpg",
+      alt: "Fletcher Physiotherapy at Parramatta Medical and Dental Centre, Shop 1, 144 Marsden Street, Parramatta",
+    },
     streetAddress: "Shop 1, 144 Marsden Street",
     postcode: "2150",
     phone: "02 8320 9300",
+    days: "Wednesdays, 9:00am – 4:30pm",
+    hours: [{ dayOfWeek: "Wednesday", opens: "09:00", closes: "16:30" }],
     startDate: "18 November 2026",
     metaDescription:
       "Physio in Parramatta at Parramatta Medical and Dental Centre, 144 Marsden St. Pain, injuries, rehab, falls prevention. GPCCMP, DVA, NDIS and private.",

@@ -192,7 +192,7 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
                 <h2 className="mt-1 text-xl text-white">{c.brandName}</h2>
                 <p className="mt-1 text-sm text-navy-100">Inside {c.hostCentre}</p>
                 <p className="mt-4 flex items-start gap-2 text-sm text-navy-100"><Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-beige-200" /> {fullAddress}</p>
-                <p className="mt-2 flex items-center gap-2 text-sm text-navy-100"><Icon name="clock" className="h-4 w-4 text-beige-200" /> {c.days ? `Physio ${c.days}` : "Call reception for physio days"}</p>
+                <p className="mt-2 flex items-center gap-2 text-sm text-navy-100"><Icon name="clock" className="h-4 w-4 text-beige-200" /> {c.days ? `Physio: ${c.days}` : "Call reception for physio days"}</p>
                 <CallButton className="btn-accent mt-5 w-full" />
                 <p className="mt-3 text-center text-xs text-navy-200">Bookings through clinic reception</p>
               </div>
@@ -245,6 +245,9 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
               addressCountry: "AU",
             },
             areaServed: [c.suburb, ...c.nearby].map((name) => ({ "@type": "Place", name })),
+            ...(c.hours?.length
+              ? { openingHoursSpecification: c.hours.map((h) => ({ "@type": "OpeningHoursSpecification", dayOfWeek: h.dayOfWeek, opens: h.opens, closes: h.closes })) }
+              : {}),
           }),
         }}
       />
