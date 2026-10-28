@@ -61,7 +61,7 @@ export const sydneyClinics: SydneyClinic[] = [
     brandName: "Fletcher Physiotherapy Parramatta",
     hostCentre: "Parramatta Medical and Dental Centre",
     poster: {
-      src: "/images/clinics/fletcher-physiotherapy-parramatta.jpg",
+      src: "/images/clinics/fletcher-physiotherapy-parramatta-v2.jpg",
       alt: "Fletcher Physiotherapy at Parramatta Medical and Dental Centre, Shop 1, 144 Marsden Street, Parramatta",
     },
     streetAddress: "Shop 1, 144 Marsden Street",
