@@ -121,9 +121,9 @@ export default function HomePage() {
               </a>{" "}
               — Mon–Fri, 8am–6pm
             </p>
-            <ul className="mt-10 grid grid-cols-2 gap-x-6 gap-y-3 border-t border-beige-200 pt-6 text-sm text-navy-700 sm:grid-cols-4">
+            <ul className="mt-10 flex flex-wrap gap-x-7 gap-y-3 border-t border-beige-200 pt-6 text-sm text-navy-700">
               {["APA Titled", "Registered NDIS", "Medicare · DVA", "WorkCover"].map((t) => (
-                <li key={t} className="flex items-center gap-2">
+                <li key={t} className="flex items-center gap-2 whitespace-nowrap">
                   <Icon name="check" className="h-4 w-4 text-euc-600" /> {t}
                 </li>
               ))}
@@ -133,18 +133,18 @@ export default function HomePage() {
           <div className="relative lg:col-span-6">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-euc-100 sm:aspect-[5/5] lg:aspect-[4/5]">
               <Image
-                src="/images/hero.jpg"
-                alt="Physiotherapist working with an older adult on strength and mobility"
+                src="/team/daniel-lee.jpg"
+                alt="Daniel Lee, APA Titled Pain Physiotherapist and Director of Fletcher Physiotherapy"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
             <div className="absolute -bottom-6 left-4 right-4 flex items-center gap-4 rounded-3xl border border-beige-200 bg-white/95 p-4 shadow-card-hover backdrop-blur sm:left-auto sm:right-6 sm:w-[22rem]">
-              <div className="relative h-14 w-14 flex-shrink-0 overflow-hidden rounded-full bg-euc-100">
-                <Image src="/team/daniel-lee.jpg" alt="Daniel Lee" fill sizes="56px" className="object-cover" />
-              </div>
+              <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-euc-600 text-white">
+                <Icon name="star" className="h-5 w-5" />
+              </span>
               <div className="leading-snug">
                 <p className="font-serif text-lg text-navy-900">Daniel Lee</p>
                 <p className="text-xs text-navy-500">APA Titled Pain Physiotherapist · Director</p>
@@ -265,7 +265,7 @@ export default function HomePage() {
                   <p className="mt-2 text-sm leading-relaxed text-navy-600">{a.text}</p>
                   <p className="mt-4 text-xs leading-relaxed text-navy-500">{a.suburbs.join(" · ")}</p>
                   <span className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-semibold text-euc-700">
-                    Home visits in {a.title} <Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    Explore this area <Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </span>
                 </Link>
               </Reveal>

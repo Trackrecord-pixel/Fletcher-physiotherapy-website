@@ -76,7 +76,7 @@ export default function Header() {
                   aria-haspopup="true"
                   aria-expanded={openMenu === link.label}
                   onClick={() => setOpenMenu((m) => (m === link.label ? null : link.label))}
-                  className={`inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-[0.8rem] font-medium transition-colors ${
+                  className={`inline-flex items-center gap-1 whitespace-nowrap rounded-full px-3 py-2 text-[0.8rem] font-medium transition-colors ${
                     active ? "text-euc-700" : "text-navy-700 hover:text-navy-900"
                   }`}
                 >
@@ -105,7 +105,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 aria-current={active ? "page" : undefined}
-                className={`rounded-full px-3.5 py-2 text-[0.8rem] font-medium transition-colors ${
+                className={`whitespace-nowrap rounded-full px-3 py-2 text-[0.8rem] font-medium transition-colors ${
                   active ? "text-euc-700" : "text-navy-700 hover:text-navy-900"
                 }`}
               >
@@ -116,7 +116,7 @@ export default function Header() {
         </div>
 
         <div className="hidden items-center gap-4 xl:flex">
-          <a href={site.phoneHref} className="inline-flex items-center gap-2 text-sm font-semibold text-navy-900 hover:text-euc-700">
+          <a href={site.phoneHref} className="hidden items-center gap-2 whitespace-nowrap text-sm font-semibold text-navy-900 hover:text-euc-700 2xl:inline-flex">
             <Icon name="phone" className="h-4 w-4 text-euc-600" /> {site.phone}
           </a>
           <Link href="/book" className="btn-primary px-6 py-3 text-sm">
