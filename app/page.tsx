@@ -13,6 +13,7 @@ import FeatureList from "@/components/FeatureList";
 import CredentialsBand from "@/components/CredentialsBand";
 import OfferWindow from "@/components/OfferWindow";
 import AuthorReview from "@/components/AuthorReview";
+import LocationPicker from "@/components/LocationPicker";
 import { FaqSchema, PersonSchema } from "@/components/StructuredData";
 import { services, homeFaqs, locations, clinics, site } from "@/lib/site";
 import type { IconName } from "@/components/Icon";
@@ -22,29 +23,21 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <LocationPicker tone="sand" />
       <ReviewStrip />
-      {/* Sydney expansion teaser */}
+      {/* Sydney teaser */}
       <section className="section-py bg-sand" id="sydney-offer">
         <div className="container-px">
           <div className="overflow-hidden rounded-3xl border border-clay-200 bg-white shadow-card">
-            <Image
-              src="/images/sydney-promo.jpg"
-              alt="Sydney Expansion — Mobile Physiotherapy. FREE Phone Consultation. Mobile physiotherapy home visits across Sydney, available from 9 November 2026."
-              width={1536}
-              height={1024}
-              className="h-auto w-full"
-              priority
-              sizes="(max-width: 1280px) 100vw, 1200px"
-            />
             <div className="p-8 sm:p-10 lg:p-12">
-              <h2 className="text-3xl text-navy-900 sm:text-4xl">Sydney Mobile Physiotherapy – Now Expanding</h2>
+              <h2 className="text-3xl text-navy-900 sm:text-4xl">Sydney Mobile Physiotherapy &amp; Clinics</h2>
               <p className="mt-3 max-w-2xl text-lg text-navy-700">
-                Fletcher Physiotherapy is expanding our mobile physiotherapy home visit service to Sydney
-                from 9 November 2026 — around Sydney Olympic Park, the Inner West and surrounding suburbs.
+                Home visit physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs —
+                plus clinic appointments at Yagoona and Parramatta.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <span className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-4 py-2 text-sm font-semibold text-white">
-                  <Icon name="calendar" className="h-4 w-4 text-beige-200" /> Available from 9 November 2026
+                  <Icon name="home" className="h-4 w-4 text-beige-200" /> Home visits &amp; clinics in Sydney
                 </span>
                 <OfferWindow>
                   <span className="inline-flex items-center gap-2 rounded-full bg-clay-500 px-4 py-2 text-sm font-semibold text-white">
@@ -212,7 +205,7 @@ export default function HomePage() {
             center
             eyebrow="Service Locations"
             title="Home visit physiotherapy across the region"
-            intro="We bring physiotherapy to you across Newcastle, Lake Macquarie and the Central Coast — and now Sydney, from November 2026."
+            intro="We bring physiotherapy to you across Newcastle, Lake Macquarie and the Central Coast — and Sydney."
           />
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {locations.map((loc, i) => (

@@ -71,7 +71,7 @@ export default function SuburbPage({ s }: { s: Suburb }) {
                   <Icon name="users" className="h-5 w-5 text-clay-600" /> Referrers in the Olympic Park area
                 </h2>
                 <p className="prose-navy mt-3">
-                  We&rsquo;re building our Sydney referral network ahead of launching in November 2026. GPs,
+                  We&rsquo;re growing our Sydney referral network. GPs,
                   nursing-home and aged-care teams, Support at Home providers and NDIS support coordinators
                   within about 30 minutes of Sydney Olympic Park &mdash; we&rsquo;d welcome the chance to work
                   with you and support your clients at home.

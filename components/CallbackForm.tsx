@@ -13,7 +13,7 @@ const needs = [
   "NDIS physiotherapy",
   "Support at Home physiotherapy",
   "Pain that isn't settling",
-  "Sydney home visit (from 9 Nov 2026)",
+  "Sydney home visit",
   "Not sure — I'd like advice",
 ];
 

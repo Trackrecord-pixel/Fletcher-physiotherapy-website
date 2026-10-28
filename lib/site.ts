@@ -4,7 +4,7 @@ export const site = {
   legalName: "Fletcher Physiotherapy",
   tagline: "We Come To You",
   description:
-    "Mobile & home visit physio across Newcastle, Lake Macquarie, Central Coast and Sydney (from 9 Nov 2026). NDIS, Support at Home & private clients welcome.",
+    "Mobile & home visit physio across Newcastle, Lake Macquarie, Central Coast and Sydney. NDIS, Support at Home & private clients welcome.",
   url: "https://www.fletcherphysiotherapy.com.au",
   phone: "0404 791 756",
   phoneHref: "tel:+61404791756",
@@ -81,8 +81,8 @@ export const locationsNav: NavLink[] = [
   { label: "Jesmond Clinic", href: "/physiotherapy-jesmond" },
   { label: "Yagoona Clinic", href: "/physiotherapy-yagoona" },
   { label: "Parramatta Clinic", href: "/physiotherapy-parramatta" },
-  { label: "Home Visit Physiotherapy", href: "/home-visit-physiotherapy-newcastle" },
-  { label: "Sydney Physiotherapy", href: "/physiotherapy-sydney" },
+  { label: "Home Visits – Newcastle & Central Coast", href: "/home-visit-physiotherapy-newcastle" },
+  { label: "Home Visits – Sydney", href: "/physiotherapy-sydney" },
   { label: "All Locations", href: "/locations" },
 ];
 
@@ -393,7 +393,7 @@ export const locations: LocationArea[] = [
   {
     name: "Sydney",
     blurb:
-      "From 9 November 2026 — mobile and home visit physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs, for older adults, NDIS, Support at Home and post-hospital rehabilitation.",
+      "Mobile and home visit physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs, for older adults, NDIS, Support at Home and post-hospital rehabilitation.",
     suburbs: [
       "Sydney Olympic Park",
       "Homebush",
@@ -964,11 +964,11 @@ export const suburbs: Suburb[] = [
     region: "Sydney",
     postcode: "2127",
     intro:
-      "Fletcher Physiotherapy is expanding to Sydney from November 2026 — bringing nursing-home and in-home physiotherapy to residential aged care, Support at Home, NDIS and Rehab at Home clients across the Sydney Olympic Park area and surrounding suburbs.",
+      "Fletcher Physiotherapy provides nursing-home and in-home physiotherapy to residential aged care, Support at Home, NDIS and Rehab at Home clients across the Sydney Olympic Park area and surrounding suburbs.",
     local:
       "Based in the Sydney Olympic Park region, our Sydney service focuses on home visits and residential aged care, delivering mobile physiotherapy to older adults and NDIS participants in the inner west and surrounding suburbs — so you receive experienced care without the need to travel.",
     localArea:
-      "From November 2026, Fletcher Physiotherapy brings its home-visit model to Sydney. Based around Sydney Olympic Park, we focus on nursing-home physiotherapy and in-home care for residential aged care, Support at Home, NDIS and Rehab at Home clients across the inner west — including Homebush, Lidcombe, Auburn, Strathfield, Concord and nearby suburbs. Care is led by an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management) and extensive experience in aged care, falls prevention and rehabilitation.",
+      "Fletcher Physiotherapy brings its home-visit model to Sydney. Based around Sydney Olympic Park, we focus on nursing-home physiotherapy and in-home care for residential aged care, Support at Home, NDIS and Rehab at Home clients across the inner west — including Homebush, Lidcombe, Auburn, Strathfield, Concord and nearby suburbs. Care is led by an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management) and extensive experience in aged care, falls prevention and rehabilitation.",
     nearby: ["Sydney Olympic Park", "Homebush", "Lidcombe", "Auburn", "Strathfield", "Concord"],
     hospitals: ["Concord Hospital", "Auburn Hospital", "Westmead Hospital"],
     landmarks: ["Sydney Olympic Park", "Bicentennial Park", "Parramatta River"],

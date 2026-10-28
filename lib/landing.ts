@@ -244,7 +244,7 @@ export const landingPages: Record<string, LandingContent> = {
     serviceName: "NDIS Physiotherapy",
     intro: "Registered NDIS provider delivering physiotherapy at home across Newcastle, Lake Macquarie and the Central Coast — functional assessments, goal-focused therapy and clear reports for participants, support coordinators and plan managers.",
     lead: [
-      "Fletcher Physiotherapy is a registered NDIS provider (registration number NDIS0023718). We deliver home-based NDIS physiotherapy across Newcastle, Lake Macquarie and the Central Coast — and around Sydney Olympic Park and the Inner West from 9 November 2026 — for agency-managed, plan-managed and self-managed participants.",
+      "Fletcher Physiotherapy is a registered NDIS provider (registration number NDIS0023718). We deliver home-based NDIS physiotherapy across Newcastle, Lake Macquarie and the Central Coast — and around Sydney Olympic Park and the Inner West — for agency-managed, plan-managed and self-managed participants.",
       "Every plan and every participant is different. We start with your goals — walking further, moving or transferring more safely, building strength, managing pain or joining in the activities you enjoy — and design physiotherapy that works toward them in the place it matters most: your home and community.",
       "This page is also written for support coordinators and plan managers: it explains how physiotherapy is usually funded, what our assessments and reports include, and what we need to accept a referral.",
     ],
@@ -350,7 +350,7 @@ export const landingPages: Record<string, LandingContent> = {
       },
       {
         q: "Do you see NDIS participants in Sydney?",
-        a: "From 9 November 2026 we provide mobile physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs. See our NDIS physiotherapy Sydney page, or call us to check availability for a participant's suburb.",
+        a: "We provide mobile physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs. See our NDIS physiotherapy Sydney page, or call us to check availability for a participant's suburb.",
       },
     ],
     related: [
@@ -370,9 +370,9 @@ export const landingPages: Record<string, LandingContent> = {
     eyebrow: "Support at Home Physiotherapy",
     h1: "Support at Home Physiotherapy (formerly Home Care Packages)",
     serviceName: "Support at Home Physiotherapy",
-    intro: "How to get physiotherapy at home through Support at Home — the program that replaced Home Care Packages — across Newcastle, Lake Macquarie and the Central Coast, and selected Sydney areas from 9 November 2026.",
+    intro: "How to get physiotherapy at home through Support at Home — the program that replaced Home Care Packages — across Newcastle, Lake Macquarie and the Central Coast, and selected Sydney areas.",
     lead: [
-      "Fletcher Physiotherapy provides home visit physiotherapy for Support at Home clients across Newcastle, Lake Macquarie and the Central Coast, and around Sydney Olympic Park and the Inner West from 9 November 2026.",
+      "Fletcher Physiotherapy provides home visit physiotherapy for Support at Home clients across Newcastle, Lake Macquarie and the Central Coast, and around Sydney Olympic Park and the Inner West.",
       "Many families still search for \"Home Care Package physio\". Home Care Packages were replaced by Support at Home on 1 November 2025, and the way physiotherapy is arranged and paid for has changed. This page explains how it works now — for older people, families and care managers.",
       "Our care is led by an APA Titled Pain Physiotherapist experienced in aged care, falls prevention and rehabilitation, and focused on helping you stay strong, steady and safely independent at home.",
     ],

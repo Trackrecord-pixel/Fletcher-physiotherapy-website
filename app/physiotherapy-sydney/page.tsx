@@ -15,7 +15,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Mobile Physiotherapy Sydney | Home Visits | Fletcher Physiotherapy" },
   description:
-    "Mobile physio and home visits around Sydney Olympic Park and the Inner West from 9 Nov 2026 — older adults, NDIS, Support at Home and rehab.",
+    "Mobile physio and home visits around Sydney Olympic Park and the Inner West — older adults, NDIS, Support at Home and rehab.",
   alternates: { canonical: "/physiotherapy-sydney" },
   openGraph: {
     type: "website", siteName: "Fletcher Physiotherapy", locale: "en_AU",
@@ -50,9 +50,9 @@ const services: { icon: IconName; label: string }[] = [
 ];
 
 const faqs = [
-  { q: "When does Fletcher Physiotherapy start in Sydney?", a: "Our Sydney mobile physiotherapy service begins on 9 November 2026." },
+  { q: "Do you have clinics in Sydney?", a: "Yes. As well as home visits, we consult inside Yagoona Family HealthCare (457 Hume Highway, Yagoona) and Parramatta Medical and Dental Centre (144 Marsden Street, Parramatta). Book by calling the clinic's reception." },
   { q: "Which Sydney suburbs do you visit?", a: "We visit homes, retirement communities and residential aged care around Sydney Olympic Park, the Inner West and surrounding suburbs — including Homebush, Homebush West, Lidcombe, Auburn, Strathfield, Concord, Rhodes, Wentworth Point and Newington. If you are unsure whether we visit your suburb, contact our team and we can confirm availability." },
-  { q: "Is there a free phone consultation?", a: "Yes. New Sydney clients can speak with our team for a free, no-obligation phone consultation to discuss service suitability, funding options and availability, from 9 November until 31 December 2026. The phone consultation is not a substitute for a full physiotherapy assessment or treatment session, and appointments remain subject to availability." },
+  { q: "Is there a free phone consultation?", a: "Yes. New Sydney clients can speak with our team for a free, no-obligation phone consultation to discuss service suitability, funding options and availability, until 31 December 2026. The phone consultation is not a substitute for a full physiotherapy assessment or treatment session, and appointments remain subject to availability." },
   { q: "What funding do you work with?", a: "We work with NDIS participants (agency, plan and self-managed), Support at Home clients (the program that replaced Home Care Packages on 1 November 2025), privately funded clients, and people needing rehabilitation after hospital discharge." },
   { q: "Do I need a referral?", a: "Not for private physiotherapy — you can contact us directly. A referral may be needed for certain funding pathways, which we can talk through during your free phone consultation." },
 ];
@@ -69,7 +69,7 @@ export default function SydneyPage() {
       <PageHero
         eyebrow="Mobile Physiotherapy · Sydney"
         title="Mobile Physiotherapy & Home Visits in Sydney"
-        intro="Fletcher Physiotherapy is expanding its mobile physiotherapy service to Sydney from 9 November 2026 — physiotherapy delivered where everyday mobility actually happens."
+        intro="Fletcher Physiotherapy provides mobile physiotherapy in Sydney — physiotherapy delivered where everyday mobility actually happens."
         breadcrumb={crumbs}
       />
 
@@ -93,12 +93,11 @@ export default function SydneyPage() {
             <OfferWindow>
               <div className="mt-8 overflow-hidden rounded-2xl border border-clay-200 bg-clay-50">
                 <div className="p-6 sm:p-7">
-                  <h2 className="text-2xl text-navy-900">Sydney Mobile Physiotherapy – Available From 9 November</h2>
+                  <h2 className="text-2xl text-navy-900">Sydney Mobile Physiotherapy</h2>
                   <p className="mt-2 text-lg font-semibold text-clay-600">FREE Phone Consultation for New Sydney Clients</p>
                   <p className="prose-navy mt-3">
-                    Fletcher Physiotherapy is expanding our mobile physiotherapy home visit service to Sydney
-                    from 9 November 2026. New Sydney clients can speak with our team for a FREE phone
-                    consultation, with immediate appointment availability from 9 November until 31 December 2026.
+                    Fletcher Physiotherapy provides mobile physiotherapy home visits in Sydney. New Sydney clients
+                    can speak with our team for a FREE phone consultation until 31 December 2026.
                   </p>
                   <div className="mt-4 flex flex-col gap-3 sm:flex-row">
                     <a href={site.phoneHref} className="btn-primary">
@@ -107,7 +106,7 @@ export default function SydneyPage() {
                     <Link href="/contact" className="btn-secondary">Enquire About a Sydney Home Visit</Link>
                   </div>
                   <p className="mt-4 text-xs leading-relaxed text-navy-500">
-                    Offer for new Sydney clients. Applies to phone consultations only, from 9 November to
+                    Offer for new Sydney clients. Applies to phone consultations only, until
                     31 December 2026. The phone consultation is to discuss service suitability, funding and
                     booking — it is not a substitute for a full physiotherapy assessment or treatment session.
                     Appointments are subject to availability.
@@ -145,7 +144,7 @@ export default function SydneyPage() {
               <p className="prose-navy mt-3">
                 We welcome referrals for our Sydney service from GPs, Support at Home providers, residential
                 aged care teams, NDIS support coordinators, rehabilitation providers, hospital discharge teams
-                and families — for services commencing 9 November 2026.
+                and families.
               </p>
               <Link href="/refer-a-patient" className="btn-primary mt-4">
                 Refer a patient <Icon name="arrow" className="h-4 w-4" />
@@ -224,7 +223,7 @@ export default function SydneyPage() {
           <div className="max-w-2xl">
             <h2 className="text-3xl text-white">Mobile physiotherapy home visits in Sydney</h2>
             <p className="mt-3 text-navy-100">
-              Around Sydney Olympic Park, the Inner West and surrounding suburbs, from 9 November 2026.
+              Around Sydney Olympic Park, the Inner West and surrounding suburbs,.
             </p>
           </div>
           <div className="flex flex-shrink-0 flex-col gap-3 sm:flex-row">

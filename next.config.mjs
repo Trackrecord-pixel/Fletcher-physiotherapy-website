@@ -18,7 +18,6 @@ const nextConfig = {
       { source: "/physiotherapy-elermore-vale", destination: "/physiotherapy-jesmond", permanent: true },
       { source: "/physiotherapy-auburn", destination: "/physiotherapy-sydney", permanent: true },
       { source: "/physiotherapy-ryde", destination: "/physiotherapy-sydney", permanent: true },
-      { source: "/physiotherapy-parramatta", destination: "/physiotherapy-sydney", permanent: true },
       { source: "/physiotherapy-granville", destination: "/physiotherapy-sydney", permanent: true },
       { source: "/physiotherapy-ermington", destination: "/physiotherapy-sydney", permanent: true },
       { source: "/physiotherapy-carlingford", destination: "/physiotherapy-sydney", permanent: true },

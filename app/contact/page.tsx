@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
+import LocationPicker from "@/components/LocationPicker";
 import Icon from "@/components/Icon";
 import ContactForm from "@/components/ContactForm";
 import { BreadcrumbSchema } from "@/components/StructuredData";
@@ -99,6 +100,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <LocationPicker title="Looking for a specific location?" intro="Go straight to your nearest clinic or home visit area. Our Yagoona and Parramatta clinics are booked through the clinic's reception." />
 
       <section className="bg-sand">
         <div className="container-px pb-16">

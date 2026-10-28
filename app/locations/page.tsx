@@ -12,7 +12,7 @@ import { sydneyClinics } from "@/lib/sydneyClinics";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
 const locationFaqs = [
-  { q: "Which areas does Fletcher Physiotherapy cover?", a: "We provide home visit physiotherapy across Newcastle, Lake Macquarie and the Central Coast, and see clients at our Jesmond clinic on Mondays. From 9 November 2026 we also provide mobile physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs. If you're not sure we reach your suburb, just call us." },
+  { q: "Which areas does Fletcher Physiotherapy cover?", a: "We provide home visit physiotherapy across Newcastle, Lake Macquarie and the Central Coast, and around Sydney Olympic Park, the Inner West and surrounding suburbs. We also have clinics in Jesmond (Mondays), Yagoona and Parramatta. If you're not sure we reach your suburb, just call us." },
   { q: "Do you charge extra to travel to my home?", a: "Costs depend on your funding — NDIS, Support at Home or private. Call us on " + site.phone + " and we'll explain the options for your area clearly before your first visit." },
   { q: "Do I need a referral to book?", a: "Not for private physiotherapy — you can contact us directly. A GP referral may be needed for certain funding streams such as a GP Chronic Condition Management plan, DVA or some NDIS arrangements." },
   { q: "Can you visit someone in an aged care or retirement village?", a: "Yes. We regularly visit residents in private homes, retirement villages and residential settings across the region, coordinating with families, providers and support coordinators." },
@@ -21,7 +21,7 @@ const locationFaqs = [
 export const metadata: Metadata = {
   title: "Locations | Newcastle & Sydney Home Visits",
   description:
-    "Clinic in Jesmond (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
+    "Clinics in Jesmond, Yagoona and Parramatta, plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
   alternates: { canonical: "/locations" },
   openGraph: {
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Locations | Newcastle & Sydney Home Visits",
     description:
-      "Clinic in Jesmond (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
+      "Clinics in Jesmond, Yagoona and Parramatta, plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
     url: "/locations",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Locations | Newcastle & Sydney Home Visits",
     description:
-      "Clinic in Jesmond (Mondays), plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney from 9 November 2026.",
+      "Clinics in Jesmond, Yagoona and Parramatta, plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
     images: ["/images/og-default.png"],
   },
 };
@@ -171,7 +171,7 @@ export default function LocationsPage() {
             center
             eyebrow="Suburbs we visit"
             title="Home visit physiotherapy near you"
-            intro="Explore home visit physiotherapy across our Newcastle, Lake Macquarie and Central Coast suburbs — and our new Sydney service areas, from November 2026."
+            intro="Explore home visit physiotherapy across our Newcastle, Lake Macquarie and Central Coast suburbs — and our Sydney service areas."
           />
           <div className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {[...suburbs, ...sydneySuburbs].map((sub) => (

@@ -7,7 +7,7 @@ const trust = [
   { icon: "star", label: "APA Titled Pain Physiotherapist" },
   { icon: "shield", label: `Registered NDIS provider${site.ndisRegistrationNumber ? ` · ${site.ndisRegistrationNumber}` : ""}` },
   { icon: "check", label: "AHPRA-registered physiotherapists" },
-  { icon: "home", label: "Sydney home visits from 9 Nov 2026" },
+  { icon: "home", label: "Sydney home visits" },
 ] as const;
 
 export default function Hero() {
@@ -23,8 +23,8 @@ export default function Hero() {
           </h1>
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-navy-700">
             Experienced physiotherapy in your own home, for older adults, families, NDIS participants and
-            Support at Home clients — now visiting homes around Sydney Olympic Park and the Inner West from
-            9 November 2026, alongside Newcastle, Lake Macquarie, the Central Coast and our Jesmond clinic.
+            Support at Home clients — visiting homes across Newcastle, Lake Macquarie, the Central Coast and
+            Sydney, with clinics in Jesmond, Yagoona and Parramatta.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

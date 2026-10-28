@@ -56,7 +56,7 @@ export function ReviewStrip({
 /* Why call us                                                        */
 /* ------------------------------------------------------------------ */
 const reasons: { icon: IconName; title: string; text: string }[] = [
-  { icon: "home", title: "We come to you — in Sydney too", text: "No driving, parking, stairs or waiting rooms. We visit homes, retirement villages and aged care across the Hunter and Central Coast, and around Sydney Olympic Park and the Inner West from 9 November 2026." },
+  { icon: "home", title: "We come to you — in Sydney too", text: "No driving, parking, stairs or waiting rooms. We visit homes, retirement villages and aged care across the Hunter and Central Coast, and around Sydney Olympic Park and the Inner West." },
   { icon: "star", title: "Senior-led, experienced care", text: "Led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management) from the University of Sydney." },
   { icon: "users", title: "Time to listen and explain", text: "We don't rush. We explain what we find in plain language, answer your questions and make sure you know what to do between visits." },
   { icon: "heart", title: "Families are welcome", text: "Family members and carers can join sessions and, with your permission, we keep them updated — especially helpful when you live far away." },
@@ -147,7 +147,7 @@ const scenarios: { icon: IconName; who: string; title: string; text: string; hre
   { icon: "joint", who: "After surgery", title: "“I've had a knee or hip replacement and can't drive.”", text: "Your rehab comes to you while you can't get to a clinic — exercises, walking practice and stairs, progressed safely in line with your surgeon's advice.", href: "/knee-replacement-rehabilitation-newcastle", link: "Joint replacement rehab" },
   { icon: "shield", who: "NDIS", title: "“My participant needs therapy and a report for their plan review.”", text: "As a registered NDIS provider we do home-based functional assessments, goal-focused therapy and clear reports for planners.", href: "/ndis-physiotherapy-newcastle", link: "NDIS physiotherapy" },
   { icon: "heart", who: "Support at Home", title: "“My parent has Support at Home funding — can it cover physio?”", text: "Physiotherapy is a clinical support under Support at Home. We work with the provider to arrange it and invoice them directly.", href: "/support-at-home-physiotherapy-newcastle", link: "Support at Home physio" },
-  { icon: "pin", who: "Sydney", title: "“Mum lives in Strathfield and I'm in Newcastle.”", text: "From 9 November 2026 we visit homes around Sydney Olympic Park, Homebush, Strathfield, Concord, Rhodes and Lidcombe. We'll keep you updated from wherever you are, with your mum's permission.", href: "/physiotherapy-sydney", link: "Sydney home visits" },
+  { icon: "pin", who: "Sydney", title: "“Mum lives in Strathfield and I'm in Newcastle.”", text: "We visit homes around Sydney Olympic Park, Homebush, Strathfield, Concord, Rhodes and Lidcombe. We'll keep you updated from wherever you are, with your mum's permission.", href: "/physiotherapy-sydney", link: "Sydney home visits" },
   { icon: "pulse", who: "Persistent pain", title: "“My pain just isn't settling and I'm worried about moving.”", text: "Daniel is an APA Titled Pain Physiotherapist. We take time to understand your pain and build a practical plan to help you move with more confidence.", href: "/chronic-pain-management", link: "Pain management" },
 ];
 

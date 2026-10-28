@@ -12,7 +12,7 @@ import { sydneySuburbs } from "@/lib/sydneySuburbs";
 const path = "/ndis-physiotherapy-sydney";
 const title = "NDIS Home Physio Sydney Olympic Park";
 const description =
-  "Registered NDIS provider for physio at home around Sydney Olympic Park and the Inner West from 9 Nov 2026. Agency, plan and self-managed participants welcome.";
+  "Registered NDIS provider for physio at home around Sydney Olympic Park and the Inner West. Agency, plan and self-managed participants welcome.";
 
 export const metadata: Metadata = {
   title,
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     title,
     description,
     url: path,
-    images: [{ url: "/images/sydney-promo.jpg", width: 1536, height: 1024, alt: "NDIS home physiotherapy in Sydney – Fletcher Physiotherapy" }],
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "NDIS home physiotherapy in Sydney – Fletcher Physiotherapy" }],
   },
-  twitter: { card: "summary_large_image", title, description, images: ["/images/sydney-promo.jpg"] },
+  twitter: { card: "summary_large_image", title, description, images: ["/images/og-default.png"] },
 };
 
 const reg = site.ndisRegistrationNumber;
@@ -53,7 +53,7 @@ const coordinatorChecklist = [
 const faqs = [
   {
     q: "Are you a registered NDIS provider in Sydney?",
-    a: `Yes. Fletcher Physiotherapy is a registered NDIS provider${reg ? ` (${reg})` : ""}. From 9 November 2026 we see agency-managed, plan-managed and self-managed participants at home around Sydney Olympic Park and the Inner West.`,
+    a: `Yes. Fletcher Physiotherapy is a registered NDIS provider${reg ? ` (${reg})` : ""}. We see agency-managed, plan-managed and self-managed participants at home around Sydney Olympic Park and the Inner West.`,
   },
   {
     q: "Which part of an NDIS plan pays for physiotherapy?",
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: "When can NDIS participants in Sydney start?",
-    a: "Our Sydney home visits start on 9 November 2026. Participants and coordinators can send referrals now so we can plan the first visit.",
+    a: "Call us or send a referral and we'll arrange the first home visit. Participants, families and support coordinators can all refer.",
   },
   {
     q: "Do you speak Korean?",
@@ -89,7 +89,7 @@ export default function NdisSydneyPage() {
       <PageHero
         eyebrow="NDIS Physiotherapy · Sydney"
         title="NDIS Home Physiotherapy in Sydney"
-        intro="Physiotherapy at home for NDIS participants around Sydney Olympic Park and the Inner West — from a registered NDIS provider, starting 9 November 2026."
+        intro="Physiotherapy at home for NDIS participants around Sydney Olympic Park and the Inner West — from a registered NDIS provider."
         breadcrumb={crumbs}
       />
 
@@ -99,9 +99,6 @@ export default function NdisSydneyPage() {
             <div className="flex flex-wrap gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
                 <Icon name="shield" className="h-3.5 w-3.5" /> Registered NDIS provider{reg ? ` · ${reg}` : ""}
-              </span>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-clay-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
-                <Icon name="clock" className="h-3.5 w-3.5" /> From 9 November 2026
               </span>
             </div>
 
@@ -200,7 +197,7 @@ export default function NdisSydneyPage() {
             <div className="sticky top-28 space-y-6">
               <div className="card bg-navy-900 text-white">
                 <h2 className="text-xl text-white">Talk to us about NDIS physio</h2>
-                <p className="mt-2 text-sm text-navy-100">Sydney home visits from 9 November 2026. Call to book or check your suburb.</p>
+                <p className="mt-2 text-sm text-navy-100">Sydney home visits. Call to book or check your suburb.</p>
                 <a href={site.phoneHref} className="btn-accent mt-5 w-full"><Icon name="phone" className="h-4 w-4" /> Call {site.phone}</a>
                 <Link href="/refer-a-patient" className="mt-3 flex items-center justify-center gap-2 text-sm font-semibold text-beige-200 hover:text-white">
                   Send a referral <Icon name="arrow" className="h-4 w-4" />
@@ -210,7 +207,7 @@ export default function NdisSydneyPage() {
                 <div className="card border-clay-200 bg-clay-50">
                   <p className="text-sm font-semibold text-navy-900">FREE phone consultation for new Sydney clients</p>
                   <p className="mt-2 text-xs leading-relaxed text-navy-600">
-                    9 November – 31 December 2026. Phone consultations only; not a substitute for a full assessment;
+                    Until 31 December 2026. Phone consultations only; not a substitute for a full assessment;
                     subject to availability.
                   </p>
                 </div>

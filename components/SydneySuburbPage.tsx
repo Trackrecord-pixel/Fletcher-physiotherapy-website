@@ -22,12 +22,12 @@ export default function SydneySuburbPage({ s }: { s: SydneySuburb }) {
   const faqs = [
     {
       q: `When do home visits start in ${s.name}?`,
-      a: `Our Sydney home visits start on 9 November 2026. You're welcome to call now to ask questions, register your interest or arrange a first appointment.`,
+      a: `Call us to ask questions or arrange a first appointment. We'll confirm the next available time in ${s.name}.`,
     },
     ...s.faqs,
     {
       q: `Can NDIS participants in ${s.name} get physio at home?`,
-      a: `Yes. We're a registered NDIS provider and, from 9 November 2026, visit agency-managed, plan-managed and self-managed participants at home in ${s.name}. Physio is usually funded from Capacity Building – Improved Daily Living. See our NDIS physiotherapy Sydney page for details.`,
+      a: `Yes. We're a registered NDIS provider and,, visit agency-managed, plan-managed and self-managed participants at home in ${s.name}. Physio is usually funded from Capacity Building – Improved Daily Living. See our NDIS physiotherapy Sydney page for details.`,
     },
     {
       q: "Do I need a referral?",
@@ -53,9 +53,6 @@ export default function SydneySuburbPage({ s }: { s: SydneySuburb }) {
         <div className="container-px grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-8">
             <div className="flex flex-wrap gap-2">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-clay-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
-                <Icon name="clock" className="h-3.5 w-3.5" /> Available from 9 November 2026
-              </span>
               <span className="inline-flex items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
                 <Icon name="shield" className="h-3.5 w-3.5" /> Registered NDIS provider
               </span>
@@ -175,7 +172,7 @@ export default function SydneySuburbPage({ s }: { s: SydneySuburb }) {
               <div className="card bg-navy-900 text-white">
                 <h2 className="text-xl text-white">Book a home visit in {s.name}</h2>
                 <p className="mt-2 text-sm text-navy-100">
-                  Sydney home visits from 9 November 2026. Call to book or check availability.
+                  Sydney home visits. Call to book or check availability.
                 </p>
                 <a href={site.phoneHref} className="btn-accent mt-5 w-full">
                   <Icon name="phone" className="h-4 w-4" /> Call {site.phone}
@@ -188,7 +185,7 @@ export default function SydneySuburbPage({ s }: { s: SydneySuburb }) {
                 <div className="card border-clay-200 bg-clay-50">
                   <p className="text-sm font-semibold text-navy-900">FREE phone consultation for new Sydney clients</p>
                   <p className="mt-2 text-xs leading-relaxed text-navy-600">
-                    Available 9 November – 31 December 2026. Phone consultations only; not a substitute for a full
+                    Until 31 December 2026. Phone consultations only; not a substitute for a full
                     assessment; subject to availability.
                   </p>
                 </div>

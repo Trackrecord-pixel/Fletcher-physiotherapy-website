@@ -69,7 +69,7 @@ const entries: CheckerEntry[] = [
 const faqs = [
   {
     q: "Is there a physio near me that does home visits?",
-    a: "If you live in Newcastle, Lake Macquarie or the Central Coast, yes — our physiotherapists come to your home, retirement village or aged care residence. From 9 November 2026 we also visit homes around Sydney Olympic Park and the Inner West. Use the suburb checker above or call us to confirm.",
+    a: "If you live in Newcastle, Lake Macquarie or the Central Coast, yes — our physiotherapists come to your home, retirement village or aged care residence. We also visit homes around Sydney Olympic Park and the Inner West. Use the suburb checker above or call us to confirm.",
   },
   {
     q: "Where is your physio clinic?",
@@ -103,7 +103,7 @@ export default function PhysioNearMePage() {
     { region: "Lake Macquarie", items: suburbs.filter((s) => s.region === "Lake Macquarie") },
     { region: "Central Coast", items: suburbs.filter((s) => s.region === "Central Coast") },
     {
-      region: "Sydney (from 9 Nov 2026)",
+      region: "Sydney",
       items: [{ slug: "physiotherapy-sydney", name: "Sydney (all areas)" }, ...sydneySuburbs.map((s) => ({ slug: s.slug, name: s.name }))],
     },
   ];
@@ -113,7 +113,7 @@ export default function PhysioNearMePage() {
       <PageHero
         eyebrow="Physio Near Me"
         title="Find a Physio Near You"
-        intro="Visit our Jesmond clinic, or have a physiotherapist come to your home across Newcastle, Lake Macquarie, the Central Coast — and Sydney from 9 November 2026."
+        intro="Visit our Jesmond clinic, or have a physiotherapist come to your home across Newcastle, Lake Macquarie, the Central Coast — and Sydney."
         breadcrumb={crumbs}
       />
 
@@ -173,9 +173,6 @@ export default function PhysioNearMePage() {
             </div>
             <div className="card flex h-full flex-col border-clay-200">
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-clay-500 text-white"><Icon name="home" className="h-6 w-6" /></span>
-              <span className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-clay-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
-                <Icon name="clock" className="h-3.5 w-3.5" /> From 9 Nov 2026
-              </span>
               <h3 className="mt-3 text-lg text-navy-900">Home visits — Sydney</h3>
               <p className="mt-2 flex-grow text-sm text-navy-600">Around Sydney Olympic Park, the Inner West and surrounding suburbs.</p>
               <OfferWindow>

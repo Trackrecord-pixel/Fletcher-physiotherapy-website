@@ -1,4 +1,4 @@
-// Sydney suburb pages (home visits from 9 November 2026).
+// Sydney suburb pages (home visits).
 // Keep this list small and genuinely local — only add a suburb when there is
 // something specific and true to say about it. Facts checked October 2026.
 
@@ -36,9 +36,9 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2127",
     council: "City of Parramatta",
     metaDescription:
-      "Mobile physio in Sydney Olympic Park from 9 November 2026. Home visits for older adults, NDIS and Support at Home — falls prevention and rehab.",
+      "Mobile physio in Sydney Olympic Park. Home visits for older adults, NDIS and Support at Home — falls prevention and rehab.",
     intro:
-      "Home visit physiotherapy in Sydney Olympic Park from 9 November 2026 — for older adults, NDIS participants, Support at Home clients and people recovering after hospital.",
+      "Home visit physiotherapy in Sydney Olympic Park — for older adults, NDIS participants, Support at Home clients and people recovering after hospital.",
     local: [
       "Sydney Olympic Park is the centre of our Sydney service area. Its growing residential precinct sits alongside Newington and Wentworth Point, with many residents living in apartments around the town centre and parklands.",
       "Because we're based around Sydney Olympic Park, it's where we can usually offer the most flexible appointment times for Sydney clients.",
@@ -66,9 +66,9 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2137",
     council: "City of Canada Bay",
     metaDescription:
-      "Home visit physio in Concord from 9 November 2026. Rehab after hospital discharge, falls prevention, NDIS and Support at Home physio at home.",
+      "Home visit physio in Concord. Rehab after hospital discharge, falls prevention, NDIS and Support at Home physio at home.",
     intro:
-      "Home visit physiotherapy in Concord from 9 November 2026 — supporting older adults, people coming home from hospital, NDIS participants and Support at Home clients.",
+      "Home visit physiotherapy in Concord — supporting older adults, people coming home from hospital, NDIS participants and Support at Home clients.",
     local: [
       "Concord is an established residential suburb in the City of Canada Bay, with many long-term residents in family homes — people who want to stay living independently in the home they know.",
       "It's also close to Concord Repatriation General Hospital in Concord West, so many residents are recovering at home after a hospital stay, surgery or a period of rehabilitation.",
@@ -96,9 +96,9 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2135",
     council: "Strathfield Municipal Council",
     metaDescription:
-      "Mobile physio in Strathfield from 9 November 2026. Home visits for falls prevention, strength, balance, pain and rehab — NDIS, Support at Home, private.",
+      "Mobile physio in Strathfield. Home visits for falls prevention, strength, balance, pain and rehab — NDIS, Support at Home, private.",
     intro:
-      "Home visit physiotherapy in Strathfield from 9 November 2026 — strength, balance, falls prevention and rehabilitation in your own home.",
+      "Home visit physiotherapy in Strathfield — strength, balance, falls prevention and rehabilitation in your own home.",
     local: [
       "Strathfield combines established, leafy residential streets with newer apartments around Strathfield station, one of Sydney's major rail interchanges.",
       "Many older residents and their families want care that comes to them — especially when getting through a busy station or finding parking makes clinic visits hard work.",
@@ -126,9 +126,9 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2140",
     council: "Strathfield Municipal Council",
     metaDescription:
-      "Home visit physio in Homebush from 9 November 2026. Mobile physio for older adults, NDIS and Support at Home — mobility, falls prevention and rehab.",
+      "Home visit physio in Homebush. Mobile physio for older adults, NDIS and Support at Home — mobility, falls prevention and rehab.",
     intro:
-      "Home visit physiotherapy in Homebush from 9 November 2026 — practical, goal-focused physiotherapy without needing to travel.",
+      "Home visit physiotherapy in Homebush — practical, goal-focused physiotherapy without needing to travel.",
     local: [
       "Homebush sits between Strathfield and Sydney Olympic Park, with a mix of older homes and apartments close to Homebush station and Parramatta Road.",
       "It's right next to our Sydney Olympic Park base, so Homebush residents are among the easiest for us to reach.",
@@ -142,7 +142,7 @@ export const sydneySuburbs: SydneySuburb[] = [
     faqs: [
       {
         q: "How soon can I get an appointment in Homebush?",
-        a: "Sydney home visits start on 9 November 2026. Call us and we'll let you know the next available time — Homebush is close to our base, so it's usually one of the easier areas for us to fit in.",
+        a: "Call us and we'll let you know the next available time — Homebush is close to our base, so it's usually one of the easier areas for us to fit in.",
       },
       {
         q: "Do you see NDIS participants in Homebush?",
@@ -156,9 +156,9 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2138",
     council: "City of Canada Bay",
     metaDescription:
-      "Mobile physio in Rhodes from 9 November 2026. Apartment-friendly home visits for older adults, rehab after hospital, NDIS and Support at Home.",
+      "Mobile physio in Rhodes. Apartment-friendly home visits for older adults, rehab after hospital, NDIS and Support at Home.",
     intro:
-      "Home visit physiotherapy in Rhodes from 9 November 2026 — physiotherapy that fits apartment living, delivered in your own home.",
+      "Home visit physiotherapy in Rhodes — physiotherapy that fits apartment living, delivered in your own home.",
     local: [
       "Rhodes is a high-density waterfront suburb on the Parramatta River, linked to Wentworth Point by the Bennelong Bridge and served by Rhodes station.",
       "It borders Concord West, home to Concord Repatriation General Hospital, so we expect many Rhodes clients to be recovering at home after a hospital stay.",
@@ -186,9 +186,9 @@ export const sydneySuburbs: SydneySuburb[] = [
     postcode: "2141",
     council: "Cumberland City Council",
     metaDescription:
-      "Home visit physio in Lidcombe from 9 November 2026. Mobile physio for older adults, NDIS and Support at Home — strength, balance and rehab at home.",
+      "Home visit physio in Lidcombe. Mobile physio for older adults, NDIS and Support at Home — strength, balance and rehab at home.",
     intro:
-      "Home visit physiotherapy in Lidcombe from 9 November 2026 — for older adults, NDIS participants, Support at Home clients and families.",
+      "Home visit physiotherapy in Lidcombe — for older adults, NDIS participants, Support at Home clients and families.",
     local: [
       "Lidcombe is an established, diverse residential suburb around Lidcombe station — the rail junction for services to Sydney Olympic Park — with a mix of houses and newer apartments.",
       "It's a short drive from our Sydney Olympic Park base, making it an easy area for regular home visits.",

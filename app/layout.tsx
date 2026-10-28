@@ -79,11 +79,11 @@ export default function RootLayout({
         <WebSiteSchema />
         <LocalBusinessSchema />
         <a
-          href="/physiotherapy-sydney"
+          href="/locations"
           className="block bg-clay-500 px-4 py-2 text-center text-sm text-white hover:bg-clay-600"
         >
-          Now expanding to Sydney — from 9 November 2026.{" "}
-          <span className="font-semibold underline underline-offset-2">Learn more →</span>
+          Clinics in Jesmond, Yagoona &amp; Parramatta · Home visits across Newcastle, the Central Coast &amp; Sydney.{" "}
+          <span className="font-semibold underline underline-offset-2">Find your location →</span>
         </a>
         <Header />
         <main id="main">{children}</main>

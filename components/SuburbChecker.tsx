@@ -70,7 +70,7 @@ export default function SuburbChecker({
               <p className="mt-0.5 text-sm text-navy-700">
                 {r.kind === "clinic" && (r.note ?? "Clinic appointments available")}
                 {r.kind === "home" && "Yes — we do home visits here"}
-                {r.kind === "sydney" && "Yes — Sydney home visits from 9 November 2026"}
+                {r.kind === "sydney" && "Yes — Sydney home visits"}
               </p>
             </div>
             {r.href && (

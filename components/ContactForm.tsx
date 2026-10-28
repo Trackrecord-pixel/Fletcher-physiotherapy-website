@@ -7,7 +7,7 @@ import { submitEnquiry, readForm, validateFields, isBot, type SubmitResult } fro
 
 const services = [
   "Home Visit Physiotherapy",
-  "Sydney home visit / free phone consultation (from 9 Nov 2026)",
+  "Sydney home visit / free phone consultation",
   "Clinic appointment (Jesmond, Mondays)",
   "NDIS Physiotherapy",
   "Support at Home Physiotherapy",

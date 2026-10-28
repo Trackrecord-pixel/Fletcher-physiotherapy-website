@@ -83,7 +83,7 @@ export const posts: BlogPost[] = [
       {
         h2: "How Fletcher Physiotherapy can help",
         body: [
-          "We're a registered NDIS provider (NDIS0023718), so we can work with agency-managed, plan-managed and self-managed participants. We provide physiotherapy at home across Newcastle, Lake Macquarie and the Central Coast, and around Sydney Olympic Park and the Inner West from 9 November 2026.",
+          "We're a registered NDIS provider (NDIS0023718), so we can work with agency-managed, plan-managed and self-managed participants. We provide physiotherapy at home across Newcastle, Lake Macquarie and the Central Coast, and around Sydney Olympic Park and the Inner West.",
           "We'll help you plan sessions around your goals and budget, set out costs clearly before we start, and provide reports for your reassessment. Our founder Daniel Lee is an APA Titled Pain Physiotherapist and speaks English and Korean. To talk it through, call 0404 791 756 or visit our NDIS physiotherapy pages for Newcastle and Sydney.",
         ],
       },

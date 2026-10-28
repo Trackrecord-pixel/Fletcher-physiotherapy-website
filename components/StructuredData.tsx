@@ -68,7 +68,7 @@ const serviceCatalog = {
     ["Aged care and retirement village physiotherapy", "/aged-care-physiotherapy-newcastle"],
     ["Falls prevention physiotherapy", "/falls-prevention-physiotherapy-newcastle"],
     ["Persistent pain management", "/chronic-pain-management"],
-    ["Mobile physiotherapy in Sydney (from 9 November 2026)", "/physiotherapy-sydney"],
+    ["Mobile physiotherapy in Sydney", "/physiotherapy-sydney"],
   ].map(([name, path]) => ({
     "@type": "Offer",
     itemOffered: { "@type": "Service", name, url: `${site.url}${path}` },

@@ -108,7 +108,7 @@ export default function ReferAPatientPage() {
             <span className="eyebrow"><Icon name="pin" className="h-4 w-4" /> New: Sydney referrals</span>
             <h2 className="mt-4 text-3xl text-navy-900">Referring a client in Sydney?</h2>
             <p className="mt-4 text-navy-600">
-              From 9 November 2026 we provide mobile physiotherapy around Sydney Olympic Park, the Inner West
+              We provide mobile physiotherapy around Sydney Olympic Park, the Inner West
               and surrounding suburbs. We welcome referrals now for services starting from that date.
             </p>
             <Link href="/physiotherapy-sydney" className="btn-secondary mt-6">
