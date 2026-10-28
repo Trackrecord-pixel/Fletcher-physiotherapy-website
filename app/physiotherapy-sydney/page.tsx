@@ -36,6 +36,8 @@ export const metadata: Metadata = {
 const serviceAreaSuburbs = [
   "Sydney Olympic Park", "Homebush", "Homebush West", "Lidcombe", "Auburn",
   "Strathfield", "Concord", "Rhodes", "Wentworth Point", "Newington",
+  "Silverwater", "Burwood", "Parramatta", "Granville", "Westmead",
+  "Yagoona", "Bankstown", "Bass Hill", "Birrong", "Regents Park",
 ];
 
 const services: { icon: IconName; label: string }[] = [
@@ -53,7 +55,7 @@ const faqs = [
   { q: "Do you have clinics in Sydney?", a: "Yes. As well as home visits, we consult inside Yagoona Family HealthCare (457 Hume Highway, Yagoona) and Parramatta Medical and Dental Centre (144 Marsden Street, Parramatta). Book by calling the clinic's reception." },
   { q: "Which Sydney suburbs do you visit?", a: "We visit homes, retirement communities and residential aged care around Sydney Olympic Park, the Inner West and surrounding suburbs — including Homebush, Homebush West, Lidcombe, Auburn, Strathfield, Concord, Rhodes, Wentworth Point and Newington. If you are unsure whether we visit your suburb, contact our team and we can confirm availability." },
   { q: "Is there a free phone consultation?", a: "Yes. New Sydney clients can speak with our team for a free, no-obligation phone consultation to discuss service suitability, funding options and availability, until 31 December 2026. The phone consultation is not a substitute for a full physiotherapy assessment or treatment session, and appointments remain subject to availability." },
-  { q: "What funding do you work with?", a: "We work with NDIS participants (agency, plan and self-managed), Support at Home clients (the program that replaced Home Care Packages on 1 November 2025), privately funded clients, and people needing rehabilitation after hospital discharge." },
+  { q: "What funding do you work with?", a: "We work with NDIS participants (agency, plan and self-managed), Support at Home clients (the program that replaced Home Care Packages on 1 November 2025), Medicare GPCCMP, DVA and WorkCover patients, privately funded clients, and people needing rehabilitation after hospital discharge." },
   { q: "Do I need a referral?", a: "Not for private physiotherapy — you can contact us directly. A referral may be needed for certain funding pathways, which we can talk through during your free phone consultation." },
 ];
 
@@ -165,8 +167,8 @@ export default function SydneyPage() {
               <div className="card">
                 <h2 className="text-xl text-navy-900">Sydney service area</h2>
                 <p className="mt-2 text-sm text-navy-600">
-                  Mobile physiotherapy around Sydney Olympic Park, the Inner West and surrounding suburbs —
-                  roughly within 30 minutes of Sydney Olympic Park.
+                  Home visits around Sydney Olympic Park and the Inner West, the Parramatta area and
+                  Bankstown–Yagoona — plus clinics in Yagoona and Parramatta.
                 </p>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {serviceAreaSuburbs.map((s) => {
