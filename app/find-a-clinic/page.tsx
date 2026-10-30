@@ -14,14 +14,14 @@ export const metadata: Metadata = {
 
 export default function FindAClinicPage() {
   return (
-    <section className="bg-cream pb-16 pt-8 lg:pb-24 lg:pt-12">
+    <section className="bg-cream pb-16 pt-6 lg:pb-24 lg:pt-8">
       <div className="container-px">
         <div className="mb-6 flex flex-wrap items-end justify-between gap-3 md:mb-8">
           <div>
             <p className="eyebrow">
               <span aria-hidden="true" className="h-px w-8 bg-clay-500" /> Our clinics
             </p>
-            <h1 className="mt-3 text-3xl text-navy-900 sm:text-4xl">Find a clinic near you</h1>
+            <h1 className="mt-2 text-3xl text-navy-900 sm:text-4xl">Find a clinic near you</h1>
           </div>
           <Link href="/home-visits" className="inline-flex items-center gap-1.5 text-sm font-semibold text-euc-700 hover:text-euc-800">
             <Icon name="home" className="h-4 w-4" /> Prefer a home visit?
