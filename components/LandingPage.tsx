@@ -5,6 +5,7 @@ import FAQAccordion from "./FAQAccordion";
 import CTASection from "./CTASection";
 import Reveal from "./Reveal";
 import ContactForm from "./ContactForm";
+import ReferralForm from "./ReferralForm";
 import WhyHomeVisits from "./WhyHomeVisits";
 import { site, suburbs } from "@/lib/site";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
@@ -96,13 +97,13 @@ export default function LandingPage({ c }: { c: LandingContent }) {
                   <span className="mt-1 text-sm text-euc-100">{site.hours}</span>
                   <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold">Tap to call <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-0.5" /></span>
                 </a>
-                <Link href="/referrals#referral-form" className="group card card-hover flex flex-col p-6">
+                <a href="#referral" className="group card card-hover flex flex-col p-6">
                   <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-navy-800 text-white"><Icon name="doc" className="h-6 w-6" /></span>
                   <span className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-euc-600">Send a referral</span>
                   <span className="mt-1 text-xl font-semibold text-navy-900">GPs, NDIS, aged care & families</span>
                   <span className="mt-1 text-sm text-navy-600">We contact the patient and arrange the first visit.</span>
                   <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-euc-700">Referral form <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-0.5" /></span>
-                </Link>
+                </a>
                 <a href="#enquire" className="group card card-hover flex flex-col p-6">
                   <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-navy-800 text-white"><Icon name="mail" className="h-6 w-6" /></span>
                   <span className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-euc-600">Online enquiry</span>
@@ -116,6 +117,24 @@ export default function LandingPage({ c }: { c: LandingContent }) {
                 <Link href="/home-visit-physiotherapy-newcastle" className="font-semibold text-euc-700 hover:text-euc-800">Newcastle, Lake Macquarie &amp; Central Coast →</Link>
                 <Link href="/home-visit-physiotherapy-sydney" className="font-semibold text-euc-700 hover:text-euc-800">Sydney →</Link>
               </p>
+            </div>
+          </section>
+          <section id="referral" className="section-py scroll-mt-24 bg-sand">
+            <div className="container-px grid gap-10 lg:grid-cols-12">
+              <div className="lg:col-span-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-euc-600">For GPs, NDIS, aged care &amp; families</p>
+                <h2 className="mt-2 text-2xl text-navy-900 sm:text-3xl">Send a home visit referral</h2>
+                <p className="mt-4 text-navy-600">
+                  Complete the form and we&rsquo;ll contact the patient to arrange their first home visit, and keep you
+                  updated. Prefer to talk first? Call us.
+                </p>
+                <a href={site.phoneHref} className="btn-primary mt-6">
+                  <Icon name="phone" className="h-5 w-5" /> {site.phone}
+                </a>
+              </div>
+              <div className="lg:col-span-7">
+                <ReferralForm />
+              </div>
             </div>
           </section>
           {enquiry}
