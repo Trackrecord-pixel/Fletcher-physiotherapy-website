@@ -4,7 +4,7 @@ import { landingPages } from "@/lib/landing";
 
 const c = landingPages["lower-back-pain-physiotherapy"];
 const title = "Lower Back Pain Physio | Sydney & Newcastle";
-const description = "Physiotherapy for lower back pain and sciatica in Jesmond, Yagoona and Parramatta, or at home. Bulk billing in Yagoona for eligible Medicare patients.";
+const description = "Physiotherapy for lower back pain and sciatica in Jesmond, Yagoona and Parramatta, or at home. Bulk billing at our clinics for eligible Medicare patients.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },
