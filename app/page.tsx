@@ -131,7 +131,7 @@ export default function HomePage() {
             Sydney, Newcastle and the Central Coast.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/clinic-physiotherapy" className="btn-outline w-full min-w-[200px] sm:w-auto">
+            <Link href="/find-a-clinic" className="btn-outline w-full min-w-[200px] sm:w-auto">
               Find a Clinic
             </Link>
             <Link href="/home-visits" className="btn-outline w-full min-w-[200px] sm:w-auto">
@@ -169,7 +169,7 @@ export default function HomePage() {
                   ))}
                 </ul>
                 <div className="mt-auto flex flex-col gap-3 pt-8 sm:flex-row">
-                  <Link href="/clinic-physiotherapy" className="btn bg-white text-euc-700 hover:bg-euc-50">
+                  <Link href="/find-a-clinic" className="btn bg-white text-euc-700 hover:bg-euc-50">
                     Find a Clinic <Icon name="arrow" className="h-4 w-4" />
                   </Link>
                 </div>
@@ -427,7 +427,7 @@ export default function HomePage() {
               Choose a clinic or a home visit — or request a call back and we&rsquo;ll help you decide.
             </p>
             <div className="mt-8 grid gap-3 sm:flex">
-              <Link href="/clinic-physiotherapy" className="btn-primary">Find a Clinic</Link>
+              <Link href="/find-a-clinic" className="btn-primary">Find a Clinic</Link>
               <Link href="/home-visits" className="btn-accent">Book a Home Visit</Link>
             </div>
             <div className="mt-8 space-y-2 text-navy-700">

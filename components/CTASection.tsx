@@ -19,7 +19,7 @@ export default function CTASection({
             <p className="mt-4 max-w-xl text-lg text-navy-100">{text}</p>
           </div>
           <div className="grid gap-3 lg:col-span-5">
-            <Link href="/clinic-physiotherapy" className="btn-primary w-full">
+            <Link href="/find-a-clinic" className="btn-primary w-full">
               <Icon name="pin" className="h-5 w-5" /> Find a Clinic
             </Link>
             <Link href="/home-visits" className="btn w-full bg-white text-navy-900 hover:bg-beige-50">
