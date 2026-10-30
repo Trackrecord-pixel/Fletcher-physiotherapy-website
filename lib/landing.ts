@@ -519,6 +519,7 @@ export const landingPages: Record<string, LandingContent> = {
   },
   "home-visits": {
     slug: "home-visits",
+    quickActions: true,
     pathway: "home",
     region: "all",
     whyHome: true,
