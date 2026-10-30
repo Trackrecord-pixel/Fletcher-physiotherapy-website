@@ -23,7 +23,7 @@ const allClinics = [
     address: c.address,
     days: c.dayShort,
     phone: site.phone,
-    phoneNote: "Call us or book online",
+    phoneNote: "Book online · bulk billing for eligible GPCCMP patients",
     online: true,
   })),
   ...sydneyClinics.map((c) => ({
@@ -68,7 +68,7 @@ const whatWeTreat: { label: string; text: string; href: string; icon: IconName }
   { label: "Sports Injuries", text: "Sprains, strains and tendon injuries, with return-to-sport planning.", href: "/sports-injury-physiotherapy", icon: "strength" },
   { label: "Post-Surgical Rehabilitation", text: "Before and after joint replacement and orthopaedic surgery.", href: "/post-surgical-rehabilitation", icon: "recovery" },
   { label: "Falls Prevention", text: "Balance, strength and mobility for steadier, more confident movement.", href: "/falls-prevention-physiotherapy-newcastle", icon: "balance" },
-  { label: "Bulk Billing Physiotherapy", text: "Yagoona clinic — for eligible Medicare GPCCMP patients.", href: "/bulk-billing-physiotherapy-yagoona", icon: "check" },
+  { label: "Bulk Billing Physiotherapy", text: "At our Jesmond, Yagoona and Parramatta clinics — for eligible Medicare GPCCMP patients.", href: "/bulk-billing-physiotherapy-yagoona", icon: "check" },
 ];
 
 const reasons: { n: string; title: string; text: string }[] = [
@@ -217,7 +217,7 @@ export default function HomePage() {
           >
             <span className="flex items-center gap-3 font-semibold text-navy-900">
               <Icon name="check" className="h-5 w-5 flex-shrink-0 text-euc-600" />
-              Bulk Billing Physiotherapy Available at Yagoona for Eligible Medicare Patients
+              Bulk Billing Physiotherapy Available at Our Clinics for Eligible Medicare Patients
             </span>
             <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-euc-700">
               How it works <Icon name="arrow" className="h-4 w-4" />
