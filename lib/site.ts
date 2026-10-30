@@ -132,12 +132,17 @@ export type Clinic = {
   about: string[];
   parking: string;
   accessibility: string;
+  photo?: { src: string; alt: string }; // promo image shown at the top of the clinic page
 };
 
 export const clinics: Clinic[] = [
   {
     slug: "physiotherapy-jesmond",
     name: "Jesmond",
+    photo: {
+      src: "/images/clinics/fletcher-physiotherapy-jesmond.jpg",
+      alt: "Fletcher Physiotherapy Jesmond — musculoskeletal, back and neck pain, exercise and post-surgical rehabilitation, falls prevention and home visits",
+    },
     hostCentre: "HealthSure Medical Centre Jesmond",
     address: "Shop G01–G07, Jesmond Central, 28 Blue Gum Road, Jesmond NSW 2299",
     suburb: "Jesmond",
