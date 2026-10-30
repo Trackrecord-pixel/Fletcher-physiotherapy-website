@@ -47,14 +47,24 @@ export default function ClinicChooser() {
   return (
     <ul className="grid gap-4 md:grid-cols-3 md:gap-6">
       {cards.map((c) => (
-        <li key={c.slug} className="flex overflow-hidden rounded-3xl border border-navy-100 bg-white shadow-card md:flex-col">
+        <li
+          key={c.slug}
+          className="grid grid-cols-[7rem_1fr] overflow-hidden rounded-3xl border border-navy-100 bg-white shadow-card sm:grid-cols-[10rem_1fr] md:flex md:flex-col"
+        >
+          <div className="col-start-2 row-start-1 px-4 pt-4 sm:px-5 sm:pt-5 md:order-1 md:px-6 md:pb-4 md:pt-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-euc-600">{c.region} · {c.day.split(",")[0]}</p>
+            <h2 className="mt-1.5 text-2xl text-navy-900 md:text-3xl">
+              <Link href={`/${c.slug}`} className="hover:text-euc-700">{c.suburb}</Link>
+            </h2>
+            <p className="mt-1 text-sm text-navy-600">{c.host}</p>
+          </div>
           <Link
             href={`/${c.slug}`}
-            className="relative block w-28 flex-shrink-0 overflow-hidden bg-navy-800 sm:w-40 md:aspect-square md:w-full"
+            className="relative col-start-1 row-span-2 row-start-1 block overflow-hidden bg-navy-800 md:order-2 md:aspect-[4/3] md:w-full"
             aria-label={`${c.suburb} clinic details`}
           >
             {c.photo ? (
-              <Image src={c.photo.src} alt={c.photo.alt} fill sizes="(max-width: 768px) 160px, 420px" className="object-cover transition duration-500 hover:scale-[1.03]" />
+              <Image src={c.photo.src} alt={c.photo.alt} fill sizes="(max-width: 768px) 160px, 420px" className="object-cover object-top transition duration-500 hover:scale-[1.03]" />
             ) : (
               <span className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-euc-700 to-navy-900 text-white">
                 <Icon name="pin" className="h-10 w-10 md:h-14 md:w-14" />
@@ -62,13 +72,8 @@ export default function ClinicChooser() {
               </span>
             )}
           </Link>
-          <div className="flex flex-1 flex-col p-4 sm:p-5 md:p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-euc-600">{c.region} · {c.day.split(",")[0]}</p>
-            <h2 className="mt-1.5 text-2xl text-navy-900 md:text-3xl">
-              <Link href={`/${c.slug}`} className="hover:text-euc-700">{c.suburb}</Link>
-            </h2>
-            <p className="mt-1 text-sm text-navy-600">{c.host}</p>
-            <p className="mt-2 hidden items-start gap-2 text-sm text-navy-600 sm:flex">
+          <div className="col-start-2 row-start-2 flex flex-1 flex-col px-4 pb-4 sm:px-5 sm:pb-5 md:order-3 md:p-6">
+            <p className="mt-2 hidden items-start gap-2 text-sm text-navy-600 sm:flex md:mt-0">
               <Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {c.address}
             </p>
             <p className="mt-1 hidden items-start gap-2 text-sm text-navy-600 sm:flex">
