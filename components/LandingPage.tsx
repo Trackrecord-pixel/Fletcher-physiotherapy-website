@@ -30,7 +30,7 @@ export type LandingContent = {
   /** "clinic" pages show clinic booking; "home" shows home-visit booking; "both" shows both pathways. Default "home". */
   pathway?: "clinic" | "home" | "both";
   breadcrumbParent?: { name: string; href: string };
-  /** Show the "bulk billing available at Yagoona" callout. */
+  /** Show the "bulk billing at our clinics" callout. */
   yagoonaCallout?: boolean;
   /** Anchor ids for sections, keyed by h2 (for deep links such as #neck-related-headaches). */
   sectionIds?: Record<string, string>;
@@ -71,10 +71,10 @@ export default function LandingPage({ c }: { c: LandingContent }) {
 
             {c.yagoonaCallout && (
               <div className="mt-8 rounded-3xl border border-beige-200 bg-sand p-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-euc-600">Bulk billing in Yagoona</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-euc-600">Bulk billing at our clinics</p>
                 <p className="mt-2 text-navy-700">
                   Eligible Medicare patients referred under a GP Chronic Condition Management Plan (GPCCMP) can be bulk
-                  billed at our Yagoona clinic, inside Yagoona Family HealthCare (Tuesdays).
+                  billed at our Jesmond, Yagoona and Parramatta clinics.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
                   <Link href="/bulk-billing-physiotherapy-yagoona" className="text-euc-700 hover:text-euc-800">How bulk billing works →</Link>
