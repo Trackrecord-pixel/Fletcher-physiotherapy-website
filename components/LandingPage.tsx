@@ -34,6 +34,8 @@ export type LandingContent = {
   yagoonaCallout?: boolean;
   /** Anchor ids for sections, keyed by h2 (for deep links such as #neck-related-headaches). */
   sectionIds?: Record<string, string>;
+  /** Show Call / Referral / Enquiry action cards and the enquiry form straight under the heading. */
+  quickActions?: boolean;
 };
 
 export default function LandingPage({ c }: { c: LandingContent }) {
@@ -47,6 +49,28 @@ export default function LandingPage({ c }: { c: LandingContent }) {
       : region === "all"
       ? [...suburbs, ...sydneySuburbs].map((s) => ({ slug: s.slug, name: s.name }))
       : suburbs.map((s) => ({ slug: s.slug, name: s.name }));
+  const enquiry = (
+    <section id="enquire" className="section-py scroll-mt-24 bg-white">
+      <div className="container-px grid gap-10 lg:grid-cols-12">
+        <div className="lg:col-span-5">
+          <h2 className="text-2xl text-navy-900 sm:text-3xl">
+            Enquire about {c.eyebrow}
+          </h2>
+          <p className="mt-4 text-navy-600">
+            Send us a message and our friendly team will be in touch. Prefer to
+            talk now? Call us any time.
+          </p>
+          <a href={site.phoneHref} className="btn-primary mt-6">
+            <Icon name="phone" className="h-5 w-5" /> {site.phone}
+          </a>
+        </div>
+        <div className="lg:col-span-7">
+          <ContactForm />
+        </div>
+      </div>
+    </section>
+  );
+
   return (
     <>
       <PageHero
@@ -59,6 +83,44 @@ export default function LandingPage({ c }: { c: LandingContent }) {
           { name: c.eyebrow, href: `/${c.slug}` },
         ]}
       />
+
+      {c.quickActions && (
+        <>
+          <section className="border-b border-navy-100 bg-white" aria-label="Book a home visit">
+            <div className="container-px py-8 lg:py-10">
+              <div className="grid gap-4 md:grid-cols-3">
+                <a href={site.phoneHref} className="group flex flex-col rounded-3xl bg-euc-700 p-6 text-white shadow-card transition hover:bg-euc-800">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/15"><Icon name="phone" className="h-6 w-6" /></span>
+                  <span className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-euc-100">Call us</span>
+                  <span className="mt-1 text-2xl font-semibold">{site.phone}</span>
+                  <span className="mt-1 text-sm text-euc-100">{site.hours}</span>
+                  <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold">Tap to call <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-0.5" /></span>
+                </a>
+                <Link href="/referrals#referral-form" className="group card card-hover flex flex-col p-6">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-navy-800 text-white"><Icon name="doc" className="h-6 w-6" /></span>
+                  <span className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-euc-600">Send a referral</span>
+                  <span className="mt-1 text-xl font-semibold text-navy-900">GPs, NDIS, aged care & families</span>
+                  <span className="mt-1 text-sm text-navy-600">We contact the patient and arrange the first visit.</span>
+                  <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-euc-700">Referral form <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-0.5" /></span>
+                </Link>
+                <a href="#enquire" className="group card card-hover flex flex-col p-6">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-navy-800 text-white"><Icon name="mail" className="h-6 w-6" /></span>
+                  <span className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-euc-600">Online enquiry</span>
+                  <span className="mt-1 text-xl font-semibold text-navy-900">Send us a message</span>
+                  <span className="mt-1 text-sm text-navy-600">We&rsquo;ll phone you back, usually within 24 hours.</span>
+                  <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-euc-700">Enquire now <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-0.5" /></span>
+                </a>
+              </div>
+              <p className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-navy-600">
+                <span className="font-semibold text-navy-800">Areas:</span>
+                <Link href="/home-visit-physiotherapy-newcastle" className="font-semibold text-euc-700 hover:text-euc-800">Newcastle, Lake Macquarie &amp; Central Coast →</Link>
+                <Link href="/home-visit-physiotherapy-sydney" className="font-semibold text-euc-700 hover:text-euc-800">Sydney →</Link>
+              </p>
+            </div>
+          </section>
+          {enquiry}
+        </>
+      )}
 
       <section className="section-py bg-white">
         <div className="container-px grid gap-12 lg:grid-cols-12">
@@ -225,25 +287,7 @@ export default function LandingPage({ c }: { c: LandingContent }) {
         </section>
       )}
 
-      <section className="section-py bg-white">
-        <div className="container-px grid gap-10 lg:grid-cols-12">
-          <div className="lg:col-span-5">
-            <h2 className="text-2xl text-navy-900 sm:text-3xl">
-              Enquire about {c.eyebrow}
-            </h2>
-            <p className="mt-4 text-navy-600">
-              Send us a message and our friendly team will be in touch. Prefer to
-              talk now? Call us any time.
-            </p>
-            <a href={site.phoneHref} className="btn-primary mt-6">
-              <Icon name="phone" className="h-5 w-5" /> {site.phone}
-            </a>
-          </div>
-          <div className="lg:col-span-7">
-            <ContactForm />
-          </div>
-        </div>
-      </section>
+      {!c.quickActions && enquiry}
 
       <CTASection title={c.ctaTitle} />
       <ServiceSchema name={c.serviceName} description={c.intro} slug={c.slug} />
