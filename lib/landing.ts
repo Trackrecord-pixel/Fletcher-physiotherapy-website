@@ -1,10 +1,450 @@
 import type { LandingContent } from "@/components/LandingPage";
 
 export const landingPages: Record<string, LandingContent> = {
+  "lower-back-pain-physiotherapy": {
+    slug: "lower-back-pain-physiotherapy",
+    pathway: "both",
+    region: "all",
+    yagoonaCallout: true,
+    breadcrumbParent: { name: "Services", href: "/services" },
+    eyebrow: "Lower Back Pain Physiotherapy",
+    h1: "Lower back pain physiotherapy",
+    serviceName: "Lower Back Pain Physiotherapy",
+    intro:
+      "Assessment and treatment for acute and persistent lower back pain, stiffness and associated leg symptoms — at our Jesmond, Yagoona and Parramatta clinics, or at home.",
+    lead: [
+      "Lower back pain is one of the most common reasons people see a physiotherapist. Most episodes are not caused by serious damage, and many people improve with the right mix of reassurance, activity and graded exercise — but pain can still be worrying and disrupt sleep, work and daily life.",
+      "Our role is to work out what is contributing to your pain, check for anything that needs medical review, and build a plan that helps you keep moving and gradually return to the activities that matter to you.",
+    ],
+    sections: [
+      {
+        h2: "Common presentations",
+        body: ["We see people with a wide range of back problems, including:"],
+        list: [
+          "Sudden (acute) low back pain after lifting or bending",
+          "Recurring or persistent back pain",
+          "Back pain with pain, tingling or numbness into the leg (sciatica)",
+          "Stiffness in the morning or after sitting",
+          "Back pain related to work, sport or deconditioning",
+          "Back pain alongside other long-term health conditions",
+        ],
+      },
+      {
+        h2: "How we assess your back",
+        body: [
+          "We take a detailed history — when the pain started, what eases and aggravates it, how it affects your day and what you want to get back to. We then assess movement, strength, nerve function and how you manage everyday tasks such as bending, sitting and walking.",
+          "We also screen for symptoms that need prompt medical attention, such as new problems with bladder or bowel control, numbness around the groin, or rapidly worsening leg weakness. If any of these occur, contact your GP or emergency department straight away.",
+        ],
+      },
+      {
+        h2: "Treatment approaches",
+        body: [
+          "Treatment is individualised and may include graded exercise to rebuild strength and confidence, hands-on treatment where it helps short-term comfort, advice on staying active, pacing strategies and education about pain. For persistent back pain, care is led by an APA Titled Pain Physiotherapist.",
+          "Scans are not usually needed for low back pain. If we think imaging or a medical review is warranted, we'll explain why and liaise with your GP.",
+        ],
+      },
+      {
+        h2: "Funding and where to be seen",
+        body: [
+          "Private patients don't need a referral. Eligible Medicare patients with a GP Chronic Condition Management Plan referral can be bulk billed at our Yagoona clinic. DVA, WorkCover and CTP patients are also seen, subject to their claim and referral requirements. Home visits are available if getting to a clinic is difficult.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Should I rest or keep moving with back pain?", a: "For most people, staying gently active is better than bed rest. Your physiotherapist can help you find a level of activity that's manageable and build from there." },
+      { q: "Do I need an X-ray or MRI?", a: "Usually not. Most low back pain can be assessed clinically. Imaging is considered when specific warning signs are present or symptoms don't follow the expected course." },
+      { q: "Can physiotherapy help sciatica?", a: "Physiotherapy may help many people with sciatica through education, activity advice and graded exercise. We monitor nerve symptoms closely and refer for medical review if needed." },
+      { q: "Can I be bulk billed for back pain physio?", a: "Eligible Medicare patients with a GPCCMP referral from their GP can be bulk billed at our Yagoona clinic. Ask your GP whether a GPCCMP is appropriate for you." },
+    ],
+    related: [
+      { label: "Bulk billing physiotherapy in Yagoona", href: "/bulk-billing-physiotherapy-yagoona" },
+      { label: "Persistent pain physiotherapy", href: "/chronic-pain-management" },
+      { label: "Neck pain physiotherapy", href: "/neck-pain-physiotherapy" },
+      { label: "Exercise rehabilitation", href: "/exercise-rehabilitation" },
+      { label: "Article: sciatica and physiotherapy", href: "/blog/sciatica-how-physiotherapy-can-help" },
+    ],
+    ctaTitle: "Book back pain physiotherapy",
+  },
+  "neck-pain-physiotherapy": {
+    slug: "neck-pain-physiotherapy",
+    pathway: "both",
+    region: "all",
+    yagoonaCallout: true,
+    breadcrumbParent: { name: "Services", href: "/services" },
+    sectionIds: { "Neck-related headaches": "neck-related-headaches" },
+    eyebrow: "Neck Pain Physiotherapy",
+    h1: "Neck pain and headache physiotherapy",
+    serviceName: "Neck Pain Physiotherapy",
+    intro:
+      "Physiotherapy for neck pain, stiffness, restricted movement and neck-related headaches — in clinic at Jesmond, Yagoona and Parramatta, or at home.",
+    lead: [
+      "Neck pain can come on suddenly after sleeping awkwardly or build gradually with desk work, stress or reduced activity. It often comes with stiffness, shoulder or upper-back tension, and sometimes headaches.",
+      "Physiotherapy aims to restore comfortable movement, build strength and endurance in the neck and upper back, and give you practical strategies for work and daily life.",
+    ],
+    sections: [
+      {
+        h2: "Common presentations",
+        body: ["Including:"],
+        list: [
+          "Acute neck pain and 'wry neck'",
+          "Persistent neck pain and stiffness",
+          "Neck pain related to desk work or posture",
+          "Pain spreading into the shoulder blade or arm",
+          "Neck pain after a car accident (whiplash-associated disorders)",
+          "Neck-related (cervicogenic) headaches",
+        ],
+      },
+      {
+        h2: "Assessment",
+        body: [
+          "We assess neck and upper-back movement, muscle strength and endurance, nerve function in the arms, and the activities that bring on your symptoms. We also screen for signs that need medical review, such as unexplained dizziness, visual disturbance, or weakness and numbness in the arms.",
+        ],
+      },
+      {
+        h2: "Neck-related headaches",
+        body: [
+          "Some headaches are linked to the joints and muscles of the upper neck — known as cervicogenic headaches. They are often one-sided, may be brought on by neck movement or sustained postures, and are commonly accompanied by neck stiffness.",
+          "Physiotherapy assessment helps determine whether the neck may be contributing. Management may include cervical mobility exercises, deep neck flexor and upper-back strengthening, manual therapy and advice on workload and posture. Other headache types, such as migraine, are best managed with your GP; physiotherapy may still help with associated neck symptoms.",
+        ],
+      },
+      {
+        h2: "Treatment approaches",
+        body: [
+          "Treatment may include targeted strengthening, mobility exercises, hands-on treatment where appropriate, and advice on activity, sleep and workstation set-up. We progress your program as symptoms settle so you can manage independently.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Can physiotherapy help headaches?", a: "Physiotherapy may help headaches that are associated with neck dysfunction (cervicogenic headaches). We assess whether your neck may be contributing and refer to your GP if another cause is suspected." },
+      { q: "Is neck manipulation necessary?", a: "No. Many people improve with exercise and gentle hands-on treatment. Any manual therapy is discussed with you first and only used where appropriate." },
+      { q: "I hurt my neck in a car accident — can you help?", a: "Yes. We see patients with eligible NSW CTP claims. Bring your claim details to your first appointment." },
+    ],
+    related: [
+      { label: "Lower back pain physiotherapy", href: "/lower-back-pain-physiotherapy" },
+      { label: "Shoulder pain physiotherapy", href: "/shoulder-pain-physiotherapy" },
+      { label: "CTP physiotherapy", href: "/ctp-physiotherapy" },
+      { label: "Physiotherapy in Yagoona", href: "/physiotherapy-yagoona" },
+      { label: "Article: neck pain and posture", href: "/blog/physiotherapy-for-neck-pain-and-posture" },
+    ],
+    ctaTitle: "Book neck pain physiotherapy",
+  },
+  "shoulder-pain-physiotherapy": {
+    slug: "shoulder-pain-physiotherapy",
+    pathway: "both",
+    region: "all",
+    yagoonaCallout: true,
+    breadcrumbParent: { name: "Services", href: "/services" },
+    eyebrow: "Shoulder Pain Physiotherapy",
+    h1: "Shoulder pain physiotherapy",
+    serviceName: "Shoulder Pain Physiotherapy",
+    intro:
+      "Assessment and rehabilitation for shoulder pain, rotator cuff-related conditions, stiffness and restricted movement — in clinic or at home.",
+    lead: [
+      "Shoulder pain can make everyday tasks — dressing, reaching overhead, sleeping on one side, lifting shopping — surprisingly difficult. The most common causes involve the rotator cuff tendons, joint stiffness, or changes related to age and load.",
+      "Rehabilitation focuses on understanding what aggravates your shoulder, then progressively rebuilding strength, movement and confidence with an individualised exercise program.",
+    ],
+    sections: [
+      {
+        h2: "Conditions we commonly see",
+        body: ["Including:"],
+        list: [
+          "Rotator cuff-related shoulder pain",
+          "Rotator cuff tears (non-surgical management)",
+          "Frozen shoulder (adhesive capsulitis)",
+          "Shoulder osteoarthritis",
+          "Rehabilitation after shoulder surgery",
+          "Shoulder pain after a fall or injury",
+        ],
+      },
+      {
+        h2: "Assessment",
+        body: [
+          "We assess shoulder movement and strength, how the shoulder blade and neck contribute, and which activities provoke your symptoms. Where appropriate, we liaise with your GP about imaging or specialist review.",
+        ],
+      },
+      {
+        h2: "Rehabilitation",
+        body: [
+          "Exercise-based rehabilitation is the foundation of care for most shoulder conditions. Programs are progressed gradually — starting with comfortable movement and building to strengthening that matches your daily, work or sporting demands. Hands-on treatment and activity modification may be used alongside exercise.",
+          "Recovery times vary widely between conditions; frozen shoulder, for example, can take many months. We'll give you a realistic outline after your assessment.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Do I need a scan before seeing a physio?", a: "Usually not. Many shoulder conditions can be assessed clinically. If imaging would change your management, we'll discuss it with you and your GP." },
+      { q: "Can physiotherapy help a rotator cuff tear?", a: "Many people with rotator cuff tears, particularly degenerative tears, are managed with exercise-based rehabilitation. Your physiotherapist and GP or surgeon can help you weigh up the options." },
+      { q: "Do you treat shoulders after surgery?", a: "Yes — we follow your surgeon's protocol and progress rehabilitation as your shoulder heals." },
+    ],
+    related: [
+      { label: "Neck pain physiotherapy", href: "/neck-pain-physiotherapy" },
+      { label: "Post-surgical rehabilitation", href: "/post-surgical-rehabilitation" },
+      { label: "Sports injury physiotherapy", href: "/sports-injury-physiotherapy" },
+      { label: "Bulk billing physiotherapy in Yagoona", href: "/bulk-billing-physiotherapy-yagoona" },
+      { label: "Article: shoulder pain in older adults", href: "/blog/physiotherapy-for-shoulder-pain-in-older-adults" },
+    ],
+    ctaTitle: "Book shoulder physiotherapy",
+  },
+  "knee-pain-physiotherapy": {
+    slug: "knee-pain-physiotherapy",
+    pathway: "both",
+    region: "all",
+    yagoonaCallout: true,
+    breadcrumbParent: { name: "Services", href: "/services" },
+    eyebrow: "Knee Pain Physiotherapy",
+    h1: "Knee pain physiotherapy",
+    serviceName: "Knee Pain Physiotherapy",
+    intro:
+      "Physiotherapy for knee pain associated with osteoarthritis, injury, overuse and reduced mobility — in clinic or at home.",
+    lead: [
+      "Knee pain can limit walking, stairs, getting up from a chair and sport. Common causes include knee osteoarthritis, pain around the kneecap, ligament and meniscus injuries, and tendon overload.",
+      "Strengthening and education are central to managing most knee conditions. Our aim is to help you understand your knee, reduce flare-ups and build the strength and confidence to stay active.",
+    ],
+    sections: [
+      {
+        h2: "Conditions we commonly see",
+        body: ["Including:"],
+        list: [
+          "Knee osteoarthritis",
+          "Pain around the kneecap (patellofemoral pain)",
+          "Ligament sprains and meniscus injuries",
+          "Patellar tendon pain",
+          "Knee pain after a fall",
+          "Rehabilitation before and after knee replacement",
+        ],
+      },
+      {
+        h2: "Assessment",
+        body: [
+          "We assess knee movement, swelling, strength through the hip and leg, balance and how you walk, climb stairs and squat. If an injury suggests structural damage that may need imaging or a surgical opinion, we'll discuss referral with your GP.",
+        ],
+      },
+      {
+        h2: "Rehabilitation",
+        body: [
+          "Programs typically combine progressive strengthening, movement retraining, load management and practical advice on activity. For knee osteoarthritis, exercise and education are recommended first-line treatments in clinical guidelines, and may help reduce pain and improve function for many people.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Is exercise safe with knee arthritis?", a: "For most people, yes. A tailored program that is progressed gradually is a recommended part of managing knee osteoarthritis." },
+      { q: "Can you help me prepare for a knee replacement?", a: "Yes. Strengthening before surgery (prehabilitation) can help you prepare, and we continue rehabilitation after your operation." },
+      { q: "Can I use Medicare for knee physio?", a: "Eligible patients with a GPCCMP referral may claim a Medicare rebate, and can be bulk billed at our Yagoona clinic." },
+    ],
+    related: [
+      { label: "Knee replacement rehabilitation", href: "/knee-replacement-rehabilitation-newcastle" },
+      { label: "Arthritis physiotherapy", href: "/arthritis-physiotherapy-newcastle" },
+      { label: "Hip pain physiotherapy", href: "/hip-pain-physiotherapy" },
+      { label: "Sports injury physiotherapy", href: "/sports-injury-physiotherapy" },
+      { label: "Bulk billing physiotherapy in Yagoona", href: "/bulk-billing-physiotherapy-yagoona" },
+    ],
+    ctaTitle: "Book knee physiotherapy",
+  },
+  "hip-pain-physiotherapy": {
+    slug: "hip-pain-physiotherapy",
+    pathway: "both",
+    region: "all",
+    yagoonaCallout: true,
+    breadcrumbParent: { name: "Services", href: "/services" },
+    sectionIds: {
+      "Hip osteoarthritis": "hip-osteoarthritis",
+      "Lateral hip pain (hip bursitis and gluteal tendinopathy)": "lateral-hip-pain",
+    },
+    eyebrow: "Hip Pain Physiotherapy",
+    h1: "Hip pain physiotherapy: arthritis and lateral hip pain",
+    serviceName: "Hip Pain Physiotherapy",
+    intro:
+      "Physiotherapy for hip osteoarthritis, greater trochanteric pain syndrome ('hip bursitis') and gluteal tendinopathy — in clinic or at home.",
+    lead: [
+      "Hip pain is common and can affect walking, sleeping, climbing stairs and getting in and out of the car. Two of the most common causes we see are hip osteoarthritis, usually felt in the groin or front of the hip, and lateral hip pain, felt on the outside of the hip.",
+      "Each responds best to a different approach, so a careful assessment comes first.",
+    ],
+    sections: [
+      {
+        h2: "Hip osteoarthritis",
+        body: [
+          "Hip osteoarthritis often causes groin or front-of-hip pain, stiffness (especially after rest), and reduced walking tolerance. Exercise and education are recommended first-line treatments.",
+          "Programs focus on strengthening the hip and leg muscles, maintaining joint mobility, building walking capacity and practical strategies for daily tasks. If symptoms progress, we can help you prepare for an orthopaedic opinion or a hip replacement.",
+        ],
+      },
+      {
+        h2: "Lateral hip pain (hip bursitis and gluteal tendinopathy)",
+        body: [
+          "Pain on the outside of the hip — often called 'hip bursitis' — is now usually described as greater trochanteric pain syndrome. In many people the gluteal tendons are the main source of pain. It is often worse lying on the affected side, crossing the legs, standing on one leg or climbing stairs.",
+          "Physiotherapy focuses on progressive strengthening of the gluteal muscles, avoiding positions that compress the tendons, and adjusting activity while the tendons adapt. Education and load management are key parts of care.",
+        ],
+      },
+      {
+        h2: "Assessment",
+        body: [
+          "We assess where your pain is, hip movement and strength, walking and single-leg control, and the activities that provoke symptoms. We also consider whether the lower back may be contributing.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Is lateral hip pain the same as bursitis?", a: "It's often called bursitis, but in many cases the gluteal tendons are the main source of pain. Treatment focuses on strengthening and load management." },
+      { q: "Should I stop walking if my hip hurts?", a: "Not necessarily. We help you find an amount of walking that's manageable and gradually build it up." },
+      { q: "Can you help after a hip replacement?", a: "Yes — see our hip replacement rehabilitation page for more detail." },
+    ],
+    related: [
+      { label: "Hip replacement rehabilitation", href: "/hip-replacement-rehabilitation-newcastle" },
+      { label: "Arthritis physiotherapy", href: "/arthritis-physiotherapy-newcastle" },
+      { label: "Knee pain physiotherapy", href: "/knee-pain-physiotherapy" },
+      { label: "Lower back pain physiotherapy", href: "/lower-back-pain-physiotherapy" },
+      { label: "Article: staying active with arthritis", href: "/blog/staying-active-with-arthritis" },
+    ],
+    ctaTitle: "Book hip physiotherapy",
+  },
+  "sports-injury-physiotherapy": {
+    slug: "sports-injury-physiotherapy",
+    pathway: "clinic",
+    region: "all",
+    yagoonaCallout: true,
+    breadcrumbParent: { name: "Services", href: "/services" },
+    eyebrow: "Sports Injury Physiotherapy",
+    h1: "Sports injury physiotherapy",
+    serviceName: "Sports Injury Physiotherapy",
+    intro:
+      "Assessment and rehabilitation of sports-related muscle, tendon, ligament and joint injuries at our Jesmond, Yagoona and Parramatta clinics.",
+    lead: [
+      "Whether you play weekend sport, run, go to the gym or are returning to activity after time off, injuries can interrupt both training and everyday life.",
+      "Our focus is a clear diagnosis, a rehabilitation plan matched to your sport, and a gradual return to training with the aim of reducing the risk of re-injury.",
+    ],
+    sections: [
+      {
+        h2: "Injuries we commonly see",
+        body: ["Including:"],
+        list: [
+          "Ankle sprains",
+          "Muscle strains (hamstring, calf, groin)",
+          "Tendon pain (Achilles, patellar, gluteal, rotator cuff)",
+          "Knee ligament and meniscus injuries",
+          "Shoulder injuries",
+          "Running-related overuse injuries",
+        ],
+      },
+      {
+        h2: "Rehabilitation and return to sport",
+        body: [
+          "Rehabilitation progresses from settling symptoms and restoring movement, through strength and conditioning, to sport-specific drills. Return-to-sport decisions are based on function and strength rather than time alone, and are made together with you.",
+          "If your injury may need imaging or a sports physician or surgical opinion, we'll refer appropriately.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "How soon should I see a physio after an injury?", a: "Early assessment helps guide what to do in the first few days and when to start loading the injured area. Seek urgent medical care for suspected fractures, dislocations or head injuries." },
+      { q: "Do I need a referral?", a: "Not for private physiotherapy. You can book directly." },
+    ],
+    related: [
+      { label: "Knee pain physiotherapy", href: "/knee-pain-physiotherapy" },
+      { label: "Shoulder pain physiotherapy", href: "/shoulder-pain-physiotherapy" },
+      { label: "Exercise rehabilitation", href: "/exercise-rehabilitation" },
+      { label: "Clinic physiotherapy", href: "/clinic-physiotherapy" },
+    ],
+    ctaTitle: "Book sports injury physiotherapy",
+  },
+  "exercise-rehabilitation": {
+    slug: "exercise-rehabilitation",
+    pathway: "both",
+    region: "all",
+    breadcrumbParent: { name: "Services", href: "/services" },
+    sectionIds: { "Strength and mobility rehabilitation": "strength-and-mobility" },
+    eyebrow: "Exercise Rehabilitation",
+    h1: "Exercise rehabilitation and strength programs",
+    serviceName: "Exercise Rehabilitation",
+    intro:
+      "Individualised, physiotherapist-designed exercise programs to improve strength, flexibility, stability, endurance and physical function — in clinic or at home.",
+    lead: [
+      "Exercise is one of the most effective tools in physiotherapy. A well-designed program is matched to your condition, current capacity and goals, and progressed safely over time.",
+      "Exercise rehabilitation is used after injury and surgery, for persistent musculoskeletal conditions, and for people who have lost strength or mobility through illness, hospital stays or reduced activity.",
+    ],
+    sections: [
+      {
+        h2: "What a program includes",
+        body: ["Depending on your goals:"],
+        list: [
+          "Progressive strengthening",
+          "Mobility and flexibility work",
+          "Balance and stability training",
+          "Walking and endurance",
+          "Functional, task-specific practice",
+          "A home program you can continue independently",
+        ],
+      },
+      {
+        h2: "Strength and mobility rehabilitation",
+        body: [
+          "For people with muscle weakness, deconditioning, reduced endurance or mobility limitations — often after illness, a hospital stay or a period of inactivity — we focus on rebuilding leg strength, walking ability and the ability to manage everyday tasks independently.",
+          "These programs can be delivered at home, which is often easier for older adults and people recovering from hospital.",
+        ],
+      },
+      {
+        h2: "Who it suits",
+        body: [
+          "Exercise rehabilitation suits most people, including those with persistent pain, arthritis and other long-term conditions. Programs are adapted for your health, any medical precautions and your surgeon's or GP's advice.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "I've never done much exercise — is this for me?", a: "Yes. Programs start at your current level and are progressed gradually." },
+      { q: "Is it supervised?", a: "Your physiotherapist teaches and reviews each exercise, then progresses your program at follow-up appointments." },
+    ],
+    related: [
+      { label: "Falls prevention physiotherapy", href: "/falls-prevention-physiotherapy-newcastle" },
+      { label: "Senior exercise programs", href: "/senior-exercise-programs-newcastle" },
+      { label: "Post-surgical rehabilitation", href: "/post-surgical-rehabilitation" },
+      { label: "Home visit physiotherapy", href: "/home-visits" },
+    ],
+    ctaTitle: "Start an exercise rehabilitation program",
+  },
+  "ctp-physiotherapy": {
+    slug: "ctp-physiotherapy",
+    pathway: "both",
+    region: "all",
+    breadcrumbParent: { name: "Services", href: "/services" },
+    eyebrow: "CTP Physiotherapy",
+    h1: "CTP physiotherapy after a motor vehicle accident",
+    serviceName: "CTP Physiotherapy",
+    intro:
+      "Physiotherapy for people injured in a motor vehicle accident with an eligible NSW Compulsory Third Party (CTP) claim — in clinic or at home.",
+    lead: [
+      "Injuries after a car accident — such as neck pain (whiplash-associated disorders), back pain and soft-tissue injuries — can affect sleep, work and daily activities.",
+      "If you have an eligible NSW CTP claim, physiotherapy may be funded by the CTP insurer, subject to their approval and the scheme's requirements.",
+    ],
+    sections: [
+      {
+        h2: "What to bring",
+        body: ["To help set up your treatment:"],
+        list: [
+          "Your CTP claim number and insurer details",
+          "Any referral or reports from your GP or hospital",
+          "Details of your injuries and current symptoms",
+        ],
+      },
+      {
+        h2: "Treatment",
+        body: [
+          "Treatment may include pain management strategies, movement rehabilitation, progressive strengthening and functional recovery, with the aim of returning to work and daily activities. We provide reports to your insurer and GP as required.",
+          "We'll confirm what your insurer has approved before treatment so there are no surprises.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Do I need an approved claim?", a: "CTP-funded treatment depends on your claim and insurer approval. If your claim is still being set up, call us and we'll explain your options." },
+      { q: "Can you treat whiplash?", a: "Yes. Neck pain after a car accident is one of the most common injuries we see." },
+    ],
+    related: [
+      { label: "Neck pain physiotherapy", href: "/neck-pain-physiotherapy" },
+      { label: "Lower back pain physiotherapy", href: "/lower-back-pain-physiotherapy" },
+      { label: "WorkCover physiotherapy", href: "/workers-compensation-physiotherapy" },
+      { label: "Clinic physiotherapy", href: "/clinic-physiotherapy" },
+    ],
+    ctaTitle: "Book CTP physiotherapy",
+  },
   "clinic-physiotherapy": {
     slug: "clinic-physiotherapy",
     pathway: "clinic",
     region: "all",
+    yagoonaCallout: true,
     eyebrow: "Clinic Physiotherapy",
     h1: "Clinic physiotherapy in Sydney and Newcastle",
     serviceName: "Clinic Physiotherapy",
@@ -41,9 +481,10 @@ export const landingPages: Record<string, LandingContent> = {
         h2: "Funding and payment",
         body: ["We see private patients (no referral needed) and patients funded through:"],
         list: [
-          "Medicare — GP Chronic Condition Management Plan (GPCCMP)",
+          "Medicare — GP Chronic Condition Management Plan (GPCCMP); bulk billed for eligible patients at Yagoona",
           "DVA — Gold Card, or White Card for accepted conditions",
           "WorkCover (workers compensation) — with an approved claim",
+          "CTP — eligible NSW motor vehicle accident claims",
           "NDIS — agency-, plan- and self-managed",
           "Support at Home",
           "Private health insurance — receipts provided for claims",
@@ -64,10 +505,14 @@ export const landingPages: Record<string, LandingContent> = {
       { q: "Is clinic or home visit physiotherapy better for me?", a: "If you can travel comfortably, clinic appointments work well. If getting out is difficult, you're recovering from hospital, or your goals are about managing at home, a home visit is often the better choice. Call us and we'll help you decide." },
     ],
     related: [
+      { label: "Bulk billing physiotherapy in Yagoona", href: "/bulk-billing-physiotherapy-yagoona" },
       { label: "Physiotherapy Jesmond", href: "/physiotherapy-jesmond" },
       { label: "Physiotherapy Yagoona", href: "/physiotherapy-yagoona" },
       { label: "Physiotherapy Parramatta", href: "/physiotherapy-parramatta" },
       { label: "Persistent Pain Physiotherapy", href: "/chronic-pain-management" },
+      { label: "Lower back pain physiotherapy", href: "/lower-back-pain-physiotherapy" },
+      { label: "Sports injury physiotherapy", href: "/sports-injury-physiotherapy" },
+      { label: "All physiotherapy services", href: "/services" },
       { label: "Home Visit Physiotherapy", href: "/home-visits" },
     ],
     ctaTitle: "Book a clinic appointment",
@@ -192,6 +637,7 @@ export const landingPages: Record<string, LandingContent> = {
     slug: "musculoskeletal-physiotherapy",
     pathway: "both",
     region: "all",
+    yagoonaCallout: true,
     eyebrow: "Musculoskeletal Physiotherapy",
     h1: "Musculoskeletal physiotherapy",
     serviceName: "Musculoskeletal Physiotherapy",
@@ -236,6 +682,11 @@ export const landingPages: Record<string, LandingContent> = {
     related: [
       { label: "Persistent Pain Physiotherapy", href: "/chronic-pain-management" },
       { label: "Post-Surgical Rehabilitation", href: "/post-surgical-rehabilitation" },
+      { label: "Lower back pain physiotherapy", href: "/lower-back-pain-physiotherapy" },
+      { label: "Neck pain physiotherapy", href: "/neck-pain-physiotherapy" },
+      { label: "Shoulder pain physiotherapy", href: "/shoulder-pain-physiotherapy" },
+      { label: "Knee pain physiotherapy", href: "/knee-pain-physiotherapy" },
+      { label: "Hip pain physiotherapy", href: "/hip-pain-physiotherapy" },
       { label: "WorkCover Physiotherapy", href: "/workers-compensation-physiotherapy" },
       { label: "Clinic Physiotherapy", href: "/clinic-physiotherapy" },
     ],

@@ -23,6 +23,9 @@ export type SydneyClinic = {
   // Clinic photos in /public/images/clinics/ — the gallery only shows once photos are added.
   // Only use photos you own; no identifiable patients without written consent.
   photos?: { src: string; alt: string }[];
+  h1?: string;               // page heading (defaults to brandName)
+  seoTitle?: string;         // <title> override
+  bulkBilling?: boolean;     // bulk billing for eligible GPCCMP appointments (confirmed: Yagoona only)
   poster?: { src: string; alt: string }; // square promo image shown near the top of the page
 };
 
@@ -42,10 +45,13 @@ export const sydneyClinics: SydneyClinic[] = [
     days: "Tuesdays, 9:00am – 4:30pm",
     hours: [{ dayOfWeek: "Tuesday", opens: "09:00", closes: "16:30" }],
     startDate: "17 November 2026",
+    h1: "Physiotherapy in Yagoona – Bulk Billing Available",
+    seoTitle: "Physio Yagoona | Bulk Billing Physiotherapy | Fletcher",
+    bulkBilling: true,
     metaDescription:
-      "Physio in Yagoona at Yagoona Family HealthCare, 457 Hume Hwy. Pain, injuries, rehab and falls prevention. Medicare GPCCMP, DVA, NDIS and private. Call to book.",
+      "Physiotherapy in Yagoona for back pain, arthritis, chronic pain and rehabilitation. Bulk billing for eligible Medicare patients. Call 02 8766 2477.",
     intro:
-      "Physiotherapy inside Yagoona Family HealthCare on the Hume Highway — for pain, injuries, rehabilitation, balance and falls prevention. Book through the clinic's reception.",
+      "Fletcher Physiotherapy Yagoona, inside Yagoona Family HealthCare on the Hume Highway — physiotherapy for back and neck pain, arthritis, persistent pain, injuries and rehabilitation. Book through the clinic's reception.",
     about: [
       "Fletcher Physiotherapy Yagoona consults inside Yagoona Family HealthCare at 457 Hume Highway. Because we work alongside your GP, it's easy to be referred, share updates and keep your care joined up — especially if you're on a GP Chronic Condition Management Plan (GPCCMP).",
       "Our physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management). We see people with persistent pain, back and neck pain, arthritis, injuries, and those wanting to get stronger and steadier on their feet — and we focus on practical goals that fit your everyday life.",
