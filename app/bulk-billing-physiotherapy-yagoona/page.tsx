@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 import { sydneyClinics } from "@/lib/sydneyClinics";
 
 // Single authoritative page for Medicare GPCCMP + bulk billing physiotherapy (services 21, 28, 29).
-// COMPLIANCE: bulk billing applies to ELIGIBLE Medicare (GPCCMP) appointments at the Yagoona clinic only.
+// COMPLIANCE: bulk billing applies to ELIGIBLE Medicare (GPCCMP) appointments at all clinics (Jesmond, Yagoona, Parramatta) — not home visits.
 
 const yag = sydneyClinics.find((c) => c.slug === "physiotherapy-yagoona")!;
 const tel = `tel:+61${yag.phone.replace(/\D/g, "").replace(/^0/, "")}`;
@@ -52,6 +52,10 @@ const faqs = [
     a: "Bulk billing is available at our Yagoona clinic for eligible Medicare appointments where you have a valid referral from your GP under a GP Chronic Condition Management Plan (GPCCMP). Private appointments without a GPCCMP referral are not bulk billed.",
   },
   {
+    q: "Is bulk billing available at your other clinics?",
+    a: "Yes. Bulk billing for eligible GPCCMP patients is also available at Fletcher Physiotherapy Parramatta (Parramatta Medical and Dental Centre) and our Jesmond clinic in Newcastle.",
+  },
+  {
     q: "What does bulk billing mean?",
     a: "Bulk billing means we accept the Medicare benefit as full payment for an eligible appointment, so there is no out-of-pocket gap fee for that appointment.",
   },
@@ -69,7 +73,7 @@ const faqs = [
   },
   {
     q: "Are home visits bulk billed?",
-    a: "Bulk billing on this page applies to eligible appointments at our Yagoona clinic. Please ask about funding options for home visits when you call.",
+    a: "Bulk billing applies to eligible appointments at our Yagoona, Parramatta and Jesmond clinics. Please ask about funding options for home visits when you call.",
   },
   {
     q: "How do I book?",
