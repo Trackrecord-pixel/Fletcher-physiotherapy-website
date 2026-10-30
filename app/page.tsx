@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/Icon";
+import type { IconName } from "@/components/Icon";
 import FAQAccordion from "@/components/FAQAccordion";
 import Reveal from "@/components/Reveal";
 import CallbackForm from "@/components/CallbackForm";
@@ -22,7 +23,7 @@ const allClinics = [
     address: c.address,
     days: c.dayShort,
     phone: site.phone,
-    phoneNote: "Call us or book online",
+    phoneNote: "Book online · bulk billing for eligible GPCCMP patients",
     online: true,
   })),
   ...sydneyClinics.map((c) => ({
@@ -33,7 +34,7 @@ const allClinics = [
     address: `${c.streetAddress}, ${c.suburb} NSW ${c.postcode}`,
     days: c.days ?? "Call reception for days",
     phone: c.phone,
-    phoneNote: "Bookings through clinic reception",
+    phoneNote: c.bulkBilling ? "Reception bookings · bulk billing for eligible GPCCMP patients" : "Bookings through clinic reception",
     online: false,
   })),
 ];
@@ -57,6 +58,17 @@ const homeAreas = [
     text: "Home visits across the Central Coast, from Gosford to Wyong.",
     suburbs: ["Gosford", "Erina", "Wyong", "Tuggerah"],
   },
+];
+
+const whatWeTreat: { label: string; text: string; href: string; icon: IconName }[] = [
+  { label: "Back & Neck Pain", text: "Acute and persistent back pain, sciatica, neck pain and neck-related headaches.", href: "/lower-back-pain-physiotherapy", icon: "pulse" },
+  { label: "Chronic Pain", text: "Persistent pain care led by an APA Titled Pain Physiotherapist.", href: "/chronic-pain-management", icon: "pulse" },
+  { label: "Shoulder & Knee Pain", text: "Rotator cuff, frozen shoulder, knee osteoarthritis and kneecap pain.", href: "/shoulder-pain-physiotherapy", icon: "joint" },
+  { label: "Arthritis", text: "Exercise and education for hip, knee and spinal osteoarthritis.", href: "/arthritis-physiotherapy-newcastle", icon: "joint" },
+  { label: "Sports Injuries", text: "Sprains, strains and tendon injuries, with return-to-sport planning.", href: "/sports-injury-physiotherapy", icon: "strength" },
+  { label: "Post-Surgical Rehabilitation", text: "Before and after joint replacement and orthopaedic surgery.", href: "/post-surgical-rehabilitation", icon: "recovery" },
+  { label: "Falls Prevention", text: "Balance, strength and mobility for steadier, more confident movement.", href: "/falls-prevention-physiotherapy-newcastle", icon: "balance" },
+  { label: "Bulk Billing Physiotherapy", text: "At our Jesmond, Yagoona and Parramatta clinics — for eligible Medicare GPCCMP patients.", href: "/bulk-billing-physiotherapy-yagoona", icon: "check" },
 ];
 
 const reasons: { n: string; title: string; text: string }[] = [
@@ -199,7 +211,19 @@ export default function HomePage() {
               All clinic information <Icon name="arrow" className="h-4 w-4" />
             </Link>
           </div>
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <Link
+            href="/bulk-billing-physiotherapy-yagoona"
+            className="mt-8 flex flex-col gap-2 rounded-2xl border border-euc-200 bg-euc-50 px-6 py-4 transition-colors hover:border-euc-600 sm:flex-row sm:items-center sm:justify-between"
+          >
+            <span className="flex items-center gap-3 font-semibold text-navy-900">
+              <Icon name="check" className="h-5 w-5 flex-shrink-0 text-euc-600" />
+              Bulk Billing Physiotherapy Available at Our Clinics for Eligible Medicare Patients
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-euc-700">
+              How it works <Icon name="arrow" className="h-4 w-4" />
+            </span>
+          </Link>
+          <div className="mt-6 grid gap-5 md:grid-cols-3">
             {allClinics.map((c, i) => (
               <Reveal key={c.slug} delay={i * 80}>
                 <article className="flex h-full flex-col rounded-3xl border border-beige-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover">
@@ -314,22 +338,40 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7 · SERVICES & CONDITIONS */}
+      {/* 7 · WHAT WE TREAT */}
       <section className="bg-white py-16 lg:py-24" aria-labelledby="services">
-        <div className="container-px grid gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-4">
-            <p className="eyebrow"><span aria-hidden="true" className="h-px w-8 bg-clay-500" /> Services</p>
-            <h2 id="services" className="mt-4 text-3xl text-navy-900 sm:text-4xl">What we help with</h2>
-            <p className="mt-4 text-navy-600">Available in clinic, at home, or both — we&rsquo;ll recommend what suits your situation.</p>
-            <Link href="/services" className="btn-secondary mt-6">All services <Icon name="arrow" className="h-4 w-4" /></Link>
+        <div className="container-px">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div>
+              <p className="eyebrow"><span aria-hidden="true" className="h-px w-8 bg-clay-500" /> What we treat</p>
+              <h2 id="services" className="mt-4 text-3xl text-navy-900 sm:text-4xl">Physiotherapy for common conditions</h2>
+              <p className="mt-3 max-w-2xl text-navy-600">Available in clinic, at home, or both — we&rsquo;ll recommend what suits your situation.</p>
+            </div>
+            <Link href="/services" className="btn-secondary">All 29 services <Icon name="arrow" className="h-4 w-4" /></Link>
           </div>
-          <div className="grid gap-x-10 sm:grid-cols-2 lg:col-span-8">
-            {[...servicesNav.filter((s) => s.href !== "/services"), ...conditionsNav].map((s) => (
-              <Link key={s.href} href={s.href} className="group flex items-center justify-between border-b border-beige-200 py-4 text-lg text-navy-900 transition-colors hover:text-euc-700">
-                <span className="font-serif">{s.label}</span>
-                <Icon name="arrow" className="h-4 w-4 text-navy-300 transition-transform group-hover:translate-x-1 group-hover:text-euc-600" />
-              </Link>
+          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {whatWeTreat.map((t) => (
+              <li key={t.href}>
+                <Link href={t.href} className="card card-hover group flex h-full flex-col">
+                  <Icon name={t.icon} className="h-6 w-6 text-euc-600" />
+                  <h3 className="mt-4 text-lg text-navy-900">{t.label}</h3>
+                  <p className="mt-1 flex-1 text-sm text-navy-600">{t.text}</p>
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-euc-700">
+                    Learn more <Icon name="arrow" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </Link>
+              </li>
             ))}
+          </ul>
+          <div className="mt-10 grid gap-x-10 sm:grid-cols-2 lg:grid-cols-3">
+            {[...servicesNav.filter((x) => x.href !== "/services"), ...conditionsNav]
+              .filter((x, i, arr) => arr.findIndex((y) => y.href === x.href) === i)
+              .map((x) => (
+                <Link key={x.href} href={x.href} className="group flex items-center justify-between border-b border-beige-200 py-3 text-navy-800 transition-colors hover:text-euc-700">
+                  <span>{x.label}</span>
+                  <Icon name="arrow" className="h-4 w-4 text-navy-300 transition-transform group-hover:translate-x-1 group-hover:text-euc-600" />
+                </Link>
+              ))}
           </div>
         </div>
       </section>

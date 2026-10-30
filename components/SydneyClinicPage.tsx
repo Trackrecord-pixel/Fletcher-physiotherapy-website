@@ -8,14 +8,18 @@ import { site } from "@/lib/site";
 import type { SydneyClinic } from "@/lib/sydneyClinics";
 
 const conditions = [
-  "Persistent (chronic) pain",
-  "Back and neck pain",
-  "Arthritis and joint pain",
-  "Sports and work injuries",
-  "Recovery after surgery or hospital",
-  "Balance problems and falls risk",
-  "Muscle weakness and deconditioning",
-  "Headaches related to the neck",
+  { label: "Persistent (chronic) pain", href: "/chronic-pain-management" },
+  { label: "Lower back pain and sciatica", href: "/lower-back-pain-physiotherapy" },
+  { label: "Neck pain and neck-related headaches", href: "/neck-pain-physiotherapy" },
+  { label: "Shoulder pain", href: "/shoulder-pain-physiotherapy" },
+  { label: "Knee pain", href: "/knee-pain-physiotherapy" },
+  { label: "Hip pain and hip arthritis", href: "/hip-pain-physiotherapy" },
+  { label: "Arthritis and joint pain", href: "/arthritis-physiotherapy-newcastle" },
+  { label: "Sports injuries", href: "/sports-injury-physiotherapy" },
+  { label: "Recovery after surgery or hospital", href: "/post-surgical-rehabilitation" },
+  { label: "Balance problems and falls risk", href: "/falls-prevention-physiotherapy-newcastle" },
+  { label: "Weakness and deconditioning", href: "/exercise-rehabilitation" },
+  { label: "Work and car accident injuries", href: "/workers-compensation-physiotherapy" },
 ];
 
 const telHref = (phone: string) => `tel:+61${phone.replace(/\D/g, "").replace(/^0/, "")}`;
@@ -41,9 +45,17 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
       q: `Do I need a referral to see a physio in ${c.suburb}?`,
       a: `No — you can book privately without a referral. A GP referral is needed for Medicare-subsidised sessions under a GP Chronic Condition Management Plan (GPCCMP). If your GP is at ${c.hostCentre}, ask them about a referral at your next appointment.`,
     },
+    ...(c.bulkBilling
+      ? [
+          {
+            q: `Is physio bulk billed in ${c.suburb}?`,
+            a: `Yes, for eligible Medicare patients referred by their GP under a GP Chronic Condition Management Plan (GPCCMP). Eligible Medicare-funded appointments have no out-of-pocket gap fee. Private appointments are also available.`,
+          },
+        ]
+      : []),
     {
       q: `Can I use Medicare for physio in ${c.suburb}?`,
-      a: `Eligible patients with a chronic condition may receive a Medicare rebate for up to five allied health sessions a year when referred by their GP under a GPCCMP. Your GP will tell you if you're eligible.`,
+      a: `Eligible patients with a chronic condition can generally access up to 5 Medicare-funded allied health services per calendar year when referred by their GP under a GPCCMP. These are shared across all allied health services. Your GP will tell you if you're eligible.`,
     },
     {
       q: `Do you see DVA patients in ${c.suburb}?`,
@@ -73,7 +85,7 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
 
   return (
     <>
-      <PageHero eyebrow={`Physiotherapy ${c.suburb}`} title={c.brandName} intro={c.intro} breadcrumb={crumbs} />
+      <PageHero eyebrow={c.h1 ? c.brandName : `Physiotherapy ${c.suburb}`} title={c.h1 ?? c.brandName} intro={c.intro} breadcrumb={crumbs} />
 
       {/* Quick contact — first thing visitors from Google see */}
       <section className="border-b border-navy-100 bg-white">
@@ -92,6 +104,31 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
           </div>
         </div>
       </section>
+
+      {c.bulkBilling && (
+        <section className="bg-white pt-12" aria-labelledby="bulk-billing-h">
+          <div className="container-px">
+            <div className="grid gap-6 rounded-3xl border border-beige-200 bg-sand p-7 sm:p-9 lg:grid-cols-12 lg:items-center">
+              <div className="lg:col-span-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-euc-600">Medicare · GPCCMP</p>
+                <h2 id="bulk-billing-h" className="mt-2 text-2xl text-navy-900 sm:text-3xl">Bulk Billing Physiotherapy in {c.suburb}</h2>
+                <p className="mt-3 text-navy-700">
+                  Fletcher Physiotherapy provides bulk billed physiotherapy for eligible Medicare patients referred under a GP
+                  Chronic Condition Management Plan (GPCCMP). Eligible Medicare-funded appointments have no out-of-pocket gap
+                  fee. Private physiotherapy appointments are also available.
+                </p>
+                <Link href="/bulk-billing-physiotherapy-yagoona" className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-euc-700 hover:text-euc-800">
+                  Eligibility, GPCCMP referrals and what to bring <Icon name="arrow" className="h-4 w-4" />
+                </Link>
+              </div>
+              <div className="lg:col-span-4">
+                <a href={tel} className="btn-primary w-full"><Icon name="phone" className="h-5 w-5" /> Call {c.phone}</a>
+                <p className="mt-2 text-center text-sm text-navy-600">Call {c.phone} to book at our {c.suburb} clinic.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {c.poster && (
         <section className="bg-sand py-10">
@@ -140,9 +177,11 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
               <h2 className="text-2xl text-navy-900 sm:text-3xl">What we help with</h2>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                 {conditions.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-beige-100 text-navy-800"><Icon name="check" className="h-4 w-4" /></span>
-                    <span className="text-navy-700">{item}</span>
+                  <li key={item.href + item.label}>
+                    <Link href={item.href} className="flex items-start gap-3 text-navy-700 hover:text-euc-700">
+                      <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-beige-100 text-navy-800"><Icon name="check" className="h-4 w-4" /></span>
+                      <span>{item.label}</span>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -151,11 +190,22 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
             <div className="mt-10">
               <h2 className="text-2xl text-navy-900 sm:text-3xl">Payment and funding</h2>
               <ul className="mt-4 space-y-3 text-navy-700">
-                <li><strong className="text-navy-900">Medicare (GPCCMP):</strong> with a GP Chronic Condition Management Plan referral, eligible patients may claim a Medicare rebate.</li>
+                <li>
+                  <strong className="text-navy-900">Medicare (GPCCMP):</strong>{" "}
+                  {c.bulkBilling ? (
+                    <>
+                      bulk billed for eligible patients referred under a GP Chronic Condition Management Plan —{" "}
+                      <Link href="/bulk-billing-physiotherapy-yagoona" className="font-semibold text-euc-700 underline underline-offset-4">how it works</Link>.
+                    </>
+                  ) : (
+                    "with a GP Chronic Condition Management Plan referral, eligible patients may claim a Medicare rebate."
+                  )}
+                </li>
                 <li><strong className="text-navy-900">DVA:</strong> Gold Card holders, and White Card holders for accepted conditions, with a GP referral.</li>
                 <li><strong className="text-navy-900">NDIS:</strong> registered NDIS provider ({site.ndisRegistrationNumber}) — agency-, plan- and self-managed participants.</li>
                 <li><strong className="text-navy-900">Support at Home:</strong> physiotherapy through your provider.</li>
                 <li><strong className="text-navy-900">WorkCover:</strong> work injuries with an accepted workers compensation claim.</li>
+                <li><strong className="text-navy-900">CTP:</strong> motor vehicle accident injuries with an eligible NSW CTP claim.</li>
                 <li><strong className="text-navy-900">Private:</strong> no referral needed. Receipts provided for private health fund claims.</li>
               </ul>
             </div>

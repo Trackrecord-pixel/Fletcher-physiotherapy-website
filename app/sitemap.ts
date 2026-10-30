@@ -14,6 +14,7 @@ const staticRoutes = [
   "/locations",
   "/physio-near-me",
   "/ndis-physiotherapy-sydney",
+  "/bulk-billing-physiotherapy-yagoona",
   "/book",
   "/refer-a-patient",
   "/contact",

@@ -32,7 +32,7 @@ export default function ClinicPage({ c }: { c: Clinic }) {
     { q: `Where is your ${c.suburb} physiotherapy clinic?`, a: `Fletcher Physiotherapy consults at ${c.hostCentre}, ${c.address}. Appointments are available on ${c.dayShort}. Call ${site.phone} or book online.` },
     { q: `What day can I see a physiotherapist in ${c.suburb}?`, a: `Our physiotherapist consults at the ${c.suburb} clinic every ${c.consultingDay}. If that doesn't suit, we also offer home visits across Newcastle, Lake Macquarie and the Central Coast.` },
     { q: `Do I need a referral to see a physiotherapist in ${c.suburb}?`, a: `No — you can book a private physiotherapy appointment directly. A GP referral is only needed for certain funding, such as a Medicare GP Chronic Condition Management Plan (GPCCMP) plan or DVA.` },
-    { q: `Can I claim a Medicare rebate at the ${c.suburb} clinic?`, a: `Eligible patients with a valid Medicare GP Chronic Condition Management Plan (GPCCMP) referral from their GP may be able to claim a Medicare rebate. Please contact us to discuss your eligibility.` },
+    { q: `Is physio bulk billed at the ${c.suburb} clinic?`, a: `Eligible patients with a valid Medicare GP Chronic Condition Management Plan (GPCCMP) referral from their GP can be bulk billed at the ${c.suburb} clinic, with no out-of-pocket gap fee for eligible Medicare-funded appointments. Please contact us to discuss your eligibility.` },
     { q: `Do you treat DVA patients in ${c.suburb}?`, a: `Yes, we welcome DVA patients. Veterans with a valid referral from their GP may be eligible for physiotherapy under DVA arrangements. Contact us to confirm the details.` },
   ];
   const crumbs = [{ name: "Home", href: "/" }, { name: "Locations", href: "/locations" }, { name: `${c.suburb} Clinic`, href: `/${c.slug}` }];
@@ -81,8 +81,8 @@ export default function ClinicPage({ c }: { c: Clinic }) {
             </div>
 
             <div className="mt-10">
-              <h2 className="text-2xl text-navy-900 sm:text-3xl">Medicare GPCCMP physiotherapy</h2>
-              <p className="prose-navy mt-4">Eligible patients with a valid Medicare GP Chronic Condition Management Plan (GPCCMP) referral from their GP may be able to claim a Medicare rebate for physiotherapy. Please contact us to discuss your eligibility and how the process works.</p>
+              <h2 className="text-2xl text-navy-900 sm:text-3xl">Bulk billed Medicare GPCCMP physiotherapy</h2>
+              <p className="prose-navy mt-4">Eligible patients with a valid Medicare GP Chronic Condition Management Plan (GPCCMP) referral from their GP can be bulk billed for physiotherapy at this clinic — eligible Medicare-funded appointments have no out-of-pocket gap fee. Please contact us to discuss your eligibility and how the process works.</p>
             </div>
 
             <div className="mt-10">

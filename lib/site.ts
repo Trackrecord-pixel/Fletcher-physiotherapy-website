@@ -80,6 +80,7 @@ export const aboutNav: NavLink[] = [
 export const teamNav: NavLink[] = aboutNav;
 
 export const servicesNav: NavLink[] = [
+  { label: "Bulk Billing Physiotherapy", href: "/bulk-billing-physiotherapy-yagoona" },
   { label: "Persistent Pain", href: "/chronic-pain-management" },
   { label: "Musculoskeletal Physiotherapy", href: "/musculoskeletal-physiotherapy" },
   { label: "Post-Surgical Rehabilitation", href: "/post-surgical-rehabilitation" },
@@ -93,6 +94,12 @@ export const servicesNav: NavLink[] = [
 ];
 
 export const conditionsNav: NavLink[] = [
+  { label: "Lower Back Pain", href: "/lower-back-pain-physiotherapy" },
+  { label: "Neck Pain & Headaches", href: "/neck-pain-physiotherapy" },
+  { label: "Shoulder Pain", href: "/shoulder-pain-physiotherapy" },
+  { label: "Knee Pain", href: "/knee-pain-physiotherapy" },
+  { label: "Hip Pain & Hip Bursitis", href: "/hip-pain-physiotherapy" },
+  { label: "Sports Injuries", href: "/sports-injury-physiotherapy" },
   { label: "Stroke Rehabilitation", href: "/stroke-rehabilitation-newcastle" },
   { label: "Parkinson's Physiotherapy", href: "/parkinsons-physiotherapy-newcastle" },
   { label: "Arthritis Physiotherapy", href: "/arthritis-physiotherapy-newcastle" },
