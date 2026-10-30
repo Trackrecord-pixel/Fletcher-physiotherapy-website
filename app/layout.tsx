@@ -80,11 +80,11 @@ export default function RootLayout({
         <WebSiteSchema />
         <LocalBusinessSchema />
         <a
-          href="/locations"
+          href="/find-a-clinic"
           className="block bg-euc-700 px-4 py-2 text-center text-sm text-white hover:bg-euc-800"
         >
           Clinics in Jesmond, Yagoona &amp; Parramatta · Home visits across Newcastle, the Central Coast &amp; Sydney.{" "}
-          <span className="font-semibold underline underline-offset-2">Find your location →</span>
+          <span className="font-semibold underline underline-offset-2">Find a clinic →</span>
         </a>
         <SmoothScroll />
         <Header />
