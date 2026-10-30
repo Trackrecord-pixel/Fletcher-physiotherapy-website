@@ -30,6 +30,10 @@ export type LandingContent = {
   /** "clinic" pages show clinic booking; "home" shows home-visit booking; "both" shows both pathways. Default "home". */
   pathway?: "clinic" | "home" | "both";
   breadcrumbParent?: { name: string; href: string };
+  /** Show the "bulk billing available at Yagoona" callout. */
+  yagoonaCallout?: boolean;
+  /** Anchor ids for sections, keyed by h2 (for deep links such as #neck-related-headaches). */
+  sectionIds?: Record<string, string>;
 };
 
 export default function LandingPage({ c }: { c: LandingContent }) {
@@ -65,8 +69,22 @@ export default function LandingPage({ c }: { c: LandingContent }) {
               ))}
             </div>
 
+            {c.yagoonaCallout && (
+              <div className="mt-8 rounded-3xl border border-beige-200 bg-sand p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-euc-600">Bulk billing in Yagoona</p>
+                <p className="mt-2 text-navy-700">
+                  Eligible Medicare patients referred under a GP Chronic Condition Management Plan (GPCCMP) can be bulk
+                  billed at our Yagoona clinic, inside Yagoona Family HealthCare (Tuesdays).
+                </p>
+                <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
+                  <Link href="/bulk-billing-physiotherapy-yagoona" className="text-euc-700 hover:text-euc-800">How bulk billing works →</Link>
+                  <Link href="/physiotherapy-yagoona" className="text-euc-700 hover:text-euc-800">Physiotherapy in Yagoona →</Link>
+                </div>
+              </div>
+            )}
+
             {c.sections.map((sec) => (
-              <div key={sec.h2} className="mt-10">
+              <div key={sec.h2} id={c.sectionIds?.[sec.h2]} className="mt-10 scroll-mt-28">
                 <h2 className="text-2xl text-navy-900 sm:text-3xl">{sec.h2}</h2>
                 <div className="prose-navy mt-4 space-y-4">
                   {sec.body.map((p, i) => (
@@ -233,6 +251,7 @@ export default function LandingPage({ c }: { c: LandingContent }) {
       <BreadcrumbSchema
         items={[
           { name: "Home", href: "/" },
+          ...(c.breadcrumbParent ? [c.breadcrumbParent] : []),
           { name: c.eyebrow, href: `/${c.slug}` },
         ]}
       />
