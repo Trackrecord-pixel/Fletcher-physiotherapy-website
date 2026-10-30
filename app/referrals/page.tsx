@@ -71,7 +71,7 @@ export default function ReferralsPage() {
         </div>
       </section>
 
-      <section className="section-py bg-sand">
+      <section id="referral-form" className="section-py scroll-mt-24 bg-sand">
         <div className="container-px grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <span className="eyebrow">
