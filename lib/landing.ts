@@ -46,7 +46,7 @@ export const landingPages: Record<string, LandingContent> = {
       {
         h2: "Funding and where to be seen",
         body: [
-          "Private patients don't need a referral. Eligible Medicare patients with a GP Chronic Condition Management Plan referral can be bulk billed at our Yagoona clinic. DVA, WorkCover and CTP patients are also seen, subject to their claim and referral requirements. Home visits are available if getting to a clinic is difficult.",
+          "Private patients don't need a referral. Eligible Medicare patients with a GP Chronic Condition Management Plan referral can be bulk billed at our Jesmond, Yagoona and Parramatta clinics. DVA, WorkCover and CTP patients are also seen, subject to their claim and referral requirements. Home visits are available if getting to a clinic is difficult.",
         ],
       },
     ],
@@ -54,7 +54,7 @@ export const landingPages: Record<string, LandingContent> = {
       { q: "Should I rest or keep moving with back pain?", a: "For most people, staying gently active is better than bed rest. Your physiotherapist can help you find a level of activity that's manageable and build from there." },
       { q: "Do I need an X-ray or MRI?", a: "Usually not. Most low back pain can be assessed clinically. Imaging is considered when specific warning signs are present or symptoms don't follow the expected course." },
       { q: "Can physiotherapy help sciatica?", a: "Physiotherapy may help many people with sciatica through education, activity advice and graded exercise. We monitor nerve symptoms closely and refer for medical review if needed." },
-      { q: "Can I be bulk billed for back pain physio?", a: "Eligible Medicare patients with a GPCCMP referral from their GP can be bulk billed at our Yagoona clinic. Ask your GP whether a GPCCMP is appropriate for you." },
+      { q: "Can I be bulk billed for back pain physio?", a: "Eligible Medicare patients with a GPCCMP referral from their GP can be bulk billed at our Jesmond, Yagoona and Parramatta clinics. Ask your GP whether a GPCCMP is appropriate for you." },
     ],
     related: [
       { label: "Bulk billing physiotherapy in Yagoona", href: "/bulk-billing-physiotherapy-yagoona" },
@@ -228,7 +228,7 @@ export const landingPages: Record<string, LandingContent> = {
     faqs: [
       { q: "Is exercise safe with knee arthritis?", a: "For most people, yes. A tailored program that is progressed gradually is a recommended part of managing knee osteoarthritis." },
       { q: "Can you help me prepare for a knee replacement?", a: "Yes. Strengthening before surgery (prehabilitation) can help you prepare, and we continue rehabilitation after your operation." },
-      { q: "Can I use Medicare for knee physio?", a: "Eligible patients with a GPCCMP referral may claim a Medicare rebate, and can be bulk billed at our Yagoona clinic." },
+      { q: "Can I use Medicare for knee physio?", a: "Eligible patients with a GPCCMP referral may claim a Medicare rebate, and can be bulk billed at our Jesmond, Yagoona and Parramatta clinics." },
     ],
     related: [
       { label: "Knee replacement rehabilitation", href: "/knee-replacement-rehabilitation-newcastle" },
@@ -481,7 +481,7 @@ export const landingPages: Record<string, LandingContent> = {
         h2: "Funding and payment",
         body: ["We see private patients (no referral needed) and patients funded through:"],
         list: [
-          "Medicare — GP Chronic Condition Management Plan (GPCCMP); bulk billed for eligible patients at Yagoona",
+          "Medicare — GP Chronic Condition Management Plan (GPCCMP); bulk billed for eligible patients at our Jesmond, Yagoona and Parramatta clinics",
           "DVA — Gold Card, or White Card for accepted conditions",
           "WorkCover (workers compensation) — with an approved claim",
           "CTP — eligible NSW motor vehicle accident claims",

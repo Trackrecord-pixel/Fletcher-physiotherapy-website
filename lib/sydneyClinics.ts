@@ -25,7 +25,7 @@ export type SydneyClinic = {
   photos?: { src: string; alt: string }[];
   h1?: string;               // page heading (defaults to brandName)
   seoTitle?: string;         // <title> override
-  bulkBilling?: boolean;     // bulk billing for eligible GPCCMP appointments (confirmed: Yagoona only)
+  bulkBilling?: boolean;     // bulk billing for eligible GPCCMP appointments (confirmed: all clinics)
   poster?: { src: string; alt: string }; // square promo image shown near the top of the page
 };
 
@@ -76,8 +76,9 @@ export const sydneyClinics: SydneyClinic[] = [
     days: "Wednesdays, 9:00am – 4:30pm",
     hours: [{ dayOfWeek: "Wednesday", opens: "09:00", closes: "16:30" }],
     startDate: "18 November 2026",
+    bulkBilling: true,
     metaDescription:
-      "Physio in Parramatta at Parramatta Medical and Dental Centre, 144 Marsden St. Pain, injuries, rehab, falls prevention. GPCCMP, DVA, NDIS and private.",
+      "Physio in Parramatta at Parramatta Medical and Dental Centre, 144 Marsden St. Pain, injuries and rehab. Bulk billing for eligible GPCCMP patients. DVA and NDIS.",
     intro:
       "Physiotherapy inside Parramatta Medical and Dental Centre on Marsden Street — for pain, injuries, rehabilitation, balance and falls prevention. Book through the clinic's reception.",
     about: [
