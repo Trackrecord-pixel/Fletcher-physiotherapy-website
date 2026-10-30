@@ -65,9 +65,10 @@ export default function ClinicChooser() {
             href={`/${c.slug}`}
             className="relative col-start-1 row-span-2 row-start-1 block overflow-hidden bg-navy-800 md:order-2 md:aspect-[4/3] md:w-full"
             aria-label={`${c.suburb} clinic details`}
+            style={c.contain ? { backgroundColor: "#ffffff" } : undefined}
           >
             {c.photo ? (
-              <Image src={c.photo.src} alt={c.photo.alt} fill sizes="(max-width: 768px) 160px, 420px" className={`${c.contain ? "bg-white object-contain" : "object-cover object-top"} transition duration-500 hover:scale-[1.03]`} />
+              <Image src={c.photo.src} alt={c.photo.alt} fill sizes="(max-width: 768px) 160px, 420px" className={`${c.contain ? "object-contain" : "object-cover object-top"} transition duration-500 hover:scale-[1.03]`} />
             ) : (
               <span className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-euc-700 to-navy-900 text-white">
                 <Icon name="pin" className="h-10 w-10 md:h-14 md:w-14" />
