@@ -105,7 +105,7 @@ export default function ServicesPage() {
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-navy-600">{s.desc}</p>
                   <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
                     <Link href={s.href} className="inline-flex items-center gap-1.5 font-semibold text-euc-700 hover:text-euc-800">
-                      About {s.name.replace(" Physiotherapy", "").replace(" (Yagoona)", "").toLowerCase()} <Icon name="arrow" className="h-4 w-4" />
+                      More about {s.name} <Icon name="arrow" className="h-4 w-4" />
                     </Link>
                     <Link href="/book" className="text-navy-600 hover:text-navy-900">Book or enquire</Link>
                   </div>
