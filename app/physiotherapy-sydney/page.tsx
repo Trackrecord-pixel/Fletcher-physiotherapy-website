@@ -206,6 +206,9 @@ export default function SydneyPage() {
                 <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700"><Icon name="clock" className="h-3.5 w-3.5" /> {c.days ?? "Book via reception"}</span>
                 <h3 className="mt-4 text-2xl text-navy-900">{c.brandName}</h3>
                 <p className="mt-1 text-sm text-navy-600">Inside {c.hostCentre}</p>
+                {c.bulkBilling && (
+                  <Link href="/bulk-billing-physiotherapy-yagoona" className="mt-2 inline-flex text-sm font-semibold text-euc-700 hover:text-euc-800">Bulk billing for eligible GPCCMP patients →</Link>
+                )}
                 <p className="mt-2 flex items-start gap-2 text-sm text-navy-600"><Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {c.streetAddress}, {c.suburb} NSW {c.postcode}</p>
                 <div className="mt-5 flex flex-col gap-2.5 sm:flex-row">
                   <a href={`tel:+61${c.phone.replace(/\D/g, "").replace(/^0/, "")}`} className="btn-primary w-full sm:w-auto"><Icon name="phone" className="h-4 w-4" /> {c.phone}</a>
