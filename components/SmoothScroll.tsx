@@ -16,7 +16,8 @@ export default function SmoothScroll() {
     const finePointer = window.matchMedia("(pointer: fine)").matches;
     if (reduce || !finePointer) return;
 
-    const LERP = 0.1; // lower = smoother / longer glide
+    const LERP = 0.12; // lower = smoother / longer glide
+    const SPEED = 1.25; // distance per wheel tick (1 = browser default)
     let target = window.scrollY;
     let current = window.scrollY;
     let animating = false;
@@ -60,7 +61,7 @@ export default function SmoothScroll() {
         current = window.scrollY;
         target = window.scrollY;
       }
-      target = Math.max(0, Math.min(maxScroll(), target + delta));
+      target = Math.max(0, Math.min(maxScroll(), target + delta * SPEED));
       if (!animating) {
         animating = true;
         rafId = requestAnimationFrame(step);
