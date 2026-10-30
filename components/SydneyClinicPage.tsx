@@ -85,7 +85,19 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
 
   return (
     <>
-      <PageHero eyebrow={c.h1 ? c.brandName : `Physiotherapy ${c.suburb}`} title={c.h1 ?? c.brandName} intro={c.intro} breadcrumb={crumbs} />
+      <PageHero
+        eyebrow={c.h1 ? c.brandName : `Physiotherapy ${c.suburb}`}
+        title={c.h1 ?? c.brandName}
+        intro={c.intro}
+        breadcrumb={crumbs}
+        aside={
+          c.poster ? (
+            <div className="relative aspect-square w-full overflow-hidden rounded-3xl border border-navy-100 shadow-card">
+              <Image src={c.poster.src} alt={c.poster.alt} fill sizes="(max-width: 1024px) 100vw, 640px" className="object-cover" priority />
+            </div>
+          ) : undefined
+        }
+      />
 
       {/* Quick contact — first thing visitors from Google see */}
       <section className="border-b border-navy-100 bg-white">
@@ -130,15 +142,6 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
         </section>
       )}
 
-      {c.poster && (
-        <section className="bg-sand py-10">
-          <div className="container-px">
-            <div className="relative mx-auto aspect-square w-full max-w-2xl overflow-hidden rounded-3xl border border-navy-100 shadow-card">
-              <Image src={c.poster.src} alt={c.poster.alt} fill sizes="(max-width: 768px) 100vw, 672px" className="object-cover" priority />
-            </div>
-          </div>
-        </section>
-      )}
 
       {photos.length > 0 && (
         <section className="bg-sand py-10" aria-label={`Photos of ${c.brandName}`}>

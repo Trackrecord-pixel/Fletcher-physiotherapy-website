@@ -1,15 +1,19 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 export default function PageHero({
   eyebrow,
   title,
   intro,
   breadcrumb,
+  aside,
 }: {
   eyebrow: string;
   title: string;
   intro?: string;
   breadcrumb?: { name: string; href: string }[];
+  /** Optional visual (e.g. clinic photo) shown on the right; the intro then sits under the title. */
+  aside?: ReactNode;
 }) {
   return (
     <section className="relative overflow-hidden border-b border-beige-200 bg-cream">
@@ -32,17 +36,30 @@ export default function PageHero({
             </ol>
           </nav>
         )}
-        <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
-          <div className="lg:col-span-8">
-            <p className="eyebrow">
-              <span aria-hidden="true" className="h-px w-8 bg-clay-500" /> {eyebrow}
-            </p>
-            <h1 className="mt-5 text-[2.4rem] leading-[1.08] text-navy-900 sm:text-5xl lg:text-[3.6rem]">{title}</h1>
+        {aside ? (
+          <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+            <div className="lg:col-span-6">
+              <p className="eyebrow">
+                <span aria-hidden="true" className="h-px w-8 bg-clay-500" /> {eyebrow}
+              </p>
+              <h1 className="mt-5 text-[2.4rem] leading-[1.08] text-navy-900 sm:text-5xl lg:text-[3.3rem]">{title}</h1>
+              {intro && <p className="mt-6 text-lg leading-relaxed text-navy-600">{intro}</p>}
+            </div>
+            <div className="lg:col-span-6">{aside}</div>
           </div>
-          {intro && (
-            <p className="text-lg leading-relaxed text-navy-600 lg:col-span-4 lg:pb-2">{intro}</p>
-          )}
-        </div>
+        ) : (
+          <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-8">
+              <p className="eyebrow">
+                <span aria-hidden="true" className="h-px w-8 bg-clay-500" /> {eyebrow}
+              </p>
+              <h1 className="mt-5 text-[2.4rem] leading-[1.08] text-navy-900 sm:text-5xl lg:text-[3.6rem]">{title}</h1>
+            </div>
+            {intro && (
+              <p className="text-lg leading-relaxed text-navy-600 lg:col-span-4 lg:pb-2">{intro}</p>
+            )}
+          </div>
+        )}
       </div>
     </section>
   );
