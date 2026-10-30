@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 
 const title = "Physiotherapy Services | Clinic & Home Visits | Fletcher";
 const description =
-  "29 physiotherapy services in clinic and at home: back, neck and shoulder pain, chronic pain, post-op rehab, falls prevention, bulk billing in Yagoona and NDIS.";
+  "29 physiotherapy services in clinic and at home: back, neck and shoulder pain, chronic pain, post-op rehab, falls prevention, bulk billing at our clinics and NDIS.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -72,7 +72,7 @@ export default function ServicesPage() {
           <Link href="/bulk-billing-physiotherapy-yagoona" className="card card-hover flex items-center gap-4">
             <Icon name="check" className="h-6 w-6 flex-shrink-0 text-euc-600" />
             <span>
-              <span className="block font-semibold text-navy-900">Bulk billing at Yagoona</span>
+              <span className="block font-semibold text-navy-900">Bulk billing at our clinics</span>
               <span className="text-sm text-navy-600">For eligible Medicare GPCCMP patients</span>
             </span>
           </Link>
