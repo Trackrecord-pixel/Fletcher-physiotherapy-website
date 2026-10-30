@@ -286,8 +286,8 @@ export function TrustedBy() {
 export function MobileCallBar() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-2 border-t border-navy-100 bg-white/95 p-3 shadow-[0_-4px_16px_rgba(12,24,41,0.08)] backdrop-blur md:hidden">
-      <a href={site.phoneHref} className="btn-primary w-full justify-center text-sm"><Icon name="phone" className="h-4 w-4" /> Call now</a>
-      <a href="/#callback" className="btn-accent w-full justify-center text-sm">Call me back</a>
+      <a href={site.phoneHref} className="btn-primary w-full justify-center text-sm"><Icon name="phone" className="h-4 w-4" /> Call us</a>
+      <a href={site.emailHref} className="btn-accent w-full justify-center text-sm"><Icon name="mail" className="h-4 w-4" /> Email us</a>
     </div>
   );
 }
