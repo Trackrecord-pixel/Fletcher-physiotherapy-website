@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import PageHero from "./PageHero";
 import Icon from "./Icon";
@@ -44,6 +45,13 @@ export default function ClinicPage({ c }: { c: Clinic }) {
         title={`Physiotherapy ${c.suburb}`}
         intro={c.intro}
         breadcrumb={crumbs}
+        aside={
+          c.photo ? (
+            <div className="relative aspect-[3/2] w-full overflow-hidden rounded-3xl border border-navy-100 bg-white shadow-card">
+              <Image src={c.photo.src} alt={c.photo.alt} fill sizes="(max-width: 1024px) 100vw, 640px" className="object-cover" priority />
+            </div>
+          ) : undefined
+        }
       />
 
       <section className="section-py bg-white">

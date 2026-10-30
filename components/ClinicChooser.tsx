@@ -15,6 +15,7 @@ type Card = {
   day: string;
   address: string;
   photo?: { src: string; alt: string };
+  contain?: boolean; // landscape banner — show whole image instead of cropping
   action: { label: string; href: string; external?: boolean; icon: "phone" | "calendar" };
   note: string;
 };
@@ -28,6 +29,8 @@ export default function ClinicChooser() {
       host: c.hostCentre,
       day: c.dayShort,
       address: c.address,
+      photo: c.photo,
+      contain: true,
       action: { label: "Book online", href: site.bookingUrl, external: true, icon: "calendar" },
       note: `Or call ${site.phone}`,
     })),
@@ -64,7 +67,7 @@ export default function ClinicChooser() {
             aria-label={`${c.suburb} clinic details`}
           >
             {c.photo ? (
-              <Image src={c.photo.src} alt={c.photo.alt} fill sizes="(max-width: 768px) 160px, 420px" className="object-cover object-top transition duration-500 hover:scale-[1.03]" />
+              <Image src={c.photo.src} alt={c.photo.alt} fill sizes="(max-width: 768px) 160px, 420px" className={`${c.contain ? "bg-white object-contain" : "object-cover object-top"} transition duration-500 hover:scale-[1.03]`} />
             ) : (
               <span className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-euc-700 to-navy-900 text-white">
                 <Icon name="pin" className="h-10 w-10 md:h-14 md:w-14" />
