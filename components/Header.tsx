@@ -149,7 +149,7 @@ export default function Header() {
         <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-beige-200 bg-cream xl:hidden">
           <div className="container-px space-y-4 py-5">
             <div className="grid grid-cols-2 gap-3">
-              <Link href="/clinic-physiotherapy" className="btn-primary w-full px-4 text-sm">
+              <Link href="/find-a-clinic" className="btn-primary w-full px-4 text-sm">
                 Find a Clinic
               </Link>
               <Link href="/home-visits" className="btn-outline w-full px-4 text-sm">

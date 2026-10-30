@@ -134,7 +134,7 @@ export default function LandingPage({ c }: { c: LandingContent }) {
                 </p>
                 <div className="mt-5 grid gap-2.5">
                   {pathway !== "home" && (
-                    <Link href="/clinic-physiotherapy" className="btn-primary w-full">
+                    <Link href="/find-a-clinic" className="btn-primary w-full">
                       Find a Clinic <Icon name="arrow" className="h-4 w-4" />
                     </Link>
                   )}
