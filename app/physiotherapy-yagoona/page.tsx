@@ -3,10 +3,10 @@ import SydneyClinicPage from "@/components/SydneyClinicPage";
 import { sydneyClinics } from "@/lib/sydneyClinics";
 
 const c = sydneyClinics.find((x) => x.slug === "physiotherapy-yagoona")!;
-const title = `Physio ${c.suburb} | ${c.hostCentre}`;
+const title = c.seoTitle ?? `Physio ${c.suburb} | ${c.hostCentre}`;
 
 export const metadata: Metadata = {
-  title: { absolute: `Physio ${c.suburb} | ${c.brandName}` },
+  title: { absolute: c.seoTitle ?? `Physio ${c.suburb} | ${c.brandName}` },
   description: c.metaDescription,
   alternates: { canonical: `/${c.slug}` },
   openGraph: {
