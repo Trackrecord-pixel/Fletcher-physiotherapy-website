@@ -1,132 +1,123 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
-import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
-import Reveal from "@/components/Reveal";
-import SectionHeading from "@/components/SectionHeading";
 import Icon from "@/components/Icon";
-import FeatureList from "@/components/FeatureList";
 import { BreadcrumbSchema } from "@/components/StructuredData";
-import { services, conditionsNav } from "@/lib/site";
+import { serviceDirectory, allDirectoryServices } from "@/lib/serviceDirectory";
+import { site } from "@/lib/site";
+
+const title = "Physiotherapy Services | Clinic & Home Visits | Fletcher";
+const description =
+  "29 physiotherapy services in clinic and at home: back, neck and shoulder pain, chronic pain, post-op rehab, falls prevention, bulk billing in Yagoona and NDIS.";
 
 export const metadata: Metadata = {
-  title: "Physio Services: Home Visits & Clinic",
-  description:
-    "Home visit physio, NDIS, Support at Home, chronic pain, falls prevention, post-hospital rehab and strength programs — at home or in our Newcastle clinics.",
+  title: { absolute: title },
+  description,
   alternates: { canonical: "/services" },
   openGraph: {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Physio Services: Home Visits & Clinic",
-    description:
-      "Home visit physio, NDIS, Support at Home, chronic pain, falls prevention, post-hospital rehab and strength programs — at home or in our Newcastle clinics.",
+    title,
+    description,
     url: "/services",
-    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy services" }],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Physio Services: Home Visits & Clinic",
-    description:
-      "Home visit physio, NDIS, Support at Home, chronic pain, falls prevention, post-hospital rehab and strength programs — at home or in our Newcastle clinics.",
-    images: ["/images/og-default.png"],
-  },
+  twitter: { card: "summary_large_image", title, description, images: ["/images/og-default.png"] },
 };
 
-const detailed = [
-  {
-    id: "post-hospital-rehabilitation",
-    title: "Post Hospital Rehabilitation",
-    text: "Returning home after surgery, illness or a hospital stay is a vulnerable time. We provide structured, supported rehabilitation in your home to help you recover safely, regain strength and get back to daily life.",
-    points: ["Post-surgical recovery", "Reconditioning after illness", "Safe return to daily activities", "Coordination with your care team"],
-  },
-  {
-    id: "musculoskeletal-physiotherapy",
-    title: "Musculoskeletal Physiotherapy",
-    text: "Assessment and hands-on treatment for joint, muscle, back and neck pain, combined with practical exercise to restore movement and function.",
-    points: ["Back & neck pain", "Joint & muscle injuries", "Manual therapy", "Tailored exercise programs"],
-  },
-  {
-    id: "balance-training",
-    title: "Balance Training",
-    text: "Targeted programs to improve stability, coordination and confidence on your feet — practised in the spaces where you actually move each day.",
-    points: ["Balance assessment", "Vestibular & stability work", "Confidence building", "Home environment practice"],
-  },
-  {
-    id: "strength-mobility-programs",
-    title: "Strength & Mobility Programs",
-    text: "Personalised strengthening and mobility plans designed to keep you active, independent and moving well for the long term.",
-    points: ["Progressive strengthening", "Mobility & flexibility", "Functional movement", "Ongoing progress reviews"],
-  },
-];
-
 export default function ServicesPage() {
+  const itemList = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Fletcher Physiotherapy services",
+    itemListElement: allDirectoryServices.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: s.name,
+      url: `${site.url}${s.href.split("#")[0]}`,
+    })),
+  };
+
   return (
     <>
       <PageHero
         eyebrow="Our Services"
-        title="Physiotherapy services delivered in your home"
-        intro="Comprehensive, evidence-based physiotherapy for older adults, NDIS participants, Support at Home clients and private patients — all delivered where you live."
+        title="Physiotherapy Services in Sydney, Newcastle & the Central Coast"
+        intro="Fletcher Physiotherapy provides personalised, evidence-based physiotherapy in our clinics and through home visits. Our services include musculoskeletal physiotherapy, chronic pain management, post-operative rehabilitation, balance and mobility training, and physiotherapy for eligible Medicare, DVA, NDIS and Support at Home patients."
         breadcrumb={[
           { name: "Home", href: "/" },
           { name: "Services", href: "/services" },
         ]}
       />
 
-      <section className="section-py bg-white">
-        <div className="container-px">
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((s, i) => (
-              <Reveal key={s.slug} delay={(i % 3) * 70}>
-                <ServiceCard {...s} />
-              </Reveal>
-            ))}
-          </div>
+      {/* Quick paths + bulk billing note */}
+      <section className="border-b border-beige-200 bg-white">
+        <div className="container-px grid gap-4 py-8 md:grid-cols-3">
+          <Link href="/clinic-physiotherapy" className="card card-hover flex items-center gap-4">
+            <Icon name="pin" className="h-6 w-6 flex-shrink-0 text-euc-600" />
+            <span>
+              <span className="block font-semibold text-navy-900">Clinic physiotherapy</span>
+              <span className="text-sm text-navy-600">Jesmond · Yagoona · Parramatta</span>
+            </span>
+          </Link>
+          <Link href="/home-visits" className="card card-hover flex items-center gap-4">
+            <Icon name="home" className="h-6 w-6 flex-shrink-0 text-euc-600" />
+            <span>
+              <span className="block font-semibold text-navy-900">Home visit physiotherapy</span>
+              <span className="text-sm text-navy-600">Sydney · Newcastle · Central Coast</span>
+            </span>
+          </Link>
+          <Link href="/bulk-billing-physiotherapy-yagoona" className="card card-hover flex items-center gap-4">
+            <Icon name="check" className="h-6 w-6 flex-shrink-0 text-euc-600" />
+            <span>
+              <span className="block font-semibold text-navy-900">Bulk billing at Yagoona</span>
+              <span className="text-sm text-navy-600">For eligible Medicare GPCCMP patients</span>
+            </span>
+          </Link>
         </div>
       </section>
 
-      <section className="section-py bg-sand">
-        <div className="container-px space-y-8">
-          {detailed.map((d) => (
-            <Reveal key={d.id}>
-              <div id={d.id} className="card scroll-mt-28 grid gap-8 lg:grid-cols-12">
-                <div className="lg:col-span-7">
-                  <h2 className="text-2xl text-navy-900">{d.title}</h2>
-                  <p className="mt-3 text-navy-600">{d.text}</p>
-                </div>
-                <div className="lg:col-span-5">
-                  <FeatureList columns={1} items={d.points} />
-                </div>
-              </div>
-            </Reveal>
+      {/* Category jump links */}
+      <nav aria-label="Service categories" className="bg-white">
+        <div className="container-px flex flex-wrap gap-2 pt-10">
+          {serviceDirectory.map((c) => (
+            <a key={c.id} href={`#${c.id}`} className="rounded-full border border-beige-300 px-4 py-2 text-sm text-navy-700 hover:border-euc-600 hover:text-euc-700">
+              {c.title}
+            </a>
           ))}
         </div>
-      </section>
+      </nav>
 
-      {/* Conditions we treat */}
-      <section className="section-py bg-white">
-        <div className="container-px">
-          <SectionHeading
-            center
-            eyebrow="Conditions we treat"
-            title="Rehabilitation for common conditions"
-            intro="Experienced home visit physiotherapy for the conditions that most affect older adults \u2014 delivered across Newcastle, Lake Macquarie and the Central Coast."
-          />
-          <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {conditionsNav.map((cnd) => (
-              <Link key={cnd.href} href={cnd.href} className="card card-hover flex items-center gap-4">
-                <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-beige-100 text-navy-800">
-                  <Icon name="pulse" className="h-5 w-5" />
-                </span>
-                <span className="font-semibold text-navy-900">{cnd.label}</span>
-              </Link>
-            ))}
+      {serviceDirectory.map((cat, ci) => (
+        <section key={cat.id} id={cat.id} className={`scroll-mt-28 py-14 lg:py-16 ${ci % 2 ? "bg-sand" : "bg-white"}`} aria-labelledby={`${cat.id}-h`}>
+          <div className="container-px">
+            <h2 id={`${cat.id}-h`} className="text-2xl text-navy-900 sm:text-3xl">{cat.title}</h2>
+            <p className="mt-2 max-w-2xl text-navy-600">{cat.intro}</p>
+            <ul className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {cat.services.map((s) => (
+                <li key={s.id} id={s.id} className="card flex scroll-mt-28 flex-col">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-beige-100 text-euc-600">
+                    <Icon name={s.icon} className="h-5 w-5" />
+                  </span>
+                  <h3 className="mt-4 text-lg text-navy-900">{s.name}</h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-navy-600">{s.desc}</p>
+                  <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+                    <Link href={s.href} className="inline-flex items-center gap-1.5 font-semibold text-euc-700 hover:text-euc-800">
+                      About {s.name.replace(" Physiotherapy", "").replace(" (Yagoona)", "").toLowerCase()} <Icon name="arrow" className="h-4 w-4" />
+                    </Link>
+                    <Link href="/book" className="text-navy-600 hover:text-navy-900">Book or enquire</Link>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
       <CTASection />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
       <BreadcrumbSchema
         items={[
           { name: "Home", href: "/" },
