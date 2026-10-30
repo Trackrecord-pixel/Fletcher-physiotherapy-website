@@ -89,7 +89,13 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
 
       {/* Quick contact — first thing visitors from Google see */}
       <section className="border-b border-navy-100 bg-white">
-        <div className="container-px grid gap-4 py-6 sm:grid-cols-3">
+        <div className={c.poster ? "container-px grid gap-6 py-8 lg:grid-cols-12 lg:items-center" : "container-px py-6"}>
+          {c.poster && (
+            <div className="relative aspect-square w-full overflow-hidden rounded-3xl border border-navy-100 shadow-card lg:col-span-7">
+              <Image src={c.poster.src} alt={c.poster.alt} fill sizes="(max-width: 1024px) 100vw, 760px" className="object-cover" priority />
+            </div>
+          )}
+          <div className={c.poster ? "grid gap-4 lg:col-span-5" : "grid gap-4 sm:grid-cols-3"}>
           <a href={tel} className="flex items-center gap-3 rounded-2xl bg-navy-900 p-4 text-white hover:bg-navy-800">
             <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-clay-500"><Icon name="phone" className="h-5 w-5" /></span>
             <span><span className="block text-xs uppercase tracking-widest text-beige-200">Call reception to book</span><span className="text-lg font-semibold">{c.phone}</span></span>
@@ -101,6 +107,7 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
           <div className="flex items-center gap-3 rounded-2xl border border-navy-100 p-4">
             <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-beige-100 text-navy-800"><Icon name="clock" className="h-5 w-5" /></span>
             <span><span className="block text-xs uppercase tracking-widest text-navy-500">Physio days</span><span className="font-semibold text-navy-900">{c.days ?? "Ask reception"}</span></span>
+          </div>
           </div>
         </div>
       </section>
@@ -130,15 +137,6 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
         </section>
       )}
 
-      {c.poster && (
-        <section className="bg-sand py-10">
-          <div className="container-px">
-            <div className="relative mx-auto aspect-square w-full max-w-2xl overflow-hidden rounded-3xl border border-navy-100 shadow-card">
-              <Image src={c.poster.src} alt={c.poster.alt} fill sizes="(max-width: 768px) 100vw, 672px" className="object-cover" priority />
-            </div>
-          </div>
-        </section>
-      )}
 
       {photos.length > 0 && (
         <section className="bg-sand py-10" aria-label={`Photos of ${c.brandName}`}>
