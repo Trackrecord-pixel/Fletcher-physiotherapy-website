@@ -83,7 +83,7 @@ const dropdowns: Record<string, { label: string; href: string }[]> = {
   "Home Visits": homeVisitNav,
   Services: servicesNav,
   Locations: locationsNav,
-  About: aboutNav,
+  About: [...aboutNav, { label: "For referrers", href: "/refer-a-patient" }, { label: "Contact", href: "/contact" }],
 };
 
 export default function Header() {
@@ -119,10 +119,10 @@ export default function Header() {
         Skip to content
       </a>
 
-      <nav className="container-px flex h-20 items-center justify-between gap-6" aria-label="Primary">
+      <nav className="container-px flex h-20 items-center justify-between gap-4 2xl:gap-6" aria-label="Primary">
         <Logo />
 
-        <div className="hidden items-center xl:flex">
+        <div className="hidden items-center min-[1440px]:flex">
           {headerNav.map((link) => {
             const dd = dropdowns[link.label];
             const active = isActive(link.href);
@@ -167,7 +167,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 aria-current={active ? "page" : undefined}
-                className={`whitespace-nowrap rounded-full px-2.5 py-2 text-[0.8rem] 2xl:px-3 font-medium transition-colors ${
+                className={`${["For Referrers", "Contact"].includes(link.label) ? "hidden 2xl:inline-block" : ""} whitespace-nowrap rounded-full px-2.5 py-2 text-[0.8rem] 2xl:px-3 font-medium transition-colors ${
                   active ? "text-euc-700" : "text-navy-700 hover:text-navy-900"
                 }`}
               >
@@ -177,14 +177,14 @@ export default function Header() {
           })}
         </div>
 
-        <div className="hidden items-center gap-2 xl:flex">
+        <div className="hidden items-center gap-2 min-[1440px]:flex">
           <CallMenu />
           <a href={site.emailHref} className="btn-outline px-5 py-2.5 text-sm" aria-label={`Email ${site.email}`}>
             <Icon name="mail" className="h-4 w-4" /> Email
           </a>
         </div>
 
-        <div className="flex items-center gap-2 xl:hidden">
+        <div className="flex items-center gap-2 min-[1440px]:hidden">
           <CallMenu compact />
           <a
             href={site.emailHref}
@@ -207,7 +207,7 @@ export default function Header() {
 
       {/* Mobile / tablet menu */}
       {open && (
-        <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-beige-200 bg-cream xl:hidden">
+        <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-beige-200 bg-cream min-[1440px]:hidden">
           <div className="container-px space-y-4 py-5">
             <div className="grid grid-cols-2 gap-3">
               <Link href="/find-a-clinic" className="btn-primary w-full px-4 text-sm">
