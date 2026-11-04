@@ -18,10 +18,10 @@ export default function Footer() {
               APA Titled Pain Physiotherapist.
             </p>
             <div className="mt-6 flex flex-col gap-3 text-sm">
-              <a href={site.phoneHref} className="inline-flex items-center gap-2.5 hover:text-white">
+              <a href={site.phoneHref} className="tap-target inline-flex items-center gap-2.5 hover:text-white">
                 <Icon name="phone" className="h-4 w-4 text-beige-300" /> {site.phone}
               </a>
-              <a href={site.emailHref} className="inline-flex items-center gap-2.5 hover:text-white">
+              <a href={site.emailHref} className="tap-target inline-flex items-center gap-2.5 hover:text-white">
                 <Icon name="mail" className="h-4 w-4 text-beige-300" /> {site.email}
               </a>
               <p className="inline-flex items-center gap-2.5">
@@ -85,7 +85,7 @@ export default function Footer() {
             <ul className="mt-5 space-y-3 text-sm">
               {clinics.map((c) => (
                 <li key={c.slug}>
-                  <Link href={`/${c.slug}`} className="inline-flex items-start gap-2.5 text-navy-200 hover:text-white">
+                  <Link href={`/${c.slug}`} className="tap-target inline-flex items-start gap-2.5 text-navy-200 hover:text-white">
                     <Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-beige-300" />
                     <span>{c.hostCentre}<span className="block text-xs text-navy-400">Consulting {c.dayShort}</span></span>
                   </Link>
@@ -93,14 +93,14 @@ export default function Footer() {
               ))}
               {sydneyClinics.map((c) => (
                 <li key={c.slug}>
-                  <Link href={`/${c.slug}`} className="inline-flex items-start gap-2.5 text-navy-200 hover:text-white">
+                  <Link href={`/${c.slug}`} className="tap-target inline-flex items-start gap-2.5 text-navy-200 hover:text-white">
                     <Icon name="pin" className="mt-0.5 h-4 w-4 flex-shrink-0 text-beige-300" />
                     <span>{c.brandName}<span className="block text-xs text-navy-400">{c.days ?? "Sydney clinic"}</span></span>
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="/home-visit-physiotherapy-newcastle" className="inline-flex items-center gap-2.5 text-navy-200 hover:text-white">
+                <Link href="/home-visit-physiotherapy-newcastle" className="tap-target inline-flex items-center gap-2.5 text-navy-200 hover:text-white">
                   <Icon name="home" className="h-4 w-4 text-beige-300" /> Home Visit Physiotherapy
                 </Link>
               </li>

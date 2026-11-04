@@ -91,7 +91,7 @@ export default function ServiceDetail({
             />
             <div className="mt-12 grid gap-5 md:grid-cols-3">
               {process.map((p, i) => (
-                <Reveal key={p.step} delay={i * 90}>
+                <Reveal key={p.step}>
                   <div className="rounded-2xl border border-navy-700 bg-navy-800 p-7">
                     <span className="font-serif text-3xl font-semibold text-beige-300">
                       {p.step}
@@ -117,7 +117,7 @@ export default function ServiceDetail({
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {who.map((w, i) => (
-              <Reveal key={w.title} delay={(i % 3) * 80}>
+              <Reveal key={w.title}>
                 <div className="card card-hover h-full">
                   <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-beige-100 text-navy-800">
                     <Icon name={w.icon as IconName} className="h-6 w-6" />
