@@ -32,6 +32,7 @@ export const primaryNav: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "Clinic Physiotherapy", href: "/clinic-physiotherapy" },
   { label: "Home Visits", href: "/home-visits" },
+  { label: "Onsite Workplace Physio", href: "/onsite-physiotherapy" },
   { label: "Services", href: "/services" },
   { label: "Locations", href: "/locations" },
   { label: "About", href: "/about" },
@@ -45,6 +46,7 @@ export const primaryNav: NavLink[] = [
 export const headerNav: NavLink[] = [
   { label: "Clinic Physiotherapy", href: "/clinic-physiotherapy" },
   { label: "Home Visits", href: "/home-visits" },
+  { label: "Onsite Workplace Physio", href: "/onsite-physiotherapy" },
   { label: "Services", href: "/services" },
   { label: "Locations", href: "/locations" },
   { label: "About", href: "/about" },
