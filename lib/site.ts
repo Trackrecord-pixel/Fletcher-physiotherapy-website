@@ -83,6 +83,7 @@ export const aboutNav: NavLink[] = [
 export const teamNav: NavLink[] = aboutNav;
 
 export const servicesNav: NavLink[] = [
+  { label: "Onsite Workplace Physiotherapy", href: "/onsite-physiotherapy" },
   { label: "Bulk Billing Physiotherapy", href: "/bulk-billing-physiotherapy-yagoona" },
   { label: "Persistent Pain", href: "/chronic-pain-management" },
   { label: "Musculoskeletal Physiotherapy", href: "/musculoskeletal-physiotherapy" },
