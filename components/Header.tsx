@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
 import Icon from "./Icon";
 import {
@@ -15,6 +15,67 @@ import {
   aboutNav,
   site,
 } from "@/lib/site";
+import { sydneyClinics } from "@/lib/sydneyClinics";
+
+const tel = (phone: string) => `tel:+61${phone.replace(/\D/g, "").replace(/^0/, "")}`;
+
+// Numbers offered by the header "Call" button.
+const callOptions = [
+  { label: "Main line", note: "Home visits, Jesmond & onsite", phone: site.phone },
+  ...sydneyClinics.map((c) => ({ label: `${c.suburb} clinic`, note: "Clinic reception", phone: c.phone })),
+];
+
+function CallMenu({ compact = false }: { compact?: boolean }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    const close = (e: MouseEvent | KeyboardEvent) => {
+      if (e instanceof KeyboardEvent ? e.key === "Escape" : !ref.current?.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("mousedown", close);
+    document.addEventListener("keydown", close);
+    return () => {
+      document.removeEventListener("mousedown", close);
+      document.removeEventListener("keydown", close);
+    };
+  }, [open]);
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        aria-haspopup="true"
+        aria-expanded={open}
+        aria-label="Call us"
+        className={
+          compact
+            ? "inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#87f9d3] text-[#0f1714]"
+            : "btn-primary px-5 py-2.5 text-sm"
+        }
+      >
+        <Icon name="phone" className={compact ? "h-5 w-5" : "h-4 w-4"} />
+        {!compact && <>Call <Icon name="chevron" className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} /></>}
+      </button>
+      {open && (
+        <div className="absolute right-0 top-full z-50 w-72 pt-3">
+          <div className="rounded-3xl border border-beige-200 bg-white p-2 shadow-card-hover">
+            <p className="px-4 pb-1 pt-2 text-xs font-semibold uppercase tracking-[0.18em] text-euc-600">Who would you like to call?</p>
+            {callOptions.map((o) => (
+              <a key={o.phone} href={tel(o.phone)} className="flex items-center gap-3 rounded-2xl px-4 py-3 hover:bg-euc-50">
+                <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-euc-700 text-white"><Icon name="phone" className="h-4 w-4" /></span>
+                <span>
+                  <span className="block text-sm font-semibold text-navy-900">{o.label} · {o.phone}</span>
+                  <span className="block text-xs text-navy-500">{o.note}</span>
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 const dropdowns: Record<string, { label: string; href: string }[]> = {
   "Clinic Physiotherapy": clinicNav,
@@ -76,7 +137,7 @@ export default function Header() {
                   aria-haspopup="true"
                   aria-expanded={openMenu === link.label}
                   onClick={() => setOpenMenu((m) => (m === link.label ? null : link.label))}
-                  className={`inline-flex items-center gap-1 whitespace-nowrap rounded-full px-3 py-2 text-[0.8rem] font-medium transition-colors ${
+                  className={`inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2.5 py-2 text-[0.8rem] 2xl:px-3 font-medium transition-colors ${
                     active ? "text-euc-700" : "text-navy-700 hover:text-navy-900"
                   }`}
                 >
@@ -105,7 +166,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 aria-current={active ? "page" : undefined}
-                className={`whitespace-nowrap rounded-full px-3 py-2 text-[0.8rem] font-medium transition-colors ${
+                className={`whitespace-nowrap rounded-full px-2.5 py-2 text-[0.8rem] 2xl:px-3 font-medium transition-colors ${
                   active ? "text-euc-700" : "text-navy-700 hover:text-navy-900"
                 }`}
               >
@@ -115,22 +176,21 @@ export default function Header() {
           })}
         </div>
 
-        <div className="hidden items-center gap-4 xl:flex">
-          <a href={site.phoneHref} className="hidden items-center gap-2 whitespace-nowrap text-sm font-semibold text-navy-900 hover:text-euc-700 2xl:inline-flex">
-            <Icon name="phone" className="h-4 w-4 text-euc-600" /> {site.phone}
+        <div className="hidden items-center gap-2 xl:flex">
+          <CallMenu />
+          <a href={site.emailHref} className="btn-outline px-5 py-2.5 text-sm" aria-label={`Email ${site.email}`}>
+            <Icon name="mail" className="h-4 w-4" /> Email
           </a>
-          <Link href="/book" className="btn-outline px-6 py-2.5 text-sm">
-            Book
-          </Link>
         </div>
 
         <div className="flex items-center gap-2 xl:hidden">
+          <CallMenu compact />
           <a
-            href={site.phoneHref}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#87f9d3] text-[#0f1714]"
-            aria-label={`Call ${site.phone}`}
+            href={site.emailHref}
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-navy-200 text-navy-900"
+            aria-label={`Email ${site.email}`}
           >
-            <Icon name="phone" className="h-5 w-5" />
+            <Icon name="mail" className="h-5 w-5" />
           </a>
           <button
             type="button"
