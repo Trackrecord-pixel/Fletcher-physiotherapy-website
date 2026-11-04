@@ -58,14 +58,15 @@ function CallMenu({ compact = false }: { compact?: boolean }) {
         {!compact && <>Call <Icon name="chevron" className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} /></>}
       </button>
       {open && (
-        <div className="absolute right-0 top-full z-50 w-72 pt-3">
+        <div className="absolute right-0 top-full z-50 w-[19rem] pt-3">
           <div className="rounded-3xl border border-beige-200 bg-white p-2 shadow-card-hover">
             <p className="px-4 pb-1 pt-2 text-xs font-semibold uppercase tracking-[0.18em] text-euc-600">Who would you like to call?</p>
             {callOptions.map((o) => (
               <a key={o.phone} href={tel(o.phone)} className="flex items-center gap-3 rounded-2xl px-4 py-3 hover:bg-euc-50">
                 <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-euc-700 text-white"><Icon name="phone" className="h-4 w-4" /></span>
                 <span>
-                  <span className="block text-sm font-semibold text-navy-900">{o.label} · {o.phone}</span>
+                  <span className="block text-xs font-semibold uppercase tracking-[0.12em] text-euc-600">{o.label}</span>
+                  <span className="block whitespace-nowrap text-base font-semibold text-navy-900">{o.phone}</span>
                   <span className="block text-xs text-navy-500">{o.note}</span>
                 </span>
               </a>
