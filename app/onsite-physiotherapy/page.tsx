@@ -10,8 +10,8 @@ import { site } from "@/lib/site";
 // Onsite / workplace physiotherapy — B2B landing page.
 // Ahpra: no outcome statistics, client logos or testimonials. Benefits are written as program goals.
 // When the Kling video is ready, set VIDEO to "/videos/fletcher-onsite.mp4" and POSTER to its poster frame.
-const VIDEO: string | null = null;
-const POSTER = "/videos/fletcher-hero-poster.jpg";
+const VIDEO: string | null = "/videos/fletcher-onsite.mp4";
+const POSTER = "/videos/fletcher-onsite-poster.jpg";
 
 const title = "Onsite Physiotherapy Sydney | Workplace Physio";
 const description =
