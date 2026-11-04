@@ -189,8 +189,8 @@ export default function HomePage() {
                   ))}
                 </ul>
                 <div className="mt-auto flex flex-col gap-3 pt-8 sm:flex-row">
-                  <Link href="/onsite-physiotherapy" className="btn-primary">
-                    Book a Free Workplace Consultation <Icon name="arrow" className="h-4 w-4" />
+                  <Link href="/onsite-physiotherapy" className="btn-outline">
+                    Workplace Consultation <Icon name="arrow" className="h-4 w-4" />
                   </Link>
                 </div>
               </div>
