@@ -64,7 +64,10 @@ export const homeVisitNav: NavLink[] = [
   { label: "Home visits — Sydney", href: "/home-visit-physiotherapy-sydney" },
   { label: "Home visits — Newcastle & Lake Macquarie", href: "/home-visit-physiotherapy-newcastle" },
   { label: "Home visits — Central Coast", href: "/physiotherapy-central-coast" },
-  { label: "Aged care physiotherapy", href: "/aged-care-physiotherapy-newcastle" },
+  { label: "Mobile physio — Sydney", href: "/mobile-physiotherapist-sydney" },
+  { label: "Aged care physio — Sydney", href: "/aged-care-physiotherapy-sydney" },
+  { label: "Support at Home physio — Sydney", href: "/support-at-home-physiotherapy-sydney" },
+  { label: "Aged care physiotherapy — Newcastle", href: "/aged-care-physiotherapy-newcastle" },
   { label: "NDIS physiotherapy — Sydney", href: "/ndis-physiotherapy-sydney" },
 ];
 

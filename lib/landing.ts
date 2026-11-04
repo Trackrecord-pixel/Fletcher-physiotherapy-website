@@ -626,6 +626,9 @@ export const landingPages: Record<string, LandingContent> = {
       { q: "Do you see NDIS participants at home in Sydney?", a: "Yes. We're a registered NDIS provider (NDIS0023718) and see agency-, plan- and self-managed participants." },
     ],
     related: [
+      { label: "Mobile physio Sydney", href: "/mobile-physiotherapist-sydney" },
+      { label: "Aged care physiotherapy Sydney", href: "/aged-care-physiotherapy-sydney" },
+      { label: "Support at Home physiotherapy Sydney", href: "/support-at-home-physiotherapy-sydney" },
       { label: "Sydney physiotherapy overview", href: "/physiotherapy-sydney" },
       { label: "NDIS Physiotherapy Sydney", href: "/ndis-physiotherapy-sydney" },
       { label: "Physiotherapy Parramatta (clinic)", href: "/physiotherapy-parramatta" },
@@ -634,6 +637,212 @@ export const landingPages: Record<string, LandingContent> = {
     ],
     ctaTitle: "Book a home visit in Sydney",
   },
+  "mobile-physiotherapist-sydney": {
+    slug: "mobile-physiotherapist-sydney",
+    pathway: "home",
+    region: "sydney",
+    whyHome: true,
+    quickActions: true,
+    breadcrumbParent: { name: "Home Visits", href: "/home-visits" },
+    eyebrow: "Mobile Physio Sydney",
+    h1: "Mobile physiotherapist in Sydney",
+    serviceName: "Mobile Physiotherapy Sydney",
+    intro:
+      "A physiotherapist who comes to your home, apartment, retirement village or aged care residence — around Sydney Olympic Park, the Inner West, Parramatta and Bankstown–Yagoona.",
+    lead: [
+      "A mobile physiotherapist provides the same assessment and treatment you would get in a clinic, but at your place. There's no driving, parking or waiting room, and we can work on the exact spaces you use every day — your stairs, bathroom, lift, corridor and the walk to the street.",
+      "Our Sydney mobile service covers Sydney Olympic Park and the Inner West — including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood — as well as the Parramatta area and Bankstown–Yagoona.",
+      "Visits are led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management) from the University of Sydney.",
+    ],
+    sections: [
+      {
+        h2: "Who a mobile physio suits",
+        body: ["Home visits are a good fit when getting to a clinic is hard, or when your goals are about moving safely and confidently at home."],
+        list: [
+          "Older adults wanting to stay strong and independent",
+          "People recovering after hospital, a fall or surgery",
+          "NDIS participants",
+          "Support at Home clients",
+          "People with persistent pain or limited mobility",
+          "Residents of aged care and retirement living",
+        ],
+      },
+      {
+        h2: "What happens at a home visit",
+        body: [
+          "Your first visit is about 60 minutes. We talk through your history and goals, assess how you move around your home, and agree a plan together. Most plans combine hands-on treatment, exercise and practical advice you can use between visits.",
+          "We bring the equipment we need. If it helps, family members or carers are welcome to join so everyone knows how to support your program.",
+        ],
+        list: [
+          "Strength, balance and walking",
+          "Falls prevention and home safety",
+          "Rehabilitation after surgery or hospital",
+          "Persistent pain management",
+          "Walking aid and equipment advice",
+          "Home exercise programs",
+        ],
+      },
+      {
+        h2: "Apartments, lifts and building access",
+        body: [
+          "Many of our Sydney visits are in apartments. Let us know about parking, building entry and lifts when you book, and we'll plan around it. Working in your own building means we can practise the routes you actually use — lifts, fire doors, ramps and the path to the shops or bus stop.",
+        ],
+      },
+      {
+        h2: "Funding",
+        body: [
+          "NDIS (agency-, plan- and self-managed), Support at Home, Medicare GPCCMP, DVA, WorkCover and private clients are welcome. Not sure what applies to you? Call us and we'll explain the options before your first visit.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Which Sydney suburbs does your mobile physio cover?", a: "Sydney Olympic Park and the Inner West (including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood), the Parramatta area and Bankstown–Yagoona. If your suburb isn't listed, call us to check." },
+      { q: "How quickly can I get a visit?", a: "We'll phone you back, usually within 24 hours, and aim to arrange your first visit within about a week." },
+      { q: "Do I need a referral?", a: "Not for private physiotherapy. A referral is needed for some funding, such as a GP Chronic Condition Management Plan (GPCCMP), DVA or WorkCover." },
+      { q: "Can a family member book for me?", a: "Yes. Family members, carers, GPs, support coordinators and aged care providers can all contact us or send a referral." },
+    ],
+    related: [
+      { label: "Home visit physiotherapy Sydney", href: "/home-visit-physiotherapy-sydney" },
+      { label: "Aged care physiotherapy Sydney", href: "/aged-care-physiotherapy-sydney" },
+      { label: "Support at Home physiotherapy Sydney", href: "/support-at-home-physiotherapy-sydney" },
+      { label: "NDIS physiotherapy Sydney", href: "/ndis-physiotherapy-sydney" },
+      { label: "Sydney physiotherapy overview", href: "/physiotherapy-sydney" },
+    ],
+    ctaTitle: "Book a mobile physio in Sydney",
+  },
+
+  "aged-care-physiotherapy-sydney": {
+    slug: "aged-care-physiotherapy-sydney",
+    pathway: "home",
+    region: "sydney",
+    whyHome: true,
+    quickActions: true,
+    breadcrumbParent: { name: "Home Visits", href: "/home-visits" },
+    eyebrow: "Aged Care Physiotherapy Sydney",
+    h1: "Aged care physiotherapy in Sydney — at home",
+    serviceName: "Aged Care Physiotherapy Sydney",
+    intro:
+      "Physiotherapy for older adults at home, in retirement living and in aged care residences around Sydney Olympic Park, the Inner West, Parramatta and Bankstown–Yagoona.",
+    lead: [
+      "Staying strong, steady and confident at home matters more as we get older. Our aged care physiotherapy focuses on the things that make everyday life easier — getting up from a chair, walking to the shops, managing steps, and reducing the risk of falls.",
+      "We visit older adults in their own homes and apartments, in retirement villages and in residential aged care. Families are welcome to be involved, and we keep GPs and care providers updated with your consent.",
+      "Care is led by Daniel Lee, an APA Titled Pain Physiotherapist experienced in aged care, falls prevention and persistent pain.",
+    ],
+    sections: [
+      {
+        h2: "How we help older adults",
+        body: ["Every program starts with a thorough assessment in your own environment, then a plan built around your goals."],
+        list: [
+          "Strength and balance training",
+          "Falls prevention and home safety review",
+          "Walking, transfers and getting up from the floor",
+          "Recovery after a fall, illness or hospital stay",
+          "Arthritis and persistent pain",
+          "Walking aid and equipment recommendations",
+        ],
+      },
+      {
+        h2: "Falls prevention",
+        body: [
+          "Falls are a common reason older people lose confidence and independence. A physiotherapy assessment looks at strength, balance, walking, footwear, medicines you've been told about by your GP, and hazards around the home. We then set up a practical exercise program and safety changes that may help reduce your risk.",
+        ],
+      },
+      {
+        h2: "Working with families, GPs and providers",
+        body: [
+          "We can talk with family members, your GP and your Support at Home provider or aged care team so everyone is working towards the same goals. With your consent, we send clear reports after the initial assessment and as your program progresses.",
+        ],
+      },
+      {
+        h2: "Funding",
+        body: [
+          "Support at Home (formerly Home Care Packages), Medicare GPCCMP, DVA and private clients are welcome. In residential aged care, physiotherapy is usually arranged with the facility — ask the care manager, or contact us and we'll help.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Do you visit retirement villages and aged care homes in Sydney?", a: "Yes. We visit private homes and apartments, retirement villages and residential aged care across our Sydney service areas." },
+      { q: "Can my family be there for the visit?", a: "Yes — family members and carers are welcome, and it often helps everyone understand the exercise program and safety advice." },
+      { q: "Is physio covered under Support at Home?", a: "Physiotherapy can be arranged through your Support at Home provider when it meets your assessed needs. Participants make no contribution for clinical supports such as physiotherapy, but it does draw on your budget." },
+      { q: "Which areas do you cover?", a: "Sydney Olympic Park and the Inner West, the Parramatta area and Bankstown–Yagoona. Call us to check your suburb." },
+    ],
+    related: [
+      { label: "Mobile physio Sydney", href: "/mobile-physiotherapist-sydney" },
+      { label: "Support at Home physiotherapy Sydney", href: "/support-at-home-physiotherapy-sydney" },
+      { label: "Home visit physiotherapy Sydney", href: "/home-visit-physiotherapy-sydney" },
+      { label: "Falls prevention", href: "/falls-prevention" },
+    ],
+    ctaTitle: "Book aged care physiotherapy in Sydney",
+  },
+
+  "support-at-home-physiotherapy-sydney": {
+    slug: "support-at-home-physiotherapy-sydney",
+    pathway: "home",
+    region: "sydney",
+    whyHome: true,
+    quickActions: true,
+    breadcrumbParent: { name: "Home Visits", href: "/home-visits" },
+    eyebrow: "Support at Home Physio Sydney",
+    h1: "Support at Home physiotherapy in Sydney",
+    serviceName: "Support at Home Physiotherapy Sydney",
+    intro:
+      "Home visit physiotherapy for Support at Home clients (formerly Home Care Packages) around Sydney Olympic Park, the Inner West, Parramatta and Bankstown–Yagoona.",
+    lead: [
+      "Support at Home replaced Home Care Packages on 1 November 2025. If physiotherapy is part of your assessed needs, your provider can arrange for us to visit you at home and pay from your Support at Home budget.",
+      "We work with providers and care partners across our Sydney service areas, and we make it simple: clear assessments, practical goals, regular updates and invoicing to the provider.",
+    ],
+    sections: [
+      {
+        h2: "How to arrange it",
+        body: ["You don't claim physiotherapy yourself — it's arranged through your Support at Home provider."],
+        list: [
+          "Tell your provider or care partner you'd like physiotherapy (or ask us to contact them with your permission)",
+          "Your provider confirms it fits your assessed needs and care plan",
+          "Your provider engages Fletcher Physiotherapy to visit you at home",
+          "We assess you, agree goals and a plan, and keep your provider updated",
+          "We invoice your provider, who pays from your budget",
+          "Not yet assessed? Contact My Aged Care on 1800 200 422",
+        ],
+      },
+      {
+        h2: "What it costs you",
+        body: [
+          "Participants make no contribution for clinical supports such as physiotherapy — but it does use part of your quarterly Support at Home budget, so talk with your provider about how you'd like your budget used. Private physiotherapy is available while you wait for an assessment or for services to start.",
+        ],
+      },
+      {
+        h2: "What our visits focus on",
+        list: [
+          "Strength and balance",
+          "Falls prevention and home safety",
+          "Walking and mobility, including walking aids",
+          "Recovery after illness, a fall or hospital",
+          "Persistent pain",
+          "Equipment recommendations, including for AT-HM applications",
+        ],
+        body: [],
+      },
+      {
+        h2: "For Sydney providers and care managers",
+        body: [
+          "Send a referral with the client's suburb, goals and relevant medical information, or call 0404 791 756. We contact the client or family, arrange the first visit and send an initial assessment with recommendations for the care plan.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Do you accept Support at Home clients in Sydney?", a: "Yes, around Sydney Olympic Park and the Inner West, the Parramatta area and Bankstown–Yagoona." },
+      { q: "I still have a Home Care Package — is that the same?", a: "Home Care Packages moved to Support at Home on 1 November 2025. Your provider will have moved you across; ask them to arrange physiotherapy with us." },
+      { q: "Can my provider refer me directly?", a: "Yes. Providers and care managers can use our referral form or call us." },
+    ],
+    related: [
+      { label: "Aged care physiotherapy Sydney", href: "/aged-care-physiotherapy-sydney" },
+      { label: "Mobile physio Sydney", href: "/mobile-physiotherapist-sydney" },
+      { label: "Support at Home physiotherapy (overview)", href: "/support-at-home-physiotherapy" },
+      { label: "Home visit physiotherapy Sydney", href: "/home-visit-physiotherapy-sydney" },
+    ],
+    ctaTitle: "Arrange Support at Home physio in Sydney",
+  },
+
   "musculoskeletal-physiotherapy": {
     slug: "musculoskeletal-physiotherapy",
     pathway: "both",
