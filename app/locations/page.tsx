@@ -60,7 +60,7 @@ export default function LocationsPage() {
           <SectionHeading eyebrow="Clinic Appointments" title="Our clinics" />
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {clinics.map((c, i) => (
-              <Reveal key={c.slug} delay={i * 80}>
+              <Reveal key={c.slug}>
                 <div className="card card-hover flex h-full flex-col">
                   <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
                     <Icon name="clock" className="h-3.5 w-3.5" /> Consulting {c.dayShort}
@@ -76,7 +76,7 @@ export default function LocationsPage() {
               </Reveal>
             ))}
             {sydneyClinics.map((c, i) => (
-              <Reveal key={c.slug} delay={(clinics.length + i) * 80}>
+              <Reveal key={c.slug}>
                 <div className="card card-hover flex h-full flex-col">
                   <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
                     <Icon name="clock" className="h-3.5 w-3.5" /> {c.days ?? "Sydney clinic"}
@@ -99,7 +99,7 @@ export default function LocationsPage() {
       <section className="section-py bg-white">
         <div className="container-px space-y-10">
           {locations.map((loc, i) => (
-            <Reveal key={loc.name} delay={i * 60}>
+            <Reveal key={loc.name}>
               <div className="grid gap-6 lg:grid-cols-12">
                 <div className="lg:col-span-5">
                   <div className="card h-full">

@@ -137,7 +137,7 @@ export default function AboutPage() {
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((v, i) => (
-              <Reveal key={v.title} delay={(i % 4) * 80}>
+              <Reveal key={v.title}>
                 <div className="card card-hover h-full">
                   <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-white">
                     <Icon name={v.icon as never} className="h-6 w-6" />

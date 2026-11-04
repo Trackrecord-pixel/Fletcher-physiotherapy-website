@@ -95,7 +95,7 @@ export default function ReferAPatientPage() {
         <div className="container-px">
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {audience.map((a, i) => (
-              <Reveal key={a.title} delay={(i % 3) * 70}>
+              <Reveal key={a.title}>
                 <div className="card card-hover h-full">
                   <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-beige-100 text-navy-800">
                     <Icon name={a.icon as never} className="h-6 w-6" />

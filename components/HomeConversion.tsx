@@ -26,7 +26,7 @@ export function ReviewStrip({
         <SectionHeading center eyebrow="From our Google reviews" title={title} />
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {quotes.map((r, i) => (
-            <Reveal key={i} delay={i * 80}>
+            <Reveal key={i}>
               <figure className="card h-full">
                 <blockquote className=" font-serif text-lg leading-relaxed text-navy-900">
                   &ldquo;{r.quote}&rdquo;
@@ -76,7 +76,7 @@ export function WhyCall() {
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {reasons.map((r, i) => (
-            <Reveal key={r.title} delay={(i % 3) * 80}>
+            <Reveal key={r.title}>
               <div className="card card-hover h-full">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-white">
                   <Icon name={r.icon} className="h-6 w-6" />
@@ -163,7 +163,7 @@ export function Scenarios() {
         />
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {scenarios.map((s, i) => (
-            <Reveal key={s.title} delay={(i % 3) * 80}>
+            <Reveal key={s.title}>
               <div className="card card-hover flex h-full flex-col">
                 <span className="inline-flex w-fit items-center gap-2 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
                   <Icon name={s.icon} className="h-3.5 w-3.5" /> {s.who}

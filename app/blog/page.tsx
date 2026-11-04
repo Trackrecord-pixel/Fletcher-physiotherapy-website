@@ -56,7 +56,7 @@ export default function BlogIndex() {
       <section className="section-py bg-white">
         <div className="container-px grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {sorted.map((p, i) => (
-            <Reveal key={p.slug} delay={(i % 3) * 70}>
+            <Reveal key={p.slug}>
               <Link href={`/blog/${p.slug}`} className="card card-hover flex h-full flex-col p-0 overflow-hidden">
                 <div className="relative aspect-[16/9] w-full">
                   <BlogImage slug={p.slug} alt={p.title} sizes="(max-width: 768px) 100vw, 33vw" />

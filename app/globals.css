@@ -209,3 +209,16 @@ section .card, .rounded-3xl.border.bg-white, .rounded-2xl.border.bg-white { back
     scroll-behavior: auto !important;
   }
 }
+
+/* Phones / touch screens — larger tap areas and readable small text (UI UX Pro Max: touch-target 44px, body text ≥ 15px) */
+@media (pointer: coarse) {
+  footer li > a,
+  .tap-target {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .text-xs:not(.uppercase) { font-size: 0.8333rem; line-height: 1.45; } /* 15px on the 18px root */
+}

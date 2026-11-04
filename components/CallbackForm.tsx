@@ -109,7 +109,7 @@ export default function CallbackForm() {
       <button type="submit" className="btn-accent mt-4 w-full" disabled={status === "sending"}>
         {status === "sending" ? "Sending…" : "Request my call back"} <Icon name="arrow" className="h-4 w-4" />
       </button>
-      <a href={site.phoneHref} className="mt-3 flex items-center justify-center gap-2 text-sm font-semibold text-navy-800 hover:text-navy-900">
+      <a href={site.phoneHref} className="mt-3 flex min-h-11 items-center justify-center gap-2 text-sm font-semibold text-navy-800 hover:text-navy-900">
         <Icon name="phone" className="h-4 w-4" /> Or call now: {site.phone}
       </a>
       <p className="mt-3 text-center text-xs text-navy-400">Your details are only used to respond to your enquiry.</p>
