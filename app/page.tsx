@@ -71,29 +71,6 @@ const whatWeTreat: { label: string; text: string; href: string; icon: IconName }
   { label: "Bulk Billing Physiotherapy", text: "At our Jesmond, Yagoona and Parramatta clinics — for eligible Medicare GPCCMP patients.", href: "/bulk-billing-physiotherapy-yagoona", icon: "check" },
 ];
 
-const reasons: { n: string; title: string; text: string }[] = [
-  {
-    n: "01",
-    title: "Led by an APA Titled Pain Physiotherapist",
-    text: "Clinical leadership from Daniel Lee — APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management).",
-  },
-  {
-    n: "02",
-    title: "Two ways to be seen",
-    text: "Clinic appointments inside GP practices, or home visits where you live. You choose what suits you.",
-  },
-  {
-    n: "03",
-    title: "Working alongside your GP and care team",
-    text: "Clear reports and communication for GPs, support coordinators, case managers and families — with your consent.",
-  },
-  {
-    n: "04",
-    title: "Most funding types welcome",
-    text: "Medicare GPCCMP, DVA, WorkCover, NDIS, Support at Home and private patients.",
-  },
-];
-
 const credentials = [
   "APA Titled Pain Physiotherapist",
   "Master of Medicine (Pain Management), University of Sydney",
@@ -113,22 +90,22 @@ export default function HomePage() {
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[rgba(10,15,13,0.62)]" />
         <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-[#0f1714] to-transparent" />
 
-        <div className="container-px w-full py-24">
-          <p className="text-sm font-normal uppercase tracking-[0.18em] text-[#edf4f2] sm:text-base">
+        <div className="container-px w-full py-16 sm:py-24">
+          <p className="text-xs font-normal uppercase tracking-[0.18em] text-[#edf4f2] sm:text-base">
             Sydney · Newcastle · Central Coast
           </p>
-          <p aria-hidden="true" className="mt-4 font-display text-[2.6rem] font-bold uppercase leading-[0.95] tracking-[0.06em] text-[#e6fff6] sm:text-7xl lg:text-[6.2rem]">
+          <p aria-hidden="true" className="mt-3 font-display text-[1.9rem] font-bold uppercase leading-[0.95] tracking-[0.06em] text-[#e6fff6] sm:mt-4 sm:text-7xl lg:text-[6.2rem]">
             Fletcher
           </p>
-          <p aria-hidden="true" className="mt-2 text-lg font-medium uppercase tracking-[0.42em] text-[#e6fff6] sm:text-2xl lg:text-[2.1rem]">
+          <p aria-hidden="true" className="mt-1.5 text-sm font-medium uppercase tracking-[0.42em] text-[#e6fff6] sm:mt-2 sm:text-2xl lg:text-[2.1rem]">
             Physiotherapy
           </p>
-          <h1 className="mx-auto mt-8 max-w-2xl text-xl font-medium leading-snug tracking-normal text-[#edf4f2] sm:text-2xl">
-            Expert physiotherapy — <span className="text-[#87f9d3]">in clinic or at home.</span>
+          <h1 className="mx-auto mt-6 max-w-2xl text-2xl font-medium leading-snug tracking-normal text-[#edf4f2] sm:mt-8 sm:text-2xl">
+            Expert physiotherapy — <span className="text-[#87f9d3]">in clinic, at home or at work.</span>
           </h1>
           <p className="mx-auto mt-3 max-w-xl text-base text-[#c9d6d1] sm:text-lg">
             Led by an APA Titled Pain Physiotherapist. Clinics in Jesmond, Yagoona and Parramatta; home visits across
-            Sydney, Newcastle and the Central Coast.
+            Sydney, Newcastle and the Central Coast; onsite programs for Sydney workplaces.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href="/find-a-clinic" className="btn-outline w-full min-w-[200px] sm:w-auto">
@@ -137,8 +114,11 @@ export default function HomePage() {
             <Link href="/home-visits" className="btn-outline w-full min-w-[200px] sm:w-auto">
               Book a Home Visit
             </Link>
+            <Link href="/onsite-physiotherapy" className="btn-outline w-full min-w-[200px] sm:w-auto">
+              Onsite for Workplaces
+            </Link>
           </div>
-          <p className="mt-6 text-sm text-[#c9d6d1]">
+          <p className="mt-6 hidden text-sm text-[#c9d6d1] sm:block">
             Or call{" "}
             <a href={site.phoneHref} className="font-medium text-[#87f9d3] underline underline-offset-4">
               {site.phone}
@@ -148,13 +128,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2 · TWO PATHWAYS */}
+      {/* 2 · THREE PATHWAYS */}
       <section className="bg-white py-16 lg:py-24" aria-labelledby="pathways">
         <div className="container-px">
           <h2 id="pathways" className="max-w-2xl text-3xl text-navy-900 sm:text-4xl">
-            Two ways to see us. <span className="text-euc-600">The same standard of care.</span>
+            Three ways to see us. <span className="text-euc-600">The same standard of care.</span>
           </h2>
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
             <Reveal>
               <div className="flex h-full flex-col rounded-[2rem] bg-euc-600 p-8 text-white sm:p-10">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-euc-200">In clinic</p>
@@ -163,7 +143,7 @@ export default function HomePage() {
                   Consultations inside GP practices in Jesmond, Yagoona and Parramatta — hands-on treatment and
                   exercise-based rehabilitation.
                 </p>
-                <ul className="mt-6 grid gap-2.5 text-[0.95rem] text-white/95 sm:grid-cols-2">
+                <ul className="mt-6 grid gap-2.5 text-[0.95rem] text-white/95 sm:grid-cols-2 lg:grid-cols-1">
                   {["Persistent pain", "Back, neck & joint pain", "Post-surgical rehab", "Sports & work injuries", "Balance & falls", "GPCCMP, DVA, WorkCover"].map((x) => (
                     <li key={x} className="flex items-center gap-2"><Icon name="check" className="h-4 w-4 text-euc-200" /> {x}</li>
                   ))}
@@ -183,7 +163,7 @@ export default function HomePage() {
                   We come to your home, retirement village or aged care residence across Sydney, Newcastle, Lake
                   Macquarie and the Central Coast — no travel, parking or waiting rooms.
                 </p>
-                <ul className="mt-6 grid gap-2.5 text-[0.95rem] text-white/95 sm:grid-cols-2">
+                <ul className="mt-6 grid gap-2.5 text-[0.95rem] text-white/95 sm:grid-cols-2 lg:grid-cols-1">
                   {["Older adults", "Falls prevention", "NDIS participants", "Support at Home", "After hospital", "Residential aged care"].map((x) => (
                     <li key={x} className="flex items-center gap-2"><Icon name="check" className="h-4 w-4 text-beige-300" /> {x}</li>
                   ))}
@@ -195,7 +175,31 @@ export default function HomePage() {
                 </div>
               </div>
             </Reveal>
+            <Reveal delay={200}>
+              <div className="flex h-full flex-col rounded-[2rem] border border-navy-100 bg-cream p-8 sm:p-10">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-euc-600">At work</p>
+                <h3 className="mt-3 text-3xl text-navy-900">Onsite workplace physiotherapy</h3>
+                <p className="mt-3 text-navy-600">
+                  We come to your workplace across Sydney Olympic Park, Parramatta and Greater Sydney — treatment, injury
+                  prevention and early intervention for your team.
+                </p>
+                <ul className="mt-6 grid gap-2.5 text-[0.95rem] text-navy-800 sm:grid-cols-2 lg:grid-cols-1">
+                  {["Onsite treatment", "Manual handling training", "Ergonomic assessments", "Pre-shift warm-ups", "Early intervention & WorkCover", "Return to work"].map((x) => (
+                    <li key={x} className="flex items-center gap-2"><Icon name="check" className="h-4 w-4 text-euc-600" /> {x}</li>
+                  ))}
+                </ul>
+                <div className="mt-auto flex flex-col gap-3 pt-8 sm:flex-row">
+                  <Link href="/onsite-physiotherapy" className="btn-primary">
+                    Book a Free Workplace Consultation <Icon name="arrow" className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </Reveal>
           </div>
+          <p className="mt-6 text-sm text-navy-600">
+            <span className="font-semibold text-navy-800">Funding welcome:</span> Medicare GPCCMP (bulk billing for eligible
+            patients at our clinics), DVA, WorkCover, NDIS, Support at Home and private.
+          </p>
         </div>
       </section>
 
@@ -275,25 +279,6 @@ export default function HomePage() {
                   </span>
                 </Link>
               </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 5 · WHY FLETCHER */}
-      <section className="bg-navy-900 py-16 text-white lg:py-24" aria-labelledby="why">
-        <div className="container-px grid gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-beige-300">Why Fletcher</p>
-            <h2 id="why" className="mt-4 text-3xl text-white sm:text-4xl">Physiotherapy built around your life</h2>
-          </div>
-          <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:col-span-8">
-            {reasons.map((r) => (
-              <div key={r.n} className="border-t border-navy-700 pt-5">
-                <p className="font-serif text-lg text-clay-300">{r.n}</p>
-                <h3 className="mt-2 text-xl text-white">{r.title}</h3>
-                <p className="mt-2 text-navy-200">{r.text}</p>
-              </div>
             ))}
           </div>
         </div>
@@ -409,7 +394,7 @@ export default function HomePage() {
             <Link href="/faqs" className="btn-secondary mt-6">All FAQs <Icon name="arrow" className="h-4 w-4" /></Link>
           </div>
           <div className="lg:col-span-8">
-            <FAQAccordion items={homeFaqs} />
+            <FAQAccordion items={homeFaqs.slice(0, 4)} />
             <AuthorReview pageUrl="/" />
           </div>
         </div>
