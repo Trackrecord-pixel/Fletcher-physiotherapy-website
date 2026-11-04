@@ -211,7 +211,7 @@ export default function HomePage() {
               <p className="eyebrow"><span aria-hidden="true" className="h-px w-8 bg-clay-500" /> Clinic locations</p>
               <h2 id="clinic-locations" className="mt-4 text-3xl text-navy-900 sm:text-4xl">Our clinics</h2>
             </div>
-            <Link href="/clinic-physiotherapy" className="inline-flex items-center gap-2 font-semibold text-euc-700 hover:text-euc-800">
+            <Link href="/clinic-physiotherapy" className="tap-target inline-flex items-center gap-2 font-semibold text-euc-700 hover:text-euc-800">
               All clinic information <Icon name="arrow" className="h-4 w-4" />
             </Link>
           </div>
@@ -229,8 +229,8 @@ export default function HomePage() {
           </Link>
           <div className="mt-6 grid gap-5 md:grid-cols-3">
             {allClinics.map((c, i) => (
-              <Reveal key={c.slug} delay={i * 80}>
-                <article className="flex h-full flex-col rounded-3xl border border-beige-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover">
+              <Reveal key={c.slug}>
+                <article className="flex h-full flex-col rounded-3xl border border-beige-200 bg-white p-7 transition-[transform,box-shadow,border-color,background-color] duration-300 hover:-translate-y-1 hover:shadow-card-hover">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-euc-600">{c.region}</p>
                   <h3 className="mt-2 text-2xl text-navy-900">{c.name.replace("Fletcher Physiotherapy ", "")}</h3>
                   <p className="mt-1 text-sm text-navy-500">Inside {c.host}</p>
@@ -243,7 +243,7 @@ export default function HomePage() {
                       <Icon name="phone" className="h-4 w-4" /> {c.phone}
                     </a>
                     <p className="text-center text-xs text-navy-500">{c.phoneNote}</p>
-                    <Link href={`/${c.slug}`} className="text-center text-sm font-semibold text-navy-800 hover:text-euc-700">
+                    <Link href={`/${c.slug}`} className="tap-target justify-center text-center text-sm font-semibold text-navy-800 hover:text-euc-700">
                       Clinic details →
                     </Link>
                   </div>
@@ -262,14 +262,14 @@ export default function HomePage() {
               <p className="eyebrow"><span aria-hidden="true" className="h-px w-8 bg-clay-500" /> Home visit areas</p>
               <h2 id="home-areas" className="mt-4 text-3xl text-navy-900 sm:text-4xl">We come to you</h2>
             </div>
-            <Link href="/home-visits" className="inline-flex items-center gap-2 font-semibold text-euc-700 hover:text-euc-800">
+            <Link href="/home-visits" className="tap-target inline-flex items-center gap-2 font-semibold text-euc-700 hover:text-euc-800">
               How home visits work <Icon name="arrow" className="h-4 w-4" />
             </Link>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {homeAreas.map((a, i) => (
-              <Reveal key={a.title} delay={i * 80}>
-                <Link href={a.href} className="group flex h-full flex-col rounded-3xl border border-beige-200 bg-cream p-7 transition-all duration-300 hover:-translate-y-1 hover:border-euc-200 hover:bg-white hover:shadow-card-hover">
+              <Reveal key={a.title}>
+                <Link href={a.href} className="group flex h-full flex-col rounded-3xl border border-beige-200 bg-cream p-7 transition-[transform,box-shadow,border-color,background-color] duration-300 hover:-translate-y-1 hover:border-euc-200 hover:bg-white hover:shadow-card-hover">
                   <Icon name="home" className="h-6 w-6 text-euc-600" />
                   <h3 className="mt-4 text-2xl text-navy-900">{a.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-navy-600">{a.text}</p>
@@ -380,7 +380,7 @@ export default function HomePage() {
             <Link href="/refer-a-patient" className="btn bg-white text-euc-700 hover:bg-euc-50">
               Refer a Patient <Icon name="arrow" className="h-4 w-4" />
             </Link>
-            <a href={site.emailHref} className="text-sm font-semibold text-euc-100 underline underline-offset-4">{site.email}</a>
+            <a href={site.emailHref} className="tap-target text-sm font-semibold text-euc-100 underline underline-offset-4">{site.email}</a>
           </div>
         </div>
       </section>
@@ -416,8 +416,8 @@ export default function HomePage() {
               <Link href="/home-visits" className="btn-accent">Book a Home Visit</Link>
             </div>
             <div className="mt-8 space-y-2 text-navy-700">
-              <p><a href={site.phoneHref} className="font-semibold text-navy-900 hover:text-euc-700">{site.phone}</a> · Mon–Fri, 8am–6pm</p>
-              <p><a href={site.emailHref} className="font-semibold text-navy-900 hover:text-euc-700">{site.email}</a></p>
+              <p><a href={site.phoneHref} className="tap-target font-semibold text-navy-900 hover:text-euc-700">{site.phone}</a> · Mon–Fri, 8am–6pm</p>
+              <p><a href={site.emailHref} className="tap-target font-semibold text-navy-900 hover:text-euc-700">{site.email}</a></p>
             </div>
           </div>
           <div className="lg:col-span-6">
