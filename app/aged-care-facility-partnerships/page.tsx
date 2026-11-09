@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Icon, { type IconName } from "@/components/Icon";
+import HeroVideo from "@/components/HeroVideo";
 import FAQAccordion from "@/components/FAQAccordion";
 import AgedCareEnquiryForm from "@/components/AgedCareEnquiryForm";
 import { ServiceSchema, FaqSchema, BreadcrumbSchema } from "@/components/StructuredData";
@@ -8,6 +9,9 @@ import { site } from "@/lib/site";
 
 // Residential aged care facility partnerships — B2B landing page (mirrors /onsite-physiotherapy).
 // Ahpra: no outcome statistics, client logos or testimonials. Regulatory facts quote official sources only.
+
+const VIDEO = "/videos/fletcher-aged-care.mp4";
+const POSTER = "/videos/fletcher-aged-care-poster.jpg";
 
 const title = "Aged Care Facility Physiotherapy Partnerships";
 const description =
@@ -66,8 +70,12 @@ export default function AgedCareFacilityPartnershipsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate flex min-h-[70vh] items-center overflow-hidden bg-[#0a0f0d]">
-        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,rgba(135,249,211,0.14),transparent_60%)]" />
+      <section
+        className="relative isolate flex min-h-[78vh] items-center overflow-hidden bg-cover bg-center"
+        style={{ backgroundImage: `url(${POSTER})`, backgroundColor: "#0a0f0d" }}
+      >
+        <HeroVideo src={VIDEO} poster={POSTER} />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[rgba(10,15,13,0.68)]" />
         <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-[#0f1714] to-transparent" />
         <div className="container-px w-full py-24">
           <nav aria-label="Breadcrumb" className="mb-8 text-xs text-[#c9d6d1]">
