@@ -771,7 +771,7 @@ export const landingPages: Record<string, LandingContent> = {
       { label: "Mobile physio Sydney", href: "/mobile-physiotherapist-sydney" },
       { label: "Support at Home physiotherapy Sydney", href: "/support-at-home-physiotherapy-sydney" },
       { label: "Home visit physiotherapy Sydney", href: "/home-visit-physiotherapy-sydney" },
-      { label: "Falls prevention", href: "/falls-prevention" },
+      { label: "How physiotherapy prevents falls", href: "/blog/how-physiotherapy-prevents-falls-in-older-adults" },
     ],
     ctaTitle: "Book aged care physiotherapy in Sydney",
   },
@@ -838,7 +838,7 @@ export const landingPages: Record<string, LandingContent> = {
     related: [
       { label: "Aged care physiotherapy Sydney", href: "/aged-care-physiotherapy-sydney" },
       { label: "Mobile physio Sydney", href: "/mobile-physiotherapist-sydney" },
-      { label: "Support at Home physiotherapy (overview)", href: "/support-at-home-physiotherapy" },
+      { label: "Support at Home physiotherapy explained", href: "/blog/support-at-home-physiotherapy-explained" },
       { label: "Home visit physiotherapy Sydney", href: "/home-visit-physiotherapy-sydney" },
     ],
     ctaTitle: "Arrange Support at Home physio in Sydney",
