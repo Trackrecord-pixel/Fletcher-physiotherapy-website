@@ -51,11 +51,11 @@ function CallMenu({ compact = false }: { compact?: boolean }) {
         className={
           compact
             ? "inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#87f9d3] text-[#0f1714]"
-            : "btn-primary px-4 py-2.5 text-sm min-[1440px]:px-5"
+            : "btn-primary px-4 py-2.5 text-sm 2xl:px-5"
         }
       >
         <Icon name="phone" className={compact ? "h-5 w-5" : "h-4 w-4"} />
-        {!compact && <><span className="hidden min-[1440px]:inline">Call</span> <Icon name="chevron" className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} /></>}
+        {!compact && <><span className="hidden 2xl:inline">Call</span> <Icon name="chevron" className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} /></>}
       </button>
       {open && (
         <div className={`absolute top-full z-50 w-[19rem] max-w-[calc(100vw-2rem)] pt-3 ${compact ? "right-[-104px]" : "right-0"}`}>
@@ -83,7 +83,7 @@ const dropdowns: Record<string, { label: string; href: string }[]> = {
   "Home Visits": homeVisitNav,
   Services: servicesNav,
   Locations: locationsNav,
-  About: [...aboutNav, { label: "For referrers", href: "/refer-a-patient" }, { label: "Contact", href: "/contact" }],
+  About: [...aboutNav, { label: "Locations", href: "/locations" }, { label: "For referrers", href: "/refer-a-patient" }, { label: "Contact", href: "/contact" }],
 };
 
 export default function Header() {
@@ -119,7 +119,7 @@ export default function Header() {
         Skip to content
       </a>
 
-      <nav className="container-px flex h-20 items-center justify-between gap-4 2xl:gap-6" aria-label="Primary">
+      <nav className="container-px flex h-20 items-center justify-between gap-4" aria-label="Primary">
         <Logo />
 
         <div className="hidden items-center xl:flex">
@@ -138,7 +138,7 @@ export default function Header() {
                   aria-haspopup="true"
                   aria-expanded={openMenu === link.label}
                   onClick={() => setOpenMenu((m) => (m === link.label ? null : link.label))}
-                  className={`inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2 py-2 text-[0.74rem] min-[1440px]:px-2.5 min-[1440px]:text-[0.8rem] 2xl:px-3 font-medium transition-colors ${
+                  className={`inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2 py-2 text-[0.74rem] min-[1440px]:px-2.5 min-[1440px]:text-[0.8rem] font-medium transition-colors ${
                     active ? "text-euc-700" : "text-navy-700 hover:text-navy-900"
                   }`}
                 >
@@ -167,7 +167,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 aria-current={active ? "page" : undefined}
-                className={`${["For Referrers", "Contact"].includes(link.label) ? "hidden 2xl:inline-block" : ""} whitespace-nowrap rounded-full px-2 py-2 text-[0.74rem] min-[1440px]:px-2.5 min-[1440px]:text-[0.8rem] 2xl:px-3 font-medium transition-colors ${
+                className={`${["For Referrers", "Contact"].includes(link.label) ? "hidden 2xl:inline-block" : ""} whitespace-nowrap rounded-full px-2 py-2 text-[0.74rem] min-[1440px]:px-2.5 min-[1440px]:text-[0.8rem] font-medium transition-colors ${
                   active ? "text-euc-700" : "text-navy-700 hover:text-navy-900"
                 }`}
               >
@@ -179,8 +179,8 @@ export default function Header() {
 
         <div className="hidden items-center gap-2 xl:flex">
           <CallMenu />
-          <a href={site.emailHref} className="btn-outline px-4 py-2.5 text-sm min-[1440px]:px-5" aria-label={`Email ${site.email}`}>
-            <Icon name="mail" className="h-4 w-4" /> <span className="hidden min-[1440px]:inline">Email</span>
+          <a href={site.emailHref} className="btn-outline px-4 py-2.5 text-sm 2xl:px-5" aria-label={`Email ${site.email}`}>
+            <Icon name="mail" className="h-4 w-4" /> <span className="hidden 2xl:inline">Email</span>
           </a>
         </div>
 
