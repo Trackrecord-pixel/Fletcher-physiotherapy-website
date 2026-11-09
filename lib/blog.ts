@@ -19,6 +19,103 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "home-visit-and-onsite-physiotherapy-hills-district",
+    title: "Physiotherapy in the Hills District: Home Visits and Onsite Workplace Physio",
+    seoTitle: "Home Visit & Onsite Physio in the Hills District, Sydney",
+    description: "Fletcher Physiotherapy now visits homes and workplaces across The Hills Shire — Castle Hill, Baulkham Hills, Norwest, Kellyville, Rouse Hill, Box Hill and more. Funding, what to expect and how to book.",
+    date: "2026-11-09",
+    readMins: 6,
+    excerpt: "Home visit physiotherapy for older adults and people with disability, and onsite physio for Norwest and Castle Hill workplaces — now across the Hills District.",
+    updated: "2026-11-09",
+    faqs: [
+      { q: "Which Hills District suburbs do you visit?", a: "We visit homes and workplaces across The Hills Shire, including Baulkham Hills, Castle Hill, Bella Vista, Norwest, Kellyville, North Kellyville, Rouse Hill, Beaumont Hills, Box Hill, Glenhaven, Dural, Kenthurst, Annangrove, Winston Hills and Northmead, as well as nearby Cherrybrook, West Pennant Hills and Carlingford. If your suburb isn't listed, call 0404 791 756 and ask." },
+      { q: "Do I need a referral for a home visit?", a: "No referral is needed for private physiotherapy. A GP referral is needed to use Medicare (a GP Chronic Condition Management Plan), and DVA, NDIS, Support at Home and workers compensation each have their own referral or approval process. We can explain the steps when you call." },
+      { q: "Can my Support at Home budget pay for physio at home?", a: "If physiotherapy is part of your assessed needs, your Support at Home provider can arrange for us to visit and pay from your budget. Support at Home replaced Home Care Packages on 1 November 2025." },
+      { q: "How does onsite workplace physio work for a Norwest or Castle Hill business?", a: "We start with a free consultation and site walk-through, then run scheduled onsite sessions at your workplace. Most businesses start with our 4-Week Onsite Physio Pilot Program, which has no lock-in." },
+    ],
+    sources: [
+      { label: "The Hills Shire community profile (.id, ABS Census 2021) – five-year age groups", url: "https://profile.id.com.au/the-hills/five-year-age-groups" },
+      { label: "SafeWork NSW – 2026-27 Regulatory Statement (1 July 2026)", url: "https://www.safework.nsw.gov.au/news/safework-media-releases/safework-nsw-redefines-its-priorities-in-new-2026-27-regulatory-statement" },
+      { label: "My Aged Care — Support at Home program", url: "https://www.myagedcare.gov.au/support-home-program" },
+    ],
+    sections: [
+      {
+        h2: "Now visiting the Hills District",
+        body: [
+          "Fletcher Physiotherapy now provides two services across The Hills Shire: home visit physiotherapy, and onsite physiotherapy for workplaces. Both come to you — there's no clinic to travel to, no parking to find and no waiting room.",
+          "Our nearest Sydney clinic is at Parramatta (Wednesdays), and our home visit and onsite physiotherapists travel across the Hills District, including:",
+        ],
+        list: [
+          "Baulkham Hills, Castle Hill, Bella Vista and Norwest",
+          "Kellyville, North Kellyville, Rouse Hill and Beaumont Hills",
+          "Box Hill, Glenhaven, Dural, Kenthurst and Annangrove",
+          "Winston Hills and Northmead",
+          "Nearby Cherrybrook, West Pennant Hills and Carlingford",
+        ],
+      },
+      {
+        h2: "The Hills Shire in numbers",
+        body: [
+          "The ABS 2021 Census, as published in The Hills Shire community profile, shows:",
+        ],
+        list: [
+          "14.8% of Hills Shire residents were aged 65 and over in 2021, up from 13.5% in 2016",
+          "Residents aged 75–79 rose from 2.2% to 2.8% of the population over the same period",
+          "Residents aged 80–84 rose from 1.4% to 1.7%",
+        ],
+      },
+      {
+        h2: "Home visit physiotherapy in the Hills",
+        body: [
+          "A home visit is a full physiotherapy appointment in your own home, retirement village or aged care residence. Seeing how you move around your own space — stairs, bathroom, bed, chairs and outdoor paths — lets your physiotherapist tailor exercises and advice to where you actually live.",
+          "Home visits are commonly used for:",
+        ],
+        list: [
+          "Balance and falls prevention",
+          "Rehabilitation after a hospital stay, joint replacement or other surgery",
+          "Persistent pain, arthritis and back or neck pain",
+          "Neurological conditions such as stroke and Parkinson's disease",
+          "Walking aid and home exercise program advice",
+          "Physiotherapy for people living with disability",
+        ],
+      },
+      {
+        h2: "Funding options for home visits",
+        body: [
+          "Physiotherapy at home can be paid for privately or through a range of programs, depending on your situation:",
+        ],
+        list: [
+          "Medicare — with a GP Chronic Condition Management Plan and referral",
+          "Support at Home — which replaced Home Care Packages on 1 November 2025; your provider arranges and pays for physio if it's part of your assessed needs",
+          "DVA — for eligible veterans with a DVA referral",
+          "NDIS — we're a registered NDIS provider (NDIS0023718)",
+          "Workers compensation and CTP claims",
+          "Private health insurance (check your extras cover)",
+        ],
+      },
+      {
+        h2: "Onsite workplace physiotherapy for Norwest and Castle Hill",
+        body: [
+          "The Hills District includes Norwest Business Park and the Castle Hill commercial centre, served by Sydney Metro stations at Norwest, Bella Vista and Castle Hill. Our onsite service brings a physiotherapist to your workplace on a regular schedule, so staff can be assessed and treated without leaving work.",
+          "Onsite sessions can include early assessment of aches and strains, ergonomic and workstation reviews, manual handling advice and return-to-work support. We start with a free consultation and site walk-through, and most businesses begin with our 4-Week Onsite Physio Pilot Program.",
+        ],
+      },
+      {
+        h2: "What SafeWork NSW says for 2026-27",
+        body: [
+          "On 1 July 2026, SafeWork NSW released its 2026-27 Regulatory Statement. It lists four priority areas — falls from heights, psychosocial risks, hazardous substances, and mobile plant, vehicles and fixed machinery.",
+          "The same release lists workplace protection reforms that make Codes of Practice legally enforceable in NSW. In the past 12 months, SafeWork NSW reported receiving more than 2,200 requests for service and over 190 incident notifications related to psychosocial hazards.",
+        ],
+      },
+      {
+        h2: "Book a home visit or workplace consultation",
+        body: [
+          "Fletcher Physiotherapy is led by Daniel Lee, an APA Titled Pain Physiotherapist who speaks English and Korean. To book a home visit in the Hills District, or to arrange a free workplace consultation, call 0404 791 756 or use the forms on our Home Visits and Onsite Workplace Physiotherapy pages.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "ndis-changes-october-2026-physiotherapy",
     title: "NDIS Changes from 1 October 2026: What They Mean for Your Physio",
     seoTitle: "NDIS Changes October 2026: What They Mean for Physio",

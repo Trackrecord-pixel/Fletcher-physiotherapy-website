@@ -33,6 +33,7 @@ export const primaryNav: NavLink[] = [
   { label: "Clinic Physiotherapy", href: "/clinic-physiotherapy" },
   { label: "Home Visits", href: "/home-visits" },
   { label: "Onsite Workplace Physio", href: "/onsite-physiotherapy" },
+  { label: "Aged Care Facilities", href: "/aged-care-facility-partnerships" },
   { label: "Services", href: "/services" },
   { label: "Locations", href: "/locations" },
   { label: "About", href: "/about" },
@@ -47,11 +48,10 @@ export const headerNav: NavLink[] = [
   { label: "Clinic Physiotherapy", href: "/clinic-physiotherapy" },
   { label: "Home Visits", href: "/home-visits" },
   { label: "Onsite Workplace Physio", href: "/onsite-physiotherapy" },
+  { label: "Aged Care Facilities", href: "/aged-care-facility-partnerships" },
   { label: "Services", href: "/services" },
-  { label: "Locations", href: "/locations" },
+  // Locations, For Referrers and Contact live in the About dropdown to keep the bar on one line.
   { label: "About", href: "/about" },
-  { label: "For Referrers", href: "/refer-a-patient" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export const clinicNav: NavLink[] = [
@@ -86,6 +86,7 @@ export const teamNav: NavLink[] = aboutNav;
 
 export const servicesNav: NavLink[] = [
   { label: "Onsite Workplace Physiotherapy", href: "/onsite-physiotherapy" },
+  { label: "Aged Care Facility Partnerships", href: "/aged-care-facility-partnerships" },
   { label: "Bulk Billing Physiotherapy", href: "/bulk-billing-physiotherapy-yagoona" },
   { label: "Persistent Pain", href: "/chronic-pain-management" },
   { label: "Musculoskeletal Physiotherapy", href: "/musculoskeletal-physiotherapy" },

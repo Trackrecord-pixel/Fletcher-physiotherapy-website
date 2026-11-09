@@ -68,6 +68,25 @@ export default async function ArticlePage({
   if (!post) notFound();
 
   const others = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
+  // Sydney-focused posts point readers to Sydney home visit and onsite pages.
+  const isSydney = post.slug.includes("hills-district");
+  const related = isSydney
+    ? [
+        { label: "Home Visit Physiotherapy Sydney", href: "/home-visit-physiotherapy-sydney" },
+        { label: "Onsite Workplace Physiotherapy", href: "/onsite-physiotherapy" },
+        { label: "Mobile Physiotherapist Sydney", href: "/mobile-physiotherapist-sydney" },
+        { label: "Aged Care Physiotherapy Sydney", href: "/aged-care-physiotherapy-sydney" },
+        { label: "Support at Home Physiotherapy Sydney", href: "/support-at-home-physiotherapy-sydney" },
+        { label: "NDIS Physiotherapy Sydney", href: "/ndis-physiotherapy-sydney" },
+      ]
+    : [
+        { label: "Home Visit Physiotherapy Newcastle", href: "/home-visit-physiotherapy-newcastle" },
+        { label: "Aged Care Physiotherapy Newcastle", href: "/aged-care-physiotherapy-newcastle" },
+        { label: "Falls Prevention Physiotherapy Newcastle", href: "/falls-prevention-physiotherapy-newcastle" },
+        { label: "NDIS Physiotherapy Newcastle", href: "/ndis-physiotherapy-newcastle" },
+        { label: "Support at Home Physiotherapy Newcastle", href: "/support-at-home-physiotherapy-newcastle" },
+        { label: "Senior Exercise Programs Newcastle", href: "/senior-exercise-programs-newcastle" },
+      ];
 
   const schema = {
     "@context": "https://schema.org",
@@ -185,14 +204,18 @@ export default async function ArticlePage({
 
           <div className="mt-10 rounded-2xl bg-sand p-7 text-center">
             <p className="font-serif text-xl text-navy-900">
-              Need home visit physiotherapy?
+              {isSydney ? "Physio at home or at work in the Hills District" : "Need home visit physiotherapy?"}
             </p>
             <p className="mt-2 text-navy-600">
-              We come to you across Newcastle, Lake Macquarie and the Central Coast — and selected
-              Sydney areas. Clinic appointments in Jesmond on Mondays.
+              {isSydney
+                ? "Home visits across The Hills Shire, and onsite physiotherapy for Norwest and Castle Hill workplaces."
+                : "We come to you across Newcastle, Lake Macquarie and the Central Coast — and selected Sydney areas. Clinic appointments in Jesmond on Mondays."}
             </p>
             <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row">
-              <Link href="/contact" className="btn-primary">Book a Home Visit</Link>
+              <Link href={isSydney ? "/home-visits#referral" : "/contact"} className="btn-primary">Book a Home Visit</Link>
+              {isSydney && (
+                <Link href="/onsite-physiotherapy#consult" className="btn-secondary">Workplace Consultation</Link>
+              )}
               <a href={site.phoneHref} className="btn-secondary">
                 <Icon name="phone" className="h-5 w-5" /> {site.phone}
               </a>
@@ -202,14 +225,7 @@ export default async function ArticlePage({
           <div className="mt-12">
             <h2 className="text-xl text-navy-900">Explore our services</h2>
             <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-              {[
-                { label: "Home Visit Physiotherapy Newcastle", href: "/home-visit-physiotherapy-newcastle" },
-                { label: "Aged Care Physiotherapy Newcastle", href: "/aged-care-physiotherapy-newcastle" },
-                { label: "Falls Prevention Physiotherapy Newcastle", href: "/falls-prevention-physiotherapy-newcastle" },
-                { label: "NDIS Physiotherapy Newcastle", href: "/ndis-physiotherapy-newcastle" },
-                { label: "Support at Home Physiotherapy Newcastle", href: "/support-at-home-physiotherapy-newcastle" },
-                { label: "Senior Exercise Programs Newcastle", href: "/senior-exercise-programs-newcastle" },
-              ].map((r) => (
+              {related.map((r) => (
                 <li key={r.href}>
                   <Link href={r.href} className="inline-flex items-center gap-1.5 text-navy-700 hover:text-navy-900">
                     <Icon name="arrow" className="h-4 w-4 text-navy-400" /> {r.label}
