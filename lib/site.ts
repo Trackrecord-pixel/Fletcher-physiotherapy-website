@@ -50,10 +50,8 @@ export const headerNav: NavLink[] = [
   { label: "Onsite Workplace Physio", href: "/onsite-physiotherapy" },
   { label: "Aged Care Facilities", href: "/aged-care-facility-partnerships" },
   { label: "Services", href: "/services" },
-  { label: "Locations", href: "/locations" },
+  // Locations, For Referrers and Contact live in the About dropdown to keep the bar on one line.
   { label: "About", href: "/about" },
-  { label: "For Referrers", href: "/refer-a-patient" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export const clinicNav: NavLink[] = [
