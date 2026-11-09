@@ -19,7 +19,7 @@ import { sydneyClinics } from "@/lib/sydneyClinics";
 
 const tel = (phone: string) => `tel:+61${phone.replace(/\D/g, "").replace(/^0/, "")}`;
 
-// Numbers offered by the header "Call" button.
+// Numbers offered by the header "Call" button (labels show from 2xl; icon-only below).
 const callOptions = [
   { label: "Main line", note: "Home visits, Jesmond & onsite", phone: site.phone },
   ...sydneyClinics.map((c) => ({ label: `${c.suburb} clinic`, note: "Clinic reception", phone: c.phone })),
