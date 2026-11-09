@@ -767,6 +767,7 @@ export const landingPages: Record<string, LandingContent> = {
       { q: "Which areas do you cover?", a: "Sydney Olympic Park and the Inner West, the Parramatta area and Bankstown–Yagoona. Call us to check your suburb." },
     ],
     related: [
+      { label: "Aged care facility partnerships", href: "/aged-care-facility-partnerships" },
       { label: "Mobile physio Sydney", href: "/mobile-physiotherapist-sydney" },
       { label: "Support at Home physiotherapy Sydney", href: "/support-at-home-physiotherapy-sydney" },
       { label: "Home visit physiotherapy Sydney", href: "/home-visit-physiotherapy-sydney" },
@@ -1264,6 +1265,7 @@ export const landingPages: Record<string, LandingContent> = {
       },
     ],
     related: [
+      { label: "Aged care facility partnerships", href: "/aged-care-facility-partnerships" },
       { label: "Falls Prevention Physiotherapy Newcastle", href: "/falls-prevention-physiotherapy-newcastle" },
       { label: "Home Visit Physiotherapy Newcastle", href: "/home-visit-physiotherapy-newcastle" },
       { label: "Support at Home Physiotherapy Newcastle", href: "/support-at-home-physiotherapy-newcastle" },
