@@ -16,6 +16,7 @@ const staticRoutes = [
   "/ndis-physiotherapy-sydney",
   "/bulk-billing-physiotherapy-yagoona",
   "/onsite-physiotherapy",
+  "/aged-care-facility-partnerships",
   "/book",
   "/refer-a-patient",
   "/contact",
