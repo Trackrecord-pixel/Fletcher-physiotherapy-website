@@ -626,6 +626,7 @@ export const landingPages: Record<string, LandingContent> = {
       { q: "Do you see NDIS participants at home in Sydney?", a: "Yes. We're a registered NDIS provider (NDIS0023718) and see agency-, plan- and self-managed participants." },
     ],
     related: [
+      { label: "Now in Sydney: home visit physiotherapy", href: "/blog/home-visit-physiotherapy-now-in-sydney" },
       { label: "Mobile physio Sydney", href: "/mobile-physiotherapist-sydney" },
       { label: "Aged care physiotherapy Sydney", href: "/aged-care-physiotherapy-sydney" },
       { label: "Support at Home physiotherapy Sydney", href: "/support-at-home-physiotherapy-sydney" },
@@ -702,6 +703,7 @@ export const landingPages: Record<string, LandingContent> = {
       { q: "Can a family member book for me?", a: "Yes. Family members, carers, GPs, support coordinators and aged care providers can all contact us or send a referral." },
     ],
     related: [
+      { label: "Now in Sydney: home visit physiotherapy", href: "/blog/home-visit-physiotherapy-now-in-sydney" },
       { label: "Home visit physiotherapy Sydney", href: "/home-visit-physiotherapy-sydney" },
       { label: "Aged care physiotherapy Sydney", href: "/aged-care-physiotherapy-sydney" },
       { label: "Support at Home physiotherapy Sydney", href: "/support-at-home-physiotherapy-sydney" },
@@ -767,6 +769,7 @@ export const landingPages: Record<string, LandingContent> = {
       { q: "Which areas do you cover?", a: "Sydney Olympic Park and the Inner West, the Parramatta area and Bankstown–Yagoona. Call us to check your suburb." },
     ],
     related: [
+      { label: "Now in Sydney: home visit physiotherapy", href: "/blog/home-visit-physiotherapy-now-in-sydney" },
       { label: "Aged care facility partnerships", href: "/aged-care-facility-partnerships" },
       { label: "Mobile physio Sydney", href: "/mobile-physiotherapist-sydney" },
       { label: "Support at Home physiotherapy Sydney", href: "/support-at-home-physiotherapy-sydney" },
@@ -836,6 +839,7 @@ export const landingPages: Record<string, LandingContent> = {
       { q: "Can my provider refer me directly?", a: "Yes. Providers and care managers can use our referral form or call us." },
     ],
     related: [
+      { label: "Now in Sydney: home visit physiotherapy", href: "/blog/home-visit-physiotherapy-now-in-sydney" },
       { label: "Aged care physiotherapy Sydney", href: "/aged-care-physiotherapy-sydney" },
       { label: "Mobile physio Sydney", href: "/mobile-physiotherapist-sydney" },
       { label: "Support at Home physiotherapy explained", href: "/blog/support-at-home-physiotherapy-explained" },

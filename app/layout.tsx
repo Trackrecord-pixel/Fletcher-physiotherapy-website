@@ -79,13 +79,17 @@ export default function RootLayout({
         <OrganizationSchema />
         <WebSiteSchema />
         <LocalBusinessSchema />
-        <a
-          href="/find-a-clinic"
-          className="block bg-euc-700 px-4 py-2 text-center text-sm text-white hover:bg-euc-800"
-        >
-          Clinics in Jesmond, Yagoona &amp; Parramatta · Home visits across Newcastle, the Central Coast &amp; Sydney.{" "}
-          <span className="font-semibold underline underline-offset-2">Find a clinic →</span>
-        </a>
+        <div className="bg-euc-700 px-4 py-2 text-center text-sm text-white">
+          <a href="/blog/home-visit-physiotherapy-now-in-sydney" className="hover:text-white/80">
+            <span className="mr-2 rounded-full bg-white/15 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide">New</span>
+            Home visits now available across Sydney.{" "}
+            <span className="font-semibold underline underline-offset-2">Find out more →</span>
+          </a>
+          <span className="mx-2 hidden text-white/50 sm:inline">·</span>
+          <a href="/find-a-clinic" className="hidden font-semibold underline underline-offset-2 hover:text-white/80 sm:inline">
+            Find a clinic →
+          </a>
+        </div>
         <SmoothScroll />
         <Header />
         <main id="main">{children}</main>

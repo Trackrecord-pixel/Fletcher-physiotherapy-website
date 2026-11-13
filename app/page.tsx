@@ -157,7 +157,10 @@ export default function HomePage() {
             </Reveal>
             <Reveal delay={100}>
               <div className="flex h-full flex-col rounded-[2rem] bg-navy-900 p-8 text-white sm:p-10">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-beige-300">At home</p>
+                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-beige-300">
+                  At home
+                  <Link href="/blog/home-visit-physiotherapy-now-in-sydney" className="rounded-full bg-[#87f9d3] px-2.5 py-0.5 text-[0.7rem] tracking-wide text-[#0f1714]">New in Sydney</Link>
+                </p>
                 <h3 className="mt-3 text-3xl text-white">Home visit physiotherapy</h3>
                 <p className="mt-3 text-navy-100">
                   We come to your home, retirement village or aged care residence across Sydney, Newcastle, Lake
