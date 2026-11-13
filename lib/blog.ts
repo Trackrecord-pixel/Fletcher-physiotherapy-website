@@ -19,6 +19,79 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "home-visit-physiotherapy-now-in-sydney",
+    title: "Home Visit Physiotherapy Is Now Available Across Sydney",
+    seoTitle: "Home Visit Physiotherapy Now Available in Sydney",
+    description: "Fletcher Physiotherapy now visits homes, retirement villages and aged care residences across Greater Sydney. Areas, funding (Medicare, DVA, NDIS, Support at Home) and how to book.",
+    date: "2026-11-13",
+    readMins: 5,
+    excerpt: "Our home visit service has expanded to Sydney. We now come to you across Greater Sydney — from Sydney Olympic Park and the Inner West to Parramatta, the Hills District and Bankstown–Yagoona.",
+    updated: "2026-11-13",
+    faqs: [
+      { q: "Which parts of Sydney do you visit?", a: "We visit across Greater Sydney. Our main home visit areas are Sydney Olympic Park and the Inner West (including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn and Burwood), Parramatta, the Hills District and Bankstown–Yagoona. If you're outside these areas, call 0404 791 756 and ask." },
+      { q: "What is the free phone consultation?", a: "A free phone call with our team to talk through your situation and check whether a home visit is the right fit. It isn't a physiotherapy assessment or treatment. Standard fees, or your funding program, apply to physiotherapy sessions." },
+      { q: "How soon can I get an appointment?", a: "Home visit appointments in Sydney are available now. Call 0404 791 756 or send an enquiry, and we'll offer the next available times in your area." },
+      { q: "Do I need a referral?", a: "Not for private physiotherapy. A GP referral is needed to use Medicare (a GP Chronic Condition Management Plan), and DVA, NDIS, Support at Home and workers compensation each have their own referral or approval process." },
+    ],
+    sources: [
+      { label: "My Aged Care — Support at Home program", url: "https://www.myagedcare.gov.au/support-home-program" },
+    ],
+    sections: [
+      {
+        h2: "Now visiting homes across Sydney",
+        body: [
+          "Fletcher Physiotherapy's home visit service — established across Newcastle, Lake Macquarie and the Central Coast — is now available in Sydney. We come to your home, retirement village or aged care residence, so there's no travel, parking or waiting room.",
+          "We visit across Greater Sydney. Our main home visit areas are:",
+        ],
+        list: [
+          "Sydney Olympic Park and the Inner West — Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point and Burwood",
+          "Parramatta and surrounds",
+          "The Hills District — Baulkham Hills, Castle Hill, Bella Vista, Kellyville and Rouse Hill",
+          "Bankstown–Yagoona",
+          "Other Sydney suburbs — call and ask",
+        ],
+      },
+      {
+        h2: "Free phone consultation",
+        body: [
+          "Not sure whether a home visit is right for you or a family member? Call for a free phone consultation. We'll talk through what's happening, the funding you may be able to use and whether a home visit suits you.",
+          "The phone consultation is free and there's no obligation to book. It isn't a physiotherapy assessment or treatment; standard fees, or your funding program, apply to physiotherapy sessions. Appointments in Sydney are available now.",
+        ],
+      },
+      {
+        h2: "What a home visit can help with",
+        body: ["A home visit is a full physiotherapy appointment where you live. Seeing how you move around your own space — stairs, lifts, bathroom, bed and chairs — lets us tailor exercises and advice to your home. Common reasons people book:"],
+        list: [
+          "Balance and falls prevention",
+          "Rehabilitation after a hospital stay, joint replacement or other surgery",
+          "Persistent pain, arthritis, and back or neck pain",
+          "Neurological conditions such as stroke and Parkinson's disease",
+          "Walking aid and home exercise advice",
+          "Physiotherapy for people living with disability",
+        ],
+      },
+      {
+        h2: "Ways to pay",
+        body: ["Home visits can be paid for privately or through a funding program, depending on your situation:"],
+        list: [
+          "Medicare — with a GP Chronic Condition Management Plan and referral",
+          "Support at Home — which replaced Home Care Packages on 1 November 2025; your provider arranges physio if it's part of your assessed needs",
+          "DVA — for eligible veterans with a DVA referral",
+          "NDIS — we're a registered NDIS provider (NDIS0023718)",
+          "Workers compensation and CTP claims",
+          "Private health insurance (check your extras cover)",
+        ],
+      },
+      {
+        h2: "How to book",
+        body: [
+          "Call 0404 791 756 for a free phone consultation or to book, or send an enquiry through our Home Visits page. GPs, support coordinators and aged care providers can refer using our online referral form.",
+          "Home visits are led by Daniel Lee, an APA Titled Pain Physiotherapist who speaks English and Korean. We also see clinic patients at Yagoona (Tuesdays) and Parramatta (Wednesdays).",
+        ],
+      },
+    ],
+  },
+  {
     slug: "home-visit-and-onsite-physiotherapy-hills-district",
     title: "Physiotherapy in the Hills District: Home Visits and Onsite Workplace Physio",
     seoTitle: "Home Visit & Onsite Physio in the Hills District, Sydney",
