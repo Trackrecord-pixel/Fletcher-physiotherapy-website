@@ -69,7 +69,7 @@ export default async function ArticlePage({
 
   const others = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
   // Sydney-focused posts point readers to Sydney home visit and onsite pages.
-  const isSydney = post.slug.includes("hills-district");
+  const isSydney = post.slug.includes("hills-district") || post.slug.includes("sydney");
   const related = isSydney
     ? [
         { label: "Home Visit Physiotherapy Sydney", href: "/home-visit-physiotherapy-sydney" },
@@ -204,11 +204,11 @@ export default async function ArticlePage({
 
           <div className="mt-10 rounded-2xl bg-sand p-7 text-center">
             <p className="font-serif text-xl text-navy-900">
-              {isSydney ? "Physio at home or at work in the Hills District" : "Need home visit physiotherapy?"}
+              {isSydney ? (post.slug.includes("hills-district") ? "Physio at home or at work in the Hills District" : "Home visit physiotherapy across Sydney") : "Need home visit physiotherapy?"}
             </p>
             <p className="mt-2 text-navy-600">
               {isSydney
-                ? "Home visits across The Hills Shire, and onsite physiotherapy for Norwest and Castle Hill workplaces."
+                ? (post.slug.includes("hills-district") ? "Home visits across The Hills Shire, and onsite physiotherapy for Norwest and Castle Hill workplaces." : "Free phone consultation to check whether a home visit suits you. Appointments available now.")
                 : "We come to you across Newcastle, Lake Macquarie and the Central Coast — and selected Sydney areas. Clinic appointments in Jesmond on Mondays."}
             </p>
             <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row">
