@@ -35,7 +35,7 @@ export default function Page() {
       intro="No travel, no parking, no waiting rooms. Our mobile physiotherapists deliver experienced care in the comfort and safety of your own home across Newcastle, Lake Macquarie and the Central Coast."
       lead={[
         "Home visit physiotherapy removes the biggest barriers to consistent care — getting to and from a clinic. For older adults, people living with disability, and anyone recovering from surgery or illness, travel can be exhausting, painful or simply not possible. We solve that by bringing the physiotherapy to you.",
-        "Being treated in your own environment is also clinically powerful. We assess and train you in the exact spaces where you face challenges — your hallway, your stairs, your bathroom, your favourite chair. That means your program is genuinely relevant to your daily life, and the gains you make translate directly into real-world independence.",
+        "Being treated in your own environment also has practical benefits. We assess and train you in the exact spaces where you face challenges — your hallway, your stairs, your bathroom, your favourite chair. That means your program is genuinely relevant to your daily life, and it is built around your everyday activities.",
         "We bring the equipment we need, work around your routine, and keep families, carers and referrers informed every step of the way.",
       ]}
       benefits={[
