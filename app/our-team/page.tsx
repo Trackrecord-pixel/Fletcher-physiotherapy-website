@@ -8,7 +8,7 @@ import { BreadcrumbSchema, PersonSchema } from "@/components/StructuredData";
 import { team } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Our Team | Newcastle Physiotherapists",
+  title: "Our Team | Physiotherapists in Sydney & Newcastle",
   description:
     "Meet the Fletcher Physiotherapy team — experienced, caring physios focused on home visits, pain, NDIS, Support at Home and rehab for older adults.",
   alternates: { canonical: "/our-team" },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Our Team | Newcastle Physiotherapists",
+    title: "Our Team | Physiotherapists in Sydney & Newcastle",
     description:
       "Meet the Fletcher Physiotherapy team — experienced, caring physios focused on home visits, pain, NDIS, Support at Home and rehab for older adults.",
     url: "/our-team",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Team | Newcastle Physiotherapists",
+    title: "Our Team | Physiotherapists in Sydney & Newcastle",
     description:
       "Meet the Fletcher Physiotherapy team — experienced, caring physios focused on home visits, pain, NDIS, Support at Home and rehab for older adults.",
     images: ["/images/og-default.png"],
