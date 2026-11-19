@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Book an Appointment | Fletcher Physiotherapy Newcastle",
+    title: "Book an Appointment | Fletcher Physiotherapy",
     description:
       "Book physio at our Jesmond, Yagoona or Parramatta clinic, or a home visit across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
     url: "/book",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Book an Appointment | Fletcher Physiotherapy Newcastle",
+    title: "Book an Appointment | Fletcher Physiotherapy",
     description:
       "Book physio at our Jesmond, Yagoona or Parramatta clinic, or a home visit across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
     images: ["/images/og-default.png"],
@@ -57,7 +57,7 @@ export default function BookPage() {
             <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-white"><Icon name="home" className="h-6 w-6" /></span>
             <span className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700"><Icon name="home" className="h-3.5 w-3.5" /> We come to you</span>
             <h2 className="mt-3 text-xl text-navy-900">Home Visit Physiotherapy</h2>
-            <p className="mt-2 flex-grow text-sm text-navy-600">Mobile physiotherapy across Newcastle, Lake Macquarie and the Central Coast — no travel, parking or waiting rooms.</p>
+            <p className="mt-2 flex-grow text-sm text-navy-600">Mobile physiotherapy across Sydney, Newcastle, Lake Macquarie and the Central Coast — no travel, parking or waiting rooms.</p>
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-5 w-full">Book Appointment <Icon name="arrow" className="h-4 w-4" /></a>
             <Link href="/home-visit-physiotherapy-newcastle" className="mt-3 text-center text-sm font-semibold text-navy-700 hover:text-navy-900">Learn more</Link>
           </div>
