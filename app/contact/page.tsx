@@ -34,7 +34,7 @@ const details = [
   { icon: "phone", label: "Phone", value: site.phone, href: site.phoneHref },
   { icon: "mail", label: "Email", value: site.email, href: site.emailHref },
   { icon: "clock", label: "Hours", value: site.hours },
-  { icon: "pin", label: "Service areas", value: "Newcastle · Lake Macquarie · Central Coast" },
+  { icon: "pin", label: "Service areas", value: "Sydney · Newcastle · Lake Macquarie · Central Coast" },
 ];
 
 export default function ContactPage() {
@@ -42,7 +42,7 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact Us"
-        title="Book your home visit physiotherapy"
+        title="Book a clinic appointment or home visit"
         intro="Ready to get started, or have a question about NDIS, Support at Home or what to expect? We'd love to hear from you."
         breadcrumb={[
           { name: "Home", href: "/" },
