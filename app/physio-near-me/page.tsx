@@ -9,10 +9,16 @@ import SuburbChecker, { type CheckerEntry } from "@/components/SuburbChecker";
 import { BreadcrumbSchema, FaqSchema } from "@/components/StructuredData";
 import { clinics, locations, suburbs, site } from "@/lib/site";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
+import { sydneyClinics } from "@/lib/sydneyClinics";
+
+const allClinicCards = [
+  ...clinics.map((c) => ({ slug: c.slug, day: c.dayShort, host: c.hostCentre, address: c.address })),
+  ...sydneyClinics.map((c) => ({ slug: c.slug, day: c.days ?? "Call to book", host: c.hostCentre, address: `${c.streetAddress}, ${c.suburb} NSW ${c.postcode}` })),
+];
 
 const title = "Physio Near Me: Newcastle & Sydney Home Visits";
 const description =
-  "Find a physio near you: Jesmond clinic, plus home visits across Newcastle, Lake Macquarie, Central Coast and Sydney. Check your suburb.";
+  "Find a physio near you: clinics in Jesmond, Yagoona and Parramatta, plus home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast.";
 
 export const metadata: Metadata = {
   title,
@@ -81,7 +87,7 @@ const faqs = [
   },
   {
     q: "Should I choose a clinic or a home visit?",
-    a: "A clinic suits people who can travel easily and want a Monday appointment in Jesmond. A home visit suits people who find travel hard, are recovering after hospital, are at risk of falls, or want advice for their own home. If you're unsure, call and we'll help you choose.",
+    a: "A clinic suits people who can travel easily: Jesmond on Mondays, Yagoona on Tuesdays or Parramatta on Wednesdays. A home visit suits people who find travel hard, are recovering after hospital, are at risk of falls, or want advice for their own home. If you're unsure, call and we'll help you choose.",
   },
   {
     q: "How quickly can I be seen?",
@@ -113,7 +119,7 @@ export default function PhysioNearMePage() {
       <PageHero
         eyebrow="Physio Near Me"
         title="Find a Physio Near You"
-        intro="Visit our Jesmond clinic, or have a physiotherapist come to your home across Newcastle, Lake Macquarie, the Central Coast — and Sydney."
+        intro="Visit our clinics in Jesmond, Yagoona or Parramatta, or have a physiotherapist come to your home across Sydney, Newcastle, Lake Macquarie and the Central Coast."
         breadcrumb={crumbs}
       />
 
@@ -141,18 +147,18 @@ export default function PhysioNearMePage() {
 
       <section className="section-py bg-sand">
         <div className="container-px">
-          <h2 className="text-center text-3xl text-navy-900">Three ways to see us</h2>
+          <h2 className="text-center text-3xl text-navy-900">Ways to see us</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {clinics.map((c) => (
+            {allClinicCards.map((c) => (
               <div key={c.slug} className="card flex h-full flex-col">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-white"><Icon name="pin" className="h-6 w-6" /></span>
                 <span className="mt-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-beige-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy-700">
-                  <Icon name="clock" className="h-3.5 w-3.5" /> Clinic · {c.dayShort}
+                  <Icon name="clock" className="h-3.5 w-3.5" /> Clinic · {c.day}
                 </span>
-                <h3 className="mt-3 text-lg text-navy-900">{c.hostCentre}</h3>
+                <h3 className="mt-3 text-lg text-navy-900">{c.host}</h3>
                 <p className="mt-2 flex-grow text-sm text-navy-600">{c.address}</p>
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${c.hostCentre}, ${c.address}`)}`}
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${c.host}, ${c.address}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 text-sm font-semibold text-navy-700 underline hover:text-navy-900"
@@ -174,9 +180,9 @@ export default function PhysioNearMePage() {
             <div className="card flex h-full flex-col border-clay-200">
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-clay-500 text-white"><Icon name="home" className="h-6 w-6" /></span>
               <h3 className="mt-3 text-lg text-navy-900">Home visits — Sydney</h3>
-              <p className="mt-2 flex-grow text-sm text-navy-600">Around Sydney Olympic Park, the Inner West and surrounding suburbs.</p>
+              <p className="mt-2 flex-grow text-sm text-navy-600">Around Sydney Olympic Park and the Inner West, the Parramatta area, the Hills and Bankstown–Yagoona.</p>
               <OfferWindow>
-                <p className="mt-3 rounded-lg bg-clay-50 px-3 py-2 text-xs text-navy-700">FREE phone consultation for new Sydney clients until 31 Dec 2026.</p>
+                <p className="mt-3 rounded-lg bg-clay-50 px-3 py-2 text-xs text-navy-700">Free phone consultation for new Sydney clients until 31 Dec 2026, to check whether a home visit suits you. Standard fees apply to sessions.</p>
               </OfferWindow>
               <Link href="/physiotherapy-sydney" className="btn-secondary mt-4 w-full">Sydney details</Link>
             </div>
@@ -197,7 +203,7 @@ export default function PhysioNearMePage() {
             <div className="card">
               <h3 className="text-lg text-navy-900">A clinic may suit you if…</h3>
               <ul className="mt-3 space-y-2 text-sm text-navy-700">
-                {["You can drive or travel easily", "A Monday appointment works for you", "You'd like to use clinic equipment", "You live near Jesmond"].map((x) => (
+                {["You can drive or travel easily", "A weekday clinic appointment works for you", "You'd like to use clinic equipment", "You live near Jesmond, Yagoona or Parramatta"].map((x) => (
                   <li key={x} className="flex gap-2"><Icon name="check" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {x}</li>
                 ))}
               </ul>
