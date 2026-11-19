@@ -209,7 +209,7 @@ export default async function ArticlePage({
             <p className="mt-2 text-navy-600">
               {isSydney
                 ? (post.slug.includes("hills-district") ? "Home visits across The Hills Shire, and onsite physiotherapy for Norwest and Castle Hill workplaces." : "Free phone consultation to check whether a home visit suits you. Appointments available now.")
-                : "We come to you across Newcastle, Lake Macquarie and the Central Coast — and selected Sydney areas. Clinic appointments in Jesmond on Mondays."}
+                : "We come to you across Sydney, Newcastle, Lake Macquarie and the Central Coast. Clinics in Jesmond, Yagoona and Parramatta."}
             </p>
             <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row">
               <Link href={isSydney ? "/home-visits#referral" : "/contact"} className="btn-primary">Book a Home Visit</Link>
