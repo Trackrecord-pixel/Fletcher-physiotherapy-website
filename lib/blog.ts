@@ -19,6 +19,234 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "gp-care-plan-physiotherapy-at-home",
+    title: "Using a GP Chronic Condition Management Plan for Physiotherapy at Home",
+    seoTitle: "GP Care Plan Physio at Home: How Medicare Works (2026)",
+    description: "How the Medicare GP Chronic Condition Management Plan (GPCCMP) covers physiotherapy: 5 allied health services a year, referral rules, reports, and using it for home visits in Sydney.",
+    date: "2026-11-19",
+    readMins: 6,
+    excerpt: "A GP Chronic Condition Management Plan can help pay for up to 5 allied health services a year, including physiotherapy at home. Here's how it works in 2026.",
+    updated: "2026-11-19",
+    faqs: [
+      { q: "How many physio sessions does a GP care plan cover?", a: "Eligible patients can use 5 allied health services per calendar year under a GP Chronic Condition Management Plan. They can all be physiotherapy, or a mix — for example 3 physiotherapy and 2 podiatry." },
+      { q: "Can I use my GP care plan for a home visit?", a: "Yes, if the physiotherapist attends in person for at least 20 minutes and treats you individually. Ask us before booking about the home visit fee and the Medicare rebate, so you know any out-of-pocket cost." },
+      { q: "I still have an old GP Management Plan. Is it valid?", a: "Plans and team care arrangements in place before 1 July 2025 can continue to be used until 30 June 2027. From 1 July 2027, a GP Chronic Condition Management Plan is required." },
+      { q: "Can I use it while I'm in hospital?", a: "No. Hospital in-patients aren't eligible. You can use it once you're home, including when you've been discharged under the plan." },
+    ],
+    sources: [
+      { label: "Services Australia — Services available under a GP chronic condition management plan", url: "https://www.servicesaustralia.gov.au/allied-health-and-other-primary-health-care-referrals-for-gp-chronic-condition-management-plans?context=20" },
+    ],
+    sections: [
+      {
+        h2: "Quick answer",
+        body: ["If you live with a chronic condition, your GP can prepare a GP Chronic Condition Management Plan (GPCCMP) and refer you to a physiotherapist. Services Australia states:"],
+        list: [
+          "Eligible patients can use 5 allied health services per calendar year",
+          "The 5 can be one type (for example 5 physiotherapy services) or a mix of different services",
+          "The physiotherapist must attend in person for at least 20 minutes and treat you individually",
+          "Referrals are valid for the timeframe stated; if none is stated, for 18 months from the first service",
+          "Hospital in-patients aren't eligible",
+        ],
+      },
+      {
+        h2: "Old plans and the 2027 deadline",
+        body: [
+          "The GPCCMP started on 1 July 2025. If you had a GP Management Plan or Team Care Arrangement before then, you can keep using services under it until 30 June 2027.",
+          "From 1 July 2027, a GPCCMP will be required for ongoing access to allied health services. If your plan is older, it's worth asking your GP to update it at your next visit.",
+        ],
+      },
+      {
+        h2: "Using your plan for a home visit",
+        body: [
+          "Your GP decides whether physiotherapy would help your condition and writes the referral. Once you have it, we can see you at home, in a retirement village or in an aged care residence.",
+          "Before booking, we'll explain the home visit fee and the Medicare rebate so you know any out-of-pocket cost. After your first and last sessions, we send a written report to your GP covering the assessment, treatment and recommendations.",
+        ],
+      },
+      {
+        h2: "Making 5 sessions count",
+        body: ["Five sessions a year go further with a plan:"],
+        list: [
+          "Agree one or two practical goals at the first visit — for example walking to the letterbox or getting out of a chair safely",
+          "Use the visits for assessment, a home exercise program and checking progress, rather than hands-on treatment alone",
+          "Involve family or carers so exercises continue between visits",
+          "Ask about other funding you may have, such as DVA, NDIS or Support at Home",
+        ],
+      },
+      {
+        h2: "Book a home visit",
+        body: ["Fletcher Physiotherapy visits homes across Sydney, Newcastle, Lake Macquarie and the Central Coast. Call 0404 791 756 or send an enquiry through our Home Visits page. GPs can refer using our online referral form."],
+      },
+    ],
+  },
+  {
+    slug: "dva-physiotherapy-at-home",
+    title: "DVA Physiotherapy at Home: A Guide for Veterans and Families",
+    seoTitle: "DVA Physiotherapy at Home: Gold & White Card Guide",
+    description: "How DVA-funded physiotherapy at home works: Gold and White Card coverage, GP referrals, the 12-session treatment cycle, TPI exemptions and changes coming on 1 July 2027.",
+    date: "2026-11-19",
+    readMins: 6,
+    excerpt: "Veteran Card holders can have physiotherapy at home. Here's what the Gold and White Cards cover, how referrals and treatment cycles work, and what changes in July 2027.",
+    updated: "2026-11-19",
+    faqs: [
+      { q: "Does DVA pay for physiotherapy at home?", a: "Yes, when it's clinically necessary and you have a valid referral. DVA's provider guidelines list the home as one of the places a standard physiotherapy consultation can be provided." },
+      { q: "Do I pay a gap?", a: "No. Providers who accept a Veteran Card agree to accept the DVA fee as full payment and can't charge a gap fee." },
+      { q: "How many sessions can I have?", a: "A referral lasts up to 12 sessions or one year, whichever ends first. You can have as many treatment cycles as your GP decides are clinically necessary. TPI Gold Card holders are exempt from the treatment cycle for physiotherapy." },
+      { q: "What is changing in 2027?", a: "DVA has announced that from 1 July 2027 the 12-session treatment cycle will be removed, and a review will occur if allied health treatment reaches $5,000 in a year. DVA describes the threshold as a checkpoint, not a cap." },
+    ],
+    sources: [
+      { label: "DVA — Physiotherapists (provider information)", url: "https://www.dva.gov.au/get-support/providers/dental-psychology-allied-health-professions/physiotherapists" },
+      { label: "DVA — Allied health treatment cycle", url: "https://www.dva.gov.au/get-support/health-support/health-services/allied-health-treatment-cycle" },
+      { label: "DVA — Changes to allied health services and the $5,000 threshold (factsheet, September 2026)", url: "https://www.dva.gov.au/sites/default/files/2026-09/allied-health-changes-factsheet_1sep2026.pdf" },
+    ],
+    sections: [
+      {
+        h2: "What your Veteran Card covers",
+        body: ["According to DVA, a Veteran Card covers physiotherapy that is clinically necessary:"],
+        list: [
+          "Veteran Gold Card — for all conditions",
+          "Veteran White Card — for specific, accepted conditions only",
+        ],
+      },
+      {
+        h2: "Referrals and the treatment cycle",
+        body: [
+          "You need a valid referral from your GP. For a first treatment cycle, the referral can also come from a medical specialist, a treating hospital doctor or a hospital discharge planner — useful if you're coming home from hospital.",
+          "A referral lasts up to 12 sessions or one year, whichever ends first. At the end of the cycle we send a report to your GP, who decides whether a new referral is needed. There's no limit on the number of treatment cycles your GP considers clinically necessary.",
+          "TPI Gold Card holders are exempt from the treatment cycle for physiotherapy and exercise physiology. Veterans with severe or complex needs may have tailored arrangements through the At Risk Client Framework, decided by their usual GP.",
+        ],
+      },
+      {
+        h2: "Physiotherapy at home",
+        body: [
+          "DVA's provider guidelines list the home as one of the settings for a standard physiotherapy consultation, along with clinics, hospitals and residential aged care. Providers who accept your Veteran Card accept the DVA fee as full payment, so there's no gap to pay.",
+          "At home we can work on balance and falls prevention, recovery after surgery or a hospital stay, pain, and mobility around your own house. Where you need equipment such as a walking frame, we can order clinically necessary items through DVA's Rehabilitation Appliances Program.",
+        ],
+      },
+      {
+        h2: "Changes from 1 July 2027",
+        body: ["In September 2026 DVA published a factsheet on changes to allied health from 1 July 2027:"],
+        list: [
+          "The 12-session treatment cycle will be removed",
+          "If allied health treatment reaches $5,000 in a year, a review will check that care remains clinically appropriate — DVA describes this as a checkpoint, not a cap",
+          "The threshold won't apply to those eligible for the Special Rate Disability Pension, the TPI Pension, or those assessed as Catastrophically Injured",
+        ],
+      },
+      {
+        h2: "Book a DVA home visit",
+        body: ["Fletcher Physiotherapy provides DVA-funded home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast. Call 0404 791 756 with your referral, or ask your GP to send it through our online referral form."],
+      },
+    ],
+  },
+  {
+    slug: "apartment-living-falls-prevention-sydney",
+    title: "Staying Safe in an Apartment: Falls Prevention for Older Adults in Sydney",
+    seoTitle: "Apartment Falls Prevention for Older Adults | Sydney",
+    description: "Practical falls prevention for older adults living in Sydney apartments: lifts and corridors, small bathrooms, balconies, car parks and getting to the street safely.",
+    date: "2026-11-19",
+    readMins: 5,
+    excerpt: "Lifts, long corridors, compact bathrooms and basement car parks bring their own falls risks. Practical ways to move more safely in a Sydney apartment.",
+    updated: "2026-11-19",
+    faqs: [
+      { q: "Can a physiotherapist help with falls in an apartment building?", a: "Yes. A home visit lets us practise the routes you actually use — from your bed and bathroom to the lift, the lobby, the car park and the street — and tailor balance and strength exercises to them." },
+      { q: "Who pays for a falls prevention home visit?", a: "Options include Medicare (with a GP Chronic Condition Management Plan), DVA, NDIS, Support at Home and private payment. We'll explain costs before your first visit." },
+    ],
+    sections: [
+      {
+        h2: "Why apartments are different",
+        body: [
+          "Many older Sydneysiders live in apartments, and the risks look different from a house. Stairs may be fewer, but there are heavy fire doors, long corridors, lifts that close quickly, smooth lobby floors and sloping car park ramps.",
+          "A home visit lets a physiotherapist look at the whole route you take each day — not just inside your unit.",
+        ],
+      },
+      {
+        h2: "Inside your apartment",
+        body: [],
+        list: [
+          "Compact bathrooms: a shower chair and a well-placed grab rail make standing and turning safer; non-slip mats inside and outside the shower",
+          "Open-plan floors: watch for rugs, cords and furniture edges on the paths you walk most",
+          "Night-time: a light or motion sensor between the bed and the bathroom",
+          "Balconies: a raised door track is a common trip point — step over it slowly, holding the frame",
+          "Kitchen: keep everyday items between waist and shoulder height to avoid stepladders",
+        ],
+      },
+      {
+        h2: "Corridors, lifts and lobbies",
+        body: [],
+        list: [
+          "Heavy fire doors: let the door fully open before you step through; if it's too heavy, ask building management about adjustments",
+          "Lifts: wait for others to exit, step in with your walking aid first, and hold the rail while it moves",
+          "Polished lobby floors: shoes with a firm, non-slip sole matter more than you'd think",
+          "Long corridors: if you tire, plan a rest point — a seat in the lobby or near the lift",
+        ],
+      },
+      {
+        h2: "Car parks and the walk to the street",
+        body: ["Basement car parks are often dim, with ramps, kerbs and wheel stops. Ask building management about lighting, take the pedestrian path rather than the vehicle ramp where one exists, and carry less so a hand stays free."],
+      },
+      {
+        h2: "Exercises that help",
+        body: ["Falls prevention isn't only about the environment. Balance and leg strength can be trained. A physiotherapist can set exercises that suit you — using your kitchen bench, the corridor or the building's stairs — and progress them safely over several weeks."],
+      },
+      {
+        h2: "Book a home visit",
+        body: ["Fletcher Physiotherapy visits apartments, retirement villages and homes across Sydney, including Sydney Olympic Park, the Inner West, Parramatta, the Hills District and Bankstown–Yagoona. Call 0404 791 756 for a free phone consultation to see whether a home visit suits you (standard fees, or your funding program, apply to physiotherapy sessions)."],
+      },
+    ],
+  },
+  {
+    slug: "coming-home-from-hospital-western-sydney",
+    title: "Coming Home From Hospital in Western Sydney: The First Two Weeks",
+    seoTitle: "Home From Hospital in Western Sydney: First 2 Weeks",
+    description: "A practical guide for families when an older relative comes home from hospital in Western Sydney: preparing the home, the first two weeks, and arranging physiotherapy at home.",
+    date: "2026-11-19",
+    readMins: 5,
+    excerpt: "The first fortnight at home after a hospital stay matters. A practical checklist for families, and how physiotherapy at home fits in.",
+    updated: "2026-11-19",
+    faqs: [
+      { q: "Can a hospital refer for physio at home?", a: "For DVA clients, a hospital discharge planner or treating hospital doctor can make the first referral. For Medicare, ask the GP for a GP Chronic Condition Management Plan referral after discharge. Private physiotherapy needs no referral." },
+      { q: "How soon after discharge should physio start?", a: "Follow the hospital team's advice. Many people benefit from a first home visit in the first week or two, to check walking, transfers and the home set-up." },
+    ],
+    sources: [
+      { label: "DVA — Physiotherapists (referrals from hospital discharge planners)", url: "https://www.dva.gov.au/get-support/providers/dental-psychology-allied-health-professions/physiotherapists" },
+      { label: "Services Australia — GP chronic condition management plan services", url: "https://www.servicesaustralia.gov.au/allied-health-and-other-primary-health-care-referrals-for-gp-chronic-condition-management-plans?context=20" },
+    ],
+    sections: [
+      {
+        h2: "Before they come home",
+        body: ["Whether your relative is coming home from Westmead, Concord, Bankstown–Lidcombe, Auburn or another hospital, a little preparation helps:"],
+        list: [
+          "Ask the ward team for the discharge summary, medication list and any exercise sheet",
+          "Ask what walking aid they're using in hospital and whether they need one at home",
+          "Clear a path from the bed to the bathroom and the kitchen",
+          "Put frequently used items within easy reach",
+          "Book a GP appointment for the first week after discharge",
+        ],
+      },
+      {
+        h2: "The first two weeks",
+        body: ["Energy is often lower than expected after a hospital stay. In the first fortnight:"],
+        list: [
+          "Keep moving little and often — short walks around the home several times a day",
+          "Get up slowly: sit on the edge of the bed for a moment before standing",
+          "Use the walking aid every time, including at night",
+          "Watch for new confusion, dizziness or a fall, and contact the GP if they happen",
+          "Write down questions for the GP and physiotherapist",
+        ],
+      },
+      {
+        h2: "Where physiotherapy at home fits",
+        body: [
+          "A home visit checks how your relative actually manages at home — getting in and out of bed, on and off the toilet, in the shower, and walking to the front door or the lift. We then set a simple exercise program and suggest equipment if it's needed.",
+          "For DVA clients, a hospital discharge planner or treating hospital doctor can make the first referral. Medicare-funded physio needs a GP Chronic Condition Management Plan referral after discharge, and Support at Home or NDIS funding can also be used where it applies. Private physiotherapy needs no referral.",
+        ],
+      },
+      {
+        h2: "Book a home visit",
+        body: ["Fletcher Physiotherapy visits homes across Western Sydney, including Parramatta, the Hills District, Sydney Olympic Park and Bankstown–Yagoona. Call 0404 791 756 to arrange a visit, or ask the hospital or GP to refer through our online referral form."],
+      },
+    ],
+  },
+  {
     slug: "home-visit-physiotherapy-now-in-sydney",
     title: "Home Visit Physiotherapy Is Now Available Across Sydney",
     seoTitle: "Home Visit Physiotherapy Now Available in Sydney",
