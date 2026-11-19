@@ -49,10 +49,7 @@ export default function Hero() {
 
           <p className="mt-6 text-sm text-navy-600">
             Medicare GPCCMP, DVA, NDIS, Support at Home &amp; private clients welcome ·{" "}
-            <a href={site.reviewsUrl.replace("/review", "")} target="_blank" rel="noopener noreferrer" className="font-semibold text-navy-800 underline">
-              Read our Google reviews
-            </a>{" "}
-            · <Link href="/physiotherapy-sydney" className="font-semibold text-navy-800 underline">Sydney service</Link>{" "}
+<Link href="/physiotherapy-sydney" className="font-semibold text-navy-800 underline">Sydney service</Link>{" "}
             · <Link href="/physio-near-me" className="font-semibold text-navy-800 underline">Check your suburb</Link>
           </p>
         </div>

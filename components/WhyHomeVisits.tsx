@@ -66,7 +66,7 @@ export default function WhyHomeVisits({ region = "newcastle" }: { region?: Regio
           <p className="mt-4 text-lg leading-relaxed text-navy-700">
             In a clinic, a physio sees how you move on a treatment bed. At home we see how you get out of your own bed,
             onto your own toilet and up your own front step — the places where everyday life, and most falls, actually
-            happen. After five years of home visits, these are the things we check most often.
+            happen. These are the things we check most often on home visits.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function WhyHomeVisits({ region = "newcastle" }: { region?: Regio
           <div className="rounded-2xl bg-navy-900 p-7 text-white">
             <h3 className="text-xl text-white">Persistent pain? Home is where we work on it</h3>
             <p className="mt-3 leading-relaxed text-navy-100">
-              Our director, Daniel Lee, is an APA Titled Pain Physiotherapist with a Master of Medicine (Pain
+              Our director, Daniel Lee, is an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain
               Management). With long-term pain the goal isn&rsquo;t only less pain — it&rsquo;s doing more with less
               worry. At home we can work on the exact task you&rsquo;ve been avoiding, like hanging out the washing or
               getting into the car, and build it up step by step.
