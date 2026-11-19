@@ -48,7 +48,7 @@ const services: { icon: IconName; label: string }[] = [
   { icon: "recovery", label: "Home rehabilitation after surgery or hospital discharge" },
   { icon: "balance", label: "Balance, strength, mobility and falls-prevention support" },
   { icon: "pulse", label: "Evidence-based physiotherapy for persistent and complex pain" },
-  { icon: "clock", label: "Prompt appointments with flexible times and minimal waiting" },
+  { icon: "clock", label: "Flexible appointment times" },
 ];
 
 const faqs = [
@@ -228,7 +228,7 @@ export default function SydneyPage() {
           <div className="max-w-2xl">
             <h2 className="text-3xl text-white">Mobile physiotherapy home visits in Sydney</h2>
             <p className="mt-3 text-navy-100">
-              Around Sydney Olympic Park, the Inner West and surrounding suburbs,.
+              Around Sydney Olympic Park and the Inner West, the Parramatta area, the Hills and Bankstown–Yagoona.
             </p>
           </div>
           <div className="flex flex-shrink-0 flex-col gap-3 sm:flex-row">
