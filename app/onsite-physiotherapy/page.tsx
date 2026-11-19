@@ -185,7 +185,7 @@ export default function OnsitePhysiotherapyPage() {
               information with their consent, and business reports are de-identified.
             </p>
             <p className="mt-4 text-navy-700">
-              Programs are led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Medicine (Pain
+              Programs are led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain
               Management) from the University of Sydney.
             </p>
           </div>
