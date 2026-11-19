@@ -41,7 +41,7 @@ export const sydneySuburbs: SydneySuburb[] = [
       "Home visit physiotherapy in Sydney Olympic Park — for older adults, NDIS participants, Support at Home clients and people recovering after hospital.",
     local: [
       "Sydney Olympic Park is the centre of our Sydney service area. Its growing residential precinct sits alongside Newington and Wentworth Point, with many residents living in apartments around the town centre and parklands.",
-      "Because we're based around Sydney Olympic Park, it's where we can usually offer the most flexible appointment times for Sydney clients.",
+      "It's one of the areas where we can usually offer the most flexible home visit times for Sydney clients.",
     ],
     homeVisitNotes: [
       "Apartment living brings its own challenges — lifts, long corridors, car-park access and compact bathrooms. Seeing you at home lets us practise the exact routes and transfers you use every day.",
@@ -52,7 +52,7 @@ export const sydneySuburbs: SydneySuburb[] = [
     faqs: [
       {
         q: "Do you have a clinic in Sydney Olympic Park?",
-        a: "No. In Sydney we are a mobile service — we come to your home, retirement village or aged care residence. Our clinic is in Jesmond, Newcastle.",
+        a: "No. In Sydney Olympic Park we come to you — at home, in a retirement village or an aged care residence. Our nearest clinics are in Parramatta (Wednesdays) and Yagoona (Tuesdays).",
       },
       {
         q: "Can you visit me in an apartment building?",
