@@ -453,7 +453,7 @@ export const landingPages: Record<string, LandingContent> = {
     lead: [
       "Fletcher Physiotherapy consults inside three GP practices: HealthSure Medical Centre Jesmond in Newcastle (Mondays), Yagoona Family HealthCare (Tuesdays) and Parramatta Medical and Dental Centre (Wednesdays).",
       "Seeing a physiotherapist inside your GP's practice keeps care simple. Referrals are easy, your GP can be kept up to date with your consent, and Medicare GP Chronic Condition Management Plan (GPCCMP) referrals fit naturally into the process.",
-      "Clinic care is led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management).",
+      "Clinic care is led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management).",
     ],
     sections: [
       {
@@ -537,7 +537,7 @@ export const landingPages: Record<string, LandingContent> = {
       {
         h2: "Where we visit",
         body: [
-          "Sydney: around Sydney Olympic Park and the Inner West, the Parramatta area, and Bankstown–Yagoona.",
+          "Sydney: around Sydney Olympic Park and the Inner West, the Parramatta area, the Hills and Bankstown–Yagoona.",
           "Newcastle and Lake Macquarie, the lower Hunter, and the Central Coast.",
         ],
       },
@@ -563,7 +563,7 @@ export const landingPages: Record<string, LandingContent> = {
       },
     ],
     faqs: [
-      { q: "Which areas do you visit?", a: "Sydney (Sydney Olympic Park, the Inner West, the Parramatta area and Bankstown–Yagoona), Newcastle, Lake Macquarie, the lower Hunter and the Central Coast. Call us to check your suburb." },
+      { q: "Which areas do you visit?", a: "Sydney (Sydney Olympic Park, the Inner West, the Parramatta area, the Hills and Bankstown–Yagoona), Newcastle, Lake Macquarie, the lower Hunter and the Central Coast. Call us to check your suburb." },
       { q: "How long is a home visit?", a: "The first visit is about 60 minutes and includes assessment, goals and a home program. Follow-up visits are usually shorter." },
       { q: "How quickly can you visit?", a: "We aim to call you back within 24 hours and the first visit is usually within a week." },
       { q: "Can family members be there?", a: "Yes. Family and carers are welcome — it often helps them support the program between visits." },
@@ -589,7 +589,7 @@ export const landingPages: Record<string, LandingContent> = {
     intro:
       "Mobile physiotherapy at home around Sydney Olympic Park, the Inner West, Parramatta and Bankstown–Yagoona — for older adults, NDIS, Support at Home and rehabilitation.",
     lead: [
-      "Our Sydney home visit service covers Sydney Olympic Park and the Inner West — including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood — as well as the Parramatta area and Bankstown–Yagoona.",
+      "Our Sydney home visit service covers Sydney Olympic Park and the Inner West — including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood — as well as the Parramatta area, the Hills and Bankstown–Yagoona.",
       "Much of Sydney living is in apartments, so we regularly work on the things clinics can't see: lifts and corridors, compact bathrooms, building entries and the walk to the car park or the street.",
       "Home visits are led by Daniel Lee, an APA Titled Pain Physiotherapist. We also see clinic patients at Yagoona and Parramatta.",
     ],
@@ -620,7 +620,7 @@ export const landingPages: Record<string, LandingContent> = {
       },
     ],
     faqs: [
-      { q: "Which Sydney suburbs do you visit?", a: "Sydney Olympic Park and the Inner West (including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood), the Parramatta area and Bankstown–Yagoona. Call to check your suburb." },
+      { q: "Which Sydney suburbs do you visit?", a: "Sydney Olympic Park and the Inner West (including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood), the Parramatta area, the Hills and Bankstown–Yagoona. Call to check your suburb." },
       { q: "Can you visit apartments?", a: "Yes — most of our Sydney visits are in apartments. Let us know about parking, building access and lifts when you book." },
       { q: "Do you also have Sydney clinics?", a: "Yes. We consult at Yagoona Family HealthCare (Tuesdays) and Parramatta Medical and Dental Centre (Wednesdays), booked through each clinic's reception." },
       { q: "Do you see NDIS participants at home in Sydney?", a: "Yes. We're a registered NDIS provider (NDIS0023718) and see agency-, plan- and self-managed participants." },
@@ -652,8 +652,8 @@ export const landingPages: Record<string, LandingContent> = {
       "A physiotherapist who comes to your home, apartment, retirement village or aged care residence — around Sydney Olympic Park, the Inner West, Parramatta and Bankstown–Yagoona.",
     lead: [
       "A mobile physiotherapist provides the same assessment and treatment you would get in a clinic, but at your place. There's no driving, parking or waiting room, and we can work on the exact spaces you use every day — your stairs, bathroom, lift, corridor and the walk to the street.",
-      "Our Sydney mobile service covers Sydney Olympic Park and the Inner West — including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood — as well as the Parramatta area and Bankstown–Yagoona.",
-      "Visits are led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management) from the University of Sydney.",
+      "Our Sydney mobile service covers Sydney Olympic Park and the Inner West — including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood — as well as the Parramatta area, the Hills and Bankstown–Yagoona.",
+      "Visits are led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management) from the University of Sydney.",
     ],
     sections: [
       {
@@ -697,7 +697,7 @@ export const landingPages: Record<string, LandingContent> = {
       },
     ],
     faqs: [
-      { q: "Which Sydney suburbs does your mobile physio cover?", a: "Sydney Olympic Park and the Inner West (including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood), the Parramatta area and Bankstown–Yagoona. If your suburb isn't listed, call us to check." },
+      { q: "Which Sydney suburbs does your mobile physio cover?", a: "Sydney Olympic Park and the Inner West (including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood), the Parramatta area, the Hills and Bankstown–Yagoona. If your suburb isn't listed, call us to check." },
       { q: "How quickly can I get a visit?", a: "We'll phone you back, usually within 24 hours, and aim to arrange your first visit within about a week." },
       { q: "Do I need a referral?", a: "Not for private physiotherapy. A referral is needed for some funding, such as a GP Chronic Condition Management Plan (GPCCMP), DVA or WorkCover." },
       { q: "Can a family member book for me?", a: "Yes. Family members, carers, GPs, support coordinators and aged care providers can all contact us or send a referral." },
@@ -766,7 +766,7 @@ export const landingPages: Record<string, LandingContent> = {
       { q: "Do you visit retirement villages and aged care homes in Sydney?", a: "Yes. We visit private homes and apartments, retirement villages and residential aged care across our Sydney service areas." },
       { q: "Can my family be there for the visit?", a: "Yes — family members and carers are welcome, and it often helps everyone understand the exercise program and safety advice." },
       { q: "Is physio covered under Support at Home?", a: "Physiotherapy can be arranged through your Support at Home provider when it meets your assessed needs. Participants make no contribution for clinical supports such as physiotherapy, but it does draw on your budget." },
-      { q: "Which areas do you cover?", a: "Sydney Olympic Park and the Inner West, the Parramatta area and Bankstown–Yagoona. Call us to check your suburb." },
+      { q: "Which areas do you cover?", a: "Sydney Olympic Park and the Inner West, the Parramatta area, the Hills and Bankstown–Yagoona. Call us to check your suburb." },
     ],
     related: [
       { label: "Now in Sydney: home visit physiotherapy", href: "/blog/home-visit-physiotherapy-now-in-sydney" },
@@ -834,7 +834,7 @@ export const landingPages: Record<string, LandingContent> = {
       },
     ],
     faqs: [
-      { q: "Do you accept Support at Home clients in Sydney?", a: "Yes, around Sydney Olympic Park and the Inner West, the Parramatta area and Bankstown–Yagoona." },
+      { q: "Do you accept Support at Home clients in Sydney?", a: "Yes, around Sydney Olympic Park and the Inner West, the Parramatta area, the Hills and Bankstown–Yagoona." },
       { q: "I still have a Home Care Package — is that the same?", a: "Home Care Packages moved to Support at Home on 1 November 2025. Your provider will have moved you across; ask them to arrange physiotherapy with us." },
       { q: "Can my provider refer me directly?", a: "Yes. Providers and care managers can use our referral form or call us." },
     ],
@@ -1059,7 +1059,7 @@ export const landingPages: Record<string, LandingContent> = {
         h2: "What is home visit physiotherapy?",
         body: [
           "Home visit physiotherapy — also called mobile or in-home physiotherapy — is exactly what it sounds like: a qualified physiotherapist visits you at home to assess, treat and rehabilitate you in your own environment. It is the same high-quality care you would receive in a clinic, delivered where it is most convenient and most relevant to your daily life.",
-          "Being treated at home is not just easier; it is clinically powerful. We can see the real stairs you struggle with, the chair you find hard to rise from, the bathroom where falls are a risk, and the hallway you walk every day. That means your program is built around your actual environment, and the gains you make translate directly into real-world independence.",
+          "Being treated at home is not just easier; it lets us work on the things you do every day. We can see the real stairs you struggle with, the chair you find hard to rise from, the bathroom where falls are a risk, and the hallway you walk every day. That means your program is built around your actual environment, and the gains you make translate directly into real-world independence.",
         ],
       },
       {
@@ -1192,7 +1192,7 @@ export const landingPages: Record<string, LandingContent> = {
       },
       {
         q: "How do I book a mobile physio visit?",
-        a: "You can book online through our contact page or call us on 0404 791 756. We'll confirm your appointment and answer any questions about funding.",
+        a: "Call us on 0404 791 756 or send an enquiry through our contact page. We'll confirm your appointment and answer any questions about funding.",
       },
     ],
     related: [
@@ -1242,7 +1242,7 @@ export const landingPages: Record<string, LandingContent> = {
       {
         h2: "Falls prevention",
         body: [
-          "Falls are the number one cause of accidental injury in older Australians — and the risk can often be reduced. Our aged care physiotherapy combines balance and strength work with a review of hazards around your home to meaningfully reduce your risk.",
+          "Falls are the leading cause of injury hospitalisation for older Australians (AIHW) — and the risk can often be reduced. Our aged care physiotherapy combines balance and strength work with a review of hazards around your home to meaningfully reduce your risk.",
           "We also address the fear of falling, which can be just as limiting as a fall itself, by rebuilding your confidence to move through graded, supported practice.",
         ],
       },

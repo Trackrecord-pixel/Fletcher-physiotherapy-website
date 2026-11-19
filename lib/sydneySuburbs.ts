@@ -131,7 +131,7 @@ export const sydneySuburbs: SydneySuburb[] = [
       "Home visit physiotherapy in Homebush — practical, goal-focused physiotherapy without needing to travel.",
     local: [
       "Homebush sits between Strathfield and Sydney Olympic Park, with a mix of older homes and apartments close to Homebush station and Parramatta Road.",
-      "It's right next to our Sydney Olympic Park base, so Homebush residents are among the easiest for us to reach.",
+      "It's right next to Sydney Olympic Park, so Homebush residents are among the easiest for us to reach.",
     ],
     homeVisitNotes: [
       "Home visits suit people who find it difficult to get across busy roads or onto public transport, and anyone who'd rather spend their energy on rehabilitation than on getting to appointments.",
@@ -191,7 +191,7 @@ export const sydneySuburbs: SydneySuburb[] = [
       "Home visit physiotherapy in Lidcombe — for older adults, NDIS participants, Support at Home clients and families.",
     local: [
       "Lidcombe is an established, diverse residential suburb around Lidcombe station — the rail junction for services to Sydney Olympic Park — with a mix of houses and newer apartments.",
-      "It's a short drive from our Sydney Olympic Park base, making it an easy area for regular home visits.",
+      "It's a short drive from Sydney Olympic Park, making it an easy area for regular home visits.",
     ],
     homeVisitNotes: [
       "Seeing you at home lets us work on what matters in your daily routine — getting in and out of bed and chairs, managing steps, and walking safely to local shops and transport.",

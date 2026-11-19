@@ -253,7 +253,7 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
               <div className="card">
                 <h2 className="text-lg text-navy-900">Can&rsquo;t get to the clinic?</h2>
                 <p className="prose-navy mt-2 text-sm">We also provide home visit physiotherapy in Sydney, for older adults, NDIS participants and Support at Home clients.</p>
-                <Link href="/physiotherapy-sydney" className="mt-4 inline-flex items-center gap-1.5 font-semibold text-navy-800 hover:text-navy-900">Sydney home visits <Icon name="arrow" className="h-4 w-4" /></Link>
+                <Link href="/home-visit-physiotherapy-sydney" className="mt-4 inline-flex items-center gap-1.5 font-semibold text-navy-800 hover:text-navy-900">Sydney home visits <Icon name="arrow" className="h-4 w-4" /></Link>
               </div>
             </div>
           </aside>

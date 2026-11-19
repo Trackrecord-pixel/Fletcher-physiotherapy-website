@@ -57,7 +57,7 @@ export function ReviewStrip({
 /* ------------------------------------------------------------------ */
 const reasons: { icon: IconName; title: string; text: string }[] = [
   { icon: "home", title: "We come to you — in Sydney too", text: "No driving, parking, stairs or waiting rooms. We visit homes, retirement villages and aged care across the Hunter and Central Coast, and around Sydney Olympic Park and the Inner West." },
-  { icon: "star", title: "Senior-led, experienced care", text: "Led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management) from the University of Sydney." },
+  { icon: "star", title: "Senior-led, experienced care", text: "Led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management) from the University of Sydney." },
   { icon: "users", title: "Time to listen and explain", text: "We don't rush. We explain what we find in plain language, answer your questions and make sure you know what to do between visits." },
   { icon: "heart", title: "Families are welcome", text: "Family members and carers can join sessions and, with your permission, we keep them updated — especially helpful when you live far away." },
   { icon: "shield", title: "We help with the funding", text: "Registered NDIS provider. We also work with Support at Home providers, GPCCMP (Medicare), DVA and private clients — and explain your options upfront." },
@@ -207,7 +207,7 @@ export function MeetDaniel() {
             </p>
             <p>
               I have a particular interest in pain management, rehabilitation, mobility and balance, and in
-              helping older adults stay active and independent. I&rsquo;ve completed a Master of Medicine (Pain
+              helping older adults stay active and independent. I&rsquo;ve completed a Master of Science in Medicine (Pain
               Management) at the University of Sydney and I&rsquo;m an APA Titled Pain Physiotherapist.
             </p>
             <p>
@@ -223,7 +223,7 @@ export function MeetDaniel() {
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {[
               "APA Titled Pain Physiotherapist",
-              "Master of Medicine (Pain Management), USyd",
+              "Master of Science in Medicine (Pain Management), USyd",
               "Bachelor of Physiotherapy (Hons), UoN",
               "Speaks English & Korean",
               "Registered NDIS provider",

@@ -220,7 +220,7 @@ export default function LandingPage({ c }: { c: LandingContent }) {
                     </Link>
                   )}
                   {pathway !== "clinic" && (
-                    <Link href={region === "sydney" ? "/home-visit-physiotherapy-sydney" : "/home-visits"} className="btn w-full bg-white text-navy-900 hover:bg-beige-50">
+                    <Link href="/home-visits#referral" className="btn w-full bg-white text-navy-900 hover:bg-beige-50">
                       Book a Home Visit <Icon name="arrow" className="h-4 w-4" />
                     </Link>
                   )}

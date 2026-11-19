@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title:
     "Daniel Lee | APA Titled Pain Physio",
   description:
-    "Daniel Lee: APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management), USyd. Home visits for pain and older adults. Speaks Korean.",
+    "Daniel Lee: APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management), USyd. Home visits for pain and older adults. Speaks Korean.",
   alternates: { canonical: "/daniel-lee-physiotherapist-newcastle" },
   openGraph: {
     type: "website",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Daniel Lee | APA Titled Pain Physio",
     description:
-      "Daniel Lee: APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management), USyd. Home visits for pain and older adults. Speaks Korean.",
+      "Daniel Lee: APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management), USyd. Home visits for pain and older adults. Speaks Korean.",
     url: "/daniel-lee-physiotherapist-newcastle",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Daniel Lee | APA Titled Pain Physio",
     description:
-      "Daniel Lee: APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management), USyd. Home visits for pain and older adults. Speaks Korean.",
+      "Daniel Lee: APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management), USyd. Home visits for pain and older adults. Speaks Korean.",
     images: ["/images/og-default.png"],
   },
 };
 
 const qualifications = [
   "APA Titled Pain Physiotherapist",
-  "Master of Medicine (Pain Management) — University of Sydney",
+  "Master of Science in Medicine (Pain Management) — University of Sydney",
   "Bachelor of Physiotherapy (Honours) — University of Newcastle",
   "Registered Physiotherapist (AHPRA)",
 ];
@@ -53,8 +53,8 @@ export default function DanielLeePage() {
     <>
       <PageHero
         eyebrow="Our Director"
-        title="Daniel Lee — APA Titled Pain Physiotherapist in Newcastle"
-        intro="Director and Principal Physiotherapist at Fletcher Physiotherapy, with a special interest in chronic pain, older adult rehabilitation and home-based care across Newcastle, Lake Macquarie and the Central Coast."
+        title="Daniel Lee — APA Titled Pain Physiotherapist"
+        intro="Director and Principal Physiotherapist at Fletcher Physiotherapy, with a special interest in chronic pain, older adult rehabilitation and care in clinic and at home across Sydney, Newcastle, Lake Macquarie and the Central Coast."
         breadcrumb={[
           { name: "Home", href: "/" },
           { name: "Our Team", href: "/our-team" },
@@ -99,7 +99,7 @@ export default function DanielLeePage() {
               {" "}— a credential awarded by the Australian Physiotherapy Association
               (APA) to physiotherapists who have completed advanced training and
               demonstrated advanced expertise in pain management. He holds a
-              {" "}<strong>Master of Medicine (Pain Management) from the University of Sydney</strong> and a
+              {" "}<strong>Master of Science in Medicine (Pain Management) from the University of Sydney</strong> and a
               {" "}<strong>Bachelor of Physiotherapy (Honours) from the University of Newcastle</strong>.
             </p>
             <p>
@@ -110,9 +110,9 @@ export default function DanielLeePage() {
               on long-term, functional outcomes.
             </p>
             <p>
-              He founded Fletcher Physiotherapy on a simple belief: people recover
-              better in their own homes. By bringing experienced physiotherapy directly
-              to clients across Newcastle, Lake Macquarie and the Central Coast, Daniel
+              He founded Fletcher Physiotherapy on a simple belief: physiotherapy
+              should be accessible, in clinic or at home. By bringing experienced physiotherapy directly
+              to clients across Sydney, Newcastle, Lake Macquarie and the Central Coast, Daniel
               and the team remove the barriers of travel and waiting rooms, and deliver
               rehabilitation in the real environment where independence is won or lost.
             </p>

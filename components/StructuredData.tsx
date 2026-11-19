@@ -217,7 +217,7 @@ export function PersonSchema() {
       },
       {
         "@type": "EducationalOccupationalCredential",
-        name: "Master of Medicine (Pain Management)",
+        name: "Master of Science in Medicine (Pain Management)",
         credentialCategory: "degree",
         recognizedBy: { "@type": "CollegeOrUniversity", name: "University of Sydney" },
       },

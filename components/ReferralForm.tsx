@@ -22,6 +22,9 @@ const funding = [
   "Support at Home (formerly Home Care Package)",
   "Private",
   "GP Chronic Condition Management (GPCCMP)",
+  "DVA",
+  "Workers compensation (icare / insurer)",
+  "CTP",
   "Not sure",
 ];
 

@@ -219,7 +219,7 @@ export const serviceDirectory: DirectoryCategory[] = [
       {
         n: 21,
         id: "medicare-gp-care-plan",
-        name: "Medicare GP Care Plan Physiotherapy",
+        name: "Medicare GPCCMP Physiotherapy",
         desc: "Physiotherapy for eligible patients referred by their GP under a GP Chronic Condition Management Plan (GPCCMP). Bulk billing is available for eligible appointments at our Jesmond, Yagoona and Parramatta clinics.",
         href: "/bulk-billing-physiotherapy-yagoona",
         icon: "doc",

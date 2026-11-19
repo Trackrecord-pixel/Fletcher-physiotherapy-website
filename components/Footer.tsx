@@ -99,12 +99,10 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link href="/home-visit-physiotherapy-newcastle" className="tap-target inline-flex items-center gap-2.5 text-navy-200 hover:text-white">
-                  <Icon name="home" className="h-4 w-4 text-beige-300" /> Home Visit Physiotherapy
-                </Link>
-              </li>
             </ul>
+            <Link href="/home-visits" className="tap-target mt-4 inline-flex items-center gap-2.5 text-sm text-navy-200 hover:text-white">
+              <Icon name="home" className="h-4 w-4 text-beige-300" /> Home visits: Sydney, Newcastle &amp; Central Coast
+            </Link>
             <p className="mt-6 text-xs font-semibold uppercase tracking-widest text-navy-400">Also serving</p>
             <ul className="mt-3 space-y-2 text-sm">
               {site.areasServed.map((a) => (

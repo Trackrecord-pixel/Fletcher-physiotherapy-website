@@ -69,11 +69,11 @@ const entries: CheckerEntry[] = [
 const faqs = [
   {
     q: "Is there a physio near me that does home visits?",
-    a: "If you live in Newcastle, Lake Macquarie or the Central Coast, yes — our physiotherapists come to your home, retirement village or aged care residence. We also visit homes around Sydney Olympic Park and the Inner West. Use the suburb checker above or call us to confirm.",
+    a: "If you live in Sydney, Newcastle, Lake Macquarie or the Central Coast, yes — our physiotherapists come to your home, retirement village or aged care residence. In Sydney we visit around Sydney Olympic Park and the Inner West, the Parramatta area, the Hills and Bankstown–Yagoona. Use the suburb checker above or call us to confirm.",
   },
   {
     q: "Where is your physio clinic?",
-    a: "We consult on Mondays at HealthSure Medical Centre Jesmond (Jesmond Central, 28 Blue Gum Road). We don't have a clinic in Sydney — Sydney appointments are home visits.",
+    a: "We have three clinics: HealthSure Medical Centre Jesmond in Newcastle (Mondays), Yagoona Family HealthCare in Yagoona (Tuesdays) and Parramatta Medical and Dental Centre in Parramatta (Wednesdays). We also offer home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
   },
   {
     q: "Do I need a referral to see a physio?",

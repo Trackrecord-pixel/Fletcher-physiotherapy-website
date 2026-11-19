@@ -7,8 +7,10 @@ import { submitEnquiry, readForm, validateFields, isBot, type SubmitResult } fro
 
 const services = [
   "Home Visit Physiotherapy",
-  "Sydney home visit / free phone consultation",
-  "Clinic appointment (Jesmond, Mondays)",
+  "Sydney home visit / free phone consultation (to check suitability; standard fees apply to sessions)",
+  "Clinic appointment — Jesmond (Mondays)",
+  "Clinic appointment — Yagoona (Tuesdays)",
+  "Clinic appointment — Parramatta (Wednesdays)",
   "NDIS Physiotherapy",
   "Support at Home Physiotherapy",
   "Chronic Pain Management",

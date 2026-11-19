@@ -1,3 +1,4 @@
+import { allDirectoryServices } from "@/lib/serviceDirectory";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/Icon";
@@ -7,7 +8,6 @@ import Reveal from "@/components/Reveal";
 import CallbackForm from "@/components/CallbackForm";
 import HeroVideo from "@/components/HeroVideo";
 import AuthorReview from "@/components/AuthorReview";
-import { ReviewStrip } from "@/components/HomeConversion";
 import { FaqSchema, PersonSchema } from "@/components/StructuredData";
 import { homeFaqs, clinics, servicesNav, conditionsNav, site } from "@/lib/site";
 import { sydneyClinics } from "@/lib/sydneyClinics";
@@ -43,7 +43,7 @@ const homeAreas = [
   {
     title: "Sydney",
     href: "/home-visit-physiotherapy-sydney",
-    text: "Sydney Olympic Park and the Inner West, the Parramatta area, and Bankstown–Yagoona.",
+    text: "Sydney Olympic Park and the Inner West, the Parramatta area, the Hills and Bankstown–Yagoona.",
     suburbs: ["Sydney Olympic Park", "Homebush", "Strathfield", "Concord", "Rhodes", "Lidcombe", "Auburn", "Parramatta", "Bankstown"],
   },
   {
@@ -73,7 +73,7 @@ const whatWeTreat: { label: string; text: string; href: string; icon: IconName }
 
 const credentials = [
   "APA Titled Pain Physiotherapist",
-  "Master of Medicine (Pain Management), University of Sydney",
+  "Master of Science in Medicine (Pain Management), University of Sydney",
   "Bachelor of Physiotherapy (Honours), University of Newcastle",
   "AHPRA-registered · Registered NDIS provider",
 ];
@@ -101,7 +101,7 @@ export default function HomePage() {
             Physiotherapy
           </p>
           <h1 className="mx-auto mt-6 max-w-2xl text-2xl font-medium leading-snug tracking-normal text-[#edf4f2] sm:mt-8 sm:text-2xl">
-            Expert physiotherapy — <span className="text-[#87f9d3]">in clinic, at home or at work.</span>
+            Physiotherapy that fits your life — <span className="text-[#87f9d3]">in clinic, at home or at work.</span>
           </h1>
           <p className="mx-auto mt-3 max-w-xl text-base text-[#c9d6d1] sm:text-lg">
             Led by an APA Titled Pain Physiotherapist. Clinics in Jesmond, Yagoona and Parramatta; home visits across
@@ -225,7 +225,7 @@ export default function HomePage() {
             <span className="flex items-center gap-3 font-semibold text-navy-900">
               <Icon name="check" className="h-5 w-5 flex-shrink-0 text-euc-600" />
               Bulk Billing Physiotherapy Available at Our Clinics for Eligible Medicare Patients
-            </span>
+            </span>{" "}
             <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-euc-700">
               How it works <Icon name="arrow" className="h-4 w-4" />
             </span>
@@ -335,7 +335,7 @@ export default function HomePage() {
               <h2 id="services" className="mt-4 text-3xl text-navy-900 sm:text-4xl">Physiotherapy for common conditions</h2>
               <p className="mt-3 max-w-2xl text-navy-600">Available in clinic, at home, or both — we&rsquo;ll recommend what suits your situation.</p>
             </div>
-            <Link href="/services" className="btn-secondary">All 29 services <Icon name="arrow" className="h-4 w-4" /></Link>
+            <Link href="/services" className="btn-secondary">All {allDirectoryServices.length} services <Icon name="arrow" className="h-4 w-4" /></Link>
           </div>
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {whatWeTreat.map((t) => (
@@ -365,7 +365,6 @@ export default function HomePage() {
       </section>
 
       {/* 8 · REVIEWS (service comments only — AHPRA) */}
-      <ReviewStrip />
 
       {/* 9 · REFERRERS */}
       <section className="bg-euc-700 py-16 text-white lg:py-20" aria-labelledby="referrers">

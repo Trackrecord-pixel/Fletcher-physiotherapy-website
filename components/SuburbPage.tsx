@@ -56,8 +56,7 @@ export default function SuburbPage({ s }: { s: Suburb }) {
               <p>{s.local}</p>
               {s.localArea && <p>{s.localArea}</p>}
               <p>
-                Fletcher Physiotherapy is a dedicated mobile service — we come to
-                you. That means no travel, no parking and no waiting rooms for {s.name}{" "}
+                Fletcher Physiotherapy comes to you at home, and also consults at clinics in Jesmond, Yagoona and Parramatta. That means no travel, no parking and no waiting rooms for {s.name}{" "}
                 residents, and physiotherapy delivered in the exact environment where
                 you live and move each day. Our care is led by an APA Titled Pain
                 Physiotherapist with extensive experience in aged care, chronic pain
@@ -161,7 +160,7 @@ export default function SuburbPage({ s }: { s: Suburb }) {
               </h2>
               <div className="prose-navy mt-4 space-y-4">
                 <p>
-                  Falls are the number one cause of accidental injury in older Australians —
+                  Falls are the leading cause of injury hospitalisation for older Australians (AIHW) —
                   but there is a lot that can be done to lower the risk. Our {s.name} falls-prevention physiotherapy combines a
                   balance and mobility assessment, a tailored strength and balance program,
                   and a review of hazards around your home.
@@ -247,7 +246,7 @@ export default function SuburbPage({ s }: { s: Suburb }) {
                 <p className="prose-navy mt-4">
                   Our {s.name} home visit physiotherapists work alongside the local healthcare
                   community — coordinating with GPs, hospital discharge teams, aged care homes and
-                  Home Care providers so your rehabilitation is joined up and stress-free.
+                  Support at Home providers so your rehabilitation is joined up and stress-free.
                 </p>
                 <div className="mt-6 grid gap-5 sm:grid-cols-2">
                   {s.gpClinics && (
