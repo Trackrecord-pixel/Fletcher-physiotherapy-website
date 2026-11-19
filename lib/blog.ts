@@ -590,7 +590,7 @@ export const posts: BlogPost[] = [
     date: "2026-08-03",
     readMins: 5,
     excerpt:
-      "Neck pain is common and often linked to posture and daily habits. Here's how physiotherapy helps you find lasting relief.",
+      "Neck pain is common and often linked to posture and daily habits. Here's how physiotherapy can help you manage it and find relief.",
     updated: "2026-10-03",
     faqs: [
       { q: "How long does neck pain usually last?", a: "Most neck pain improves within a few weeks. If it is severe, getting worse, not easing after a few weeks, or affecting your sleep and daily life, see your GP or a physiotherapist." },
@@ -838,7 +838,7 @@ export const posts: BlogPost[] = [
         h2: "How a pain physiotherapist can help",
         body: [
           "A physiotherapist with pain-management training helps you understand your pain, build a graded plan to move and do more, and address the factors keeping the system sensitive. The goal is a life less limited by pain, not just a short-term fix.",
-          "Fletcher Physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management), providing this care in your own home across Newcastle and Lake Macquarie. To arrange a visit, call 0404 791 756.",
+          "Fletcher Physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management), providing this care in your own home across Newcastle and Lake Macquarie. To arrange a visit, call 0404 791 756.",
         ],
       },
     ],
@@ -1016,7 +1016,7 @@ export const posts: BlogPost[] = [
       {
         h2: "Why home falls matter so much",
         body: [
-          "Falls are the number one cause of accidental injury in older Australians, and around half of all falls happen in and around the home. A single fall can undermine confidence, reduce activity and start a cycle that quietly erodes independence.",
+          "Falls are the leading cause of injury hospitalisation for older Australians (AIHW), and around half of all falls happen in and around the home. A single fall can undermine confidence, reduce activity and start a cycle that quietly erodes independence.",
           "The good news is that there is a lot you can do. A combination of small changes around the home and targeted strength and balance work can lower your risk — and help rebuild the confidence to keep moving.",
         ],
       },
@@ -1224,7 +1224,7 @@ export const posts: BlogPost[] = [
       {
         h2: "Improving balance and preventing falls",
         body: [
-          "Falls are the number one cause of accidental injury in older Australians. Physiotherapy addresses this directly through balance training, strengthening and a review of hazards in the home — an approach can help reduce falls risk.",
+          "Falls are the leading cause of injury hospitalisation for older Australians (AIHW). Physiotherapy addresses this directly through balance training, strengthening and a review of hazards in the home — an approach can help reduce falls risk.",
           "Just as importantly, physiotherapy rebuilds the confidence to keep moving, breaking the cycle where fear of falling leads to inactivity, which then weakens the body further.",
         ],
       },
@@ -1551,12 +1551,12 @@ export const posts: BlogPost[] = [
     date: "2026-05-16",
     readMins: 6,
     excerpt:
-      "Falls are largely preventable. Here's exactly how physiotherapy lowers the risk for older adults.",
+      "Many falls can be prevented. Here's how physiotherapy can help lower the risk for older adults.",
     sections: [
       {
         h2: "Understanding falls risk",
         body: [
-          "Falls are the number one cause of accidental injury in older Australians, but there is a lot that can be done to lower the risk. Falls usually result from a combination of factors \u2014 reduced strength, poor balance, changes in walking pattern, and hazards in the home.",
+          "Falls are the leading cause of injury hospitalisation for older Australians (AIHW), but there is a lot that can be done to lower the risk. Falls usually result from a combination of factors \u2014 reduced strength, poor balance, changes in walking pattern, and hazards in the home.",
           "Physiotherapy is uniquely placed to address all of these at once, which is why it is one of the most effective falls-prevention strategies available.",
         ],
       },
@@ -1819,7 +1819,7 @@ export const posts: BlogPost[] = [
     date: "2026-03-13",
     readMins: 5,
     excerpt:
-      "Knee replacement recovery is all about rehabilitation. Here's how physiotherapy helps you regain full movement.",
+      "Knee replacement recovery is all about rehabilitation. Here's how physiotherapy can support your recovery.",
     sections: [
       { h2: "The importance of rehabilitation", body: ["The success of a knee replacement depends heavily on the rehabilitation that follows. Consistent physiotherapy helps restore the movement and strength needed to walk, climb stairs and return to daily life — and reduces the risk of a stiff, poorly functioning joint."] },
       { h2: "What rehabilitation involves", body: ["Your physiotherapist guides you through a graded program tailored to your recovery."], list: ["Exercises to restore knee bending and straightening","Progressive strengthening of the leg muscles","Swelling and pain management strategies","Walking and stair practice","Balance and confidence work","A gradual return to daily activities"] },
@@ -1898,7 +1898,7 @@ export const posts: BlogPost[] = [
     sections: [
       { h2: "Understanding chronic pain", body: ["Chronic, or persistent, pain is common in older adults and affects far more than the body — it can reduce activity, confidence and quality of life. Modern pain management recognises that pain is complex, and that gentle movement and the right strategies are central to managing it well."] },
       { h2: "How physiotherapy helps", body: ["Physiotherapy takes an active, evidence-based approach to chronic pain, focused on restoring movement and function rather than simply resting."], list: ["Understanding your individual pain experience","Graded movement to reduce fear and rebuild capacity","Hands-on treatment where helpful","Practical day-to-day pain strategies","Strength and conditioning","A graded return to meaningful activities"] },
-      { h2: "Experienced, home-based support", body: ["At Fletcher Physiotherapy, chronic pain care is led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management) from the University of Sydney. Delivered at home, this experienced care helps older adults across Newcastle move with confidence and return to the activities that matter most."] },
+      { h2: "Experienced, home-based support", body: ["At Fletcher Physiotherapy, chronic pain care is led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management) from the University of Sydney. Delivered at home, this experienced care helps older adults across Newcastle move with confidence and return to the activities that matter most."] },
     ],
   },
   {

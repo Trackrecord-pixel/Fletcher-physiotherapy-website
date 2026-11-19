@@ -4,7 +4,7 @@ export const site = {
   legalName: "Fletcher Physiotherapy",
   tagline: "We Come To You",
   description:
-    "Physiotherapy in clinic or at home across Sydney, Newcastle and the Central Coast. Led by an APA Titled Pain Physiotherapist. Medicare, DVA, WorkCover & NDIS.",
+    "Physiotherapy in clinic or at home across Sydney, Newcastle, Lake Macquarie and the Central Coast. Led by an APA Titled Pain Physiotherapist. Medicare, DVA, WorkCover & NDIS.",
   url: "https://www.fletcherphysiotherapy.com.au",
   phone: "0404 791 756",
   phoneHref: "tel:+61404791756",
@@ -156,7 +156,7 @@ export const clinics: Clinic[] = [
     postcode: "2299",
     region: "Newcastle",
     consultingDay: "Monday",
-    dayShort: "Mondays",
+    dayShort: "Mondays, 9:00am – 4:30pm",
     geo: { lat: -32.8944, lng: 151.6931 },
     intro:
       "Fletcher Physiotherapy now consults at HealthSure Medical Centre Jesmond every Monday, offering experienced physiotherapy for pain, injuries, rehabilitation, balance and falls prevention — alongside our established home visit service across Newcastle.",
@@ -187,7 +187,7 @@ export const services: Service[] = [
     short:
       "Professional physiotherapy delivered in the comfort and safety of your own home — no travel, no waiting rooms.",
     icon: "home",
-    href: "/home-visit-physiotherapy-newcastle",
+    href: "/home-visits",
     featured: true,
   },
   {
@@ -275,10 +275,10 @@ export const team: TeamMember[] = [
     name: "Daniel Lee",
     role: "Director & Principal Physiotherapist",
     photo: "/team/daniel-lee.jpg",
-    credentials: "APA Titled Pain Physiotherapist · Master of Medicine (Pain Management), University of Sydney · Bachelor of Physiotherapy (Honours), University of Newcastle",
+    credentials: "APA Titled Pain Physiotherapist · Master of Science in Medicine (Pain Management), University of Sydney · Bachelor of Physiotherapy (Honours), University of Newcastle",
     bio: [
       "Daniel Lee is the Director and Principal Physiotherapist at Fletcher Physiotherapy and an APA Titled Pain Physiotherapist — a credential awarded by the Australian Physiotherapy Association (APA) to physiotherapists who have completed advanced training and demonstrated advanced expertise in pain management.",
-      "He holds a Master of Medicine (Pain Management) from the University of Sydney and a Bachelor of Physiotherapy (Honours) from the University of Newcastle, and works extensively with chronic pain, complex conditions and older adults, combining hands-on treatment with practical, evidence-based strategies that help people move with confidence.",
+      "He holds a Master of Science in Medicine (Pain Management) from the University of Sydney and a Bachelor of Physiotherapy (Honours) from the University of Newcastle, and works extensively with chronic pain, complex conditions and older adults, combining hands-on treatment with practical, evidence-based strategies that help people move with confidence.",
       "Daniel speaks English and Korean and aims to be friendly, approachable and easy to communicate with. He enjoys home visits because they let him see how people move and function in their everyday environment, and provide practical, personalised physiotherapy without the stress of travelling to a clinic. Outside of physiotherapy he enjoys tennis, soccer and time with his family.",
       "Daniel's focus is functional rehabilitation and long-term outcomes — reducing fear around movement, rebuilding strength and mobility, and helping clients return to the everyday activities that matter to them, safely in their own homes.",
     ],
@@ -377,7 +377,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "How do I book an appointment?",
-    a: "You can book online through our contact page, or call us on 0404 791 756. We will confirm your appointment and answer any questions about funding and what to expect.",
+    a: "Call us on 0404 791 756 or send an enquiry through our contact page. Jesmond clinic appointments can also be booked online, and Yagoona and Parramatta appointments are booked through each medical centre's reception. We will confirm your appointment and answer any questions about funding and what to expect.",
   },
 ];
 
@@ -517,11 +517,11 @@ export const homeFaqs: Faq[] = [
   },
   {
     q: "Do you provide physiotherapy at home?",
-    a: "Yes — home visits are our core service. Our mobile physiotherapists come to you across Newcastle, Lake Macquarie and the Central Coast, so there is no travel, parking or waiting room. You receive experienced care in the comfort and safety of your own home.",
+    a: "Yes — home visits are our core service. Our mobile physiotherapists come to you across Sydney, Newcastle, Lake Macquarie and the Central Coast, so there is no travel, parking or waiting room. You receive experienced care in the comfort and safety of your own home.",
   },
   {
     q: "What suburbs do you visit?",
-    a: "We provide home visit physiotherapy across Newcastle, Lake Macquarie, the Central Coast and the wider Hunter Region — including Charlestown, Belmont, Warners Bay, Cardiff, Fletcher, New Lambton, Gosford and Wyong. If your suburb isn't listed, contact us and we'll confirm availability.",
+    a: "In Sydney, we visit around Sydney Olympic Park and the Inner West (including Homebush, Strathfield, Concord, Rhodes, Lidcombe and Auburn), the Parramatta area, the Hills and Bankstown–Yagoona. We also visit across Newcastle, Lake Macquarie, the Central Coast and the wider Hunter Region — including Charlestown, Belmont, Warners Bay, Cardiff, Fletcher, New Lambton, Gosford and Wyong. If your suburb isn't listed, contact us and we'll confirm availability.",
   },
   {
     q: "How can physiotherapy prevent falls?",
@@ -991,7 +991,7 @@ export const suburbs: Suburb[] = [
     intro:
       "Fletcher Physiotherapy provides home visit physiotherapy across the Central Coast, bringing mobile aged care, NDIS and Support at Home physiotherapy to residents from Gosford and Erina through to Wyong and Tuggerah.",
     local:
-      "The Central Coast has one of the fastest-growing older populations in NSW, spread across Gosford, Wyong, Erina, Terrigal and the surrounding towns. Our physiotherapists visit homes throughout the region — close to Gosford and Wyong hospitals — supporting falls prevention, strength and post-hospital rehabilitation without the need to travel.",
+      "The Central Coast has a large and growing older population, spread across Gosford, Wyong, Erina, Terrigal and the surrounding towns. Our physiotherapists visit homes throughout the region — close to Gosford and Wyong hospitals — supporting falls prevention, strength and post-hospital rehabilitation without the need to travel.",
     nearby: ["Gosford", "Erina", "Wyong", "Tuggerah", "Terrigal", "The Entrance"],
     postcode: "2250",
     localArea:
@@ -1011,7 +1011,7 @@ export const suburbs: Suburb[] = [
     local:
       "Based in the Sydney Olympic Park region, our Sydney service focuses on home visits and residential aged care, delivering mobile physiotherapy to older adults and NDIS participants in the inner west and surrounding suburbs — so you receive experienced care without the need to travel.",
     localArea:
-      "Fletcher Physiotherapy brings its home-visit model to Sydney. Based around Sydney Olympic Park, we focus on nursing-home physiotherapy and in-home care for residential aged care, Support at Home, NDIS and Rehab at Home clients across the inner west — including Homebush, Lidcombe, Auburn, Strathfield, Concord and nearby suburbs. Care is led by an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management) and extensive experience in aged care, falls prevention and rehabilitation.",
+      "Fletcher Physiotherapy brings its home-visit model to Sydney. Based around Sydney Olympic Park, we focus on nursing-home physiotherapy and in-home care for residential aged care, Support at Home, NDIS and Rehab at Home clients across the inner west — including Homebush, Lidcombe, Auburn, Strathfield, Concord and nearby suburbs. Care is led by an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management) and extensive experience in aged care, falls prevention and rehabilitation.",
     nearby: ["Sydney Olympic Park", "Homebush", "Lidcombe", "Auburn", "Strathfield", "Concord"],
     hospitals: ["Concord Hospital", "Auburn Hospital", "Westmead Hospital"],
     landmarks: ["Sydney Olympic Park", "Bicentennial Park", "Parramatta River"],

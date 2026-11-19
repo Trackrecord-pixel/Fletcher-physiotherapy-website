@@ -54,7 +54,7 @@ export const sydneyClinics: SydneyClinic[] = [
       "Fletcher Physiotherapy Yagoona, inside Yagoona Family HealthCare on the Hume Highway — physiotherapy for back and neck pain, arthritis, persistent pain, injuries and rehabilitation. Book through the clinic's reception.",
     about: [
       "Fletcher Physiotherapy Yagoona consults inside Yagoona Family HealthCare at 457 Hume Highway. Because we work alongside your GP, it's easy to be referred, share updates and keep your care joined up — especially if you're on a GP Chronic Condition Management Plan (GPCCMP).",
-      "Our physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management). We see people with persistent pain, back and neck pain, arthritis, injuries, and those wanting to get stronger and steadier on their feet — and we focus on practical goals that fit your everyday life.",
+      "Our physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management). We see people with persistent pain, back and neck pain, arthritis, injuries, and those wanting to get stronger and steadier on their feet — and we focus on practical goals that fit your everyday life.",
     ],
     nearby: ["Bankstown", "Bass Hill", "Birrong", "Regents Park", "Greenacre", "Condell Park", "Georges Hall", "Chester Hill"],
     hospitals: ["Bankstown-Lidcombe Hospital"],
@@ -83,7 +83,7 @@ export const sydneyClinics: SydneyClinic[] = [
       "Physiotherapy inside Parramatta Medical and Dental Centre on Marsden Street — for pain, injuries, rehabilitation, balance and falls prevention. Book through the clinic's reception.",
     about: [
       "Fletcher Physiotherapy Parramatta consults inside Parramatta Medical and Dental Centre at 144 Marsden Street, in the Parramatta CBD. Working within a GP practice makes referrals simple and keeps your GP up to date — including for patients on a GP Chronic Condition Management Plan (GPCCMP).",
-      "Our physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Medicine (Pain Management). We help with persistent pain, back and neck pain, desk-related neck and shoulder pain, arthritis, injuries, and strength and balance — with practical goals that fit your work and home life.",
+      "Our physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management). We help with persistent pain, back and neck pain, desk-related neck and shoulder pain, arthritis, injuries, and strength and balance — with practical goals that fit your work and home life.",
     ],
     nearby: ["North Parramatta", "Harris Park", "Westmead", "Rosehill", "Granville", "Rydalmere", "Northmead", "Merrylands"],
     hospitals: ["Westmead Hospital"],
