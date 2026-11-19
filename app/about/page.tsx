@@ -78,8 +78,8 @@ export default function AboutPage() {
             />
             <div className="mt-6 space-y-4 text-navy-700">
               <p>
-                Fletcher Physiotherapy was founded on a simple belief: people heal
-                better, move better and feel better in the comfort of their own
+                Fletcher Physiotherapy was founded on a simple belief: physiotherapy should fit
+                around people&rsquo;s lives, including in the comfort of their own
                 home. Too many older adults and people living with disability or
                 chronic conditions struggle with travel, parking and busy clinic
                 waiting rooms — barriers that can get in the way of the care they
@@ -179,7 +179,7 @@ export default function AboutPage() {
               an <strong>APA Titled Pain Physiotherapist</strong> — a credential awarded by
               the Australian Physiotherapy Association to physiotherapists with advanced
               training and advanced expertise in pain management. He holds a
-              <strong> Master of Medicine (Pain Management) from the University of Sydney</strong> and a
+              <strong> Master of Science in Medicine (Pain Management) from the University of Sydney</strong> and a
               <strong> Bachelor of Physiotherapy (Honours) from the University of Newcastle</strong>.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-navy-700">
