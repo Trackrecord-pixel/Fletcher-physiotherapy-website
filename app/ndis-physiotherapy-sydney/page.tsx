@@ -10,9 +10,9 @@ import { site } from "@/lib/site";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
 const path = "/ndis-physiotherapy-sydney";
-const title = "NDIS Home Physio Sydney Olympic Park";
+const title = "NDIS Physio at Home | Sydney";
 const description =
-  "Registered NDIS provider for physio at home around Sydney Olympic Park and the Inner West. Agency, plan and self-managed participants welcome.";
+  "Registered NDIS provider for physio at home across Sydney: Olympic Park, Inner West, Parramatta, the Hills and Bankstown–Yagoona. All plan types welcome.";
 
 export const metadata: Metadata = {
   title,
