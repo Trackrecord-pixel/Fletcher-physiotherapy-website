@@ -23,7 +23,7 @@ export default function SydneySuburbPage({ s }: { s: SydneySuburb }) {
     ...s.faqs,
     {
       q: `Can NDIS participants in ${s.name} get physio at home?`,
-      a: `Yes. We're a registered NDIS provider and visit agency-managed, plan-managed and self-managed participants at home in ${s.name}. Physio is usually funded from Capacity Building – Improved Daily Living. See our NDIS physiotherapy Sydney page for details.`,
+      a: `Yes. We're a registered NDIS provider and visit agency-managed, plan-managed and self-managed participants at home in ${s.name} — call us to confirm availability for your street. Physio is usually funded from Capacity Building – Improved Daily Living. See our NDIS physiotherapy Sydney page for details.`,
     },
     {
       q: "Do I need a referral?",

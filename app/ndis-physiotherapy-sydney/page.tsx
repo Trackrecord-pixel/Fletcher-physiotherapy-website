@@ -10,12 +10,12 @@ import { site } from "@/lib/site";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
 const path = "/ndis-physiotherapy-sydney";
-const title = "NDIS Physio at Home | Sydney";
+const title = "NDIS Physiotherapy Sydney | Home Visits & Clinics";
 const description =
-  "Registered NDIS provider for physio at home across Sydney: Olympic Park, Inner West, Parramatta, the Hills and Bankstown–Yagoona. All plan types welcome.";
+  "NDIS physiotherapy in Sydney from a registered NDIS provider. Physio at home and in our Parramatta and Yagoona clinics. Agency, plan and self-managed welcome.";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: `${title} | Fletcher` },
   description,
   alternates: { canonical: path },
   openGraph: {
@@ -53,7 +53,7 @@ const coordinatorChecklist = [
 const faqs = [
   {
     q: "Are you a registered NDIS provider in Sydney?",
-    a: `Yes. Fletcher Physiotherapy is a registered NDIS provider${reg ? ` (${reg})` : ""}. We see agency-managed, plan-managed and self-managed participants at home around Sydney Olympic Park and the Inner West.`,
+    a: `Yes. Fletcher Physiotherapy is a registered NDIS provider${reg ? ` (${reg})` : ""}. We see agency-managed, plan-managed and self-managed participants at home across Sydney, and at our Parramatta and Yagoona clinics.`,
   },
   {
     q: "Which part of an NDIS plan pays for physiotherapy?",
@@ -65,7 +65,19 @@ const faqs = [
   },
   {
     q: "Which Sydney suburbs do you visit for NDIS physio?",
-    a: "Around Sydney Olympic Park and the Inner West, including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Wentworth Point and Newington. If your suburb isn't listed, call us to check.",
+    a: "Around Sydney Olympic Park and the Inner West (Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Wentworth Point and Newington), the Parramatta area, the Hills District and Bankstown–Yagoona and nearby suburbs such as Bankstown and Cabramatta. If your suburb isn't listed, call us to check.",
+  },
+  {
+    q: "Can I see an NDIS physiotherapist in a clinic instead of at home?",
+    a: "Yes. As well as home visits, we consult at Fletcher Physiotherapy Parramatta (Wednesdays, 02 8320 9300) and Fletcher Physiotherapy Yagoona (Tuesdays, 02 8766 2477). Tell reception you're an NDIS participant when you book.",
+  },
+  {
+    q: "Do I need a GP referral for NDIS physiotherapy?",
+    a: "No GP referral is needed for NDIS physiotherapy. Participants, families, support coordinators and plan managers can contact us directly. If you have recent reports or a GP letter, they help us plan the first session.",
+  },
+  {
+    q: "What does an NDIS physio session cost?",
+    a: "Our fees follow the NDIS Pricing Arrangements and Price Limits. Session length, any travel and report time are set out in a written service agreement before we start, so you and your plan manager know what will be claimed.",
   },
   {
     q: "When can NDIS participants in Sydney start?",
@@ -88,8 +100,8 @@ export default function NdisSydneyPage() {
     <>
       <PageHero
         eyebrow="NDIS Physiotherapy · Sydney"
-        title="NDIS Home Physiotherapy in Sydney"
-        intro="Physiotherapy at home for NDIS participants around Sydney Olympic Park and the Inner West — from a registered NDIS provider."
+        title="NDIS Physiotherapy in Sydney"
+        intro="NDIS physiotherapy at home across Sydney, or at our Parramatta and Yagoona clinics — from a registered NDIS provider."
         breadcrumb={crumbs}
       />
 
@@ -104,9 +116,13 @@ export default function NdisSydneyPage() {
 
             <div className="prose-navy mt-6 space-y-4">
               <p>
-                Fletcher Physiotherapy brings NDIS physiotherapy to your home around Sydney Olympic Park, Homebush,
-                Strathfield, Concord, Rhodes, Lidcombe and the Inner West. Because we&rsquo;re a registered provider, we
-                can see <strong>agency-managed, plan-managed and self-managed</strong> participants.
+                Fletcher Physiotherapy provides NDIS physiotherapy in Sydney at home and in clinic. We visit
+                participants around Sydney Olympic Park and the Inner West, the Parramatta area, the Hills District and
+                Bankstown–Yagoona, and consult at our{" "}
+                <Link href="/physiotherapy-parramatta" className="font-semibold underline">Parramatta</Link> and{" "}
+                <Link href="/physiotherapy-yagoona" className="font-semibold underline">Yagoona</Link> clinics. Because
+                we&rsquo;re a registered NDIS provider, we can see <strong>agency-managed, plan-managed and
+                self-managed</strong> participants.
               </p>
               <p>
                 Therapy happens where your goals matter most — your own home and community — and we keep you, your
@@ -175,7 +191,7 @@ export default function NdisSydneyPage() {
                     </Link>
                   </li>
                 ))}
-                {["Auburn", "Wentworth Point", "Newington", "Homebush West"].map((n) => (
+                {["Auburn", "Wentworth Point", "Newington", "Homebush West", "Parramatta", "Granville", "Westmead", "The Hills District", "Yagoona", "Bass Hill", "Regents Park"].map((n) => (
                   <li key={n} className="rounded-full bg-beige-100 px-4 py-2 text-sm font-medium text-navy-700">{n}</li>
                 ))}
               </ul>
@@ -185,7 +201,7 @@ export default function NdisSydneyPage() {
               </p>
             </div>
 
-            <AuthorReview pageUrl={path} reviewed="October 2026" />
+            <AuthorReview pageUrl={path} reviewed="November 2026" />
 
             <div className="mt-12">
               <h2 className="text-2xl text-navy-900 sm:text-3xl">NDIS physio in Sydney: common questions</h2>
@@ -227,7 +243,7 @@ export default function NdisSydneyPage() {
             serviceType: "NDIS physiotherapy",
             url: `${site.url}${path}`,
             provider: { "@id": `${site.url}/#business` },
-            areaServed: ["Sydney Olympic Park", "Homebush", "Strathfield", "Concord", "Rhodes", "Lidcombe", "Auburn", "Wentworth Point", "Newington"].map(
+            areaServed: ["Sydney Olympic Park", "Homebush", "Strathfield", "Concord", "Rhodes", "Lidcombe", "Auburn", "Wentworth Point", "Newington", "Parramatta", "Yagoona", "Bankstown", "Cabramatta"].map(
               (n) => ({ "@type": "Place", name: `${n}, NSW` })
             ),
             audience: { "@type": "Audience", audienceType: "NDIS participants" },

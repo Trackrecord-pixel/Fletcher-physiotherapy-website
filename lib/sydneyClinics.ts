@@ -56,7 +56,7 @@ export const sydneyClinics: SydneyClinic[] = [
       "Fletcher Physiotherapy Yagoona consults inside Yagoona Family HealthCare at 457 Hume Highway. Because we work alongside your GP, it's easy to be referred, share updates and keep your care joined up — especially if you're on a GP Chronic Condition Management Plan (GPCCMP).",
       "Our physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management). We see people with persistent pain, back and neck pain, arthritis, injuries, and those wanting to get stronger and steadier on their feet — and we focus on practical goals that fit your everyday life.",
     ],
-    nearby: ["Bankstown", "Bass Hill", "Birrong", "Regents Park", "Greenacre", "Condell Park", "Georges Hall", "Chester Hill"],
+    nearby: ["Bankstown", "Bass Hill", "Birrong", "Regents Park", "Greenacre", "Condell Park", "Georges Hall", "Chester Hill", "Cabramatta"],
     hospitals: ["Bankstown-Lidcombe Hospital"],
     transport:
       "The clinic is on the Hume Highway in Yagoona. Yagoona and Birrong stations are nearby, and several bus routes run along the Hume Highway. Ask reception about parking when you book.",

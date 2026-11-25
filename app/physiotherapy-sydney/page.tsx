@@ -37,7 +37,7 @@ const serviceAreaSuburbs = [
   "Sydney Olympic Park", "Homebush", "Homebush West", "Lidcombe", "Auburn",
   "Strathfield", "Concord", "Rhodes", "Wentworth Point", "Newington",
   "Silverwater", "Burwood", "Parramatta", "Granville", "Westmead",
-  "Yagoona", "Bankstown", "Bass Hill", "Birrong", "Regents Park",
+  "Yagoona", "Bankstown", "Bass Hill", "Birrong", "Regents Park", "Cabramatta",
 ];
 
 const services: { icon: IconName; label: string }[] = [

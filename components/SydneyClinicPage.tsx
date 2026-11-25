@@ -5,6 +5,7 @@ import Icon from "./Icon";
 import FAQAccordion from "./FAQAccordion";
 import { BreadcrumbSchema, FaqSchema } from "./StructuredData";
 import { site } from "@/lib/site";
+import { sydneySuburbs } from "@/lib/sydneySuburbs";
 import type { SydneyClinic } from "@/lib/sydneyClinics";
 
 const conditions = [
@@ -220,7 +221,18 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
               </div>
               <div className="card">
                 <h3 className="flex items-center gap-2 text-xl text-navy-900"><Icon name="users" className="h-5 w-5 text-navy-700" /> Patients from nearby</h3>
-                <p className="prose-navy mt-3">We see patients from {c.suburb} and nearby suburbs including {c.nearby.join(", ")}.</p>
+                <p className="prose-navy mt-3">
+                  We see patients from {c.suburb} and nearby suburbs including{" "}
+                  {c.nearby.map((n, i) => {
+                    const sub = sydneySuburbs.find((x) => x.name === n);
+                    return (
+                      <span key={n}>
+                        {sub ? <Link href={`/${sub.slug}`} className="font-semibold underline">{n}</Link> : n}
+                        {i < c.nearby.length - 1 ? ", " : "."}
+                      </span>
+                    );
+                  })}
+                </p>
               </div>
             </div>
 
