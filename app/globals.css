@@ -146,6 +146,19 @@
     text-decoration-color: rgba(135, 249, 211, 0.4);
   }
 
+  /* Buttons placed inside prose keep their own colours (fixes mint-on-mint "Book with Daniel") */
+  .prose-navy a.btn,
+  .prose-navy a.btn-primary,
+  .prose-navy a.btn-secondary,
+  .prose-navy a.btn-outline,
+  .prose-navy a.btn-accent {
+    text-decoration: none;
+  }
+  .prose-navy a.btn-primary { color: var(--base); }
+  .prose-navy a.btn-secondary,
+  .prose-navy a.btn-outline,
+  .prose-navy a.btn-accent { color: var(--text); }
+
   .font-display {
     font-family: var(--font-display);
   }
