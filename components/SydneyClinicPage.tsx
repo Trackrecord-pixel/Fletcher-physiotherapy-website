@@ -224,7 +224,7 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
                 <p className="prose-navy mt-3">
                   We see patients from {c.suburb} and nearby suburbs including{" "}
                   {c.nearby.map((n, i) => {
-                    const sub = sydneySuburbs.find((x) => x.name === n);
+                    const sub = sydneySuburbs.find((x) => x.name === n || x.covers?.includes(n));
                     return (
                       <span key={n}>
                         {sub ? <Link href={`/${sub.slug}`} className="font-semibold underline">{n}</Link> : n}
