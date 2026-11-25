@@ -13,9 +13,9 @@ import { site } from "@/lib/site";
 const VIDEO: string | null = "/videos/fletcher-onsite.mp4";
 const POSTER = "/videos/fletcher-onsite-poster.jpg";
 
-const title = "Onsite Physiotherapy Sydney | Workplace Physio";
+const title = "Onsite Physiotherapy Sydney | Workplace & Corporate Physio";
 const description =
-  "Onsite workplace physiotherapy in Sydney: treatment, manual handling training, ergonomic assessments, pre-shift warm-ups and early intervention. Free consultation.";
+  "Onsite physiotherapy for Sydney workplaces. A physio comes to your site for treatment, manual handling training, ergonomic assessments and early intervention. Free consultation.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },
@@ -61,6 +61,8 @@ const industries = ["Warehousing & logistics", "Distribution centres", "Manufact
 const faqs = [
   { q: "What is onsite physiotherapy?", a: "A physiotherapist visits your workplace on a regular schedule to provide treatment, injury prevention training and ergonomic advice for your staff, instead of employees travelling to a clinic." },
   { q: "What is the 4-Week Onsite Physio Pilot Program?", a: "A short, no-lock-in trial: a free consultation and site walk-through, four weeks of scheduled onsite sessions tailored to your workplace, then a review with recommendations. It lets you see how onsite physio fits your team before committing longer term." },
+  { q: "How often does an onsite physiotherapist come to our workplace?", a: "It's up to you. Many workplaces start with a regular half-day or full-day session each week or fortnight, and we adjust the schedule after the first month based on demand and your priorities." },
+  { q: "Is onsite physiotherapy the same as corporate massage?", a: "No. Onsite physiotherapy is delivered by a registered physiotherapist who assesses the problem, provides treatment and exercise, and gives advice on work tasks and set-up. The focus is on understanding and managing musculoskeletal issues and preventing injuries, not just relaxation." },
   { q: "Which areas do you service?", a: "Sydney Olympic Park, Parramatta and Greater Sydney. Contact us to confirm your site." },
   { q: "How much does it cost?", a: "It depends on your team size, the services you choose and how often we attend. After the free consultation we provide a clear written quote." },
   { q: "Do you need a treatment room?", a: "We'll talk through space requirements during the consultation — usually a private room or quiet space is all that's needed for treatment." },
@@ -99,6 +101,45 @@ export default function OnsitePhysiotherapyPage() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a href="#consult" className="btn-primary sm:w-auto">Book a Free Workplace Consultation <Icon name="arrow" className="h-4 w-4" /></a>
             <a href={site.phoneHref} className="btn-outline sm:w-auto"><Icon name="phone" className="h-4 w-4" /> {site.phone}</a>
+          </div>
+        </div>
+      </section>
+
+      {/* What is onsite physio */}
+      <section className="section-py bg-cream">
+        <div className="container-px grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-7">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-euc-600">Onsite physio explained</p>
+            <h2 className="mt-2 text-3xl text-navy-900 sm:text-4xl">What is onsite physiotherapy?</h2>
+            <div className="prose-navy mt-5 space-y-4">
+              <p>
+                Onsite physiotherapy (also called workplace or corporate physiotherapy) means a registered
+                physiotherapist comes to your workplace on a regular schedule. Staff can be assessed and treated
+                without leaving work, and the physio can see the actual tasks, equipment and workstations involved.
+              </p>
+              <p>
+                Fletcher Physiotherapy provides onsite physiotherapy for businesses across Sydney, including
+                Sydney Olympic Park, Parramatta and Greater Sydney. Programs can combine one-on-one treatment, manual
+                handling training, ergonomic assessments, pre-shift warm-ups and early intervention for work-related
+                injuries.
+              </p>
+            </div>
+          </div>
+          <div className="lg:col-span-5">
+            <div className="card">
+              <h3 className="text-xl text-navy-900">Onsite physio at a glance</h3>
+              <ul className="mt-4 space-y-3 text-sm text-navy-700">
+                {[
+                  "Registered physiotherapist at your site",
+                  "Schedule agreed with your WHS or HR team",
+                  "Treatment, training and ergonomic advice",
+                  "Confidential, consent-based care",
+                  "Written quote after a free consultation",
+                ].map((x) => (
+                  <li key={x} className="flex gap-2"><Icon name="check" className="mt-0.5 h-4 w-4 flex-shrink-0 text-euc-600" /> {x}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
