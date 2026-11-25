@@ -38,6 +38,8 @@ const serviceAreaSuburbs = [
   "Strathfield", "Concord", "Rhodes", "Wentworth Point", "Newington",
   "Silverwater", "Burwood", "Parramatta", "Granville", "Westmead",
   "Yagoona", "Bankstown", "Bass Hill", "Birrong", "Regents Park", "Cabramatta",
+  "Breakfast Point", "Cabarita", "Mortlake", "Concord West", "North Strathfield",
+  "Berala", "Croydon", "Five Dock", "Drummoyne",
 ];
 
 const services: { icon: IconName; label: string }[] = [
@@ -172,7 +174,7 @@ export default function SydneyPage() {
                 </p>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {serviceAreaSuburbs.map((s) => {
-                    const page = sydneySuburbs.find((x) => x.name === s);
+                    const page = sydneySuburbs.find((x) => x.name === s || x.covers?.includes(s));
                     return page ? (
                       <li key={s}>
                         <Link href={`/${page.slug}`} className="block rounded-full bg-navy-800 px-3 py-1.5 text-xs font-medium text-white hover:bg-navy-700">{s}</Link>
