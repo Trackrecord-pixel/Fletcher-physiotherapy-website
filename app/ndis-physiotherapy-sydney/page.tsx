@@ -191,7 +191,7 @@ export default function NdisSydneyPage() {
                     </Link>
                   </li>
                 ))}
-                {["Auburn", "Wentworth Point", "Newington", "Homebush West", "Parramatta", "Granville", "Westmead", "The Hills District", "Yagoona", "Bass Hill", "Regents Park"].map((n) => (
+                {["Parramatta", "Granville", "Westmead", "The Hills District", "Yagoona", "Bass Hill", "Regents Park"].map((n) => (
                   <li key={n} className="rounded-full bg-beige-100 px-4 py-2 text-sm font-medium text-navy-700">{n}</li>
                 ))}
               </ul>
