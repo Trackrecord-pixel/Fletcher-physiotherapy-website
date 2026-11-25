@@ -24,6 +24,18 @@ const AUBURN = {
   name: "Auburn Hospital (Auburn)",
   note: "Community hospital in the Western Sydney Local Health District.",
 };
+const BANKSTOWN_HOSP = {
+  name: "Bankstown-Lidcombe Hospital (Bankstown)",
+  note: "Major public hospital in the South Western Sydney Local Health District, with aged care and rehabilitation services.",
+};
+const FAIRFIELD_HOSP = {
+  name: "Fairfield Hospital (Prairiewood)",
+  note: "Community hospital in the South Western Sydney Local Health District.",
+};
+const LIVERPOOL_HOSP = {
+  name: "Liverpool Hospital (Liverpool)",
+  note: "Large teaching hospital in the South Western Sydney Local Health District.",
+};
 const ROYAL_REHAB = {
   name: "Royal Rehab Private (Ryde)",
   note: "Inpatient and outpatient rehabilitation hospital.",
@@ -207,6 +219,67 @@ export const sydneySuburbs: SydneySuburb[] = [
       {
         q: "How is physiotherapy paid for?",
         a: "Options include NDIS, Support at Home (formerly Home Care Packages), Medicare-subsidised sessions under a GP Chronic Condition Management Plan (GPCCMP), or private payment. We'll explain what applies to you.",
+      },
+    ],
+  },
+
+  {
+    slug: "physiotherapy-bankstown",
+    name: "Bankstown",
+    postcode: "2200",
+    council: "City of Canterbury-Bankstown",
+    metaDescription:
+      "Physio for Bankstown: home visits plus our nearby Yagoona clinic (Tuesdays). Older adults, NDIS, Support at Home and bulk billing for eligible patients.",
+    intro:
+      "Physiotherapy for Bankstown residents — home visits for older adults, NDIS participants and Support at Home clients, or see us at our Yagoona clinic next door.",
+    local: [
+      "Bankstown is a large, diverse centre in south-west Sydney, built around Bankstown station, Bankstown Central and the Chapel Road and Restwell Street shopping strips.",
+      "Our Fletcher Physiotherapy Yagoona clinic is just next door, inside Yagoona Family HealthCare at 457 Hume Highway (Tuesdays, book on 02 8766 2477). If getting out is hard, we can come to you at home instead.",
+    ],
+    homeVisitNotes: [
+      "Many of our clients are older adults who find travel, parking and waiting rooms tiring. At home we work on the things you do every day — getting up from chairs and bed, managing steps and walking to the shops.",
+      "Family members and carers are welcome to join in, and with your consent we keep your GP, Support at Home provider or support coordinator informed.",
+    ],
+    hospitals: [BANKSTOWN_HOSP, AUBURN],
+    nearby: ["Yagoona", "Bass Hill", "Condell Park", "Greenacre", "Punchbowl", "Birrong", "Georges Hall", "Chester Hill"],
+    faqs: [
+      {
+        q: "Is there a physio clinic near Bankstown?",
+        a: "Yes. Fletcher Physiotherapy Yagoona is inside Yagoona Family HealthCare, 457 Hume Highway, Yagoona. We consult there on Tuesdays — book through the clinic on 02 8766 2477. Bulk billing is available for eligible patients on a GP Chronic Condition Management Plan (GPCCMP).",
+      },
+      {
+        q: "Can you visit my parent at home in Bankstown?",
+        a: "Yes. Home visits suit older adults who find it hard to get to a clinic. Call us to check availability, and with your parent's consent we'll talk through their needs and funding.",
+      },
+    ],
+  },
+  {
+    slug: "physiotherapy-cabramatta",
+    name: "Cabramatta",
+    postcode: "2166",
+    council: "Fairfield City Council",
+    metaDescription:
+      "Physiotherapy for Cabramatta: our Yagoona clinic (Tuesdays) is a short drive away, with home visits for older adults and NDIS participants where available.",
+    intro:
+      "Physiotherapy for Cabramatta residents — at our Yagoona clinic a short drive away, or at home for older adults, NDIS participants and Support at Home clients where available.",
+    local: [
+      "Cabramatta is a busy, multicultural centre in south-west Sydney, known for its John Street and Freedom Plaza shopping area and its large Vietnamese and Chinese communities.",
+      "Our nearest clinic is Fletcher Physiotherapy Yagoona, inside Yagoona Family HealthCare at 457 Hume Highway — about 15 minutes' drive along the Hume Highway. We consult there on Tuesdays (book on 02 8766 2477).",
+    ],
+    homeVisitNotes: [
+      "If travelling is hard, ask us about a home visit. We'll confirm availability for your street and plan the visit around your day.",
+      "At home we can practise the transfers, steps and walking routes you use every day, and set up a simple program that family and carers can help with.",
+    ],
+    hospitals: [FAIRFIELD_HOSP, LIVERPOOL_HOSP],
+    nearby: ["Canley Vale", "Canley Heights", "Lansvale", "Cabramatta West", "Fairfield", "Bass Hill"],
+    faqs: [
+      {
+        q: "Where is your nearest clinic to Cabramatta?",
+        a: "Fletcher Physiotherapy Yagoona, inside Yagoona Family HealthCare at 457 Hume Highway, Yagoona. We consult there on Tuesdays — book through the clinic on 02 8766 2477. Bulk billing is available for eligible patients on a GP Chronic Condition Management Plan (GPCCMP).",
+      },
+      {
+        q: "Do you do home visits in Cabramatta?",
+        a: "Call us to check. Cabramatta is at the edge of our Sydney home visit area, so availability depends on the day and your location.",
       },
     ],
   },
