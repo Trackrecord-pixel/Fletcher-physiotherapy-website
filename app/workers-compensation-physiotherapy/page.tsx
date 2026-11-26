@@ -4,7 +4,7 @@ import { landingPages } from "@/lib/landing";
 
 const c = landingPages["workers-compensation-physiotherapy"];
 const title = "WorkCover Physiotherapy | Workers Compensation Physio";
-const description = "Physiotherapy for work injuries under NSW workers compensation at Jesmond, Yagoona and Parramatta, or at home. We liaise with your doctor and insurer.";
+const description = "Physiotherapy for work injuries under NSW workers compensation at Jesmond, Yagoona, Parramatta and Blacktown, or at home. We liaise with your doctor and insurer.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },
