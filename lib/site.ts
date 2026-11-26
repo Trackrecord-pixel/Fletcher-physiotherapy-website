@@ -59,6 +59,7 @@ export const clinicNav: NavLink[] = [
   { label: "Jesmond (Newcastle) · Mondays", href: "/physiotherapy-jesmond" },
   { label: "Yagoona · Tuesdays", href: "/physiotherapy-yagoona" },
   { label: "Parramatta · Wednesdays", href: "/physiotherapy-parramatta" },
+  { label: "Blacktown · Fridays", href: "/physiotherapy-blacktown" },
 ];
 
 export const homeVisitNav: NavLink[] = [
@@ -119,6 +120,7 @@ export const locationsNav: NavLink[] = [
   { label: "Jesmond Clinic", href: "/physiotherapy-jesmond" },
   { label: "Yagoona Clinic", href: "/physiotherapy-yagoona" },
   { label: "Parramatta Clinic", href: "/physiotherapy-parramatta" },
+  { label: "Blacktown Clinic", href: "/physiotherapy-blacktown" },
   { label: "Home Visits – Newcastle & Central Coast", href: "/home-visit-physiotherapy-newcastle" },
   { label: "Home Visits – Sydney", href: "/physiotherapy-sydney" },
   { label: "All Locations", href: "/locations" },
@@ -377,7 +379,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "How do I book an appointment?",
-    a: "Call us on 0404 791 756 or send an enquiry through our contact page. Jesmond clinic appointments can also be booked online, and Yagoona and Parramatta appointments are booked through each medical centre's reception. We will confirm your appointment and answer any questions about funding and what to expect.",
+    a: "Call us on 0404 791 756 or send an enquiry through our contact page. Jesmond clinic appointments can also be booked online, and Yagoona, Parramatta and Blacktown appointments are booked through each medical centre's reception. We will confirm your appointment and answer any questions about funding and what to expect.",
   },
 ];
 

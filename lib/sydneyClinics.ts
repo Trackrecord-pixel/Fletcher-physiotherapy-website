@@ -90,6 +90,32 @@ export const sydneyClinics: SydneyClinic[] = [
     transport:
       "The clinic is on Marsden Street in the Parramatta CBD, a short walk from Parramatta station and the light rail. Ask reception about nearby parking when you book.",
   },
+  {
+    slug: "physiotherapy-blacktown",
+    suburb: "Blacktown",
+    brandName: "Fletcher Physiotherapy Blacktown",
+    hostCentre: "Lourdes Medical and Dental Centre",
+    streetAddress: "81-83 Richmond Road",
+    postcode: "2148",
+    phone: "02 9622 1998",
+    days: "Fridays, 9:00am – 4:30pm",
+    hours: [{ dayOfWeek: "Friday", opens: "09:00", closes: "16:30" }],
+    startDate: "November 2026",
+    seoTitle: "Physio Blacktown | Bulk Billing Physiotherapy | Fletcher",
+    bulkBilling: true,
+    metaDescription:
+      "Physio in Blacktown at Lourdes Medical and Dental Centre, 81-83 Richmond Rd. Pain, injuries and rehab. Bulk billing for eligible GPCCMP patients. Call 02 9622 1998.",
+    intro:
+      "Physiotherapy inside Lourdes Medical and Dental Centre on Richmond Road, Blacktown — for pain, injuries, rehabilitation, balance and falls prevention. Book through the clinic's reception.",
+    about: [
+      "Fletcher Physiotherapy Blacktown consults inside Lourdes Medical and Dental Centre at 81-83 Richmond Road every Friday. Working within a GP practice makes referrals simple and keeps your GP up to date — including for patients on a GP Chronic Condition Management Plan (GPCCMP).",
+      "Our physiotherapy is led by an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management). We help with persistent pain, back and neck pain, arthritis, work and sports injuries, rehabilitation after surgery, and strength and balance for older adults.",
+    ],
+    nearby: ["Seven Hills", "Prospect", "Kings Langley", "Lalor Park", "Marayong", "Doonside", "Quakers Hill", "Rooty Hill"],
+    hospitals: ["Blacktown Hospital"],
+    transport:
+      "The clinic is on Richmond Road in Blacktown, inside Lourdes Medical and Dental Centre. Ask reception about parking when you book.",
+  },
 ];
 
 export const sydneyClinicSlugs = sydneyClinics.map((c) => c.slug);
