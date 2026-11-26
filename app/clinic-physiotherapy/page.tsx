@@ -4,7 +4,7 @@ import { landingPages } from "@/lib/landing";
 
 const c = landingPages["clinic-physiotherapy"];
 const title = "Physio Clinics | Jesmond, Yagoona & Parramatta";
-const description = "Physiotherapy clinics inside GP practices in Jesmond, Yagoona and Parramatta. Pain, injuries and rehab. Medicare GPCCMP, DVA, WorkCover and private.";
+const description = "Physiotherapy clinics inside GP practices in Jesmond, Yagoona, Parramatta and Blacktown. Pain, injuries and rehab. Medicare GPCCMP, DVA, WorkCover and private.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },
