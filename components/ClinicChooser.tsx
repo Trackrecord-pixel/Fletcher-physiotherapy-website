@@ -48,7 +48,7 @@ export default function ClinicChooser() {
   ];
 
   return (
-    <ul className="grid gap-4 md:grid-cols-3 md:gap-6">
+    <ul className="grid gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4">
       {cards.map((c) => (
         <li
           key={c.slug}

@@ -68,7 +68,7 @@ const whatWeTreat: { label: string; text: string; href: string; icon: IconName }
   { label: "Sports Injuries", text: "Sprains, strains and tendon injuries, with return-to-sport planning.", href: "/sports-injury-physiotherapy", icon: "strength" },
   { label: "Post-Surgical Rehabilitation", text: "Before and after joint replacement and orthopaedic surgery.", href: "/post-surgical-rehabilitation", icon: "recovery" },
   { label: "Falls Prevention", text: "Balance, strength and mobility for steadier, more confident movement.", href: "/falls-prevention-physiotherapy-newcastle", icon: "balance" },
-  { label: "Bulk Billing Physiotherapy", text: "At our Jesmond, Yagoona and Parramatta clinics — for eligible Medicare GPCCMP patients.", href: "/bulk-billing-physiotherapy-yagoona", icon: "check" },
+  { label: "Bulk Billing Physiotherapy", text: "At our Jesmond, Yagoona, Parramatta and Blacktown clinics — for eligible Medicare GPCCMP patients.", href: "/bulk-billing-physiotherapy-yagoona", icon: "check" },
 ];
 
 const credentials = [
@@ -104,7 +104,7 @@ export default function HomePage() {
             Physiotherapy that fits your life — <span className="text-[#87f9d3]">in clinic, at home or at work.</span>
           </h1>
           <p className="mx-auto mt-3 max-w-xl text-base text-[#c9d6d1] sm:text-lg">
-            Led by an APA Titled Pain Physiotherapist. Clinics in Jesmond, Yagoona and Parramatta; home visits across
+            Led by an APA Titled Pain Physiotherapist. Clinics in Jesmond, Yagoona, Parramatta and Blacktown; home visits across
             Sydney, Newcastle and the Central Coast; onsite programs for Sydney workplaces.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -140,7 +140,7 @@ export default function HomePage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-euc-200">In clinic</p>
                 <h3 className="mt-3 text-3xl text-white">Clinic physiotherapy</h3>
                 <p className="mt-3 text-euc-50/90">
-                  Consultations inside GP practices in Jesmond, Yagoona and Parramatta — hands-on treatment and
+                  Consultations inside GP practices in Jesmond, Yagoona, Parramatta and Blacktown — hands-on treatment and
                   exercise-based rehabilitation.
                 </p>
                 <ul className="mt-6 grid gap-2.5 text-[0.95rem] text-white/95 sm:grid-cols-2 lg:grid-cols-1">
@@ -230,7 +230,7 @@ export default function HomePage() {
               How it works <Icon name="arrow" className="h-4 w-4" />
             </span>
           </Link>
-          <div className="mt-6 grid gap-5 md:grid-cols-3">
+          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {allClinics.map((c, i) => (
               <Reveal key={c.slug}>
                 <article className="flex h-full flex-col rounded-3xl border border-beige-200 bg-white p-7 transition-[transform,box-shadow,border-color,background-color] duration-300 hover:-translate-y-1 hover:shadow-card-hover">

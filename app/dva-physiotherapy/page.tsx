@@ -4,7 +4,7 @@ import { landingPages } from "@/lib/landing";
 
 const c = landingPages["dva-physiotherapy"];
 const title = "DVA Physiotherapy | Gold & White Card | Clinic & Home";
-const description = "Physiotherapy for DVA Gold and White Card holders at Jesmond, Yagoona and Parramatta clinics, or at home across Sydney, Newcastle and the Central Coast.";
+const description = "Physiotherapy for DVA Gold and White Card holders at Jesmond, Yagoona, Parramatta and Blacktown clinics, or at home across Sydney, Newcastle and the Central Coast.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },

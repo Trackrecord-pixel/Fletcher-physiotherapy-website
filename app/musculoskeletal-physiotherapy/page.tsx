@@ -4,7 +4,7 @@ import { landingPages } from "@/lib/landing";
 
 const c = landingPages["musculoskeletal-physiotherapy"];
 const title = "Musculoskeletal Physiotherapy | Sydney & Newcastle";
-const description = "Physio for back, neck, shoulder, hip and knee pain, sprains and work injuries — in clinic at Jesmond, Yagoona and Parramatta, or at home.";
+const description = "Physio for back, neck, shoulder, hip and knee pain, sprains and work injuries — in clinic at Jesmond, Yagoona, Parramatta and Blacktown, or at home.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },

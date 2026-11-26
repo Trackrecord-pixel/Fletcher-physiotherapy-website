@@ -4,7 +4,7 @@ import ServiceDetail from "@/components/ServiceDetail";
 export const metadata: Metadata = {
   title: "Persistent Pain Physiotherapy | Clinic & Home Visits",
   description:
-    "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona and Parramatta, or at home.",
+    "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona, Parramatta and Blacktown, or at home.",
   alternates: { canonical: "/chronic-pain-management" },
   openGraph: {
     type: "website",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Persistent Pain Physiotherapy | Clinic & Home Visits",
     description:
-      "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona and Parramatta, or at home.",
+      "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona, Parramatta and Blacktown, or at home.",
     url: "/chronic-pain-management",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Persistent Pain Physiotherapy | Clinic & Home Visits",
     description:
-      "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona and Parramatta, or at home.",
+      "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona, Parramatta and Blacktown, or at home.",
     images: ["/images/og-default.png"],
   },
 };
@@ -31,7 +31,7 @@ export default function Page() {
       slug="chronic-pain-management"
       eyebrow="Persistent Pain Physiotherapy"
       title="Move with confidence and reclaim what matters"
-      intro="Compassionate, evidence-based persistent pain physiotherapy — in clinic at Jesmond, Yagoona and Parramatta, or at home. Led by a Master's-qualified pain management clinician, we help reduce fear of movement and return you to meaningful daily activity."
+      intro="Compassionate, evidence-based persistent pain physiotherapy — in clinic at Jesmond, Yagoona, Parramatta and Blacktown, or at home. Led by a Master's-qualified pain management clinician, we help reduce fear of movement and return you to meaningful daily activity."
       lead={[
         "Persistent pain is complex, and it affects far more than the body — it can shrink your world, erode confidence and make movement feel frightening. Our approach combines the latest understanding of pain science with hands-on treatment and simple, practical strategies you can use every day.",
         "Our director, Daniel Lee, holds a Master's degree in Pain Management from the University of Sydney. Care centres on understanding your individual experience and goals, gently rebuilding your capacity for movement and reducing the fear that often keeps pain cycles going.",

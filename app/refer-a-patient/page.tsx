@@ -139,7 +139,7 @@ export default function ReferAPatientPage() {
             <h2 className="mt-4 text-3xl text-navy-900">Referring a client in Sydney?</h2>
             <p className="mt-4 text-navy-600">
               We provide home visits around Sydney Olympic Park, the Inner West, Parramatta and
-              Bankstown–Yagoona, plus clinic appointments at Yagoona and Parramatta.
+              Bankstown–Yagoona, plus clinic appointments at Yagoona, Parramatta and Blacktown.
             </p>
             <Link href="/physiotherapy-sydney" className="btn-secondary mt-6">
               Sydney service details <Icon name="arrow" className="h-4 w-4" />

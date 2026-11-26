@@ -18,7 +18,7 @@ const allClinicCards = [
 
 const title = "Physio Near Me: Newcastle & Sydney Home Visits";
 const description =
-  "Find a physio near you: clinics in Jesmond, Yagoona and Parramatta, plus home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast.";
+  "Find a physio near you: clinics in Jesmond, Yagoona, Parramatta and Blacktown, plus home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast.";
 
 export const metadata: Metadata = {
   title,
@@ -79,7 +79,7 @@ const faqs = [
   },
   {
     q: "Where is your physio clinic?",
-    a: "We have three clinics: HealthSure Medical Centre Jesmond in Newcastle (Mondays), Yagoona Family HealthCare in Yagoona (Tuesdays) and Parramatta Medical and Dental Centre in Parramatta (Wednesdays). We also offer home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
+    a: "We have four clinics: HealthSure Medical Centre Jesmond in Newcastle (Mondays), Yagoona Family HealthCare in Yagoona (Tuesdays), Parramatta Medical and Dental Centre in Parramatta (Wednesdays) and Lourdes Medical and Dental Centre in Blacktown (Fridays). We also offer home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
   },
   {
     q: "Do I need a referral to see a physio?",
@@ -119,7 +119,7 @@ export default function PhysioNearMePage() {
       <PageHero
         eyebrow="Physio Near Me"
         title="Find a Physio Near You"
-        intro="Visit our clinics in Jesmond, Yagoona or Parramatta, or have a physiotherapist come to your home across Sydney, Newcastle, Lake Macquarie and the Central Coast."
+        intro="Visit our clinics in Jesmond, Yagoona, Parramatta or Blacktown, or have a physiotherapist come to your home across Sydney, Newcastle, Lake Macquarie and the Central Coast."
         breadcrumb={crumbs}
       />
 
@@ -203,7 +203,7 @@ export default function PhysioNearMePage() {
             <div className="card">
               <h3 className="text-lg text-navy-900">A clinic may suit you if…</h3>
               <ul className="mt-3 space-y-2 text-sm text-navy-700">
-                {["You can drive or travel easily", "A weekday clinic appointment works for you", "You'd like to use clinic equipment", "You live near Jesmond, Yagoona or Parramatta"].map((x) => (
+                {["You can drive or travel easily", "A weekday clinic appointment works for you", "You'd like to use clinic equipment", "You live near Jesmond, Yagoona, Parramatta or Blacktown"].map((x) => (
                   <li key={x} className="flex gap-2"><Icon name="check" className="mt-0.5 h-4 w-4 flex-shrink-0 text-navy-500" /> {x}</li>
                 ))}
               </ul>

@@ -24,7 +24,7 @@ export default function Hero() {
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-navy-700">
             Experienced physiotherapy in your own home, for older adults, families, NDIS participants and
             Support at Home clients — visiting homes across Newcastle, Lake Macquarie, the Central Coast and
-            Sydney, with clinics in Jesmond, Yagoona and Parramatta.
+            Sydney, with clinics in Jesmond, Yagoona, Parramatta and Blacktown.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

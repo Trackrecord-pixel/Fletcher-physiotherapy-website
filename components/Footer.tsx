@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Logo light />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-navy-200">
-              Physiotherapy in clinic or at home. Clinics in Jesmond, Yagoona and Parramatta;
+              Physiotherapy in clinic or at home. Clinics in Jesmond, Yagoona, Parramatta and Blacktown;
               home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast. Led by an
               APA Titled Pain Physiotherapist.
             </p>

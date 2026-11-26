@@ -4,7 +4,7 @@ import { landingPages } from "@/lib/landing";
 
 const c = landingPages["knee-pain-physiotherapy"];
 const title = "Knee Pain Physio | Arthritis, Injury & Rehab";
-const description = "Physiotherapy for knee pain, knee osteoarthritis, kneecap pain and ligament injuries in Jesmond, Yagoona and Parramatta, or at home.";
+const description = "Physiotherapy for knee pain, knee osteoarthritis, kneecap pain and ligament injuries in Jesmond, Yagoona, Parramatta and Blacktown, or at home.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },

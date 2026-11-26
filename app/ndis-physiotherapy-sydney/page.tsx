@@ -12,7 +12,7 @@ import { sydneySuburbs } from "@/lib/sydneySuburbs";
 const path = "/ndis-physiotherapy-sydney";
 const title = "NDIS Physiotherapy Sydney | Home Visits & Clinics";
 const description =
-  "NDIS physiotherapy in Sydney from a registered NDIS provider. Physio at home and in our Parramatta and Yagoona clinics. Agency, plan and self-managed welcome.";
+  "NDIS physiotherapy in Sydney from a registered NDIS provider. Physio at home and in our Parramatta, Yagoona and Blacktown clinics. Agency, plan and self-managed welcome.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },
@@ -53,7 +53,7 @@ const coordinatorChecklist = [
 const faqs = [
   {
     q: "Are you a registered NDIS provider in Sydney?",
-    a: `Yes. Fletcher Physiotherapy is a registered NDIS provider${reg ? ` (${reg})` : ""}. We see agency-managed, plan-managed and self-managed participants at home across Sydney, and at our Parramatta and Yagoona clinics.`,
+    a: `Yes. Fletcher Physiotherapy is a registered NDIS provider${reg ? ` (${reg})` : ""}. We see agency-managed, plan-managed and self-managed participants at home across Sydney, and at our Parramatta, Yagoona and Blacktown clinics.`,
   },
   {
     q: "Which part of an NDIS plan pays for physiotherapy?",
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: "Can I see an NDIS physiotherapist in a clinic instead of at home?",
-    a: "Yes. As well as home visits, we consult at Fletcher Physiotherapy Parramatta (Wednesdays, 02 8320 9300) and Fletcher Physiotherapy Yagoona (Tuesdays, 02 8766 2477). Tell reception you're an NDIS participant when you book.",
+    a: "Yes. As well as home visits, we consult at Fletcher Physiotherapy Parramatta (Wednesdays, 02 8320 9300) Fletcher Physiotherapy Yagoona (Tuesdays, 02 8766 2477) and Fletcher Physiotherapy Blacktown (Fridays, 02 9622 1998). Tell reception you're an NDIS participant when you book.",
   },
   {
     q: "Do I need a GP referral for NDIS physiotherapy?",
@@ -101,7 +101,7 @@ export default function NdisSydneyPage() {
       <PageHero
         eyebrow="NDIS Physiotherapy · Sydney"
         title="NDIS Physiotherapy in Sydney"
-        intro="NDIS physiotherapy at home across Sydney, or at our Parramatta and Yagoona clinics — from a registered NDIS provider."
+        intro="NDIS physiotherapy at home across Sydney, or at our Parramatta, Yagoona and Blacktown clinics — from a registered NDIS provider."
         breadcrumb={crumbs}
       />
 

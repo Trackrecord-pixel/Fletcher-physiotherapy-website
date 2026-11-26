@@ -11,7 +11,7 @@ export const landingPages: Record<string, LandingContent> = {
     h1: "Lower back pain physiotherapy",
     serviceName: "Lower Back Pain Physiotherapy",
     intro:
-      "Assessment and treatment for acute and persistent lower back pain, stiffness and associated leg symptoms — at our Jesmond, Yagoona and Parramatta clinics, or at home.",
+      "Assessment and treatment for acute and persistent lower back pain, stiffness and associated leg symptoms — at our Jesmond, Yagoona, Parramatta and Blacktown clinics, or at home.",
     lead: [
       "Lower back pain is one of the most common reasons people see a physiotherapist. Most episodes are not caused by serious damage, and many people improve with the right mix of reassurance, activity and graded exercise — but pain can still be worrying and disrupt sleep, work and daily life.",
       "Our role is to work out what is contributing to your pain, check for anything that needs medical review, and build a plan that helps you keep moving and gradually return to the activities that matter to you.",
@@ -46,7 +46,7 @@ export const landingPages: Record<string, LandingContent> = {
       {
         h2: "Funding and where to be seen",
         body: [
-          "Private patients don't need a referral. Eligible Medicare patients with a GP Chronic Condition Management Plan referral can be bulk billed at our Jesmond, Yagoona and Parramatta clinics. DVA, WorkCover and CTP patients are also seen, subject to their claim and referral requirements. Home visits are available if getting to a clinic is difficult.",
+          "Private patients don't need a referral. Eligible Medicare patients with a GP Chronic Condition Management Plan referral can be bulk billed at our Jesmond, Yagoona, Parramatta and Blacktown clinics. DVA, WorkCover and CTP patients are also seen, subject to their claim and referral requirements. Home visits are available if getting to a clinic is difficult.",
         ],
       },
     ],
@@ -54,7 +54,7 @@ export const landingPages: Record<string, LandingContent> = {
       { q: "Should I rest or keep moving with back pain?", a: "For most people, staying gently active is better than bed rest. Your physiotherapist can help you find a level of activity that's manageable and build from there." },
       { q: "Do I need an X-ray or MRI?", a: "Usually not. Most low back pain can be assessed clinically. Imaging is considered when specific warning signs are present or symptoms don't follow the expected course." },
       { q: "Can physiotherapy help sciatica?", a: "Physiotherapy may help many people with sciatica through education, activity advice and graded exercise. We monitor nerve symptoms closely and refer for medical review if needed." },
-      { q: "Can I be bulk billed for back pain physio?", a: "Eligible Medicare patients with a GPCCMP referral from their GP can be bulk billed at our Jesmond, Yagoona and Parramatta clinics. Ask your GP whether a GPCCMP is appropriate for you." },
+      { q: "Can I be bulk billed for back pain physio?", a: "Eligible Medicare patients with a GPCCMP referral from their GP can be bulk billed at our Jesmond, Yagoona, Parramatta and Blacktown clinics. Ask your GP whether a GPCCMP is appropriate for you." },
     ],
     related: [
       { label: "Bulk billing physiotherapy in Yagoona", href: "/bulk-billing-physiotherapy-yagoona" },
@@ -76,7 +76,7 @@ export const landingPages: Record<string, LandingContent> = {
     h1: "Neck pain and headache physiotherapy",
     serviceName: "Neck Pain Physiotherapy",
     intro:
-      "Physiotherapy for neck pain, stiffness, restricted movement and neck-related headaches — in clinic at Jesmond, Yagoona and Parramatta, or at home.",
+      "Physiotherapy for neck pain, stiffness, restricted movement and neck-related headaches — in clinic at Jesmond, Yagoona, Parramatta and Blacktown, or at home.",
     lead: [
       "Neck pain can come on suddenly after sleeping awkwardly or build gradually with desk work, stress or reduced activity. It often comes with stiffness, shoulder or upper-back tension, and sometimes headaches.",
       "Physiotherapy aims to restore comfortable movement, build strength and endurance in the neck and upper back, and give you practical strategies for work and daily life.",
@@ -228,7 +228,7 @@ export const landingPages: Record<string, LandingContent> = {
     faqs: [
       { q: "Is exercise safe with knee arthritis?", a: "For most people, yes. A tailored program that is progressed gradually is a recommended part of managing knee osteoarthritis." },
       { q: "Can you help me prepare for a knee replacement?", a: "Yes. Strengthening before surgery (prehabilitation) can help you prepare, and we continue rehabilitation after your operation." },
-      { q: "Can I use Medicare for knee physio?", a: "Eligible patients with a GPCCMP referral may claim a Medicare rebate, and can be bulk billed at our Jesmond, Yagoona and Parramatta clinics." },
+      { q: "Can I use Medicare for knee physio?", a: "Eligible patients with a GPCCMP referral may claim a Medicare rebate, and can be bulk billed at our Jesmond, Yagoona, Parramatta and Blacktown clinics." },
     ],
     related: [
       { label: "Knee replacement rehabilitation", href: "/knee-replacement-rehabilitation-newcastle" },
@@ -304,7 +304,7 @@ export const landingPages: Record<string, LandingContent> = {
     h1: "Sports injury physiotherapy",
     serviceName: "Sports Injury Physiotherapy",
     intro:
-      "Assessment and rehabilitation of sports-related muscle, tendon, ligament and joint injuries at our Jesmond, Yagoona and Parramatta clinics.",
+      "Assessment and rehabilitation of sports-related muscle, tendon, ligament and joint injuries at our Jesmond, Yagoona, Parramatta and Blacktown clinics.",
     lead: [
       "Whether you play weekend sport, run, go to the gym or are returning to activity after time off, injuries can interrupt both training and everyday life.",
       "Our focus is a clear diagnosis, a rehabilitation plan matched to your sport, and a gradual return to training with the aim of reducing the risk of re-injury.",
@@ -449,9 +449,9 @@ export const landingPages: Record<string, LandingContent> = {
     h1: "Clinic physiotherapy in Sydney and Newcastle",
     serviceName: "Clinic Physiotherapy",
     intro:
-      "Physiotherapy consultations inside GP practices in Jesmond, Yagoona and Parramatta — individual assessment, hands-on treatment and exercise-based rehabilitation.",
+      "Physiotherapy consultations inside GP practices in Jesmond, Yagoona, Parramatta and Blacktown — individual assessment, hands-on treatment and exercise-based rehabilitation.",
     lead: [
-      "Fletcher Physiotherapy consults inside three GP practices: HealthSure Medical Centre Jesmond in Newcastle (Mondays), Yagoona Family HealthCare (Tuesdays) and Parramatta Medical and Dental Centre (Wednesdays).",
+      "Fletcher Physiotherapy consults inside four GP practices: HealthSure Medical Centre Jesmond in Newcastle (Mondays), Yagoona Family HealthCare (Tuesdays), Parramatta Medical and Dental Centre (Wednesdays) and Lourdes Medical and Dental Centre, Blacktown (Fridays).",
       "Seeing a physiotherapist inside your GP's practice keeps care simple. Referrals are easy, your GP can be kept up to date with your consent, and Medicare GP Chronic Condition Management Plan (GPCCMP) referrals fit naturally into the process.",
       "Clinic care is led by Daniel Lee, an APA Titled Pain Physiotherapist with a Master of Science in Medicine (Pain Management).",
     ],
@@ -481,7 +481,7 @@ export const landingPages: Record<string, LandingContent> = {
         h2: "Funding and payment",
         body: ["We see private patients (no referral needed) and patients funded through:"],
         list: [
-          "Medicare — GP Chronic Condition Management Plan (GPCCMP); bulk billed for eligible patients at our Jesmond, Yagoona and Parramatta clinics",
+          "Medicare — GP Chronic Condition Management Plan (GPCCMP); bulk billed for eligible patients at our Jesmond, Yagoona, Parramatta and Blacktown clinics",
           "DVA — Gold Card, or White Card for accepted conditions",
           "WorkCover (workers compensation) — with an approved claim",
           "CTP — eligible NSW motor vehicle accident claims",
@@ -493,13 +493,13 @@ export const landingPages: Record<string, LandingContent> = {
       {
         h2: "How to book",
         body: [
-          "Jesmond: book online or call us on 0404 791 756. Yagoona and Parramatta: appointments are booked through each medical centre's reception — the numbers are on each clinic page.",
+          "Jesmond: book online or call us on 0404 791 756. Yagoona, Parramatta and Blacktown: appointments are booked through each medical centre's reception — the numbers are on each clinic page.",
           "Can't get to a clinic? We also provide home visit physiotherapy across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
         ],
       },
     ],
     faqs: [
-      { q: "Where are your physiotherapy clinics?", a: "Jesmond (HealthSure Medical Centre, Mondays), Yagoona (Yagoona Family HealthCare, 457 Hume Highway, Tuesdays) and Parramatta (Parramatta Medical and Dental Centre, Shop 1, 144 Marsden Street, Wednesdays)." },
+      { q: "Where are your physiotherapy clinics?", a: "Jesmond (HealthSure Medical Centre, Mondays), Yagoona (Yagoona Family HealthCare, 457 Hume Highway, Tuesdays), Parramatta (Parramatta Medical and Dental Centre, Shop 1, 144 Marsden Street, Wednesdays) and Blacktown (Lourdes Medical and Dental Centre, 81-83 Richmond Road, Fridays)." },
       { q: "Do I need a referral?", a: "Not for private physiotherapy. A GP referral is needed for Medicare-subsidised sessions under a GP Chronic Condition Management Plan (GPCCMP) and for DVA. WorkCover treatment needs an accepted claim." },
       { q: "Can I claim on my private health insurance?", a: "Yes — we provide receipts so you can claim with your fund. How much you get back depends on your level of cover." },
       { q: "Is clinic or home visit physiotherapy better for me?", a: "If you can travel comfortably, clinic appointments work well. If getting out is difficult, you're recovering from hospital, or your goals are about managing at home, a home visit is often the better choice. Call us and we'll help you decide." },
@@ -591,7 +591,7 @@ export const landingPages: Record<string, LandingContent> = {
     lead: [
       "Our Sydney home visit service covers Sydney Olympic Park and the Inner West — including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood — as well as the Parramatta area, the Hills and Bankstown–Yagoona.",
       "Much of Sydney living is in apartments, so we regularly work on the things clinics can't see: lifts and corridors, compact bathrooms, building entries and the walk to the car park or the street.",
-      "Home visits are led by Daniel Lee, an APA Titled Pain Physiotherapist. We also see clinic patients at Yagoona and Parramatta.",
+      "Home visits are led by Daniel Lee, an APA Titled Pain Physiotherapist. We also see clinic patients at Yagoona, Parramatta and Blacktown.",
     ],
     sections: [
       {
@@ -622,7 +622,7 @@ export const landingPages: Record<string, LandingContent> = {
     faqs: [
       { q: "Which Sydney suburbs do you visit?", a: "Sydney Olympic Park and the Inner West (including Homebush, Strathfield, Concord, Rhodes, Lidcombe, Auburn, Newington, Wentworth Point, Silverwater and Burwood), the Parramatta area, the Hills and Bankstown–Yagoona. Call to check your suburb." },
       { q: "Can you visit apartments?", a: "Yes — most of our Sydney visits are in apartments. Let us know about parking, building access and lifts when you book." },
-      { q: "Do you also have Sydney clinics?", a: "Yes. We consult at Yagoona Family HealthCare (Tuesdays) and Parramatta Medical and Dental Centre (Wednesdays), booked through each clinic's reception." },
+      { q: "Do you also have Sydney clinics?", a: "Yes. We consult at Yagoona Family HealthCare (Tuesdays), Parramatta Medical and Dental Centre (Wednesdays) and Lourdes Medical and Dental Centre, Blacktown (Fridays), booked through each clinic's reception." },
       { q: "Do you see NDIS participants at home in Sydney?", a: "Yes. We're a registered NDIS provider (NDIS0023718) and see agency-, plan- and self-managed participants." },
     ],
     related: [
@@ -885,7 +885,7 @@ export const landingPages: Record<string, LandingContent> = {
       {
         h2: "Clinic or home?",
         body: [
-          "Most musculoskeletal problems are well suited to clinic appointments in Jesmond, Yagoona or Parramatta. If travel is difficult, we can treat you at home.",
+          "Most musculoskeletal problems are well suited to clinic appointments in Jesmond, Yagoona, Parramatta or Blacktown. If travel is difficult, we can treat you at home.",
         ],
       },
     ],
@@ -962,7 +962,7 @@ export const landingPages: Record<string, LandingContent> = {
     h1: "WorkCover (workers compensation) physiotherapy",
     serviceName: "Workers Compensation Physiotherapy",
     intro:
-      "Physiotherapy for work-related injuries under NSW workers compensation — at our Jesmond, Yagoona and Parramatta clinics or at home.",
+      "Physiotherapy for work-related injuries under NSW workers compensation — at our Jesmond, Yagoona, Parramatta and Blacktown clinics or at home.",
     lead: [
       "If you've been injured at work and have a workers compensation claim, physiotherapy can help you recover and return to work safely.",
       "We work with your nominated treating doctor, the insurer and your employer's return-to-work team, keeping everyone informed with clear, timely reports.",
@@ -1005,7 +1005,7 @@ export const landingPages: Record<string, LandingContent> = {
     h1: "DVA physiotherapy for veterans",
     serviceName: "DVA Physiotherapy",
     intro:
-      "Physiotherapy for DVA Gold and White Card holders — at our Jesmond, Yagoona and Parramatta clinics, or at home across Sydney, Newcastle and the Central Coast.",
+      "Physiotherapy for DVA Gold and White Card holders — at our Jesmond, Yagoona, Parramatta and Blacktown clinics, or at home across Sydney, Newcastle and the Central Coast.",
     lead: [
       "Veterans and eligible family members with a Department of Veterans' Affairs (DVA) card can receive physiotherapy funded by DVA when it's clinically required.",
       "Gold Card holders are covered for clinically necessary treatment. White Card holders are covered for accepted conditions. You'll need a referral from your GP or treating doctor.",
@@ -1014,7 +1014,7 @@ export const landingPages: Record<string, LandingContent> = {
       {
         h2: "Clinic or home",
         body: [
-          "We see DVA patients at our clinics in Jesmond (Mondays), Yagoona (Tuesdays) and Parramatta (Wednesdays), and at home across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
+          "We see DVA patients at our clinics in Jesmond (Mondays), Yagoona (Tuesdays), Parramatta (Wednesdays) and Blacktown (Fridays), and at home across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
         ],
       },
       {

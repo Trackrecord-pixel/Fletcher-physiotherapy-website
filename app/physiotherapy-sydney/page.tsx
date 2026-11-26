@@ -170,7 +170,7 @@ export default function SydneyPage() {
                 <h2 className="text-xl text-navy-900">Sydney service area</h2>
                 <p className="mt-2 text-sm text-navy-600">
                   Home visits around Sydney Olympic Park and the Inner West, the Parramatta area and
-                  Bankstown–Yagoona — plus clinics in Yagoona and Parramatta.
+                  Bankstown–Yagoona — plus clinics in Yagoona, Parramatta and Blacktown.
                 </p>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {serviceAreaSuburbs.map((s) => {

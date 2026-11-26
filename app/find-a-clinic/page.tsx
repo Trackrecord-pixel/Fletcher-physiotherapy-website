@@ -7,7 +7,7 @@ import Icon from "@/components/Icon";
 // Kept out of the index (noindex) so it doesn't compete with /clinic-physiotherapy.
 export const metadata: Metadata = {
   title: { absolute: "Find a Clinic | Jesmond, Yagoona & Parramatta | Fletcher" },
-  description: "Choose your Fletcher Physiotherapy clinic: Jesmond (Newcastle), Yagoona or Parramatta (Sydney).",
+  description: "Choose your Fletcher Physiotherapy clinic: Jesmond (Newcastle), Yagoona, Parramatta or Blacktown (Sydney).",
   alternates: { canonical: "/find-a-clinic" },
   robots: { index: false, follow: true },
 };

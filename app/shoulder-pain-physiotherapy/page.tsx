@@ -4,7 +4,7 @@ import { landingPages } from "@/lib/landing";
 
 const c = landingPages["shoulder-pain-physiotherapy"];
 const title = "Shoulder Pain Physio | Rotator Cuff & Frozen Shoulder";
-const description = "Physiotherapy for shoulder pain, rotator cuff conditions and frozen shoulder — individualised rehab in Jesmond, Yagoona and Parramatta, or at home.";
+const description = "Physiotherapy for shoulder pain, rotator cuff conditions and frozen shoulder — individualised rehab in Jesmond, Yagoona, Parramatta and Blacktown, or at home.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },

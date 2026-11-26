@@ -101,7 +101,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <LocationPicker title="Looking for a specific location?" intro="Go straight to your nearest clinic or home visit area. Our Yagoona and Parramatta clinics are booked through the clinic's reception." />
+      <LocationPicker title="Looking for a specific location?" intro="Go straight to your nearest clinic or home visit area. Our Yagoona, Parramatta and Blacktown clinics are booked through the clinic's reception." />
 
       <section className="bg-sand">
         <div className="container-px pb-16">

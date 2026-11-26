@@ -11,7 +11,7 @@ import { sydneyClinics } from "@/lib/sydneyClinics";
 export const metadata: Metadata = {
   title: "Book a Physio | Clinic & Home Visits",
   description:
-    "Book physio at our Jesmond, Yagoona or Parramatta clinic, or a home visit across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
+    "Book physio at our Jesmond, Yagoona, Parramatta or Blacktown clinic, or a home visit across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
   alternates: { canonical: "/book" },
   openGraph: {
     type: "website",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     title: "Book an Appointment | Fletcher Physiotherapy",
     description:
-      "Book physio at our Jesmond, Yagoona or Parramatta clinic, or a home visit across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
+      "Book physio at our Jesmond, Yagoona, Parramatta or Blacktown clinic, or a home visit across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
     url: "/book",
     images: [{ url: "/images/og-default.png", width: 1200, height: 630, alt: "Fletcher Physiotherapy home visit physiotherapy" }],
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Book an Appointment | Fletcher Physiotherapy",
     description:
-      "Book physio at our Jesmond, Yagoona or Parramatta clinic, or a home visit across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
+      "Book physio at our Jesmond, Yagoona, Parramatta or Blacktown clinic, or a home visit across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
     images: ["/images/og-default.png"],
   },
 };
@@ -38,7 +38,7 @@ export default function BookPage() {
       <PageHero
         eyebrow="Book an Appointment"
         title="Choose how you'd like to see us"
-        intro="Visit one of our clinics in Jesmond, Yagoona or Parramatta, or have a physiotherapist visit you at home. Choose your location below."
+        intro="Visit one of our clinics in Jesmond, Yagoona, Parramatta or Blacktown, or have a physiotherapist visit you at home. Choose your location below."
         breadcrumb={[{ name: "Home", href: "/" }, { name: "Book", href: "/book" }]}
       />
       <section className="section-py bg-white">
