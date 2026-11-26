@@ -4,7 +4,7 @@ import { landingPages } from "@/lib/landing";
 
 const c = landingPages["sports-injury-physiotherapy"];
 const title = "Sports Injury Physio | Sydney & Newcastle";
-const description = "Rehabilitation for sprains, strains, tendon and knee injuries, with return-to-sport planning at our Jesmond, Yagoona and Parramatta clinics.";
+const description = "Rehabilitation for sprains, strains, tendon and knee injuries, with return-to-sport planning at our Jesmond, Yagoona, Parramatta and Blacktown clinics.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },
