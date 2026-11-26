@@ -95,6 +95,10 @@ export const sydneyClinics: SydneyClinic[] = [
     suburb: "Blacktown",
     brandName: "Fletcher Physiotherapy Blacktown",
     hostCentre: "Lourdes Medical and Dental Centre",
+    poster: {
+      src: "/images/clinics/fletcher-physiotherapy-blacktown.jpg",
+      alt: "Fletcher Physiotherapy at Lourdes Medical and Dental Centre, 81-83 Richmond Road, Blacktown — Fridays 9:00am to 4:30pm, book on (02) 9622 1998",
+    },
     streetAddress: "81-83 Richmond Road",
     postcode: "2148",
     phone: "02 9622 1998",
