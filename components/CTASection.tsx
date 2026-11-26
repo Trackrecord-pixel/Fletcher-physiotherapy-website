@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export default function CTASection({
   title = "Physiotherapy in clinic or at home",
-  text = "Clinics in Jesmond, Yagoona and Parramatta. Home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
+  text = "Clinics in Jesmond, Yagoona, Parramatta and Blacktown. Home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast.",
 }: {
   title?: string;
   text?: string;

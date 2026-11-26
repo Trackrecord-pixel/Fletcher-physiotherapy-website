@@ -155,7 +155,7 @@ export default function LandingPage({ c }: { c: LandingContent }) {
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-euc-600">Bulk billing at our clinics</p>
                 <p className="mt-2 text-navy-700">
                   Eligible Medicare patients referred under a GP Chronic Condition Management Plan (GPCCMP) can be bulk
-                  billed at our Jesmond, Yagoona and Parramatta clinics.
+                  billed at our Jesmond, Yagoona, Parramatta and Blacktown clinics.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
                   <Link href="/bulk-billing-physiotherapy-yagoona" className="text-euc-700 hover:text-euc-800">How bulk billing works →</Link>
@@ -206,11 +206,11 @@ export default function LandingPage({ c }: { c: LandingContent }) {
                 </h2>
                 <p className="mt-2 text-sm text-navy-100">
                   {pathway === "clinic"
-                    ? "Clinics in Jesmond, Yagoona and Parramatta."
+                    ? "Clinics in Jesmond, Yagoona, Parramatta and Blacktown."
                     : region === "sydney"
                     ? "We come to you across Sydney Olympic Park, the Inner West, Parramatta and Bankstown–Yagoona."
                     : region === "all"
-                    ? "Clinics in Jesmond, Yagoona and Parramatta, and home visits across Sydney, Newcastle and the Central Coast."
+                    ? "Clinics in Jesmond, Yagoona, Parramatta and Blacktown, and home visits across Sydney, Newcastle and the Central Coast."
                     : "We come to you across Newcastle, Lake Macquarie and the Central Coast."}
                 </p>
                 <div className="mt-5 grid gap-2.5">

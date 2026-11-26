@@ -11,6 +11,7 @@ const services = [
   "Clinic appointment — Jesmond (Mondays)",
   "Clinic appointment — Yagoona (Tuesdays)",
   "Clinic appointment — Parramatta (Wednesdays)",
+  "Clinic appointment — Blacktown (Fridays)",
   "NDIS Physiotherapy",
   "Support at Home Physiotherapy",
   "Chronic Pain Management",

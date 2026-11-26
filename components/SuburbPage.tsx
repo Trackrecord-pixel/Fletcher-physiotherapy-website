@@ -56,7 +56,7 @@ export default function SuburbPage({ s }: { s: Suburb }) {
               <p>{s.local}</p>
               {s.localArea && <p>{s.localArea}</p>}
               <p>
-                Fletcher Physiotherapy comes to you at home, and also consults at clinics in Jesmond, Yagoona and Parramatta. That means no travel, no parking and no waiting rooms for {s.name}{" "}
+                Fletcher Physiotherapy comes to you at home, and also consults at clinics in Jesmond, Yagoona, Parramatta and Blacktown. That means no travel, no parking and no waiting rooms for {s.name}{" "}
                 residents, and physiotherapy delivered in the exact environment where
                 you live and move each day. Our care is led by an APA Titled Pain
                 Physiotherapist with extensive experience in aged care, chronic pain
