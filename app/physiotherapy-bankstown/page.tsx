@@ -3,7 +3,7 @@ import SydneySuburbPage from "@/components/SydneySuburbPage";
 import { sydneySuburbs } from "@/lib/sydneySuburbs";
 
 const s = sydneySuburbs.find((x) => x.slug === "physiotherapy-bankstown")!;
-const title = "Physio Bankstown | Home Visits & Nearby Clinic";
+const title = "Physio Bankstown | Home Visits";
 
 export const metadata: Metadata = {
   title,
