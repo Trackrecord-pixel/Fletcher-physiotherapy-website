@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceDetail from "@/components/ServiceDetail";
 
 export const metadata: Metadata = {
-  title: "Persistent Pain Physiotherapy | Clinic & Home Visits",
+  title: "Persistent Pain Physiotherapy",
   description:
     "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona, Parramatta and Blacktown, or at home.",
   alternates: { canonical: "/chronic-pain-management" },
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Persistent Pain Physiotherapy | Clinic & Home Visits",
+    title: "Persistent Pain Physiotherapy",
     description:
       "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona, Parramatta and Blacktown, or at home.",
     url: "/chronic-pain-management",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Persistent Pain Physiotherapy | Clinic & Home Visits",
+    title: "Persistent Pain Physiotherapy",
     description:
       "Persistent and chronic pain physiotherapy led by an APA Titled Pain Physiotherapist — in clinic at Jesmond, Yagoona, Parramatta and Blacktown, or at home.",
     images: ["/images/og-default.png"],
