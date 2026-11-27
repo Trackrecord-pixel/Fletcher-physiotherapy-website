@@ -19,7 +19,7 @@ const locationFaqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Locations | Newcastle & Sydney Home Visits",
+  title: "Physio Locations | Clinics & Home Visits",
   description:
     "Clinics in Jesmond, Yagoona, Parramatta and Blacktown, plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
   alternates: { canonical: "/locations" },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Locations | Newcastle & Sydney Home Visits",
+    title: "Physio Locations | Clinics & Home Visits",
     description:
       "Clinics in Jesmond, Yagoona, Parramatta and Blacktown, plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
     url: "/locations",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Locations | Newcastle & Sydney Home Visits",
+    title: "Physio Locations | Clinics & Home Visits",
     description:
       "Clinics in Jesmond, Yagoona, Parramatta and Blacktown, plus home visits across Newcastle, Lake Macquarie, the Central Coast and Sydney.",
     images: ["/images/og-default.png"],
