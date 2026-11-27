@@ -12,7 +12,7 @@ import { sydneySuburbs } from "@/lib/sydneySuburbs";
 const path = "/ndis-physiotherapy-sydney";
 const title = "NDIS Physiotherapy Sydney | Home Visits & Clinics";
 const description =
-  "NDIS physiotherapy in Sydney from a registered NDIS provider. Physio at home and in our Parramatta, Yagoona and Blacktown clinics. Agency, plan and self-managed welcome.";
+  "NDIS physiotherapy in Sydney from a registered NDIS provider. At home or in our Parramatta, Yagoona and Blacktown clinics. Agency, plan and self-managed welcome.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },
