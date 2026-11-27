@@ -15,7 +15,7 @@ const POSTER = "/videos/fletcher-aged-care-poster.jpg";
 
 const title = "Aged Care Facility Physiotherapy Partnerships";
 const description =
-  "Physiotherapy partnerships for residential aged care homes in Sydney, Newcastle, Lake Macquarie and the Central Coast: regular onsite physio, pain management, group exercise and staff training. Free consultation.";
+  "Physiotherapy partnerships for residential aged care homes across Sydney, Newcastle and the Central Coast: onsite physio, group exercise and staff training.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },
