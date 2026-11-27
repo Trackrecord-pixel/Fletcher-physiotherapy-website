@@ -9,7 +9,7 @@ import { BreadcrumbSchema } from "@/components/StructuredData";
 import { posts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Physio Blog | Home Visit & Aged Care Tips",
+  title: "Physio Blog | Home Visit & Aged Care",
   description:
     "Practical physio advice for older adults, families and carers — falls prevention, recovery, NDIS, Support at Home and staying independent.",
   alternates: { canonical: "/blog" },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Physio Blog | Home Visit & Aged Care Tips",
+    title: "Physio Blog | Home Visit & Aged Care",
     description:
       "Practical physio advice for older adults, families and carers — falls prevention, recovery, NDIS, Support at Home and staying independent.",
     url: "/blog",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Physio Blog | Home Visit & Aged Care Tips",
+    title: "Physio Blog | Home Visit & Aged Care",
     description:
       "Practical physio advice for older adults, families and carers — falls prevention, recovery, NDIS, Support at Home and staying independent.",
     images: ["/images/og-default.png"],
