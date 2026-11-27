@@ -4,7 +4,7 @@ import { landingPages } from "@/lib/landing";
 
 const c = landingPages["neck-pain-physiotherapy"];
 const title = "Neck Pain & Headache Physio | Sydney & Newcastle";
-const description = "Physiotherapy for neck pain, stiffness and neck-related headaches in Jesmond, Yagoona, Parramatta and Blacktown, or at home. Strengthening, mobility and hands-on care.";
+const description = "Physio for neck pain, stiffness and neck-related headaches at our Jesmond, Yagoona, Parramatta and Blacktown clinics, or at home. Mobility and hands-on care.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },
