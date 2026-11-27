@@ -13,13 +13,13 @@ import { sydneySuburbs } from "@/lib/sydneySuburbs";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Mobile Physiotherapy Sydney | Home Visits | Fletcher Physiotherapy" },
+  title: { absolute: "Mobile Physiotherapy Sydney | Home Visits | Fletcher" },
   description:
     "Mobile physio and home visits around Sydney Olympic Park and the Inner West — older adults, NDIS, Support at Home and rehab.",
   alternates: { canonical: "/physiotherapy-sydney" },
   openGraph: {
     type: "website", siteName: "Fletcher Physiotherapy", locale: "en_AU",
-    title: "Mobile Physiotherapy Sydney | Home Visits | Fletcher Physiotherapy",
+    title: "Mobile Physiotherapy Sydney | Home Visits | Fletcher",
     description:
       "Mobile physiotherapy and home visits around Sydney Olympic Park, the Inner West and surrounding Sydney suburbs.",
     url: "/physiotherapy-sydney",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mobile Physiotherapy Sydney | Home Visits | Fletcher Physiotherapy",
+    title: "Mobile Physiotherapy Sydney | Home Visits | Fletcher",
     description: "Mobile physiotherapy and home visits around Sydney Olympic Park, the Inner West and surrounding Sydney suburbs.",
     images: ["/images/og-default.png"],
   },
