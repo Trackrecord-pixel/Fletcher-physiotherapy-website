@@ -5,7 +5,7 @@ import { landingPages } from "@/lib/landing";
 const c = landingPages["mobile-physiotherapist-newcastle"];
 
 export const metadata: Metadata = {
-  title: "Mobile Physiotherapist | Newcastle NSW",
+  title: "Mobile Physiotherapy Newcastle",
   description:
     "Need a mobile physiotherapist in Newcastle? We come to you with experienced in-home physio across Newcastle, Lake Macquarie and the Central Coast.",
   alternates: { canonical: "/mobile-physiotherapist-newcastle" },
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Mobile Physiotherapist | Newcastle NSW",
+    title: "Mobile Physiotherapy Newcastle",
     description:
       "Need a mobile physiotherapist in Newcastle? We come to you with experienced in-home physio across Newcastle, Lake Macquarie and the Central Coast.",
     url: "/mobile-physiotherapist-newcastle",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mobile Physiotherapist | Newcastle NSW",
+    title: "Mobile Physiotherapy Newcastle",
     description:
       "Need a mobile physiotherapist in Newcastle? We come to you with experienced in-home physio across Newcastle, Lake Macquarie and the Central Coast.",
     images: ["/images/og-default.png"],

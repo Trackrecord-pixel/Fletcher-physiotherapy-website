@@ -16,7 +16,7 @@ const allClinicCards = [
   ...sydneyClinics.map((c) => ({ slug: c.slug, day: c.days ?? "Call to book", host: c.hostCentre, address: `${c.streetAddress}, ${c.suburb} NSW ${c.postcode}` })),
 ];
 
-const title = "Physio Near Me: Newcastle & Sydney Home Visits";
+const title = "Physio Near Me | Sydney & Newcastle";
 const description =
   "Find a physio near you: clinics in Jesmond, Yagoona, Parramatta and Blacktown, plus home visits across Sydney, Newcastle, Lake Macquarie and the Central Coast.";
 

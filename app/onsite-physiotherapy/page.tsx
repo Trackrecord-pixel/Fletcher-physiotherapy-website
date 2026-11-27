@@ -13,9 +13,9 @@ import { site } from "@/lib/site";
 const VIDEO: string | null = "/videos/fletcher-onsite.mp4";
 const POSTER = "/videos/fletcher-onsite-poster.jpg";
 
-const title = "Onsite Physiotherapy Sydney | Workplace & Corporate Physio";
+const title = "Onsite Physio Sydney | Workplace & Corporate Physio";
 const description =
-  "Onsite physiotherapy for Sydney workplaces. A physio comes to your site for treatment, manual handling training, ergonomic assessments and early intervention. Free consultation.";
+  "Onsite physiotherapy for Sydney workplaces: treatment, manual handling training, ergonomic assessments and early intervention at your site. Free consultation.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | Fletcher` },

@@ -310,6 +310,7 @@ export default function SydneyClinicPage({ c }: { c: SydneyClinic }) {
               postalCode: c.postcode,
               addressCountry: "AU",
             },
+            ...(c.geo ? { geo: { "@type": "GeoCoordinates", latitude: c.geo.lat, longitude: c.geo.lng } } : {}),
             areaServed: [c.suburb, ...c.nearby].map((name) => ({ "@type": "Place", name })),
             ...(c.hours?.length
               ? { openingHoursSpecification: c.hours.map((h) => ({ "@type": "OpeningHoursSpecification", dayOfWeek: h.dayOfWeek, opens: h.opens, closes: h.closes })) }

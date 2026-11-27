@@ -5,7 +5,7 @@ import { landingPages } from "@/lib/landing";
 const c = landingPages["ndis-physiotherapy-newcastle"];
 
 export const metadata: Metadata = {
-  title: "Registered NDIS Physio at Home | Newcastle",
+  title: "Registered NDIS Physio | Newcastle",
   description:
     "Registered NDIS provider for physio at home in Newcastle, Lake Macquarie & Central Coast. Functional assessments and plan-review reports.",
   alternates: { canonical: "/ndis-physiotherapy-newcastle" },
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "Registered NDIS Physio at Home | Newcastle",
+    title: "Registered NDIS Physio | Newcastle",
     description:
       "Registered NDIS provider for physio at home in Newcastle, Lake Macquarie & Central Coast. Functional assessments and plan-review reports.",
     url: "/ndis-physiotherapy-newcastle",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Registered NDIS Physio at Home | Newcastle",
+    title: "Registered NDIS Physio | Newcastle",
     description:
       "Registered NDIS provider for physio at home in Newcastle, Lake Macquarie & Central Coast. Functional assessments and plan-review reports.",
     images: ["/images/og-default.png"],

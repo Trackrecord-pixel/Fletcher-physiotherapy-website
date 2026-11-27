@@ -4,7 +4,7 @@ export const site = {
   legalName: "Fletcher Physiotherapy",
   tagline: "We Come To You",
   description:
-    "Physiotherapy in clinic or at home across Sydney, Newcastle, Lake Macquarie and the Central Coast. Led by an APA Titled Pain Physiotherapist. Medicare, DVA, WorkCover & NDIS.",
+    "Physio in clinic or at home across Sydney, Newcastle, Lake Macquarie & Central Coast. Led by an APA Titled Pain Physiotherapist. Medicare, DVA, WorkCover & NDIS.",
   url: "https://www.fletcherphysiotherapy.com.au",
   phone: "0404 791 756",
   phoneHref: "tel:+61404791756",

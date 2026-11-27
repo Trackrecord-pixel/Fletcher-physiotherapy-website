@@ -8,7 +8,7 @@ import { FaqSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import { faqs, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "FAQs | Home Visit, NDIS & Support at Home",
+  title: "FAQs | Home Visits, NDIS & Aged Care",
   description:
     "Answers about home visits, NDIS, Support at Home (formerly Home Care Packages), GP referrals and the areas we cover in Newcastle and Sydney.",
   alternates: { canonical: "/faqs" },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Fletcher Physiotherapy",
     locale: "en_AU",
-    title: "FAQs | Home Visit, NDIS & Support at Home",
+    title: "FAQs | Home Visits, NDIS & Aged Care",
     description:
       "Answers about home visits, NDIS, Support at Home (formerly Home Care Packages), GP referrals and the areas we cover in Newcastle and Sydney.",
     url: "/faqs",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FAQs | Home Visit, NDIS & Support at Home",
+    title: "FAQs | Home Visits, NDIS & Aged Care",
     description:
       "Answers about home visits, NDIS, Support at Home (formerly Home Care Packages), GP referrals and the areas we cover in Newcastle and Sydney.",
     images: ["/images/og-default.png"],

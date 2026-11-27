@@ -27,6 +27,7 @@ export type SydneyClinic = {
   seoTitle?: string;         // <title> override
   bulkBilling?: boolean;     // bulk billing for eligible GPCCMP appointments (confirmed: all clinics)
   poster?: { src: string; alt: string }; // square promo image shown near the top of the page
+  geo?: { lat: number; lng: number };       // map pin for Google (schema)
 };
 
 export const sydneyClinics: SydneyClinic[] = [
@@ -41,6 +42,7 @@ export const sydneyClinics: SydneyClinic[] = [
     },
     streetAddress: "457 Hume Highway",
     postcode: "2199",
+    geo: { lat: -33.9077, lng: 151.0241 },
     phone: "02 8766 2477",
     days: "Tuesdays, 9:00am – 4:30pm",
     hours: [{ dayOfWeek: "Tuesday", opens: "09:00", closes: "16:30" }],
@@ -72,6 +74,7 @@ export const sydneyClinics: SydneyClinic[] = [
     },
     streetAddress: "Shop 1, 144 Marsden Street",
     postcode: "2150",
+    geo: { lat: -33.8145, lng: 151.0016 },
     phone: "02 8320 9300",
     days: "Wednesdays, 9:00am – 4:30pm",
     hours: [{ dayOfWeek: "Wednesday", opens: "09:00", closes: "16:30" }],
@@ -101,6 +104,7 @@ export const sydneyClinics: SydneyClinic[] = [
     },
     streetAddress: "81-83 Richmond Road",
     postcode: "2148",
+    geo: { lat: -33.7625, lng: 150.9009 },
     phone: "02 9622 1998",
     days: "Fridays, 9:00am – 4:30pm",
     hours: [{ dayOfWeek: "Friday", opens: "09:00", closes: "16:30" }],
